@@ -1415,6 +1415,8 @@
         color: #333333;
         font-size: 14px;
         line-height: 1.8;
+        font-family: NotoSansJP-Regular;
+        font-weight: 500;
     }
 
     @media screen and (max-width: 896px) {
@@ -1428,6 +1430,8 @@
         font-size: 16px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        font-family: DIN-Regular;
+        font-weight: 400;
         position: relative;
         padding-right: 20px;
         margin-top: 30px;
@@ -1525,15 +1529,19 @@
 
     .branding--strengths .heading .sub {
         color: #000;
-        font-size: 1.6rem;
-        letter-spacing: 0.08em;
+        font-size: 16px;
+        letter-spacing: 0.08px;
+        font-family: DIN-Regular;
+        font-weight: 400;
     }
 
     .branding--strengths .heading h3 {
         color: #000;
         font-size: 20px;
-        margin-top: 23px;
+        font-family: NotoSansJP-Bold;
+        /* margin-top: 23px; */
         letter-spacing: 0.08em;
+        font-weight: 700;
     }
 
     @media screen and (min-width: 897px) {
@@ -1553,12 +1561,13 @@
     @media screen and (min-width: 897px) {
         .branding--strengths--content .num {
             font-size: 100px;
+            font-family: DIN-Regular;
         }
     }
 
     @media screen and (max-width: 896px) {
         .branding--strengths--content .num {
-            font-size: 4.2rem;
+            font-size: 42px;
             margin-bottom: 10px;
         }
     }
@@ -1571,14 +1580,15 @@
 
     .branding--strengths--content .textarea h4 {
         margin-bottom: 34px;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.12px;
         line-height: 1.5;
     }
 
     @media screen and (min-width: 897px) {
         .branding--strengths--content .textarea h4 {
             font-size: 24px;
-        }
+            font-family: NotoSansJP-Bold;
+            font-weight: 700; }
     }
 
     @media screen and (max-width: 896px) {
@@ -1591,7 +1601,9 @@
     .branding--strengths--content .textarea p {
         font-size: 14px;
         line-height: 2;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.04px;
+        font-family: NotoSansJP-Regular;
+        font-weight: 500;
         color: #868686;
     }
 

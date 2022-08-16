@@ -227,7 +227,7 @@
                                 alt="" loading="lazy">
                             <div class="about-contents__list__text">
                                 <p class="about-contents__list__subtitle">会社概要</p>
-                                <h4 class="about-contents__list__title">COMPANY</h4>
+                                <h4 class="about-contents__list__title">Policy</h4>
                             </div>
                         </router-link>
                     </li>
@@ -237,7 +237,7 @@
                                 src="/public/assets/img/icons/WWW.png" alt="" loading="lazy">
                             <div class="about-contents__list__text">
                                 <p class="about-contents__list__subtitle">ブログ</p>
-                                <h4 class="about-contents__list__title">BLOG</h4>
+                                <h4 class="about-contents__list__title">Business</h4>
                             </div>
                         </router-link>
                     </li>
@@ -247,7 +247,7 @@
                                 alt="" loading="lazy">
                             <div class="about-contents__list__text">
                                 <p class="about-contents__list__subtitle">オンライン開発ハブ</p>
-                                <h4 class="about-contents__list__title">DEVELOPEMENT</h4>
+                                <h4 class="about-contents__list__title">Company</h4>
                             </div>
                         </router-link>
                     </li>

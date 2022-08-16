@@ -161,13 +161,7 @@
         </header>
         <div class="side_fix on">
             <div class="fix_btn">
-                <router-link to="/download-form/"><span class="txt">資料請求</span></router-link>
-            </div>
-            <div class="pararel fix_btn">
-                <router-link to="/" class="key">
-                    <span class="txt">裏サイト</span>
-
-                </router-link>
+                <router-link to="/download-form/"><span class="txt">資料ダウンロード</span></router-link>
             </div>
         </div>
     </div>
