@@ -1,4 +1,5 @@
 <template>
+
     <div>
         <!-- <footer class="footer-pc">
 
@@ -95,20 +96,28 @@
 </footer> -->
 
        <footer>
+         <section class="bg-color">
+                <div class="loopCopy isAnim anim-fadeIn inView" bis_skin_checked="1">
+			<div class="area" bis_skin_checked="1">
+				<div class="copy" bis_skin_checked="1"></div>
+			</div>
+		</div>
+            </section>
       <section class="mycontents-wide section-request">
+        
         <div class="">
           <div class="contents-section">
             <div class="mb-4 contents-box pr-4">
               <div class="card">
                 <div class="card-body contact-request-col">
-                  <a href="#">
+                  <router-link to="/download-form/">
                     <h4 class="request-contact-heading">
                       資料ダウンロード <br />
                       <span class="contact-col-sub-heading"
                         >ITコンサル・開発に関する資料はこちら</span
                       >
                     </h4>
-                  </a>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -216,7 +225,7 @@
             </div>
             <div class="foot-menu-group">
               <h4>
-                <router-link to="/about/" class="">会社情報</router-link>
+                <router-link to="/about-company/" class="">会社情報</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
@@ -248,8 +257,97 @@
     </div>
 </template>
 <style>
+.loopCopy {
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.bg-color{
+    background-color: #1a202c;
+    padding: 60px 0px 0px;
+}
+.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.loopCopy .area {
+    white-space: nowrap;
+    width: 100%;
+    padding-right: 100%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    height: 60px;
+    background: url('/assets/img/ft_copy-removebg-preview.png') repeat-x left top/961px 64px;
+}
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate(-962px, 0);
+            transform: translate(-962px, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate(-962px, 0);
+            transform: translate(-962px, 0);
+  }
+}
+@-webkit-keyframes ticker_sp {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate(-603px, 0);
+            transform: translate(-603px, 0);
+  }
+}
+@keyframes ticker_sp {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate(-603px, 0);
+            transform: translate(-603px, 0);
+  }
+}
+.anim-fadeIn {
+    opacity: 1;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);
+    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
     footer {
-  background: #000000;
+  background: #1a202c;
 }
 .container-request {
   padding: 0px 74px !important;
@@ -270,7 +368,7 @@
   height: auto;
 }
 .section-request {
-  padding: 180px 0px 60px;
+  padding: 80px 0px 60px;
 }
 .contact-main{
   margin-bottom: 60px;
@@ -322,8 +420,8 @@
    font-weight: 400;
   font-family: NotoSansJP-Regular;
 }
-.card {
-  border: 1px solid #2B2B2B;
+.section-request .card {
+  border: 1px solid #ffffff;
   background: none !important;
   transition: 0.6s ease;
   cursor: pointer;

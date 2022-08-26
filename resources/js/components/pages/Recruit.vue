@@ -1,26 +1,86 @@
 <template>
     <div>
         <Navbar />
-           <div class="hero_Heading">
+        <!-- <div class="hero_Heading">
         <h2 class="hero">RECRUIT</h2>
         <p class="about-subcontents__text">こちらは当社の情報や沿革など会社概要を確認いただけすページです。</p>
-    </div>
+    </div> -->
+        <div class="mv_textarea-recruit">
+            <h2>
+                <strong class="en entxt">Recruit</strong>
+                <span class="jptxt">経営理念</span>
+            </h2>
+        </div>
         <main>
-         <div class="recruit--leadtxt">
-        <h3>変な会社にしたいので<br class="pc">変な社員を募集します</h3>
-        <p>売上が大きい会社とか、社員数が多い会社をつくりたいわけじゃない。<br class="pc">自分たちにしかできないことで、世の中を“あっ”と驚かせたい。<br class="pc">好きな人と、好きな事やる。そんなワガママな会社で働いてみませんか？
-        </p>
-    </div>
-    <div class="recruit_fix visibility">
-    <ul class="entryarea recruit--contactarea--bnr">
-        <li>
-            <router-link to="/branding">お試しエントリー<br><span class="label pc">気軽にメールだけ登録してみる</span><span class="label sp">気軽にメール登録</span></router-link>
-        </li>
-        <li>
-                       <router-link to="/solutions">本気のエントリー<br><span class="label pc">今すぐ選考にチャレンジしてみる</span><span class="label sp">今すぐ選考にチャレンジ</span></router-link>
-        </li>
-    </ul>
-</div>
+            <div class="recruit--leadtxt">
+                <h3>変な会社にしたいので<br class="pc">変な社員を募集します</h3>
+                <p>売上が大きい会社とか、社員数が多い会社をつくりたいわけじゃない。<br class="pc">自分たちにしかできないことで、世の中を“あっ”と驚かせたい。<br
+                        class="pc">好きな人と、好きな事やる。そんなワガママな会社で働いてみませんか？
+                </p>
+            </div>
+            <div class="recruit--person highlight_blk" bis_skin_checked="1">
+                <div class="heading" bis_skin_checked="1">
+                    <span class="sub en fade_y on">DEPARTMENT</span>
+                    <h3 class="fade_y on">部署紹介</h3>
+                </div>
+                <div class="recruit--person--list" bis_skin_checked="1">
+                    <div class="recruit--person--item hoverScale" bis_skin_checked="1">
+                        <router-link to="/branding/">
+                            <div class="thumb" bis_skin_checked="1">
+                                <div class="hvrtxt en" bis_skin_checked="1"><span class="more_txt"><span
+                                            class="underline">MORE</span></span></div>
+                                <div class="scaleImg" bis_skin_checked="1"><img
+                                        src="https://tomorrowgate.co.jp/asset/img/recruit/producer_photo.jpg" alt="">
+                                </div>
+                            </div>
+                            <h4>
+                                <span class="department fade_y on">戦略企画部</span>
+                                <strong class="phrase fade_y on">その会社が生まれた理由から問う。<br
+                                        class="pc">ストーリー溢れるブランド戦略と企画立案を。</strong>
+                            </h4>
+                            <p class="fade_y on">
+                                コンサルティングを通じて、世の中に数え切れないくらい眠る、いい会社のブランド力をあぶり出す。オモシロイ会社づくりにとことんコミットし、ゴールと期限を定め、パートナーとして伴走する。
+                            </p>
+                        </router-link>
+                    </div>
+
+                    <div class="recruit--person--item hoverScale" bis_skin_checked="1">
+                        <router-link to="/solutions/">
+                            <div class="thumb" bis_skin_checked="1">
+                                <div class="hvrtxt en" bis_skin_checked="1"><span class="more_txt"><span
+                                            class="underline">MORE</span></span></div>
+                                <div class="scaleImg" bis_skin_checked="1"><img
+                                        src="https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg" alt="">
+                                </div>
+                            </div>
+                            <h4>
+                                <span class="department fade_y on">意匠制作部</span>
+                                <strong class="phrase fade_y on">今までにないクリエイティブで<br class="pc">本質も、結果もしっかり求めていく。</strong>
+                            </h4>
+                            <p class="fade_y on">
+                                受け手が驚くような、今までにない表現をWEBサイトや映像、グラフィックへと姿を変え世の中へ届けていく。企業課題の本質を突きながら、ささる×あがるにこだわれるクリエイター。
+                            </p>
+                        </router-link>
+                    </div>
+                </div>
+            </div>
+            <div class="recruit_fix visibility">
+                <ul class="entryarea recruit--contactarea--bnr">
+                    <li>
+                        <router-link to="/branding">お試しエントリー<br><span class="label pc">気軽にメールだけ登録してみる</span><span
+                                class="label sp">気軽にメール登録</span></router-link>
+                    </li>
+                    <li>
+                        <router-link to="/solutions">本気のエントリー<br><span class="label pc">今すぐ選考にチャレンジしてみる</span><span
+                                class="label sp">今すぐ選考にチャレンジ</span></router-link>
+                    </li>
+                </ul>
+            </div>
+            <div class="branding--contact" bis_skin_checked="1">
+                <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
+                <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
+                        class="contactbtn fade_y on" bis_skin_checked="1">今すぐ相談してみる</a></div>
+            </div>
         </main>
         <Footer />
     </div>
@@ -43,231 +103,597 @@
                 }, ],
             };
         },
-       
-    };
 
+    };
 </script>
 
 <style>
+    .hoverScale .thumb {
+        overflow: hidden;
+        position: relative;
+    }
 
+    .hoverScale .thumb .hvrtxt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: 0.4s;
+        transform: translate(-34%, -20%);
+        opacity: 0;
+        z-index: 1;
+        backface-visibility: hidden;
+    }
 
-.recruit_fix {
-    margin: auto;
-    z-index: 20;
-    padding: 50px 2% 70px;
-    width: 60%;
-}
-.recruit_fix ul {
-    justify-content: space-between;
-}
- .recruit_fix ul li {
-    margin: 0;
-    width: 49%;
-}
- .recruit_fix ul li a {
-    width: 100%;
-    padding: 16px 0;
-    margin-top: 0;
-    font-size: 1.6rem;
-    line-height: 1.7;
-}
-.recruit--leadtxt h3{
-    font-size: 38px;
-}
+    .hoverScale .thumb .hvrtxt .more_txt {
+        color: #dadada;
+        font-size: 1.4rem;
+        font-family: DIN-Bold;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 20px;
+        font-weight: 700;
+    }
 
-@media screen and (min-width: 897px){
-.recruit--contactarea--bnr.entryarea li a {
-    padding: 50px 0;
-    margin-top: 20px;
-    font-size: 16px;
-}
-.recruit--contactarea--bnr.entryarea li a:hover {
-    background-color: #fff;
-    color: #000;
-}
-}
-.recruit .recruit_fix ul li a .label {
-    font-size: 12px;
-    font-weight: 500;
-}
+    .hoverScale .thumb .hvrtxt .more_txt::before {
+        width: 10px;
+    }
 
-.recruit--contactarea--bnr.entryarea li .label {
-    font-size: 12px;
-    font-family: NotoSansJP-Medium;
-    letter-spacing: 0.05em;
-    text-align: center;
-}
-.recruit--contactarea--bnr.entryarea li a {
-    position: relative;
-    display: block;
-    border: 1px solid #2b2b2b;
-    background-color: #000;
-    letter-spacing: 0.12em;
-    text-align: center;
-    color: #dadada;
-    font-size: 16px;
-    transition: 0.6s ease;
-    font-weight: bold;
-    font-family: NotoSansJP-Bold;
-}
-@media screen and (min-width: 897px){
-.recruit--contactarea--bnr {
-    display: flex;
-    justify-content: center;
-}
-}
-.recruit_fix ul {
-    justify-content: space-between;
-}
-.recruit-fix  {
-    bottom: 12px;
-    opacity: 1;
-}
-/* .mv_textarea {
-    color: #dadada;
-    background-color: #000;
-} */
-@media screen and (min-width: 897px) {
-    .mv_textarea {
-        padding: 50px 10% 60px;
+    .hoverScale .thumb .hvrtxt .more_txt::after,
+    .hoverScale .thumb .hvrtxt .more_txt::before {
+        content: "";
+        height: 1px;
+        background-color: #dadada;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transition: 0.3s;
     }
-}
-@media screen and (max-width: 896px) {
-    .mv_textarea {
-        padding: 100px 5% 40px;
-    }
-   .recruit_fix ul {
-    display: flex;
-    padding: 0;
-}
-.recruit_fix ul li a {
-    font-size: 14px;
-    padding: 13px 0;
-}
- .recruit_fix ul li a .label{
-    font-size: 10px;
-}
-.recruit_fix{
-    width: 100%;
-}
-}
-.mv_textarea .entxt {
-    display: block;
-    /* margin-bottom: 20px; */
-    font-size: 64px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transform: translateY(15%);
-    transition: 0.6s;
-    opacity: 1;
-    color:black;
-    font-weight: bold;
-    text-align: center;
-}
-@media screen and (max-width: 896px) {
-    .mv_textarea .entxt {
-        margin-bottom: 11px;
-        font-size: 2.8rem;
-    }
-}
-.mv_textarea .jptxt {
-    transform: translateY(15%);
-    transition: 0.6s;
-    opacity: 1;
-    font-size: 13px;
-    letter-spacing: 0.08em;
-    color: #fff;
-}
 
-
-.sp {
-    display: none;
-}
-@media screen and (max-width: 896px) {
-    .sp {
-        display: block;
-    }
-}
-@media screen and (max-width: 896px) {
-    .pc {
-        display: none;
-    }
-}
-
-.recruit--leadtxt {
-    padding: 70px 10% 70px;
-    color: #dadada;
-    position: relative;
-    z-index: 1;
-    margin-top: 60px;
-    background-color: #000;
-}
-.recruit--leadtxt::after {
-    content: "";
-    background: url('/assets/img/all_member.jpg') no-repeat center;
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.3;
-    z-index: -1;
-}
-@media screen and (max-width: 896px) {
-    .recruit--leadtxt::after {
-        background: url('/assets/img/all_member.jpg') no-repeat center;
-        background-size: 300%;
-    }
-}
-@media screen and (max-width: 896px) {
-    .recruit--leadtxt {
-        padding: 30px 5% 60px;
-    }
-}
-.recruit--leadtxt h3 {
-    line-height: 1.63;
-    transform: translateY(10%);
-    transition: 0.6s;
-    opacity: 1;
-    color:#dadada;
-    font-weight: bold;
-    font-family: NotoSansJP-Bold;
-}
-@media screen and (min-width: 897px) {
-    .recruit--leadtxt h3 {
-        font-size: 38px;
-        letter-spacing: 0.2em;
-    }
-}
-@media screen and (max-width: 896px) {
-    .recruit--leadtxt h3 {
-        font-size: 20px;
-        letter-spacing: 0.12em;
-    }
-}
-.recruit--leadtxt p {
-    transform: translateY(10%);
-    transition: 0.9s;
-    opacity: 1;
-    margin-top: 30px;
-    letter-spacing: 0.12em;
-    line-height: 2;
-    font-size: 16px;
-    font-family: NotoSansJP-Regular;
-    font-weight: 400;
-    color:#dadada;
-}
-
-@media screen and (max-width: 896px) {
-    .recruit--leadtxt p {
+    .hoverScale .thumb .hvrtxt .more_txt .underline {
+        position: relative;
+        font-family: DIN-Bold;
         font-size: 14px;
     }
-}
-@media screen and (max-width: 500px){
-.recruit--leadtxt {
-    margin-top: 50px;
-}
-}
+
+    .hoverScale .thumb .hvrtxt .more_txt .underline::after {
+        content: "";
+        background: #dadada;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        transform: scale(0, 1);
+        transition: transform 0.3s;
+        transform-origin: right top;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::after {
+        width: 6px;
+        transform: rotate(45deg) translateY(-3px);
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::after,
+    .hoverScale .thumb .hvrtxt .more_txt::before {
+        content: "";
+        height: 1px;
+        background-color: #dadada;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transition: 0.3s;
+    }
+
+    .hoverScale .thumb .scaleImg {
+        transition: 0.4s;
+        backface-visibility: hidden;
+    }
+
+    .hoverScale .thumb::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.4s;
+    }
+
+    .recruit_fix {
+        position: fixed;
+        bottom: -50px;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%);
+        z-index: 20;
+        padding: 10px 2%;
+        width: 60%;
+        transition: 0.4s;
+    }
+
+    .recruit_fix.visibility {
+        bottom: 12px;
+        opacity: 1;
+    }
+
+    .recruit_fix {
+        margin: auto;
+        z-index: 20;
+        width: 73%;
+    }
+
+    .recruit_fix ul {
+        justify-content: space-between;
+    }
+
+    .recruit_fix ul li {
+        margin: 0;
+        width: 38%;
+    }
+
+    .recruit_fix ul li a {
+        width: 100%;
+        padding: 16px 0;
+        margin-top: 0;
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+
+    .recruit--leadtxt h3 {
+        font-size: 38px;
+    }
+
+    @media screen and (min-width: 897px) {
+        .recruit--contactarea--bnr.entryarea li a {
+            padding: 25px 0;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .recruit--contactarea--bnr.entryarea li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+
+    .recruit .recruit_fix ul li a .label {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .recruit--contactarea--bnr.entryarea li .label {
+        font-size: 12px;
+        font-family: NotoSansJP-Medium;
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
+
+    .recruit--contactarea--bnr.entryarea li a {
+        position: relative;
+        display: block;
+        border: 1px solid #2b2b2b;
+        background-color: #000;
+        letter-spacing: 0.12em;
+        text-align: center;
+        color: #dadada;
+        font-size: 16px;
+        transition: 0.6s ease;
+        font-weight: bold;
+        font-family: NotoSansJP-Bold;
+    }
+
+    @media screen and (min-width: 897px) {
+        .recruit--contactarea--bnr {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .recruit_fix ul {
+        justify-content: space-between;
+    }
+
+    .recruit-fix {
+        bottom: 12px;
+        opacity: 1;
+    }
+
+    .mv_textarea-recruit {
+        color: #dadada;
+        background-color: #000;
+    }
+
+    @media screen and (max-width: 896px) {
+
+
+        .recruit_fix ul {
+            display: flex;
+            padding: 0;
+        }
+
+        .recruit_fix ul li a {
+            font-size: 14px;
+            padding: 13px 0;
+        }
+
+        .recruit_fix ul li a .label {
+            font-size: 10px;
+        }
+
+        .recruit_fix {
+            width: 100%;
+        }
+    }
+
+    .mv_textarea-recruit .entxt {
+        display: block;
+        font-size: 40px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transform: translateY(15%);
+        transition: 0.6s;
+        opacity: 1;
+        color: #fff;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 896px) {
+        .mv_textarea-recruit {
+            margin-bottom: 11px;
+            font-size: 2.8rem;
+        }
+    }
+
+    .mv_textarea-recruit .jptxt {
+        transform: translateY(15%);
+        transition: 0.6s;
+        opacity: 1;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        color: #fff;
+    }
+
+
+    .sp {
+        display: none;
+    }
+
+    @media screen and (max-width: 896px) {
+        .sp {
+            display: block;
+        }
+    }
+
+
+
+    .recruit--leadtxt {
+        padding: 40px 10% 100px;
+        color: #dadada;
+        position: relative;
+        z-index: 1;
+        margin-top: 0px;
+        background-color: #000;
+    }
+
+    .recruit--leadtxt::after {
+        content: "";
+        background: url('/assets/img/all_member.jpg') no-repeat center;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--leadtxt::after {
+            background: url('/assets/img/all_member.jpg') no-repeat center;
+            background-size: 300%;
+        }
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--leadtxt {
+            padding: 30px 5% 60px;
+        }
+    }
+
+    .recruit--leadtxt h3 {
+        line-height: 1.63;
+        transform: translateY(10%);
+        transition: 0.6s;
+        opacity: 1;
+        color: #dadada;
+        font-weight: bold;
+        font-family: NotoSansJP-Bold;
+    }
+
+    @media screen and (min-width: 897px) {
+        .recruit--leadtxt h3 {
+            font-size: 38px;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--leadtxt h3 {
+            font-size: 20px;
+            letter-spacing: 0.12em;
+        }
+    }
+
+    .recruit--leadtxt p {
+        transform: translateY(10%);
+        transition: 0.9s;
+        opacity: 1;
+        margin-top: 30px;
+        letter-spacing: 0.12em;
+        line-height: 2;
+        font-size: 16px;
+        font-family: NotoSansJP-Regular;
+        font-weight: 400;
+        color: #dadada;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--leadtxt p {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .recruit_fix ul li {
+            width: 49%;
+        }
+
+        .recruit--leadtxt {
+            margin-top: 0px;
+        }
+    }
+
+    .recruit.loaded .recruit--leadtxt h3 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .recruit.loaded .recruit--leadtxt p {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .recruit.loaded .recruit--leadtxt .photo {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit .pararel {
+            bottom: 90px;
+        }
+    }
+
+    .recruit .mv_textarea-recruit {
+        position: relative;
+        z-index: 2;
+    }
+
+    .recruit .recruit_fix {
+        position: fixed;
+        bottom: -50px;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%);
+        z-index: 20;
+        padding: 10px 2%;
+        width: 60%;
+        transition: 0.4s;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit .recruit_fix {
+            left: 0;
+            width: 100%;
+            transform: translateX(0);
+        }
+    }
+
+    .recruit .recruit_fix.visibility {
+        bottom: 12px;
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit .recruit_fix.visibility {
+            bottom: 8px;
+        }
+    }
+
+    .recruit .recruit_fix ul {
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit .recruit_fix ul {
+            display: flex;
+            padding: 0;
+        }
+    }
+
+    .recruit .recruit_fix ul li {
+        margin: 0;
+        width: 49%;
+    }
+
+    .recruit .recruit_fix ul li a {
+        width: 100%;
+        padding: 16px 0;
+        margin-top: 0;
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit .recruit_fix ul li a {
+            font-size: 1.4rem;
+            padding: 13px 0;
+        }
+    }
+
+    .recruit .recruit_fix ul li a::before,
+    .recruit .recruit_fix ul li a::after {
+        content: none;
+    }
+
+    .recruit .recruit_fix ul li a .label {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit .recruit_fix ul li a .label {
+            font-size: 1rem;
+        }
+    }
+
+
+    .recruit--person {
+        background-color: #fff;
+    }
+
+    @media screen and (min-width: 897px) {
+        .recruit--person {
+            padding: 180px 10%;
+        }
+
+        .mv_textarea-recruit {
+            padding: 120px 10% 60px;
+        }
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--person {
+            padding: 40px 5%;
+        }
+    }
+
+    .recruit--person .heading .sub {
+
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        line-height: 16px;
+        font-family: "Noto Sans JP", sans-serif;
+        color: #000;
+        font-weight: 400;
+    }
+
+    .recruit--person .heading h3 {
+        font-size: 20px;
+        margin-top: 23px;
+        letter-spacing: 0.08em;
+        line-height: 20px;
+        font-family: "Noto Sans JP", sans-serif;
+        color: #000;
+        font-weight: 700;
+    }
+
+    .recruit--person--list {
+        margin-top: 80px;
+    }
+
+    @media screen and (min-width: 897px) {
+        .recruit--person--list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--person--list {
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (min-width: 897px) {
+        .recruit--person--item {
+            width: 48.2%;
+        }
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--person--item {
+            margin-top: 40px;
+        }
+    }
+
+    @media screen and (min-width: 897px) {
+
+        .recruit--person--item:nth-child(3),
+        .recruit--person--item:nth-child(4) {
+            margin-top: 140px;
+        }
+    }
+
+    @media screen and (min-width: 897px) {
+        .recruit--person--item h4 {
+            margin-top: 40px;
+        }
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--person--item h4 {
+            margin-top: 24px;
+        }
+    }
+
+    .recruit--person--item h4 .department {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        margin-bottom: 0px;
+        font-family: "Noto Sans JP", sans-serif;
+        color: #000;
+        line-height: 16px;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--person--item h4 .department {
+            font-size: 14px;
+        }
+    }
+
+    .recruit--person--item h4 .phrase {
+        display: block;
+        margin-top: 15px;
+        font-size: 22px;
+        line-height: 36px;
+        letter-spacing: 0.1em;
+        font-family: "Noto Sans JP", sans-serif;
+        color: #000;
+    }
+
+    @media screen and (max-width: 896px) {
+        .recruit--person--item h4 .phrase {
+            font-size: 20px;
+        }
+    }
+
+    .recruit--person--item p {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: 0.1em;
+        font-family: "Noto Sans JP", sans-serif;
+        color: #000;
+    }
 </style>

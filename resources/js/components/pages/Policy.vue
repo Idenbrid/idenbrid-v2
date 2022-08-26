@@ -1,18 +1,18 @@
 <template>
   <div>
     <Navbar />
-   <!-- <div class="hero_Heading">
+    <!-- <div class="hero_Heading">
       <h2 class="hero">POLICY</h2>
       <p class="blog-subcontents__text">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</p>
     </div> -->
-    <div class="mv_textarea" bis_skin_checked="1">
-        <h2>
-            <strong class="en entxt">Policy</strong>
-            <span class="jptxt">経営理念</span>
-        </h2>
+    <div class="mv_textarea">
+      <h2>
+        <strong class="en entxt">Policy</strong>
+        <span class="jptxt">経営理念</span>
+      </h2>
     </div>
     <section class="section-policy">
-      <div class="policy-content">  
+      <div class="policy-content">
         <div class="policy-title">
           <h3>ブラック企業ではない<br />ブラックな企業</h3>
         </div>
@@ -29,26 +29,6 @@
         </div>
       </div>
     </section>
-    <section class="section-mission">
-      <div class="mission-content">
-        <div class="mission-title">
-          <h2>MISSION</h2>
-          <span>存在意義</span>
-        </div>
-        <div class="policy-title-img text-center">
-          <img src="/assets/img/Capture.PNG" alt="" />
-        </div>
-      </div>
-      <div class="vision-content">
-        <div class="vision-title">
-          <h2>VISION</h2>
-          <span>目指す方向性</span>
-        </div>
-        <div class="vision-title-img text-center">
-          <img src="/assets/img/policy.PNG" alt="" />
-        </div>
-      </div>
-    </section>
     <section class="medium-term-vision">
       <div class="medium-tern-content text-center">
         <div class="medium-tern-title text-center">
@@ -59,14 +39,14 @@
           <h2>
             「大阪で一番オモシロイ
           </h2>
-            <span> と言われる会社になる</span>
+          <span> と言われる会社になる</span>
         </div>
-        <hr class="m-0" />
+        <hr class="bg-white m-0" />
       </div>
 
       <!-- swiper carousel  -->
 
-      <div class="container-fluid position-relative">
+      <div class="policy-slider position-relative">
         <h2 class="policy-h">中期ビジョン達成に向けた要件</h2>
         <div class="swiper-slider-title ">
 
@@ -202,6 +182,28 @@
         </div>
       </div>
     </section>
+
+    <section class="section-mission">
+      <div class="mission-content">
+        <div class="mission-title">
+          <h2>MISSION</h2>
+          <span>存在意義</span>
+        </div>
+        <div class="policy-title-text text-center">
+          <h3>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真</h3>
+        </div>
+      </div>
+      <div class="vision-content">
+        <div class="vision-title">
+          <h2>VISION</h2>
+          <span>目指す方向性</span>
+        </div>
+        <div class="vision-title-text text-center">
+          <h3>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真<br>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真<br>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真</h3>
+        </div>
+      </div>
+    </section>
+
     <section class="section-sitemap">
       <div class="mycontents-wide">
         <div class="sitemap-content">
@@ -215,6 +217,11 @@
         </div>
       </div>
     </section>
+    <div class="branding--contact" bis_skin_checked="1">
+      <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
+      <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
+          class="contactbtn fade_y on" bis_skin_checked="1">今すぐ相談してみる</a></div>
+    </div>
     <Footer />
   </div>
 </template>
@@ -254,39 +261,51 @@
   };
 </script>
 <style>
+  .policy-slider {
+    padding: 0px 10% 0px;
+  }
+
   .policy-h {
     display: inline-flex;
-    padding: 0px 65px;
+    padding: 0px 24px;
     font-family: NotoSansJP-Bold;
     font-size: 16px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    color: #fff;
   }
-  .swiper-content{
-    margin-left: 5%;
-  }
-  .slider-img{
-    margin-right: 10%;
-  }
-  .vision-sitemap{
+
+  .vision-sitemap {
     margin: 72px auto 0;
   }
-  .swiper-content .num{
-   font-family: DIN-Bold;
+
+  .swiper-content .num {
+    font-family: DIN-Bold;
   }
+
   .policySlider {
     height: 100% !important;
   }
-  .vision-title-img{
+
+  .vision-title-text {
     width: 640px;
-    margin: 40px auto 0;
+    margin: 15px auto 0;
   }
+
+  .vision-title-text h3 {
+    font-weight: bold;
+    font-size: 27px;
+    font-family: DIN-Medium;
+  }
+
   /* .policy-content {
     padding: 30px 75px;
   } */
-  .swiper-pagination-current,.swiper-pagination-total{
+  .swiper-pagination-current,
+  .swiper-pagination-total {
     font-family: DIN-Bold;
     font-size: 16px;
   }
+
   .swiper-slider-title {
     display: inline-flex;
   }
@@ -297,6 +316,7 @@
 
   .section-policy {
     padding: 60px 10% 120px;
+    background-color: #fff;
   }
 
   .policy-title {
@@ -308,14 +328,17 @@
     font-size: 64px;
     font-weight: 600;
     line-height: 1.4;
-    color: #000000;
+    /* color: #000000; */
+    color: #000;
     letter-spacing: 0.1em;
   }
 
   .policy-prgh p {
     font-size: 14px;
     line-height: 2;
+    /* color: #000; */
     color: #000;
+    font-weight: 500;
     font-family: NotoSansJP-Regular;
     /* letter-spacing: 0.4px; */
     display: inline-flex;
@@ -324,7 +347,7 @@
   /* section mission css  */
 
   .section-mission {
-    background-color: #000000;
+    background-color: #fff;
   }
 
   .mission-content {
@@ -336,7 +359,8 @@
   }
 
   .mission-title h2 {
-    color: #fff;
+    /* color: #fff; */
+    color: #000;
     margin-bottom: 0px;
     font-size: 30px;
     font-family: DIN-Medium;
@@ -347,15 +371,15 @@
 
   .mission-title span {
     text-align: center;
-    color: #fff;
+    color: #000;
     font-weight: 400;
     font-size: 14px;
     font-family: NotoSansJP-Regular;
   }
 
-  .policy-title-img {
-   width: 520px;
-   margin: 40px auto 0;
+  .policy-title-text {
+    width: 520px;
+    margin: 15px auto 0;
   }
 
   .vission-content {
@@ -371,7 +395,7 @@
   .vision-title h2 {
     font-family: DIN-Medium;
     font-size: 30px;
-    color: #ffff;
+    color: #000;
     line-height: 1.5;
     letter-spacing: 3px;
     font-weight: 700;
@@ -384,7 +408,7 @@
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    color: #ffff;
+    color: #000;
     line-height: 30px;
     letter-spacing: 0.56px;
   }
@@ -401,7 +425,7 @@
 
   .medium-term-vision {
     padding: 150px 0px 180px;
-    background-color: #fff;
+    background-color: #1d5594;
   }
 
   .medium-tern-title h2 {
@@ -409,7 +433,7 @@
     font-size: 22px;
     margin-bottom: 16px;
     font-style: normal;
-    color: #000000;
+    color: #fff;
     line-height: 22px;
   }
 
@@ -417,7 +441,7 @@
     font-size: 14px;
     font-family: NotoSansJP-Regular;
     font-style: normal;
-    Color: #929191;
+    Color: #fff;
     line-height: 14px;
     margin-top: 14px;
   }
@@ -432,7 +456,7 @@
     font-family: NotoSansJP-Bold;
     font-size: 50px;
     font-style: normal;
-    Color: #000000;
+    Color: #fff;
     margin-top: 10px;
     margin-bottom: 15px;
     letter-spacing: 0.1rem;
@@ -444,7 +468,7 @@
     font-size: 20px;
     font-weight: 700;
     font-style: normal;
-    Color: #000000;
+    Color: #fff;
     line-height: 20px;
   }
 
@@ -458,7 +482,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #000; */
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -493,29 +517,28 @@
 
   .swiper-heading h2 {
     font-family: NotoSansJP-Bold;
-
     font-size: 1.4rem;
     margin-bottom: 50px;
     font-weight: 700;
     letter-spacing: 0.06em;
-    color: #000;
+    color: #fff;
   }
 
   .num {
     font-weight: 700;
     font-size: 130px;
-    color: #000;
+    color: #fff;
   }
 
   .slider-img-title span {
     font-size: 16px;
-    color: #a6a6a6;
+    color: #fff;
     font-family: NotoSansJP-Medium;
   }
 
   .slider-img-title h2 {
     font-size: 30px;
-    color: #000000;
+    color: #fff;
     font-family: NotoSansJP-Bold;
     margin-top: 22px;
     font-weight: 700;
@@ -523,7 +546,7 @@
 
   .slider-img-about h2 {
     font-size: 20px;
-    color: #000;
+    color: #fff;
     font-family: NotoSansJP-Bold;
     margin: 67px 0px 30px;
   }
@@ -532,7 +555,7 @@
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #000;
+    color: #fff;
     font-family: NotoSansJP-Regular;
   }
 
@@ -552,7 +575,7 @@
   .custom-button-next,
   .swiper-rtl .custom-button-prev {
     top: 0%;
-    right: 5%;
+    right: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -566,7 +589,7 @@
   .custom-button-prev,
   .swiper-rtl .custom-button-next {
     left: auto;
-    right: 10%;
+    right: 15%;
     top: 0%;
     display: flex;
     justify-content: center;
@@ -580,35 +603,45 @@
   }
 
   .custom-swiper-pagination {
-    left: 33%;
+    left: 28%;
     width: 100%;
     top: 0%;
     font-size: 16px;
     font-weight: 600;
+    color: #fff;
   }
 
   /* section sitemap  */
 
   .section-sitemap {
     padding: 190px 0 120px;
-    background: #000;
+    background: #1d5594;
   }
 
   .sitemap-title {
     text-align: center;
   }
-  .sitemap-title h2{
-     font-family: DIN-Bold;
-     color: #dadada;
-     font-size: 30px;
-     font-weight: 700;
+
+  .sitemap-title h2 {
+    font-family: DIN-Bold;
+    color: #dadada;
+    font-size: 30px;
+    font-weight: 700;
   }
-   .sitemap-title span{
-     font-family: NotoSansJP-Bold;
-     color: #dadada;
-     font-weight: 700;
-     font-size: 14px;
-   }
+
+  .policy-title-text h3 {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: DIN-Medium;
+  }
+
+  .sitemap-title span {
+    font-family: NotoSansJP-Bold;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
   .vision-sitemap img {
     width: 100%;
     height: 100%;
@@ -676,7 +709,7 @@
     .policy-content {
       flex-direction: column;
     }
-    
+
     .slider-img-about {
       display: none;
     }
@@ -718,23 +751,30 @@
       left: 8%;
       top: 25%;
     }
-    .policy-title-img{
-    width: 65%;
-    margin: 35px auto 0;
+
+    .policy-title-img {
+      width: 65%;
+      margin: 35px auto 0;
     }
-     .vision-title-img{
+
+    .vision-title-img {
       width: 80%;
       margin: 35px auto 0;
     }
-     .custom-button-next,
+
+    .custom-button-next,
     .swiper-rtl .custom-button-prev {
       top: 25%;
     }
-     .custom-button-prev,
+
+    .custom-button-prev,
     .swiper-rtl .custom-button-next {
       top: 25%;
     }
 
+    .most-intersting h2 {
+      font-size: 40px;
+    }
   }
 
   @media screen and (max-width: 400px) {
@@ -742,54 +782,68 @@
       left: 2%;
       top: 35%;
     }
+
     .custom-button-next,
     .swiper-rtl .custom-button-prev,
     .custom-button-prev,
     .swiper-rtl .custom-button-next {
       top: 13%;
     }
-   .policy-title-img{
-    width: 65%;
-    margin: 35px auto 0;
+
+    .policy-title-img {
+      width: 65%;
+      margin: 35px auto 0;
     }
-     .vision-title-img{
+
+    .vision-title-img {
       width: 80%;
       margin: 35px auto 0;
     }
-     .custom-button-next,
-     .swiper-rtl .custom-button-prev {
+
+    .custom-button-next,
+    .swiper-rtl .custom-button-prev {
       top: 30%;
     }
-     .custom-button-prev,
+
+    .custom-button-prev,
     .swiper-rtl .custom-button-next {
       top: 30%;
     }
 
+    .most-intersting h2 {
+      font-size: 20px;
+    }
   }
 
   @media only screen and (max-width:767px) {
     .section-policy {
       padding: 30px 5% 60px;
     }
+
     .policy-title {
       margin: 30px auto;
     }
+
     .policy-title h3 {
       font-size: 26px;
       letter-spacing: 2.8px;
       line-height: 2;
     }
+
     .policy-title-img {
-    width: 65%;
-    margin: 35px auto 0;
+      width: 65%;
+      margin: 35px auto 0;
     }
-    .vision-title-img{
+
+    .vision-title-img {
       width: 80%;
       margin: 35px auto 0;
     }
-    .vision-content{
+
+    .vision-content {
       padding: 100px 0px;
     }
+
     .mission-content {
       padding: 100px 0px 0px;
       margin-bottom: -1px;

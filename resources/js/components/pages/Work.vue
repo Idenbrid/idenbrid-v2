@@ -3,11 +3,17 @@
     <div>
          <Navbar />
 <main>
-   <div class="hero_Heading">
+   <!-- <div class="hero_Heading">
     <h2 class="hero pb-2">WORKS</h2>
     <p class="work-subcontents__text">このページでは当社がこれまで手がけてきたシステム開発・アプリ構築・ウェブ制作などのポートフォリオを公開しています。</p>
-</div>
-        <section class="work mycontents-wide">
+</div> -->
+<div class="mv_textarea">
+        <h2>
+            <strong class="en entxt">WORKS</strong>
+            <span class="jptxt">このページでは当社がこれまで手がけてきたシステム開発・アプリ構築・ウェブ制作などのポートフォリオを公開しています。</span>
+        </h2>
+    </div>
+        <!-- <section class="work mycontents-wide">
             <ul class="work-contents">
                 <li v-for="work in works" :key="work.id" class="work-contents__list">
                     <router-link :to="'/work/detail/'+work.id">
@@ -18,34 +24,66 @@
                     </router-link>
                 </li>
             </ul>
-        </section>
-
+        </section> -->
+<div class="works--content highlight_blk">
+                <ul class="works--content--link">
+                    <li><a href="https://tomorrowgate.co.jp/works/" class="en categoryitem current">CLIENT</a>
+                    </li>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/visionmap/"
+                            class="en categoryitem">visionmap</a></li>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/web/" class="en categoryitem">web</a></li>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/graphic/" class="en categoryitem">graphic</a>
+                    </li>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/movie/" class="en categoryitem">movie</a>
+                    </li>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/other/" class="en categoryitem">other</a>
+                    </li>
+                </ul>
+                <div  class="works--content--mainarea">
+                        <router-link :to="'/work/detail/'+work.id"  v-for="work in works" :key="work.id" class="works--content--item hoverScale">
+                        <div class="thumb">
+                            <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
+                            </div>
+                            <div class="scaleImg">
+                                <img :src="'https://admin-idenbrid.idenbrid.jp/public/storage/work_images/'+work.image" alt="">
+                            </div>
+                        </div>
+                        <h3>{{work.title}}</h3>
+                        </router-link>
+                                     
+                </div>
+                <div class="wp-pagenavi" role="navigation">
+                    <span aria-current="page" class="current">1</span><a class="page larger" title="ページ 2"
+                        href="https://tomorrowgate.co.jp/works/page/2/">2</a><a class="nextpostslink" rel="next"
+                        aria-label="Next Page" href="https://tomorrowgate.co.jp/works/page/2/"><i class='fas fa-angle-right'></i></a>
+                </div>
+            </div>
   <section class="menu">
     <ul class="menu-contents mycontents-wide">
         <li class="menu-contents__list">
             <router-link to="/about/">
-                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/company.svg" alt="" loading="lazy">
+                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg" alt="" loading="lazy">
                 <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">会社概要</p>
-                    <h4 class="menu-contents__list__title">COMPANY</h4>
+                    <p class="menu-contents__list__subtitle">経営理念</p>
+                    <h4 class="menu-contents__list__title">Policy</h4>
                 </div>
             </router-link>
         </li>
         <li class="menu-contents__list">
             <router-link to="/blog/">
-                <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news" src="/public/assets/img/icons/WWW.png" alt="" loading="lazy">
+                <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news" src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
                 <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">ブログ</p>
-                    <h4 class="menu-contents__list__title">BLOG</h4>
+                    <p class="menu-contents__list__subtitle">事業紹介</p>
+                    <h4 class="menu-contents__list__title">Business</h4>
                 </div>
             </router-link>
         </li>
         <li class="menu-contents__list">
             <router-link to="/onlinedevelopmenthub/">
-                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Partnership.png" alt="" loading="lazy">
+                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg" alt="" loading="lazy">
                 <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">オンライン開発ハブ</p>
-                    <h4 class="menu-contents__list__title">DEVELOPEMENT</h4>
+                    <p class="menu-contents__list__subtitle">会社概要</p>
+                    <h4 class="menu-contents__list__title">Company</h4>
                 </div>
             </router-link>
         </li>
@@ -257,5 +295,197 @@ import Footer from "../layout/Footer.vue";
         margin-bottom: 30px;
         margin-left: 0 !important;
     }
+}
+
+
+
+.works--content {
+    padding: 60px 10% 120px;
+    background-color: #fff;
+}
+.works.loaded .works--content--link {
+    transform: translateY(0);
+    opacity: 1;
+}
+.works--content--link {
+    display: flex;
+    margin-bottom: 50px;
+    transform: translateY(15%);
+    transition: .6s;
+    opacity: 1;
+}
+.works--content--link li {
+    margin-right: 30px;
+}
+.works--content--link .categoryitem {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: .05px;
+    position: relative;
+    font-family: DIN-Bold;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.works--content--link .categoryitem::after {
+    content: "";
+    background: #000;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s;
+    transform-origin: right top;
+}
+.works--content--link .categoryitem:hover::after {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+.works--content--link .categoryitem.current:after {
+    transform: scale(1, 1);
+}
+.works--content--mainarea {
+    display: flex;
+    flex-wrap: wrap;
+}
+.works--content--item {
+    margin-bottom: 72px;
+    transform: translateY(5%);
+    transition: .8s;
+    opacity: 1;
+}
+.works--content--item {
+    width: 33.333%;
+}
+.works.loaded .works--content--item{
+    transform: translateY(0);
+    opacity: 1;
+}
+.hoverScale .thumb {
+    overflow: hidden;
+    position: relative;
+}
+.hoverScale .thumb .hvrtxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.4s;
+    transform: translate(-34%, -20%);
+    opacity: 0;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.hoverScale .thumb .hvrtxt .more_txt {
+    color: #DADADA;
+    font-size: 14px;
+    font-family: DIN-Bold;
+    letter-spacing: 0.06px;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 20px;
+    font-weight: 700;
+}
+.hoverScale .thumb .hvrtxt .more_txt::after, .hoverScale .thumb .hvrtxt .more_txt::before {
+    content: "";
+    height: 1px;
+    background-color: #DADADA;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: 0.3s;
+}
+.hoverScale .thumb .hvrtxt .more_txt::before {
+    width: 10px;
+}
+.hoverScale .thumb .hvrtxt .more_txt .underline {
+    position: relative;
+}
+.hoverScale .thumb .hvrtxt .more_txt .underline::after {
+    content: "";
+    background: #DADADA;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s;
+    transform-origin: right top;
+}
+.hoverScale .thumb .hvrtxt .more_txt::after, .hoverScale .thumb .hvrtxt .more_txt::before {
+    content: "";
+    height: 1px;
+    background-color: #DADADA;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: 0.3s;
+}
+.hoverScale .thumb .hvrtxt .more_txt::after {
+    width: 6px;
+    transform: rotate(45deg) translateY(-3px);
+}
+.hoverScale .thumb .scaleImg {
+    transition: 0.4s;
+    backface-visibility: hidden;
+}
+.hoverScale .thumb::after {
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.4s;
+    backface-visibility: hidden;
+}
+.works--content--item h3 {
+    margin: 20px 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06px;
+    color: #000;
+    display: inline-block;
+    padding-bottom: 3px;
+    font-family: NotoSansJP-Bold;
+}
+@media screen and (max-width: 556px){
+.works--content {
+    padding: 60px 5% 80px;
+}
+.works--content--link {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.works--content--link li {
+    width: 48%;
+    margin-bottom: 25px;
+    margin-right: 0;
+    position: relative;
+}
+.works--content--link li::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #DADADA;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.works--content--item {
+    display: block;
+    margin-bottom: 40px;
+}
+.works--content--item h3 {
+    margin: 10px 0 8px;
+    font-size: 14px;
+}
+.works--content--item{
+    width: 100%;
+}
 }
 </style>

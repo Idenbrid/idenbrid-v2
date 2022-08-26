@@ -1,12 +1,13 @@
  <template>
     <div>
         <Navbar />
+          <div class="mv_textarea">
+        <h2>
+            <strong class="en entxt">Document Request</strong>
+            <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+        </h2>
+    </div>
         <main>
-        
-            <div class="hero_Heading">
-                <h2 class="hero">Document Request</h2>
-                <p class="blog-subcontents__text">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</p>
-            </div>
             <section class="">
                 <div data-s-0e16e919-25dd-47be-9410-c87b0ca48625="" class="sd">
                     <div data-s-02bbc519-c345-4334-95d8-54c8794e13a6="" class="sd">
@@ -155,31 +156,31 @@
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/company.svg"
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
                                 alt="">
                             <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">会社概要</p>
-                                <h4 class="menu-contents__list__title">COMPANY</h4>
+                                <p class="menu-contents__list__subtitle">経営理念   </p>
+                                <h4 class="menu-contents__list__title">Policy</h4>
                             </div>
                         </router-link>
                     </li>
                     <li class="menu-contents__list">
                         <router-link to="/blog/">
                             <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
-                                src="/public/assets/img/icons/WWW.png" alt="">
+                                src="/public/assets/img/icons/Bussines-icon.svg" alt="">
                             <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">ブログ</p>
-                                <h4 class="menu-contents__list__title">BLOG</h4>
+                                <p class="menu-contents__list__subtitle">事業紹介</p>
+                                <h4 class="menu-contents__list__title">Business</h4>
                             </div>
                         </router-link>
                     </li>
                     <li class="menu-contents__list">
                         <router-link to="/onlinedevelopmenthub/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Partnership.png"
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
                                 alt="">
                             <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">オンライン開発ハブ</p>
-                                <h4 class="menu-contents__list__title">DEVELOPEMENT</h4>
+                                <p class="menu-contents__list__subtitle">会社概要</p>
+                                <h4 class="menu-contents__list__title">Company</h4>
                             </div>
                         </router-link>
                     </li>
@@ -242,8 +243,7 @@
         height: auto;
         justify-content: space-between;
         margin: auto;
-        padding: 60px 32px 60px;
-        width: 1300px;
+        padding: 60px 10% 120px;
         max-width: 100%;
         margin-top: 60px;
     }
@@ -286,7 +286,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         height: auto;
-        justify-content: center;
+        justify-content: flex-start;
         margin: 0px 0px 0px 0px;
         transform: translate(1px, 1px);
         width: 100%;
@@ -401,7 +401,7 @@
         margin: 0px 0px 0px 20px;
         opacity: 1;
         padding: 0px 16px 0px 16px;
-        width: 400px;
+        width: 40%;
         max-width: calc(100% - 20px);
     }
 
@@ -623,13 +623,13 @@
     }
 
     .sd[data-s-6515d892-7269-4cdb-aa2c-63ffa4072f0b] {
-        background: #ff8602;
-        border-radius: 32px;
+        background: var(--textcolor);
+        border-radius: 5px;
         box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%);
         color: #333;
         flex: none;
         font-size: 15px;
-        height: 68px;
+        height: 52px;
         justify-content: center;
         margin: 24px 0px 0px 0px;
         opacity: 1;
@@ -931,12 +931,12 @@
     .sd[data-s-2af694e2-d08a-446b-bf98-d310f82e8ff5] {
         align-content: center;
         align-items: center;
-        background: #ff8602;
-        border-radius: 128px;
+            background: var(--textcolor);
+        border-radius: 5px;
         flex: none;
         flex-direction: row;
         flex-wrap: nowrap;
-        height: 68px;
+        height: 52px;
         justify-content: center;
         margin: 60px 0px 0px 0px;
         padding: 0px;

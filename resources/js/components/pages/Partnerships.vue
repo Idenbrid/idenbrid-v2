@@ -1,6 +1,7 @@
 <template>
     <div>
          <Navbar />
+         
 <main>
     <div class="hero_Heading">
     <div class="recruit-hero-sec mycontents-wide">
@@ -771,6 +772,7 @@ var swiper = new Swiper(".office_view_slider", {
 }
 
 @media (max-width: 767px) {
+    
     .entry__btns {
         display: block;
         text-align: center;

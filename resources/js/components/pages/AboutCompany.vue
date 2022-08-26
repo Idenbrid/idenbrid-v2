@@ -1,12 +1,18 @@
 <template>
     <div>
          <Navbar />
-         <div class="hero_Heading">
+         <!-- <div class="hero_Heading">
         <h2 class="hero">ABOUT</h2>
         <p class="about-subcontents__text">こちらは当社の情報や沿革など会社概要を確認いただけすページです。</p>
+    </div> -->
+     <div class="mv_textarea">
+        <h2>
+            <strong class="en entxt">ABOUT</strong>
+            <span class="jptxt">こちらは当社の情報や沿革など会社概要を確認いただけすページです。</span>
+        </h2>
     </div>
         <div class="company--index highlight_blk">
-            <a href="https://tomorrowgate.co.jp/compamy/profile/" class="hoverScale company--item">
+            <router-link to="/access/" class="hoverScale company--item">
                 <div class="thumb">
                     <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
                     <div class="scaleImg">
@@ -17,8 +23,9 @@
                     <strong>会社概要</strong>
                     <span class="en">PROFILE</span>
                 </h3>
-            </a>
-            <a href="https://tomorrowgate.co.jp/compamy/message/" class="hoverScale company--item">
+            </router-link>
+            
+            <router-link to="/message/" class="hoverScale company--item">
                 <div class="thumb">
                     <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
                     <div class="scaleImg">
@@ -29,9 +36,9 @@
                     <strong>代表挨拶</strong>
                     <span class="en">MESSAGE</span>
                 </h3>
-            </a>
+            </router-link>
          
-            <router-link to="" class="hoverScale company--item">
+            <router-link to="/office/" class="hoverScale company--item">
                 <div class="thumb">
                     <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
                     <div class="scaleImg">
@@ -55,7 +62,10 @@
                     <span class="en">Member</span>
                 </h3>
                </router-link>
-            <router-link to="" class="hoverScale company--item">
+
+               
+               
+            <router-link to="/digitalasset/" class="hoverScale company--item">
                 <div class="thumb">
                     <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
                     <div class="scaleImg">
@@ -64,9 +74,9 @@
                 </div>
                 <h3 class="company_ttl">
                     <strong>アクセス</strong>
-                    <span class="en">ACCESS</span>
+                    <span class="en">Digital Assets</span>
                 </h3>
-            </router-link>
+            </router-link> 
         </div>
          <Footer />
     </div>
@@ -100,7 +110,7 @@ import Footer from "../layout/Footer.vue";
     flex-wrap: wrap;
 }
 .company--item {
-    width: 32.5%;
+    width: 32.4%;
     transform: translateY(5%);
     transition: .6s;
 }
@@ -226,7 +236,7 @@ img {
 @media screen and (max-width: 767px){
 
 .company--index{
-    padding: 20px 8% 60px;
+    padding: 20px 6% 60px;
 }
 .hero{
     padding-top: 60px;

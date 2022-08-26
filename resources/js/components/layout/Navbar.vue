@@ -91,7 +91,7 @@
                         <!--<li class="header-pc__nav__list"><router-link to="/news/">NEWS</router-link></li>-->
 
                         <li class="header-pc__nav__list header-pc__nav__list_img mr-0 pr-0">
-                            <router-link to="/contact/">問い合せ</router-link>
+                            <router-link to="/contact/">お問い合わせ</router-link>
                         </li>
                         <!-- <img src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/paper-airplane.svg" alt=""> -->
                     </ul>
@@ -159,9 +159,15 @@
                 </div>
             </div>
         </header>
+       
         <div class="side_fix on">
             <div class="fix_btn">
                 <router-link to="/download-form/"><span class="txt">資料ダウンロード</span></router-link>
+            </div>
+            <div class="pararel fix_btn">
+                <router-link to="/faqs" class="key">
+                    <span class="txt">よくある質問</span>
+                </router-link>
             </div>
         </div>
     </div>
@@ -218,14 +224,14 @@ jQuery('.header-sp__fixed__menu__left__list__pulus_blog').on('click', function (
     transition: 0.4s;
 }
 .side_fix .fix_btn a {
-    background-color: #000;
+    background-color: rgb(57, 108, 162);
     display: flex;
-    border: solid 1px #dadada;
+    border: solid 1px rgb(57, 108, 162);
     cursor: pointer;
     justify-content: center;
     align-items: center;
     padding: 25px 0;
-    opacity: 0.75;
+    height: 22vh;
 }
 .side_fix .fix_btn a .txt {
     display: block;
@@ -243,16 +249,7 @@ jQuery('.header-sp__fixed__menu__left__list__pulus_blog').on('click', function (
 .side_fix .fix_btn {
     transition: 0.4s;
 }
-.side_fix .fix_btn a {
-    background-color: #000;
-    display: flex;
-    border: solid 1px #dadada;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0;
-    opacity: 0.75;
-}
+
 .side_fix .fix_btn.pararel {
     margin-top: 20px;
 }

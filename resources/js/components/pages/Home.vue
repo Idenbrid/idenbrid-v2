@@ -12,7 +12,7 @@
                     <br class="top-hero__title__br-pc">
                     <span class="horo-text-b" style="transition-delay: 1.15s;">クリエイティブな挑戦へ。</span>
                 </h2>
-                <a class="btn-views" href="">View More</a>
+                <a class="btn-views" href="">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></a>
                 <video class="top-hero__video" src="/public/assets/videos/Banner_video.mp4" autoplay muted loop
                     playsinline></video>
             </section>
@@ -22,7 +22,7 @@
                 <span class="scroll__arrow"><span class="scroll__arrow__box"></span></span>
             </div>
             <!-- Who is Idenbrid-->
-            <section class="section_idenbrid mycontents-wide">
+            <!-- <section class="section_idenbrid mycontents-wide">
                 <h3 class="content-title">WHO IS IDENBRID</h3>
                 <div class="about_iden idenbrid">
                     <div class="about-iden-container container">
@@ -38,6 +38,38 @@
                                 当社が、受託開発において大切にしているのは「ユーザー体験の改善」つまりは、お客様のニーズを深く掘り下げて、先を読みながら提案を行う「顧客絶対主義」です。サイトやシステムを使うお客様やそのビジネスに寄り添って仕事をしています。
                             </p>
 
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <section>
+                <div class="c-message">
+                    <div class="c-message__bgimg"
+                        style="background-image: url('https://www.unilabo.jp/wp-content/themes/unilabo-html/dist/assets/images/img-message-bg.jpg'); visibility: visible; opacity: 1; transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0.5s;"
+                        data-sr-id="2"></div>
+                    <div class="mycontents-wide">
+                        <div class="c-message__content">
+                            <div class="c-message__box large-7 small-12">
+                                <h3 data-v-62c86c4e="" class="content-title c-message__title">TOP MESSAGE</h3>
+                                </h2>
+                                <div class="c-message__title-sub">「インフラを創る」<br>
+                                    という夢に向かって。</div>
+                                <div class="c-message__button u-hidden-sm"><a href="/solutions/"
+                                        class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View
+                                        More</a></div>
+                            </div>
+                            <div class="large-5 small-12"><img class="c-message__img u-hidden-sm u-hidden-lg"
+                                    src="https://www.unilabo.jp/wp-content/themes/unilabo-html/dist/assets/images/img-message-02.png"
+                                    alt="" data-sr-id="3"
+                                    style="visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 12, 0, 1);"><img
+                                    class="c-message__img"
+                                    src="https://www.unilabo.jp/wp-content/uploads/2020/09/img-message-02-01.png" alt=""
+                                    data-sr-id="4"
+                                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 1.2s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 1.2s;">
+                            </div>
+                            <div class="c-message__button u-hidden-lg">
+                                <router-link class="c-button is-md" to="/about-company/">View More</router-link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -118,7 +150,7 @@
                 </router-link>
             </section> -->
             <!-- other service -->
-            <section class="otherservice mycontents-wide mt-5">
+            <section class="otherservice mycontents-wide">
                 <h3 class="content-title">SERVICE</h3>
                 <div class="service-row  my-5">
                     <div class="service-col">
@@ -144,16 +176,16 @@
                             class="" width="100%">
 
                     </div>
-                    <div class="service-col">
+                    <div class="service-col align-items-end">
                         <img alt=""
                             src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1592x400_v-fms_webp_8da00051-3ea8-48f5-a0e3-885a8453f02d_small.webp"
                             class="service-content-img" width="100%">
-                        <p class="service-p">「ペイトナー ファクタリング（旧yup
+                        <p class="service-p text-right">「ペイトナー ファクタリング（旧yup
                             先払い）」は、取引先へ送った入金前の請求書を買い取り、報酬を最短10分でお支払いするフリーランス向けオンライン型ファクタリングサービスです。</p>
                         <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
                     </div>
-                    
+
                 </div>
                 <div class="service-row my-5">
                     <div class="service-col">
@@ -191,6 +223,8 @@
                 <div class="new-box new">
                     <div class="new-listing new" v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 5">
                         <router-link :to="'/news/detail/'+detail.id+'/'" class="new-link new">
+                            <div class="img_box" bis_skin_checked="1" style="
+"><img src="https://tomorrowgate.co.jp/asset/img/common/default.jpg" alt=""></div>
                             <div class="new-item new">
                                 <div class="new-meta">
                                     <p class="text new mr-2 mt-0 new-date">
@@ -223,10 +257,10 @@
                 <ul class="about-contents">
                     <li class="about-contents__list">
                         <router-link to="/about/">
-                            <img class="about-contents__list__thumbnail" src="/public/assets/img/icons/company.svg"
+                            <img class="about-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
                                 alt="" loading="lazy">
                             <div class="about-contents__list__text">
-                                <p class="about-contents__list__subtitle">会社概要</p>
+                                <p class="about-contents__list__subtitle">経営理念</p>
                                 <h4 class="about-contents__list__title">Policy</h4>
                             </div>
                         </router-link>
@@ -234,26 +268,26 @@
                     <li class="about-contents__list">
                         <router-link to="/blog/">
                             <img class="about-contents__list__thumbnail about-contents__list__thumbnail_news"
-                                src="/public/assets/img/icons/WWW.png" alt="" loading="lazy">
+                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
                             <div class="about-contents__list__text">
-                                <p class="about-contents__list__subtitle">ブログ</p>
+                                <p class="about-contents__list__subtitle">事業紹介</p>
                                 <h4 class="about-contents__list__title">Business</h4>
                             </div>
                         </router-link>
                     </li>
                     <li class="about-contents__list">
                         <router-link to="/onlinedevelopmenthub/">
-                            <img class="about-contents__list__thumbnail" src="/public/assets/img/icons/Partnership.png"
+                            <img class="about-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
                                 alt="" loading="lazy">
                             <div class="about-contents__list__text">
-                                <p class="about-contents__list__subtitle">オンライン開発ハブ</p>
+                                <p class="about-contents__list__subtitle">会社概要</p>
                                 <h4 class="about-contents__list__title">Company</h4>
                             </div>
                         </router-link>
                     </li>
                 </ul>
             </section>
-            <section class="work mycontents-wide">
+            <!-- <section class="work mycontents-wide">
                 <h3 class="content-title content-title_work">WORKS</h3>
                 <p class="content-text content-text_work">このページでは当社がこれまで手がけてきたシステム開発・アプリ構築・ウェブ制作などのポートフォリオを公開しています。</p>
                 <div class="swiper WorkSlider">
@@ -272,19 +306,13 @@
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
-
                 </div>
-
-
-                <router-link class="viewmore-btn viewmore-btn_center" to="/works/">View More
-                    <!--<span class="viewmore-btn__img">
-                        <img src="/public/assets/img/icons/btn-arrow.svg" alt="" loading="lazy">
-                        <img src="/public/assets/img/icons/btn-arrow-white.svg" alt="" loading="lazy"></span>-->
+                <router-link class="viewmore-btn viewmore-btn_center" to="/works/">View More      
                 </router-link>
-            </section>
+            </section> -->
 
             <!-- video section -->
-            <section class="movie mycontents-wide" id="MOVIE">
+            <!-- <section class="movie mycontents-wide mt-5" id="MOVIE">
                 <div class="container">
                     <h3 class="content-title content-title_blog">CORPORATE MOVIE</h3>
                     <div class="movie-wrap">
@@ -297,9 +325,68 @@
                             私たちの会社がどのような会社なのかを当社CEOとCDOが３分のYouTubeビデオで説明しています。IT開発のどんなことを得意としている会社なのか、ご覧ください。</p>
                     </div>
                 </div>
+            </section> -->
+
+            <section class="mt-5">
+                <div class="c-recruit">
+                    <div class="c-recruit__head">
+                        <div class="c-recruit__bgimg"
+                            style="background-image: url('https://www.unilabo.jp/wp-content/themes/unilabo-html/dist/assets/images/img-recruit-bg-01.jpg');">
+                        </div>
+                        <div class="mycontents-wide">
+                            <div class="c-recruit__head-inner">
+
+                                <h3 class="content-title is-color-white recruit-title">RECRUIT</h3>
+                                <div class="c-recruit__head-text">一番の自慢はチームメイト。<br>
+                                    ここには、まっすぐ向き合う仲間がいる。</div>
+                                <div class="c-recruit__head-button">
+                                    <router-link class="c-button is-md is-white" to="/recruit/">View More</router-link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-recruit__bottom">
+                        <div class="mycontents-wide">
+                            <div class="c-recruit__bottom-block row" data-sr-id="6"
+                                style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.6s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.6s;">
+                                <div class="large-6 small-12">
+                                    <router-link class="c-recruit__bottom-item" to="/movies/">
+
+                                        <div class="c-recruit__bottom-bgimg"
+                                            style="background-image: url('https://www.unilabo.jp/wp-content/uploads/2022/06/471b0905ac9a6f79f6ffbd1452757101-scaled.jpg');">
+                                        </div>
+                                        <div class="c-recruit__bottom-content">
+                                            <div class="c-recruit__bottom-title c-heading is-lg is-color-white">
+                                                <span>MOVIE</span><small>動画で見るユニラボ</small></div>
+                                            <div class="c-recruit__bottom-text">多様なスキルを持つ<br class="u-hidden-lg">
+                                                メンバーをご紹介</div>
+                                            <div class="c-recruit__bottom-button">View More</div>
+                                        </div>
+                                    </router-link>
+                                </div>
+                                <div class="large-6 small-12" data-sr-id="7"
+                                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.8s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.8s;">
+                                    <router-link class="c-recruit__bottom-item" to="/blog/">
+
+                                        <div class="c-recruit__bottom-bgimg"
+                                            style="background-image: url('https://www.unilabo.jp/wp-content/uploads/2020/09/img-recruit-02.jpg');">
+                                        </div>
+                                        <div class="c-recruit__bottom-content">
+                                            <div class="c-recruit__bottom-title c-heading is-lg is-color-white">
+                                                <span>BLOG</span><small>カルチャー</small></div>
+                                            <div class="c-recruit__bottom-text">社員を支援する様々な制度</div>
+                                            <div class="c-recruit__bottom-button">View More</div>
+                                        </div>
+                                    </router-link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+
             <!-- end -->
-            <section class="blog mycontents-wide">
+            <section class="blog-home mycontents-wide">
                 <h3 class="content-title content-title_blog">BLOG</h3>
                 <p class="content-text content-text_blog">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</p>
                 <ul class="blog-contents">
@@ -390,7 +477,7 @@
                 </div>
 
             </section> -->
-        
+
             <!-- <section class="footer-section">
 
             <div class="container-fluid">
@@ -415,24 +502,26 @@
                 </div>
             </div>
         </section> -->
-        <div class="bnr_area">
-        <a href="https://twitter.com/koheinishizaki" target="_blank" class="hoverScale">
-            <div class="thumb">
-                <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
-                <div class="scaleImg">
-                    <img src="https://tomorrowgate.co.jp/asset/img/top/tw-bnr.jpg" alt="">
-                </div>
+            <div class="bnr_area">
+                <a href="https://twitter.com/koheinishizaki" target="_blank" class="hoverScale">
+                    <div class="thumb">
+                        <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
+                        <div class="scaleImg">
+                            <img src="https://tomorrowgate.co.jp/asset/img/top/tw-bnr.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UChN700y3HeGE_gLnUy_9yug" target="_blank" class="hoverScale">
+                    <div class="thumb">
+                        <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
+                        <div class="scaleImg">
+                            <img src="https://tomorrowgate.co.jp/asset/img/top/yt-bnr.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+
             </div>
-        </a>
-        <a href="https://www.youtube.com/channel/UChN700y3HeGE_gLnUy_9yug" target="_blank" class="hoverScale">
-            <div class="thumb">
-                <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
-                <div class="scaleImg">
-                    <img src="https://tomorrowgate.co.jp/asset/img/top/yt-bnr.jpg" alt="">
-                </div>
-            </div>
-        </a>
-    </div>
+
         </main>
         <Footer />
     </div>
@@ -591,122 +680,164 @@
 
 
     };
-
 </script>
 <style scoped>
-.col-content {
-    border: 1px solid #2B2B2B;
-}
-.bnr_area {
-    z-index: 1;
-    display: flex;
-    position: relative;
-    background: #000;
-}
-.bnr_area a {
-    width: 50%;
-    border: 1px solid #2b2b2b;
-}
-.hoverScale .thumb {
-    overflow: hidden;
-    position: relative;
-}
-.hoverScale .thumb .hvrtxt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: 0.4s;
-    transform: translate(-34%, -20%);
-    opacity: 0;
-    z-index: 1;
-    backface-visibility: hidden;
-}
-.hoverScale .thumb .hvrtxt .more_txt {
-    color: #dadada;
-    font-size: 1.4rem;
-    font-family: "DIN";
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    position: relative;
-    padding-right: 20px;
-    font-weight: 700;
-}
-.hoverScale .thumb .hvrtxt .more_txt::before {
-    width: 10px;
-}
-.hoverScale .thumb .hvrtxt .more_txt::after, .hoverScale .thumb .hvrtxt .more_txt::before {
-    content: "";
-    height: 1px;
-    background-color: #dadada;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transition: 0.3s;
-}
-.hoverScale .thumb .hvrtxt .more_txt .underline {
-    position: relative;
-}
-.hoverScale .thumb .hvrtxt .more_txt .underline::after {
-    content: "";
-    background: #dadada;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    transform: scale(0, 1);
-    transition: transform 0.3s;
-    transform-origin: right top;
-}
-.hoverScale .thumb .hvrtxt .more_txt::after {
-    width: 6px;
-    transform: rotate(45deg) translateY(-3px);
-}
-.bnr-img{
-width: 100%;
-height: auto;
-}
-@media screen and (max-width: 896px){
-.bnr_area {
-    display: block;
-}
-.bnr_area a {
-    width: 100%;
-    display: block;
-}
-}
-.btn-views{
-    border: 1px solid #000;
-    border-radius: 15px;
-    color: #000;
-    cursor: pointer;
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: .1em;
-    margin-left: 8px;
-    margin-top: 30px;
-    opacity: 1;
-    padding: 19px 0;
-    position: relative;
-    text-align: center;
-    transition: .4s;
-    width: 250px;
-    z-index: 999;
-}
-.btn-views:hover{
-    opacity: 0.6;
-    color: #fff;
-    border: 1px solid var(--textcolor);  
-    transition: 0.4s; 
-    background: var(--textcolor); 
-}
-.btn-view:hover{
-    background: var(--textcolor);
-}
-.footer-section{
-    background-color:#000;
-}
+    .c-recruit__bottom-item:hover .c-recruit__bottom-bgimg {
+        transform: scale(1.1);
+        transition: 0.4s;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    f .recruit-title::after {
+        background-color: #fff;
+    }
+
+    .blog-home {
+        margin-bottom: 120px;
+        margin-top: 120px;
+    }
+
+    .is-color-white {
+        color: #fff;
+    }
+
+    .otherservice {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .col-content {
+        border: 1px solid #2B2B2B;
+    }
+
+    .bnr_area {
+        z-index: 1;
+        display: flex;
+        position: relative;
+        background: #000;
+    }
+
+    .bnr_area a {
+        width: 50%;
+        border: 1px solid #2b2b2b;
+    }
+
+    .hoverScale .thumb {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hoverScale .thumb .hvrtxt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: 0.4s;
+        transform: translate(-34%, -20%);
+        opacity: 0;
+        z-index: 1;
+        backface-visibility: hidden;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt {
+        color: #dadada;
+        font-size: 1.4rem;
+        font-family: "DIN";
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 20px;
+        font-weight: 700;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::before {
+        width: 10px;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::after,
+    .hoverScale .thumb .hvrtxt .more_txt::before {
+        content: "";
+        height: 1px;
+        background-color: #dadada;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transition: 0.3s;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt .underline {
+        position: relative;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt .underline::after {
+        content: "";
+        background: #dadada;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        transform: scale(0, 1);
+        transition: transform 0.3s;
+        transform-origin: right top;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::after {
+        width: 6px;
+        transform: rotate(45deg) translateY(-3px);
+    }
+
+    .bnr-img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 896px) {
+        .bnr_area {
+            display: block;
+        }
+
+        .bnr_area a {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .btn-views {
+        border: 2px solid rgba(37, 115, 176, 1);
+        border-radius: 5px;
+        color: rgba(37, 115, 176, 1);
+        cursor: pointer;
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: .1em;
+        margin-left: 8px;
+        margin-top: 90px;
+        opacity: 1;
+        padding: 19px 0;
+        position: relative;
+        text-align: center;
+        transition: .4s;
+        width: 250px;
+        z-index: 999;
+    }
+
+    .btn-views:hover {
+        color: #fff;
+        border: 1px solid rgba(37, 115, 176, 1);
+        transition: 0.4s;
+        background: rgba(37, 115, 176, 1);
+    }
+
+    .btn-view:hover {
+        background: var(--textcolor);
+    }
+
+    .footer-section {
+        background-color: #000;
+    }
+
     .service-content-img {
         height: auto;
         width: 300px;
@@ -769,6 +900,11 @@ height: auto;
         justify-content: flex-start;
     }
 
+    .new-listing .img_box {
+        margin-right: 25px;
+        width: 160px;
+    }
+
     .new-listing:nth-child(1) {
         border-top: 0px solid #bbbbbb;
     }
@@ -802,6 +938,7 @@ height: auto;
         flex-wrap: nowrap;
         justify-content: center;
         padding: 4px 8px 4px 8px;
+            font-size: 10px;
     }
 
     .new-box {
@@ -960,10 +1097,26 @@ height: auto;
 
     @media (max-width: 767px) {
         .new-box {
-            padding: 32px 32px 32px;
+            padding: 32px 15px;
             max-width: 100%;
         }
 
+        .new-date {
+            font-size: 10px;
+        }
+
+        .new-listing .img_box {
+            margin-right: 10px;
+            width: 116px;
+        }
+      .service-col{
+        max-width: 100%;
+        width: 100%;
+        margin: 25px 0px;
+      }
+      .otherservice .service-row{
+        flex-direction: column;
+      }
         .WorkSlider {
             overflow: hidden;
         }
@@ -1203,9 +1356,12 @@ height: auto;
     }
 
     @media (max-width: 767px) {
+        .blog-home {
+            margin: 50px auto 60px;
+        }
 
         .blog {
-          margin: 50px auto 60px;
+            margin: 50px auto 60px;
         }
 
         .content-text_blog {
@@ -1279,6 +1435,7 @@ height: auto;
         .about-iden-container {
             flex-direction: row;
         }
+
     }
 
     /* service section */
@@ -1544,6 +1701,10 @@ height: auto;
     }
 
     @media (max-width: 767px) {
+        .new-listing .img_box {
+            width: 115px;
+        }
+
         .work-contents__list__thumbnail {
             margin-bottom: 12px;
         }
@@ -1568,4 +1729,510 @@ height: auto;
         }
     }
 
+
+    .c-recruit__bottom {
+        background: #fff;
+        padding-bottom: 0.71429rem;
+    }
+
+    .c-recruit__bottom-block {
+        background: #fff;
+        position: relative;
+        margin-top: -6.78571rem;
+        padding-top: 1.07143rem;
+    }
+
+    .large-6 {
+        width: 50%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .c-recruit__bottom-item {
+        position: relative;
+        display: block;
+        text-decoration: none;
+    }
+
+    .c-recruit__bottom-bgimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .c-recruit__bottom-content {
+        position: relative;
+        z-index: 1;
+        height: 301px;
+    }
+
+    .c-recruit__bottom-title {
+        padding-top: 4.64286rem;
+        color: #fff;
+        text-align: center;
+        padding-bottom: 0 !important;
+    }
+
+    .c-recruit__bottom-text {
+        color: #fff;
+        margin-top: 50px;
+        padding-bottom: 3.64286rem;
+        text-align: center;
+        font-size: 1.28571rem;
+    }
+
+    .c-recruit__bottom-button {
+        position: relative;
+        display: block;
+        width: 240px;
+        height: 58px;
+        text-align: center;
+        line-height: 58px;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        background: var(--textcolor);
+        box-shadow: 0px 4px 7px rgb(0 0 0 / 15%);
+        border-radius: 5px;
+        transition: 1s;
+        margin: auto;
+    }
+
+    .c-recruit__bottom-title span {
+        font-size: 2.85714rem;
+    }
+
+    .u-hidden-lg {
+        display: none !important;
+    }
+
+    .c-recruit__bottom-item:hover {
+        opacity: 0.8;
+    }
+
+    .c-recruit__bottom-title small {
+        display: block;
+        font-size: 14px;
+    }
+
+    .c-message {
+        height: 35.42857rem;
+        margin-top: 5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .c-message__bgimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        width: 100%;
+        height: calc(100% - 90px);
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .c-message__bgimg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .c-message__content {
+        display: flex;
+    }
+
+    .large-7 {
+        width: 58.33333%;
+        padding: 50px 0px 0px;
+    }
+
+    .large-5 {
+        width: 41.66667%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+
+    .c-message__title {
+        text-align: left;
+        margin-top: 5rem;
+    }
+
+
+
+    .c-message__title small {
+        font-size: 1rem;
+        line-height: 2.14286;
+        font-weight: normal;
+    }
+
+    .c-message__title-sub {
+        margin-top: 4rem;
+        font-size: 2.28571rem;
+        letter-spacing: 0.1em;
+        line-height: 1.5625;
+        color: #102855;
+        font-weight: bold;
+    }
+
+
+    .c-button,
+    .c-button-social>a {
+        outline: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 14.5rem;
+        text-align: center;
+        background-color: #102855;
+        color: #fff;
+        border: 1px solid #102855;
+        text-decoration: none;
+        padding: 0.92857rem 1.71429rem;
+        position: relative;
+        transition: all .3s;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+
+    .c-button.is-md,
+    .c-button-social>a.is-md {
+        max-width: 15rem;
+        height: 58px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: .3s all;
+        margin: 0;
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-button.is-white,
+    .c-button-social>a.is-white {
+        background: #fff;
+        color: #102855;
+    }
+
+    .c-button.is-white:hover,
+    .c-button-social>a.is-white:hover {
+        background: #102855;
+        color: #fff;
+        transition: .3s all;
+    }
+
+
+    .c-button:hover,
+    .c-button-social>a:hover {
+        opacity: 1;
+        background-color: #fff;
+        color: #102855;
+    }
+
+    .c-button.is-md:hover::before,
+    .c-button-social>a.is-md:hover::before {
+        background: #333;
+    }
+
+    .c-button.is-md:hover,
+    .c-button-social>a.is-md:hover {
+        transition: .3s all;
+    }
+
+    .c-recruit {
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 5.71429rem;
+    }
+
+    .c-recruit__head {
+        position: relative;
+        background: #102855;
+    }
+
+    .c-recruit__bgimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: .1;
+    }
+
+
+    .c-recruit__head-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        margin: auto;
+        width: 65px;
+        height: 1px;
+        background: #fff;
+    }
+
+    .c-recruit__head-inner {
+        width: 50%;
+        padding: 4.2rem 0 9.42857rem;
+    }
+
+    .c-recruit__head-title {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        position: relative;
+        padding-bottom: 3rem;
+    }
+
+    .c-recruit__head-title span {
+        font-size: 85px;
+        line-height: 1.03529;
+        letter-spacing: 0.1em;
+    }
+
+    .c-recruit__head-title small {
+        font-size: 14px;
+        line-height: 2.14286;
+        margin-left: 2.14286rem;
+    }
+
+    .c-recruit__head-text {
+        color: #fff;
+        margin-top: 1.85714rem;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .c-recruit__head-button {
+        margin-top: 2.35714rem;
+    }
+
+    .c-button,
+    .c-button-social>a {
+        outline: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 14.5rem;
+        text-align: center;
+        background-color: #102855;
+        color: #fff;
+        border: 1px solid #102855;
+        text-decoration: none;
+        padding: 0.92857rem 1.71429rem;
+        position: relative;
+        transition: all .3s;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+
+
+
+    .c-button.is-white::before,
+    .c-button-social>a.is-white::before {
+        background: #102855;
+    }
+
+    .c-button.is-white::after,
+    .c-button-social>a.is-white::after {
+        background: #102855;
+    }
+
+    .c-message__bgimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        width: 100%;
+        height: calc(100% - 90px);
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .c-message__bgimg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+
+
+    .large-5 {
+        width: 41.66667%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .c-message__title span {
+        font-size: 65px;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        line-height: 1.03896;
+        color: #102855;
+        display: block;
+    }
+
+    .c-message__title small {
+        font-size: 1rem;
+        line-height: 2.14286;
+        font-weight: normal;
+    }
+
+    .c-message__title-sub {
+        margin-top: 4rem;
+        font-size: 2.28571rem;
+        letter-spacing: 0.1em;
+        line-height: 1.5625;
+        color: #102855;
+        font-weight: bold;
+    }
+
+    .c-message__img {
+        height: 741px;
+        object-fit: cover;
+    }
+
+    .c-message__button {
+        margin-top: 3.85714rem;
+    }
+
+    @media (max-width: 945px) {
+        .c-message__button {
+            margin-bottom: 3.85714rem;
+        }
+
+        .c-message__title-sub {
+            font-size: 24px;
+        }
+
+        .c-message__title span {
+            font-size: 30px;
+        }
+
+        .c-message {
+            height: 100%;
+        }
+
+        .c-recruit__head-title {
+            text-align: center;
+            display: block;
+            padding-bottom: 2.42857rem;
+        }
+
+        .c-recruit__bottom {
+            background: #102855;
+            padding-bottom: 0.71429rem;
+        }
+
+        .c-message__content {
+            flex-direction: column;
+        }
+
+        .small-12 {
+            width: 100%;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .c-recruit {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .c-recruit__head::after {
+            background-position: center right;
+            width: 100%;
+        }
+
+        .c-recruit__head-title {
+            text-align: center;
+            display: block;
+            padding-bottom: 2.42857rem;
+        }
+
+        .c-recruit__head-title span {
+            font-size: 40px;
+            display: block;
+        }
+
+        .c-recruit__head-title::after {
+            right: 0;
+            left: 0;
+        }
+
+        .c-recruit__head-title small {
+            margin-left: 0;
+        }
+
+        .c-recruit__bottom-item {
+            padding-bottom: 2rem;
+            margin-bottom: 1.21429rem;
+        }
+
+        .c-recruit__head-title::after {
+            right: 0;
+            left: 0;
+        }
+
+        .c-recruit__head-text {
+            font-size: 1.07143rem;
+            padding: 0 1.14286rem;
+        }
+
+        .c-recruit__head-inner {
+            width: 100%;
+        }
+
+        .c-recruit__head-button {
+            text-align: center;
+            position: relative;
+            z-index: 9;
+        }
+
+        .c-recruit__bottom-block {
+            background: #102855;
+        }
+
+        .c-recruit__bottom-text {
+            margin-top: 25px;
+        }
+
+        .c-recruit__bottom-button {
+            bottom: 0px;
+        }
+
+        .c-recruit__bottom-title {
+            padding-top: 50px;
+        }
+    }
 </style>

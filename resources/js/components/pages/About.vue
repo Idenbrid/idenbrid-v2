@@ -427,9 +427,10 @@ import Navbar from "../layout/Navbar.vue";
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    width: calc((100% - 415px) / 1);
-    text-align: center;
+    /* width: calc((100% - 415px) / 1);
+    text-align: center; */
     margin: auto;
+    color:#ffffff;
 }
 
 /*mission*/

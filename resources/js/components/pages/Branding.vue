@@ -1,11 +1,17 @@
 <template>
     <div>
         <Navbar />
+        <div class="mv_textarea">
+        <h2>
+            <strong class="en entxt">Branding</strong>
+            <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+        </h2>
+    </div>
         <main>
-            <div class="hero_Heading">
+            <!-- <div class="hero_Heading">
                 <h2 class="hero">Branding</h2>
                 <p class="blog-subcontents__text">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</p>
-            </div>
+            </div> -->
             <div id="contents">
 
                 <div class="branding--mv">
@@ -624,7 +630,7 @@
 </script>
 
 <style>
-    .mv_textarea .entxt {
+    /* .mv_textarea .entxt {
         display: block;
         margin-bottom: 20px;
         font-size: 4rem;
@@ -633,23 +639,14 @@
         transform: translateY(15%);
         transition: 0.6s;
         opacity: 0;
-    }
+    } */
 
-    @media screen and (max-width: 896px) {
+    /* @media screen and (max-width: 896px) {
         .mv_textarea .entxt {
             margin-bottom: 11px;
             font-size: 2.8rem;
         }
-    }
-
-    .mv_textarea .jptxt {
-        transform: translateY(15%);
-        transition: 0.6s;
-        opacity: 0;
-        font-size: 1.3rem;
-        letter-spacing: 0.08em;
-        color: #929191;
-    }
+    } */
 
     .voiceSlider {
         height: 100%;
@@ -792,19 +789,7 @@
         display: none;
     }
 
-    @media screen and (max-width: 896px) {
-        .hoverScale::after {
-            content: none;
-        }
-
-        .pc {
-            display: none;
-        }
-
-        .sp {
-            display: block;
-        }
-    }
+   
 
     @media screen and (min-width: 897px) {
         .hoverScale:hover .thumb::after {
@@ -1150,7 +1135,7 @@
         background: url(/assets/img/work.jpeg) no-repeat center;
         background-size: cover;
         padding: 100px 10%;
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     @media screen and (max-width: 896px) {
@@ -1543,7 +1528,9 @@
         letter-spacing: 0.08em;
         font-weight: 700;
     }
-
+ .branding--strengths--content .num{
+    color:#333333;
+ }
     @media screen and (min-width: 897px) {
         .branding--strengths--content .item {
             display: flex;

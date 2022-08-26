@@ -3,11 +3,17 @@
         <Navbar />
         <main>
             <!-- <div v-html="blogs.content"></div> -->
-            <div class="hero_Heading">
+            <!-- <div class="hero_Heading">
                 <h2 class="hero">BLOG</h2>
                 <p class="blog-subcontents__text">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</p>
+            </div> -->
+            <div class="mv_textarea">
+                <h2>
+                    <strong class="en entxt">BLOG</strong>
+                    <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+                </h2>
             </div>
-            <section class="blog mycontents-wide">
+            <section class="blog">
                 <!-- <ul class="blog-contents">
               
                     <li v-for="blog in blogs" :key="blog.id" class="blog-contents__list">
@@ -44,15 +50,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="wp-pagenavi" role="navigation">
-                            <span aria-current="page" class="current">1</span><a class="page larger" title="ページ 2"
-                                href="">2</a><a class="page larger" title="ページ 3" href="">3</a><a class="page larger"
-                                title="ページ 4" href="">4</a><a class="page larger" title="ページ 5" href="">5</a>
-                               <span class="extend">...</span><a class="larger page" title="ページ 10" href="">10</a><span
-                                class="extend">...</span><a class="nextpostslink" rel="next" aria-label="Next Page"
-                                href="https://tomorrowgate.co.jp/blog/page/2/"><i class="fa fa-angle-right"></i></a><a class="last"
-                                aria-label="Last Page" href="https://tomorrowgate.co.jp/blog/page/14/"><i class="fas fa-angles-right"></i></a>
-                        </div>
+                        <div role="navigation" class="wp-pagenavi">
+                              <span aria-current="page" class="current">1</span>
+                               <a title="ページ 2" href="#" class="page larger">2</a>
+                                <a title="ページ 3" href="#" class="page larger">3</a>
+                                <a title="ページ 4" href="#" class="page larger">4</a>
+                                <a title="ページ 5" href="#" class="page larger">5</a>
+                                <a rel="next" aria-label="Next Page" href="#" class="nextpostslink"><i class='fas fa-angle-right'></i></a></div>
                     </div>
 
                     <div class="blog--content--sidearea">
@@ -187,40 +191,40 @@
                 </div>
             </section>
 
-            <section class="menu">
+            <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/company.svg"
-                                alt="">
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
+                                alt="" loading="lazy">
                             <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">会社概要</p>
-                                <h4 class="menu-contents__list__title">COMPANY</h4>
+                                <p class="menu-contents__list__subtitle">経営理念</p>
+                                <h4 class="menu-contents__list__title">Policy</h4>
                             </div>
                         </router-link>
                     </li>
                     <li class="menu-contents__list">
                         <router-link to="/blog/">
                             <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
-                                src="/public/assets/img/icons/WWW.png" alt="">
+                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
                             <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">ブログ</p>
-                                <h4 class="menu-contents__list__title">BLOG</h4>
+                                <p class="menu-contents__list__subtitle">事業紹介</p>
+                                <h4 class="menu-contents__list__title">Business</h4>
                             </div>
                         </router-link>
                     </li>
                     <li class="menu-contents__list">
                         <router-link to="/onlinedevelopmenthub/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Partnership.png"
-                                alt="">
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
+                                alt="" loading="lazy">
                             <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">オンライン開発ハブ</p>
-                                <h4 class="menu-contents__list__title">DEVELOPEMENT</h4>
+                                <p class="menu-contents__list__subtitle">会社概要</p>
+                                <h4 class="menu-contents__list__title">Company</h4>
                             </div>
                         </router-link>
                     </li>
                 </ul>
-            </section>
+            </section> -->
             <!-- <section class="contact mycontents-wide mt-5">
                 <h3 class="content-title content-title_contact">お問い合わせ</h3>
                 <img class="contact__img" src="/public/assets/img/icons/Operator.png" alt="" width="80px">
@@ -269,6 +273,11 @@
                     </div>
                 </div>
             </section> -->
+            <div class="branding--contact" bis_skin_checked="1">
+                <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
+                <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
+                        class="contactbtn fade_y on" bis_skin_checked="1">今すぐ相談してみる</a></div>
+            </div>
         </main>
         <Footer />
     </div>
@@ -304,11 +313,9 @@
 
         }
     };
-
 </script>
 
 <style>
-   
     /*blog-brns*/
     .blog-subcontents__text {
         font-weight: bold;
@@ -318,6 +325,7 @@
         text-align: center;
         margin: auto;
     }
+
     .blog__btns {
         margin-bottom: 60px;
         position: relative;
@@ -378,7 +386,7 @@
     /*blog-contents*/
 
     .blog {
-        margin: 60px auto 120px;
+        padding: 60px 10% 120px;
     }
 
     .blog-contents {
@@ -396,13 +404,15 @@
     .blog-contents .blog-contents__list:nth-child(3n) {
         margin-right: 0;
     }
-.blog--content--sidearea .searcharea .submit {
-    cursor: pointer;
-    background: url('/assets/img/icons/search-img.png') center no-repeat;
-    background-size: 100%;
-    width: 15px;
-    height: 15px;
-}
+
+    .blog--content--sidearea .searcharea .submit {
+        cursor: pointer;
+        background: url('/assets/img/icons/search-img.png') center no-repeat;
+        background-size: 100%;
+        width: 15px;
+        height: 15px;
+    }
+
     @media screen and (max-width: 900px) and (min-width: 500px) {
         .blog-contents__list__thumbnail {
             height: 240px;
@@ -1050,20 +1060,20 @@
 
     .blog .wp-pagenavi span,
     .blog .wp-pagenavi a {
-        border: 1px solid #4d4d4d;
+        border: 1px solid #bfbfbf7a;
         color: #333;
     }
 
     .blog .wp-pagenavi span:hover,
     .blog .wp-pagenavi a:hover {
-        border-color: #4d4d4d;
-        background-color: #dadada;
-        color: #000;
+           border-color: #12355D;
+    background-color: #12355D;
+        color: #fff;
     }
 
     .blog .wp-pagenavi span:hover::after,
     .blog .wp-pagenavi a:hover::after {
-        fill: #000;
+        fill: #fff;
     }
 
     .blog .wp-pagenavi .extend {
@@ -1095,17 +1105,20 @@
         height: auto;
         /* vertical-align: bottom; */
     }
-    .scale-img img{
+
+    .scale-img img {
         height: 235px;
         object-fit: cover;
     }
-    .thumb-img{
+
+    .thumb-img {
         height: 235px;
     }
+
     .blog .wp-pagenavi .current {
-        border-color: #dadada;
-        background-color: #dadada;
-        color: #000;
+        border-color: #12355D;
+        background-color: #12355D;
+        color: #dadada;
     }
 
     @media screen and (min-width: 897px) {
@@ -2041,6 +2054,9 @@
             margin-top: 0;
             display: inline-block;
         }
-    }
 
+        .blog {
+            padding: 60px 5%;
+        }
+    }
 </style>

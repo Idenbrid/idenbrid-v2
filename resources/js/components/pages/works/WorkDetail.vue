@@ -48,35 +48,36 @@
                 </router-link>
             </li>
         </ul>
-               <router-link class="viewmore-btn viewmore-btn_center" to="/works/">View More<span class="viewmore-btn__img">  <img src="/public/assets/img/icons/btn-arrow.svg" alt="" loading="lazy">
-            <img src="/public/assets/img/icons/btn-arrow-white.svg" alt="" loading="lazy"></span></router-link>
+             
+            <router-link to="/works/" class="viewmore-btn viewmore-btn_center">View More
+                        </router-link>
 </section>
               <section class="menu">
     <ul class="menu-contents mycontents-wide">
-        <li class="menu-contents__list">
+          <li class="menu-contents__list">
             <router-link to="/about/">
-                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/company.svg" alt="" loading="lazy">
+                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg" alt="" loading="lazy">
                 <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">会社概要</p>
-                    <h4 class="menu-contents__list__title">COMPANY</h4>
+                    <p class="menu-contents__list__subtitle">経営理念</p>
+                    <h4 class="menu-contents__list__title">Policy</h4>
                 </div>
             </router-link>
         </li>
         <li class="menu-contents__list">
             <router-link to="/blog/">
-                <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news" src="/public/assets/img/icons/WWW.png" alt="" loading="lazy">
+                <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news" src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
                 <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">お知らせ</p>
-                    <h4 class="menu-contents__list__title">BLOG</h4>
+                    <p class="menu-contents__list__subtitle">事業紹介</p>
+                    <h4 class="menu-contents__list__title">Business</h4>
                 </div>
             </router-link>
         </li>
         <li class="menu-contents__list">
             <router-link to="/onlinedevelopmenthub/">
-                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Partnership.png" alt="" loading="lazy">
+                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg" alt="" loading="lazy">
                 <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">オンライン開発ハブ</p>
-                    <h4 class="menu-contents__list__title">DEVELOPEMENT</h4>
+                    <p class="menu-contents__list__subtitle">会社概要</p>
+                    <h4 class="menu-contents__list__title">Company</h4>
                 </div>
             </router-link>
         </li>
