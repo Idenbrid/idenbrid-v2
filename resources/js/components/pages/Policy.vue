@@ -235,7 +235,7 @@
     },
     metaInfo() {
       return {
-        title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+        title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC. ",
         meta: [{
           vmid: "description",
           name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
