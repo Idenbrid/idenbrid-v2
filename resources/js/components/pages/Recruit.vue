@@ -7,24 +7,24 @@
     </div> -->
         <div class="mv_textarea-recruit">
             <h2>
-                <strong class="en entxt">Recruit</strong>
-                <span class="jptxt">経営理念</span>
+                <strong class="en entxt">BUSINESS / 事業紹介</strong>
+                <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
             </h2>
         </div>
         <main>
             <div class="recruit--leadtxt">
-                <h3>変な会社にしたいので<br class="pc">変な社員を募集します</h3>
-                <p>売上が大きい会社とか、社員数が多い会社をつくりたいわけじゃない。<br class="pc">自分たちにしかできないことで、世の中を“あっ”と驚かせたい。<br
-                        class="pc">好きな人と、好きな事やる。そんなワガママな会社で働いてみませんか？
+                <h3>ビジネスを動かすITサービスは<br class="pc">アイデアから始まります</h3>
+                <p>単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、
+                    <br class="pc">お客様の求めているユーザーペインを解決してこそ、その先のエンドユーザーに届くITサービスが実現できるのです。
                 </p>
             </div>
             <div class="recruit--person highlight_blk" bis_skin_checked="1">
                 <div class="heading" bis_skin_checked="1">
-                    <span class="sub en fade_y on">DEPARTMENT</span>
-                    <h3 class="fade_y on">部署紹介</h3>
+                    <span class="sub en fade_y on">SERVICES</span>
+                    <h3 class="fade_y on">サービスのご紹介</h3>
                 </div>
                 <div class="recruit--person--list" bis_skin_checked="1">
-                    <div class="recruit--person--item hoverScale" bis_skin_checked="1">
+                    <!-- <div class="recruit--person--item hoverScale" bis_skin_checked="1">
                         <router-link to="/branding/">
                             <div class="thumb" bis_skin_checked="1">
                                 <div class="hvrtxt en" bis_skin_checked="1"><span class="more_txt"><span
@@ -34,18 +34,18 @@
                                 </div>
                             </div>
                             <h4>
-                                <span class="department fade_y on">戦略企画部</span>
-                                <strong class="phrase fade_y on">その会社が生まれた理由から問う。<br
-                                        class="pc">ストーリー溢れるブランド戦略と企画立案を。</strong>
+                                <span class="department fade_y on">SEH：スタジオ型開発ハブ</span>
+                                <strong class="phrase fade_y on">チームでの開発が必要で、エンジニアを月毎のリソースベースで<br
+                                        class="pc">提供するラボ型開発サービスです。</strong>
                             </h4>
                             <p class="fade_y on">
-                                コンサルティングを通じて、世の中に数え切れないくらい眠る、いい会社のブランド力をあぶり出す。オモシロイ会社づくりにとことんコミットし、ゴールと期限を定め、パートナーとして伴走する。
+                                STUDIO ENGINEERING HUB通称SEHでは主にIT開発をされている企業様で沢山のエンジニアリソースを必要とされ、チームでの開発がマストな会社様に適したサービスになります。
                             </p>
                         </router-link>
-                    </div>
+                    </div> -->
 
                     <div class="recruit--person--item hoverScale" bis_skin_checked="1">
-                        <router-link to="/solutions/">
+                        <router-link to="/branding/">
                             <div class="thumb" bis_skin_checked="1">
                                 <div class="hvrtxt en" bis_skin_checked="1"><span class="more_txt"><span
                                             class="underline">MORE</span></span></div>
@@ -54,11 +54,29 @@
                                 </div>
                             </div>
                             <h4>
-                                <span class="department fade_y on">意匠制作部</span>
-                                <strong class="phrase fade_y on">今までにないクリエイティブで<br class="pc">本質も、結果もしっかり求めていく。</strong>
+                                <span class="department fade_y on">ODH：オンライン開発ハブ</span>
+                                <strong class="phrase fade_y on">プロジェクト単位にて受託開発を行うサービスになります。<br class="pc">どのようなものを開発するのか決まっている場合にはこちらのサービスになります。</strong>
                             </h4>
                             <p class="fade_y on">
-                                受け手が驚くような、今までにない表現をWEBサイトや映像、グラフィックへと姿を変え世の中へ届けていく。企業課題の本質を突きながら、ささる×あがるにこだわれるクリエイター。
+                                ONLINE DEVELOPMENT HUB通称ODHでは主にスタートアップや中小企業様に人気でプロジェクト単位での受託開発を行っているサービスになります。小規模から大規模まで幅広く対応しております。
+                            </p>
+                        </router-link>
+                    </div>
+                    <div class="recruit--person--item hoverScale" bis_skin_checked="1">
+                        <router-link to="/system-engineering-service/">
+                            <div class="thumb" bis_skin_checked="1">
+                                <div class="hvrtxt en" bis_skin_checked="1"><span class="more_txt"><span
+                                            class="underline">MORE</span></span></div>
+                                <div class="scaleImg" bis_skin_checked="1"><img
+                                        src="https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg" alt="">
+                                </div>
+                            </div>
+                            <h4>
+                                <span class="department fade_y on">SES：エンジニア採用営業支援</span>
+                                <strong class="phrase fade_y on">常駐やリモートで業務委託できる日本人エンジニアなどのリソースベースのサービスになります。<br>協業ご希望のBP様も常に募集しております。</strong>
+                            </h4>
+                            <p class="fade_y on">
+                                SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
                             </p>
                         </router-link>
                     </div>
@@ -66,14 +84,14 @@
             </div>
             <div class="recruit_fix visibility">
                 <ul class="entryarea recruit--contactarea--bnr">
+                    <!-- <li>
+                        <router-link to="/branding">STUDIO ENGINEERING HUB : SEH<br><span>スタジオ開発ハブ（ラボ型開発）</span></router-link>
+                    </li> -->
                     <li>
-                        <router-link to="/branding">お試しエントリー<br><span class="label pc">気軽にメールだけ登録してみる</span><span
-                                class="label sp">気軽にメール登録</span></router-link>
+                        <router-link to="/branding">ONLINE DEVELOPMENT HUB : ODH<br><span class="label pc">今オンライン開発ハブ（プロジェクト型受託開発）</span></router-link>
                     </li>
-                    <li>
-                        <router-link to="/solutions">本気のエントリー<br><span class="label pc">今すぐ選考にチャレンジしてみる</span><span
-                                class="label sp">今すぐ選考にチャレンジ</span></router-link>
-                    </li>
+                    <li><a href="/system-engineering-service/" class="">SES<br><span class="label pc">エンジニア採用支援（常駐・フルリモート業務委託）</span><span
+                                class="label sp">気軽にメール登録</span></a></li>
                 </ul>
             </div>
             <div class="branding--contact" bis_skin_checked="1">
@@ -203,14 +221,16 @@
     }
 
     .recruit_fix {
-        position: fixed;
-        bottom: -50px;
-        left: 50%;
+        position: sticky;
+        left: 0;
+        right: 0;
+        bottom: -50%;
+        /* left: 50%; */
         opacity: 0;
-        transform: translateX(-50%);
+        /* transform: translateX(-50%); */
         z-index: 20;
-        padding: 10px 2%;
-        width: 60%;
+        padding: 10px 0;
+        width: 80%;
         transition: 0.4s;
     }
 
@@ -222,7 +242,7 @@
     .recruit_fix {
         margin: auto;
         z-index: 20;
-        width: 73%;
+        width: 82%;
     }
 
     .recruit_fix ul {
@@ -230,8 +250,8 @@
     }
 
     .recruit_fix ul li {
-        margin: 0;
-        width: 38%;
+        margin: auto;
+      width: 40%;
     }
 
     .recruit_fix ul li a {
@@ -247,6 +267,8 @@
     }
 
     @media screen and (min-width: 897px) {
+       
+       
         .recruit--contactarea--bnr.entryarea li a {
             padding: 25px 0;
             margin-top: 20px;
@@ -344,7 +366,7 @@
 
     @media screen and (max-width: 896px) {
         .mv_textarea-recruit {
-            margin-bottom: 11px;
+            padding: 30px 5% 0px;
             font-size: 2.8rem;
         }
     }
@@ -451,9 +473,20 @@
     }
 
     @media screen and (max-width: 500px) {
+        .recruit--contactarea--bnr.entryarea li a{
+            font-size: 10px;
+        }
+        .recruit--contactarea--bnr.entryarea li .label{
+            font-size: 8px;
+        }
+        .recruit_fix.visibility {
+    bottom: -10px;
+}
         .recruit_fix ul li {
             width: 49%;
+            margin: 0px auto 0px 0px;
         }
+        
 
         .recruit--leadtxt {
             margin-top: 0px;
@@ -567,11 +600,15 @@
 
     .recruit--person {
         background-color: #fff;
+        position: relative;
     }
 
     @media screen and (min-width: 897px) {
+        .recruit_fix.visibility{
+            margin-bottom: 80px;
+        }
         .recruit--person {
-            padding: 180px 10%;
+            padding: 180px 10% 100px;
         }
 
         .mv_textarea-recruit {
@@ -625,7 +662,7 @@
 
     @media screen and (min-width: 897px) {
         .recruit--person--item {
-            width: 48.2%;
+            width: 48.5%;
         }
     }
 
@@ -637,7 +674,7 @@
 
     @media screen and (min-width: 897px) {
 
-        .recruit--person--item:nth-child(3),
+
         .recruit--person--item:nth-child(4) {
             margin-top: 140px;
         }
@@ -675,11 +712,14 @@
     .recruit--person--item h4 .phrase {
         display: block;
         margin-top: 15px;
-        font-size: 22px;
-        line-height: 36px;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.1em;
         font-family: "Noto Sans JP", sans-serif;
         color: #000;
+        background-color: #dadada;
+        padding: 15px 5px;
+        min-height: 105px;
     }
 
     @media screen and (max-width: 896px) {

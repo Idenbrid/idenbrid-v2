@@ -3,14 +3,17 @@
         <Navbar />
         <main>
             <section class="mycontents-wide top-hero" id="/">
-                <h1>
-                    <span class="txt-rotate ml-0" data-period="2000"
-                        data-rotate='[ "テクノロジーで、", "ワンチームで", "熱いパッションで" ]'></span>
+                <h1 class="top-hero__title">
+                    <span class="horo-text-b" style="transition-delay: 1.15s;">クリエイティブな発想と</span>
+
                 </h1>
+                <h2>
+                    <span class="txt-rotate ml-0" data-period="2000"
+                        data-rotate='[ "ONE TEAMで", "豊富なEXPERIENCEによって", "TECHNOLOGYによって", "熱いPASSIONによって" ]'></span>
+                </h2>
                 <h2 class="top-hero__title">
-                    <span class="horo-text-b" style="transition-delay: 1.15s;">世界の明日を牽引する</span>
-                    <br class="top-hero__title__br-pc">
-                    <span class="horo-text-b" style="transition-delay: 1.15s;">クリエイティブな挑戦へ。</span>
+                    <span class="horo-text-b" style="transition-delay: 1.15s;">お客様のユーザーペインを解決します。</span>
+
                 </h2>
                 <a class="btn-views" href="">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></a>
                 <video class="top-hero__video" src="/public/assets/videos/Banner_video.mp4" autoplay muted loop
@@ -45,15 +48,15 @@
             <section>
                 <div class="c-message">
                     <div class="c-message__bgimg"
-                        style="background-image: url('https://www.unilabo.jp/wp-content/themes/unilabo-html/dist/assets/images/img-message-bg.jpg'); visibility: visible; opacity: 1; transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0.5s;"
+                        style="background-image: url('/assets/img/CEO-Message background.png'); visibility: visible; opacity: 1; transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0.5s;"
                         data-sr-id="2"></div>
                     <div class="mycontents-wide">
                         <div class="c-message__content">
                             <div class="c-message__box large-7 small-12">
-                                <h3 data-v-62c86c4e="" class="content-title c-message__title">TOP MESSAGE</h3>
+                                <h3 data-v-62c86c4e="" class="content-title c-message__title">CEO MESSAGE</h3>
                                 </h2>
-                                <div class="c-message__title-sub">「インフラを創る」<br>
-                                    という夢に向かって。</div>
+                                <div class="c-message__title-sub">「パキスタンから世界へ」<br>
+                                    ITを届けるHubを作るストーリー</div>
                                 <div class="c-message__button u-hidden-sm"><a href="/solutions/"
                                         class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View
                                         More</a></div>
@@ -62,9 +65,7 @@
                                     src="https://www.unilabo.jp/wp-content/themes/unilabo-html/dist/assets/images/img-message-02.png"
                                     alt="" data-sr-id="3"
                                     style="visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 12, 0, 1);"><img
-                                    class="c-message__img"
-                                    src="https://www.unilabo.jp/wp-content/uploads/2020/09/img-message-02-01.png" alt=""
-                                    data-sr-id="4"
+                                    class="c-message__img" src="/assets/img/CEO Person.png" alt="" data-sr-id="4"
                                     style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 1.2s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 1.2s;">
                             </div>
                             <div class="c-message__button u-hidden-lg">
@@ -154,22 +155,22 @@
                 <h3 class="content-title">SERVICE</h3>
                 <div class="service-row  my-5">
                     <div class="service-col">
-                        <img alt=""
+                        <!-- <img alt=""
                             src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1592x400_v-fms_webp_8da00051-3ea8-48f5-a0e3-885a8453f02d_small.webp"
-                            class="service-content-img" width="100%">
-                        <p class="service-p">「ペイトナー ファクタリング（旧yup
-                            先払い）」は、取引先へ送った入金前の請求書を買い取り、報酬を最短10分でお支払いするフリーランス向けオンライン型ファクタリングサービスです。</p>
+                            class="service-content-img" width="100%"> -->
+                        <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon">SEH：スタジオ型開発ハブ
+                        </h2>
+                        <p class="service-p">スタジオ型開発ハブは、一般的に言われるオフショア開発におけるラボ型開発のようなサービスを指し当社ではパキスタン拠点人材を人月ベースでご提供致します。
+                        </p>
                         <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
                     </div>
                     <div class="service-col">
-                        <img alt=""
-                            src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-2116x1478_v-frms_webp_42ac43be-6495-468b-b893-06e895661eaf_middle.webp"
-                            class="" width="100%">
+                        <img alt="" src="/assets/img/sdh.png" class="" width="100%">
 
                     </div>
                 </div>
-                <div class="service-row  my-5">
+                <!-- <div class="service-row  my-5">
                     <div class="service-col">
                         <img alt=""
                             src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-2116x1478_v-frms_webp_42ac43be-6495-468b-b893-06e895661eaf_middle.webp"
@@ -177,38 +178,39 @@
 
                     </div>
                     <div class="service-col align-items-end">
-                        <img alt=""
+                       <img alt=""
                             src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1592x400_v-fms_webp_8da00051-3ea8-48f5-a0e3-885a8453f02d_small.webp"
-                            class="service-content-img" width="100%">
-                        <p class="service-p text-right">「ペイトナー ファクタリング（旧yup
-                            先払い）」は、取引先へ送った入金前の請求書を買い取り、報酬を最短10分でお支払いするフリーランス向けオンライン型ファクタリングサービスです。</p>
+                            class="service-content-img" width="100%"> 
+                            <h2 class="service_h2">ODH：オンライン開発ハブ</h2>
+                        <p class="service-p text-right">オンライン開発ハブは、プロジェクトベースにて行われるIT受託開発サービスを指しており、当社では日本開発エンジニアチーム及びパキスタン開発エンジニアチームの両方にてご対応可能です。</p>
                         <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
                     </div>
 
-                </div>
+                </div> -->
                 <div class="service-row my-5">
                     <div class="service-col">
-                        <img alt=""
+                        <img alt="" src="/assets/img/ses.png" class="" width="100%">
+
+                    </div>
+                    <div class="service-col">
+                        <!-- <img alt=""
                             src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1592x400_v-fms_webp_8da00051-3ea8-48f5-a0e3-885a8453f02d_small.webp"
-                            class="service-content-img" width="100%">
-                        <p class="service-p">「ペイトナー ファクタリング（旧yup
-                            先払い）」は、取引先へ送った入金前の請求書を買い取り、報酬を最短10分でお支払いするフリーランス向けオンライン型ファクタリングサービスです。</p>
+                            class="service-content-img" width="100%"> -->
+                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon">SES：エンジニア採用営業支援</h2>
+                        <p class="service-p">
+                            SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
+                        </p>
                         <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
                     </div>
-                    <div class="service-col">
-                        <img alt=""
-                            src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-2116x1478_v-frms_webp_42ac43be-6495-468b-b893-06e895661eaf_middle.webp"
-                            class="" width="100%">
 
-                    </div>
                 </div>
             </section>
             <!--news-->
             <section class="news mycontents-wide">
                 <h3 class="content-title content-title_blog">NEWS</h3>
-                <p class="content-text content-text_blog">アイデンブリッド社からのお知らせやプレスリリースを配信します。</p>
+                <p class="content-text content-text_blog">アイデンブリッドからのお知らせやイベント、そしてプレスリリースを発信致します。</p>
                 <!-- <ul class="news-contents">
                     <li v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 3" class="news-contents__list">
                         <router-link :to="'/news/detail/'+detail.id+'/'">
@@ -223,8 +225,8 @@
                 <div class="new-box new">
                     <div class="new-listing new" v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 5">
                         <router-link :to="'/news/detail/'+detail.id+'/'" class="new-link new">
-                            <div class="img_box" bis_skin_checked="1" style="
-"><img src="https://tomorrowgate.co.jp/asset/img/common/default.jpg" alt=""></div>
+                            <div class="img_box">
+                                <img src="https://tomorrowgate.co.jp/asset/img/common/default.jpg" alt=""></div>
                             <div class="new-item new">
                                 <div class="new-meta">
                                     <p class="text new mr-2 mt-0 new-date">
@@ -249,9 +251,9 @@
             <!--news-->
             <section class="about mycontents-wide">
                 <h3 class="content-title content-title_about">ABOUT</h3>
-                <p class="content-subtitle content-subtitle_about">テクノロジーで世界を変えるお手伝い</p>
-                <p class="content-text content-text_about">アイデンブリッド社ではお客様が掲げる目標に向かって
-                    クリエイティブな提案とITソリューションを提供します。
+                <p class="content-subtitle content-subtitle_about">「Update the future in style」</p>
+                <p class="content-text content-text_about">
+                    テクノロジーで未来をかっこよくアップデートを会社のミッションに掲げるアイデンブリッドはお客様目線に立って、どのようにIT開発がビジネスに貢献できるかクリエイティブな提案をし、それに沿ったITソルーションを提供します。
                 </p>
 
                 <ul class="about-contents">
@@ -331,17 +333,17 @@
                 <div class="c-recruit">
                     <div class="c-recruit__head">
                         <div class="c-recruit__bgimg"
-                            style="background-image: url('https://www.unilabo.jp/wp-content/themes/unilabo-html/dist/assets/images/img-recruit-bg-01.jpg');">
+                            style="background-image: url('/assets/img/Culture-background.png');">
                         </div>
                         <div class="mycontents-wide">
                             <div class="c-recruit__head-inner">
 
-                                <h3 class="content-title is-color-white recruit-title">RECRUIT</h3>
-                                <div class="c-recruit__head-text">一番の自慢はチームメイト。<br>
-                                    ここには、まっすぐ向き合う仲間がいる。</div>
-                                <div class="c-recruit__head-button">
+                                <h3 class="content-title is-color-white recruit-title">CULTURE</h3>
+                                <div class="c-recruit__head-text">私たちの自慢は個性と責任がある仲間たち。<br>
+                                    YouTube動画とブログから会社の雰囲気を感じて頂けます。</div>
+                                <!-- <div class="c-recruit__head-button">
                                     <router-link class="c-button is-md is-white" to="/recruit/">View More</router-link>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -352,15 +354,17 @@
                                 <div class="large-6 small-12">
                                     <router-link class="c-recruit__bottom-item" to="/movies/">
 
-                                        <div class="c-recruit__bottom-bgimg"
-                                            style="background-image: url('https://www.unilabo.jp/wp-content/uploads/2022/06/471b0905ac9a6f79f6ffbd1452757101-scaled.jpg');">
+                                        <div class="c-recruit__bottom-bgimg">
+                                            <video width="100%" autoplay loop muted>
+                                                <source src="/assets/videos/Video.mp4" type="video/mp4">
+                                            </video>
                                         </div>
                                         <div class="c-recruit__bottom-content">
-                                            <div class="c-recruit__bottom-title c-heading is-lg is-color-white">
-                                                <span>MOVIE</span><small>動画で見るユニラボ</small></div>
-                                            <div class="c-recruit__bottom-text">多様なスキルを持つ<br class="u-hidden-lg">
-                                                メンバーをご紹介</div>
-                                            <div class="c-recruit__bottom-button">View More</div>
+                                            <!--<div class="c-recruit__bottom-title c-heading is-lg is-color-white">
+                                             <span>VIDEO</span><small>ビデオでアイデンブリッドを見る</small></div>
+                                            <div class="c-recruit__bottom-text">IDENBRIDの紹介やIT業界の謎を面白く解説</div> -->
+
+                                            <div class="c-recruit__bottom-button">VIDEO</div>
                                         </div>
                                     </router-link>
                                 </div>
@@ -368,14 +372,17 @@
                                     style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.8s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.8s;">
                                     <router-link class="c-recruit__bottom-item" to="/blog/">
 
-                                        <div class="c-recruit__bottom-bgimg"
-                                            style="background-image: url('https://www.unilabo.jp/wp-content/uploads/2020/09/img-recruit-02.jpg');">
+                                        <div class="c-recruit__bottom-bgimg">
+
+                                            <video width="100%" autoplay loop muted>
+                                                <source src="/assets/videos/blog.mp4" type="video/mp4">
+                                            </video>
                                         </div>
                                         <div class="c-recruit__bottom-content">
-                                            <div class="c-recruit__bottom-title c-heading is-lg is-color-white">
-                                                <span>BLOG</span><small>カルチャー</small></div>
-                                            <div class="c-recruit__bottom-text">社員を支援する様々な制度</div>
-                                            <div class="c-recruit__bottom-button">View More</div>
+                                            <!--   <div class="c-recruit__bottom-title c-heading is-lg is-color-white">
+                                              <span>BLOG</span><small>ブログでアイデンブリッドを見る</small></div>
+                                            <div class="c-recruit__bottom-text">IT開発はどうやって会社を選んだらいいのか解説</div> -->
+                                            <div class="c-recruit__bottom-button">BLOG</div>
                                         </div>
                                     </router-link>
                                 </div>
@@ -388,7 +395,7 @@
             <!-- end -->
             <section class="blog-home mycontents-wide">
                 <h3 class="content-title content-title_blog">BLOG</h3>
-                <p class="content-text content-text_blog">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</p>
+                <p class="content-text content-text_blog">ウェブや業務システムそしてモバイルアプリ開発の際のお役立ち記事を掲載しています。</p>
                 <ul class="blog-contents">
                     <li v-for="(blog,Blog) in blogs" :key="Blog" v-if="Blog < 3" class="blog-contents__list">
                         <router-link :to="'/blog/detail/'+blog.id+'/'">
@@ -682,6 +689,22 @@
     };
 </script>
 <style scoped>
+    .image-icon {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    .service_h2 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 72px;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+    }
+
     .c-recruit__bottom-item:hover .c-recruit__bottom-bgimg {
         transform: scale(1.1);
         transition: 0.4s;
@@ -854,7 +877,7 @@
         height: auto;
         letter-spacing: 0.15em;
         line-height: 1.8;
-        margin: 48px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
         text-align: left;
         width: 100%;
         max-width: 100%;
@@ -872,6 +895,7 @@
         padding: 0px;
         width: 49%;
         max-width: 49%;
+        padding: 0px 15px;
     }
 
     .service-row {
@@ -938,7 +962,7 @@
         flex-wrap: nowrap;
         justify-content: center;
         padding: 4px 8px 4px 8px;
-            font-size: 10px;
+        font-size: 10px;
     }
 
     .new-box {
@@ -1066,7 +1090,7 @@
         position: relative;
         margin-left: 0px;
         font-weight: bold;
-        font-size: 64px;
+        font-size: 40px;
         line-height: 96px;
         letter-spacing: 0.05em;
         z-index: 2;
@@ -1109,14 +1133,17 @@
             margin-right: 10px;
             width: 116px;
         }
-      .service-col{
-        max-width: 100%;
-        width: 100%;
-        margin: 25px 0px;
-      }
-      .otherservice .service-row{
-        flex-direction: column;
-      }
+
+        .service-col {
+            max-width: 100%;
+            width: 100%;
+            margin: 25px 0px;
+        }
+
+        .otherservice .service-row {
+            flex-direction: column;
+        }
+
         .WorkSlider {
             overflow: hidden;
         }
@@ -1760,14 +1787,11 @@
         background-position: center center;
         height: 100%;
         width: 100%;
-        position: absolute;
         z-index: 0;
     }
 
     .c-recruit__bottom-content {
-        position: relative;
-        z-index: 1;
-        height: 301px;
+        margin-top: 20px;
     }
 
     .c-recruit__bottom-title {
@@ -1850,7 +1874,7 @@
         margin: auto;
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.8);
+
     }
 
     .c-message__content {
@@ -1976,7 +2000,7 @@
         height: 100%;
         width: 100%;
         position: absolute;
-        opacity: .1;
+        opacity: .3;
     }
 
 
@@ -2082,7 +2106,7 @@
         margin: auto;
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.8);
+
     }
 
 
@@ -2235,4 +2259,9 @@
             padding-top: 50px;
         }
     }
+    @media (max-width: 475px) {
+    .service_h2{
+         flex-direction: column;
+    }
+}
 </style>

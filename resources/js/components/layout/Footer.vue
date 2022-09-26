@@ -126,7 +126,7 @@
                 <div class="card-body contact-request-col">
                   <router-link to="/contact/" class="">
                     <h4 class="request-contact-heading">
-                      問い合わせる<br />
+                      お問い合わせ<br />
                       <span class="contact-col-sub-heading"
                         >仕事や見積りの依頼・取材の相談はこちら</span
                       >
@@ -139,7 +139,7 @@
         </div>
       </section>
        <section class="contact-main">
-                <p class="content-text content-text_contact fonter-text">お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。
+                <p class="content-text content-text_contact fonter-text">お問い合わせは企画時点からお受けしております。またこんなことが実現可能かなどITに関する相談事も受け付けています。
                 </p>
                 <div class="contact__btns">
                     <a class="btn-wide btn-wide_call" href="https://line.me/ti/p/x16bH4B8yd" target="_blank">
@@ -276,7 +276,6 @@
     white-space: nowrap;
     width: 100%;
     padding-right: 100%;
-    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
@@ -287,7 +286,7 @@
     -webkit-animation-duration: 10s;
     animation-duration: 10s;
     height: 60px;
-    background: url('/assets/img/ft_copy-removebg-preview.png') repeat-x left top/961px 64px;
+    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;
 }
 @-webkit-keyframes ticker {
   0% {

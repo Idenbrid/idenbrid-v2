@@ -7,39 +7,44 @@
     </div> -->
     <div class="mv_textarea">
       <h2>
-        <strong class="en entxt">Policy</strong>
-        <span class="jptxt">経営理念</span>
+        <strong class="en entxt">POLICY / 経営理念</strong>
+        <span class="jptxt">IDENBRIDはどこに向っているのか</span>
       </h2>
     </div>
     <section class="section-policy">
-      <div class="policy-content">
-        <div class="policy-title">
-          <h3>ブラック企業ではない<br />ブラックな企業</h3>
+      <div class="d-flex flex-wrap">
+        <div class="col-md-6 policy-content">
+          <div class="policy-title">
+            <h3>日本人が起業した<br />パキスタン拠点の<br>グローバルIT開発企業</h3>
+          </div>
+          <div class="policy-prgh">
+            <p>
+              2020年1月。コロナウィルスが世界中に蔓延するする直前に
+              <br />パキスタンのラホール市で産声を上げたIDENBRID社。
+              <br /><br />日本人である代表がパキスタンから世界を相手にするIT開発ハブを立ててやると意気込んで
+              <br />
+              つくった会社は、初めた当初日本との違いに戸惑いを覚えることの連続だった。
+              <br /><br />なのでチームに毎日毎日徹底したことはたった一つ。
+              <br />お客様の「ユーザーペインを解決するIT会社になるぞ」本当にそれだけだった。
+            </p>
+          </div>
         </div>
-        <div class="policy-prgh">
-          <p>
-            2010年4月。やることもできることも、何もない状態で会社をつくった。
-            <br />「世界一変わった会社をつくる」そんなデッカいビジョンだけを掲げて。
-            <br /><br />変な会社をつくるには、変な仲間が必要で。まず決めたのは会社のカラー。
-            <br />
-            >多色な個性が集まり、ぐちゃぐちゃに混ざりあう真っ黒な会社をつくるため。
-            <br /><br />これを決めても売上なんてあがらない。だけど何をやるかじゃない。
-            <br />最初に大切にしたのは「何のために誰とやるか」だってこと。
-          </p>
+        <div class="col-md-6 policy-img">
+          <img src="/assets/img/policy.svg" alt="">
         </div>
       </div>
     </section>
     <section class="medium-term-vision">
       <div class="medium-tern-content text-center">
         <div class="medium-tern-title text-center">
-          <h2>中期ビジョン</h2>
-          <span>（定性・2025年までの3ヶ年計画）</span>
+          <h2>IDENBRIDのミッション</h2>
+          <span>制定：2020年1月</span>
         </div>
         <div class="most-intersting">
           <h2>
-            「大阪で一番オモシロイ
+            テクノロジーで未来をかっこよくアップデート
           </h2>
-          <span> と言われる会社になる</span>
+          <span> できる会社になること</span>
         </div>
         <hr class="bg-white m-0" />
       </div>
@@ -47,7 +52,7 @@
       <!-- swiper carousel  -->
 
       <div class="policy-slider position-relative">
-        <h2 class="policy-h">中期ビジョン達成に向けた要件</h2>
+        <h2 class="policy-h">ミッション達成に向けた取り組み</h2>
         <div class="swiper-slider-title ">
 
           <div class="swiper-pagination custom-swiper-pagination"></div>
@@ -62,26 +67,19 @@
                   <div class="swiper-content text-left">
                     <span class="num">01.</span>
                     <div class="slider-img-title">
-                      <span>ビジネスモデル</span>
+                      <span>グループビジョン</span>
 
-                      <h2>サービスがオモシロイ</h2>
+                      <h2>GROUP VISION</h2>
                     </div>
                     <div class="slider-img-about">
-                      <h2>具体的な行動・動き</h2>
+                      <h2>パキスタンから世界一必要とされるIT開発グループになる</h2>
 
-                      <ul>
-                        <li>・関西トップクラスのブランディング会社へ</li>
-                        <li>・新規事業の売上シェア逆転と利用者数拡大</li>
-                        <li>・一人あたりの売上生産性UP</li>
-                        <li>・業界トップクラスの顧客リピート率UP</li>
-                        <li>・新規顧客獲得率UP</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/slide1.jpg" alt="" />
+                    <img src="/assets/img/1.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -90,28 +88,20 @@
               <div class="d-flex w-100 policy-content">
                 <div class="mbl-col col-md-6">
                   <div class="swiper-content text-left">
-                    <span class="num">01.</span>
+                    <span class="num">02.</span>
                     <div class="slider-img-title">
-                      <span>ビジネスモデル</span>
+                      <span>グループバリュー</span>
 
-                      <h2>サービスがオモシロイ</h2>
+                      <h2>GROUP VALUE</h2>
                     </div>
                     <div class="slider-img-about">
-                      <h2>具体的な行動・動き</h2>
-
-                      <ul>
-                        <li>・関西トップクラスのブランディング会社へ</li>
-                        <li>・新規事業の売上シェア逆転と利用者数拡大</li>
-                        <li>・一人あたりの売上生産性UP</li>
-                        <li>・業界トップクラスの顧客リピート率UP</li>
-                        <li>・新規顧客獲得率UP</li>
-                      </ul>
+                      <h2>お客様のユーザーペインの解決こそが我々の提供価値</h2>
                     </div>
                   </div>
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/slide1.jpg" alt="" />
+                    <img src="/assets/img/2.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -120,62 +110,25 @@
               <div class="d-flex w-100 policy-content">
                 <div class="mbl-col col-md-6">
                   <div class="swiper-content text-left">
-                    <span class="num">01.</span>
+                    <span class="num">03.</span>
                     <div class="slider-img-title">
-                      <span>ビジネスモデル</span>
+                      <span>国際マーケットへの挑戦</span>
 
-                      <h2>サービスがオモシロイ</h2>
+                      <h2>GROUP CHALLENGE</h2>
                     </div>
                     <div class="slider-img-about">
-                      <h2>具体的な行動・動き</h2>
-
-                      <ul>
-                        <li>・関西トップクラスのブランディング会社へ</li>
-                        <li>・新規事業の売上シェア逆転と利用者数拡大</li>
-                        <li>・一人あたりの売上生産性UP</li>
-                        <li>・業界トップクラスの顧客リピート率UP</li>
-                        <li>・新規顧客獲得率UP</li>
-                      </ul>
+                      <h2>日本やパキスタンにとどまらないインターナショナル市場で成長する</h2>
                     </div>
                   </div>
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/slide1.jpg" alt="" />
+                    <img src="/assets/img/3.png" alt="" />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="d-flex w-100 policy-content">
-                <div class="mbl-col col-md-6">
-                  <div class="swiper-content text-left">
-                    <span class="num">01.</span>
-                    <div class="slider-img-title">
-                      <span>ビジネスモデル</span>
-
-                      <h2>サービスがオモシロイ</h2>
-                    </div>
-                    <div class="slider-img-about">
-                      <h2>具体的な行動・動き</h2>
-
-                      <ul>
-                        <li>・関西トップクラスのブランディング会社へ</li>
-                        <li>・新規事業の売上シェア逆転と利用者数拡大</li>
-                        <li>・一人あたりの売上生産性UP</li>
-                        <li>・業界トップクラスの顧客リピート率UP</li>
-                        <li>・新規顧客獲得率UP</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="mbl-col col-md-6">
-                  <div class="slider-img">
-                    <img src="/assets/img/slide1.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
 
           </div>
@@ -183,7 +136,7 @@
       </div>
     </section>
 
-    <section class="section-mission">
+    <!-- <section class="section-mission">
       <div class="mission-content">
         <div class="mission-title">
           <h2>MISSION</h2>
@@ -202,9 +155,86 @@
           <h3>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真<br>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真<br>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真</h3>
         </div>
       </div>
+    </section> -->
+
+    <!-- card-info -->
+    <section id="issue" data-s-d3444163-5430-4969-9af2-0a184f625a59="" class="sd">
+
+      <div data-s-53d29141-a411-493c-8496-cceefa2e509b="" class="sd">
+        <section id="values" data-s-8663e993-4cc7-4929-9f30-5d17a44f5bed="" class="sd">
+
+          <h2 data-s-b20f914c-17e4-4a7c-b734-7b81b5904637="" data-r-1_0_0_2_b20f914c-17e4-4a7c-b734-7b81b5904637=""
+            class="text sd">
+            IDENBRIDの取り組む3つの大きな挑戦</h2>
+        </section>
+        <a href="https://herp.careers/v1/dely/W6lhLIRjVdVV" rel="noopener" target="_blank"
+          data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
+          <div data-s-7176ffac-e55a-4752-a76d-c0084eaf6d23="" data-r-0_0_1_2_7176ffac-e55a-4752-a76d-c0084eaf6d23=""
+            class="image sd">
+
+          </div>
+          <div data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6="" class="sd">
+            <div data-s-8f6f55eb-3214-43e5-9e5d-2caab78e564a="" class="sd"><img
+                data-s-68a07ee8-4455-4e1e-947d-b9a303e5940a="" alt=""
+                src="https://storage.googleapis.com/studio-cms-assets/projects/BRO3JE1jWD/s-592x160_webp_ffaec34c-4604-42b4-a20a-3b3e2cfecfc7.webp"
+                class="sd">
+              <p data-s-43881428-4fb8-49b3-a8b6-581f27d95706=""
+                data-r-1_0_1_0_1_2_43881428-4fb8-49b3-a8b6-581f27d95706="" class="text sd">
+                日本市場におけるリソース型の<br>エンジニア採用シェアをベトナム市場から奪取</p>
+              <p data-s-3488d0a9-bd1d-449b-b109-0c53335de055=""
+                data-r-2_0_1_0_1_2_3488d0a9-bd1d-449b-b109-0c53335de055="" class="text sd">
+                スタジオ型開発ハブサービス：SEHを促進し、10年後の世界における 開発中心地が南アジアに移った際のイニシアチブをIDNEBRIDが握っていきます。</p>
+              <div data-s-21e4a63e-e023-411e-a192-303946499407="" class="sd"></div>
+            </div>
+          </div>
+        </a><a href="https://herp.careers/v1/dely/9zrq4gA36K8b" rel="noopener" target="_blank"
+          data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
+          <div data-s-7176ffac-e55a-4752-a76d-c0084eaf6d23="" data-r-0_4_1_2_7176ffac-e55a-4752-a76d-c0084eaf6d23=""
+            class="image sd imag-02">
+
+          </div>
+          <div data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6="" class="sd">
+            <div data-s-8f6f55eb-3214-43e5-9e5d-2caab78e564a="" class="sd"><img
+                data-s-68a07ee8-4455-4e1e-947d-b9a303e5940a="" alt=""
+                src="https://storage.googleapis.com/studio-cms-assets/projects/BRO3JE1jWD/s-592x160_webp_ffaec34c-4604-42b4-a20a-3b3e2cfecfc7.webp"
+                class="sd appear">
+              <p data-s-43881428-4fb8-49b3-a8b6-581f27d95706=""
+                data-r-1_0_1_4_1_2_43881428-4fb8-49b3-a8b6-581f27d95706="" class="text sd appear">
+                2025年末までに国際市場と日本における売上高比率を 8：2を目標とし、圧倒的グルーバル企業へ成長</p>
+              <p data-s-3488d0a9-bd1d-449b-b109-0c53335de055=""
+                data-r-2_0_1_4_1_2_3488d0a9-bd1d-449b-b109-0c53335de055="" class="text sd appear">
+                売上の大半を占める日本からの売上高を下げることなく、<br>パキスタンエンジニアチームの組織改革を徹底し、期間内に目標を達成します。</p>
+              <div data-s-21e4a63e-e023-411e-a192-303946499407="" class="sd appear">
+
+              </div>
+            </div>
+          </div>
+        </a><a href="https://herp.careers/v1/dely/fEkHjL6Qv_R2" rel="noopener" target="_blank"
+          data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
+          <div data-s-7176ffac-e55a-4752-a76d-c0084eaf6d23="" data-r-0_5_1_2_7176ffac-e55a-4752-a76d-c0084eaf6d23=""
+            class="image sd image-03">
+
+          </div>
+          <div data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6="" class="sd">
+            <div data-s-8f6f55eb-3214-43e5-9e5d-2caab78e564a="" class="sd"><img
+                data-s-68a07ee8-4455-4e1e-947d-b9a303e5940a="" alt=""
+                src="https://storage.googleapis.com/studio-cms-assets/projects/BRO3JE1jWD/s-374x160_webp_38898551-b784-41e0-8f7c-818894e460c7.webp"
+                class="sd appear">
+              <p data-s-43881428-4fb8-49b3-a8b6-581f27d95706=""
+                data-r-1_0_1_5_1_2_43881428-4fb8-49b3-a8b6-581f27d95706="" class="text sd appear">
+                パキスタンの「車ライフスタイル」を<br>
+アプリを通じて日本と繋げる</p>
+              <p data-s-3488d0a9-bd1d-449b-b109-0c53335de055=""
+                data-r-2_0_1_5_1_2_3488d0a9-bd1d-449b-b109-0c53335de055="" class="text sd appear">
+                グローバル目線を持った企業に進化するために、パキスタン市場を<br>リードする日本からの輸入車閲覧アプリをリリースし、社内売上の2割を目指しています。</p>
+
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
 
-    <section class="section-sitemap">
+    <!-- <section class="section-sitemap">
       <div class="mycontents-wide">
         <div class="sitemap-content">
           <div class="sitemap-title">
@@ -216,9 +246,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <div class="branding--contact" bis_skin_checked="1">
-      <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
+      <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>
+ご質問がありましたらお気軽にご相談ください。</h3>
       <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
           class="contactbtn fade_y on" bis_skin_checked="1">今すぐ相談してみる</a></div>
     </div>
@@ -261,6 +292,435 @@
   };
 </script>
 <style>
+  /* new vision */
+
+  .sd {
+    max-width: 100%;
+    z-index: 0;
+    pointer-events: all;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex: none;
+  }
+
+  .sd[data-s-d3444163-5430-4969-9af2-0a184f625a59] {
+    align-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.0);
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 120px 0px 80px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sd[data-s-dd57a7e5-5f3a-4dcd-afb8-a288ce7987e7] {
+    align-content: center;
+    align-items: center;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0px 32px 0px;
+    padding: 0px;
+    width: 1000px;
+    z-index: 1;
+    max-width: calc(100% - 64px);
+  }
+
+  .sd[data-s-8663e993-4cc7-4929-9f30-5d17a44f5bed] {
+    align-content: flex-start;
+    align-items: flex-start;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: center;
+    margin: 0px 0px 40px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sd[data-s-1773e167-0e92-4305-bae3-0b993b900af1] {
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+    padding: 0px;
+    transition-timing-function: cubic-bezier(0, 0.53, 0.35, 0.97);
+  }
+
+  .sd[data-s-45478c4e-877c-4fbf-83b3-ffcf8388e647] {
+    background: #f94406;
+    border-radius: 6px;
+    flex: none;
+    height: 2px;
+    margin: 0px 16px 0px 0px;
+    transition-timing-function: cubic-bezier(0, 0.53, 0.35, 0.97);
+    width: 40px;
+    max-width: calc(100% - 16px);
+  }
+
+  .sd[data-s-2ab396ff-b009-48ae-ac13-527c5014fb75] {
+    color: #333333;
+    font-family: var(--s-font-d08cf475);
+    font-feature-settings: 'palt'1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    letter-spacing: normal;
+    line-height: 1.2;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sd[data-s-b20f914c-17e4-4a7c-b734-7b81b5904637] {
+    color: #111111;
+    font-family: var(--s-font-d08cf475);
+    font-feature-settings: 'palt'1;
+    font-size: 42px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.2;
+    margin: 0px 0px 40px 0px;
+    text-align: left;
+    transition-timing-function: cubic-bezier(0, 0.53, 0.35, 0.97);
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sd[data-s-53d29141-a411-493c-8496-cceefa2e509b] {
+    align-content: flex-start;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.0);
+    flex: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0px 80px 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+    width: 1400px;
+    max-width: calc(100% - 160px);
+  }
+
+  .sd[data-s-1a890182-2468-4c25-afbe-34ef0a944bce] {
+    align-content: center;
+    align-items: center;
+    background: #111111;
+    border-bottom: 0px solid #000;
+    border-left: 0px solid #000;
+    border-radius: 6px;
+    border-right: 0px solid #000;
+    border-top: 0px solid #000;
+    box-shadow: 0px 0px 0px rgb(100 100 100 / 10%);
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 640px;
+    justify-content: flex-start;
+    margin: 0px 40px 40px 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px;
+    width: calc(33.3% - 40px);
+    max-width: calc(33.3% - 40px);
+  }
+
+  .sd[data-s-7176ffac-e55a-4752-a76d-c0084eaf6d23] {
+    align-content: center;
+    align-items: center;
+    border-radius: 0;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: flex-start;
+    left: 0;
+    margin: 0 0 0 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px 0px 0px;
+    position: absolute;
+    top: 0;
+    transition-duration: 2000ms;
+    transition-timing-function: cubic-bezier(0, 0.53, 0.35, 0.97);
+    width: 100%;
+    z-index: 0;
+    max-width: 100%;
+  }
+
+  .image:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: inherit;
+    z-index: -2;
+    pointer-events: none;
+    background-size: cover;
+    background-position: 50%;
+    transition: inherit;
+  }
+
+  .sd[data-r-0_0_1_2_7176ffac-e55a-4752-a76d-c0084eaf6d23]:before {
+    background-image: url('/assets/img/01.png');
+  }
+  .imag-02:before {
+    background-image: url('/assets/img/02.png');
+  }
+
+  .image-03:before {
+    background-image: url('/assets/img/03.png');
+  }
+
+  .sd[data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6] {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: flex-end;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 40px 30px 40px 30px;
+    width: 100%;
+    z-index: 1;
+    max-width: 100%;
+  }
+
+  .sd[data-s-8f6f55eb-3214-43e5-9e5d-2caab78e564a] {
+    align-content: flex-start;
+    align-items: flex-start;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sd[data-s-68a07ee8-4455-4e1e-947d-b9a303e5940a] {
+    flex: none;
+    height: 32px;
+    margin: 0px 0px 32px 0px;
+    transition-timing-function: cubic-bezier(0, 0.53, 0.35, 0.97);
+    width: auto;
+    max-width: 100%;
+  }
+
+  .sd[data-s-43881428-4fb8-49b3-a8b6-581f27d95706] {
+    color: #FFFFFF;
+    flex: none;
+    font-family: var(--s-font-d08cf475);
+    font-feature-settings: 'palt'1;
+    font-size: 24px;
+    font-weight: 900;
+    height: auto;
+    line-height: 1.3;
+    margin: 0px 0px 16px 0px;
+    text-align: left;
+    transition-timing-function: cubic-bezier(0, 0.53, 0.35, 0.97);
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sd[data-s-3488d0a9-bd1d-449b-b109-0c53335de055] {
+    color: #FFFFFF;
+    flex: none;
+    font-family: var(--s-font-b0b9646f);
+    font-feature-settings: 'palt'1;
+    font-size: 13px;
+    font-weight: 900;
+    height: auto;
+    line-height: 1.8;
+    margin: 0px 0px 24px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    transition-timing-function: cubic-bezier(0, 0.53, 0.35, 0.97);
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sd[data-s-21e4a63e-e023-411e-a192-303946499407] {
+    color: #111111;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    transition-timing-function: cubic-bezier(0, 0.53, 0.35, 0.97);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 1140px) {
+    .sd[data-s-dd57a7e5-5f3a-4dcd-afb8-a288ce7987e7] {
+      margin: 0px 80px 0px;
+      max-width: calc(100% - 160px);
+    }
+
+    .sd[data-s-53d29141-a411-493c-8496-cceefa2e509b] {
+      margin: 80px 20px 100px;
+      max-width: calc(100% - 40px);
+    }
+
+    .sd[data-s-1a890182-2468-4c25-afbe-34ef0a944bce] {
+      margin: 0px 24px 24px 0px;
+      width: calc(33.3% - 24px);
+      max-width: calc(33.3% - 24px);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .sd[data-s-d3444163-5430-4969-9af2-0a184f625a59] {
+      padding: 120px 0px 40px 0px;
+    }
+
+    .sd[data-s-dd57a7e5-5f3a-4dcd-afb8-a288ce7987e7] {
+      margin: 0px 80px 0px;
+    }
+
+    .sd[data-s-8663e993-4cc7-4929-9f30-5d17a44f5bed] {
+      margin: 0px 0px 0px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .sd[data-s-b20f914c-17e4-4a7c-b734-7b81b5904637] {
+      margin: 0px 0px 0px 0px;
+      max-width: 100%;
+    }
+
+    .sd[data-s-53d29141-a411-493c-8496-cceefa2e509b] {
+      margin: 80px 20px 100px;
+      max-width: calc(100% - 40px);
+    }
+
+    .sd[data-s-1a890182-2468-4c25-afbe-34ef0a944bce] {
+      flex: none;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: 0px 15px 30px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width: calc(50% - 30px);
+      max-width: calc(50% - 30px);
+    }
+
+    .sd[data-s-7176ffac-e55a-4752-a76d-c0084eaf6d23] {
+      flex: none;
+    }
+
+    .sd[data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6] {
+      padding: 40px 40px 40px 20px;
+    }
+
+    .sd[data-s-8f6f55eb-3214-43e5-9e5d-2caab78e564a] {
+      margin: 0px 0px 0px 0px;
+    }
+
+    .sd[data-s-43881428-4fb8-49b3-a8b6-581f27d95706] {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .sd[data-s-d3444163-5430-4969-9af2-0a184f625a59] {
+      padding: 80px 0px 40px 0px;
+    }
+
+    .sd[data-s-dd57a7e5-5f3a-4dcd-afb8-a288ce7987e7] {
+      margin: 0px 24px 0px;
+      max-width: calc(100% - 48px);
+    }
+
+    .sd[data-s-45478c4e-877c-4fbf-83b3-ffcf8388e647] {
+      flex: none;
+      margin: 0px 8px 0px 0px;
+      width: 20px;
+      max-width: calc(100% - 8px);
+    }
+
+    .sd[data-s-2ab396ff-b009-48ae-ac13-527c5014fb75] {
+      font-size: 14px;
+    }
+
+    .sd[data-s-b20f914c-17e4-4a7c-b734-7b81b5904637] {
+      font-size: 24px;
+      margin: 0px 0px 0px 0px;
+    }
+
+    .sd[data-s-53d29141-a411-493c-8496-cceefa2e509b] {
+      margin: 40px 16px 0px;
+      max-width: calc(100% - 32px);
+    }
+
+    .sd[data-s-1a890182-2468-4c25-afbe-34ef0a944bce] {
+      flex: none;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 540px;
+      margin: 0px 0px 30px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .sd[data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6] {
+      padding: 40px 40px 40px 24px;
+    }
+
+    .sd[data-s-43881428-4fb8-49b3-a8b6-581f27d95706] {
+      font-size: 20px;
+      margin: 0px 0px 8px 0px;
+      max-width: 100%;
+    }
+
+    .sd[data-s-3488d0a9-bd1d-449b-b109-0c53335de055] {
+      margin: 0px 0px 24px 0px;
+    }
+  }
+
+  /*end*/
+  .policy-img {
+    position: relative;
+    background-color: #FEF8ED;
+    margin-top: 20px;
+  }
+
+  .policy-img img {
+    width: 100%;
+    height: 500px;
+  }
+
   .policy-slider {
     padding: 0px 10% 0px;
   }
@@ -325,7 +785,7 @@
 
   .policy-title h3 {
     font-family: NotoSansJP-Bold;
-    font-size: 64px;
+    font-size: 54px;
     font-weight: 600;
     line-height: 1.4;
     /* color: #000000; */
@@ -334,7 +794,7 @@
   }
 
   .policy-prgh p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
     /* color: #000; */
     color: #000;
@@ -501,7 +961,7 @@
 
   .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 94%;
     height: 100%;
     object-fit: contain;
   }
@@ -674,6 +1134,9 @@
   }
 
   @media screen and (max-width: 896px) {
+    .swiper-slide img {
+    width: 100%;
+    }
     .mbl-col {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;

@@ -2,10 +2,13 @@
     <div>
         <Navbar />
         <main>
-            <div class="hero_Heading">
-                <h2 class="hero">System Engineering Service</h2>
-            </div>
-            <section class="system-sec mycontents-wide">
+            <div class="mv_textarea">
+        <h2>
+            <strong class="en entxt">System Engineering Service</strong>
+            <span class="jptxt">皆様へのご挨拶</span>
+        </h2>
+    </div>
+            <section class="system-sec mycontents-wide mt-5">
                 <h2 class="system-sec__tiile">サービスシステム開発</h2>
                 <p class="system-sec__text">
                     whitecanvasは、もっとも新事業開発支援を得意としております。<br>クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。</p>
@@ -86,7 +89,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="system-sec mycontents-wide">
+            <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">情報管理・データベース設計</h2>
                 <p class="system-sec__text">
                     whitecanvasは、もっとも新事業開発支援を得意としております。<br>クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。</p>
@@ -143,8 +146,8 @@
                         </p>
                     </li>
                 </ul>
-            </section>
-            <section class="system-sec mycontents-wide">
+            </section> -->
+            <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">情報管理・データベース設計</h2>
                 <p class="system-sec__text">顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など<br>クライアントの課題に沿ったご提案をさせていただきます。</p>
 
@@ -174,7 +177,7 @@
                             サーバーコストの削減やオンプレミスからの移管支援などを行っております。<br>様々なシステムのクラウド化による業務効率化を得意としております。</p>
                     </li>
                 </ul>
-            </section>
+            </section> -->
             <section class="flow">
                 <div class="mycontents-wide">
                     <h3 class="content-title content-title_flow">FLOW</h3>

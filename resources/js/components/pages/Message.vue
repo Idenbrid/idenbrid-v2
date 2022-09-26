@@ -4,8 +4,8 @@
          <main>
         <div class="mv_textarea">
         <h2>
-            <strong class="en entxt">MESSAGE</strong>
-            <span class="jptxt">代表挨拶</span>
+            <strong class="en entxt">CEO MESSAGE / 代表メッセージ</strong>
+            <span class="jptxt">皆様へのご挨拶</span>
         </h2>
     </div>
     <div class="message--index highlight_blk">
@@ -14,14 +14,17 @@
                 <div class="box">
                     <div class="text_area">
                         <div class="ttl">
-                            <span class="en">MESSAGE</span>
-                            <h3>ブランディングは魅せかたではない<br class="pc">失敗から学んだブランドづくりの本質</h3>
+                            <h3>私たちが戦うフィールドは「全世界」<br class="pc">テクノロジーでかっこよく世界をアップデート</h3>
                         </div>
                         <p class="lead">
-                            創業当時の僕は「見た目を良くすればひとが集まる」と勘違いしてました。カッコいいホームページを作れば、お洒落なオフィスにすれば、ひとが集まり売上が上がり会社に利益が残るのだと。でもそうではありませんでした。<br><br>どれだけ外見を綺麗に取り繕ったところで、会社の商品やサービス、働く社員に触れた時に、言ってることとやってることがズレている会社にブランドなんてものは生まれないことを痛感したのです。<br><br>ブランドとは約束。なぜやるのか？どのようにやるのか？ビジョンに沿った体験の積み重ねが信頼となりブランドになるわけです。経営に期限とゴールを決めましょう。やっていいことと悪いことの判断基準を決めましょう。自分たちの企業哲学を明文化することからはじめましょう。デザインの話はそれからです。
+                            新型コロナウイルスが依然として猛威を振るう中、日々の生活が困難な状況におられる皆様に心よりお見舞いを申し上げるとともに一所懸命に治療などに取り組まれている医療従事者の方々には深く心より御礼を申し上げます。
                         </p>
-                        <a href="https://tomorrowgate.co.jp/blog/1673/" class="more_txt" target="_blank"><span class="underline">ブランディングとは<span class="pc">｜</span><br class="sp">中小企業がすぐやるべきブランドづくりのやり方</span></a>
-                        <p class="lead name">トゥモローゲート株式会社<br>代表取締役 西崎康平</p>
+                        <p class="lead">さて、私たちの創業から、そしてコロナ禍における生活が始まって約2年が経過しました。私たちIDENBRIDは2030年までにこの競争激しいインドを含む南アジアの中でパキスタン拠点の会社としてNo.1になることを掲げています。</p>
+                        <p class="lead">IT開発業界の中にいる私たちは世界中でこのコロナによって更にビジネスのIT化を進める動きが顕著になっていることを感じていています。日本においてもこれまでDXと散々騒がれていても変わっていなかった業務に「改革のメス」を入れる企業も増え、互いが競い合うように効率化をITで実現しているのが見えるようになってきました。</p>
+                        <p class="lead">当社ではグローバルマーケットへのアクセスができる稀有な企業としてのアドバンテージを最大限活かしたビジネス展開を今後も行い、加速するIT化の波を更に大きなものにできるよう積極的に世界中のITイノベーションに取り組んでいきます。</p>
+                        <p class="lead">当社ではグローバルマーケットへのアクセスができる稀有な企業としてのアドバンテージを最大限活かしたビジネス展開を今後も行い、加速するIT化の波を更に大きなものにできるよう積極的に世界中のITイノベーションに取り組んでいきます。</p>
+                       <p>そしてその根幹には「ユーザーペイン解消」という最も大切なお客様の声を大事にした開発が現場レベルで実現されるよう今後も会社として各クライアントに貢献して参ります。</p>
+                        <p class="lead name">2022年9月<br>IDENBRID INC.<br>代表CEO 中村 奏画</p>
                     </div>
                 </div>
             </div>
@@ -113,13 +116,12 @@ import Footer from "../layout/Footer.vue";
 .message--index .message_inner .message_box .box .text_area .ttl h3 {
     font-size: 28.8px;
     line-height: 1.9;
-    margin-top: 25px;
     font-weight: 600;
     font-family: NotoSansJP-Bold;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 .message--index .message_inner .message_box .box .text_area .lead {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 14px;
     font-weight: 500;
     line-height: 2.2;

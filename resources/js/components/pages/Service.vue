@@ -83,7 +83,7 @@
                 </ul>
 
             </section>
-
+<!-- 
             <section class="product service-section" id="services">
                 <h3 class="content-title">OUR SERVICES</h3>
                 <ul class="product-contents">
@@ -96,7 +96,7 @@
                                 <img class="product-contents__list__thumbnail" src="/public/assets/img/product/6.png"
                                     alt="" loading="lazy">
                             </div>
-                            <!--<p class="product-contents__list__sorrytext">2021年10月リリース予定</p>-->
+                        
                             <p class="product-contents__list__subtitle">IdenSpire/アイデンスパイヤー</p>
                             <h4 class="product-contents__list__title">パキスタンにおけるプログラミング教室</h4>
                             <p class="product-contents__list__text">
@@ -104,21 +104,14 @@
                             </p>
                         </router-link>
                     </li>
-                    <!-- <li class="product-contents__list">
-            <div class="product-contents__list__thumbnail-frame">
-                <img class="product-contents__list__thumbnail" src="/public/assets/img/product/5.png" alt="" loading="lazy">
-            </div>
-           <p class="product-contents__list__subtitle">Online Development Hub</p>
-            <h4 class="product-contents__list__title">オンライン開発ハブ</h4>
-            <p class="product-contents__list__text">当社では日本語や英語など言語を問わず世界のIT開発ハブ拠点となれるように自社でエンジニアリソースを多数抱え日々たくさんのお客様の受託開発そしてアジャイル型の開発を進めております。リードテックカンパニーとしてお客様自身でITエンジニアリソースを抱える必要がなく、開発は当社にご安心してお任せください。</p>
-        </li> -->
+                
                     <li class="product-contents__list  mt-5">
                         <router-link to="/web-design-UIUX-designing/">
                             <div class="product-contents__list__thumbnail-frame">
                                 <img class="product-contents__list__thumbnail"
                                     src="/public/assets/img/product/Solution_Img_05.png" alt="" loading="lazy">
                             </div>
-                            <!--<p class="product-contents__list__sorrytext product-contents__list__sorrytext_last">リソース不足により一時受付を停止しております。<br>ご迷惑おかけしてしまい大変申し訳ございません。</p>-->
+                           
                             <p class="product-contents__list__subtitle">System Engineering Service</p>
                             <h4 class="product-contents__list__title">SES営業事業</h4>
                             <p class="product-contents__list__text">
@@ -129,7 +122,7 @@
 
                     <li></li>
                 </ul>
-            </section>
+            </section> -->
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">

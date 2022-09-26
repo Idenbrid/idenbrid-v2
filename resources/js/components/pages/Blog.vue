@@ -9,8 +9,8 @@
             </div> -->
             <div class="mv_textarea">
                 <h2>
-                    <strong class="en entxt">BLOG</strong>
-                    <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+                    <strong class="en entxt">BLOG / ブログ</strong>
+                    <span class="jptxt">このブログでは業務システム、ウェブやスマホアプリを開発する際に役立つ情報を発信しています。</span>
                 </h2>
             </div>
             <section class="blog">
@@ -274,7 +274,7 @@
                 </div>
             </section> -->
             <div class="branding--contact" bis_skin_checked="1">
-                <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
+                <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>ご質問がありましたらお気軽にご相談ください。</h3>
                 <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
                         class="contactbtn fade_y on" bis_skin_checked="1">今すぐ相談してみる</a></div>
             </div>

@@ -13,9 +13,9 @@
                     <div data-s-02bbc519-c345-4334-95d8-54c8794e13a6="" class="sd">
                         <div data-s-8c456275-d38c-4330-9861-5284c2ecf314="" class="sd"><img
                                 data-s-5431fa2f-020d-4ebf-b26b-64990a3d6381="" alt=""
-                                src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1414x1999_v-frms_webp_98ca23c6-8709-47da-8d4d-b7d1b8723609_middle.webp"
+                                src="/assets/img/docment-download.png"
                                 class="sd">
-                            <div data-s-0243ebae-e5d6-4323-9039-768daadc1521="" class="sd">
+                            <!-- <div data-s-0243ebae-e5d6-4323-9039-768daadc1521="" class="sd">
                                 <div data-s-2fe10181-ad99-47d9-a5bb-2653c12abff7="" class="sd">
                                     <h1 data-s-53b38df5-93d7-476b-bda6-2d568b64a54c=""
                                         data-r-0_0_1_0_0_0_0_1_53b38df5-93d7-476b-bda6-2d568b64a54c="" class="text sd">
@@ -38,15 +38,16 @@
                                         data-r-2_1_1_0_0_0_0_1_191e357f-d464-4c53-8878-10740a4a7eb8="" class="text sd">
                                         すべて自動化<br></h2>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <div data-s-1fefdbc9-e489-4b86-83d4-d02c074fee7d="" class="sd">
+                        <!-- <div data-s-1fefdbc9-e489-4b86-83d4-d02c074fee7d="" class="sd">
                             <p data-s-701808c5-6eb2-44bb-b181-f3f9226328db=""
                                 data-r-0_1_0_0_0_1_701808c5-6eb2-44bb-b181-f3f9226328db="" class="text sd">
-                                少数チームの<br>経理業務効率化なら</p><img data-s-03763973-61ce-4d2d-8b23-9ebd1668a6a7="" alt=""
+                                少数チームの<br>経理業務効率化なら</p>
+                                <img data-s-03763973-61ce-4d2d-8b23-9ebd1668a6a7="" alt=""
                                 src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1308x400_v-fms_webp_2a5b41d6-de21-44bb-a4a2-8edec601a0a0_small.webp"
                                 class="sd">
-                        </div>
+                        </div> -->
                     
                     </div>
                     <form name="billbill 事前登録" id="form" data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc="" class="sd">
@@ -218,6 +219,18 @@
 </script>
 
 <style>
+    .sd[data-s-c83c6dec-139a-476d-82cb-498c11a1575c], .sd[data-s-a556ea1d-b257-490d-b188-1b96e82dbc21] {
+    color: #bbbbbb;
+    font-family: var(--s-font-95b5397d);
+    font-size: 32px;
+    font-weight: 700;
+    height: auto;
+    line-height: 1.4;
+    text-align: center;
+    width: auto;
+    max-width: 100%;
+    justify-content: center;
+}
     .sd[data-s-0d898219-478c-43d2-b058-d1926a8d2536] {
         border-radius: 0;
         color: #FFFFFF;
@@ -298,7 +311,7 @@
         flex: none;
         height: auto;
         margin: 0px 31px 0px 0px;
-        width: 228px;
+        width: 100%;
         max-width: calc(100% - 31px);
     }
 
@@ -736,7 +749,7 @@
         word-wrap: anywhere;
     }
 
-    .sd[data-s-a7eb9c4b-36f0-4661-b299-7961242fd327] {
+    .sd[data-s-a7eb9c4b-36f0-4661-b299-7961242fd327], .sd[data-s-37dd72c5-a053-4a6e-b2fb-2e6425306e10], .sd[data-s-9fae1e38-fb2b-4bfa-93ce-3c8d1edffccd] {
         color: #0a7ced;
         font-family: var(--s-font-d5b4301d);
         font-size: 24px;
@@ -775,7 +788,7 @@
         font-weight: 700;
         height: 80px;
         line-height: 1.4;
-        margin: 0px 8px 0px 0px;
+        margin: 15px 8px 0px 0px;
         text-align: center;
         width: 80px;
         max-width: calc(100% - 8px);
@@ -983,7 +996,7 @@
         .sd[data-s-1fefdbc9-e489-4b86-83d4-d02c074fee7d] {
             flex: none;
             margin: 30px 0px 30px 0px;
-            padding: 24px 32px 24px;
+            padding: 24px 0px 24px;
             width: 100%;
         max-width: 100%;
 }
@@ -992,8 +1005,13 @@
         .sd[data-s-0243ebae-e5d6-4323-9039-768daadc1521] {
             justify-content: flex-start;
             margin: 13px 0px 0px 0px;
+            width: 100%;
         }
-
+        .sd[data-s-03763973-61ce-4d2d-8b23-9ebd1668a6a7]{
+            margin: 20px 0px 20px 0px;
+            width: 100%;
+            max-width: calc(100% - 20px);
+        }
         .sd[data-s-53b38df5-93d7-476b-bda6-2d568b64a54c] {
             font-size: 14px;
         }
@@ -1018,7 +1036,7 @@
             flex: none;
             height: auto;
             margin: 0px 24px 0px 0px;
-            width: 140px;
+            width: 100%;
             max-width: calc(100% - 24px);
         }
 
@@ -1043,14 +1061,14 @@
             margin: 24px 0px 0px;
             width: 100%;
             max-width: 100%;
-            height: calc(100% - 24px);
+            height: 100%;
         }
 
         .sd[data-s-56bb3cc6-2cfb-4030-81d8-8e2924c36099] {
             margin: 24px 0px 0px;
             width: 100%;
             max-width: 100%;
-            height: calc(100% - 24px);
+            height: 100%;
         }
         .sd[data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc] {
     display: flex;
@@ -1064,6 +1082,41 @@
    
       .sd[data-s-1a4a5300-0cd5-4afe-a17a-85b7fccad9e6]{
             flex-direction: column;
+        }
+        .sd[data-s-8c456275-d38c-4330-9861-5284c2ecf314]{
+            flex-direction: column;
+        }
+        .sd[data-s-0e16e919-25dd-47be-9410-c87b0ca48625]{
+            flex-direction: column;
+            padding: 0px 5% 120px;
+            margin-top: 40px;
+        }
+        .sd[data-s-1fefdbc9-e489-4b86-83d4-d02c074fee7d]{
+            flex-direction: column;
+        }
+        .sd[data-s-9e377fd2-bb01-4a4a-b2c6-12fc2f4e4804]{
+            flex-direction: column;
+            height: 100%;
+        }
+        .sd[data-s-a7eb9c4b-36f0-4661-b299-7961242fd327], .sd[data-s-37dd72c5-a053-4a6e-b2fb-2e6425306e10], .sd[data-s-9fae1e38-fb2b-4bfa-93ce-3c8d1edffccd]{
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width: 1185px) and (min-width: 840px)  {
+        .sd[data-s-005cd78e-8c51-4108-8c2b-ac8ea213a47a]{
+            font-size: 40px;
+        }
+        .sd[data-s-c268f161-192e-49bc-bae5-831cd26fc413]{
+            font-size: 28px;
+        }
+        .sd[data-s-191e357f-d464-4c53-8878-10740a4a7eb8]{
+            font-size: 22px;
+        }
+        .sd[data-s-53b38df5-93d7-476b-bda6-2d568b64a54c]{
+            font-size: 18px;
+        }
+        .sd[data-s-03763973-61ce-4d2d-8b23-9ebd1668a6a7]{
+            width: 180px;
         }
     }
 </style>

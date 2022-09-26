@@ -3,8 +3,8 @@
         <Navbar />
         <div class="mv_textarea">
             <h2>
-                <strong class="en entxt">Profile</strong>
-                <span class="jptxt">経営理念</span>
+                <strong class="en entxt">COMPANY /  会社概要</strong>
+                <span class="jptxt">アイデンブリッド社</span>
             </h2>
         </div>
         <main>
@@ -12,49 +12,52 @@
                 <div class="prof_tbl">
                     <dl>
                         <dt>社名</dt>
-                        <dd>トゥモローゲート株式会社</dd>
+                        <dd>IDENBRID INC.  / アイデンブリッド社</dd>
                     </dl>
                     <dl>
                         <dt>設立</dt>
-                        <dd>2010年4月1日</dd>
+                        <dd>2020年1月</dd>
                     </dl>
                     <dl>
                         <dt>資本金</dt>
-                        <dd>4,500万円<br><small>45（ようこそ）、ブラック（#000000）な企業へ</small></dd>
+                        <dd>USD 150,000（2022年9月時点）</dd>
                     </dl>
                     <dl>
                         <dt>代表者</dt>
-                        <dd>代表取締役 最高経営責任者 西崎 康平</dd>
+                        <dd>CEO 中村 奏画 / SOUGA NAKAMURA</dd>
                     </dl>
                     <dl>
                         <dt>従業員数</dt>
-                        <dd>38名（2022年4月時点）</dd>
+                        <dd>社員：20名 / 提携先BP：8社 / 提携人材BP：15名</dd>
                     </dl>
 
                     <dl>
                         <dt>従業員数</dt>
                         <dd>
                             <div class="box">
-                                <span class="bld">【大阪本社】</span><br>〒542-0086 <br class="sp">大阪市中央区西心斎橋1-6-32 <br
-                                    class="sp">アニーズビル2階<br><br class="sp"><a href="tel:06-7167-3950"
-                                    class="tel_link no_link">TEL.06-7167-3950</a><br class="sp">
-                                FAX.06-4708-3636<br> <a href="https://tomorrowgate.co.jp/company/access/"
-                                    class="more_txt"><span class="underline">ACCESS</span></a>
+                                <span class="bld">【パキスタン本社】</span><br>B1F 176 Y block DHA Phase 3, Lahore Pakistan <br><a href="tel:+92-306-404-1221"
+                                    class="tel_link no_link">TEL. +92-306-404-1221</a>
+                                    <br> 
+                                    <a href="mailto:helloworld@idenbrid.com"
+                                    class="more_txt">MAIL : helloworld@idenbrid.com</a>
                             </div>
                             <div class="box mt">
-                                <span class="bld">【東京支社】</span><br>〒107-0062 <br class="sp">東京都港区南青山三丁目3番地3号 <br
-                                    class="sp">WORKING PARK EN 309<br><br class="sp"><a href="tel:03-6372-7814"
-                                    class="tel_link no_link">TEL.03-6372-7814</a><br>
-                                <a href="https://goo.gl/maps/i1hhd2r9MdgRqeu77" class="more_txt" target="_blank"><span
-                                        class="underline">ACCESS</span></a>
+                              
+                                <router-link to="/office/" class="more_txt" target="_blank"><span
+                                        class="underline">ACCESS</span></router-link>
                             </div>
                         </dd>
                     </dl>
                     <dl>
-                        <dt>事業案内</dt>
-                        <dd><span
-                                class="bld">ブランディング事業</span><br>・経営理念設計（ミッション、ビジョン、バリューの言語化）<br>・アウターブランディング（Webデザイン、グラフィックデザイン、映像制作）<br>・インナーブランディング（人事評価制度設計、社内制度設計、働き方改革）<br>・採用ブランディング（採用サイト、採用パンフレット、採用ムービー）<br>・SNSブランディング（Youtube、Twitter、Instagram、Tiktokの運用）
-                        </dd>
+                        <dt>IT開発事業</dt>
+                        <dd>・ITコンサルティング（DX・コスト削減・新規ビジネス案件のITへの落とし込み等）<br>
+                        ・ITシステム設計（要件定義・基本設計・テストケース・API・DB・システムアーキテクチャ等）<br>
+                        ・UIUXデザイン（Webデザイン、スマホアプリデザイン、グラフィックデザイン等）<br>
+                        ・ウェブシステム開発（フロントエンド実装、ECサイト、マッチングサイト、業務管理システム等）<br>
+                        ・スマホアプリ開発（ライブ配信アプリ、マッチングアプリ、占いアプリ、業務アプリ等）<br>
+                        ・インフラ開発（AWS、GCP、Azure・クラウドインフラ構築、DBマイグレーション等）<br>
+                        ・LINEミニアプリ/API開発（メッセージAPI、会員証、ポイント、クーポンシステム等）<br>
+                        ・SESエンジニア採用営業支援 </dd>
                     </dl>
                 </div>
             </div>

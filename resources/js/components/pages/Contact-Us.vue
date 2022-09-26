@@ -2,11 +2,11 @@
     <div>
         <Navbar />
         <div class="mv_textarea">
-                <h2>
-                    <strong class="en entxt">CONTACT US</strong>
-                    <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
-                </h2>
-            </div>
+            <h2>
+                <strong class="en entxt">CONTACT US</strong>
+                <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+            </h2>
+        </div>
         <main>
             <!-- <h2 class="hero">CONTACT</h2>
     <section class="mycontents-wide">
@@ -173,271 +173,274 @@
                             </div>
                         </div>
                         <div class="row">
-                        <div class="col-md-7 primary-contact-form contact">
-                            <div class="row m-0">
-                                <div class="col-md-12">
-                                    <form accept-charset="UTF-8" method="post"
-                                        action="https://marketing.readycrew.jp/l/880722/2020-08-05/9sc" class="form"
-                                        id="pardot-form">
+                            <div class="col-md-7 primary-contact-form contact">
+                                <div class="row m-0">
+                                    <div class="col-md-12">
+                                        <form accept-charset="UTF-8" method="post"
+                                            action="https://marketing.readycrew.jp/l/880722/2020-08-05/9sc" class="form"
+                                            id="pardot-form">
 
 
-                                        <div class="form-group row form-field  Inquiry_type pd-select required   ">
-                                            <div class="formHeading col-md-3">
+                                            <div class="form-group row form-field  Inquiry_type pd-select required   ">
+                                                <div class="formHeading col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_2634pi_880722_2634">お問い合わせ種類</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_2634pi_880722_2634">お問い合わせ種類</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  Inquiry_type">
-                                                    <div class="formInputInner  Inquiry_type ">
-                                                        <select name="880722_2634pi_880722_2634"
-                                                            id="880722_2634pi_880722_2634" class="select form-control"
-                                                            onchange="">
-                                                            <option value="" selected="selected"></option>
-                                                            <option value="13990">外部に発注したい</option>
-                                                            <option value="13992">外部発注先の選定を検討している</option>
-                                                            <option value="13994">仕事を受注したい</option>
-                                                            <option value="13996">新規顧客を開拓したい</option>
-                                                        </select>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  Inquiry_type">
+                                                        <div class="formInputInner  Inquiry_type ">
+                                                            <select name="880722_2634pi_880722_2634"
+                                                                id="880722_2634pi_880722_2634"
+                                                                class="select form-control" onchange="">
+                                                                <option value="" selected="selected"></option>
+                                                                <option value="13990">外部に発注したい</option>
+                                                                <option value="13992">外部発注先の選定を検討している</option>
+                                                                <option value="13994">仕事を受注したい</option>
+                                                                <option value="13996">新規顧客を開拓したい</option>
+                                                            </select>
 
-                                                        <div id="error_for_880722_2634pi_880722_2634"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2634pi_880722_2634"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row form-field  company-main pd-text    ">
-                                            <div class="formHeading  col-md-3">
+                                            <div class="form-group row form-field  company-main pd-text    ">
+                                                <div class="formHeading  col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_2254pi_880722_2254">御社名</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_2254pi_880722_2254">御社名</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  company-main">
-                                                    <div class="formInputInner  company-main ">
-                                                        <input type="text" name="880722_2254pi_880722_2254"
-                                                            id="880722_2254pi_880722_2254" value=""
-                                                            class="text text form-control" size="30" maxlength="255"
-                                                            onchange="" onfocus="">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  company-main">
+                                                        <div class="formInputInner  company-main ">
+                                                            <input type="text" name="880722_2254pi_880722_2254"
+                                                                id="880722_2254pi_880722_2254" value=""
+                                                                class="text text form-control" size="30" maxlength="255"
+                                                                onchange="" onfocus="">
 
-                                                        <div id="error_for_880722_2254pi_880722_2254"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2254pi_880722_2254"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row form-field  website pd-text    ">
-                                            <div class="formHeading col-md-3">
+                                            <div class="form-group row form-field  website pd-text    ">
+                                                <div class="formHeading col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_2636pi_880722_2636">URL</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_2636pi_880722_2636">URL</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  website">
-                                                    <div class="formInputInner  website ">
-                                                        <input type="text" name="880722_2636pi_880722_2636"
-                                                            id="880722_2636pi_880722_2636" value=""
-                                                            class="text text form-control" size="30" maxlength="255"
-                                                            onchange="" onfocus="">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  website">
+                                                        <div class="formInputInner  website ">
+                                                            <input type="text" name="880722_2636pi_880722_2636"
+                                                                id="880722_2636pi_880722_2636" value=""
+                                                                class="text text form-control" size="30" maxlength="255"
+                                                                onchange="" onfocus="">
 
-                                                        <div id="error_for_880722_2636pi_880722_2636"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2636pi_880722_2636"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row form-field  last_name pd-text required   ">
-                                            <div class="formHeading col-md-3">
+                                            <div class="form-group row form-field  last_name pd-text required   ">
+                                                <div class="formHeading col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_2258pi_880722_2258">お名前</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_2258pi_880722_2258">お名前</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  last_name">
-                                                    <div class="formInputInner  last_name ">
-                                                        <input type="text" name="880722_2258pi_880722_2258"
-                                                            id="880722_2258pi_880722_2258" value=""
-                                                            class="text text form-control" size="30" maxlength="80"
-                                                            onchange="" onfocus="" placeholder="鈴木">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  last_name">
+                                                        <div class="formInputInner  last_name ">
+                                                            <input type="text" name="880722_2258pi_880722_2258"
+                                                                id="880722_2258pi_880722_2258" value=""
+                                                                class="text text form-control" size="30" maxlength="80"
+                                                                onchange="" onfocus="" placeholder="鈴木">
 
-                                                        <div id="error_for_880722_2258pi_880722_2258"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2258pi_880722_2258"
+                                                                style="display:none"></div>
 
-                                                    </div>
-                                                    <div class="formInputInner  first_name ">
-                                                        <input type="text" name="880722_2256pi_880722_2256"
-                                                            id="880722_2256pi_880722_2256" value=""
-                                                            class="text text form-control" size="30" maxlength="40"
-                                                            onchange="" onfocus="" placeholder="一郎">
+                                                        </div>
+                                                        <div class="formInputInner  first_name ">
+                                                            <input type="text" name="880722_2256pi_880722_2256"
+                                                                id="880722_2256pi_880722_2256" value=""
+                                                                class="text text form-control" size="30" maxlength="40"
+                                                                onchange="" onfocus="" placeholder="一郎">
 
-                                                        <div id="error_for_880722_2256pi_880722_2256"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2256pi_880722_2256"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
 
 
-                                        <div class="form-group row form-field  email pd-text required   ">
-                                            <div class="formHeading col-md-3">
+                                            <div class="form-group row form-field  email pd-text required   ">
+                                                <div class="formHeading col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_2260pi_880722_2260">メール</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_2260pi_880722_2260">メール</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  email">
-                                                    <div class="formInputInner  email ">
-                                                        <input type="text" name="880722_2260pi_880722_2260"
-                                                            id="880722_2260pi_880722_2260" value=""
-                                                            class="text text form-control" size="30" maxlength="255"
-                                                            onchange="" onfocus="" placeholder="sample@xxx.co.jp">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  email">
+                                                        <div class="formInputInner  email ">
+                                                            <input type="text" name="880722_2260pi_880722_2260"
+                                                                id="880722_2260pi_880722_2260" value=""
+                                                                class="text text form-control" size="30" maxlength="255"
+                                                                onchange="" onfocus="" placeholder="sample@xxx.co.jp">
 
-                                                        <div id="error_for_880722_2260pi_880722_2260"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2260pi_880722_2260"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row form-field  phone pd-text required   ">
-                                            <div class="formHeading col-md-3">
+                                            <div class="form-group row form-field  phone pd-text required   ">
+                                                <div class="formHeading col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_2638pi_880722_2638">ご連絡がつきやすい番号</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_2638pi_880722_2638">ご連絡がつきやすい番号</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  phone">
-                                                    <div class="formInputInner  phone ">
-                                                        <input type="text" name="880722_2638pi_880722_2638"
-                                                            id="880722_2638pi_880722_2638" value=""
-                                                            class="text text form-control" size="30" maxlength="40"
-                                                            onchange="" onfocus="" placeholder="0000000000">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  phone">
+                                                        <div class="formInputInner  phone ">
+                                                            <input type="text" name="880722_2638pi_880722_2638"
+                                                                id="880722_2638pi_880722_2638" value=""
+                                                                class="text text form-control" size="30" maxlength="40"
+                                                                onchange="" onfocus="" placeholder="0000000000">
 
-                                                        <div id="error_for_880722_2638pi_880722_2638"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2638pi_880722_2638"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row form-field  Contact_Us pd-textarea required   ">
-                                            <div class="formHeading col-md-3">
+                                            <div class="form-group row form-field  Contact_Us pd-textarea required   ">
+                                                <div class="formHeading col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_2640pi_880722_2640">お問い合わせ内容</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_2640pi_880722_2640">お問い合わせ内容</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  Contact_Us">
-                                                    <div class="formInputInner  Contact_Us ">
-                                                        <textarea name="880722_2640pi_880722_2640"
-                                                            id="880722_2640pi_880722_2640" onchange="" cols="40"
-                                                            rows="10" class="form-control"
-                                                            placeholder="ご記入ください"></textarea>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  Contact_Us">
+                                                        <div class="formInputInner  Contact_Us ">
+                                                            <textarea name="880722_2640pi_880722_2640"
+                                                                id="880722_2640pi_880722_2640" onchange="" cols="40"
+                                                                rows="10" class="form-control"
+                                                                placeholder="ご記入ください"></textarea>
 
-                                                        <div id="error_for_880722_2640pi_880722_2640"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2640pi_880722_2640"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div
-                                            class="form-group row form-field  CustomObject1607489477990 pd-select required   ">
-                                            <div class="formHeading col-md-3">
+                                            <div
+                                                class="form-group row form-field  CustomObject1607489477990 pd-select required   ">
+                                                <div class="formHeading col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_23336pi_880722_23336">当社を知ったきっかけ</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_23336pi_880722_23336">当社を知ったきっかけ</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  CustomObject1607489477990">
-                                                    <div class="formInputInner  CustomObject1607489477990 ">
-                                                        <select name="880722_23336pi_880722_23336"
-                                                            id="880722_23336pi_880722_23336" class="select form-control"
-                                                            onchange="">
-                                                            <option value="" selected="selected"></option>
-                                                            <option value="396408">タクシー広告</option>
-                                                            <option value="396410">テレビCM</option>
-                                                            <option value="396412">Facebook広告</option>
-                                                            <option value="396414">検索</option>
-                                                            <option value="396416">ご紹介</option>
-                                                            <option value="963092">営業担当より紹介</option>
-                                                            <option value="963094">その他</option>
-                                                        </select>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  CustomObject1607489477990">
+                                                        <div class="formInputInner  CustomObject1607489477990 ">
+                                                            <select name="880722_23336pi_880722_23336"
+                                                                id="880722_23336pi_880722_23336"
+                                                                class="select form-control" onchange="">
+                                                                <option value="" selected="selected"></option>
+                                                                <option value="396408">タクシー広告</option>
+                                                                <option value="396410">テレビCM</option>
+                                                                <option value="396412">Facebook広告</option>
+                                                                <option value="396414">検索</option>
+                                                                <option value="396416">ご紹介</option>
+                                                                <option value="963092">営業担当より紹介</option>
+                                                                <option value="963094">その他</option>
+                                                            </select>
 
-                                                        <div id="error_for_880722_23336pi_880722_23336"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_23336pi_880722_23336"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group row form-field  privacy_policy pd-checkbox required   ">
-                                            <div class="formHeading col-md-3">
+                                            <div
+                                                class="form-group row form-field  privacy_policy pd-checkbox required   ">
+                                                <div class="formHeading col-md-3">
 
-                                                <label class="field-label col-form-label"
-                                                    for="880722_2642pi_880722_2642">プライバシーポリシー</label>
+                                                    <label class="field-label col-form-label"
+                                                        for="880722_2642pi_880722_2642">プライバシーポリシー</label>
 
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="formInputOuter  privacy_policy">
-                                                    <div class="formInputInner  privacy_policy ">
-                                                        <span class="value"><span><input type="checkbox"
-                                                                    name="880722_2642pi_880722_2642_13998"
-                                                                    id="880722_2642pi_880722_2642_13998" value="13998"
-                                                                    onchange=""><label class="inline"
-                                                                    for="880722_2642pi_880722_2642_13998">同意する</label></span></span>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="formInputOuter  privacy_policy">
+                                                        <div class="formInputInner  privacy_policy ">
+                                                            <span class="value"><span><input type="checkbox"
+                                                                        name="880722_2642pi_880722_2642_13998"
+                                                                        id="880722_2642pi_880722_2642_13998"
+                                                                        value="13998" onchange=""><label class="inline"
+                                                                        for="880722_2642pi_880722_2642_13998">同意する</label></span></span>
 
-                                                        <p class="description"><label for="agreecheck">
-                                                            <router-link to="/privacypolicy"
-                                                                    target="_top">プライバシーポリシー</router-link>をよくお読みの上、問題なければチェックしてください</label>
-                                                        </p>
+                                                            <p class="description"><label for="agreecheck">
+                                                                    <router-link to="/privacypolicy" target="_top">
+                                                                        プライバシーポリシー</router-link>
+                                                                    をよくお読みの上、問題なければチェックしてください
+                                                                </label>
+                                                            </p>
 
-                                                        <div id="error_for_880722_2642pi_880722_2642"
-                                                            style="display:none"></div>
+                                                            <div id="error_for_880722_2642pi_880722_2642"
+                                                                style="display:none"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- forces IE5-8 to correctly submit UTF8 content -->
-                                        <input name="_utf8" type="hidden" value="☃">
-                                        <div class="contentFormAfter"></div>
+                                            <!-- forces IE5-8 to correctly submit UTF8 content -->
+                                            <input name="_utf8" type="hidden" value="☃">
+                                            <div class="contentFormAfter"></div>
 
-                                        <p class="submit d-flex justify-content-center">
-                                            <input type="submit" class="btn btn-lg btn btn-lg btn-contact" accesskey="s"
-                                                value="送信する">
-                                        </p>
+                                            <p class="submit d-flex justify-content-center">
+                                                <input type="submit" class="btn btn-lg btn btn-lg btn-contact"
+                                                    accesskey="s" value="送信する">
+                                            </p>
 
-                                        <input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields"
-                                            value="">
-                                    </form>
+                                            <input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields"
+                                                value="">
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
-                        <div class="col-md-4">
-                             <img src="/assets/img/humbger_menu_top.jpg">
-                        </div>   
-                    </div>        
+                            <div class="col-md-4">
+                                <img src="/assets/img/contact-us.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -530,27 +533,30 @@
     };
 </script>
 <style>
-.mycontents-wides{
-    padding: 60px 10% 120px;
-}
-.btn-contact{
-    background: var(--textcolor);
-    border-radius: 5px;
-    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%);
-    color: #fff;
-    flex: none;
-    font-size: 15px;
-    height: 60px;
-    justify-content: center;
-    margin: 24px 0px 0px 0px;
-    opacity: 1;
-    padding: 15px;
-    width: 40%;
-    max-width: 100%;
-}
-.btn-contact:hover {
-    color:#fff
-}
+    .mycontents-wides {
+        padding: 60px 10% 120px;
+    }
+
+    .btn-contact {
+        background: var(--textcolor);
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%);
+        color: #fff;
+        flex: none;
+        font-size: 15px;
+        height: 60px;
+        justify-content: center;
+        margin: 24px 0px 0px 0px;
+        opacity: 1;
+        padding: 15px;
+        width: 40%;
+        max-width: 100%;
+    }
+
+    .btn-contact:hover {
+        color: #fff
+    }
+
     .contents {
         margin-top: 60px;
         margin-bottom: 60px;
@@ -812,7 +818,7 @@
         margin-left: 60px;
     }
 
-    
+
 
 
     @media (max-width: 1000px) {
@@ -1092,9 +1098,10 @@
 
 
 
-.form-group.privacy_policy {
-    flex-flow: column wrap;
-}
+    .form-group.privacy_policy {
+        flex-flow: column wrap;
+    }
+
     .form-group.privacy_policy .formHeading {
         margin-bottom: 10px;
     }
@@ -1116,77 +1123,103 @@
         font-size: 20px;
         width: 368px;
     }
-.form-group:after {
-    display: block;
-    margin: 0 15px 15px 15px;
-    padding-bottom: 20px;
-    height: auto;
-    width: auto;
-    border-bottom: dotted 1px #CCC;
-}
-.form-group:after {
-    margin: 0;
-    padding-bottom: 15px;
-    border: none;
-    flex: 0 0 100%;
-}
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    transition: .2s;
-    color: #e60039;
-    border-color: #e60039;
-    border-radius: 32px;
-    background-color: #fff;
-}
-.formInputOuter span.value span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1em;
-}
-.privacy_policy .value{
-    display: flex;
-    justify-content: center;
-}
-.formInputOuter label {
-    margin-left: 3px;
-    font-weight: normal;
-    margin-bottom: 0px;
-}
-.formInputInner p.description {
-    font-size: 15px;
-    margin: 7px 0 0 0;
+
+    .form-group:after {
+        display: block;
+        margin: 0 15px 15px 15px;
+        padding-bottom: 20px;
+        height: auto;
+        width: auto;
+        border-bottom: dotted 1px #CCC;
+    }
+
+    .form-group:after {
+        margin: 0;
+        padding-bottom: 15px;
+        border: none;
+        flex: 0 0 100%;
+    }
+
+    .btn-primary:active,
+    .btn-primary:focus,
+    .btn-primary:hover {
+        transition: .2s;
+        color: #e60039;
+        border-color: #e60039;
+        border-radius: 32px;
+        background-color: #fff;
+    }
+
+    .formInputOuter span.value span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1em;
+    }
+
+    .privacy_policy .value {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formInputOuter label {
+        margin-left: 3px;
+        font-weight: normal;
+        margin-bottom: 0px;
+    }
+
+    .formInputInner p.description {
+        font-size: 15px;
+        margin: 7px 0 0 0;
         white-space: pre;
-}
-form.form p label {
-    color: #000000;
-}
-.privacy_policy{
-    text-align: center;
-}
-.privacy_policy a{
-text-decoration: underline;
-    color: #000;
-}
-.formInputOuter {
-    display: inline-block;
-    width: 100%;
-}
-.formInputInner.last_name, .formInputInner.first_name, .formInputInner.last_kana, .formInputInner.first_kana {
-    display: block;
-    float: left;
-    width: 50%;
-}
-.formInputInner.last_name, .formInputInner.last_kana, .formInputInner.last_name p.description, .formInputInner.last_kana p.description {
-    padding-right: 5px;
-}
-input[type=text].form-control:focus, select.form-control:focus, textarea.form-control:focus {
-    box-shadow: none;
-    background-color: #f5f5f5;
-}
-.primary-contact-form {
-    margin: 0 auto;
-}
-.form-group {
+    }
+
+    form.form p label {
+        color: #000000;
+    }
+
+    .privacy_policy {
+        text-align: center;
+    }
+
+    .privacy_policy a {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    .formInputOuter {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .formInputInner.last_name,
+    .formInputInner.first_name,
+    .formInputInner.last_kana,
+    .formInputInner.first_kana {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    .formInputInner.last_name,
+    .formInputInner.last_kana,
+    .formInputInner.last_name p.description,
+    .formInputInner.last_kana p.description {
+        padding-right: 5px;
+    }
+
+    input[type=text].form-control:focus,
+    select.form-control:focus,
+    textarea.form-control:focus {
+        box-shadow: none;
+        background-color: #f5f5f5;
+    }
+
+    .primary-contact-form {
+        margin: 0 auto;
+    }
+
+    .form-group {
         flex-flow: row wrap;
         align-items: center;
         margin-bottom: 15px;
@@ -1238,16 +1271,18 @@ input[type=text].form-control:focus, select.form-control:focus, textarea.form-co
         color: #1e1e1e !important;
     }
 
-@media screen and (max-width: 767px){
-.primary-contact-form {
-    width: 95%;
-}
-.form-group {
-    flex-flow: column wrap;
-    text-align: left;
-}
-.formHeading{
-    text-align: left;
-}
-}
+    @media screen and (max-width: 767px) {
+        .primary-contact-form {
+            width: 95%;
+        }
+
+        .form-group {
+            flex-flow: column wrap;
+            text-align: left;
+        }
+
+        .formHeading {
+            text-align: left;
+        }
+    }
 </style>

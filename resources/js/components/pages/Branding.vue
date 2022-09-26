@@ -21,7 +21,7 @@
                             デザインからのアプローチではなく経営理念を言語化し、ビジョンに立ち向かう会社組織を設計。<br
                                 class="pc">お客様、求職者、社員、3つのブランドターゲットが熱狂するオモシロイ企業づくりを実現します。
                         </p>
-                        <a href="https://tomorrowgate.co.jp/request/" class="download fade_y on">資料ダウンロード（登録1分）</a>
+                        <a class="btn-views" href="">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></a>
                     </div>
                     <!-- <div class="bg_area"></div> -->
                 </div>
@@ -38,7 +38,7 @@
                                 ブランドづくりに必要な、WHY（なんのために）HOW（どのように）を抽出。貴社独自のストーリー設計、サイト・パンフレット・映像をご提案し、理念浸透、評価・制度設計、採用戦略等の総合的なコンサルティングを実施。多くのファンを生む“魅力的な会社”へと会社を成長させることを得意としています。
                             </p>
                         </div>
-                        <div class="branding--service--wrap">
+                        <!-- <div class="branding--service--wrap">
                             <div class="branding--service--wrap--box">
                                 <div class="img_box fade_y_min on">
                                     <a href="https://tomorrowgate.co.jp/service/branding/philosophy_design/"
@@ -172,7 +172,7 @@
                                 <a href="https://tomorrowgate.co.jp/service/branding/sns/"
                                     class="more_txt fade_y on"><span class="underline">MORE</span></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="branding--strengths">
@@ -216,6 +216,86 @@
                         </div>
                     </div>
                 </div>
+                <section class="solution-page my-5" id="expertise">
+                <h3 class="content-title">OUR EXPERTISE</h3>
+                <ul class="service-contents">
+                    <li class="service-contents__text">
+                        <p>アイデンブリッド社はシステム開発やそれに伴うデザイン業務、またモバイルアプリの開発やウェブ制作などITに関わるプラットフォームに広く精通しています。特にDXを求めるお客様のコンサルも含めたトータルサポートを行なっています。
+                        </p>
+                    </li>
+                    <li class="service-contents__list">
+                        <router-link to="/mobile-app-development/">
+                            <div class="service-items">
+                                <div class="service-contents__list__thumbnail-frame">
+                                    <img class="service-contents__list__thumbnail"
+                                        src="/public/assets/img/solution/Solution_Img_01.png" alt="" loading="lazy">
+                                </div>
+                                <p class="service-contents__list__subtitle">スマホアプリ開発</p>
+                                <h4 class="service-contents__list__title">Mobile app development</h4>
+                                <p class="service-contents__list__text">
+                                    SNSアプリやマッチングアプリ・チャットアプリそしてライブ配信アプリや性格診断占いアプリや業務用の管理アプリなどカテゴリーを問わず、設計・開発・審査申請から保守まで丸っと一括で承っています。
+                                    また当社ではウェブシステムと連携したアプリ開発も得意としていますので出先から既存システムとのデータ共有されたアプリへのアクセスも可能とし、お客様の業務効率の改善に貢献します。
+                                </p>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="service-contents__list">
+                        <router-link to="/system-application/">
+                            <div class="service-items">
+                                <div class="service-contents__list__thumbnail-frame">
+                                    <img class="service-contents__list__thumbnail"
+                                        src="/public/assets/img/solution/Solution_Img_02.png" alt="" loading="lazy">
+                                </div>
+                                <p class="service-contents__list__subtitle">システム開発</p>
+                                <h4 class="service-contents__list__title">System application development</h4>
+                                <p class="service-contents__list__text">
+                                    情報システム・顧客管理システム・在庫管理システム・業務用システムのウェブサービス構築や運用保守・セキュリティー対策など企業様向けの受託開発を行なっています。当社のエンジニアは多様な言語を取り扱えるほどAWSやAzureなどクラウドインラフサービスも専門領域です。
+                                </p>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="service-contents__list">
+                        <router-link to="/web-creative-digital-marketing/">
+                            <div class="service-items">
+                                <div class="service-contents__list__thumbnail-frame">
+                                    <img class="service-contents__list__thumbnail"
+                                        src="/public/assets/img/solution/Solution_Img_03.png" alt="" loading="lazy">
+                                </div>
+                                <p class="service-contents__list__subtitle">ウェブ制作・デジタルマーケティング</p>
+                                <h4 class="service-contents__list__title">Web creative・Digital marketing</h4>
+                                <p class="service-contents__list__text">
+                                    コーポレイトサイトの作成やポートフォリオサイトそしてLP構築などを手がけています。WordPressを使用したり、最新のJavaScript系言語をフロント開発に用いています。またデジタルマーケティングではSEO、SMOやSNS運用そして英語圏ならば運用から保守まで一括して行います。
+                                </p>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="service-contents__list">
+                        <router-link to="/web-design-UIUX-designing/">
+                            <div class="service-items">
+                                <div class="service-contents__list__thumbnail-frame">
+                                    <img class="service-contents__list__thumbnail"
+                                        src="/public/assets/img/solution/Solution_Img_04.png" alt="" loading="lazy">
+                                </div>
+                                <p class="service-contents__list__subtitle">デザイン制作</p>
+                                <h4 class="service-contents__list__title">Web design・UIUX designing</h4>
+                                <p class="service-contents__list__text service-contents__list_last__text">当社ではAdobe
+                                    XDを用いてウェブサイト・ウェブシステムやアプリケーションそしてスマホアプリのUIUXデザイン制作を行なっています。最初にワイヤーフレームを組みお客様の意図がきちんと反映されるようにコミュニケーションをしっかり取らせて頂いております。
+                                </p>
+                            </div>
+                        </router-link>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="quote-us">
+                <h2 class="heading cont-h1">Contact us</h2>
+                <span>Either you have a meer idea or concrete project details, get a qoute from us. We look forward to work with you. </span>
+                <div class="qoute-button">
+             
+                   
+                    <router-link to="/contact/" bis_skin_checked="1" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+                    </div>
+            </section>
                 <div class="branding--result">
                     <div class="heading">
                         <span class="sub en fade_y on">RESULT</span>
@@ -630,6 +710,77 @@
 </script>
 
 <style>
+    .quote-us  .contactbtn {
+    border: 1px solid #fdfdfd;
+    color: #fdfdfd;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    padding: 22px 0;
+    text-align: center;
+    transition: .4s;
+    width: 260px;
+}
+.quote-us  .contactbtn:hover {
+    background-color: #fdfdfd;
+    color: #000;
+}
+    .quote-us .heading {
+    margin: 0;
+    color: #ffffff;
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+    .quote-us{
+        background-image: url('/assets/img/contact-us-background-widget-img.png');
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .quote-us span {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500;
+    word-spacing: 4px;
+}
+.qoute-button {
+    padding: 40px 0 0px;
+}
+
+    .btn-views{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    margin-left: 8px;
+    margin-top: 50px;
+    opacity: 1;
+    padding: 19px 0;
+    position: relative;
+    text-align: center;
+    transition: .4s;
+    width: 250px;
+    z-index: 999;
+}
+.btn-views:hover {
+    background: #2573b0;
+    border: 1px solid #2573b0;
+    color: #fff;
+    transition: .4s;
+}
     /* .mv_textarea .entxt {
         display: block;
         margin-bottom: 20px;
@@ -2073,7 +2224,7 @@
     }
 
     .branding--contact {
-        background-image: url(/assets/img/bg_tw.jpeg);
+        background-image: url(/assets/img/bottom-banner-background-image.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0 0;
@@ -2861,6 +3012,389 @@
     @media screen and (max-width: 896px) {
         .branding .branding_flow--content .textarea p {
             margin-top: 20px;
+        }
+    }
+    .solution-page {
+        padding: 60px 10% 120px;
+    }
+
+    .service-section {
+        padding: 60px 10% 120px;
+
+    }
+
+    /*servive*/
+
+    .service {
+        padding-bottom: 160px;
+        padding-top: 0px;
+        /*影の調整 160 - 20*/
+    }
+
+
+    /*.service-contents {
+    columns: 2;
+    column-fill: auto;
+    column-gap: 60px;
+}
+
+.service-contents__text, .service-contents__list {
+    margin-bottom: 60px;
+    break-inside: avoid;
+    transform: translateZ(0);
+}*/
+    .service-subcontents__text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        width: calc((100% - 415px) / 1);
+        text-align: center;
+        margin: auto;
+    }
+
+    .service-contents {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    .service-contents__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc((100% - 60px) / 2);
+    }
+
+    .service-contents__list {
+        width: calc((100% - 60px) / 2);
+        margin-bottom: 60px;
+    }
+
+    .service-contents .service-contents__list:nth-child(2n+1) {
+        position: relative;
+        top: 132px;
+    }
+
+    .service-contents__text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .service-contents__list {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        min-height: 360px;
+    }
+
+    .service-contents__list a {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-contents__list a:hover .service-contents__list__thumbnail {
+        transform: translateY(-6%) scale(1.15);
+    }
+
+    .service-contents__list__thumbnail-frame {
+        position: absolute;
+        border-radius: 15px 15px 0 0;
+        top: 0;
+        left: 0;
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .service-contents__list__thumbnail {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .service-contents__list__subtitle {
+        margin-top: 285px;
+        margin-left: 30px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        position: relative;
+        z-index: 2;
+    }
+
+    .service-contents__list__title {
+        margin: 0 30px 10px 30px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.05em;
+        position: relative;
+        z-index: 2;
+    }
+
+    .service-contents__list__text {
+        margin: 0 30px;
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .viewmore-btn_service {
+        margin-top: 15px;
+    }
+
+    .service-contents__list .service-items {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-contents__list .service-items:hover .service-contents__list__thumbnail {
+        transform: translateY(-6%) scale(1.15);
+    }
+
+    @media (max-width: 767px) {
+        .service {
+            padding-bottom: 60px;
+        }
+
+        .service-contents {
+            display: block;
+        }
+
+        .service-contents__text {
+            position: relative;
+            width: 100%;
+        }
+
+        .service-contents__list {
+            width: 100%;
+            min-height: 270px;
+        }
+
+        .service-contents__list a {
+            height: auto;
+        }
+
+        .service-contents .service-contents__list:nth-child(2n+1) {
+            top: inherit;
+        }
+
+        .service-contents__text,
+        .service-contents__list {
+            margin-bottom: 30px !important;
+        }
+
+        .service-contents .service-contents__list:nth-child(5) {
+            margin-bottom: 0 !important;
+        }
+
+        .service-contents__list__thumbnail-frame {
+            height: 150px;
+        }
+
+        .service-contents__list__thumbnail {
+            height: 120px;
+            object-position: bottom;
+        }
+
+        .service-contents__list__subtitle {
+            margin-top: 112px;
+            margin-bottom: 0;
+            margin-left: 10px;
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        .service-contents__list__title {
+            margin: 0 30px 10px 10px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .service-contents__list__text {
+            margin: 0 10px 12px 10px;
+            font-size: 13px;
+            line-height: 19px;
+        }
+
+        .viewmore-btn_service {
+            margin: 50px auto 0 auto;
+        }
+    }
+
+    /*product section*/
+    .product {
+        padding-bottom: 60px;
+        /*蠖ｱ縺ｮ隱ｿ謨ｴ 160 - 20*/
+    }
+
+    .product-contents {
+        columns: 2;
+        column-fill: auto;
+        column-gap: 60px;
+    }
+
+    .product-contents__text,
+    .product-contents__list {
+        margin-bottom: 60px;
+        break-inside: avoid;
+        transform: translateZ(0);
+    }
+
+    ul .product-contents__list:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    .product-contents__text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product-contents__list {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+    }
+
+    .product-contents__list__thumbnail {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .product-contents__list__sorrytext {
+        /*issue: 繝�じ繧､繝ｳ蟠ｩ繧後ｋ*/
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+    }
+
+    .product-contents__list__sorrytext_last {
+        top: 60px;
+    }
+
+    .product-contents__list__subtitle {
+        margin-top: -23px;
+        margin-left: 30px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+    }
+
+    .product-contents__list__title {
+        margin: 0 30px 10px 30px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.05em;
+    }
+
+    .product-contents__list__text {
+        margin: 0 30px;
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .viewmore-btn_product {
+        margin-top: -58px;
+    }
+
+    @media (max-width: 767px) {
+        .solution-page {
+            padding: 60px 5%;
+        }
+
+        .profileGallery {
+            grid-gap: 10px;
+        }
+
+        .button-fit {
+            width: 100%;
+        }
+
+        .product {
+            padding-bottom: 0px;
+            /*蠖ｱ縺ｮ隱ｿ謨ｴ 160 - 20*/
+        }
+
+        .product-contents {
+            columns: 1;
+        }
+
+        .product-contents__text,
+        .product-contents__list {
+            margin-bottom: 30px !important;
+        }
+
+        .product-contents .product-contents__list:nth-child(5) {
+            margin-bottom: 0 !important;
+        }
+
+        .product-contents__list_last {
+            margin-bottom: 0 !important;
+        }
+
+        .product-contents__list__thumbnail {
+            width: 100%;
+        }
+
+        .product-contents__list__sorrytext {
+            top: 40px;
+            font-size: 13px;
+            line-height: 19px;
+        }
+
+        .product-contents__list__sorrytext_last {
+            top: 30px;
+        }
+
+        .product-contents__list__subtitle {
+            margin-top: -8px;
+            margin-bottom: 0;
+            margin-left: 10px;
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        .product-contents__list__title {
+            margin: 0 30px 10px 10px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .product-contents__list__text {
+            margin: 0 10px 12px 10px;
+            font-size: 13px;
+            line-height: 19px;
+        }
+
+        .viewmore-btn_product {
+            margin: 50px auto 0 auto;
+        }
+
+        .service-subcontents__text {
+            width: 95%;
         }
     }
 </style>
