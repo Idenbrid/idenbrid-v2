@@ -3,8 +3,8 @@
          <Navbar />
 <main>
     <div class="hero_Heading">
-        <h2 class="hero">ABOUT</h2>
-        <p class="about-subcontents__text">こちらは当社の情報や沿革など会社概要を確認いただけすページです。</p>
+        <h2 class="hero">ABOUT / 会社情報</h2>
+        <p class="about-subcontents__text">こちらはIDENBRID社の会社に関してをご覧頂けるページになります。</p>
     </div>
     <section class="mission mycontents-wide" id="mission">
         <h3 class="content-title content-title_mission">MISSION</h3>
@@ -12,7 +12,7 @@
         <p class="content-text content-text_mission">  当社のサービスを使ったお客様が喜んでくれたり、購入してくださったユーザーの悩みが解決したりなど私たちは持っているテクノロジーや技術を用いて未来を刷新していきます。</p>
     </section>
     <section class="container pb-5" id="board-message">
-        <h3 class="subcontent-title subcontent-title_company">BOARD MESSAGE</h3>
+        <h3 class="subcontent-title subcontent-title_company">CEO MESSAGE / 代表メッセージ</h3>
         <div class="row">
             <div class="col-md-6">
 <p class="missioncontent-text"> 新型コロナウイルスが世界中で猛威を振るう中、困難な状況におられる皆様に心よりお見舞い申し上げます。また治療などに一所懸命に取り組まれている医療従事者を始めとする皆様に心より御礼申し上げます。

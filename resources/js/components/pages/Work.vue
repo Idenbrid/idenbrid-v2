@@ -9,8 +9,8 @@
 </div> -->
 <div class="mv_textarea">
         <h2>
-            <strong class="en entxt">WORKS</strong>
-            <span class="jptxt">このページでは当社がこれまで手がけてきたシステム開発・アプリ構築・ウェブ制作などのポートフォリオを公開しています。</span>
+            <strong class="en entxt">WORKS / 仕事実績</strong>
+            <span class="jptxt">アイデンブリッドの開発・制作事例の実績一覧です。</span>
         </h2>
     </div>
         <!-- <section class="work mycontents-wide">
@@ -27,16 +27,16 @@
         </section> -->
 <div class="works--content highlight_blk">
                 <ul class="works--content--link">
-                    <li><a href="https://tomorrowgate.co.jp/works/" class="en categoryitem current">CLIENT</a>
+                    <li><a href="https://tomorrowgate.co.jp/works/" class="en categoryitem current">全て</a>
                     </li>
                     <li><a href="https://tomorrowgate.co.jp/works/category/visionmap/"
-                            class="en categoryitem">visionmap</a></li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/web/" class="en categoryitem">web</a></li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/graphic/" class="en categoryitem">graphic</a>
+                            class="en categoryitem">UIUXデザイン</a></li>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/web/" class="en categoryitem">ウェブ・システム</a></li>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/graphic/" class="en categoryitem">スマホアプリ</a>
                     </li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/movie/" class="en categoryitem">movie</a>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/movie/" class="en categoryitem">デスクトップアプリ</a>
                     </li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/other/" class="en categoryitem">other</a>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/other/" class="en categoryitem">その他</a>
                     </li>
                 </ul>
                 <div  class="works--content--mainarea">
@@ -64,7 +64,7 @@
             <router-link to="/about/">
                 <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg" alt="" loading="lazy">
                 <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">経営理念</p>
+                    <!-- <p class="menu-contents__list__subtitle">経営理念</p> -->
                     <h4 class="menu-contents__list__title">Policy</h4>
                 </div>
             </router-link>

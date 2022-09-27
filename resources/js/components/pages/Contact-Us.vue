@@ -3,8 +3,8 @@
         <Navbar />
         <div class="mv_textarea">
             <h2>
-                <strong class="en entxt">CONTACT US</strong>
-                <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+                <strong class="en entxt">CONTACT US / お問い合わせ</strong>
+                <span class="jptxt">IDENBRIDに対してのお仕事・お見積りに関して問い合わせができます。</span>
             </h2>
         </div>
         <main>
@@ -317,7 +317,7 @@
                                                 <div class="formHeading col-md-3">
 
                                                     <label class="field-label col-form-label"
-                                                        for="880722_2638pi_880722_2638">ご連絡がつきやすい番号</label>
+                                                        for="880722_2638pi_880722_2638">電話番号</label>
 
                                                 </div>
                                                 <div class="col-md-8">

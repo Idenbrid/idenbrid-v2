@@ -9,8 +9,8 @@
            </div> -->
             <div class="mv_textarea">
                 <h2>
-                    <strong class="en entxt">NEWS</strong>
-                    <span class="jptxt">アイデンブリッド社からのお知らせやプレスリリースを配信します。</span>
+                    <strong class="en entxt">NEWS / お知らせ</strong>
+                    <span class="jptxt">アイデンブリッドからのお知らせやプレスリリースを配信します。</span>
                 </h2>
             </div>
             <section class="news mycontents-wide">
@@ -58,12 +58,12 @@
                     </div>
 
                     <ul class="topic--content--sidearea">
-                        <li><a href="https://tomorrowgate.co.jp/topic/" class="en categoryitem current">All</a></li>
-                        <li><a href="https://tomorrowgate.co.jp/topic/category/news/" class="en categoryitem">news</a>
+                        <li><a href="https://tomorrowgate.co.jp/topic/" class="en categoryitem current">全て</a></li>
+                        <li><a href="https://tomorrowgate.co.jp/topic/category/news/" class="en categoryitem">ニュース</a>
                         </li>
-                        <li><a href="https://tomorrowgate.co.jp/topic/category/media/" class="en categoryitem">media</a>
+                        <li><a href="https://tomorrowgate.co.jp/topic/category/media/" class="en categoryitem">メディア</a>
                         </li>
-                        <li><a href="https://tomorrowgate.co.jp/topic/category/event/" class="en categoryitem">event</a>
+                        <li><a href="https://tomorrowgate.co.jp/topic/category/event/" class="en categoryitem">イベント</a>
                         </li>
                     </ul>
                 </div>

@@ -3,21 +3,21 @@
         <Navbar />
         <div class="mv_textarea">
             <h2>
-                <strong class="en entxt">Office</strong>
-                <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+                <strong class="en entxt">OFFICE & ACCESS / オフィス&アクセス</strong>
+                <span class="jptxt">パキスタンにある本社をご紹介</span>
             </h2>
         </div>
         <main>
             <div class="lead_area">
                 <div class="lead_inner">
                     <h3 class="lead_ttl fade_y on">
-                        <h3 class="content-title">CONCEPT</h3>
-                        目指したのは、<br>オトナも遊べる秘密基地
+                        <h3 class="content-title">ENVIRONMENT</h3>
+                            "大切なのは、、<br>メンバーが働きたい環境構築"
                     </h3>
                     <p class="lead_txt fade_y on">
-                        すべり台がある。キッズスペースがある。<br class="sp">BARもある。<br
-                            class="pc">卓球台やダーツ。カラオケまで完備されている。<br>こんなオフィス、非常識と思われるかもしれない。<br>だけど、こどもからオトナまで「訪れてみたくなる」場所が、<br
-                            class="pc">社員やその家族にとって、オモシロイ場所になっていく。<br>幼い頃、時間を忘れて没頭することができた秘密基地のように。</p>
+                        1日の多くの時間を過ごすオフィス。<br
+                            class="pc">コロナがあってからリモート環境で仕事することも増えたが、<br>当社では今でもオフィスの存在を大切にしている。<br>社員が１箇所に集まって、集中した時のパワーは凄い。<br
+                            class="pc">この会社で仕事したいと思ってもらえるようなスペース作りが<br>私たちが今後も目指す方向性である。</p>
                 </div>
             </div>
             <div class="slider-title">
@@ -69,17 +69,17 @@
                             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="text_area">
-                        <p class="place">【大阪本社】<br>〒542-0086<br>大阪市中央区西心斎橋1-6-32 <br class="sp">アニーズビル2階</p>
+                        <p class="place">パキスタン本社<br>〒54810<br>Basement 1st floor, 176 Y-Block, DHA Phase3, Lahore, Pakistan</p>
                         <p class="number">
-                            TEL:<a href="tel:06-7167-3950" class="tel_link no_link">06-7167-3950</a><br>
-                            FAX:06-4708-3636
+                            TEL : <a href="tel:+923064041221" class="tel_link no_link">+92306-404-1221</a><br>
+                            MAIL : <a href="mailto:helloworld@idenbrid.com">helloworld@idenbrid.com</a>
                         </p>
                         <p class="station">
-                            地下鉄御堂筋線「心斎橋駅」<br class="sp">7番出口より徒歩3分<br>
-                            地下鉄四つ橋線「四ツ橋駅」<br class="sp">5番出口より徒歩4分
+                            Lahore Airportよ<br class="sp">り車で15分<br>
+                            Gulberg中心地よ<br class="sp">り車で20分
                         </p>
                         <a href="https://tomorrowgate.co.jp/company/office/" class="more_txt fade_y on"><span
-                                class="underline">OFFICE</span></a>
+                                class="underline">Google Map</span></a>
                     </div>
                 </div>
             </div>

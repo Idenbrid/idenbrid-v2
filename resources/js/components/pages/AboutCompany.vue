@@ -9,7 +9,7 @@
             <h2>
                 <strong class="en entxt">ABOUT / 会社情報</strong>
                 <span class="jptxt">こちらはIDENBRID社の会社に関してをご覧頂けるページになります。</span>
-            </h2>
+            </h2>   
         </div>
         <!-- <div class="company--index highlight_blk">
             <router-link to="/access/" class="hoverScale company--item">
@@ -106,18 +106,6 @@
                         </div>
                     </div>
                 </router-link>
-                <router-link to="/office/">
-                    <div class="link-card">
-                        <div class="link-img">
-                            <img src="/assets/img/officeandaccess.png" alt="">
-                        </div>
-                        <div class="link-haeding">
-                            <h6>OFFICE & ACCESS / オフィス&アクセス</h6>
-                            <div class="text">会社のオフィスやアクセスをご覧頂けます。</div>
-                           
-                        </div>
-                    </div>
-                </router-link>
                 <router-link to="/member/">
                     <div class="link-card">
                         <div class="link-img">
@@ -130,6 +118,19 @@
                         </div>
                     </div>
                 </router-link>
+                <router-link to="/office/">
+                    <div class="link-card">
+                        <div class="link-img">
+                            <img src="/assets/img/officeandaccess.png" alt="">
+                        </div>
+                        <div class="link-haeding">
+                            <h6>OFFICE & ACCESS / オフィス&アクセス</h6>
+                            <div class="text">会社のオフィスやアクセスをご覧頂けます。</div>
+                           
+                        </div>
+                    </div>
+                </router-link>
+                
                 <router-link to="/digitalasset/">
                     <div class="link-card">
                         <div class="link-img">
@@ -378,7 +379,7 @@
 
     .link-img img {
         transition: transform .5s ease;
-        height: 320px;
+        height: auto;
         object-fit: cover;
         width: 100%;
     }
