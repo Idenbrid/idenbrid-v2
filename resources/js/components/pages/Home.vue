@@ -53,8 +53,7 @@
                     <div class="mycontents-wide">
                         <div class="c-message__content">
                             <div class="c-message__box large-7 small-12">
-                                <h3 data-v-62c86c4e="" class="content-title c-message__title">CEO MESSAGE</h3>
-                                </h2>
+                                <h3  class="content-title c-message__title">CEO MESSAGE</h3>
                                 <div class="c-message__title-sub">「パキスタンから世界へ」<br>
                                     ITを届けるHubを作るストーリー</div>
                                 <div class="c-message__button u-hidden-sm"><a href="/solutions/"
@@ -843,7 +842,8 @@
         text-align: center;
         transition: .4s;
         width: 250px;
-        z-index: 999;
+        /* z-index: 999; */
+        z-index: 99;
     }
 
     .btn-views:hover {
@@ -2262,6 +2262,14 @@
     @media (max-width: 475px) {
     .service_h2{
          flex-direction: column;
+         font-size: 20px;
+
+    }
+    .otherservice {
+        margin-bottom: 0px;
+    }
+    .news{
+        margin-bottom: 0px;
     }
 }
 </style>

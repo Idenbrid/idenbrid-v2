@@ -20,20 +20,53 @@
                                     <router-link to="/"><span class="jp">トップページ</span><span class="en">Home</span>
                                     </router-link>
                                 </li>
-                                <li class="header-pc__fixed__menu__left__list">
+                                <!-- ************addd by az*********** -->
+                                <li class="header-pc__nav__list">
+                            <router-link to="/blog/">ブログ</router-link>
+                        </li>
+                        <li class="header-pc__nav__list">
+                            <router-link to="/policy/">経営理念</router-link>
+                        </li>
+                        <li class="header-pc__nav__list">
+                            <router-link to="/recruit/">事業紹介</router-link>
+                        </li>
+                        <li class="header-pc__nav__list">
+                            <router-link to="/works/">仕事実績</router-link>
+                        </li>
+                        <li class="header-pc__nav__list">
+                            <router-link to="/about-company/">会社情報</router-link>
+                        </li>
+                        <!-- <li class="header-pc__nav__list"><router-link to="/onlinedevelopmenthub/">ONLINE DEVELOPEMENT HUB</router-link></li>-->
+                        <!--<li class="header-pc__nav__list"><router-link to="/news/">NEWS</router-link></li>-->
+
+                        <li class="header-pc__nav__list header-pc__nav__list_img mr-0 pr-0">
+                            <router-link to="/contact/">お問い合わせ</router-link>
+                        </li>
+                                <!--************ addd by az end*********** -->
+
+
+
+
+
+
+                                <!-- <li class="header-pc__fixed__menu__left__list">
                                     <router-link to="/solutions/"><span class="jp">事業内容</span><span
                                             class="en">SOLUTIONS</span></router-link>
                                     <ul>
                                         <li class="header-pc__fixed__menu__left__list__list">
                                             【ウェブ制作・デジタルマーケティング/デザイン制作/IdenSpire/オンライン開発ハブ】</li>
-                                        <!--<li class="header-pc__fixed__menu__left__list__list"><router-link to="/Work">ステム開発</router-link></li>
+                                        <li class="header-pc__fixed__menu__left__list__list"><router-link to="/Work">ステム開発</router-link></li>
                                 <li class="header-pc__fixed__menu__left__list__list"><router-link to="/Work">ェブ制作・デジタルマーケティング</router-link></li>
                                 <li class="header-pc__fixed__menu__left__list__list"><router-link to="/Work">デザイン制作</router-link></li>
                                 <li class="header-pc__fixed__menu__left__list__list"><router-link to="/Work">　BizBlanca</router-link></li>
-                                <li class="header-pc__fixed__menu__left__list__list"><router-link to="/Work">オンライン開発ハブ</router-link></li>-->
+                                <li class="header-pc__fixed__menu__left__list__list"><router-link to="/Work">オンライン開発ハブ</router-link></li>
                                     </ul>
-                                </li>
-                                <li class="header-pc__fixed__menu__left__list">
+                                </li> -->
+
+
+
+
+                                <!-- <li class="header-pc__fixed__menu__left__list">
                                     <router-link to="/works/"><span class="jp">開発実績</span><span class="en">WORKS</span>
                                     </router-link>
                                     <ul>
@@ -64,7 +97,7 @@
                                 <li class="header-pc__fixed__menu__left__list">
                                     <router-link to="/faqs/"><span class="jp">よくある質問</span><span class="en">FAQs</span>
                                     </router-link>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -115,7 +148,38 @@
                             </p>
 
                         </li>
+                          <!-- ************addd by az*********** -->
+                          <li  class="header-sp__fixed__menu__left__list">
+                            <router-link to="/blog/">ブログ</router-link>
+                        </li>
+                        <li  class="header-sp__fixed__menu__left__list">
+                            <router-link to="/policy/">経営理念</router-link>
+                        </li>
+                        <li  class="header-sp__fixed__menu__left__list">
+                            <router-link to="/recruit/">事業紹介</router-link>
+                        </li>
                         <li class="header-sp__fixed__menu__left__list">
+                            <router-link to="/works/">仕事実績</router-link>
+                        </li>
+                        <li  class="header-sp__fixed__menu__left__list">
+                            <router-link to="/about-company/">会社情報</router-link>
+                        </li>
+                        <!-- <li class="header-pc__nav__list"><router-link to="/onlinedevelopmenthub/">ONLINE DEVELOPEMENT HUB</router-link></li>-->
+                        <!--<li class="header-pc__nav__list"><router-link to="/news/">NEWS</router-link></li>-->
+
+                        <li  class="header-sp__fixed__menu__left__list">
+                            <router-link to="/contact/">お問い合わせ</router-link>
+                        </li>
+                                <!--************ addd by az end*********** -->
+
+
+
+
+
+
+
+
+                        <!-- <li class="header-sp__fixed__menu__left__list">
                             <router-link to="/solutions/">事業内容</router-link>
                         </li>
                         <li class="header-sp__fixed__menu__left__list">
@@ -140,7 +204,7 @@
                         </li>
                         <li class="header-sp__fixed__menu__left__list">
                             <router-link to="/faqs/">よくある質問</router-link>
-                        </li>
+                        </li> -->
 
                     </ul>
                     <!-- <div class="header-sp__fixed__menu__right">
@@ -172,7 +236,7 @@
         </div>
     </div>
 </template>
-<!-- <script>
+<script>
 
     export default {
         components: {
@@ -206,7 +270,7 @@ jQuery('.header-sp__fixed__menu__left__list__pulus_blog').on('click', function (
    /*end*/
 
     };
-</script> -->
+</script>
 <style scoped>
 .side_fix {
     position: fixed;

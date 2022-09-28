@@ -5,14 +5,36 @@
         <h2 class="hero">RECRUIT</h2>
         <p class="about-subcontents__text">こちらは当社の情報や沿革など会社概要を確認いただけすページです。</p>
     </div> -->
-        <div class="mv_textarea-recruit">
+
+
+
+        <!-- <div class="mv_textarea-recruit">
+            <h2>
+                <strong class="en entxt">BUSINESS / 事業紹介</strong>
+                <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
+            </h2>
+        </div> -->
+
+        <main>
+            <div class="recruit--leadtxt">
+
+                <div class="mv_textarea-recruit">
             <h2>
                 <strong class="en entxt">BUSINESS / 事業紹介</strong>
                 <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
             </h2>
         </div>
-        <main>
-            <div class="recruit--leadtxt">
+
+
+
+
+
+
+
+
+
+
+
                 <h3>ビジネスを動かすITサービスは<br class="pc">アイデアから始まります</h3>
                 <p>単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、
                     <br class="pc">お客様の求めているユーザーペインを解決してこそ、その先のエンドユーザーに届くITサービスが実現できるのです。
@@ -325,7 +347,7 @@
 
     .mv_textarea-recruit {
         color: #dadada;
-        background-color: #000;
+        /* background-color: #000; */
     }
 
     @media screen and (max-width: 896px) {
@@ -394,15 +416,19 @@
 
 
     .recruit--leadtxt {
-        padding: 40px 10% 100px;
+        /* padding: 40px 10% 100px; */
+        padding: 17px 10% 62px;
         color: #dadada;
         position: relative;
         z-index: 1;
         margin-top: 0px;
         background-color: #000;
+        background: url('/assets/img/all-member.png') no-repeat center;
+        background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.5);
     }
 
-    .recruit--leadtxt::after {
+    /* .recruit--leadtxt::after {
         content: "";
         background: url('/assets/img/all_member.jpg') no-repeat center;
         background-size: 100%;
@@ -414,7 +440,7 @@
         transform: translate(-50%, -50%);
         opacity: 0.3;
         z-index: -1;
-    }
+    } */
 
     @media screen and (max-width: 896px) {
         .recruit--leadtxt::after {
@@ -612,7 +638,7 @@
         }
 
         .mv_textarea-recruit {
-            padding: 120px 10% 60px;
+            padding: 40px 0% 40px;
         }
     }
 

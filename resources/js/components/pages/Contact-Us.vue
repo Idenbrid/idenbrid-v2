@@ -1171,7 +1171,6 @@
     .formInputInner p.description {
         font-size: 15px;
         margin: 7px 0 0 0;
-        white-space: pre;
     }
 
     form.form p label {

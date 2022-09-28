@@ -205,47 +205,56 @@
           <div class="footer-menu">
             <div class="foot-menu-group">
               <h4>
-                <router-link to="/blog/" class="">ブログ</router-link>
+                <!-- <router-link to="/blog/" class="">ブログ</router-link> -->
+                <router-link to="/blog/">ブログ</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-                <router-link to="/policy/" class="">経営理念</router-link>
+                <!-- <router-link to="/policy/" class="">経営理念</router-link> -->
+                <router-link to="/policy/">経営理念</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
                 <router-link to="/solutions/" class="">事業紹介</router-link>
+                <!-- <router-link to="/recruit/">事業紹介</router-link> -->
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-                <router-link to="/works/" class="">仕事実績</router-link>
+                <!-- <router-link to="/works/" class="">仕事実績</router-link> -->
+                <router-link to="/works/">仕事実績</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-                <router-link to="/about-company/" class="">会社情報</router-link>
+                <!-- <router-link to="/about-company/" class="">会社情報</router-link> -->
+                <router-link to="/about-company/">会社情報</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
                 <router-link to="/news/" class="">お知らせ</router-link>
+                <!-- <router-link to="/contact/">お問い合わせ</router-link> -->
               </h4>
             </div>
           </div>
           <div class="social-links">
             <div>
-              <a href=""><i class="fa fa-twitter twitter"></i></a>
+              <a href="https://twitter.com/idenbridinc" target="_blank"><i class="fa fa-twitter twitter"></i></a>
             </div>
             <div>
-              <a href=""><i class="fa fa-youtube twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UC5ENsxgAQIqVfBIMy-Fp-0w" target="_blank"><i class="fa fa-youtube twitter"></i></a>
             </div>
             <div>
-              <a href=""><i class="fa fa-linkedin twitter"></i></a>
+              <a href="https://www.linkedin.com/company/idenbrid" target="_blank"><i class="fa fa-linkedin twitter"></i></a>
             </div>
             <div>
-              <router-link to="/blog/"><i class="fa fa-file-text twitter" aria-hidden="true"></i></router-link>
+              <a href="https://www.facebook.com/idenbrid/" target="_blank"><i class="fa fa-facebook-f twitter"></i></a>
+            </div>
+            <div>
+              <router-link to="/blog/"><i class="fa fa-file-text twitter" target="_blank"></i></router-link>
             </div>
           </div>
           <p class="copyright">
