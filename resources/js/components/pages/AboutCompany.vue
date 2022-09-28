@@ -1,86 +1,13 @@
 <template>
     <div>
         <Navbar />
-        <!-- <div class="hero_Heading">
-        <h2 class="hero">ABOUT</h2>
-        <p class="about-subcontents__text">こちらは当社の情報や沿革など会社概要を確認いただけすページです。</p>
-    </div> -->
         <div class="mv_textarea">
             <h2>
                 <strong class="en entxt">ABOUT / 会社情報</strong>
                 <span class="jptxt">こちらはIDENBRID社の会社に関してをご覧頂けるページになります。</span>
-            </h2>   
+            </h2>
         </div>
-        <!-- <div class="company--index highlight_blk">
-            <router-link to="/access/" class="hoverScale company--item">
-                <div class="thumb">
-                    <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
-                    <div class="scaleImg">
-                        <img src="https://tomorrowgate.co.jp/asset/img/company/company-index01.jpg" alt="">
-                    </div>
-                </div>
-                <h3 class="company_ttl">
-                    <strong>会社概要</strong>
-                    <span class="en">PROFILE</span>
-                </h3>
-            </router-link>
-            
-            <router-link to="/message/" class="hoverScale company--item">
-                <div class="thumb">
-                    <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
-                    <div class="scaleImg">
-                        <img src="https://tomorrowgate.co.jp/asset/img/company/company-index02.jpg" alt="">
-                    </div>
-                </div>
-                <h3 class="company_ttl">
-                    <strong>代表挨拶</strong>
-                    <span class="en">MESSAGE</span>
-                </h3>
-            </router-link>
-         
-            <router-link to="/office/" class="hoverScale company--item">
-                <div class="thumb">
-                    <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
-                    <div class="scaleImg">
-                        <img src="https://tomorrowgate.co.jp/asset/img/company/company-index04.jpg" alt="">
-                    </div>
-                </div>
-                <h3 class="company_ttl">
-                    <strong>オフィス</strong>
-                    <span class="en">OFFICE</span>
-                </h3>
-            </router-link>
-               <router-link to="/member" class="hoverScale company--item">
-                <div class="thumb">
-                    <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
-                    <div class="scaleImg">
-                        <img src="https://tomorrowgate.co.jp/asset/img/company/company-index03.jpg" alt="">
-                    </div>
-                </div>
-                <h3 class="company_ttl">
-                    <strong>役員紹介</strong>
-                    <span class="en">Member</span>
-                </h3>
-               </router-link>
-
-               
-               
-            <router-link to="/digitalasset/" class="hoverScale company--item">
-                <div class="thumb">
-                    <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
-                    <div class="scaleImg">
-                        <img src="https://tomorrowgate.co.jp/asset/img/company/company-index05.jpg" alt="">
-                    </div>
-                </div>
-                <h3 class="company_ttl">
-                    <strong>アクセス</strong>
-                    <span class="en">Digital Assets</span>
-                </h3>
-            </router-link> 
-          
-        </div> -->
         <section class="about-section">
-
             <div class="link-set">
                 <router-link to="/access/">
                     <div class="link-card">
@@ -88,9 +15,9 @@
                             <img src="/assets/img/Company.png" alt="">
                         </div>
                         <div class="link-haeding">
-                            <h6>COMPANY /  会社概要</h6>
+                            <h6>COMPANY / 会社概要</h6>
                             <div class="text">IDENBRID社の概要をご覧頂けます。</div>
-                          
+
                         </div>
                     </div>
                 </router-link>
@@ -102,7 +29,7 @@
                         <div class="link-haeding">
                             <h6>CEO MESSAGE / 代表メッセージ</h6>
                             <div class="text">IDENBRID社CEO中村のメッセージをご覧頂けます。</div>
-                           
+
                         </div>
                     </div>
                 </router-link>
@@ -114,7 +41,7 @@
                         <div class="link-haeding">
                             <h6>TEAM / チーム</h6>
                             <div class="text">IDENBRIDの愉快なメンバーをご覧頂けます。</div>
-                           
+
                         </div>
                     </div>
                 </router-link>
@@ -126,11 +53,11 @@
                         <div class="link-haeding">
                             <h6>OFFICE & ACCESS / オフィス&アクセス</h6>
                             <div class="text">会社のオフィスやアクセスをご覧頂けます。</div>
-                           
+
                         </div>
                     </div>
                 </router-link>
-                
+
                 <router-link to="/digitalasset/">
                     <div class="link-card">
                         <div class="link-img">
@@ -139,7 +66,7 @@
                         <div class="link-haeding">
                             <h6>DIGITAL ASSETS / デジタルアセット</h6>
                             <div class="text">IDENBRID社の公式ロゴやキービジュアルを提供しております。</div>
-                           
+
                         </div>
                     </div>
                 </router-link>

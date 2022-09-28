@@ -8,10 +8,6 @@
         </h2>
     </div>
         <main>
-            <!-- <div class="hero_Heading">
-                <h2 class="hero">Branding</h2>
-                <p class="blog-subcontents__text">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</p>
-            </div> -->
             <div id="contents">
 
                 <div class="branding--mv">
@@ -23,7 +19,7 @@
                         </p>
                         <a class="btn-views" href="">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></a>
                     </div>
-                    <!-- <div class="bg_area"></div> -->
+    
                 </div>
                 <div class="branding--service">
                     <div class="branding--service--inner">
@@ -38,141 +34,6 @@
                                 ブランドづくりに必要な、WHY（なんのために）HOW（どのように）を抽出。貴社独自のストーリー設計、サイト・パンフレット・映像をご提案し、理念浸透、評価・制度設計、採用戦略等の総合的なコンサルティングを実施。多くのファンを生む“魅力的な会社”へと会社を成長させることを得意としています。
                             </p>
                         </div>
-                        <!-- <div class="branding--service--wrap">
-                            <div class="branding--service--wrap--box">
-                                <div class="img_box fade_y_min on">
-                                    <a href="https://tomorrowgate.co.jp/service/branding/philosophy_design/"
-                                        class="hoverScale">
-                                        <div class="thumb">
-                                            <div class="hvrtxt en"><span class="more_txt"><span
-                                                        class="underline">MORE</span></span>
-                                            </div>
-                                            <div class="scaleImg">
-                                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/ph_des.jpg"
-                                                    alt="" class="pc">
-                                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/sp-ph_des.jpg"
-                                                    alt="" class="sp">
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text_area">
-                                    <div class="heading fade_y on">
-                                        <h4>経営理念策定</h4>
-                                        <span class="label">ミッション、ビジョン、バリュー</span>
-                                    </div>
-                                    <p class="lead fade_y on">経営理念を言語化し、ビジョンに期限とゴールを設定。<br
-                                            class="pc">会社として在りたい像とやるべき行動（ビジョンマップ）をつくり、全社員への浸透を図ります。
-                                    </p>
-                                </div>
-                                <a href="https://tomorrowgate.co.jp/service/branding/philosophy_design/"
-                                    class="more_txt fade_y on"><span class="underline">MORE</span></a>
-                            </div>
-                            <div class="branding--service--wrap--box">
-                                <div class="img_box fade_y on">
-                                    <a href="https://tomorrowgate.co.jp/service/branding/outer/" class="hoverScale">
-                                        <div class="thumb">
-                                            <div class="hvrtxt en"><span class="more_txt"><span
-                                                        class="underline">MORE</span></span>
-                                            </div>
-                                            <div class="scaleImg">
-                                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/outer.jpg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text_area">
-                                    <div class="heading fade_y on">
-                                        <h4>アウターブランディング</h4>
-                                        <span class="label">デザイン</span>
-                                    </div>
-                                    <p class="lead fade_y on">ビジョンに基づき、ブランドコンセプトを設計。<br
-                                            class="pc">策定したブランドの世界観を、各種ツールとしてデザインを施し発信します。
-                                    </p>
-                                </div>
-                                <a href="https://tomorrowgate.co.jp/service/branding/outer/"
-                                    class="more_txt fade_y on"><span class="underline">MORE</span></a>
-                            </div>
-                            <div class="branding--service--wrap--box">
-                                <div class="img_box fade_y on">
-                                    <a href="https://tomorrowgate.co.jp/service/branding/inner/" class="hoverScale">
-                                        <div class="thumb">
-                                            <div class="hvrtxt en"><span class="more_txt"><span
-                                                        class="underline">MORE</span></span>
-                                            </div>
-                                            <div class="scaleImg">
-                                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/inner.jpg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text_area">
-                                    <div class="heading fade_y on">
-                                        <h4>インナーブランディング</h4>
-                                        <span class="label">コンサルティング</span>
-                                    </div>
-                                    <p class="lead fade_y on">会社づくりに重要な人事評価制度から社内制度設計、理念浸透、プログラムまで、<br
-                                            class="pc">会社と社員の目指すベクトルを合わせる戦略を構築します。</p>
-                                </div>
-                                <a href="https://tomorrowgate.co.jp/service/branding/inner/"
-                                    class="more_txt fade_y on"><span class="underline">MORE</span></a>
-                            </div>
-                            <div class="branding--service--wrap--box">
-                                <div class="img_box fade_y on">
-                                    <a href="https://tomorrowgate.co.jp/service/branding/recruitment/"
-                                        class="hoverScale">
-                                        <div class="thumb">
-                                            <div class="hvrtxt en"><span class="more_txt"><span
-                                                        class="underline">MORE</span></span>
-                                            </div>
-                                            <div class="scaleImg">
-                                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/recruitment.jpg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text_area">
-                                    <div class="heading fade_y on">
-                                        <h4>採用ブランディング</h4>
-                                        <span class="label">新卒・中途採用支援</span>
-                                    </div>
-                                    <p class="lead fade_y on">
-                                        企業ブランドを根底に、意思のある採用コンセプトを設計。<br class="pc">学生や求職者がビジョンに共感し「一緒に働きたい」と感じる<br
-                                            class="pc">企画・ツール制作・選考フローを設計します。
-                                    </p>
-                                </div>
-                                <a href="https://tomorrowgate.co.jp/service/branding/recruitment/"
-                                    class="more_txt fade_y on"><span class="underline">MORE</span></a>
-                            </div>
-                            <div class="branding--service--wrap--box">
-                                <div class="img_box fade_y on">
-                                    <a href="https://tomorrowgate.co.jp/service/branding/sns/" class="hoverScale">
-                                        <div class="thumb">
-                                            <div class="hvrtxt en"><span class="more_txt"><span
-                                                        class="underline">MORE</span></span>
-                                            </div>
-                                            <div class="scaleImg">
-                                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/sns.jpg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text_area">
-                                    <div class="heading fade_y on">
-                                        <h4>SNSブランディング</h4>
-                                        <span class="label">SNS運用コンサルティング</span>
-                                    </div>
-                                    <p class="lead fade_y on">広告だけに頼らないターゲットとのリレーションを構築するため、<br
-                                            class="pc">明確なコンセプトを設計し、各種SNS毎に効果的な運用ノウハウをご提供します。</p>
-                                </div>
-                                <a href="https://tomorrowgate.co.jp/service/branding/sns/"
-                                    class="more_txt fade_y on"><span class="underline">MORE</span></a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="branding--strengths">
@@ -781,23 +642,6 @@
     color: #fff;
     transition: .4s;
 }
-    /* .mv_textarea .entxt {
-        display: block;
-        margin-bottom: 20px;
-        font-size: 4rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        transform: translateY(15%);
-        transition: 0.6s;
-        opacity: 0;
-    } */
-
-    /* @media screen and (max-width: 896px) {
-        .mv_textarea .entxt {
-            margin-bottom: 11px;
-            font-size: 2.8rem;
-        }
-    } */
 
     .voiceSlider {
         height: 100%;

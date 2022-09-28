@@ -5,7 +5,6 @@
             <section class="mycontents-wide top-hero" id="/">
                 <h1 class="top-hero__title">
                     <span class="horo-text-b" style="transition-delay: 1.15s;">クリエイティブな発想と</span>
-
                 </h1>
                 <h2>
                     <span class="txt-rotate ml-0" data-period="2000"
@@ -25,26 +24,6 @@
                 <span class="scroll__arrow"><span class="scroll__arrow__box"></span></span>
             </div>
             <!-- Who is Idenbrid-->
-            <!-- <section class="section_idenbrid mycontents-wide">
-                <h3 class="content-title">WHO IS IDENBRID</h3>
-                <div class="about_iden idenbrid">
-                    <div class="about-iden-container container">
-                        <div class="img">
-                            <img class="idenbrid-background" src="/public/assets/img/philosophy-image.png"
-                                loading="lazy">
-                        </div>
-                        <div class="text">
-                            <p>
-                                アイデンブリッド社は、システム開発やウェブ制作アプリ開発を行なっているITシステムの開発会社です。日本での基軸事業は受託開発を軸とし、業務システム開発、Webサイト制作、スマートフォンアプリ開発、デザイン、クラウドインフラの構築、WordPressなどのCMS構築やITコンサルティングと幅広く事業を展開しています。
-                            </p><br>
-                            <p>
-                                当社が、受託開発において大切にしているのは「ユーザー体験の改善」つまりは、お客様のニーズを深く掘り下げて、先を読みながら提案を行う「顧客絶対主義」です。サイトやシステムを使うお客様やそのビジネスに寄り添って仕事をしています。
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </section> -->
             <section>
                 <div class="c-message">
                     <div class="c-message__bgimg"
@@ -53,7 +32,7 @@
                     <div class="mycontents-wide">
                         <div class="c-message__content">
                             <div class="c-message__box large-7 small-12">
-                                <h3  class="content-title c-message__title">CEO MESSAGE</h3>
+                                <h3 class="content-title c-message__title">CEO MESSAGE</h3>
                                 <div class="c-message__title-sub">「パキスタンから世界へ」<br>
                                     ITを届けるHubを作るストーリー</div>
                                 <div class="c-message__button u-hidden-sm"><a href="/solutions/"
@@ -74,89 +53,13 @@
                     </div>
                 </div>
             </section>
-
             <!-- end -->
-
-            <!-- <section class="service mycontents-wide">
-                <h3 class="content-title">SOLUTIONS</h3>
-                <ul class="service-contents">
-                    <li class="service-contents__text">
-                        <p>アイデンブリッド社はシステム開発やそれに伴うデザイン業務、またモバイルアプリの開発やウェブ制作などITに関わるプラットフォームに広く精通しています。特にDXを求めるお客様のコンサルも含めたトータルサポートを行なっています。
-                        </p>
-                    </li>
-                    <li class="service-contents__list">
-                        <div class="service-items">
-                            <div class="service-contents__list__thumbnail-frame">
-                                <img class="service-contents__list__thumbnail"
-                                    src="/public/assets/img/solution/Solution_Img_01.png" alt="" loading="lazy">
-                            </div>
-                            <p class="service-contents__list__subtitle">スマホアプリ開発</p>
-                            <h4 class="service-contents__list__title">Mobile app development</h4>
-                            <p class="service-contents__list__text">
-                                SNSアプリやマッチングアプリ・チャットアプリそしてライブ配信アプリや性格診断占いアプリや業務用の管理アプリなどカテゴリーを問わず、設計・開発・審査申請から保守まで丸っと一括で承っています。
-                                また当社ではウェブシステムと連携したアプリ開発も得意としていますので出先から既存システムとのデータ共有されたアプリへのアクセスも可能とし、お客様の業務効率の改善に貢献します
-                            </p>
-                        </div>
-                    </li>
-                    <li class="service-contents__list">
-                        <div class="service-items">
-                            <div class="service-contents__list__thumbnail-frame">
-                                <img class="service-contents__list__thumbnail"
-                                    src="/public/assets/img/solution/Solution_Img_02.png" alt="" loading="lazy">
-                            </div>
-                            <p class="service-contents__list__subtitle">システム開発</p>
-                            <h4 class="service-contents__list__title">System application development</h4>
-                            <p class="service-contents__list__text">
-                                情報システム・顧客管理システム・在庫管理システム・業務用システムのウェブサービス構築や運用保守・セキュリティー対策など企業様向けの受託開発を行なっています。当社のエンジニアは多様な言語を取り扱えるほどAWSやAzureなどクラウドインラフサービスも専門領域です。
-                            </p>
-                        </div>
-                    </li>
-                    <li class="service-contents__list">
-                        <div class="service-items">
-                            <div class="service-contents__list__thumbnail-frame">
-                                <img class="service-contents__list__thumbnail"
-                                    src="/public/assets/img/solution/Solution_Img_03.png" alt="" loading="lazy">
-                            </div>
-                            <p class="service-contents__list__subtitle">ウェブ制作・デジタルマーケティング</p>
-                            <h4 class="service-contents__list__title">Web creative・Digital marketing</h4>
-                            <p class="service-contents__list__text">
-                                コーポレイトサイトの作成やポートフォリオサイトそしてLP構築などを手がけています。WordPressを使用したり、最新のJavaScript系言語をフロント開発に用いています。またデジタルマーケティングではSEO、SMOやSNS運用そして英語圏ならば運用から保守まで一括して行います。
-                            </p>
-                        </div>
-                    </li>
-                    <li class="service-contents__list">
-                        <div class="service-items">
-                            <div class="service-contents__list__thumbnail-frame">
-                                <img class="service-contents__list__thumbnail"
-                                    src="/public/assets/img/solution/Solution_Img_04.png" alt="" loading="lazy">
-                            </div>
-                            <p class="service-contents__list__subtitle">デザイン制作</p>
-                            <h4 class="service-contents__list__title">Web design・UIUX designing</h4>
-                            <p class="service-contents__list__text service-contents__list_last__text">当社ではAdobe
-                                XDを用いてウェブサイト・ウェブシステムやアプリケーションそしてスマホアプリのUIUXデザイン制作を行なっています。最初にワイヤーフレームを組みお客様の意図がきちんと反映されるようにコミュニケーションをしっかり取らせて頂いております。
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-
-                <router-link class="viewmore-btn viewmore-btn_right viewmore-btn_service" to="/solutions/">View
-                    More
-
-
-                    phale Hide
-                    <span class="viewmore-btn__img">
-                        <img src="/public/assets/img/icons/btn-arrow.svg" alt="" loading="lazy">
-                        <img src="/public/assets/img/icons/btn-arrow-white.svg" alt="" loading="lazy"></span>
-                </router-link>
-            </section> -->
             <!-- other service -->
             <section class="otherservice mycontents-wide">
                 <h3 class="content-title">SERVICE</h3>
                 <div class="service-row  my-5">
                     <div class="service-col">
-                        <!-- <img alt=""
-                            src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1592x400_v-fms_webp_8da00051-3ea8-48f5-a0e3-885a8453f02d_small.webp"
-                            class="service-content-img" width="100%"> -->
+
                         <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon">SEH：スタジオ型開発ハブ
                         </h2>
                         <p class="service-p">スタジオ型開発ハブは、一般的に言われるオフショア開発におけるラボ型開発のようなサービスを指し当社ではパキスタン拠点人材を人月ベースでご提供致します。
@@ -169,58 +72,25 @@
 
                     </div>
                 </div>
-                <!-- <div class="service-row  my-5">
-                    <div class="service-col">
-                        <img alt=""
-                            src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-2116x1478_v-frms_webp_42ac43be-6495-468b-b893-06e895661eaf_middle.webp"
-                            class="" width="100%">
-
-                    </div>
-                    <div class="service-col align-items-end">
-                       <img alt=""
-                            src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1592x400_v-fms_webp_8da00051-3ea8-48f5-a0e3-885a8453f02d_small.webp"
-                            class="service-content-img" width="100%"> 
-                            <h2 class="service_h2">ODH：オンライン開発ハブ</h2>
-                        <p class="service-p text-right">オンライン開発ハブは、プロジェクトベースにて行われるIT受託開発サービスを指しており、当社では日本開発エンジニアチーム及びパキスタン開発エンジニアチームの両方にてご対応可能です。</p>
-                        <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
-                            More</router-link>
-                    </div>
-
-                </div> -->
                 <div class="service-row my-5">
                     <div class="service-col">
                         <img alt="" src="/assets/img/ses.png" class="" width="100%">
-
                     </div>
                     <div class="service-col">
-                        <!-- <img alt=""
-                            src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-1592x400_v-fms_webp_8da00051-3ea8-48f5-a0e3-885a8453f02d_small.webp"
-                            class="service-content-img" width="100%"> -->
-                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon">SES：エンジニア採用営業支援</h2>
+                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon">SES：エンジニア採用営業支援
+                        </h2>
                         <p class="service-p">
                             SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
                         </p>
                         <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
                     </div>
-
                 </div>
             </section>
             <!--news-->
             <section class="news mycontents-wide">
                 <h3 class="content-title content-title_blog">NEWS</h3>
                 <p class="content-text content-text_blog">アイデンブリッドからのお知らせやイベント、そしてプレスリリースを発信致します。</p>
-                <!-- <ul class="news-contents">
-                    <li v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 3" class="news-contents__list">
-                        <router-link :to="'/news/detail/'+detail.id+'/'">
-                            <p class="news-contents__list__tags"><span>NEWS</span></p>
-                            <p class="news-contents__list__title">{{detail.title}}</p>
-                            <p class="news-contents__list__date">{{detail.date}}</p>
-                        </router-link>
-
-                    </li>
-                </ul> -->
-
                 <div class="new-box new">
                     <div class="new-listing new" v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 5">
                         <router-link :to="'/news/detail/'+detail.id+'/'" class="new-link new">
@@ -240,12 +110,8 @@
                         </router-link>
                     </div>
                     <router-link class="viewmore-btn viewmore-btn_center" to="/news/">View More
-                        <!--<span class="viewmore-btn__img">
-                        <img src="/public/assets/img/icons/btn-arrow.svg" alt="" loading="lazy">
-                        <img src="/public/assets/img/icons/btn-arrow-white.svg" alt="" loading="lazy"></span>-->
                     </router-link>
                 </div>
-
             </section>
             <!--news-->
             <section class="about mycontents-wide">
@@ -254,7 +120,6 @@
                 <p class="content-text content-text_about">
                     テクノロジーで未来をかっこよくアップデートを会社のミッションに掲げるアイデンブリッドはお客様目線に立って、どのようにIT開発がビジネスに貢献できるかクリエイティブな提案をし、それに沿ったITソルーションを提供します。
                 </p>
-
                 <ul class="about-contents">
                     <li class="about-contents__list">
                         <router-link to="/about/">
@@ -288,46 +153,6 @@
                     </li>
                 </ul>
             </section>
-            <!-- <section class="work mycontents-wide">
-                <h3 class="content-title content-title_work">WORKS</h3>
-                <p class="content-text content-text_work">このページでは当社がこれまで手がけてきたシステム開発・アプリ構築・ウェブ制作などのポートフォリオを公開しています。</p>
-                <div class="swiper WorkSlider">
-                    <div class="swiper-wrapper">
-                        <div v-for="(work,Work) in works" :key="Work" class="swiper-slide">
-                            <div class="work-contents__list w-100 mb-5">
-                                <router-link :to="'/work/detail/'+work.id">
-                                    <img class="work-contents__list__thumbnail"
-                                        :src="'https://admin-idenbrid.idenbrid.jp/public/storage/work_images/'+work.image"
-                                        alt="" loading="lazy">
-                                    <p class="work-contents__list__company">{{work.company}}</p>
-                                    <p class="work-contents__list__title">{{work.title}}</p>
-                                    <p class="work-contents__list__tags">{{work.content}}</p>
-                                </router-link>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                </div>
-                <router-link class="viewmore-btn viewmore-btn_center" to="/works/">View More      
-                </router-link>
-            </section> -->
-
-            <!-- video section -->
-            <!-- <section class="movie mycontents-wide mt-5" id="MOVIE">
-                <div class="container">
-                    <h3 class="content-title content-title_blog">CORPORATE MOVIE</h3>
-                    <div class="movie-wrap">
-                        <div class="movie-inner">
-                            <iframe src="https://www.youtube.com/embed/MjWJ2deIOkg" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen="" width="100%" height="600"> </iframe>
-                        </div>
-                        <p class="text">
-                            私たちの会社がどのような会社なのかを当社CEOとCDOが３分のYouTubeビデオで説明しています。IT開発のどんなことを得意としている会社なのか、ご覧ください。</p>
-                    </div>
-                </div>
-            </section> -->
-
             <section class="mt-5">
                 <div class="c-recruit">
                     <div class="c-recruit__head">
@@ -340,9 +165,6 @@
                                 <h3 class="content-title is-color-white recruit-title">CULTURE</h3>
                                 <div class="c-recruit__head-text">私たちの自慢は個性と責任がある仲間たち。<br>
                                     YouTube動画とブログから会社の雰囲気を感じて頂けます。</div>
-                                <!-- <div class="c-recruit__head-button">
-                                    <router-link class="c-button is-md is-white" to="/recruit/">View More</router-link>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -359,9 +181,7 @@
                                             </video>
                                         </div>
                                         <div class="c-recruit__bottom-content">
-                                            <!--<div class="c-recruit__bottom-title c-heading is-lg is-color-white">
-                                             <span>VIDEO</span><small>ビデオでアイデンブリッドを見る</small></div>
-                                            <div class="c-recruit__bottom-text">IDENBRIDの紹介やIT業界の謎を面白く解説</div> -->
+
 
                                             <div class="c-recruit__bottom-button">VIDEO</div>
                                         </div>
@@ -378,9 +198,7 @@
                                             </video>
                                         </div>
                                         <div class="c-recruit__bottom-content">
-                                            <!--   <div class="c-recruit__bottom-title c-heading is-lg is-color-white">
-                                              <span>BLOG</span><small>ブログでアイデンブリッドを見る</small></div>
-                                            <div class="c-recruit__bottom-text">IT開発はどうやって会社を選んだらいいのか解説</div> -->
+
                                             <div class="c-recruit__bottom-button">BLOG</div>
                                         </div>
                                     </router-link>
@@ -390,7 +208,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- end -->
             <section class="blog-home mycontents-wide">
                 <h3 class="content-title content-title_blog">BLOG</h3>
@@ -408,106 +225,9 @@
                     </li>
                 </ul>
                 <router-link class="viewmore-btn viewmore-btn_center" to="/blog/">View More
-                    <!--<span class="viewmore-btn__img">
-                        <img src="/public/assets/img/icons/btn-arrow.svg" alt="" loading="lazy">
-                        <img src="/public/assets/img/icons/btn-arrow-white.svg" alt="" loading="lazy"></span>-->
+
                 </router-link>
             </section>
-
-            <!-- <section class="recruit mycontents-wide">
-                <h3 class="content-title content-title_recruit">ONLINE DEVELOPMENT HUB</h3>
-                <p class="devlop-content-text content-text_recruit">
-                    アイデンブリッド社では世界のIT開発の拠点となれるように自社でビジネス営業・上流設計・デザイン・開発・テスト・保守まで一括でマネジメントできる施設そしてチーム体制を整えています。オンライン開発ハブ通称オンラインディベロップメントハブではお客様が開発リソースを自社で保有・管理する必要なく、IT事業の展開や自社のDXに取り組むことができるサービスになります。またお客様とのコミュニケーションは日本人のみが担当しますので、オフショア開発にありがちなブリッジSEとの間におけるコミュニケーション齟齬などは発生しづらいメリットもございます。
-                </p>
-                <span class="recruit__spacer-sp"></span>
-                <router-link class="viewmore-btn viewmore-btn_recruit" to="/onlinedevelopmenthub/">View More
-                    phale Hide
-                    <span class="viewmore-btn__img">
-                        <img src="/public/assets/img/icons/btn-arrow.svg" alt="" loading="lazy">
-                        <img src="/public/assets/img/icons/btn-arrow-white.svg" alt="" loading="lazy"></span>
-                </router-link>
-
-            </section> -->
-            <!-- <section class="contact mycontents-wide">
-                <h3 class="content-title content-title_contact">お問い合わせ</h3>
-                <img class="contact__img" src="/public/assets/img/icons/Operator.png" alt="" width="80px">
-                <p class="content-text content-text_contact">お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。
-                </p>
-                <div class="contact__btns">
-                    <button class="btn-wide btn-wide_call" data-toggle="modal" data-target="#linescancode">
-                        <div class="btn-wide__imgs">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Line-white.png" alt=""
-                                loading="lazy">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Line-Black.png" alt=""
-                                loading="lazy">
-                        </div>
-                        <p class="btn-wide__text btn-wide__text_call">会社LINE ID</p>
-                    </button>
-                    <a class="btn-wide btn-wide_call" href="mailto:helloworld@idenbrid.com">
-                        <div class="btn-wide__imgs">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt=""
-                                loading="lazy">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png" alt=""
-                                loading="lazy">
-                        </div>
-                        <p class="btn-wide__text btn-wide__text_call">
-                            helloworld@idenbrid.com
-                        </p>
-                    </a>
-                    <a class="btn-wide" href="skype:live:.cid.3145b74a3504693c?chat">
-                        <div class="btn-wide__imgs">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Skype-White.png" alt=""
-                                loading="lazy">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Skype-Black.png" alt=""
-                                loading="lazy">
-                        </div>
-                        <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
-                    </a>
-                </div>
-                (Modal Hide)
-                <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="/public/assets/img/line-code.jpg" width="100%" loading="lazy" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section> -->
-
-            <!-- <section class="footer-section">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="thumb col-md-6  p-0">
-                        <div class="hvrtxt en"><span class="more_txt">
-                            <span class="underline">MORE</span></span>
-                                    </div>
-                        <div class="col-left-content col-content scaleImg">
-                            <div class="icon-twitter">
-                                <a href=""><img class="twt-bnr-img bnr-img" src="/assets/img/tw-bnr.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumb col-md-6 p-0">
-                        <div class="col-right-content col-content">
-                            <div class="icon-ytb">
-                                <a href=""><img class="twt-bnr-img bnr-img" src="/assets/img/yt-bnr.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
             <div class="bnr_area">
                 <a href="https://twitter.com/koheinishizaki" target="_blank" class="hoverScale">
                     <div class="thumb">
@@ -557,7 +277,6 @@
                 }, ],
             };
         },
-
         mounted() {
 
             axios.get('/api/blogs').then((res) => {
@@ -577,10 +296,7 @@
                         slidesPerGroup: 1,
                         loop: true,
                         loopFillGroupWithBlank: true,
-                        /* autoplay: {
-                                     delay: 2500,
-                                     disableOnInteraction: false,
-                                   },*/
+
                         breakpoints: {
                             320: {
                                 slidesPerView: 1,
@@ -607,12 +323,7 @@
 
                 });
             }).catch((err) => {});
-
-
             /* work slider end*/
-
-
-            /* banner text black blur show time */
             window.setTimeout(top_hero_title, 300);
 
             function top_hero_title() {
@@ -664,8 +375,6 @@
                     that.tick();
                 }, delta);
             };
-
-
             var elements = document.getElementsByClassName('txt-rotate');
             for (var i = 0; i < elements.length; i++) {
                 var toRotate = elements[i].getAttribute('data-rotate');
@@ -679,12 +388,7 @@
             css.type = "text/css";
             css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #2FA5DE }";
             document.body.appendChild(css);
-
-
-
         }
-
-
     };
 </script>
 <style scoped>
@@ -1485,17 +1189,7 @@
         padding: 0px;
     }
 
-    /*.service-contents {
-    columns: 2;
-    column-fill: auto;
-    column-gap: 60px;
-}
 
-.service-contents__text, .service-contents__list {
-    margin-bottom: 60px;
-    break-inside: avoid;
-    transform: translateZ(0);
-}*/
     .service-subcontents__text {
         font-weight: bold;
         font-size: 16px;
@@ -2259,17 +1953,20 @@
             padding-top: 50px;
         }
     }
-    @media (max-width: 475px) {
-    .service_h2{
-         flex-direction: column;
-         font-size: 20px;
 
+    @media (max-width: 475px) {
+        .service_h2 {
+            flex-direction: column;
+            font-size: 20px;
+
+        }
+
+        .otherservice {
+            margin-bottom: 0px;
+        }
+
+        .news {
+            margin-bottom: 0px;
+        }
     }
-    .otherservice {
-        margin-bottom: 0px;
-    }
-    .news{
-        margin-bottom: 0px;
-    }
-}
 </style>

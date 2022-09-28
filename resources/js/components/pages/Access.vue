@@ -3,7 +3,7 @@
         <Navbar />
         <div class="mv_textarea">
             <h2>
-                <strong class="en entxt">COMPANY /  会社概要</strong>
+                <strong class="en entxt">COMPANY / 会社概要</strong>
                 <span class="jptxt">アイデンブリッド社</span>
             </h2>
         </div>
@@ -12,7 +12,7 @@
                 <div class="prof_tbl">
                     <dl>
                         <dt>社名</dt>
-                        <dd>IDENBRID INC.  / アイデンブリッド社</dd>
+                        <dd>IDENBRID INC. / アイデンブリッド社</dd>
                     </dl>
                     <dl>
                         <dt>設立</dt>
@@ -35,14 +35,14 @@
                         <dt>従業員数</dt>
                         <dd>
                             <div class="box">
-                                <span class="bld">【パキスタン本社】</span><br>B1F 176 Y block DHA Phase 3, Lahore Pakistan <br><a href="tel:+92-306-404-1221"
-                                    class="tel_link no_link">TEL. +92-306-404-1221</a>
-                                    <br> 
-                                    <a href="mailto:helloworld@idenbrid.com"
-                                    class="more_txt">MAIL : helloworld@idenbrid.com</a>
+                                <span class="bld">【パキスタン本社】</span><br>B1F 176 Y block DHA Phase 3, Lahore Pakistan
+                                <br><a href="tel:+92-306-404-1221" class="tel_link no_link">TEL. +92-306-404-1221</a>
+                                <br>
+                                <a href="mailto:helloworld@idenbrid.com" class="more_txt">MAIL :
+                                    helloworld@idenbrid.com</a>
                             </div>
                             <div class="box mt">
-                              
+
                                 <router-link to="/office/" class="more_txt" target="_blank"><span
                                         class="underline">ACCESS</span></router-link>
                             </div>
@@ -51,42 +51,47 @@
                     <dl>
                         <dt>IT開発事業</dt>
                         <dd>・ITコンサルティング（DX・コスト削減・新規ビジネス案件のITへの落とし込み等）<br>
-                        ・ITシステム設計（要件定義・基本設計・テストケース・API・DB・システムアーキテクチャ等）<br>
-                        ・UIUXデザイン（Webデザイン、スマホアプリデザイン、グラフィックデザイン等）<br>
-                        ・ウェブシステム開発（フロントエンド実装、ECサイト、マッチングサイト、業務管理システム等）<br>
-                        ・スマホアプリ開発（ライブ配信アプリ、マッチングアプリ、占いアプリ、業務アプリ等）<br>
-                        ・インフラ開発（AWS、GCP、Azure・クラウドインフラ構築、DBマイグレーション等）<br>
-                        ・LINEミニアプリ/API開発（メッセージAPI、会員証、ポイント、クーポンシステム等）<br>
-                        ・SESエンジニア採用営業支援 </dd>
+                            ・ITシステム設計（要件定義・基本設計・テストケース・API・DB・システムアーキテクチャ等）<br>
+                            ・UIUXデザイン（Webデザイン、スマホアプリデザイン、グラフィックデザイン等）<br>
+                            ・ウェブシステム開発（フロントエンド実装、ECサイト、マッチングサイト、業務管理システム等）<br>
+                            ・スマホアプリ開発（ライブ配信アプリ、マッチングアプリ、占いアプリ、業務アプリ等）<br>
+                            ・インフラ開発（AWS、GCP、Azure・クラウドインフラ構築、DBマイグレーション等）<br>
+                            ・LINEミニアプリ/API開発（メッセージAPI、会員証、ポイント、クーポンシステム等）<br>
+                            ・SESエンジニア採用営業支援 </dd>
                     </dl>
                 </div>
             </div>
 
-          
+
             <section class="menu-list">
                 <div class="menu-box">
                     <div class="item">
 
-                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">PROFILE</router-link>
+                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">PROFILE
+                        </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">MESSAGE</router-link>
-                        </div>
-                    <div class="item">
-
-                       <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">OFFICE</router-link>
+                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">MESSAGE
+                        </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">MEMBER</router-link>
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">OFFICE
+                        </router-link>
                     </div>
                     <div class="item">
 
-                       <router-link to="/digitalasset/" class="text"><img src="/assets/img/icons/Digital-Assets.svg">DIGITAL ASSETS</router-link>
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">MEMBER
+                        </router-link>
+                    </div>
+                    <div class="item">
+
+                        <router-link to="/digitalasset/" class="text"><img
+                                src="/assets/img/icons/Digital-Assets.svg">DIGITAL ASSETS</router-link>
                     </div>
                 </div>
-             
+
             </section>
 
         </main>
@@ -114,8 +119,6 @@
     };
 </script>
 <style>
-   
-
     .profile--index {
         padding: 80px 10%;
         background-color: #fff;
