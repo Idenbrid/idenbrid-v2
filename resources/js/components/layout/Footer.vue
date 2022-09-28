@@ -1,100 +1,5 @@
 <template>
-
     <div>
-        <!-- <footer class="footer-pc">
-
-    <div class="footer-pc__contents">
-        <ul class="footer-pc__center">
-            <li class="footer-pc__center__list">
-                <p class="footer-pc__center__list__label"><router-link to="/solutions/">SOLUTIONS</router-link></p>
-                <ul>
-                    <li class="footer-pc__center__list__list"><router-link to="/solutions/expertise/">OUR EXPERTISE</router-link></li>
-                    <li class="footer-pc__center__list__list"><router-link to="/solutions/services/">OUR SERVICES</router-link></li>
-                </ul>
-            </li>
-            <li class="footer-pc__center__list">
-                <p class="footer-pc__center__list__label"><router-link to="/about">ABOUT</router-link></p>
-                <ul>
-                    <li class="footer-pc__center__list__list"><router-link to="/about/mission/">MISSION</router-link></li>
-                    <li class="footer-pc__center__list__list"><router-link to="/about/board-message/">BOARD MESSAGE</router-link></li>
-                    <li class="footer-pc__center__list__list"><router-link to="/about/member/">MEMBER</router-link></li>
-                    <li class="footer-pc__center__list__list"><router-link to="/about/company/">COMPANY</router-link></li>
-                    <li class="footer-pc__center__list__list footer-pc__center__list__list_last"><router-link to="/about/history">HISTORY</router-link></li>
-                </ul>
-            </li>
-            <li class="footer-pc__center__list">
-                <p class="footer-pc__center__list__label"><router-link to="/onlinedevelopmenthub/">ONLINE DEVELOPMENT HUB</router-link></p>
-                <ul>
-                    <li class="footer-pc__center__list__list"><router-link to="/onlinedevelopmenthub/_overview/">OVERVIEW</router-link></li>
-                    <li class="footer-pc__center__list__list"><router-link to="/onlinedevelopmenthub/bussiness_concept/">BUSINESS CONCEPT</router-link></li>
-                    <li class="footer-pc__center__list__list"><router-link to="/onlinedevelopmenthub/office_environment/">OFFICE ENVIRONMENT</router-link></li>
-                    <li class="footer-pc__center__list__list footer-pc__center__list__list_last"><router-link to="/onlinedevelopmenthub/client_benifits/">CLIENT’S BENEFITS</router-link></li>
-                </ul>
-            </li>
-            <li class="footer-pc__center__list">
-                <p class="footer-pc__center__list__label"><router-link to="/about/company/">COMPANY</router-link></p>
-                <ul>
-                    <li class="footer-pc__center__list__list footer-pc__center__list__list_last"><router-link to="/works/">WORKS</router-link></li>
-                    <li class="footer-pc__center__list__list footer-pc__center__list__list_last"><router-link to="/blog/">BLOG</router-link></li>
-
-
-                </ul>
-            </li>
-
-        </ul>
-
-        <div class="footer-pc__right">
-
-            <router-link to="/"><img class="footer-pc__logo" src="/public/assets/img/logo/white-log.svg" alt=""></router-link>
-            <a class="footer-btn footer-btn_pc" href="mailto:helloworld@idenbrid.com">
-                <img src="/public/assets/img/icons/paper-airplane.svg" alt="">
-                <img src="/public/assets/img/icons/paper-airplane-white.svg" alt="">
-                メール問い合わせ
-            </a>
-            <ul class="footer-pc__sns">
-
-                <li><a href="https://twitter.com/idenbridinc" target=”_blank”><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/idenbrid" target=”_blank”><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.facebook.com/idenbrid/" target=”_blank”><i class="fa fa-facebook-f"></i></a></li>
-
-            </ul>
-            <br>
-        </div>
-    </div>
-
-    <div class="footer-pc__foot">
-        <p class="footer-pc__foot__name">©IDENBRID INC.™, 2021. All rights reserved.</p>
-    </div>
-</footer>
-
-<footer class="footer-sp">
-    <a href="/"><img class="footer-sp__logo" src="/public/assets/img/logo/white-log.svg" alt=""></a>
-    <p class="footer-sp__nav mycontents-wide">
-        <router-link class="footer-sp__nav__list" to="/about/">ABOUT</router-link>
-        <span>|</span>
-        <router-link class="footer-sp__nav__list" to="/works/">WORKS</router-link>
-        <span>|</span>
-        <router-link class="footer-sp__nav__list" to="/blog/">BLOG</router-link>
-        <span>|</span>
-        <router-link class="footer-sp__nav__list" to="/onlinedevelopmenthub/">Online Development Hub</router-link>
-    </p>
-
-    <router-link class="footer-btn footer-btn_sp" to="contact-us">
-        <img src="/public/assets/img/icons/paper-airplane.svg" alt="">
-        <img src="/public/assets/img/icons/paper-airplane-white.svg" alt="">
-        CONTACT
-    </router-link>
-
-   <ul class="footer-pc__sns">
-
-                <li><a href="https://twitter.com/idenbridinc" target=”_blank”><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/idenbrid" target=”_blank”><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.facebook.com/idenbrid/" target=”_blank”><i class="fa fa-facebook-f"></i></a></li>
-
-            </ul>
-    <p class="footer-sp__name mt-4">©IDENBRID INC.™, 2021. All rights reserved.</p>
-</footer> -->
-
        <footer>
          <section class="bg-color">
                 <div class="loopCopy isAnim anim-fadeIn inView" bis_skin_checked="1">
@@ -172,24 +77,6 @@
                         <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
                     </a>
                 </div>
-                <!-- Modal -->
-                <!-- <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="/public/assets/img/line-code.jpg" width="100%" loading="lazy" />
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
             </section>
         
       <section class="section-footer-menu">
@@ -519,7 +406,7 @@
     padding: 60px 0px !important;
   }
   .contact__btns {
-    padding: 0px 70px;
+    padding: 0px 15px;
 }
 }
 

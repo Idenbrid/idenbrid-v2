@@ -39,7 +39,8 @@
                                         class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View More</a></div>
                             </div>
                             <div class="large-5 small-12">
-                                    <img class="c-message__img" src="/assets/img/CEO Person.png" alt="" >
+                                    <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="">
+                                    <img class="c-message__img ceo-mbl" src="/assets/img/CEO-Person-mbl.png" alt="">
                             </div>
                             <div class="c-message__button u-hidden-lg">
                                 <router-link class="c-button is-md" to="/about-company/">View More</router-link>
@@ -809,7 +810,12 @@
         line-height: 24px;
         color: #333333;
     }
-
+    .ceo-mbl{
+        display: none;
+    }
+    .ceo-desktop{
+        display: block;
+    }
     @media (max-width: 1200px) {
         .WorkSlider {
             overflow: hidden;
@@ -817,6 +823,14 @@
     }
 
     @media (max-width: 767px) {
+        .ceo-mbl{
+        display: block;
+        height: auto;
+        object-fit: contain;
+    }
+    .ceo-desktop{
+        display: none;
+    }
         .new-box {
             padding: 32px 15px;
             max-width: 100%;
@@ -1826,11 +1840,6 @@
         line-height: 1.5625;
         color: #102855;
         font-weight: bold;
-    }
-
-    .c-message__img {
-        height: 741px;
-        object-fit: cover;
     }
 
     .c-message__button {
