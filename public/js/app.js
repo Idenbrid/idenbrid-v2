@@ -9566,23 +9566,27 @@ var staticRenderFns = [function () {
       value: "",
       selected: "selected"
     }
-  }), _vm._v(" "), _c("option", {
+  }, [_vm._v("下記よりお選びください")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "13990"
     }
-  }, [_vm._v("外部に発注したい")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("IT開発の外注先を探している")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "13992"
     }
-  }, [_vm._v("外部発注先の選定を検討している")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("プロジェクト案件の見積もりが欲しい")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "13994"
     }
-  }, [_vm._v("仕事を受注したい")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("ビジネス協業をしたい")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "13996"
     }
-  }, [_vm._v("新規顧客を開拓したい")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("採用について")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "13996"
+    }
+  }, [_vm._v("取材や会社について問い合わせ")])]), _vm._v(" "), _c("div", {
     staticStyle: {
       display: "none"
     },
@@ -9878,31 +9882,31 @@ var staticRenderFns = [function () {
       value: "",
       selected: "selected"
     }
-  }), _vm._v(" "), _c("option", {
+  }, [_vm._v("下記よりお選びください")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "396408"
     }
-  }, [_vm._v("タクシー広告")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("ご紹介")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "396410"
     }
-  }, [_vm._v("テレビCM")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("SNS")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "396412"
     }
-  }, [_vm._v("Facebook広告")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("ブログ")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "396414"
     }
-  }, [_vm._v("検索")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("営業担当者より")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "396416"
     }
-  }, [_vm._v("ご紹介")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("送信されたメール")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "963092"
     }
-  }, [_vm._v("営業担当より紹介")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("ウェブ検索")]), _vm._v(" "), _c("option", {
     attrs: {
       value: "963094"
     }
@@ -23652,7 +23656,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background: #000;\r\n    padding: 15px 0;\r\n    border: 1px solid #474747;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    /* background: #000; */\r\n    padding: 15px 0;\r\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
