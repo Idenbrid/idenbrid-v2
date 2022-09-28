@@ -8,10 +8,6 @@
             </h2>
         </div>
         <main>
-            <!-- <div class="hero_Heading" id="solutions">
-    <h2 class="hero">SOLUTIONS</h2>
-    <p class="service-subcontents__text">このページでは当社が提供しているITソリューションを紹介しています。アイデンブリッド社は日本企業を相手とした受託開発メインの法人です</p>
-</div> -->
             <section class="solution-page mt-5" id="expertise">
                 <h3 class="content-title">OUR EXPERTISE</h3>
                 <ul class="service-contents">
@@ -83,146 +79,6 @@
                 </ul>
 
             </section>
-<!-- 
-            <section class="product service-section" id="services">
-                <h3 class="content-title">OUR SERVICES</h3>
-                <ul class="product-contents">
-                    <li class="product-contents__text">
-                        <p>当社のITプロフェッショナル人材や経験値を活かしてお客様によりアイデンブリッドの頼んでよかったと思って頂けるメリット提供に力を入れています。</p>
-                    </li>
-                    <li class="product-contents__list">
-                        <router-link to="/web-design-UIUX-designing/">
-                            <div class="product-contents__list__thumbnail-frame">
-                                <img class="product-contents__list__thumbnail" src="/public/assets/img/product/6.png"
-                                    alt="" loading="lazy">
-                            </div>
-                        
-                            <p class="product-contents__list__subtitle">IdenSpire/アイデンスパイヤー</p>
-                            <h4 class="product-contents__list__title">パキスタンにおけるプログラミング教室</h4>
-                            <p class="product-contents__list__text">
-                                当社では社内フルスタックディベロッパーによりオフラインにてプログラミング教室ビジネスを展開しています。学校などのように理論学習をメインとしておらず、実際にコードを書き、時にはクライアントの案件に携わる機会もあり実践に近い形で学習に取り組むことができる環境を整えています。
-                            </p>
-                        </router-link>
-                    </li>
-                
-                    <li class="product-contents__list  mt-5">
-                        <router-link to="/web-design-UIUX-designing/">
-                            <div class="product-contents__list__thumbnail-frame">
-                                <img class="product-contents__list__thumbnail"
-                                    src="/public/assets/img/product/Solution_Img_05.png" alt="" loading="lazy">
-                            </div>
-                           
-                            <p class="product-contents__list__subtitle">System Engineering Service</p>
-                            <h4 class="product-contents__list__title">SES営業事業</h4>
-                            <p class="product-contents__list__text">
-                                アイデンブリッド社では社内外の人材を業務委託契約にて探している会社様向けにマッチングを行うSES業務を行っています。当社ではフルリモート対応の可能な人材リソースを多く抱えている他、案件もたくさん保有しているので各社各人材に対してベストなご提案が可能です。営業周りでの業務提携もさらに拡大させておりますので是非お問合せください。
-                            </p>
-                        </router-link>
-                    </li>
-
-                    <li></li>
-                </ul>
-            </section> -->
-            <!-- <section class="menu">
-                <ul class="menu-contents mycontents-wide">
-                    <li class="menu-contents__list">
-                        <router-link to="/about/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
-                                alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">経営理念</p>
-                                <h4 class="menu-contents__list__title">Policy</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="menu-contents__list">
-                        <router-link to="/blog/">
-                            <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
-                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">事業紹介</p>
-                                <h4 class="menu-contents__list__title">Business</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="menu-contents__list">
-                        <router-link to="/onlinedevelopmenthub/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
-                                alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">会社概要</p>
-                                <h4 class="menu-contents__list__title">Company</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                </ul>
-            </section> -->
-            <!-- <section class="contact mycontents-wide mt-5">
-    <h3 class="content-title content-title_contact">お問い合わせ</h3>
-    <img class="contact__img" src="/public/assets/img/icons/Operator.png" alt="" width="80px">
-    <p class="content-text content-text_contact">お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。</p>
-    <div class="contact__btns">
-        <button class="btn-wide btn-wide_call" data-toggle="modal" data-target="#linescancode">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Line-white.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Line-Black.png" alt="" loading="lazy">
-            </div>
-            <p class="btn-wide__text btn-wide__text_call">会社LINE ID</p>
-        </button>
-        <a class="btn-wide btn-wide_call" href="mailto:helloworld@idenbrid.com">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png" alt="" loading="lazy">
-            </div>
-                <p class="btn-wide__text btn-wide__text_call">
-                    helloworld@idenbrid.com
-                    </p>
-        </a>
-        <a class="btn-wide" href="skype:live:.cid.3145b74a3504693c?chat">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Skype-White.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Skype-Black.png" alt="" loading="lazy">
-            </div>
-            <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
-        </a>
-    </div>
-(Modal)
-<div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="/public/assets/img/line-code.jpg" width="100%" loading="lazy"/>
-      </div>
-    </div>
-  </div>
-</div>
-</section> -->
-            <!--<section class="our_product">
-    <div class="mycontents-wide">
-    <h2 class="our_product_heading">Our Services</h2>
-    <div class="col-lg-12">
-
-        <div class="profileGallery">
-            <a href="./products/zindawork-detail.html" target="_blank"><img class="m-auto" src="public/assets/img/solution/solution_01.png"></a>
-            <a href="./products/Bizblanca-detail.html" target="_blank"><img class="m-auto" src="public/assets/img/solution/solution_02.png"></a>
-            <a href="./products/Pakteki-detail.html" target="_blank"><img class="m-auto" src="public/assets/img/solution/solution_03.png"></a>
-            <a href="./products/idenspire-detail.html" target="_blank"><img class="m-auto" src="public/assets/img/solution/solution_04.png"></a>
-        </div>
-        <div class="l-footer-button">
-            <router-link to="/contact-us" class="button-fit">
-              <span class="button-text">お問い合わせはこちら</span>
-              <span class="button-icon fas fa-arrow-right"></span>
-            </router-link>
-          </div>
-    </div>
-</div>
-    </section>-->
             <div class="branding--contact" bis_skin_checked="1">
                 <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
                 <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
@@ -251,9 +107,6 @@
                     behavior: 'smooth'
                 });
             });
-            // jQuery('html, body').animate({
-            //     scrollTop: (jQuery("#"+this.get_id).offset().top)
-            // }, 2000);
         },
         created() {
             this.get_id = this.$route.params.string;
@@ -285,21 +138,7 @@
     .service {
         padding-bottom: 160px;
         padding-top: 0px;
-        /*影の調整 160 - 20*/
     }
-
-
-    /*.service-contents {
-    columns: 2;
-    column-fill: auto;
-    column-gap: 60px;
-}
-
-.service-contents__text, .service-contents__list {
-    margin-bottom: 60px;
-    break-inside: avoid;
-    transform: translateZ(0);
-}*/
     .service-subcontents__text {
         font-weight: bold;
         font-size: 16px;

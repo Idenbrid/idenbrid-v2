@@ -36,15 +36,10 @@
                                 <div class="c-message__title-sub">「パキスタンから世界へ」<br>
                                     ITを届けるHubを作るストーリー</div>
                                 <div class="c-message__button u-hidden-sm"><a href="/solutions/"
-                                        class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View
-                                        More</a></div>
+                                        class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View More</a></div>
                             </div>
-                            <div class="large-5 small-12"><img class="c-message__img u-hidden-sm u-hidden-lg"
-                                    src="https://www.unilabo.jp/wp-content/themes/unilabo-html/dist/assets/images/img-message-02.png"
-                                    alt="" data-sr-id="3"
-                                    style="visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 12, 0, 1);"><img
-                                    class="c-message__img" src="/assets/img/CEO Person.png" alt="" data-sr-id="4"
-                                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 1.2s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 1.2s;">
+                            <div class="large-5 small-12">
+                                    <img class="c-message__img" src="/assets/img/CEO Person.png" alt="" >
                             </div>
                             <div class="c-message__button u-hidden-lg">
                                 <router-link class="c-button is-md" to="/about-company/">View More</router-link>
@@ -170,8 +165,7 @@
                     </div>
                     <div class="c-recruit__bottom">
                         <div class="mycontents-wide">
-                            <div class="c-recruit__bottom-block row" data-sr-id="6"
-                                style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.6s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.6s;">
+                            <div class="c-recruit__bottom-block row">
                                 <div class="large-6 small-12">
                                     <router-link class="c-recruit__bottom-item" to="/movies/">
 
@@ -187,8 +181,7 @@
                                         </div>
                                     </router-link>
                                 </div>
-                                <div class="large-6 small-12" data-sr-id="7"
-                                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0.8s, transform 0.5s cubic-bezier(0.5, 0, 0, 1) 0.8s;">
+                                <div class="large-6 small-12">
                                     <router-link class="c-recruit__bottom-item" to="/blog/">
 
                                         <div class="c-recruit__bottom-bgimg">

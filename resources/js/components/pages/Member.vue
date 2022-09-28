@@ -126,12 +126,12 @@
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
                                                     the inspiration flowing!</span>
-                                                    </div>
-                                                <div class="scaleImg">
-                                                    <img src="https://tomorrowgate.co.jp/asset/img/member/member06.jpg"
-                                                        alt="">
-                                                </div>
                                             </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member06.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="text_area">
@@ -141,7 +141,7 @@
                             </li>
                             <li class="parent_li ishou on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -181,7 +181,7 @@
                             </li>
                             <li class="parent_li senki on">
                                 <div class="img_box">
-                                   <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -241,7 +241,7 @@
                             </li>
                             <li class="parent_li jinji on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -261,7 +261,7 @@
                             </li>
                             <li class="parent_li ishou on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -281,17 +281,17 @@
                             </li>
                             <li class="parent_li ishou on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
                                                     the inspiration flowing!</span>
                                             </div>
-                                                <div class="scaleImg">
-                                                    <img src="https://tomorrowgate.co.jp/asset/img/member/member15.jpg"
-                                                        alt="">
-                                                </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member15.jpg"
+                                                    alt="">
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="text_area">
@@ -301,7 +301,7 @@
                             </li>
                             <li class="parent_li ishou none on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="scaleImg">
                                                 <img src="https://tomorrowgate.co.jp/asset/img/member/member16.jpg"
@@ -317,7 +317,7 @@
                             </li>
                             <li class="parent_li ishou on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -337,7 +337,7 @@
                             </li>
                             <li class="parent_li senki on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -357,7 +357,7 @@
                             </li>
                             <li class="parent_li ishou on">
                                 <div class="img_box">
-                                   <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -397,7 +397,7 @@
                             </li>
                             <li class="parent_li ishou on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -417,7 +417,7 @@
                             </li>
                             <li class="parent_li ishou kouhou on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -437,7 +437,7 @@
                             </li>
                             <li class="parent_li ishou on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -477,7 +477,7 @@
                             </li>
                             <li class="parent_li ishou on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -497,7 +497,7 @@
                             </li>
                             <li class="parent_li senki on">
                                 <div class="img_box">
-                                     <div class="hoverScale">
+                                    <div class="hoverScale">
                                         <div class="thumb">
                                             <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
                                                     business advice from uber successful CEO’s. Bookmark it now to keep
@@ -519,31 +519,36 @@
                     </div>
                 </div>
             </div>
-            
-           <section class="menu-list">
+
+            <section class="menu-list">
                 <div class="menu-box">
                     <div class="item">
 
-                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">PROFILE</router-link>
+                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">PROFILE
+                        </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">MESSAGE</router-link>
-                        </div>
-                    <div class="item">
-
-                       <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">OFFICE</router-link>
+                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">MESSAGE
+                        </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">MEMBER</router-link>
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">OFFICE
+                        </router-link>
                     </div>
                     <div class="item">
 
-                       <router-link to="/digitalasset/" class="text"><img src="/assets/img/icons/Digital-Assets.svg">DIGITAL ASSETS</router-link>
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">MEMBER
+                        </router-link>
+                    </div>
+                    <div class="item">
+
+                        <router-link to="/digitalasset/" class="text"><img
+                                src="/assets/img/icons/Digital-Assets.svg">DIGITAL ASSETS</router-link>
                     </div>
                 </div>
-             
+
             </section>
         </main>
         <Footer />
@@ -594,9 +599,11 @@
         opacity: 1;
         transform: translateY(0%);
     }
-  .member_list .hoverScale {
-    cursor: pointer;
-  }
+
+    .member_list .hoverScale {
+        cursor: pointer;
+    }
+
     .member_list .hoverScale .thumb {
         overflow: hidden;
         position: relative;
@@ -629,7 +636,7 @@
         font-weight: 700;
     }
 
-    
+
 
 
     .member_list .hoverScale .thumb .scaleImg {

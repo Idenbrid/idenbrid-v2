@@ -2,28 +2,12 @@
     <div>
         <Navbar />
         <div class="mv_textarea">
-                <h2>
-                    <strong class="en entxt">MOVIE</strong>
-                    <span class="jptxt">ムービーギャラリー</span>
-                </h2>
-            </div>
+            <h2>
+                <strong class="en entxt">MOVIE</strong>
+                <span class="jptxt">ムービーギャラリー</span>
+            </h2>
+        </div>
         <main>
-            <!-- <div class="l-page-header" data-sr-id="0"
-                style="visibility: visible; opacity: 1; transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
-                <div class="l-page-header__image">
-                    <img src="https://www.unilabo.jp/wp-content/uploads/2022/06/471b0905ac9a6f79f6ffbd1452757101-scaled.jpg"
-                        alt="">
-                </div>
-                <div class="l-page-header__inner">
-                    <h1 class="l-page-header__title" data-sr-id="2"
-                        style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.8s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.8s;">
-                        MOVIE</h1>
-                    <div class="l-page-header__subtitle" data-sr-id="3"
-                        style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 1s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 1s;">
-                        ムービーギャラリー</div>
-                </div>
-            </div> -->
-
             <section class="l-main">
                 <div class="l-section">
                     <div class="mycontents-wide">

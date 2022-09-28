@@ -222,43 +222,7 @@
                     <!-- .list-faq -->
                 </div>
             </section>
-           <!-- <section class="h-contact layout-02">
-                <div class="container">
-                    <div class="h-contact-content">
-                        <div class="h-contact-desc">
-                            <p><strong>ご相談はこちら</strong></p>
-                            <p>お気軽にお問い合わせください。</p>
-                        </div>
-                        <div class="layout-btn">
-                            <a href="mailto:helloworld@idenbrid.com" class="btn button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="33.461" height="25.096" viewBox="0 0 33.461 25.096">
-
-                                    <path
-                                        class="a"
-                                        d="M31.37-24.375H2.091a2.01,2.01,0,0,0-1.47.621A2.01,2.01,0,0,0,0-22.284V-1.371A2.01,2.01,0,0,0,.621.1a2.01,2.01,0,0,0,1.47.621H31.37A2.01,2.01,0,0,0,32.84.1a2.01,2.01,0,0,0,.621-1.47V-22.284a2.01,2.01,0,0,0-.621-1.47A2.01,2.01,0,0,0,31.37-24.375ZM12.188-8.135,5.914-3.56a.978.978,0,0,1-.327.18,1.247,1.247,0,0,1-.359.049,1.16,1.16,0,0,1-.523-.131,1.138,1.138,0,0,1-.425-.359,1.082,1.082,0,0,1-.212-.866,1.18,1.18,0,0,1,.474-.768l6.274-4.575a1.082,1.082,0,0,1,.866-.212,1.18,1.18,0,0,1,.768.474,1.109,1.109,0,0,1,.212.882A1.074,1.074,0,0,1,12.188-8.135ZM29.18-3.821a1.138,1.138,0,0,1-.425.359,1.16,1.16,0,0,1-.523.131,1.247,1.247,0,0,1-.359-.049.978.978,0,0,1-.327-.18L21.273-8.135a1.074,1.074,0,0,1-.474-.752,1.109,1.109,0,0,1,.212-.882,1.18,1.18,0,0,1,.768-.474,1.082,1.082,0,0,1,.866.212l6.274,4.575a1.18,1.18,0,0,1,.474.768A1.082,1.082,0,0,1,29.18-3.821ZM28.919-18.2l-11.5,8.365a.978.978,0,0,1-.327.18,1.247,1.247,0,0,1-.359.049,1.247,1.247,0,0,1-.359-.049.978.978,0,0,1-.327-.18L4.542-18.2a1.18,1.18,0,0,1-.474-.768,1.082,1.082,0,0,1,.212-.866,1.18,1.18,0,0,1,.768-.474,1.082,1.082,0,0,1,.866.212L16.73-12.252l10.816-7.842a1.082,1.082,0,0,1,.866-.212,1.18,1.18,0,0,1,.768.474,1.082,1.082,0,0,1,.212.866A1.18,1.18,0,0,1,28.919-18.2Z"
-                                        transform="translate(0 24.375)"
-                                    ></path>
-                                </svg>
-                                お問い合わせ
-                            </a>
-                            <a class="btn download_btn" href="./Contact-us.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.879" viewBox="0 0 26.943 34.879">
-                                    <defs>
-
-                                    </defs>
-                                    <path class="a" d="M281.917,23.922h4.53l-6.92-7.262v4.881A2.376,2.376,0,0,0,281.917,23.922Zm0,0" transform="translate(-260.519 -15.525)"></path>
-                                    <path
-                                        class="a"
-                                        d="M18.032,6.016V0H3.859A3.375,3.375,0,0,0,.5,3.349v28.18a3.375,3.375,0,0,0,3.359,3.349H24.085a3.375,3.375,0,0,0,3.359-3.349V9.873H21.9A3.857,3.857,0,0,1,18.032,6.016ZM8.066,18.039a.741.741,0,0,1,1.043.037l4.125,4.429V11.968a.738.738,0,1,1,1.476,0V22.514l4.125-4.429a.738.738,0,0,1,1.08,1.006l-5.407,5.8a.739.739,0,0,1-.544.23.753.753,0,0,1-.544-.23l-5.407-5.8A.771.771,0,0,1,8.066,18.039ZM22.3,29.25a.74.74,0,0,1-.738.738H6.378a.738.738,0,1,1,0-1.476h15.2A.732.732,0,0,1,22.3,29.25Zm0,0"
-                                        transform="translate(-0.5)"
-                                    ></path>
-                                </svg>
-                                資料ダウンロード
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>-->
+      
                <section class="menu">
     <ul class="menu-contents mycontents-wide">
         <li class="menu-contents__list">
@@ -290,52 +254,6 @@
         </li>
     </ul>
 </section>
-           <!-- <section class="contact mycontents-wide mt-5">
-    <h3 class="content-title content-title_contact">お問い合わせ</h3>
-    <img class="contact__img" src="/public/assets/img/icons/Operator.png" alt="" width="80px">
-    <p class="content-text content-text_contact">お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。</p>
-    <div class="contact__btns">
-        <button class="btn-wide btn-wide_call" data-toggle="modal" data-target="#linescancode">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Line-white.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Line-Black.png" alt="" loading="lazy">
-            </div>
-            <p class="btn-wide__text btn-wide__text_call">会社LINE ID</p>
-        </button>
-        <a class="btn-wide btn-wide_call" href="mailto:helloworld@idenbrid.com">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png" alt="" loading="lazy">
-            </div>
-                <p class="btn-wide__text btn-wide__text_call">
-                    helloworld@idenbrid.com
-                    </p>
-        </a>
-        <a class="btn-wide" href="skype:live:.cid.3145b74a3504693c?chat">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Skype-White.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Skype-Black.png" alt="" loading="lazy">
-            </div>
-            <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
-        </a>
-    </div>
- (Modal) 
-<div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="/public/assets/img/line-code.jpg" width="100%"/>
-      </div>
-    </div>
-  </div>
-</div>
-</section> -->
         </main>
 
         <Footer />

@@ -1,10 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <!-- <div class="hero_Heading">
-      <h2 class="hero">POLICY</h2>
-      <p class="blog-subcontents__text">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</p>
-    </div> -->
+
     <div class="mv_textarea">
       <h2>
         <strong class="en entxt">POLICY / 経営理念</strong>
@@ -128,35 +125,13 @@
                 </div>
               </div>
             </div>
-            
+
 
 
           </div>
         </div>
       </div>
     </section>
-
-    <!-- <section class="section-mission">
-      <div class="mission-content">
-        <div class="mission-title">
-          <h2>MISSION</h2>
-          <span>存在意義</span>
-        </div>
-        <div class="policy-title-text text-center">
-          <h3>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真</h3>
-        </div>
-      </div>
-      <div class="vision-content">
-        <div class="vision-title">
-          <h2>VISION</h2>
-          <span>目指す方向性</span>
-        </div>
-        <div class="vision-title-text text-center">
-          <h3>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真<br>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真<br>多色な個性が集まり、ぐちゃぐちゃに混ざりあう真</h3>
-        </div>
-      </div>
-    </section> -->
-
     <!-- card-info -->
     <section id="issue" data-s-d3444163-5430-4969-9af2-0a184f625a59="" class="sd">
 
@@ -223,7 +198,7 @@
               <p data-s-43881428-4fb8-49b3-a8b6-581f27d95706=""
                 data-r-1_0_1_5_1_2_43881428-4fb8-49b3-a8b6-581f27d95706="" class="text sd appear">
                 パキスタンの「車ライフスタイル」を<br>
-アプリを通じて日本と繋げる</p>
+                アプリを通じて日本と繋げる</p>
               <p data-s-3488d0a9-bd1d-449b-b109-0c53335de055=""
                 data-r-2_0_1_5_1_2_3488d0a9-bd1d-449b-b109-0c53335de055="" class="text sd appear">
                 グローバル目線を持った企業に進化するために、パキスタン市場を<br>リードする日本からの輸入車閲覧アプリをリリースし、社内売上の2割を目指しています。</p>
@@ -233,23 +208,9 @@
         </a>
       </div>
     </section>
-
-    <!-- <section class="section-sitemap">
-      <div class="mycontents-wide">
-        <div class="sitemap-content">
-          <div class="sitemap-title">
-            <h2>VISION MAP</h2>
-            <span>ビジョンマップ</span>
-          </div>
-          <div class="vision-sitemap">
-            <a href=""><img src="/assets/img/vision-map.png" alt="" /></a>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <div class="branding--contact" bis_skin_checked="1">
       <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>
-ご質問がありましたらお気軽にご相談ください。</h3>
+        ご質問がありましたらお気軽にご相談ください。</h3>
       <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
           class="contactbtn fade_y on" bis_skin_checked="1">今すぐ相談してみる</a></div>
     </div>
@@ -489,6 +450,7 @@
   .sd[data-r-0_0_1_2_7176ffac-e55a-4752-a76d-c0084eaf6d23]:before {
     background-image: url('/assets/img/01.png');
   }
+
   .imag-02:before {
     background-image: url('/assets/img/02.png');
   }
@@ -1135,8 +1097,9 @@
 
   @media screen and (max-width: 896px) {
     .swiper-slide img {
-    width: 100%;
+      width: 100%;
     }
+
     .mbl-col {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;

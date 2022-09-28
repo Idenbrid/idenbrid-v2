@@ -1,37 +1,21 @@
-
 <template>
     <div>
-         <Navbar />
-<main>
-   <!-- <div class="hero_Heading">
-    <h2 class="hero pb-2">WORKS</h2>
-    <p class="work-subcontents__text">このページでは当社がこれまで手がけてきたシステム開発・アプリ構築・ウェブ制作などのポートフォリオを公開しています。</p>
-</div> -->
-<div class="mv_textarea">
-        <h2>
-            <strong class="en entxt">WORKS / 仕事実績</strong>
-            <span class="jptxt">アイデンブリッドの開発・制作事例の実績一覧です。</span>
-        </h2>
-    </div>
-        <!-- <section class="work mycontents-wide">
-            <ul class="work-contents">
-                <li v-for="work in works" :key="work.id" class="work-contents__list">
-                    <router-link :to="'/work/detail/'+work.id">
-                        <img class="work-contents__list__thumbnail" :src="'https://admin-idenbrid.idenbrid.jp/public/storage/work_images/'+work.image" alt="" loading="lazy">
-                        <p class="work-contents__list__company">{{work.company}}</p>
-                        <p class="work-contents__list__title">{{work.title}}</p>
-                        <p class="work-contents__list__tags">{{work.content}}</p>
-                    </router-link>
-                </li>
-            </ul>
-        </section> -->
-<div class="works--content highlight_blk">
+        <Navbar />
+        <main>
+            <div class="mv_textarea">
+                <h2>
+                    <strong class="en entxt">WORKS / 仕事実績</strong>
+                    <span class="jptxt">アイデンブリッドの開発・制作事例の実績一覧です。</span>
+                </h2>
+            </div>
+            <div class="works--content highlight_blk">
                 <ul class="works--content--link">
                     <li><a href="https://tomorrowgate.co.jp/works/" class="en categoryitem current">全て</a>
                     </li>
                     <li><a href="https://tomorrowgate.co.jp/works/category/visionmap/"
                             class="en categoryitem">UIUXデザイン</a></li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/web/" class="en categoryitem">ウェブ・システム</a></li>
+                    <li><a href="https://tomorrowgate.co.jp/works/category/web/" class="en categoryitem">ウェブ・システム</a>
+                    </li>
                     <li><a href="https://tomorrowgate.co.jp/works/category/graphic/" class="en categoryitem">スマホアプリ</a>
                     </li>
                     <li><a href="https://tomorrowgate.co.jp/works/category/movie/" class="en categoryitem">デスクトップアプリ</a>
@@ -39,117 +23,76 @@
                     <li><a href="https://tomorrowgate.co.jp/works/category/other/" class="en categoryitem">その他</a>
                     </li>
                 </ul>
-                <div  class="works--content--mainarea">
-                        <router-link :to="'/work/detail/'+work.id"  v-for="work in works" :key="work.id" class="works--content--item hoverScale">
+                <div class="works--content--mainarea">
+                    <router-link :to="'/work/detail/'+work.id" v-for="work in works" :key="work.id"
+                        class="works--content--item hoverScale">
                         <div class="thumb">
                             <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
                             </div>
                             <div class="scaleImg">
-                                <img :src="'https://admin-idenbrid.idenbrid.jp/public/storage/work_images/'+work.image" alt="">
+                                <img :src="'https://admin-idenbrid.idenbrid.jp/public/storage/work_images/'+work.image"
+                                    alt="">
                             </div>
                         </div>
                         <h3>{{work.title}}</h3>
-                        </router-link>
-                                     
+                    </router-link>
+
                 </div>
                 <div class="wp-pagenavi" role="navigation">
                     <span aria-current="page" class="current">1</span><a class="page larger" title="ページ 2"
                         href="https://tomorrowgate.co.jp/works/page/2/">2</a><a class="nextpostslink" rel="next"
-                        aria-label="Next Page" href="https://tomorrowgate.co.jp/works/page/2/"><i class='fas fa-angle-right'></i></a>
+                        aria-label="Next Page" href="https://tomorrowgate.co.jp/works/page/2/"><i
+                            class='fas fa-angle-right'></i></a>
                 </div>
             </div>
-  <section class="menu">
-    <ul class="menu-contents mycontents-wide">
-        <li class="menu-contents__list">
-            <router-link to="/about/">
-                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg" alt="" loading="lazy">
-                <div class="menu-contents__list__text">
-                    <!-- <p class="menu-contents__list__subtitle">経営理念</p> -->
-                    <h4 class="menu-contents__list__title">Policy</h4>
-                </div>
-            </router-link>
-        </li>
-        <li class="menu-contents__list">
-            <router-link to="/blog/">
-                <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news" src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
-                <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">事業紹介</p>
-                    <h4 class="menu-contents__list__title">Business</h4>
-                </div>
-            </router-link>
-        </li>
-        <li class="menu-contents__list">
-            <router-link to="/onlinedevelopmenthub/">
-                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg" alt="" loading="lazy">
-                <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">会社概要</p>
-                    <h4 class="menu-contents__list__title">Company</h4>
-                </div>
-            </router-link>
-        </li>
-    </ul>
-</section>
-<!-- <section class="contact mycontents-wide mt-5">
-    <h3 class="content-title content-title_contact">お問い合わせ</h3>
-    <img class="contact__img" src="/public/assets/img/icons/Operator.png" alt="" width="80px">
-    <p class="content-text content-text_contact">お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。</p>
-    <div class="contact__btns">
-        <button class="btn-wide btn-wide_call" data-toggle="modal" data-target="#linescancode">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Line-white.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Line-Black.png" alt="" loading="lazy">
-            </div>
-            <p class="btn-wide__text btn-wide__text_call">会社LINE ID</p>
-        </button>
-        <a class="btn-wide btn-wide_call" href="mailto:helloworld@idenbrid.com">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png" alt="" loading="lazy">
-            </div>
-                <p class="btn-wide__text btn-wide__text_call">
-                    helloworld@idenbrid.com
-                    </p>
-        </a>
-        <a class="btn-wide" href="skype:live:.cid.3145b74a3504693c?chat">
-            <div class="btn-wide__imgs">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Skype-White.png" alt="" loading="lazy">
-                <img class="btn-wide__img" src="/public/assets/img/icons/Skype-Black.png" alt="" loading="lazy">
-            </div>
-            <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
-        </a>
-    </div>
- (Modal) 
-<div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="/public/assets/img/line-code.jpg" width="100%"/>
-      </div>
-    </div>
-  </div>
-</div>
-</section> -->
-</main>
- <Footer />
+            <section class="menu">
+                <ul class="menu-contents mycontents-wide">
+                    <li class="menu-contents__list">
+                        <router-link to="/about/">
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
+                                alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <h4 class="menu-contents__list__title">Policy</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="menu-contents__list">
+                        <router-link to="/blog/">
+                            <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
+                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <p class="menu-contents__list__subtitle">事業紹介</p>
+                                <h4 class="menu-contents__list__title">Business</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="menu-contents__list">
+                        <router-link to="/onlinedevelopmenthub/">
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
+                                alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <p class="menu-contents__list__subtitle">会社概要</p>
+                                <h4 class="menu-contents__list__title">Company</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <Footer />
     </div>
 </template>
 <script>
-import Navbar from "../layout/Navbar.vue";
-import Footer from "../layout/Footer.vue";
+    import Navbar from "../layout/Navbar.vue";
+    import Footer from "../layout/Footer.vue";
     export default {
         components: {
             Navbar,
             Footer,
         },
-        data(){
-            return{
-                works:[]
+        data() {
+            return {
+                works: []
             }
         },
         metaInfo() {
@@ -162,330 +105,372 @@ import Footer from "../layout/Footer.vue";
                 }, ],
             };
         },
-        mounted(){
-            axios.get('/api/works').then((res)=>{
+        mounted() {
+            axios.get('/api/works').then((res) => {
                 this.works = res.data.works;
-            }).catch((err)=>{ });
+            }).catch((err) => {});
         }
 
     };
 </script>
 <style scoped>
-.work-subcontents__text{
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    width: calc((100% - 415px) / 1);
-    text-align: center;
-    margin: auto;
-}
-.work-contents__list {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    transition: 1s;
-    transition-property: transform;
-}
-
-.work-contents__list:hover {
-    transform: scale(1.05);
-}
-
-.work-contents__list__thumbnail {
-    width: 100%;
-}
-
-.work-contents__list__company {
-    margin: 20px auto 5px 20px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-}
-
-.work-contents__list__title {
-    margin-bottom: 5px;
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.work-contents__list__tags {
-    margin-left: 20px;
-    padding-bottom: 14px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #727171;
-}
-
-@media (max-width: 767px) {
-    .work-subcontents__text{
-    width:100%;
+    .work-subcontents__text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        width: calc((100% - 415px) / 1);
+        text-align: center;
+        margin: auto;
     }
+
+    .work-contents__list {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        transition: 1s;
+        transition-property: transform;
+    }
+
+    .work-contents__list:hover {
+        transform: scale(1.05);
+    }
+
     .work-contents__list__thumbnail {
-        margin-bottom: 12px;
+        width: 100%;
     }
+
     .work-contents__list__company {
-        margin: 0 12px 5px 12px;
+        margin: 20px auto 5px 20px;
+        font-weight: bold;
         font-size: 14px;
         line-height: 21px;
     }
+
     .work-contents__list__title {
-        margin: 0 12px 12px 12px;
-        font-size: 15px;
-        line-height: 22px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
     }
+
     .work-contents__list__tags {
-        margin: 0 12px;
-        padding-bottom: 12px;
-        font-size: 13px;
-        line-height: 19px;
+        margin-left: 20px;
+        padding-bottom: 14px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #727171;
     }
-}
 
-/*work*/
+    @media (max-width: 767px) {
+        .work-subcontents__text {
+            width: 100%;
+        }
 
-.work {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+        .work-contents__list__thumbnail {
+            margin-bottom: 12px;
+        }
 
-.work-contents {
-    display: flex;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-}
+        .work-contents__list__company {
+            margin: 0 12px 5px 12px;
+            font-size: 14px;
+            line-height: 21px;
+        }
 
-.work-contents__list {
-    width: calc((100% - 65px * 2) / 3);
-    margin-bottom: 60px;
-    margin-left: 65px;
-}
+        .work-contents__list__title {
+            margin: 0 12px 12px 12px;
+            font-size: 15px;
+            line-height: 22px;
+        }
 
-.work-contents .work-contents__list:nth-child(3n + 1){
-    margin-left: 0;
-}
+        .work-contents__list__tags {
+            margin: 0 12px;
+            padding-bottom: 12px;
+            font-size: 13px;
+            line-height: 19px;
+        }
+    }
 
-@media (max-width: 767px) {
+    /*work*/
+
     .work {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .work-contents {
+        display: flex;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .work-contents__list {
+        width: calc((100% - 65px * 2) / 3);
         margin-bottom: 60px;
+        margin-left: 65px;
     }
-    .work-contents{
-        margin-bottom: 20px;
-    }
-    .work-contents .work-contents__list:nth-child(2n){
-        margin-left: 35px;
-    }
-    .work-contents .work-contents__list:nth-child(2n + 1){
+
+    .work-contents .work-contents__list:nth-child(3n + 1) {
         margin-left: 0;
     }
-    .work-contents__list {
-        width: calc((100% - 35px) / 2);
-        margin-bottom: 30px;
-    }
-}
 
-@media (max-width: 500px) {
-    .work-contents {
-        display: block;
+    @media (max-width: 767px) {
+        .work {
+            margin-bottom: 60px;
+        }
+
+        .work-contents {
+            margin-bottom: 20px;
+        }
+
+        .work-contents .work-contents__list:nth-child(2n) {
+            margin-left: 35px;
+        }
+
+        .work-contents .work-contents__list:nth-child(2n + 1) {
+            margin-left: 0;
+        }
+
+        .work-contents__list {
+            width: calc((100% - 35px) / 2);
+            margin-bottom: 30px;
+        }
     }
-    .work-contents__list {
+
+    @media (max-width: 500px) {
+        .work-contents {
+            display: block;
+        }
+
+        .work-contents__list {
+            width: 100%;
+            margin-bottom: 30px;
+            margin-left: 0 !important;
+        }
+    }
+
+
+
+    .works--content {
+        padding: 60px 10% 120px;
+        background-color: #fff;
+    }
+
+    .works.loaded .works--content--link {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .works--content--link {
+        display: flex;
+        margin-bottom: 50px;
+        transform: translateY(15%);
+        transition: .6s;
+        opacity: 1;
+    }
+
+    .works--content--link li {
+        margin-right: 30px;
+    }
+
+    .works--content--link .categoryitem {
+        color: #000;
+        font-size: 14px;
+        letter-spacing: .05px;
+        position: relative;
+        font-family: DIN-Bold;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .works--content--link .categoryitem::after {
+        content: "";
+        background: #000;
         width: 100%;
-        margin-bottom: 30px;
-        margin-left: 0 !important;
+        height: 1px;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        transform: scale(0, 1);
+        transition: transform 0.3s;
+        transform-origin: right top;
     }
-}
 
+    .works--content--link .categoryitem:hover::after {
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
 
+    .works--content--link .categoryitem.current:after {
+        transform: scale(1, 1);
+    }
 
-.works--content {
-    padding: 60px 10% 120px;
-    background-color: #fff;
-}
-.works.loaded .works--content--link {
-    transform: translateY(0);
-    opacity: 1;
-}
-.works--content--link {
-    display: flex;
-    margin-bottom: 50px;
-    transform: translateY(15%);
-    transition: .6s;
-    opacity: 1;
-}
-.works--content--link li {
-    margin-right: 30px;
-}
-.works--content--link .categoryitem {
-    color: #000;
-    font-size: 14px;
-    letter-spacing: .05px;
-    position: relative;
-    font-family: DIN-Bold;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.works--content--link .categoryitem::after {
-    content: "";
-    background: #000;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    transform: scale(0, 1);
-    transition: transform 0.3s;
-    transform-origin: right top;
-}
-.works--content--link .categoryitem:hover::after {
-    transform-origin: left top;
-    transform: scale(1, 1);
-}
-.works--content--link .categoryitem.current:after {
-    transform: scale(1, 1);
-}
-.works--content--mainarea {
-    display: flex;
-    flex-wrap: wrap;
-}
-.works--content--item {
-    margin-bottom: 72px;
-    transform: translateY(5%);
-    transition: .8s;
-    opacity: 1;
-}
-.works--content--item {
-    width: 33.333%;
-}
-.works.loaded .works--content--item{
-    transform: translateY(0);
-    opacity: 1;
-}
-.hoverScale .thumb {
-    overflow: hidden;
-    position: relative;
-}
-.hoverScale .thumb .hvrtxt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: 0.4s;
-    transform: translate(-34%, -20%);
-    opacity: 0;
-    z-index: 1;
-    backface-visibility: hidden;
-}
-.hoverScale .thumb .hvrtxt .more_txt {
-    color: #DADADA;
-    font-size: 14px;
-    font-family: DIN-Bold;
-    letter-spacing: 0.06px;
-    text-transform: uppercase;
-    position: relative;
-    padding-right: 20px;
-    font-weight: 700;
-}
-.hoverScale .thumb .hvrtxt .more_txt::after, .hoverScale .thumb .hvrtxt .more_txt::before {
-    content: "";
-    height: 1px;
-    background-color: #DADADA;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transition: 0.3s;
-}
-.hoverScale .thumb .hvrtxt .more_txt::before {
-    width: 10px;
-}
-.hoverScale .thumb .hvrtxt .more_txt .underline {
-    position: relative;
-}
-.hoverScale .thumb .hvrtxt .more_txt .underline::after {
-    content: "";
-    background: #DADADA;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    transform: scale(0, 1);
-    transition: transform 0.3s;
-    transform-origin: right top;
-}
-.hoverScale .thumb .hvrtxt .more_txt::after, .hoverScale .thumb .hvrtxt .more_txt::before {
-    content: "";
-    height: 1px;
-    background-color: #DADADA;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transition: 0.3s;
-}
-.hoverScale .thumb .hvrtxt .more_txt::after {
-    width: 6px;
-    transform: rotate(45deg) translateY(-3px);
-}
-.hoverScale .thumb .scaleImg {
-    transition: 0.4s;
-    backface-visibility: hidden;
-}
-.hoverScale .thumb::after {
-    content: "";
-    background-color: rgba(0,0,0,0.6);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 0.4s;
-    backface-visibility: hidden;
-}
-.works--content--item h3 {
-    margin: 20px 0 10px;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.06px;
-    color: #000;
-    display: inline-block;
-    padding-bottom: 3px;
-    font-family: NotoSansJP-Bold;
-}
-@media screen and (max-width: 556px){
-.works--content {
-    padding: 60px 5% 80px;
-}
-.works--content--link {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-.works--content--link li {
-    width: 48%;
-    margin-bottom: 25px;
-    margin-right: 0;
-    position: relative;
-}
-.works--content--link li::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #DADADA;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-}
-.works--content--item {
-    display: block;
-    margin-bottom: 40px;
-}
-.works--content--item h3 {
-    margin: 10px 0 8px;
-    font-size: 14px;
-}
-.works--content--item{
-    width: 100%;
-}
-}
+    .works--content--mainarea {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .works--content--item {
+        margin-bottom: 72px;
+        transform: translateY(5%);
+        transition: .8s;
+        opacity: 1;
+    }
+
+    .works--content--item {
+        width: 33.333%;
+    }
+
+    .works.loaded .works--content--item {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .hoverScale .thumb {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hoverScale .thumb .hvrtxt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: 0.4s;
+        transform: translate(-34%, -20%);
+        opacity: 0;
+        z-index: 1;
+        backface-visibility: hidden;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt {
+        color: #DADADA;
+        font-size: 14px;
+        font-family: DIN-Bold;
+        letter-spacing: 0.06px;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 20px;
+        font-weight: 700;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::after,
+    .hoverScale .thumb .hvrtxt .more_txt::before {
+        content: "";
+        height: 1px;
+        background-color: #DADADA;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transition: 0.3s;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::before {
+        width: 10px;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt .underline {
+        position: relative;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt .underline::after {
+        content: "";
+        background: #DADADA;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        transform: scale(0, 1);
+        transition: transform 0.3s;
+        transform-origin: right top;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::after,
+    .hoverScale .thumb .hvrtxt .more_txt::before {
+        content: "";
+        height: 1px;
+        background-color: #DADADA;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transition: 0.3s;
+    }
+
+    .hoverScale .thumb .hvrtxt .more_txt::after {
+        width: 6px;
+        transform: rotate(45deg) translateY(-3px);
+    }
+
+    .hoverScale .thumb .scaleImg {
+        transition: 0.4s;
+        backface-visibility: hidden;
+    }
+
+    .hoverScale .thumb::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.4s;
+        backface-visibility: hidden;
+    }
+
+    .works--content--item h3 {
+        margin: 20px 0 10px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.06px;
+        color: #000;
+        display: inline-block;
+        padding-bottom: 3px;
+        font-family: NotoSansJP-Bold;
+    }
+
+    @media screen and (max-width: 556px) {
+        .works--content {
+            padding: 60px 5% 80px;
+        }
+
+        .works--content--link {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .works--content--link li {
+            width: 48%;
+            margin-bottom: 25px;
+            margin-right: 0;
+            position: relative;
+        }
+
+        .works--content--link li::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: #DADADA;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .works--content--item {
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .works--content--item h3 {
+            margin: 10px 0 8px;
+            font-size: 14px;
+        }
+
+        .works--content--item {
+            width: 100%;
+        }
+    }
 </style>

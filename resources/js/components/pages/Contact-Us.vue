@@ -601,7 +601,6 @@
 
     .contact-text {
         margin-top: 0px;
-        margin-bottom: 60px;
         font-weight: bold;
         font-size: 16px;
         line-height: 24px;
@@ -1089,6 +1088,7 @@
             margin-top: -90px;
             margin-bottom: -120px;
         }
+    
     }
 
 
@@ -1216,7 +1216,7 @@
     }
 
     .primary-contact-form {
-        margin: 0 auto;
+        margin: 0 auto 30px;
     }
 
     .form-group {
@@ -1272,8 +1272,13 @@
     }
 
     @media screen and (max-width: 767px) {
+        .contact{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+  
         .primary-contact-form {
-            width: 95%;
+            width: 100%;
         }
 
         .form-group {
@@ -1283,6 +1288,9 @@
 
         .formHeading {
             text-align: left;
+        }
+        .contents {
+    margin: 0px;
         }
     }
 </style>

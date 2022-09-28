@@ -1,40 +1,15 @@
 <template>
     <div>
         <Navbar />
-        <!-- <div class="hero_Heading">
-        <h2 class="hero">RECRUIT</h2>
-        <p class="about-subcontents__text">こちらは当社の情報や沿革など会社概要を確認いただけすページです。</p>
-    </div> -->
-
-
-
-        <!-- <div class="mv_textarea-recruit">
-            <h2>
-                <strong class="en entxt">BUSINESS / 事業紹介</strong>
-                <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
-            </h2>
-        </div> -->
-
         <main>
             <div class="recruit--leadtxt">
 
                 <div class="mv_textarea-recruit">
-            <h2>
-                <strong class="en entxt">BUSINESS / 事業紹介</strong>
-                <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
-            </h2>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
+                    <h2>
+                        <strong class="en entxt">BUSINESS / 事業紹介</strong>
+                        <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
+                    </h2>
+                </div>
                 <h3>ビジネスを動かすITサービスは<br class="pc">アイデアから始まります</h3>
                 <p>単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、
                     <br class="pc">お客様の求めているユーザーペインを解決してこそ、その先のエンドユーザーに届くITサービスが実現できるのです。
@@ -46,25 +21,6 @@
                     <h3 class="fade_y on">サービスのご紹介</h3>
                 </div>
                 <div class="recruit--person--list" bis_skin_checked="1">
-                    <!-- <div class="recruit--person--item hoverScale" bis_skin_checked="1">
-                        <router-link to="/branding/">
-                            <div class="thumb" bis_skin_checked="1">
-                                <div class="hvrtxt en" bis_skin_checked="1"><span class="more_txt"><span
-                                            class="underline">MORE</span></span></div>
-                                <div class="scaleImg" bis_skin_checked="1"><img
-                                        src="https://tomorrowgate.co.jp/asset/img/recruit/producer_photo.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>
-                                <span class="department fade_y on">SEH：スタジオ型開発ハブ</span>
-                                <strong class="phrase fade_y on">チームでの開発が必要で、エンジニアを月毎のリソースベースで<br
-                                        class="pc">提供するラボ型開発サービスです。</strong>
-                            </h4>
-                            <p class="fade_y on">
-                                STUDIO ENGINEERING HUB通称SEHでは主にIT開発をされている企業様で沢山のエンジニアリソースを必要とされ、チームでの開発がマストな会社様に適したサービスになります。
-                            </p>
-                        </router-link>
-                    </div> -->
 
                     <div class="recruit--person--item hoverScale" bis_skin_checked="1">
                         <router-link to="/branding/">
@@ -77,10 +33,12 @@
                             </div>
                             <h4>
                                 <span class="department fade_y on">ODH：オンライン開発ハブ</span>
-                                <strong class="phrase fade_y on">プロジェクト単位にて受託開発を行うサービスになります。<br class="pc">どのようなものを開発するのか決まっている場合にはこちらのサービスになります。</strong>
+                                <strong class="phrase fade_y on">プロジェクト単位にて受託開発を行うサービスになります。<br
+                                        class="pc">どのようなものを開発するのか決まっている場合にはこちらのサービスになります。</strong>
                             </h4>
                             <p class="fade_y on">
-                                ONLINE DEVELOPMENT HUB通称ODHでは主にスタートアップや中小企業様に人気でプロジェクト単位での受託開発を行っているサービスになります。小規模から大規模まで幅広く対応しております。
+                                ONLINE DEVELOPMENT
+                                HUB通称ODHでは主にスタートアップや中小企業様に人気でプロジェクト単位での受託開発を行っているサービスになります。小規模から大規模まで幅広く対応しております。
                             </p>
                         </router-link>
                     </div>
@@ -95,7 +53,8 @@
                             </div>
                             <h4>
                                 <span class="department fade_y on">SES：エンジニア採用営業支援</span>
-                                <strong class="phrase fade_y on">常駐やリモートで業務委託できる日本人エンジニアなどのリソースベースのサービスになります。<br>協業ご希望のBP様も常に募集しております。</strong>
+                                <strong
+                                    class="phrase fade_y on">常駐やリモートで業務委託できる日本人エンジニアなどのリソースベースのサービスになります。<br>協業ご希望のBP様も常に募集しております。</strong>
                             </h4>
                             <p class="fade_y on">
                                 SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
@@ -106,13 +65,13 @@
             </div>
             <div class="recruit_fix visibility">
                 <ul class="entryarea recruit--contactarea--bnr">
-                    <!-- <li>
-                        <router-link to="/branding">STUDIO ENGINEERING HUB : SEH<br><span>スタジオ開発ハブ（ラボ型開発）</span></router-link>
-                    </li> -->
+
                     <li>
-                        <router-link to="/branding">ONLINE DEVELOPMENT HUB : ODH<br><span class="label pc">今オンライン開発ハブ（プロジェクト型受託開発）</span></router-link>
+                        <router-link to="/branding">ONLINE DEVELOPMENT HUB : ODH<br><span
+                                class="label pc">今オンライン開発ハブ（プロジェクト型受託開発）</span></router-link>
                     </li>
-                    <li><a href="/system-engineering-service/" class="">SES<br><span class="label pc">エンジニア採用支援（常駐・フルリモート業務委託）</span><span
+                    <li><a href="/system-engineering-service/" class="">SES<br><span
+                                class="label pc">エンジニア採用支援（常駐・フルリモート業務委託）</span><span
                                 class="label sp">気軽にメール登録</span></a></li>
                 </ul>
             </div>
@@ -273,7 +232,7 @@
 
     .recruit_fix ul li {
         margin: auto;
-      width: 40%;
+        width: 40%;
     }
 
     .recruit_fix ul li a {
@@ -289,8 +248,8 @@
     }
 
     @media screen and (min-width: 897px) {
-       
-       
+
+
         .recruit--contactarea--bnr.entryarea li a {
             padding: 25px 0;
             margin-top: 20px;
@@ -425,7 +384,7 @@
         background-color: #000;
         background: url('/assets/img/all-member.png') no-repeat center;
         background-blend-mode: overlay;
-    background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     /* .recruit--leadtxt::after {
@@ -499,20 +458,23 @@
     }
 
     @media screen and (max-width: 500px) {
-        .recruit--contactarea--bnr.entryarea li a{
+        .recruit--contactarea--bnr.entryarea li a {
             font-size: 10px;
         }
-        .recruit--contactarea--bnr.entryarea li .label{
+
+        .recruit--contactarea--bnr.entryarea li .label {
             font-size: 8px;
         }
+
         .recruit_fix.visibility {
-    bottom: -10px;
-}
+            bottom: -10px;
+        }
+
         .recruit_fix ul li {
             width: 49%;
             margin: 0px auto 0px 0px;
         }
-        
+
 
         .recruit--leadtxt {
             margin-top: 0px;
@@ -630,9 +592,10 @@
     }
 
     @media screen and (min-width: 897px) {
-        .recruit_fix.visibility{
+        .recruit_fix.visibility {
             margin-bottom: 80px;
         }
+
         .recruit--person {
             padding: 180px 10% 100px;
         }
