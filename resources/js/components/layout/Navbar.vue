@@ -324,11 +324,11 @@ jQuery('.header-sp__fixed__menu__left__list__pulus_blog').on('click', function (
 .side_fix {
     width: 35px;
 }
-.side_fix .fix_btn a {
-    background: #000;
+ .side_fix .fix_btn a {
+    /* background: #000; */
     padding: 15px 0;
-    border: 1px solid #474747;
-}
+    /* border: 1px solid #474747; */
+} 
 .side_fix .fix_btn a .txt {
     color: #dadada;
     font-size: 12px;

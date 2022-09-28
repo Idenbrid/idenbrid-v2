@@ -194,11 +194,12 @@
                                                             <select name="880722_2634pi_880722_2634"
                                                                 id="880722_2634pi_880722_2634"
                                                                 class="select form-control" onchange="">
-                                                                <option value="" selected="selected"></option>
-                                                                <option value="13990">外部に発注したい</option>
-                                                                <option value="13992">外部発注先の選定を検討している</option>
-                                                                <option value="13994">仕事を受注したい</option>
-                                                                <option value="13996">新規顧客を開拓したい</option>
+                                                                <option value="" selected="selected">下記よりお選びください</option>
+                                                                <option value="13990">IT開発の外注先を探している</option>
+                                                                <option value="13992">プロジェクト案件の見積もりが欲しい</option>
+                                                                <option value="13994">ビジネス協業をしたい</option>
+                                                                <option value="13996">採用について</option>
+                                                                <option value="13996">取材や会社について問い合わせ</option>
                                                             </select>
 
                                                             <div id="error_for_880722_2634pi_880722_2634"
@@ -373,13 +374,13 @@
                                                             <select name="880722_23336pi_880722_23336"
                                                                 id="880722_23336pi_880722_23336"
                                                                 class="select form-control" onchange="">
-                                                                <option value="" selected="selected"></option>
-                                                                <option value="396408">タクシー広告</option>
-                                                                <option value="396410">テレビCM</option>
-                                                                <option value="396412">Facebook広告</option>
-                                                                <option value="396414">検索</option>
-                                                                <option value="396416">ご紹介</option>
-                                                                <option value="963092">営業担当より紹介</option>
+                                                                <option value="" selected="selected">下記よりお選びください</option>
+                                                                <option value="396408">ご紹介</option>
+                                                                <option value="396410">SNS</option>
+                                                                <option value="396412">ブログ</option>
+                                                                <option value="396414">営業担当者より</option>
+                                                                <option value="396416">送信されたメール</option>
+                                                                <option value="963092">ウェブ検索</option>
                                                                 <option value="963094">その他</option>
                                                             </select>
 
