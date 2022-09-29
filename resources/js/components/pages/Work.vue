@@ -52,6 +52,7 @@
                             <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
                                 alt="" loading="lazy">
                             <div class="menu-contents__list__text">
+                                <p class="about-contents__list__subtitle">経営理念</p>
                                 <h4 class="menu-contents__list__title">Policy</h4>
                             </div>
                         </router-link>

@@ -36,11 +36,12 @@
                                 <div class="c-message__title-sub">「パキスタンから世界へ」<br>
                                     ITを届けるHubを作るストーリー</div>
                                 <div class="c-message__button u-hidden-sm"><a href="/solutions/"
-                                        class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View More</a></div>
+                                        class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View
+                                        More</a></div>
                             </div>
                             <div class="large-5 small-12">
-                                    <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="">
-                                    <img class="c-message__img ceo-mbl" src="/assets/img/CEO-Person-mbl.png" alt="">
+                                <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="">
+                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO-Person-mbl.png" alt="">
                             </div>
                             <div class="c-message__button u-hidden-lg">
                                 <router-link class="c-button is-md" to="/about-company/">View More</router-link>
@@ -810,12 +811,15 @@
         line-height: 24px;
         color: #333333;
     }
-    .ceo-mbl{
+
+    .ceo-mbl {
         display: none;
     }
-    .ceo-desktop{
+
+    .ceo-desktop {
         display: block;
     }
+
     @media (max-width: 1200px) {
         .WorkSlider {
             overflow: hidden;
@@ -823,14 +827,16 @@
     }
 
     @media (max-width: 767px) {
-        .ceo-mbl{
-        display: block;
-        height: auto;
-        object-fit: contain;
-    }
-    .ceo-desktop{
-        display: none;
-    }
+        .ceo-mbl {
+            display: block;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .ceo-desktop {
+            display: none;
+        }
+
         .new-box {
             padding: 32px 15px;
             max-width: 100%;
@@ -1846,13 +1852,39 @@
         margin-top: 3.85714rem;
     }
 
+    @media (max-width:1200px) {
+        .c-message__title-sub {
+            font-size: 1.8rem;
+        }
+
+        .large-5 {
+            align-items: center;
+            display: flex;
+        }
+
+        .c-message__button {
+            margin-top: 0.85714rem;
+        }
+
+        .c-message {
+            padding: 30px 0px;
+            height: auto;
+        }
+    }
+
     @media (max-width: 945px) {
+
         .c-message__button {
             margin-bottom: 3.85714rem;
         }
 
         .c-message__title-sub {
             font-size: 24px;
+            margin-top: 2rem;
+        }
+
+        .c-message__button {
+            margin-top: 1.85714rem;
         }
 
         .c-message__title span {
@@ -1875,7 +1907,16 @@
         }
 
         .c-message__content {
-            flex-direction: column;
+            align-items: center;
+        }
+
+        .c-message__title {
+            text-align: left;
+            margin-top: 10rem;
+        }
+
+        .content-title {
+            font-size: 36px;
         }
 
         .small-12 {
@@ -1956,14 +1997,40 @@
         }
     }
 
-    @media (max-width: 475px) {
-        .service_h2 {
+    @media (max-width: 945px) {
+        .c-message__content {
             flex-direction: column;
+        }
+    }
+
+    @media (max-width: 475px) {
+        .content-title {
+            font-size: 24px;
+        }
+
+        .c-message__title-sub {
+            font-size: 16px;
+        }
+
+        .c-message__content {
+            flex-direction: column;
+        }
+
+        .content-title {
+            font-size: 28px;
+        }
+
+        .service_h2 {
+            flex-direction: row;
             font-size: 20px;
 
         }
 
-        .otherservice {
+        .otherservice .service-row {
+            margin-top: 0px !important;
+        }
+
+        .service_h2 .otherservice {
             margin-bottom: 0px;
         }
 

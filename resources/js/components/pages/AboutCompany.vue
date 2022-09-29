@@ -361,5 +361,8 @@
         .company--item:nth-of-type(2) {
             width: 100%;
         }
+        .link-set{
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr))
+        }
     }
 </style>
