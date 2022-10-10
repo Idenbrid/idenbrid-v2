@@ -3,8 +3,8 @@
          <Navbar />
          <div class="mv_textarea">
              <h2>
-                 <strong class="en entxt">Document Request</strong>
-                 <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+                 <strong class="en entxt">DOCUMENT REQUEST / 資料ダウンロード</strong>
+                 <span class="jptxt">こちらではIDENBRIDの事業に関する資料のダウンロードができます</span>
              </h2>
          </div>
          <main>
@@ -21,7 +21,7 @@
                      <form name="billbill 事前登録" id="form" data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc="" class="sd">
                          <div data-s-eb910213-5e90-4c74-962c-99e6f7cb752c="" class="sd">
                              <div data-s-5d7bf798-6408-460a-a17b-3abceae4a8cf="" class="richText sd">
-                                 <h2 data-uid="lVjvymHy" data-time=""><strong>3分</strong>でわかる</h2>
+                                 <h2 data-uid="lVjvymHy" data-time="">IDENBRIDのサービスが3分でわかる</h2>
                              </div>
                              <div data-s-1a3235d6-c717-41c7-ab1a-4714c7f220b5="" class="sd">
                                  <h2 data-s-4c350f65-b9ff-40e6-b04c-3cef6dc9d38a=""
@@ -44,8 +44,8 @@
                                  <div data-s-b44f44b9-21f2-4df5-93a7-53f0aeb07100="" class="sd">
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
-                                         会社名<br></p>
-                                 </div><input name="会社名" placeholder="田中商事" required="required" type="text"
+                                         お名前<br></p>
+                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
                              <label data-s-96950b18-e375-45a4-8c53-565ab7b63484="" class="sd">
@@ -53,7 +53,7 @@
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
                                          会社名<br></p>
-                                 </div><input name="会社名" placeholder="田中商事" required="required" type="text"
+                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
 
@@ -63,8 +63,8 @@
                                  <div data-s-b44f44b9-21f2-4df5-93a7-53f0aeb07100="" class="sd">
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
-                                         会社名<br></p>
-                                 </div><input name="会社名" placeholder="田中商事" required="required" type="text"
+                                         Email<br></p>
+                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
 
@@ -80,17 +80,20 @@
              <section data-s-696cf783-82e5-46e8-ba9c-cc3bb7d7386f="" class="sd">
                  <div data-s-da52b47a-4058-4b2c-9bd2-b32d932d7a94="" class="sd">
                      <h2 data-s-5e66522a-4a6f-4642-b8eb-c760e25a2e6f=""
-                         data-r-0_0_1_1_5e66522a-4a6f-4642-b8eb-c760e25a2e6f="" class="text sd">ペイトナー請求書の特徴</h2>
+                         data-r-0_0_1_1_5e66522a-4a6f-4642-b8eb-c760e25a2e6f="" class="text sd">IDENBRIDのサービスSDHの特徴</h2>
                      <div data-s-9e377fd2-bb01-4a4a-b2c6-12fc2f4e4804="" class="sd">
                          <div data-s-814e84ce-087a-4283-9e08-c914c41ddd7a="" class="sd">
                              <p data-s-b5862f2d-974a-4069-8398-72830dd372a5=""
                                  data-r-0_0_1_0_1_1_b5862f2d-974a-4069-8398-72830dd372a5="" class="text sd">01</p>
                              <p data-s-a7eb9c4b-36f0-4661-b299-7961242fd327=""
                                  data-r-1_0_1_0_1_1_a7eb9c4b-36f0-4661-b299-7961242fd327="" class="text sd">
-                                 1件あたり5分かかる<br>毎月の振込業務が0に</p>
+                                 受託開発・ラボ型<br>どちらでも対応可能</p>
                              <div data-s-f0282e23-9495-40ef-9153-57b634611910="" class="sd">
                                  <p data-s-d20dd355-9671-44c9-ac72-d7c4c612e0c1=""
-                                     data-r-0_2_0_1_0_1_1_d20dd355-9671-44c9-ac72-d7c4c612e0c1="" class="text sd">工数</p>
+                                     data-r-0_2_0_1_0_1_1_d20dd355-9671-44c9-ac72-d7c4c612e0c1="" class="text sd"><video
+                                         data-v-a9aac016="" width="100%" autoplay="autoplay" loop="loop" muted="muted">
+                                         <source data-v-a9aac016="" src="/assets/videos/acomputer.mp4" type="video/mp4">
+                                         </video></p>
                                  <!-- <i data-s-a40c9b85-3163-4087-aa6a-a5b9961fe66d=""
                                     class="icon material-icons sd">exposure_zero</i> -->
                              </div>
@@ -100,19 +103,16 @@
                                  data-r-0_1_1_0_1_1_c83c6dec-139a-476d-82cb-498c11a1575c="" class="text sd">02</p>
                              <h3 data-s-37dd72c5-a053-4a6e-b2fb-2e6425306e10=""
                                  data-r-1_1_1_0_1_1_37dd72c5-a053-4a6e-b2fb-2e6425306e10="" class="text sd">
-                                 請求書保存が<br>ドラッグ&amp;ドロップだけ<br></h3><img data-s-e860154c-014f-474a-ade9-1974f133f903=""
-                                 alt=""
-                                 src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-760x659_v-fs_webp_0ed19cd2-3df7-48a2-8744-ebbc7b5e5585_small.webp"
-                                 class="sd">
+                                 IT知識がなくても<br>開発可能<br></h3><img data-s-e860154c-014f-474a-ade9-1974f133f903="" alt=""
+                                 src="/assets/img/01babns.png" class="sd">
                          </div>
                          <div data-s-56bb3cc6-2cfb-4030-81d8-8e2924c36099="" class="sd">
                              <p data-s-a556ea1d-b257-490d-b188-1b96e82dbc21=""
                                  data-r-0_2_1_0_1_1_a556ea1d-b257-490d-b188-1b96e82dbc21="" class="text sd">03</p>
                              <p data-s-9fae1e38-fb2b-4bfa-93ce-3c8d1edffccd=""
                                  data-r-1_2_1_0_1_1_9fae1e38-fb2b-4bfa-93ce-3c8d1edffccd="" class="text sd">
-                                 振込まで自動化！<br>保管・管理・起票も対応</p><img data-s-859cc6a4-4f36-4142-b069-562b48b33c8c="" alt=""
-                                 src="https://storage.googleapis.com/studio-design-asset-files/projects/4Ra4JEKoOD/s-404x769_v-fs_webp_f4d86da9-9d57-4d14-9bac-82a5a7900dfb_small.webp"
-                                 class="sd">
+                                 デザインから実装まで<br>ワンストップで受付</p><img data-s-859cc6a4-4f36-4142-b069-562b48b33c8c="" alt=""
+                                 src="/assets/img/download02.png" class="sd">
                          </div>
                      </div><a href="#form" data-s-2af694e2-d08a-446b-bf98-d310f82e8ff5="" class="sd">
                          <p data-s-b459a42f-88c6-490e-b0d8-9120ea7cf040=""
@@ -749,21 +749,8 @@
      }
 
      .sd[data-s-d20dd355-9671-44c9-ac72-d7c4c612e0c1] {
-         border-bottom: 1px solid #0a7ced;
-         border-left: 1px solid #0a7ced;
-         border-radius: 48px;
-         border-right: 1px solid #0a7ced;
-         border-top: 1px solid #0a7ced;
-         color: #0a7ced;
-         flex: none;
-         font-family: var(--s-font-d5b4301d);
-         font-size: 18px;
-         font-weight: 700;
-         height: 80px;
-         line-height: 1.4;
-         margin: 15px 8px 0px 0px;
-         text-align: center;
-         width: 80px;
+         margin: 15px 0px 0px 0px;
+         width: 145px;
          max-width: calc(100% - 8px);
          justify-content: center;
      }
@@ -887,7 +874,7 @@
          flex: none;
          height: auto;
          margin: 20px 0px 0px 0px;
-         width: 128px;
+         width: 140px;
          max-width: 100%;
      }
 
@@ -895,7 +882,7 @@
          flex: none;
          height: auto;
          margin: 20px 0px 0px 0px;
-         width: 59px;
+         width: 150px;
          max-width: 100%;
      }
 

@@ -1127,7 +1127,7 @@
     }
 
     .branding--mv {
-        background: url(/assets/img/work.jpeg) no-repeat center;
+        background: url(/assets/img/sdhbanner.png) no-repeat center;
         background-size: cover;
         padding: 100px 10%;
         margin-top: 0px;

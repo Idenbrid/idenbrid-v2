@@ -43,7 +43,7 @@
                         </div>
                     </div>
 
-                    <ul class="topic--content--sidearea">
+                    <ul class="topic--content--sidearea" >
                         <li><a href="https://tomorrowgate.co.jp/topic/" class="en categoryitem current">全て</a></li>
                         <li><a href="https://tomorrowgate.co.jp/topic/category/news/" class="en categoryitem">ニュース</a>
                         </li>
@@ -387,7 +387,9 @@
         transform: translateY(0);
         opacity: 1
     }
-
+  .topic--content--sidearea{
+        width:15%;
+    }
     .topic.loaded .topic--content--sidearea li {
         transform: translateY(0);
         opacity: 1
@@ -430,6 +432,9 @@
             flex-direction: column-reverse;
             padding: 80px 5%
         }
+     .topic--content--sidearea{
+        width:100%;
+    }
     }
 
     .topic--content--item {

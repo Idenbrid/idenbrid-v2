@@ -84,30 +84,35 @@
                 </div>
             </div>
         
-           <section class="menu-list">
+            <section class="menu-list">
                 <div class="menu-box">
                     <div class="item">
 
-                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">PROFILE</router-link>
+                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">会社概要
+                        </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">MESSAGE</router-link>
-                        </div>
-                    <div class="item">
-
-                       <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">OFFICE</router-link>
+                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">代表メッセージ
+                        </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">MEMBER</router-link>
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス
+                        </router-link>
                     </div>
                     <div class="item">
 
-                       <router-link to="/digitalasset/" class="text"><img src="/assets/img/icons/Digital-Assets.svg">DIGITAL ASSETS</router-link>
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">チーム
+                        </router-link>
+                    </div>
+                    <div class="item">
+
+                        <router-link to="/digitalasset/" class="text"><img
+                                src="/assets/img/icons/Digital-Assets.svg">デジタル資産</router-link>
                     </div>
                 </div>
-             
+
             </section>
         </main>
         <Footer />

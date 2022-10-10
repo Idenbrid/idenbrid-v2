@@ -524,28 +524,28 @@
                 <div class="menu-box">
                     <div class="item">
 
-                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">PROFILE
+                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">会社概要
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">MESSAGE
+                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">代表メッセージ
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">OFFICE
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">MEMBER
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">チーム
                         </router-link>
                     </div>
                     <div class="item">
 
                         <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">DIGITAL ASSETS</router-link>
+                                src="/assets/img/icons/Digital-Assets.svg">デジタル資産</router-link>
                     </div>
                 </div>
 
