@@ -7426,7 +7426,7 @@ var staticRenderFns = [function () {
     staticClass: "hero_Heading"
   }, [_c("h2", {
     staticClass: "hero"
-  }, [_vm._v("ABOUT / 会社情報 helllo")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ABOUT / 会社情報")]), _vm._v(" "), _c("p", {
     staticClass: "about-subcontents__text"
   }, [_vm._v("こちらはIDENBRID社の会社に関してをご覧頂けるページになります。")])]), _vm._v(" "), _c("section", {
     staticClass: "mission mycontents-wide",
