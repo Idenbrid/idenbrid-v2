@@ -15,7 +15,7 @@
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-home-tab" data-toggle="pill"
                                     data-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true"><span>発注先を探している方</span></button>
+                                    aria-selected="true"><span>外注先を探しているお客様：契約編</span></button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-profile-tab" data-toggle="pill"
@@ -31,32 +31,30 @@
                             <div class="tab-pane fade show active isAnim anim-fadeInUp inView" id="pills-home"
                                 role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="tab-main">
-                                    <dt class="f_bold">請負型開発とアジャイル型開発はどちらがいいですか？</dt>
-                                    <dd>仕様や要件の詳細が確定している際には、請負契約を適用することができます。ただし、途中の仕様変更やスコープ外の要件への作業は別途で追加費用が発生する可能性があります。
-                                        仕様が決まっていないか未確定部分が存在する、またはプロジェクトに参加する貴社のエンジニアがいれば、アジャイル型開発の方が費用対効果が高いと思われます
-                                        請負型開発においては、弊社はプロジェクトの進捗についてリスク及び成果物に対する責任を取るため、開発費は発生する可能性がある最大の工数で見積もります。一方のアジャイル型開発は実際にかかった工数での請求になります。
+                                    <dt class="f_bold">開発されたソフトウェアの著作権は誰にありますか？</dt>
+                                    <dd>アイデンブリッドが進めている開発サービスの総称です。当社では主にシステムやアプリの受託開発を受けております。また企業様からのリソースをベースとしたラボ型開発も受けてつけております。これからの開発サービスを当社ではSDHと呼んでいます。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> クライアントは作成されたアプリなどの納品物の著作権を持っていますか？ </dt>
-                                    <dd>当社では契約ごとに定めていますが、基本的に著作権はクライアントへ帰属します。
+                                    <dt class="f_bold"> 開発において社内にITに詳しい者がいませんが大丈夫でしょうか？ </dt>
+                                    <dd>当社のお客様は8割以上が社内に詳しい方がいないので私たちを頼って頂いておりますのでご安心ください。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold">成果物や納品の定義は何ですか？</dt>
-                                    <dd>ソースコード（ZipファイルまたはGitにて連携)
+                                    <dt class="f_bold">ウェブのUIUXデザインはなんのツールを使って行いますか？</dt>
+                                    <dd>.当社では基本的にAdobe XDそしてFigmaを使っています。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> 成果物や納品物は何が対象物でしょうか？ </dt>
+                                    <dt class="f_bold"> UIUXの修正は何回まで可能でしょうか？ </dt>
                                     <dd>
                                         <div class="faq-inner" bis_skin_checked="1" style="display: block;">
                                             <ul style="list-style: disc; padding-left: 25px;">
-                                                <li>ソースコード及び関連素材（圧縮されたファイルを提出）</li>
-                                                <li>上記の所有権</li>
+                                                <li>当社では初稿をお出しして最大その後2回（初稿を含めて3回）まで対応しております。</li>
+                                                <!-- <li>上記の所有権</li> -->
                                             </ul>
                                             <div id="gtx-trans" style="position: absolute; left: -71px; top: 1.2px;"
                                                 bis_skin_checked="1">
@@ -68,59 +66,57 @@
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> システムの開発において想定される契約書類はなんですか？ </dt>
-                                    <dd>各お客様と基本的に基本契約書いわゆる業務委託契約書を締結します。他にも各プロジェクトごとに個別契約書を締結します
+                                    <dt class="f_bold"> アプリやシステムの開発期間はどれくらいになりますか？ </dt>
+                                    <dd>規模や案件ごとに異なりますが通常2-6ヶ月規模のものが多いです。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> 当社にはITに詳しい担当がいないのですが問題ないでしょうか？ </dt>
-                                    <dd>当社のクライアントの7-8割はIT担当者がいない企業様です。分かりやすく案内しますのでご安心ください。
+                                    <dt class="f_bold"> Q.完成したシステムやアプリをどのタイミング確認できますか？ </dt>
+                                    <dd>お客様がどこまで担当して頂けるかによりますが、RFPや実現されたいページや機能の仕様など書類に落とし込まれたものがあると助かります。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> 工数の単位、人日、人月などは何？ </dt>
-                                    <dd>１人月はエンジニア1名で1ヶ月で作業できる作業量です。１人日はエンジニア1名で１日で作業する作業量です。
-                                    </dd>
-                                </div>
-
-                                <div class="tab-main">
-                                    <dt class="f_bold"> 新規アプリの開発の流れを教えてください。 </dt>
-                                    <dd>
-                                        <p>しっかりと品質管理と開発作業を効率化する為に、下記の工程にて</p>
-                                        <p>作業を行っています。</p>
-                                        <ul style="list-style: number; padding-left: 20px;">
-                                            <li>要件や仕様のヒアリング</li>
-                                            <li>機能別の詳細なお見積りを作成</li>
-                                            <li>開発企画書とワイヤーフレームを作成</li>
-                                            <li>画面のデザイン</li>
-                                            <li>詳細設計</li>
-                                            <li>開発（フロント、バックエンド、テスト）</li>
-                                            <li>UAT：ユーザー受入テスト</li>
-                                            <li>納品</li>
-                                        </ul>
-                                    </dd>
-                                </div>
-
-                                <div class="tab-main">
-                                    <dt class="f_bold"> 開発開始するために、クライアントが準備すべき必要なものは何がありますか？ </dt>
-                                    <dd>今回のプロジェクトに企画書や資料をご用意いただければ、当社の開発チームの理解が深まり少しでも早く設計や開発を開始することができます。企画書や書類が一切ない場合でも、どのようなことをしたいのかを説明して頂けましたらそれをベースにシステムの要件定義をサポートさせて頂きます。
+                                    <dt class="f_bold"> 開発中にはどのようにプロジェクト管理をしますか？ </dt>
+                                    <dd>ソースコードのバージョンコントロールはGitHubにて、進捗チケット管理はAsanaにて行っています。またその他、仕様要件などはGoogle
+                                        Spreadsheetを使用しています。。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
                                     <dt class="f_bold"> 開発中などはどのように定期的にコミュニケーションをとれますか？ </dt>
-                                    <dd>当社では開発中は定例や不定期の打ち合わせを設定させて頂き活発にコニュニケーションを取っています。Slack、Zoom、LINE、Skype、メール等様々なコミュニケーションツールに対応します。またスケジュール管理はAsanaにて、そして開発に関するドキュメントはGoogle
-                                        Spreadsheetにて作成・管理しています。
+                                    <dd>
+                                        <p>開発中は定例や不定期の打ち合わせを設定させて頂き活発にコニュニケーションを取っています。</p>
+                                        <p>作業を行っています。</p>
+                                        <ul style="list-style: number; padding-left: 20px;">
+                                            <li>lack、</li>
+                                            <li>Zoom</li>
+                                            <li>LINE、</li>
+                                            <li>Skype、</li>
+                                            <li>メール等様々なコミュニケーションツールに対応します。</li>
+
+                                        </ul>
+                                    </dd>
+                                </div>
+
+                                <div class="tab-main">
+                                    <dt class="f_bold">完成したシステムやアプリをどのタイミング確認できますか？ </dt>
+                                    <dd>今回のプロジェクトに企画書や資料をご用意いただければ、当社の開発チームの理解が深まり少しでも早く設計や開発を開始することができます。企画書や書類が一切ない場合でも、どのようなことをしたいのかを説明して頂けましたらそれをベースにシステムの要件定義をサポートさせて頂きます。
+                                    </dd>
+                                </div>
+
+                                <div class="tab-main">
+                                    <dt class="f_bold"> .納品後の製品の保証がありますか？ </dt>
+                                    <dd>請負契約の場合には改正民法の瑕疵担保責任、また準委任契約の場合には契約書に沿って対応します。
                                     </dd>
                                 </div>
 
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> アプリ開発の場合、Apple Store又はGoogle Playの審査に不合格になった場合、どうしますか？ </dt>
-                                    <dd>不合格になった場合、iOSやAndroidから送付される不合格の理由を確認し、それにあった修正し、もう一回申請の代行を致します。ただし、その修正が新規機能開発やモジュールの追加と判断された場合には追加料金を請求します。そして申請代行は2回までを基本形態とし、それ以上は準委任契約にて発生した日数分を請求する形となります。
-                                    </dd>
+                                    <dt class="f_bold">保守はどのように行ってくれますか？
+                                    </dt>
+
                                 </div>
 
                                 <div class="tab-main">

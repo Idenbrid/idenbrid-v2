@@ -65,7 +65,7 @@
                 <div class="box flx aic jfc_sb">
                     <div class="map">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.294228837741!2d135.496838015584!3d34.67252288044166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71af1f6361f%3A0xf52c9f87c6acf471!2z44OI44Kl44Oi44Ot44O844Ky44O844OI5qCq5byP5Lya56S-!5e0!3m2!1sja!2sjp!4v1629469292178!5m2!1sja!2sjp"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212.68255807868914!2d74.3691103812307!3d31.471361215957668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919077f1c51c857%3A0xc165f90c052dd308!2sRahman%20and%20Rahman%20Dental%20Surgeons!5e0!3m2!1sen!2s!4v1665550517774!5m2!1sen!2s"
                             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="text_area">

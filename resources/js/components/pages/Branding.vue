@@ -3,8 +3,8 @@
         <Navbar />
         <div class="mv_textarea">
         <h2>
-            <strong class="en entxt">Branding</strong>
-            <span class="jptxt">こちらのお知らせでは当社から皆様によりIT開発が好きになるようなニュースや当社からのリリースを発信する場所です。</span>
+            <strong class="en entxt">STUDIO DEVELOPMENT HUB / 受託開発</strong>
+            <span class="jptxt">ITシステム設計、UIUXデザイン、ウェブシステム、モバイルアプリ構築、クラウドサーバー、ウェブ制作</span>
         </h2>
     </div>
         <main>
@@ -14,8 +14,8 @@
                     <div class="text_area">
                         <h3 class="fade_y on">熱狂的なブランドは<br class="pc">ビジョンから生まれる</h3>
                         <p class="fade_y on">
-                            デザインからのアプローチではなく経営理念を言語化し、ビジョンに立ち向かう会社組織を設計。<br
-                                class="pc">お客様、求職者、社員、3つのブランドターゲットが熱狂するオモシロイ企業づくりを実現します。
+                            "持続可能なITシステム・アプリをお客様と共に作り上げる"<br
+                                class="pc">
                         </p>
                         <a class="btn-views" href="">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></a>
                     </div>
@@ -28,10 +28,10 @@
                                 <span class="sub en fade_y on">
                                     SERVICE
                                 </span>
-                                <h3 class="fade_y on">トゥモローゲートのブランディング</h3>
+                                <h3 class="fade_y on">"IDENBRID DEVELOPMENT ISM アイデンブリッドの開発主義"</h3>
                             </div>
                             <p class="lead fade_y on">
-                                ブランドづくりに必要な、WHY（なんのために）HOW（どのように）を抽出。貴社独自のストーリー設計、サイト・パンフレット・映像をご提案し、理念浸透、評価・制度設計、採用戦略等の総合的なコンサルティングを実施。多くのファンを生む“魅力的な会社”へと会社を成長させることを得意としています。
+                                要件定義、基本設計など他社が見切り発車しがちな開発の基礎となる部分を丁寧に行い、お客様が実現されたいシステムとの乖離がないようにきちんと対応します。そして単純にソフトウェアの開発だけではなく、お客さまが何に困られているのかつまり「ユーザーペイン」をきちんとヒアリングし、その解消を得意としています。
                             </p>
                         </div>
                     </div>
@@ -39,17 +39,17 @@
                 <div class="branding--strengths">
                     <div class="heading">
                         <span class="sub en fade_y on">STRENGTH</span>
-                        <h3 class="fade_y on">トゥモローゲートの特徴</h3>
+                        <h3 class="fade_y on">アイデンブリッドの強み</h3>
                     </div>
 
                     <div class="branding--strengths--content">
                         <div class="item">
                             <div class="en num fade_y on">01</div>
                             <div class="textarea">
-                                <h4 class="fade_y on">会社の想いからブランドをつくる<br class="pc">（オモシロイ会社づくりの提案）</h4>
+                                <h4 class="fade_y on">ワンストップ開発フロー<br class="pc">【システム・アプリの開発は当社のみで完結】</h4>
                                 <p class="fade_y on">
-                                    私達が提供するのはデザイン提案ではなく企業づくりの提案です。<br
-                                        class="pc">経営理念設計という上流工程から入り込むことで、ビジョンに沿った独自の企業ブランド戦略を貴社のカラーで構築します。
+                                    私たちは上流工程、要件定義・基本設計、システム設計<br
+                                        class="pc">UIUXデザイン、ウェブからアプリそしてクラウドまで一社にて構築を可能としております。
                                 </p>
                             </div>
                         </div>
@@ -57,10 +57,11 @@
                         <div class="item">
                             <div class="en num fade_y on">02</div>
                             <div class="textarea">
-                                <h4 class="fade_y on">自社クリエイターによる安定した品質保証<br class="pc">（クオリティとコストパフォーマンス）</h4>
+                                <h4 class="fade_y on">自トップクラスの提案力<br class="pc">（ユーザーペイン解消の最優先）</h4>
                                 <p class="fade_y on">
-                                    すべてのデザインにおいて外部依頼をすることなく、自社のディレクターとデザイナーで企画デザインを担当します。<br
-                                        class="pc">内製体制だからこそ質の高い品質と、スピーディーでコストパフォーマンスに優れた提案が可能です。
+                                    "お客様は実現したい内容をどのように達成したらいいのかわからないことがよくございます。
+<br
+                                        class="pc">当社では実現までの道のり、そしてお客様の課題・問題解決を徹底して行います。"
                                 </p>
                             </div>
                         </div>
@@ -68,10 +69,10 @@
                         <div class="item">
                             <div class="en num fade_y on">03</div>
                             <div class="textarea">
-                                <h4 class="fade_y on">国内TOPクラスの認知・リーチ力<br class="pc">（全社員約40万人のフォロワーへのPR）</h4>
+                                <h4 class="fade_y on">開発マネジメントとスピード感<br class="pc">（圧倒的なコストパフォーマンス）</h4>
                                 <p class="fade_y on">
-                                    トゥモローゲートではすべての社員がSNSで発信しています。<br
-                                        class="pc">総フォロワー数は約40万人と国内でもトップクラスの認知度を誇ります。設計したブランド戦略を日本全国のターゲットに発信することができます。
+                                    当社では「ワン・スリーシステム」を導入し、<br
+                                        class="pc">お客様のアウトプットに対するリードタイムをしっかりマネジメントしています。
                                 </p>
                             </div>
                         </div>
@@ -638,7 +639,7 @@
 }
 .btn-views:hover {
     background: #2573b0;
-    border: 1px solid #2573b0;
+    border: 2px solid #2573b0;
     color: #fff;
     transition: .4s;
 }

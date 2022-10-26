@@ -2,14 +2,14 @@
     <div>
         <Navbar />
         <main>
+            
+            <div class="mv_textarea-recruit">
+                <h2>
+                    <strong class="en entxt">BUSINESS / 事業紹介</strong>
+                    <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
+                </h2>
+            </div>
             <div class="recruit--leadtxt">
-
-                <div class="mv_textarea-recruit">
-                    <h2>
-                        <strong class="en entxt">BUSINESS / 事業紹介</strong>
-                        <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
-                    </h2>
-                </div>
                 <h3>ビジネスを動かすITサービスは<br class="pc">アイデアから始まります</h3>
                 <p>単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、
                     <br class="pc">お客様の求めているユーザーペインを解決してこそ、その先のエンドユーザーに届くITサービスが実現できるのです。
@@ -305,8 +305,9 @@
     }
 
     .mv_textarea-recruit {
-        color: #dadada;
-        /* background-color: #000; */
+        /* color: #dadada; */
+        background-color: #000;
+       
     }
 
     @media screen and (max-width: 896px) {
@@ -601,7 +602,7 @@
         }
 
         .mv_textarea-recruit {
-            padding: 40px 0% 40px;
+            padding: 40px 10% 40px;
         }
     }
 
@@ -725,4 +726,10 @@
         font-family: "Noto Sans JP", sans-serif;
         color: #000;
     }
+    @media screen and (max-width: 425px) {
+        .mv_textarea-recruit .jptxt{
+            font-size: 12px;
+        }
+    }
+
 </style>

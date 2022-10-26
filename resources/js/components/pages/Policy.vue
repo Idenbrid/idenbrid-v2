@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="col-md-6 policy-img">
-          <img src="/assets/img/policy.svg" alt="">
+          <img src="/assets/img/policy.png" alt="">
         </div>
       </div>
     </section>
@@ -677,13 +677,14 @@
   /*end*/
   .policy-img {
     position: relative;
-    background-color: #FEF8ED;
+    /* background-color: #FEF8ED; */
     margin-top: 20px;
   }
 
   .policy-img img {
     width: 100%;
-    height: 500px;
+    height: 550px;
+    object-fit: cover;
   }
 
   .policy-slider {
@@ -1276,6 +1277,12 @@
     .mission-content {
       padding: 100px 0px 0px;
       margin-bottom: -1px;
+    }
+
+    .policy-img img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
   }
 </style>

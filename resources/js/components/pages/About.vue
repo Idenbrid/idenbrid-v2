@@ -3,7 +3,7 @@
         <Navbar />
         <main>
             <div class="hero_Heading">
-                <h2 class="hero">ABOUT / 会社情報</h2>
+                <h2 class="hero">ABOUT / 会社情報 helllo</h2>
                 <p class="about-subcontents__text">こちらはIDENBRID社の会社に関してをご覧頂けるページになります。</p>
             </div>
             <section class="mission mycontents-wide" id="mission">
