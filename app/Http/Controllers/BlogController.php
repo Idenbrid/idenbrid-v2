@@ -3,13 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\BlogLike;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
     public function index(){
-        $blogs=Blog::orderBy('created_at','desc')->get();
-        return response()->json(['blogs' => $blogs]);
+        $session_id = session()->get('session_id');
+        $blogs = Blog::orderBy('created_at','desc')->get();
+        foreach($blogs as $key => $blog){
+        $bl = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$blog->id])->first();
+                if($bl){
+                    $blog['is_liked']=1;
+                    $blog['count'] = BlogLike::where('blog_id', '=', $bl->blog_id)->count();
+                }
+                else{
+                    $blog['is_liked']=0;
+                }       
+        } 
+        return $blogs;
     }
 
     public function blogDetail($id){
@@ -46,4 +60,59 @@ class BlogController extends Controller
             'id' => $latest->id ,
         ]);
     }
+    public function likeBlog($id,Request $request)
+    {
+        $session_id = session()->get('session_id');
+        $bl = Blog::where('id','=',$id)->first();
+        if(empty($session_id)){
+            $session_id = Str::random(40);
+            session()->put('session_id', $session_id);
+        }
+        $previous_blog = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$id])->first();
+        if($previous_blog){
+            $previous_blog->delete();
+            return response()->json([
+                'success' => true,
+                'is_liked'=>false,
+            ]);
+             
+        }else{
+            $blogLike = new BlogLike();
+            $blogLike->user_id = $session_id;
+            $blogLike->blog_id = $id;
+            $blogLike->save();
+
+            return response()->json([
+                'success' => true,
+                'is_liked'=>true,
+            ]);
+        }
+
+        // $blog = Blog::find($id);
+        // $cart = session()->get('cart', []);
+        // if(isset($cart[$id])) {
+        //     $cart[$id]['count']++;
+        // } else {
+        //     $cart[$id] = [
+        //         "name" => $blog->title,
+        //         "count" => 1,
+        //     ];
+        // }       
+        // session()->put('cart', $cart);
+    }
+
+    // public function unlikeBlog($id)
+    // {
+    //     $blog = Blog::find($id);
+    //     $cart = session()->get('cart', []);
+
+    //     if(isset($cart[$id])) {
+    //         echo 'fhhfj';
+    //         return response()->json([
+    //             'success' => true,
+    //             'is_liked'=>false,
+    //             'cart' => 'already added'
+    //         ]);
+    //     }     
+    // }
 }
