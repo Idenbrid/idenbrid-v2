@@ -33,6 +33,7 @@ import Message from './components/pages/Message.vue'
 import Movies from './components/pages/Movies.vue'
 import Access from './components/pages/Access.vue'
 import Office from './components/pages/Office.vue'
+import GetStarted from './components/pages/GetStarted.vue'
 
 
 const routes = [
@@ -58,6 +59,10 @@ const routes = [
 {
     path: '/recruit/:string?/',
     component: Recruit
+},
+{
+    path: '/getstarted/',
+    component: GetStarted
 },
 {
     path: '/system-engineering-service/:string?/',

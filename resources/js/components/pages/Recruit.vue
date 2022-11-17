@@ -377,7 +377,7 @@
 
     .recruit--leadtxt {
         /* padding: 40px 10% 100px; */
-        padding: 17px 10% 62px;
+        padding: 130px 10% 170px;
         color: #dadada;
         position: relative;
         z-index: 1;

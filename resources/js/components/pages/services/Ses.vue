@@ -3,11 +3,11 @@
         <Navbar />
         <main>
             <div class="mv_textarea">
-        <h2>
-            <strong class="en entxt">System Engineering Service</strong>
-            <span class="jptxt">皆様へのご挨拶</span>
-        </h2>
-    </div>
+                <h2>
+                    <strong class="en entxt">System Engineering Service</strong>
+                    <span class="jptxt">皆様へのご挨拶</span>
+                </h2>
+            </div>
             <section class="system-sec mycontents-wide mt-5">
                 <h2 class="system-sec__tiile">サービスシステム開発</h2>
                 <p class="system-sec__text">
@@ -222,7 +222,7 @@
 
             </section>
 
-            <section class="menu">
+            <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
@@ -255,8 +255,15 @@
                         </router-link>
                     </li>
                 </ul>
-            </section>
-            <section class="contact mycontents-wide mt-5">
+            </section> -->
+            <div class="branding--contact">
+                <h3 class="fade_y on">
+                    IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>ご質問がありましたらお気軽にご相談ください。
+                </h3>
+                <div class="fade_y on"><a href="https://tomorrowgate.co.jp/contact/"
+                     class="contactbtn fade_y on">今すぐ相談してみる</a></div>
+            </div>
+            <!-- <section class="contact mycontents-wide mt-5">
                 <h3 class="content-title content-title_contact">お問い合わせ</h3>
                 <img class="contact__img" src="/public/assets/img/icons/Operator.png" alt="" width="80px">
                 <p class="content-text content-text_contact">お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。
@@ -286,24 +293,24 @@
                         <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
                     </a>
                 </div>
-                <!-- Modal -->
-                <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="/public/assets/img/line-code.jpg" width="100%" />
-                            </div>
+            
+            <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/public/assets/img/line-code.jpg" width="100%" />
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            </section> -->
         </main>
         <Footer />
     </div>

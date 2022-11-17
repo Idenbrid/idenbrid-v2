@@ -138,14 +138,14 @@
                     </li>
                 </ul>
             </section>
-            <section class="entry mycontents-wide">
+            <!-- <section class="entry mycontents-wide">
 
 
                 <router-link class="viewmore-btn viewmore-btn_center viewmore-btn__entry" to="/contact/">お問い合わせ<span
                         class="viewmore-btn__img"><img src="/public/assets/img/icons/btn-arrow.svg" alt=""
                             loading="lazy"><img src="/public/assets/img/icons/btn-arrow-white.svg" alt=""
                             loading="lazy"></span></router-link>
-            </section>
+            </section> -->
         </main>
 
         <Footer />

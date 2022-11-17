@@ -276,7 +276,7 @@
                     </div>
 
                 </div>
-                <div class="branding--flow">
+                <!-- <div class="branding--flow">
                     <div class="heading">
                         <span class="sub en fade_y on">FLOW</span>
                         <h3 class="fade_y on">進行の流れ</h3>
@@ -310,8 +310,8 @@
                         </div>
                     </div>
 
-                </div>
-                <div class="branding--voice highlight_blk">
+                </div> -->
+                <!-- <div class="branding--voice highlight_blk">
                     <div class="branding--voice--content">
                         <div class="heading">
                             <span class="sub en fade_y on">VOICE</span>
@@ -323,7 +323,7 @@
                             <div class="swiper-button-next slick-arrow"></div>
                             <div class="swiper voiceSlider">
 
-                                <!-- 株式会社リンクアンドモチベーション -->
+                             
                                 <div class="swiper-wrapper slide_area">
                                     <div class="swiper-slide slide_item">
                                         <div class="img_box fade_y_min on">
@@ -458,7 +458,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="branding--contact">
                     <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
