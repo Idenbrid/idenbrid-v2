@@ -45,7 +45,7 @@
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
                                          お名前<br></p>
-                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text"
+                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text" v-model="record.name"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
                              <label data-s-96950b18-e375-45a4-8c53-565ab7b63484="" class="sd">
@@ -53,7 +53,7 @@
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
                                          会社名<br></p>
-                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text"
+                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text" v-model="record.company_name"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
 
@@ -64,7 +64,7 @@
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
                                          Email<br></p>
-                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text"
+                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text" v-model="record.emails"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
 
@@ -165,6 +165,15 @@
      import Navbar from "../layout/Navbar.vue";
      import Footer from "../layout/Footer.vue";
      export default {
+        data() {
+            return {
+                record:{
+                    name: '',
+                    company_name: '',
+                    email: '',
+                }
+            }
+        },
          components: {
              Navbar,
              Footer,
