@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Models\RequestedDoc;
@@ -11,16 +12,22 @@ class MailController extends Controller
     public function sendMail(Request $request){
 
         $request->validate([
+            'inquiry_type' => 'required',
             'name' => 'required',
             'email' => 'required',
-            'inquiry' => 'required',
-            't_c' => 'accepted'
+            'phone_number' => 'required',
+            'summary' => 'required',
+            'source' => 'required',
         ]);
-        $admin='office@idenbrid.com';
-        Mail::send('email.contact-us', ['data' => $request->all()], function($message) use($admin){
-            $message->to($admin);
-            $message->subject('誰かが価格の見積もりを尋ねた');
-        });
+        Contact::create($request->all());
+        return response()->json([
+            'success' => true,
+        ]);
+        // $admin='office@idenbrid.com';
+        // Mail::send('email.contact-us', ['data' => $request->all()], function($message) use($admin){
+        //     $message->to($admin);
+        //     $message->subject('誰かが価格の見積もりを尋ねた');
+        // });
     }
     public function requestDoc(Request $request){
         $request->validate([

@@ -14,14 +14,14 @@ class BlogController extends Controller
         $session_id = session()->get('session_id');
         $blogs = Blog::orderBy('created_at','desc')->get();
         foreach($blogs as $key => $blog){
-        $bl = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$blog->id])->first();
-                if($bl){
-                    $blog['is_liked']=1;
-                    $blog['count'] = BlogLike::where('blog_id', '=', $bl->blog_id)->count();
-                }
-                else{
-                    $blog['is_liked']=0;
-                }       
+            $bl = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$blog->id])->first();
+            if($bl){
+                $blog['is_liked']=1;
+                $blog['count'] = BlogLike::where('blog_id', '=', $bl->blog_id)->count();
+            }
+            else{
+                $blog['is_liked']=0;
+            }       
         } 
         return $blogs;
     }
@@ -70,6 +70,9 @@ class BlogController extends Controller
         }
         $previous_blog = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$id])->first();
         if($previous_blog){
+            // $blog = Blog::find($id);
+            // $blog->like_count = $blog->like_count - 1;
+            // $blog->update();
             $previous_blog->delete();
             return response()->json([
                 'success' => true,
@@ -81,7 +84,9 @@ class BlogController extends Controller
             $blogLike->user_id = $session_id;
             $blogLike->blog_id = $id;
             $blogLike->save();
-
+            // $getBlog = Blog::find($id);
+            // $getBlog->like_count = $getBlog->like_count + 1;
+            // $getBlog->update();
             return response()->json([
                 'success' => true,
                 'is_liked'=>true,
@@ -115,4 +120,7 @@ class BlogController extends Controller
     //         ]);
     //     }     
     // }
+    public function searchBlog($keyword){
+        return Blog::Where('title', 'like', '%' . $keyword . '%')->get();
+    }
 }
