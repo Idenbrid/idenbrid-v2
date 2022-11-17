@@ -16,15 +16,18 @@ class MailController extends Controller
             'name' => 'required',
             'email' => 'required',
             'phone_number' => 'required',
-            'summary' => 'accepted',
-            'source' => 'accepted',
+            'summary' => 'required',
+            'source' => 'required',
         ]);
         Contact::create($request->all());
-        $admin='office@idenbrid.com';
-        Mail::send('email.contact-us', ['data' => $request->all()], function($message) use($admin){
-            $message->to($admin);
-            $message->subject('誰かが価格の見積もりを尋ねた');
-        });
+        return response()->json([
+            'success' => true,
+        ]);
+        // $admin='office@idenbrid.com';
+        // Mail::send('email.contact-us', ['data' => $request->all()], function($message) use($admin){
+        //     $message->to($admin);
+        //     $message->subject('誰かが価格の見積もりを尋ねた');
+        // });
     }
     public function requestDoc(Request $request){
         $request->validate([
