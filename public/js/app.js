@@ -5601,12 +5601,20 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     },
     handleSearch: function handleSearch() {
-      axios.get('/api/blog/search/' + this.search_word).then(function (res) {});
+      var _this3 = this;
+      if (this.search_word) {
+        axios.get('/api/blog-search/' + this.search_word).then(function (_ref3) {
+          var data = _ref3.data;
+          _this3.blogs = data;
+        });
+      } else {
+        this.getBlogs();
+      }
     },
     getBlogs: function getBlogs() {
-      var _this3 = this;
+      var _this4 = this;
       axios.get("/api/blogs").then(function (res) {
-        _this3.blogs = res.data;
+        _this4.blogs = res.data;
       })["catch"](function (err) {});
     }
   },
@@ -8331,7 +8339,7 @@ var render = function render() {
     staticClass: "blog--content--inner"
   }, [_c("div", {
     staticClass: "blog--content--mainarea"
-  }, [_c("div", {
+  }, [_vm.blogs.length > 0 ? _c("div", {
     staticClass: "blog--content--list"
   }, _vm._l(_vm.blogs, function (blog) {
     return _c("div", {
@@ -8387,7 +8395,7 @@ var render = function render() {
         }
       }
     }, [_vm._v("unlike")])])])], 1);
-  }), 0), _vm._v(" "), _vm._m(1)]), _vm._v(" "), _c("div", {
+  }), 0) : _c("h1", [_vm._v("No Data Found")])]), _vm._v(" "), _c("div", {
     staticClass: "blog--content--sidearea"
   }, [_c("div", {
     staticClass: "searcharea fade_y on"
@@ -8434,53 +8442,7 @@ var render = function render() {
     }
   })])]), _vm._v(" "), _c("h4", {
     staticClass: "sideheading fade_y pc on"
-  }, [_vm._v("カテゴリー")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("h4", {
-    staticClass: "sideheading fade_y pc on"
-  }, [_vm._v("おすすめの記事")]), _vm._v(" "), _c("div", {
-    staticClass: "recommend--list pc"
-  }, _vm._l(_vm.blogs, function (item, index) {
-    return _c("router-link", {
-      key: index,
-      attrs: {
-        to: "/blog/detail/" + item.id + "/"
-      }
-    }, [_c("div", {
-      staticClass: "thumb photo thumb-img"
-    }, [_c("div", {
-      staticClass: "hvrtxt en"
-    }, [_c("span", {
-      staticClass: "more_txt"
-    }, [_c("span", {
-      staticClass: "underline"
-    }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-      staticClass: "scaleImg scale-img"
-    }, [_c("img", {
-      staticClass: "attachment-full size-full wp-post-image",
-      attrs: {
-        width: "1200",
-        height: "630",
-        src: "https://admin-idenbrid.idenbrid.jp/public/storage/blog_images/" + item.image,
-        alt: "",
-        loading: "lazy",
-        sizes: "(max-width: 1200px) 100vw, 1200px"
-      }
-    })])]), _vm._v(" "), _c("div", {
-      staticClass: "bloginfo"
-    }, [_c("time", {
-      staticClass: "time en"
-    }, [_vm._v(_vm._s(item.date))]), _vm._v(" "), _c("div", {
-      staticClass: "good"
-    }, [_c("i", {
-      staticClass: "fa fa-heart mr-1",
-      attrs: {
-        "aria-hidden": "true"
-      }
-    }), _vm._v(" 61\n                ")])]), _vm._v(" "), _c("h3", {
-      staticClass: "hvrunder"
-    }, [_vm._v(_vm._s(item.title))])]);
-  }), 1), _vm._v(" "), _c("h4", {
-    staticClass: "sideheading pc"
-  }, [_vm._v("人気記事ランキング")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])])]), _vm._v(" "), _vm._m(5)]), _vm._v(" "), _c("Footer")], 1);
+  }, [_vm._v("カテゴリー")]), _vm._v(" "), _vm._m(1)])])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -8492,53 +8454,6 @@ var staticRenderFns = [function () {
   }, [_vm._v("BLOG / ブログ")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
   }, [_vm._v("このブログでは業務システム、ウェブやスマホアプリを開発する際に役立つ情報を発信しています。")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "wp-pagenavi",
-    attrs: {
-      role: "navigation"
-    }
-  }, [_c("span", {
-    staticClass: "current",
-    attrs: {
-      "aria-current": "page"
-    }
-  }, [_vm._v("1")]), _vm._v(" "), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 2",
-      href: "#"
-    }
-  }, [_vm._v("2")]), _vm._v(" "), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 3",
-      href: "#"
-    }
-  }, [_vm._v("3")]), _vm._v(" "), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 4",
-      href: "#"
-    }
-  }, [_vm._v("4")]), _vm._v(" "), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 5",
-      href: "#"
-    }
-  }, [_vm._v("5")]), _vm._v(" "), _c("a", {
-    staticClass: "nextpostslink",
-    attrs: {
-      rel: "next",
-      "aria-label": "Next Page",
-      href: "#"
-    }
-  }, [_c("i", {
-    staticClass: "fas fa-angle-right"
-  })])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -8555,119 +8470,6 @@ var staticRenderFns = [function () {
       href: "https://tomorrowgate.co.jp/blog_category/pickup/"
     }
   }, [_vm._v("おすすめ（3）")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "recommend--list popular pc"
-  }, [_c("a", {
-    staticClass: "hoverScale recommend--item popular",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/blog/1673/"
-    }
-  }, [_c("div", {
-    staticClass: "thumb photo thumb-img"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txt"
-  }, [_c("span", {
-    staticClass: "underline"
-  }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg scale-img"
-  }, [_c("img", {
-    staticClass: "attachment-full size-full wp-post-image",
-    attrs: {
-      width: "1200",
-      height: "630",
-      src: "https://tomorrowgate.co.jp/wp-content/uploads/2021/08/210826_REALBRANDING.jpg",
-      alt: "",
-      loading: "lazy",
-      srcset: "https://tomorrowgate.co.jp/wp-content/uploads/2021/08/210826_REALBRANDING.jpg" + " 1200w, " + "https://tomorrowgate.co.jp/wp-content/uploads/2021/08/210826_REALBRANDING-300x158.jpg" + " 300w, " + "https://tomorrowgate.co.jp/wp-content/uploads/2021/08/210826_REALBRANDING-1024x538.jpg" + " 1024w, " + "https://tomorrowgate.co.jp/wp-content/uploads/2021/08/210826_REALBRANDING-768x403.jpg" + " 768w",
-      sizes: "(max-width: 1200px) 100vw, 1200px"
-    }
-  })])]), _vm._v(" "), _c("div", {
-    staticClass: "bloginfo"
-  }, [_c("time", {
-    staticClass: "time en"
-  }, [_vm._v("2021.08.27")]), _vm._v(" "), _c("div", {
-    staticClass: "good"
-  }, [_c("i", {
-    staticClass: "fa fa-heart mr-1",
-    attrs: {
-      "aria-hidden": "true"
-    }
-  }), _vm._v("62\n                ")])]), _vm._v(" "), _c("h3", {
-    staticClass: "hvrunder"
-  }, [_vm._v("\n                ブランディングとは｜中小企業がすぐやるべきブランドづくりのやり方\n              ")])]), _vm._v(" "), _c("a", {
-    staticClass: "hoverScale recommend--item popular",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/blog/2954/"
-    }
-  }, [_c("div", {
-    staticClass: "thumb photo thumb-img"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txt"
-  }, [_c("span", {
-    staticClass: "underline"
-  }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg scale-img"
-  }, [_c("img", {
-    staticClass: "attachment-full size-full wp-post-image",
-    attrs: {
-      width: "1200",
-      height: "630",
-      src: "https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1.jpg",
-      alt: "",
-      loading: "lazy",
-      srcset: "https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1.jpg" + " 1200w, " + "https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-300x158.jpg" + " 300w, " + "https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-1024x538.jpg" + " 1024w, " + "https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-768x403.jpg" + " 768w",
-      sizes: "(max-width: 1200px) 100vw, 1200px"
-    }
-  })])]), _vm._v(" "), _c("div", {
-    staticClass: "bloginfo"
-  }, [_c("time", {
-    staticClass: "time en"
-  }, [_vm._v("2021.10.19")]), _vm._v(" "), _c("div", {
-    staticClass: "good"
-  }, [_c("i", {
-    staticClass: "fa fa-heart mr-1",
-    attrs: {
-      "aria-hidden": "true"
-    }
-  }), _vm._v("61\n                ")])]), _vm._v(" "), _c("h3", {
-    staticClass: "hvrunder"
-  }, [_vm._v("私、会社辞めます。")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "bnr_area"
-  }, [_c("div", {
-    staticClass: "wrap"
-  }, [_c("a", {
-    staticClass: "hoverScale",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/special/",
-      target: "_blank"
-    }
-  }, [_c("div", {
-    staticClass: "thumb thumb-img"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txt"
-  }, [_c("span", {
-    staticClass: "underline"
-  }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg scale-img"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/blog/bnr01.jpg",
-      alt: ""
-    }
-  })])])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;

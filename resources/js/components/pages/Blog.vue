@@ -24,7 +24,7 @@
                 </ul> -->
         <div class="blog--content--inner">
           <div class="blog--content--mainarea">
-            <div class="blog--content--list">
+            <div v-if="blogs.length>0" class="blog--content--list">
               <div v-for="blog in blogs" :key="blog.id" class="blog--content--item">
                 <router-link :to="'/blog/detail/' + blog.id + '/'" class="hoverScale fade_y on">
                   <div class="photo thumb">
@@ -53,14 +53,15 @@
                 </div>
               </div>
             </div>
-            <div role="navigation" class="wp-pagenavi">
+            <!-- <div v-if="blogs.length>0" role="navigation" class="wp-pagenavi">
               <span aria-current="page" class="current">1</span>
               <a title="ページ 2" href="#" class="page larger">2</a>
               <a title="ページ 3" href="#" class="page larger">3</a>
               <a title="ページ 4" href="#" class="page larger">4</a>
               <a title="ページ 5" href="#" class="page larger">5</a>
               <a rel="next" aria-label="Next Page" href="#" class="nextpostslink"><i class="fas fa-angle-right"></i></a>
-            </div>
+            </div> -->
+            <h1 v-else>No Data Found</h1>
           </div>
           <div class="blog--content--sidearea">
             <div class="searcharea fade_y on">
@@ -75,7 +76,7 @@
               <a href="https://tomorrowgate.co.jp/blog/" class="categoryitem current fade_y on">全てのカテゴリー</a>
               <a href="https://tomorrowgate.co.jp/blog_category/pickup/" class="categoryitem fade_y pickup on">おすすめ（3）</a>
             </div>
-            <h4 class="sideheading fade_y pc on">おすすめの記事</h4>
+            <!-- <h4 class="sideheading fade_y pc on">おすすめの記事</h4>
             <div class="recommend--list pc">
               <router-link :to="'/blog/detail/' + item.id + '/'" v-for="(item, index) in blogs" :key="index">
                 <div class="thumb photo thumb-img">
@@ -160,7 +161,7 @@
                   </div>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -197,7 +198,7 @@
     data() {
       return {
         blogs: [],
-        search_word:''
+        search_word: ''
         // is_liked:0
       };
     },
@@ -255,13 +256,17 @@
           console.error(response.data.message);
         }
       },
-      handleSearch(){
-        axios.get('/api/blog/search/'+this.search_word).then((res)=>{
-          
-        })
+      handleSearch() {
+        if (this.search_word) {
+          axios.get('/api/blog-search/' + this.search_word).then(({
+            data
+          }) => {
+            this.blogs = data
+          })
+        } else {
+          this.getBlogs()
+        }
       },
-
-
       getBlogs() {
         axios
           .get("/api/blogs")
