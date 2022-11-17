@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Models\RequestedDoc;
@@ -11,11 +12,14 @@ class MailController extends Controller
     public function sendMail(Request $request){
 
         $request->validate([
+            'inquiry_type' => 'required',
             'name' => 'required',
             'email' => 'required',
-            'inquiry' => 'required',
-            't_c' => 'accepted'
+            'phone_number' => 'required',
+            'summary' => 'accepted',
+            'source' => 'accepted',
         ]);
+        Contact::create($request->all());
         $admin='office@idenbrid.com';
         Mail::send('email.contact-us', ['data' => $request->all()], function($message) use($admin){
             $message->to($admin);
