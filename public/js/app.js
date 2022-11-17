@@ -5734,6 +5734,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/Navbar.vue */ "./resources/js/components/layout/Navbar.vue");
 /* harmony import */ var _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/Footer.vue */ "./resources/js/components/layout/Footer.vue");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -5754,12 +5757,23 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       form: {
+        //   company_name: '',
+        //   name: '',
+        //   email: '',
+        //   inquiry: '',
+        //   t_c: '',
+        inquiry_type: '',
         company_name: '',
+        url: '',
         name: '',
         email: '',
-        inquiry: '',
-        t_c: ''
+        phone_number: '',
+        summary: '',
+        source: ''
       },
+      first_name: '',
+      last_name: '',
+      agree: '',
       errors: [],
       status: false,
       error: {
@@ -5773,19 +5787,21 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     sendMail: function sendMail() {
       var _this = this;
-      axios.post('/api/contact-us', this.form).then(function (res) {
-        _this.form.company_name = "";
-        _this.form.name = "";
-        _this.form.email = "";
-        _this.form.inquiry = "";
-        _this.form.t_c = "";
-        _this.errors = [];
-        _this.successMessage();
-        jQuery('#confirmationmodel').modal('hide');
-      })["catch"](function (err) {
-        _this.errors = err.response.data.errors;
-        jQuery('#confirmationmodel').modal('hide');
-      });
+      if (this.agree) {
+        this.form = _objectSpread(_objectSpread({}, this.form), {}, {
+          name: "".concat(this.first_name, " ").concat(this.last_name)
+        });
+        axios.post('/api/contact-us', this.form).then(function (res) {
+          _this.inquiry_type = '', _this.company_name = '', _this.url = '', _this.name = '', _this.email = '', _this.phone_number = '', _this.summary = '', _this.source = '', _this.errors = [];
+          _this.successMessage();
+          jQuery('#confirmationmodel').modal('hide');
+        })["catch"](function (err) {
+          _this.errors = err.response.data.errors;
+          jQuery('#confirmationmodel').modal('hide');
+        });
+      } else {
+        alert("Please Check Agree");
+      }
     },
     successMessage: function successMessage() {
       this.status = true;
@@ -9450,98 +9466,45 @@ var render = function render() {
   }, [_c("form", {
     staticClass: "form",
     attrs: {
-      "accept-charset": "UTF-8",
-      method: "post",
-      action: "https://marketing.readycrew.jp/l/880722/2020-08-05/9sc",
       id: "pardot-form"
-    }
-  }, [_vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7), _vm._v(" "), _vm._m(8), _vm._v(" "), _vm._m(9), _vm._v(" "), _c("div", {
-    staticClass: "form-group row form-field privacy_policy pd-checkbox required"
-  }, [_vm._m(10), _vm._v(" "), _c("div", {
-    staticClass: "col-md-8"
-  }, [_c("div", {
-    staticClass: "formInputOuter privacy_policy"
-  }, [_c("div", {
-    staticClass: "formInputInner privacy_policy"
-  }, [_vm._m(11), _vm._v(" "), _c("p", {
-    staticClass: "description"
-  }, [_c("label", {
-    attrs: {
-      "for": "agreecheck"
-    }
-  }, [_c("router-link", {
-    attrs: {
-      to: "/privacypolicy",
-      target: "_top"
-    }
-  }, [_vm._v("\n                                                                        プライバシーポリシー")]), _vm._v("\n                                                                    をよくお読みの上、問題なければチェックしてください\n                                                                ")], 1)]), _vm._v(" "), _c("div", {
-    staticStyle: {
-      display: "none"
     },
-    attrs: {
-      id: "error_for_880722_2642pi_880722_2642"
+    on: {
+      submit: function submit($event) {
+        $event.preventDefault();
+        return _vm.sendMail.apply(null, arguments);
+      }
     }
-  })])])])]), _vm._v(" "), _c("input", {
-    attrs: {
-      name: "_utf8",
-      type: "hidden",
-      value: "☃"
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "contentFormAfter"
-  }), _vm._v(" "), _vm._m(12), _vm._v(" "), _c("input", {
-    attrs: {
-      type: "hidden",
-      name: "hiddenDependentFields",
-      id: "hiddenDependentFields",
-      value: ""
-    }
-  })])])])]), _vm._v(" "), _vm._m(13)])])])])]), _vm._v(" "), _c("Footer")], 1);
-};
-var staticRenderFns = [function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "mv_textarea"
-  }, [_c("h2", [_c("strong", {
-    staticClass: "en entxt"
-  }, [_vm._v("CONTACT US / お問い合わせ")]), _vm._v(" "), _c("span", {
-    staticClass: "jptxt"
-  }, [_vm._v("IDENBRIDに対してのお仕事・お見積りに関して問い合わせができます。")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "readCopyWrap"
   }, [_c("div", {
-    staticClass: "readCopy"
-  }, [_vm._v("\n                                お問い合わせ"), _c("br"), _vm._v("以下のフォームにご入力の上、送信をお願いします。"), _c("small", [_vm._v("（"), _c("strong", {
-    staticClass: "f_def"
-  }, [_vm._v("※")]), _vm._v("は必須項目です）")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
     staticClass: "form-group row form-field Inquiry_type pd-select required"
-  }, [_c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_2634pi_880722_2634"
-    }
-  }, [_vm._v("お問い合わせ種類")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
     staticClass: "col-md-8"
   }, [_c("div", {
     staticClass: "formInputOuter Inquiry_type"
   }, [_c("div", {
     staticClass: "formInputInner Inquiry_type"
   }, [_c("select", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.form.inquiry_type,
+      expression: "form.inquiry_type"
+    }],
     staticClass: "select form-control",
     attrs: {
       name: "880722_2634pi_880722_2634",
       id: "880722_2634pi_880722_2634",
       onchange: ""
+    },
+    on: {
+      change: function change($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.$set(_vm.form, "inquiry_type", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+      }
     }
   }, [_c("option", {
     attrs: {
@@ -9575,26 +9538,21 @@ var staticRenderFns = [function () {
     attrs: {
       id: "error_for_880722_2634pi_880722_2634"
     }
-  })])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
+  })])])])]), _vm._v(" "), _c("div", {
     staticClass: "form-group row form-field company-main pd-text"
-  }, [_c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_2254pi_880722_2254"
-    }
-  }, [_vm._v("御社名")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(3), _vm._v(" "), _c("div", {
     staticClass: "col-md-8"
   }, [_c("div", {
     staticClass: "formInputOuter company-main"
   }, [_c("div", {
     staticClass: "formInputInner company-main"
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.form.company_name,
+      expression: "form.company_name"
+    }],
     staticClass: "text text form-control",
     attrs: {
       type: "text",
@@ -9605,6 +9563,15 @@ var staticRenderFns = [function () {
       maxlength: "255",
       onchange: "",
       onfocus: ""
+    },
+    domProps: {
+      value: _vm.form.company_name
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.form, "company_name", $event.target.value);
+      }
     }
   }), _vm._v(" "), _c("div", {
     staticStyle: {
@@ -9613,26 +9580,21 @@ var staticRenderFns = [function () {
     attrs: {
       id: "error_for_880722_2254pi_880722_2254"
     }
-  })])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
+  })])])])]), _vm._v(" "), _c("div", {
     staticClass: "form-group row form-field website pd-text"
-  }, [_c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_2636pi_880722_2636"
-    }
-  }, [_vm._v("URL")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(4), _vm._v(" "), _c("div", {
     staticClass: "col-md-8"
   }, [_c("div", {
     staticClass: "formInputOuter website"
   }, [_c("div", {
     staticClass: "formInputInner website"
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.form.url,
+      expression: "form.url"
+    }],
     staticClass: "text text form-control",
     attrs: {
       type: "text",
@@ -9643,6 +9605,15 @@ var staticRenderFns = [function () {
       maxlength: "255",
       onchange: "",
       onfocus: ""
+    },
+    domProps: {
+      value: _vm.form.url
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.form, "url", $event.target.value);
+      }
     }
   }), _vm._v(" "), _c("div", {
     staticStyle: {
@@ -9651,26 +9622,21 @@ var staticRenderFns = [function () {
     attrs: {
       id: "error_for_880722_2636pi_880722_2636"
     }
-  })])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
+  })])])])]), _vm._v(" "), _c("div", {
     staticClass: "form-group row form-field last_name pd-text required"
-  }, [_c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_2258pi_880722_2258"
-    }
-  }, [_vm._v("お名前")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(5), _vm._v(" "), _c("div", {
     staticClass: "col-md-8"
   }, [_c("div", {
     staticClass: "formInputOuter last_name"
   }, [_c("div", {
     staticClass: "formInputInner last_name"
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.first_name,
+      expression: "first_name"
+    }],
     staticClass: "text text form-control",
     attrs: {
       type: "text",
@@ -9682,6 +9648,15 @@ var staticRenderFns = [function () {
       onchange: "",
       onfocus: "",
       placeholder: "鈴木"
+    },
+    domProps: {
+      value: _vm.first_name
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.first_name = $event.target.value;
+      }
     }
   }), _vm._v(" "), _c("div", {
     staticStyle: {
@@ -9693,6 +9668,12 @@ var staticRenderFns = [function () {
   })]), _vm._v(" "), _c("div", {
     staticClass: "formInputInner first_name"
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.last_name,
+      expression: "last_name"
+    }],
     staticClass: "text text form-control",
     attrs: {
       type: "text",
@@ -9704,6 +9685,15 @@ var staticRenderFns = [function () {
       onchange: "",
       onfocus: "",
       placeholder: "一郎"
+    },
+    domProps: {
+      value: _vm.last_name
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.last_name = $event.target.value;
+      }
     }
   }), _vm._v(" "), _c("div", {
     staticStyle: {
@@ -9712,26 +9702,21 @@ var staticRenderFns = [function () {
     attrs: {
       id: "error_for_880722_2256pi_880722_2256"
     }
-  })])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
+  })])])])]), _vm._v(" "), _c("div", {
     staticClass: "form-group row form-field email pd-text required"
-  }, [_c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_2260pi_880722_2260"
-    }
-  }, [_vm._v("メール")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(6), _vm._v(" "), _c("div", {
     staticClass: "col-md-8"
   }, [_c("div", {
     staticClass: "formInputOuter email"
   }, [_c("div", {
     staticClass: "formInputInner email"
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.form.email,
+      expression: "form.email"
+    }],
     staticClass: "text text form-control",
     attrs: {
       type: "text",
@@ -9743,6 +9728,15 @@ var staticRenderFns = [function () {
       onchange: "",
       onfocus: "",
       placeholder: "sample@xxx.co.jp"
+    },
+    domProps: {
+      value: _vm.form.email
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.form, "email", $event.target.value);
+      }
     }
   }), _vm._v(" "), _c("div", {
     staticStyle: {
@@ -9751,26 +9745,21 @@ var staticRenderFns = [function () {
     attrs: {
       id: "error_for_880722_2260pi_880722_2260"
     }
-  })])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
+  })])])])]), _vm._v(" "), _c("div", {
     staticClass: "form-group row form-field phone pd-text required"
-  }, [_c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_2638pi_880722_2638"
-    }
-  }, [_vm._v("電話番号")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(7), _vm._v(" "), _c("div", {
     staticClass: "col-md-8"
   }, [_c("div", {
     staticClass: "formInputOuter phone"
   }, [_c("div", {
     staticClass: "formInputInner phone"
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.form.phone_number,
+      expression: "form.phone_number"
+    }],
     staticClass: "text text form-control",
     attrs: {
       type: "text",
@@ -9782,6 +9771,15 @@ var staticRenderFns = [function () {
       onchange: "",
       onfocus: "",
       placeholder: "0000000000"
+    },
+    domProps: {
+      value: _vm.form.phone_number
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.form, "phone_number", $event.target.value);
+      }
     }
   }), _vm._v(" "), _c("div", {
     staticStyle: {
@@ -9790,26 +9788,21 @@ var staticRenderFns = [function () {
     attrs: {
       id: "error_for_880722_2638pi_880722_2638"
     }
-  })])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
+  })])])])]), _vm._v(" "), _c("div", {
     staticClass: "form-group row form-field Contact_Us pd-textarea required"
-  }, [_c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_2640pi_880722_2640"
-    }
-  }, [_vm._v("お問い合わせ内容")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(8), _vm._v(" "), _c("div", {
     staticClass: "col-md-8"
   }, [_c("div", {
     staticClass: "formInputOuter Contact_Us"
   }, [_c("div", {
     staticClass: "formInputInner Contact_Us"
   }, [_c("textarea", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.form.summary,
+      expression: "form.summary"
+    }],
     staticClass: "form-control",
     attrs: {
       name: "880722_2640pi_880722_2640",
@@ -9818,6 +9811,15 @@ var staticRenderFns = [function () {
       cols: "40",
       rows: "10",
       placeholder: "ご記入ください"
+    },
+    domProps: {
+      value: _vm.form.summary
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.form, "summary", $event.target.value);
+      }
     }
   }), _vm._v(" "), _c("div", {
     staticStyle: {
@@ -9826,31 +9828,37 @@ var staticRenderFns = [function () {
     attrs: {
       id: "error_for_880722_2640pi_880722_2640"
     }
-  })])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
+  })])])])]), _vm._v(" "), _c("div", {
     staticClass: "form-group row form-field CustomObject1607489477990 pd-select required"
-  }, [_c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_23336pi_880722_23336"
-    }
-  }, [_vm._v("当社を知ったきっかけ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(9), _vm._v(" "), _c("div", {
     staticClass: "col-md-8"
   }, [_c("div", {
     staticClass: "formInputOuter CustomObject1607489477990"
   }, [_c("div", {
     staticClass: "formInputInner CustomObject1607489477990"
   }, [_c("select", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.form.source,
+      expression: "form.source"
+    }],
     staticClass: "select form-control",
     attrs: {
       name: "880722_23336pi_880722_23336",
       id: "880722_23336pi_880722_23336",
       onchange: ""
+    },
+    on: {
+      change: function change($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.$set(_vm.form, "source", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+      }
     }
   }, [_c("option", {
     attrs: {
@@ -9892,7 +9900,199 @@ var staticRenderFns = [function () {
     attrs: {
       id: "error_for_880722_23336pi_880722_23336"
     }
-  })])])])]);
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "form-group row form-field privacy_policy pd-checkbox required"
+  }, [_vm._m(10), _vm._v(" "), _c("div", {
+    staticClass: "col-md-8"
+  }, [_c("div", {
+    staticClass: "formInputOuter privacy_policy"
+  }, [_c("div", {
+    staticClass: "formInputInner privacy_policy"
+  }, [_c("span", {
+    staticClass: "value"
+  }, [_c("span", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.agree,
+      expression: "agree"
+    }],
+    attrs: {
+      type: "checkbox",
+      name: "880722_2642pi_880722_2642_13998",
+      id: "880722_2642pi_880722_2642_13998",
+      value: "13998",
+      onchange: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.agree) ? _vm._i(_vm.agree, "13998") > -1 : _vm.agree
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.agree,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "13998",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && (_vm.agree = $$a.concat([$$v]));
+          } else {
+            $$i > -1 && (_vm.agree = $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.agree = $$c;
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    staticClass: "inline",
+    attrs: {
+      "for": "880722_2642pi_880722_2642_13998"
+    }
+  }, [_vm._v("同意する")])])]), _vm._v(" "), _c("p", {
+    staticClass: "description"
+  }, [_c("label", {
+    attrs: {
+      "for": "agreecheck"
+    }
+  }, [_c("router-link", {
+    attrs: {
+      to: "/privacypolicy",
+      target: "_top"
+    }
+  }, [_vm._v("\n                                    プライバシーポリシー")]), _vm._v("\n                                  をよくお読みの上、問題なければチェックしてください\n                                ")], 1)]), _vm._v(" "), _c("div", {
+    staticStyle: {
+      display: "none"
+    },
+    attrs: {
+      id: "error_for_880722_2642pi_880722_2642"
+    }
+  })])])])]), _vm._v(" "), _c("input", {
+    attrs: {
+      name: "_utf8",
+      type: "hidden",
+      value: "☃"
+    }
+  }), _vm._v(" "), _c("div", {
+    staticClass: "contentFormAfter"
+  }), _vm._v(" "), _vm._m(11), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "hidden",
+      name: "hiddenDependentFields",
+      id: "hiddenDependentFields",
+      value: ""
+    }
+  })])])])]), _vm._v(" "), _vm._m(12)])])])])]), _vm._v(" "), _c("Footer")], 1);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "mv_textarea"
+  }, [_c("h2", [_c("strong", {
+    staticClass: "en entxt"
+  }, [_vm._v("CONTACT US / お問い合わせ")]), _vm._v(" "), _c("span", {
+    staticClass: "jptxt"
+  }, [_vm._v("IDENBRIDに対してのお仕事・お見積りに関して問い合わせができます。")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "readCopyWrap"
+  }, [_c("div", {
+    staticClass: "readCopy"
+  }, [_vm._v("\n                お問い合わせ"), _c("br"), _vm._v("以下のフォームにご入力の上、送信をお願いします。"), _c("small", [_vm._v("（"), _c("strong", {
+    staticClass: "f_def"
+  }, [_vm._v("※")]), _vm._v("は必須項目です）")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "formHeading col-md-3"
+  }, [_c("label", {
+    staticClass: "field-label col-form-label",
+    attrs: {
+      "for": "880722_2634pi_880722_2634"
+    }
+  }, [_vm._v("お問い合わせ種類")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "formHeading col-md-3"
+  }, [_c("label", {
+    staticClass: "field-label col-form-label",
+    attrs: {
+      "for": "880722_2254pi_880722_2254"
+    }
+  }, [_vm._v("御社名")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "formHeading col-md-3"
+  }, [_c("label", {
+    staticClass: "field-label col-form-label",
+    attrs: {
+      "for": "880722_2636pi_880722_2636"
+    }
+  }, [_vm._v("URL")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "formHeading col-md-3"
+  }, [_c("label", {
+    staticClass: "field-label col-form-label",
+    attrs: {
+      "for": "880722_2258pi_880722_2258"
+    }
+  }, [_vm._v("お名前")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "formHeading col-md-3"
+  }, [_c("label", {
+    staticClass: "field-label col-form-label",
+    attrs: {
+      "for": "880722_2260pi_880722_2260"
+    }
+  }, [_vm._v("メール")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "formHeading col-md-3"
+  }, [_c("label", {
+    staticClass: "field-label col-form-label",
+    attrs: {
+      "for": "880722_2638pi_880722_2638"
+    }
+  }, [_vm._v("電話番号")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "formHeading col-md-3"
+  }, [_c("label", {
+    staticClass: "field-label col-form-label",
+    attrs: {
+      "for": "880722_2640pi_880722_2640"
+    }
+  }, [_vm._v("お問い合わせ内容")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "formHeading col-md-3"
+  }, [_c("label", {
+    staticClass: "field-label col-form-label",
+    attrs: {
+      "for": "880722_23336pi_880722_23336"
+    }
+  }, [_vm._v("当社を知ったきっかけ")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -9904,25 +10104,6 @@ var staticRenderFns = [function () {
       "for": "880722_2642pi_880722_2642"
     }
   }, [_vm._v("プライバシーポリシー")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("span", {
-    staticClass: "value"
-  }, [_c("span", [_c("input", {
-    attrs: {
-      type: "checkbox",
-      name: "880722_2642pi_880722_2642_13998",
-      id: "880722_2642pi_880722_2642_13998",
-      value: "13998",
-      onchange: ""
-    }
-  }), _c("label", {
-    staticClass: "inline",
-    attrs: {
-      "for": "880722_2642pi_880722_2642_13998"
-    }
-  }, [_vm._v("同意する")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -23664,7 +23845,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\r\n    width: 100%;\r\n    overflow: hidden;\r\n    box-sizing: content-box;\n}\n.bg-color{\r\n    background-color: #1a202c;\r\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\r\n    animation-name: fadeIn;\n}\n.loopCopy .area {\r\n    white-space: nowrap;\r\n    width: 100%;\r\n    padding-right: 100%;\r\n    box-sizing: content-box;\r\n    animation-iteration-count: infinite;\r\n    animation-timing-function: linear;\r\n    animation-name: ticker;\r\n    animation-duration: 10s;\r\n    height: 60px;\r\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\r\n    opacity: 1;\r\n    animation-duration: 0.5s;\r\n    animation-iteration-count: 1;\r\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\r\n    animation-fill-mode: both;\n}\nfooter {\r\n  background: #1a202c;\n}\n.container-request {\r\n  padding: 0px 74px !important;\n}\n.fonter-text{\r\n  color: #DADADA;\n}\n.footer-logo {\r\n  width: 20%;\r\n  margin: auto;\r\n  display: flex;\n}\n.col-content {\r\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\r\n  width: 100%;\r\n  height: auto;\n}\n.section-request {\r\n  padding: 80px 0px 60px;\n}\n.contact-main{\r\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\r\n  color: #fff;\r\n  font-size: 40px;\n}\n.contact-request-col {\r\n  padding: 50px 0px;\n}\n.request-contact-heading {\r\n  font-size: 20px;\r\n  letter-spacing: 0.1em;\r\n  color: #DADADA;\r\n  text-align: center;\r\n  font-weight: 700;\r\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\r\n  content: \"\";\r\n  background-color: #000;\r\n  height: 1px;\r\n  width: 40px;\r\n  position: absolute;\r\n  right: 6.5%;\r\n  top: 50%;\r\n  opacity: 0;\r\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\r\n    opacity: 1;\r\n    right: 5%;\r\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\r\n  transform: rotate(45deg);\r\n  width: 10px;\r\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\r\n  font-size: 12px;\r\n  letter-spacing: 0.06em;\r\n  color: #DADADA;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\r\n   font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\r\n  border: 1px solid #ffffff;\r\n  background: none !important;\r\n  transition: 0.6s ease;\r\n  cursor: pointer;\r\n  height: 149.25px;\r\n  border-radius: 0px;\n}\n.card:hover {\r\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\r\n.card:hover .request-contact-heading {\r\n  color: #000000;\n}\n.footer-menu-heading h2 {\r\n  text-align: center;\r\n  color: #ffff;\n}\n.foot-menu-group {\r\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\r\n  color: #DADADA;\r\n  font-size: 14px;\r\n  letter-spacing: 0.1em;\r\n  font-weight: bold;\r\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 30px;\r\n  margin: 25px 0px 0px;\n}\n.twitter {\r\n  color: #fff;\r\n  font-size: 27px;\n}\n.copyright {\r\n  margin-top: 40px;\r\n  font-size: 14px;\r\n  color: #777;\r\n  letter-spacing: 0.18em;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \r\n   width: 100%; \r\n   height: 85px;\r\n   padding-top: 20px;\r\n   margin: 0px 40px;\n}\n.contact__btns{\r\n    padding: 0px 150px;\n}\n.content-text_contact{\r\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\r\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 85%;\r\n    -moz-column-gap: 100px;\r\n         column-gap: 100px;\r\n    margin: 2px auto;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\r\n    font-size: 1.7rem;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.contact__btns {\r\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 90%;\r\n    -moz-column-gap: 180px;\r\n         column-gap: 180px;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\nh2 {\r\n    font-size: 1.5rem;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 80%;\r\n    -moz-column-gap: 230px;\r\n         column-gap: 230px;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.btn-wide {\r\n    margin: 0px 18px 30px;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\r\n    display: none;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.content-text_contact{\r\n    padding: 40px 30px;\r\n    margin: 0;\r\n    font-size: 14px;\n}\n.btn-wide{\r\n   margin: 0px 0px 30px;\n}\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\n    width: 100%;\n    overflow: hidden;\n    box-sizing: content-box;\n}\n.bg-color{\n    background-color: #1a202c;\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\n    animation-name: fadeIn;\n}\n.loopCopy .area {\n    white-space: nowrap;\n    width: 100%;\n    padding-right: 100%;\n    box-sizing: content-box;\n    animation-iteration-count: infinite;\n    animation-timing-function: linear;\n    animation-name: ticker;\n    animation-duration: 10s;\n    height: 60px;\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\n    opacity: 1;\n    animation-duration: 0.5s;\n    animation-iteration-count: 1;\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\n    animation-fill-mode: both;\n}\nfooter {\n  background: #1a202c;\n}\n.container-request {\n  padding: 0px 74px !important;\n}\n.fonter-text{\n  color: #DADADA;\n}\n.footer-logo {\n  width: 20%;\n  margin: auto;\n  display: flex;\n}\n.col-content {\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\n  width: 100%;\n  height: auto;\n}\n.section-request {\n  padding: 80px 0px 60px;\n}\n.contact-main{\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\n  color: #fff;\n  font-size: 40px;\n}\n.contact-request-col {\n  padding: 50px 0px;\n}\n.request-contact-heading {\n  font-size: 20px;\n  letter-spacing: 0.1em;\n  color: #DADADA;\n  text-align: center;\n  font-weight: 700;\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\n  content: \"\";\n  background-color: #000;\n  height: 1px;\n  width: 40px;\n  position: absolute;\n  right: 6.5%;\n  top: 50%;\n  opacity: 0;\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\n    opacity: 1;\n    right: 5%;\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\n  transform: rotate(45deg);\n  width: 10px;\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\n  font-size: 12px;\n  letter-spacing: 0.06em;\n  color: #DADADA;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\n   font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\n  border: 1px solid #ffffff;\n  background: none !important;\n  transition: 0.6s ease;\n  cursor: pointer;\n  height: 149.25px;\n  border-radius: 0px;\n}\n.card:hover {\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\n.card:hover .request-contact-heading {\n  color: #000000;\n}\n.footer-menu-heading h2 {\n  text-align: center;\n  color: #ffff;\n}\n.foot-menu-group {\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\n  color: #DADADA;\n  font-size: 14px;\n  letter-spacing: 0.1em;\n  font-weight: bold;\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 30px;\n  margin: 25px 0px 0px;\n}\n.twitter {\n  color: #fff;\n  font-size: 27px;\n}\n.copyright {\n  margin-top: 40px;\n  font-size: 14px;\n  color: #777;\n  letter-spacing: 0.18em;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \n   width: 100%; \n   height: 85px;\n   padding-top: 20px;\n   margin: 0px 40px;\n}\n.contact__btns{\n    padding: 0px 150px;\n}\n.content-text_contact{\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 85%;\n    -moz-column-gap: 100px;\n         column-gap: 100px;\n    margin: 2px auto;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\n    font-size: 1.7rem;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.contact__btns {\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 90%;\n    -moz-column-gap: 180px;\n         column-gap: 180px;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\nh2 {\n    font-size: 1.5rem;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 80%;\n    -moz-column-gap: 230px;\n         column-gap: 230px;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.btn-wide {\n    margin: 0px 18px 30px;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\n    display: none;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.content-text_contact{\n    padding: 40px 30px;\n    margin: 0;\n    font-size: 14px;\n}\n.btn-wide{\n   margin: 0px 0px 30px;\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23688,7 +23869,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    /* background: #000; */\r\n    padding: 15px 0;\r\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.side_fix[data-v-2c4263fa] {\n    position: fixed;\n    right: 0;\n    top: 50%;\n    transform: translate(100%, -50%);\n    z-index: 100001;\n    transition: 0.4s;\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    background-color: rgb(57, 108, 162);\n    display: flex;\n    border: solid 1px rgb(57, 108, 162);\n    cursor: pointer;\n    justify-content: center;\n    align-items: center;\n    padding: 25px 0;\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    display: block;\n    -o-writing-mode: vertical-rl;\n    writing-mode: vertical-rl;\n    font-size: 14px;\n    color: #dadada;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.18px;\n    transition: 0.4s;\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    /* background: #000; */\n    padding: 15px 0;\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    color: #dadada;\n    font-size: 12px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23784,7 +23965,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n/*blog-brns*/\n.blog-subcontents__text {\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  line-height: 24px;\r\n  padding: 0px 10px;\r\n  text-align: center;\r\n  margin: auto;\n}\n.blog__btns {\r\n  margin-bottom: 60px;\r\n  position: relative;\r\n  display: flex;\n}\n.blog__btns__list {\r\n  display: inline-block;\r\n  margin-right: 60px;\n}\n.blog__btns__list_hr {\r\n  position: absolute;\r\n  width: 0.7px;\r\n  height: 50px;\r\n  background-color: var(--textcolor);\r\n  left: 156px;\r\n  bottom: 0;\n}\n.blog__btns__list__label {\r\n  margin-bottom: 3px;\r\n  font-weight: bold;\r\n  font-size: 24px;\r\n  line-height: 36px;\r\n  letter-spacing: 0.05em;\r\n  color: var(--textcolor);\n}\n.blog__btns__list_select {\r\n  display: inline-block;\r\n  width: 124px;\r\n  height: 24px;\r\n  background: #ffffff;\r\n  border: 0.5px solid #727171;\r\n  box-sizing: border-box;\r\n  border-radius: 2px;\r\n  font-weight: 500;\r\n  font-size: 13px;\r\n  line-height: 20px;\n}\n.select-container {\r\n  overflow: hidden;\r\n  position: relative;\n}\n.select-container::before {\r\n  position: absolute;\r\n  top: 50%;\r\n  right: 8px;\r\n  transform: translateY(-50%);\r\n  content: \"▼\";\r\n  font-size: 6px;\r\n  color: var(--textcolor);\n}\r\n\r\n/*blog-contents*/\n.blog {\r\n  padding: 60px 10% 120px;\n}\n.blog-contents {\r\n  display: flex;\r\n  margin-bottom: 40px;\r\n  flex-wrap: wrap;\n}\n.blog-contents__list {\r\n  width: calc((100% - 65px * 2) / 3);\r\n  margin-right: 65px;\r\n  margin-bottom: 60px;\n}\n.blog-contents .blog-contents__list:nth-child(3n) {\r\n  margin-right: 0;\n}\n.blog--content--sidearea .searcharea .submit {\r\n  cursor: pointer;\r\n  background: url(\"/assets/img/icons/search-img.png\") center no-repeat;\r\n  background-size: 100%;\r\n  width: 15px;\r\n  height: 15px;\n}\n@media screen and (max-width: 900px) and (min-width: 500px) {\n.blog-contents__list__thumbnail {\r\n    height: 240px;\n}\n}\n@media screen and (max-width: 500px) and (min-width: 320px) {\n.blog-contents__list__thumbnail {\r\n    height: 180px;\n}\n}\n@media (max-width: 767px) {\n.blog-subcontents__text {\r\n    width: 100%;\n}\n.blog {\r\n    margin-bottom: 60px;\n}\n.blog-contents {\r\n    margin-bottom: 20px;\r\n    justify-content: space-between;\n}\n.blog-contents__list {\r\n    width: calc((100% - 35px) / 2);\r\n    margin-right: 0;\r\n    margin-bottom: 30px;\n}\n.blog-contents__list__tags {\r\n    width: 180px;\r\n    top: 71px;\r\n    left: -70px;\n}\n}\n@media (max-width: 500px) {\n.blog-contents {\r\n    display: block;\r\n    margin-bottom: 50px;\n}\n.blog-contents__list {\r\n    width: 100%;\r\n    margin-bottom: 30px;\n}\n}\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(1)\r\n  .hoverScale,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(2)\r\n  .hoverScale,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(3)\r\n  .hoverScale,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(4)\r\n  .hoverScale {\r\n  opacity: 1;\r\n  transform: translateY(0%);\r\n  transition: 0.8s;\n}\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(1)\r\n  .hoverScale\r\n  h3,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(2)\r\n  .hoverScale\r\n  h3,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(3)\r\n  .hoverScale\r\n  h3,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(4)\r\n  .hoverScale\r\n  h3 {\r\n  opacity: 1;\r\n  transform: translateY(0%);\r\n  transition: 1s;\n}\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(1)\r\n  .writing,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(2)\r\n  .writing,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(3)\r\n  .writing,\r\n.blog.loaded\r\n  .blog--content--mainarea\r\n  .blog--content--item:nth-of-type(4)\r\n  .writing {\r\n  opacity: 1;\r\n  transform: translateY(0%);\r\n  transition: 1.4s;\n}\n.blog.loaded .blog--content--sidearea .fade_y {\r\n  opacity: 1;\r\n  transform: translateY(0);\r\n  transition: 0.8s;\n}\n.blog.loaded .blog--header .blogtitle {\r\n  opacity: 1;\r\n  transform: translateY(0%);\n}\n.blog.loaded .blog--header .bloginfo {\r\n  opacity: 1;\r\n  transform: translateY(0%);\n}\n.blog.loaded .blog--header .personinfo {\r\n  opacity: 1;\r\n  transform: translateY(0%);\n}\n.blog.loaded .blog--article .photo {\r\n  opacity: 1;\r\n  transform: translateY(0%);\n}\n.blog.loaded .recruit_site_area {\r\n  opacity: 1;\n}\n.blog .success_txt {\r\n  position: fixed;\r\n  font-size: 1.2rem;\r\n  width: 240px;\r\n  font-weight: 500;\r\n  background-color: #dadada;\r\n  color: #4c4c4c;\r\n  top: 15px;\r\n  left: 50%;\r\n  transform: translate(-50%, -100px);\r\n  text-align: center;\r\n  transition: 0.4s;\r\n  z-index: 100004;\r\n  padding: 15px 0;\n}\n.blog .success_txt.on {\r\n  transform: translate(-50%, 0);\n}\n.blog .fix_share {\r\n  transition: 0.4s;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  width: 100vw;\r\n  background: #000;\r\n  border-top: solid #8d8d8d 1px;\r\n  padding: 18px 0;\r\n  z-index: 100;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share {\r\n    padding: 15px 0;\n}\n}\n.blog .fix_share:not(.visibility) {\r\n  opacity: 0;\r\n  transform: translateY(100px);\n}\n.blog .fix_share.visibility {\r\n  opacity: 1;\r\n  transform: cubic-bezier(0.1, 0.2, 0.3, 1);\n}\n.blog .fix_share .fix_inner {\r\n  width: 80%;\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner {\r\n    width: 90%;\n}\n}\n.blog .fix_share .fix_inner .share_list {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: flex-start;\n}\n.blog .fix_share .fix_inner .share_list li {\r\n  transition: 0.3s;\r\n  width: 22px;\r\n  margin-right: 22px;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner .share_list li {\r\n    margin-right: 18px;\n}\n}\n.blog .fix_share .fix_inner .share_list li:nth-child(4) {\r\n  width: 18px;\n}\n.blog .fix_share .fix_inner .share_list li:nth-child(4) button {\r\n  cursor: pointer;\n}\n@media screen and (min-width: 897px) {\n.blog .fix_share .fix_inner .share_list li:hover {\r\n    transform: scale(1.15);\n}\n}\n.blog .fix_share .fix_inner .good__click {\r\n  margin-right: calc(280px + 7.14%);\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner .good__click {\r\n    margin-right: 0;\n}\n}\n.blog .recruit_site_area {\r\n  position: fixed;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: -120px;\r\n  z-index: 10000;\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  transition: 0.4s;\r\n  opacity: 0;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area {\r\n    width: 90%;\r\n    display: block;\n}\n}\n.blog .recruit_site_area.show {\r\n  bottom: 30px;\n}\n.blog .recruit_site_area .mainbnr_area {\r\n  flex: 1;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area .mainbnr_area {\r\n    flex: none;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn {\r\n  width: 65%;\r\n  max-width: 480px;\r\n  margin: 0 auto;\r\n  position: relative;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn {\r\n    width: 100%;\r\n    max-width: none;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn a {\r\n  display: block;\r\n  width: 100%;\r\n  transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn a:hover {\r\n    opacity: 0.7;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn .bnr_btn {\r\n  cursor: pointer;\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn .bnr_btn.close_bnr {\r\n  position: absolute;\r\n  top: 10px;\r\n  right: 10px;\r\n  width: 28px;\n}\n.blog .recruit_site_area .blank {\r\n  width: 280px;\r\n  margin-left: 7.14%;\n}\n.blog .wpulike {\r\n  padding: 0;\n}\n.fade_y.on {\r\n  opacity: 1;\r\n  transform: translateY(0%);\n}\n.fade_y {\r\n  transform: translateY(10%);\r\n  opacity: 0;\r\n  transition: 0.5s ease;\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\n}\n.blog .wp_ulike_general_class {\r\n  margin-right: 4%;\r\n  position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog .wp_ulike_general_class:hover .wp_ulike_btn {\r\n    transform: scale(0.8);\n}\n.blog .wp_ulike_general_class:hover .wp_ulike_btn.wp_ulike_btn_is_active {\r\n    transform: scale(1);\n}\n}\n.blog .wp_ulike_general_class.wp_ulike_is_liked .count-box {\r\n  color: #f5564c;\n}\n.blog .wp_ulike_counter_up {\r\n  font-family: \"DIN\";\n}\n.blog .wpulike-notification {\r\n  display: none;\n}\n.blog .wpulike-robeen .count-box {\r\n  padding: 5px 0 0 0;\r\n  font-size: 1.8rem;\r\n  color: #929292;\n}\n@media screen and (max-width: 896px) {\n.blog .wpulike-robeen .count-box {\r\n    font-size: 1.4rem;\n}\n}\n.blog .wpulike-robeen .wp_ulike_btn {\r\n  overflow: inherit;\r\n  width: 30px;\r\n  height: 30px;\r\n  transition: 0.4s;\n}\n.blog .wpulike-robeen .wp_ulike_btn img {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 2px;\r\n  transform: scale(1.6);\r\n  opacity: 0;\n}\n.blog .wpulike-robeen .wp_ulike_btn.wp_ulike_btn_is_active::after {\r\n  filter: grayscale(0);\n}\n.blog .wpulike-robeen .wp_ulike_btn.wp_ulike_btn_is_active img {\r\n  opacity: 1;\n}\n.blog .personinfo a {\r\n  display: flex;\r\n  align-items: center;\r\n  width: -moz-max-content;\r\n  width: max-content;\n}\n@media screen and (min-width: 897px) {\n.blog .personinfo a:hover .icon {\r\n    transform: scale(1.15);\n}\n}\n.blog .personinfo a .icon {\r\n  width: 40px;\r\n  margin-right: 10px;\r\n  border-radius: 50%;\r\n  transition: 0.4s;\n}\n.blog .personinfo a .name {\r\n  font-size: 1.3rem;\r\n  letter-spacing: 0.04em;\r\n  color: #dadada;\r\n  font-weight: bold;\n}\n.blog .bloginfo {\r\n  margin-top: 20px;\n}\n.blog .bloginfo .time {\r\n  font-weight: bold;\r\n  display: inline-block;\r\n  margin-right: 10px;\r\n  font-size: 14px;\r\n  color: #333;\r\n  transition: 0.4s;\n}\n.blog .bloginfo .cat {\r\n  transition: 0.4s;\r\n  font-weight: bold;\r\n  display: inline-block;\r\n  padding: 5px 12px;\r\n  margin-bottom: 10px;\r\n  margin-right: 5px;\r\n  border-radius: 2px;\r\n  background-color: #ececec;\r\n  font-size: 10px;\r\n  letter-spacing: 0;\r\n  color: #000;\n}\n.blog .bloginfo .cat.pickup {\r\n  display: none;\n}\n.blog .good {\r\n  padding-left: 44px;\r\n  height: 30px;\r\n  background-size: 30px;\r\n  font-size: 14px;\r\n  line-height: 30px;\r\n  font-family: NotoSansJP-Regular;\r\n  color: #f36e6e;\n}\n.hoverScale .thumb {\r\n  overflow: hidden;\r\n  position: relative;\n}\n.hoverScale .thumb::after {\r\n  content: \"\";\r\n  background-color: rgba(0, 0, 0, 0.8);\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  opacity: 0;\r\n  transition: 0.4s;\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\r\n  color: #dadada;\r\n  font-size: 14px;\r\n  letter-spacing: 0.06em;\r\n  text-transform: uppercase;\r\n  position: relative;\r\n  padding-right: 20px;\r\n  font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transition: 0.4s;\r\n  transform: translate(-34%, -20%);\r\n  opacity: 0;\r\n  z-index: 1;\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\r\n  content: \"\";\r\n  background: #dadada;\r\n  width: 100%;\r\n  height: 1px;\r\n  position: absolute;\r\n  bottom: -4px;\r\n  left: 0;\r\n  transform: scale(0, 1);\r\n  transition: transform 0.3s;\r\n  transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\r\n  position: relative;\n}\n.blog--content--mainarea .blog--content--item .hoverScale {\r\n  opacity: 1;\r\n  transform: translateY(0%);\r\n  transition: 0.8s;\n}\n.more_txt:before {\r\n  width: 10px;\n}\n.blog .good__click.btm_good {\r\n  margin-right: 0;\r\n  margin-left: auto;\r\n  width: 85px;\n}\n@media screen and (min-width: 897px) {\n.blog .good__click .wp_ulike_btn:hover {\r\n    transform: scale(0.9);\n}\n.hoverScale .thumb .hvrtxt .more_txt:hover::after,\r\n  .hoverScale .thumb .hvrtxt .more_txt:hover::before {\r\n    right: -5%;\n}\n.hoverScale:hover .thumb::after {\r\n    opacity: 1;\n}\n.hoverScale:hover .thumb .hvrtxt {\r\n    transform: translate(-34%, -50%);\r\n    opacity: 1;\r\n    transition-delay: 0.3s;\n}\n}\n.blog #toc_container {\r\n  width: 100% !important;\r\n  margin-top: 54px;\r\n  border: 1px solid #dadada;\r\n  background: none;\n}\n@media screen and (min-width: 897px) {\n.blog #toc_container {\r\n    padding: 20px 30px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog #toc_container {\r\n    padding: 20px 5%;\n}\n}\n.blog #toc_container.contracted .toc_title .toc_toggle a::before {\r\n  transform: rotate(90deg);\n}\n.blog #toc_container .toc_title {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  font-size: 1.8rem;\n}\n.blog #toc_container .toc_title .toc_toggle {\r\n  color: #000;\n}\n.blog #toc_container .toc_title .toc_toggle a {\r\n  text-indent: -9999px;\r\n  overflow: hidden;\r\n  position: relative;\r\n  width: 30px;\r\n  height: 30px;\r\n  display: block;\r\n  color: #000;\r\n  border-bottom: 1px solid #000;\n}\n.blog #toc_container .toc_title .toc_toggle a::after,\r\n.blog #toc_container .toc_title .toc_toggle a::before {\r\n  content: \"\";\r\n  width: 15px;\r\n  height: 1px;\r\n  background-color: #dadada;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: calc(50% - 7.5px);\r\n  transition: 0.4s;\n}\n.blog #toc_container .toc_list {\r\n  margin-top: 15px;\r\n  border: none;\r\n  list-style: none;\n}\n.blog #toc_container .toc_list li:before {\r\n  display: none;\n}\n.blog #toc_container .toc_list li a {\r\n  font-size: 1.4rem;\r\n  font-weight: 700;\r\n  text-decoration: none;\r\n  position: relative;\r\n  line-height: 1.5;\n}\n@media screen and (min-width: 897px) {\n.blog #toc_container .toc_list li a:hover::after {\r\n    transform-origin: left top;\r\n    transform: scale(1, 1);\n}\n}\n.blog #toc_container .toc_list li a::after {\r\n  content: \"\";\r\n  background: #dadada;\r\n  width: 100%;\r\n  height: 1px;\r\n  position: absolute;\r\n  bottom: -4px;\r\n  left: 0;\r\n  transform: scale(0, 1);\r\n  transition: transform 0.3s;\r\n  transform-origin: right top;\n}\n.blog #toc_container .toc_list li ul {\r\n  border: none;\n}\n.blog #toc_container .toc_list li ul li:before {\r\n  display: none;\n}\n.blog #toc_container .toc_list li ul li a {\r\n  font-weight: 500;\n}\n.blog #toc_container li {\r\n  margin-top: 20px;\n}\n.blog .wp-pagenavi span,\r\n.blog .wp-pagenavi a {\r\n  border: 1px solid #bfbfbf7a;\r\n  color: #333;\n}\n.blog .wp-pagenavi span:hover,\r\n.blog .wp-pagenavi a:hover {\r\n  border-color: #12355d;\r\n  background-color: #12355d;\r\n  color: #fff;\n}\n.blog .wp-pagenavi span:hover::after,\r\n.blog .wp-pagenavi a:hover::after {\r\n  fill: #fff;\n}\n.blog .wp-pagenavi .extend {\r\n  display: none;\n}\n.blog .wp-pagenavi .nextpostslink,\r\n.blog .wp-pagenavi .previouspostslink,\r\n.blog .wp-pagenavi .first,\r\n.blog .wp-pagenavi .last {\r\n  overflow: hidden;\r\n  position: relative;\n}\n.blog .wp-pagenavi .nextpostslink::after,\r\n.blog .wp-pagenavi .previouspostslink::after,\r\n.blog .wp-pagenavi .first::after,\r\n.blog .wp-pagenavi .last::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  transition: 0.4s;\n}\nimg {\r\n  max-width: 100%;\r\n  height: auto;\r\n  /* vertical-align: bottom; */\n}\n.scale-img img {\r\n  height: 235px;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\n}\n.thumb-img {\r\n  height: 235px;\n}\n.blog .wp-pagenavi .current {\r\n  border-color: #12355d;\r\n  background-color: #12355d;\r\n  color: #dadada;\n}\n@media screen and (min-width: 897px) {\n.blog--content {\r\n    padding: 80px 0 0;\r\n    margin: 100px auto 0;\r\n    max-width: 1200px;\r\n    width: 80%;\n}\n.blog--content.single_cont {\r\n    padding: 80px 0 0;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content {\r\n    padding: 130px 5% 0;\r\n    margin: 0;\r\n    width: 100%;\r\n    max-width: none;\n}\n}\n.blog--content h2 {\r\n  margin-bottom: 30px;\r\n  font-size: 2rem;\r\n  font-weight: 600;\r\n  letter-spacing: 0.08em;\r\n  color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--content h2 {\r\n    font-size: 1.8rem;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--content--inner {\r\n    display: flex;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--content--mainarea {\r\n    flex: 1;\n}\n}\n.blog--content--mainarea .error_txt {\r\n  font-size: 1.6rem;\r\n  color: #dadada;\r\n  margin-top: 60px;\r\n  line-height: 1.5;\n}\n.blog--content--list {\r\n  margin-bottom: 40px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--list {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    flex-wrap: wrap;\n}\n}\n.blog--content--item {\r\n  margin-bottom: 20px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--item {\r\n    width: 47.5%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--item {\r\n    display: block;\n}\n}\n.blog--content--item h3 {\r\n  font-weight: 700;\r\n  line-height: 1.56;\r\n  color: #000;\n}\n@media screen and (min-width: 897px) {\n.blog--content--item h3 {\r\n    font-size: 18px;\r\n    letter-spacing: 0.04em;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--item h3 {\r\n    font-size: 1.6rem;\r\n    letter-spacing: 0.08em;\n}\n}\n.blog--content--item .writing {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: flex-end;\r\n  padding-top: 5px;\r\n  margin-top: 10px;\r\n  border-top: 1px solid #4d4d4d;\n}\n@media screen and (max-width: 896px) {\n.blog--content--item .writing {\r\n    padding-top: 15px;\r\n    margin-top: 15px;\n}\n}\n.blog--content--item .writing .person {\r\n  display: flex;\r\n  align-items: center;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea {\r\n    width: 280px;\r\n    margin-left: 7.14%;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea {\r\n    margin-top: 100px;\n}\n}\n.blog--content--sidearea .searcharea {\r\n  background-color: #ececec;\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .searcharea {\r\n    position: relative;\n}\n}\n.blog--content--sidearea .searcharea .search-text {\r\n  padding: 0 10px 0 19px;\r\n  line-height: 50px;\r\n  background-color: transparent;\r\n  width: calc(100% - 35px);\n}\n.blog--content--sidearea .sideheading {\r\n  padding-top: 35px;\r\n  margin-top: 35px;\r\n  margin-bottom: 28px;\r\n  border-top: 1px solid #4d4d4d;\r\n  font-size: 16px;\r\n  font-family: NotoSansJP-Bold;\r\n  color: #333;\n}\r\n\r\n/* @media screen and (max-width: 896px) {\r\n        .blog--content--sidearea .sp_cat {\r\n            position: fixed;\r\n            top: 68px;\r\n            background: #000;\r\n            display: flex;\r\n            overflow-x: scroll;\r\n            width: 100%;\r\n            padding: 7px 0;\r\n        }\r\n    } */\n.blog--content--sidearea .categoryitem {\r\n  display: inline-block;\r\n  padding: 10px;\r\n  margin-bottom: 10px;\r\n  margin-right: 5px;\r\n  border: 1px solid #4d4d4d;\r\n  font-size: 13px;\r\n  font-family: NotoSansJP-Bold;\r\n  letter-spacing: 0;\r\n  color: #333;\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .categoryitem {\r\n    white-space: nowrap;\n}\n.blog--content--sidearea .categoryitem:last-of-type {\r\n    margin-right: 40px;\n}\n}\n.blog--content--sidearea .categoryitem.current {\r\n  background-color: #dadada;\r\n  color: #000;\r\n  pointer-events: none;\n}\n.blog--content--sidearea .categoryitem.pickup {\r\n  display: none;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .categoryitem:hover {\r\n    background-color: #dadada;\r\n    color: #000;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .recommend {\r\n    display: none;\n}\n}\n.blog--content--sidearea .recommend--item {\r\n  display: block;\r\n  margin-bottom: 15px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .recommend--item:hover .hvrunder {\r\n    background-position: left bottom;\r\n    background-size: 100% 1px;\n}\n}\n.blog--content--sidearea .recommend--item.popular {\r\n  position: relative;\n}\n.blog--content--sidearea .recommend--item.popular::after {\r\n  content: \"\";\r\n  width: 40px;\r\n  height: 50px;\r\n  position: absolute;\r\n  top: -1px;\r\n  right: 5px;\n}\n.blog--content--sidearea .recommend--item .bloginfo {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  margin: 11px 0 8px;\n}\n.blog--content--sidearea .recommend--item .bloginfo .time {\r\n  font-size: 13px;\r\n  color: #333;\r\n  font-family: DIN-Bold;\n}\n.blog--content--sidearea .recommend--item h3 {\r\n  font-family: NotoSansJP-Bold;\r\n  line-height: 1.42;\r\n  color: #000;\r\n  position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .recommend--item h3 {\r\n    font-size: 14px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .recommend--item h3 {\r\n    font-size: 1.6rem;\r\n    letter-spacing: 0.08em;\n}\n}\n.blog--content--sidearea .sharearea .item {\r\n  height: 70px;\r\n  margin-bottom: 10px;\n}\n.blog--content--sidearea .sharearea .item .txt {\r\n  margin-left: 16px;\r\n  font-size: 1.4rem;\n}\n.blog--content--sidearea .bnr_area {\r\n  margin-top: 30px;\n}\n.blog--header .blogtitle {\r\n  padding-bottom: 30px;\r\n  margin-bottom: 30px;\r\n  line-height: 1.4;\r\n  letter-spacing: 0.04em;\r\n  position: relative;\r\n  transition: 0.8s;\r\n  transform: translateY(5%);\r\n  opacity: 0;\r\n  border-bottom: 2px solid #dadada;\n}\n@media screen and (min-width: 897px) {\n.blog--header .blogtitle {\r\n    font-size: 3.6rem;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--header .blogtitle {\r\n    font-size: 2.4rem;\n}\n}\n.blog--header .bloginfo {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-bottom: 8px;\r\n  transition: 1.4s;\r\n  transform: translateY(5%);\r\n  opacity: 0;\n}\n.blog--header .bloginfo .left .cat {\r\n  margin-bottom: 0;\r\n  font-size: 1.3rem;\n}\n@media screen and (max-width: 896px) {\n.blog--header .bloginfo .left .cat {\r\n    margin-top: 5px;\n}\n}\n.blog--header .bloginfo .left .cat.pickup {\r\n  display: none;\n}\n.blog--header .bloginfo .left .cat a {\r\n  color: #000;\r\n  display: block;\n}\n.blog--header .bloginfo .left .cat:hover {\r\n  background: #000;\n}\n.blog--header .bloginfo .left .cat:hover a {\r\n  color: #dadada;\n}\n.blog--header .personinfo {\r\n  transition: 1.4s;\r\n  transform: translateY(5%);\r\n  opacity: 0;\n}\n.blog--article .photo {\r\n  margin-top: 40px;\r\n  transition: 1.6s;\r\n  transform: translateY(5%);\r\n  opacity: 0;\n}\n.blog--article code {\r\n  background: #b4b4b4;\r\n  font-size: 12px;\r\n  padding: 25px;\n}\n.blog--article h2 {\r\n  padding-bottom: 15px;\r\n  margin-top: 120px;\r\n  border-bottom: 2px solid #dadada;\r\n  font-size: 3.4rem;\r\n  line-height: 1.4;\r\n  font-weight: 600;\n}\n@media screen and (max-width: 896px) {\n.blog--article h2 {\r\n    font-size: 2.2rem;\n}\n}\n.blog--article h3 {\r\n  margin-top: 80px;\r\n  font-size: 2.4rem;\r\n  letter-spacing: 0.05em;\r\n  line-height: 1.4;\r\n  color: #dadada;\r\n  position: relative;\r\n  padding-left: 25px;\n}\n.blog--article h3::before {\r\n  content: \"\";\r\n  width: 3px;\r\n  height: 100%;\r\n  background-color: #dadada;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\n}\n@media screen and (max-width: 896px) {\n.blog--article h3 {\r\n    font-size: 2rem;\n}\n}\n.blog--article h4 {\r\n  margin-top: 60px;\r\n  font-size: 2rem;\r\n  font-weight: 600;\r\n  color: #dadada;\r\n  margin-bottom: -13px;\n}\n@media screen and (max-width: 896px) {\n.blog--article h4 {\r\n    font-size: 1.8rem;\n}\n}\n.blog--article h5 {\r\n  margin-top: 60px;\r\n  font-size: 1.6rem;\r\n  color: #dadada;\n}\n.blog--article p {\r\n  margin-top: 30px;\r\n  font-size: 1.6rem;\r\n  line-height: 2;\r\n  letter-spacing: 0.04em;\r\n  color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--article p {\r\n    font-size: 1.4rem;\n}\n}\n.blog--article p em {\r\n  color: #000;\r\n  font-weight: 600;\r\n  background-color: #ffed2a;\r\n  font-style: normal;\n}\n.blog--article p a {\r\n  font-size: 1.6rem;\r\n  font-weight: 600;\r\n  color: #4babdd;\r\n  color: #4babdd;\r\n  border-bottom: 1px solid #4babdd;\r\n  padding-bottom: 4px;\n}\n@media screen and (max-width: 896px) {\n.blog--article p a {\r\n    font-size: 1.4rem;\n}\n}\n.blog--article p s a {\r\n  margin-top: 30px;\r\n  font-size: 1.6rem;\r\n  padding: 18px 60px;\r\n  display: inline-block;\r\n  text-align: center;\r\n  background-color: #efefef;\r\n  transition: 0.3s;\r\n  color: #000;\r\n  border-radius: 0%;\r\n  letter-spacing: 0.12em;\r\n  position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog--article p s a:hover {\r\n    background: #ffed2a;\n}\n}\n.blog--article .wp-block-image {\r\n  margin-top: 60px;\r\n  text-align: center;\n}\n.blog--article .wp-block-image figcaption {\r\n  margin-top: 20px;\n}\n.blog--article h2 + .wp-block-image,\r\n.blog--article h3 + .wp-block-image,\r\n.blog--article h4 + .wp-block-image,\r\n.blog--article h5 + .wp-block-image {\r\n  margin-top: 30px;\n}\n.blog--article ul,\r\n.blog--article ol {\r\n  margin-top: 80px;\r\n  padding: 50px;\r\n  border: 1px solid #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--article ul,\r\n  .blog--article ol {\r\n    padding: 30px 5%;\n}\n}\n.blog--article ul li,\r\n.blog--article ol li {\r\n  color: #dadada;\r\n  font-size: 1.6rem;\r\n  line-height: 1.7;\r\n  position: relative;\r\n  letter-spacing: 0.05em;\n}\n.blog--article ul li:not(:first-child),\r\n.blog--article ol li:not(:first-child) {\r\n  margin-top: 30px;\n}\n@media screen and (max-width: 896px) {\n.blog--article ul li,\r\n  .blog--article ol li {\r\n    margin-top: 14px;\n}\n}\n.blog--article ul li {\r\n  padding-left: 20px;\n}\n.blog--article ul li::before {\r\n  content: \"\";\r\n  background-color: #dadada;\r\n  width: 7px;\r\n  height: 7px;\r\n  border-radius: 50%;\r\n  position: absolute;\r\n  top: 0.7em;\r\n  left: 0;\n}\n.blog--article ol li {\r\n  margin-left: 25px;\r\n  list-style: auto;\n}\n.blog--article h2 + .wp-block-quote,\r\n.blog--article h3 + .wp-block-quote,\r\n.blog--article h4 + .wp-block-quote,\r\n.blog--article h5 + .wp-block-quote {\r\n  margin-top: 30px;\n}\n.blog--article .wp-block-quote {\r\n  position: relative;\r\n  padding: 40px 80px;\r\n  margin-top: 80px;\r\n  border: 1px solid #565656;\r\n  border-left: 4px solid #dadada;\n}\n.blog--article .wp-block-quote::after,\r\n.blog--article .wp-block-quote::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 25px;\r\n  height: 25px;\r\n  opacity: 1;\n}\n.blog--article .wp-block-quote p {\r\n  margin: 0;\r\n  font-size: 1.4rem;\n}\n.blog--article .wp-block-quote cite {\r\n  display: inline-block;\r\n  margin-top: 16px;\r\n  color: #dadada;\r\n  font-size: 1.3rem;\n}\n.blog--footer {\r\n  margin-top: 100px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer {\r\n    margin-top: 80px;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .sharearea ul {\r\n    display: flex;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .sharearea li {\r\n    width: 50%;\n}\n}\n.blog--footer .sharearea .item {\r\n  height: 95px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .sharearea .item {\r\n    height: 70px;\n}\n}\n.blog--footer .sharearea .item .txt {\r\n  margin-left: 16px;\r\n  font-size: 1.6rem;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .sharearea .item .txt {\r\n    font-size: 1.4rem;\n}\n}\n.blog--footer .authorinfo {\r\n  margin-top: 30px;\r\n  border: 1px solid #2b2b2b;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorinfo {\r\n    display: flex;\r\n    justify-content: center;\r\n    padding: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorinfo {\r\n    padding: 50px 5%;\n}\n}\n.blog--footer .authorinfo .icon {\r\n  width: 140px;\r\n  margin-right: 20px;\n}\n.blog--footer .authorinfo .textarea {\r\n  flex: 1;\r\n  margin-left: 20px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorinfo .textarea {\r\n    margin-top: 20px;\n}\n}\n.blog--footer .authorinfo .textarea .name {\r\n  font-size: 1.8rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.04em;\r\n  line-height: 1.5;\r\n  color: #dadada;\n}\n.blog--footer .authorinfo .textarea p {\r\n  margin-top: 18px;\r\n  font-size: 1.4rem;\r\n  line-height: 1.714;\r\n  color: #dadada;\n}\n.blog--footer .authorinfo .textarea .tw {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  border: 1px solid #2b2b2b;\r\n  padding: 15px;\r\n  margin-top: 30px;\r\n  width: 210px;\r\n  transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorinfo .textarea .tw:hover {\r\n    background: #dadada;\n}\n.blog--footer .authorinfo .textarea .tw:hover .icon {\r\n    filter: invert(0);\n}\n.blog--footer .authorinfo .textarea .tw:hover .txt {\r\n    color: #000;\n}\n}\n.blog--footer .authorinfo .textarea .tw .icon {\r\n  transition: 0.4s;\r\n  margin-right: 15px;\r\n  width: 20px;\r\n  filter: invert(1);\n}\n.blog--footer .authorinfo .textarea .tw .txt {\r\n  transition: 0.4s;\r\n  font-size: 1.4rem;\r\n  color: #dadada;\r\n  font-weight: 600;\n}\n.blog--footer .authorarticle {\r\n  margin-top: 30px;\r\n  border: 1px solid #2b2b2b;\r\n  position: relative;\r\n  padding: 62px 40px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle {\r\n    padding: 50px 5%;\n}\n}\n.blog--footer .authorarticle h4 {\r\n  font-size: 2rem;\r\n  letter-spacing: 0.04em;\r\n  margin-bottom: 40px;\r\n  color: #dadada;\n}\n.blog--footer .authorarticle--item {\r\n  padding-bottom: 20px;\r\n  margin-bottom: 20px;\r\n  border-bottom: 1px solid #2b2b2b;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item {\r\n    display: flex;\r\n    align-items: center;\n}\n.blog--footer .authorarticle--item:last-child {\r\n    border: none;\r\n    padding: 0;\r\n    margin: 0;\n}\n.blog--footer .authorarticle--item:hover .hvrunder {\r\n    background-position: left bottom;\r\n    background-size: 100% 1px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle--item {\r\n    display: block;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .thumb {\r\n    width: 43.75%;\n}\n.blog--footer .authorarticle--item .thumb .more_txt {\r\n    top: auto;\r\n    right: auto;\r\n    padding-bottom: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .textarea {\r\n    flex: 1;\r\n    margin-left: 30px;\n}\n}\n.blog--footer .authorarticle--item .textarea h5 {\r\n  font-size: 1.6rem;\r\n  font-weight: 700;\r\n  line-height: 1.625;\r\n  color: #000;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .textarea h5 {\r\n    margin: 14px 0 20px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle--item .textarea h5 {\r\n    margin: 0 0 16px;\n}\n}\n.blog--footer .authorarticle--item .textarea .cat {\r\n  padding: 2px 10px;\r\n  font-size: 1.2rem;\n}\n.blog--footer .authorarticle--item .textarea .cat.pickup {\r\n  display: none;\n}\n.blog--footer .authorarticle--item .writing {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  margin-top: 20px;\n}\n.blog--footer .authorarticle--item .personinfo {\r\n  display: flex;\r\n  align-items: center;\n}\n.blog--footer .authorarticle--item .personinfo .icon {\r\n  width: 40px;\r\n  margin-right: 10px;\r\n  border-radius: 50%;\n}\n.blog--footer .authorarticle--item .personinfo .name {\r\n  font-size: 1.3rem;\r\n  letter-spacing: 0.04em;\r\n  font-weight: bold;\n}\n.blog--footer .authorarticle .more_txt {\r\n  color: #dadada;\r\n  font-size: 1.4rem;\r\n  font-family: \"DIN\";\r\n  letter-spacing: 0.06em;\r\n  text-transform: uppercase;\r\n  position: relative;\r\n  padding-right: 20px;\r\n  position: absolute;\r\n  top: 63px;\r\n  right: 40px;\r\n  padding-bottom: 5px;\n}\n.blog--footer .authorarticle .more_txt::after,\r\n.blog--footer .authorarticle .more_txt::before {\r\n  content: \"\";\r\n  height: 1px;\r\n  background-color: #dadada;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 50%;\r\n  transition: 0.3s;\n}\n.blog--footer .authorarticle .more_txt::after {\r\n  width: 6px;\r\n  transform: rotate(45deg) translateY(-3px);\n}\n.blog--footer .authorarticle .more_txt::before {\r\n  width: 10px;\n}\n.blog--footer .authorarticle .more_txt .underline {\r\n  position: relative;\n}\n.blog--footer .authorarticle .more_txt .underline::after {\r\n  content: \"\";\r\n  background: #dadada;\r\n  width: 100%;\r\n  height: 1px;\r\n  position: absolute;\r\n  bottom: -4px;\r\n  left: 0;\r\n  transform: scale(0, 1);\r\n  transition: transform 0.3s;\r\n  transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle .more_txt:hover::after,\r\n  .blog--footer .authorarticle .more_txt:hover::before {\r\n    right: -5%;\n}\n.blog--footer .authorarticle .more_txt:hover .underline::after {\r\n    transform-origin: left top;\r\n    transform: scale(1, 1);\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle .more_txt {\r\n    position: relative;\r\n    top: auto;\r\n    right: auto;\r\n    margin-top: 0;\r\n    display: inline-block;\n}\n.blog {\r\n    padding: 60px 5%;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n/*blog-brns*/\n.blog-subcontents__text {\n  font-weight: bold;\n  font-size: 16px;\n  line-height: 24px;\n  padding: 0px 10px;\n  text-align: center;\n  margin: auto;\n}\n.blog__btns {\n  margin-bottom: 60px;\n  position: relative;\n  display: flex;\n}\n.blog__btns__list {\n  display: inline-block;\n  margin-right: 60px;\n}\n.blog__btns__list_hr {\n  position: absolute;\n  width: 0.7px;\n  height: 50px;\n  background-color: var(--textcolor);\n  left: 156px;\n  bottom: 0;\n}\n.blog__btns__list__label {\n  margin-bottom: 3px;\n  font-weight: bold;\n  font-size: 24px;\n  line-height: 36px;\n  letter-spacing: 0.05em;\n  color: var(--textcolor);\n}\n.blog__btns__list_select {\n  display: inline-block;\n  width: 124px;\n  height: 24px;\n  background: #ffffff;\n  border: 0.5px solid #727171;\n  box-sizing: border-box;\n  border-radius: 2px;\n  font-weight: 500;\n  font-size: 13px;\n  line-height: 20px;\n}\n.select-container {\n  overflow: hidden;\n  position: relative;\n}\n.select-container::before {\n  position: absolute;\n  top: 50%;\n  right: 8px;\n  transform: translateY(-50%);\n  content: \"▼\";\n  font-size: 6px;\n  color: var(--textcolor);\n}\n\n/*blog-contents*/\n.blog {\n  padding: 60px 10% 120px;\n}\n.blog-contents {\n  display: flex;\n  margin-bottom: 40px;\n  flex-wrap: wrap;\n}\n.blog-contents__list {\n  width: calc((100% - 65px * 2) / 3);\n  margin-right: 65px;\n  margin-bottom: 60px;\n}\n.blog-contents .blog-contents__list:nth-child(3n) {\n  margin-right: 0;\n}\n.blog--content--sidearea .searcharea .submit {\n  cursor: pointer;\n  background: url(\"/assets/img/icons/search-img.png\") center no-repeat;\n  background-size: 100%;\n  width: 15px;\n  height: 15px;\n}\n@media screen and (max-width: 900px) and (min-width: 500px) {\n.blog-contents__list__thumbnail {\n    height: 240px;\n}\n}\n@media screen and (max-width: 500px) and (min-width: 320px) {\n.blog-contents__list__thumbnail {\n    height: 180px;\n}\n}\n@media (max-width: 767px) {\n.blog-subcontents__text {\n    width: 100%;\n}\n.blog {\n    margin-bottom: 60px;\n}\n.blog-contents {\n    margin-bottom: 20px;\n    justify-content: space-between;\n}\n.blog-contents__list {\n    width: calc((100% - 35px) / 2);\n    margin-right: 0;\n    margin-bottom: 30px;\n}\n.blog-contents__list__tags {\n    width: 180px;\n    top: 71px;\n    left: -70px;\n}\n}\n@media (max-width: 500px) {\n.blog-contents {\n    display: block;\n    margin-bottom: 50px;\n}\n.blog-contents__list {\n    width: 100%;\n    margin-bottom: 30px;\n}\n}\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(1)\n  .hoverScale,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(2)\n  .hoverScale,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(3)\n  .hoverScale,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(4)\n  .hoverScale {\n  opacity: 1;\n  transform: translateY(0%);\n  transition: 0.8s;\n}\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(1)\n  .hoverScale\n  h3,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(2)\n  .hoverScale\n  h3,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(3)\n  .hoverScale\n  h3,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(4)\n  .hoverScale\n  h3 {\n  opacity: 1;\n  transform: translateY(0%);\n  transition: 1s;\n}\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(1)\n  .writing,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(2)\n  .writing,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(3)\n  .writing,\n.blog.loaded\n  .blog--content--mainarea\n  .blog--content--item:nth-of-type(4)\n  .writing {\n  opacity: 1;\n  transform: translateY(0%);\n  transition: 1.4s;\n}\n.blog.loaded .blog--content--sidearea .fade_y {\n  opacity: 1;\n  transform: translateY(0);\n  transition: 0.8s;\n}\n.blog.loaded .blog--header .blogtitle {\n  opacity: 1;\n  transform: translateY(0%);\n}\n.blog.loaded .blog--header .bloginfo {\n  opacity: 1;\n  transform: translateY(0%);\n}\n.blog.loaded .blog--header .personinfo {\n  opacity: 1;\n  transform: translateY(0%);\n}\n.blog.loaded .blog--article .photo {\n  opacity: 1;\n  transform: translateY(0%);\n}\n.blog.loaded .recruit_site_area {\n  opacity: 1;\n}\n.blog .success_txt {\n  position: fixed;\n  font-size: 1.2rem;\n  width: 240px;\n  font-weight: 500;\n  background-color: #dadada;\n  color: #4c4c4c;\n  top: 15px;\n  left: 50%;\n  transform: translate(-50%, -100px);\n  text-align: center;\n  transition: 0.4s;\n  z-index: 100004;\n  padding: 15px 0;\n}\n.blog .success_txt.on {\n  transform: translate(-50%, 0);\n}\n.blog .fix_share {\n  transition: 0.4s;\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  width: 100vw;\n  background: #000;\n  border-top: solid #8d8d8d 1px;\n  padding: 18px 0;\n  z-index: 100;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share {\n    padding: 15px 0;\n}\n}\n.blog .fix_share:not(.visibility) {\n  opacity: 0;\n  transform: translateY(100px);\n}\n.blog .fix_share.visibility {\n  opacity: 1;\n  transform: cubic-bezier(0.1, 0.2, 0.3, 1);\n}\n.blog .fix_share .fix_inner {\n  width: 80%;\n  max-width: 1200px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner {\n    width: 90%;\n}\n}\n.blog .fix_share .fix_inner .share_list {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n}\n.blog .fix_share .fix_inner .share_list li {\n  transition: 0.3s;\n  width: 22px;\n  margin-right: 22px;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner .share_list li {\n    margin-right: 18px;\n}\n}\n.blog .fix_share .fix_inner .share_list li:nth-child(4) {\n  width: 18px;\n}\n.blog .fix_share .fix_inner .share_list li:nth-child(4) button {\n  cursor: pointer;\n}\n@media screen and (min-width: 897px) {\n.blog .fix_share .fix_inner .share_list li:hover {\n    transform: scale(1.15);\n}\n}\n.blog .fix_share .fix_inner .good__click {\n  margin-right: calc(280px + 7.14%);\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner .good__click {\n    margin-right: 0;\n}\n}\n.blog .recruit_site_area {\n  position: fixed;\n  left: 0;\n  right: 0;\n  bottom: -120px;\n  z-index: 10000;\n  width: 80%;\n  margin: 0 auto;\n  display: flex;\n  transition: 0.4s;\n  opacity: 0;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area {\n    width: 90%;\n    display: block;\n}\n}\n.blog .recruit_site_area.show {\n  bottom: 30px;\n}\n.blog .recruit_site_area .mainbnr_area {\n  flex: 1;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area .mainbnr_area {\n    flex: none;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn {\n  width: 65%;\n  max-width: 480px;\n  margin: 0 auto;\n  position: relative;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn {\n    width: 100%;\n    max-width: none;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn a {\n  display: block;\n  width: 100%;\n  transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn a:hover {\n    opacity: 0.7;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn .bnr_btn {\n  cursor: pointer;\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn .bnr_btn.close_bnr {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  width: 28px;\n}\n.blog .recruit_site_area .blank {\n  width: 280px;\n  margin-left: 7.14%;\n}\n.blog .wpulike {\n  padding: 0;\n}\n.fade_y.on {\n  opacity: 1;\n  transform: translateY(0%);\n}\n.fade_y {\n  transform: translateY(10%);\n  opacity: 0;\n  transition: 0.5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n.blog .wp_ulike_general_class {\n  margin-right: 4%;\n  position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog .wp_ulike_general_class:hover .wp_ulike_btn {\n    transform: scale(0.8);\n}\n.blog .wp_ulike_general_class:hover .wp_ulike_btn.wp_ulike_btn_is_active {\n    transform: scale(1);\n}\n}\n.blog .wp_ulike_general_class.wp_ulike_is_liked .count-box {\n  color: #f5564c;\n}\n.blog .wp_ulike_counter_up {\n  font-family: \"DIN\";\n}\n.blog .wpulike-notification {\n  display: none;\n}\n.blog .wpulike-robeen .count-box {\n  padding: 5px 0 0 0;\n  font-size: 1.8rem;\n  color: #929292;\n}\n@media screen and (max-width: 896px) {\n.blog .wpulike-robeen .count-box {\n    font-size: 1.4rem;\n}\n}\n.blog .wpulike-robeen .wp_ulike_btn {\n  overflow: inherit;\n  width: 30px;\n  height: 30px;\n  transition: 0.4s;\n}\n.blog .wpulike-robeen .wp_ulike_btn img {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 2px;\n  transform: scale(1.6);\n  opacity: 0;\n}\n.blog .wpulike-robeen .wp_ulike_btn.wp_ulike_btn_is_active::after {\n  filter: grayscale(0);\n}\n.blog .wpulike-robeen .wp_ulike_btn.wp_ulike_btn_is_active img {\n  opacity: 1;\n}\n.blog .personinfo a {\n  display: flex;\n  align-items: center;\n  width: -moz-max-content;\n  width: max-content;\n}\n@media screen and (min-width: 897px) {\n.blog .personinfo a:hover .icon {\n    transform: scale(1.15);\n}\n}\n.blog .personinfo a .icon {\n  width: 40px;\n  margin-right: 10px;\n  border-radius: 50%;\n  transition: 0.4s;\n}\n.blog .personinfo a .name {\n  font-size: 1.3rem;\n  letter-spacing: 0.04em;\n  color: #dadada;\n  font-weight: bold;\n}\n.blog .bloginfo {\n  margin-top: 20px;\n}\n.blog .bloginfo .time {\n  font-weight: bold;\n  display: inline-block;\n  margin-right: 10px;\n  font-size: 14px;\n  color: #333;\n  transition: 0.4s;\n}\n.blog .bloginfo .cat {\n  transition: 0.4s;\n  font-weight: bold;\n  display: inline-block;\n  padding: 5px 12px;\n  margin-bottom: 10px;\n  margin-right: 5px;\n  border-radius: 2px;\n  background-color: #ececec;\n  font-size: 10px;\n  letter-spacing: 0;\n  color: #000;\n}\n.blog .bloginfo .cat.pickup {\n  display: none;\n}\n.blog .good {\n  padding-left: 44px;\n  height: 30px;\n  background-size: 30px;\n  font-size: 14px;\n  line-height: 30px;\n  font-family: NotoSansJP-Regular;\n  color: #f36e6e;\n}\n.hoverScale .thumb {\n  overflow: hidden;\n  position: relative;\n}\n.hoverScale .thumb::after {\n  content: \"\";\n  background-color: rgba(0, 0, 0, 0.8);\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0;\n  transition: 0.4s;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n  color: #dadada;\n  font-size: 14px;\n  letter-spacing: 0.06em;\n  text-transform: uppercase;\n  position: relative;\n  padding-right: 20px;\n  font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transition: 0.4s;\n  transform: translate(-34%, -20%);\n  opacity: 0;\n  z-index: 1;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n  content: \"\";\n  background: #dadada;\n  width: 100%;\n  height: 1px;\n  position: absolute;\n  bottom: -4px;\n  left: 0;\n  transform: scale(0, 1);\n  transition: transform 0.3s;\n  transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n  position: relative;\n}\n.blog--content--mainarea .blog--content--item .hoverScale {\n  opacity: 1;\n  transform: translateY(0%);\n  transition: 0.8s;\n}\n.more_txt:before {\n  width: 10px;\n}\n.blog .good__click.btm_good {\n  margin-right: 0;\n  margin-left: auto;\n  width: 85px;\n}\n@media screen and (min-width: 897px) {\n.blog .good__click .wp_ulike_btn:hover {\n    transform: scale(0.9);\n}\n.hoverScale .thumb .hvrtxt .more_txt:hover::after,\n  .hoverScale .thumb .hvrtxt .more_txt:hover::before {\n    right: -5%;\n}\n.hoverScale:hover .thumb::after {\n    opacity: 1;\n}\n.hoverScale:hover .thumb .hvrtxt {\n    transform: translate(-34%, -50%);\n    opacity: 1;\n    transition-delay: 0.3s;\n}\n}\n.blog #toc_container {\n  width: 100% !important;\n  margin-top: 54px;\n  border: 1px solid #dadada;\n  background: none;\n}\n@media screen and (min-width: 897px) {\n.blog #toc_container {\n    padding: 20px 30px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog #toc_container {\n    padding: 20px 5%;\n}\n}\n.blog #toc_container.contracted .toc_title .toc_toggle a::before {\n  transform: rotate(90deg);\n}\n.blog #toc_container .toc_title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  font-size: 1.8rem;\n}\n.blog #toc_container .toc_title .toc_toggle {\n  color: #000;\n}\n.blog #toc_container .toc_title .toc_toggle a {\n  text-indent: -9999px;\n  overflow: hidden;\n  position: relative;\n  width: 30px;\n  height: 30px;\n  display: block;\n  color: #000;\n  border-bottom: 1px solid #000;\n}\n.blog #toc_container .toc_title .toc_toggle a::after,\n.blog #toc_container .toc_title .toc_toggle a::before {\n  content: \"\";\n  width: 15px;\n  height: 1px;\n  background-color: #dadada;\n  position: absolute;\n  top: 50%;\n  left: calc(50% - 7.5px);\n  transition: 0.4s;\n}\n.blog #toc_container .toc_list {\n  margin-top: 15px;\n  border: none;\n  list-style: none;\n}\n.blog #toc_container .toc_list li:before {\n  display: none;\n}\n.blog #toc_container .toc_list li a {\n  font-size: 1.4rem;\n  font-weight: 700;\n  text-decoration: none;\n  position: relative;\n  line-height: 1.5;\n}\n@media screen and (min-width: 897px) {\n.blog #toc_container .toc_list li a:hover::after {\n    transform-origin: left top;\n    transform: scale(1, 1);\n}\n}\n.blog #toc_container .toc_list li a::after {\n  content: \"\";\n  background: #dadada;\n  width: 100%;\n  height: 1px;\n  position: absolute;\n  bottom: -4px;\n  left: 0;\n  transform: scale(0, 1);\n  transition: transform 0.3s;\n  transform-origin: right top;\n}\n.blog #toc_container .toc_list li ul {\n  border: none;\n}\n.blog #toc_container .toc_list li ul li:before {\n  display: none;\n}\n.blog #toc_container .toc_list li ul li a {\n  font-weight: 500;\n}\n.blog #toc_container li {\n  margin-top: 20px;\n}\n.blog .wp-pagenavi span,\n.blog .wp-pagenavi a {\n  border: 1px solid #bfbfbf7a;\n  color: #333;\n}\n.blog .wp-pagenavi span:hover,\n.blog .wp-pagenavi a:hover {\n  border-color: #12355d;\n  background-color: #12355d;\n  color: #fff;\n}\n.blog .wp-pagenavi span:hover::after,\n.blog .wp-pagenavi a:hover::after {\n  fill: #fff;\n}\n.blog .wp-pagenavi .extend {\n  display: none;\n}\n.blog .wp-pagenavi .nextpostslink,\n.blog .wp-pagenavi .previouspostslink,\n.blog .wp-pagenavi .first,\n.blog .wp-pagenavi .last {\n  overflow: hidden;\n  position: relative;\n}\n.blog .wp-pagenavi .nextpostslink::after,\n.blog .wp-pagenavi .previouspostslink::after,\n.blog .wp-pagenavi .first::after,\n.blog .wp-pagenavi .last::after {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  transition: 0.4s;\n}\nimg {\n  max-width: 100%;\n  height: auto;\n  /* vertical-align: bottom; */\n}\n.scale-img img {\n  height: 235px;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.thumb-img {\n  height: 235px;\n}\n.blog .wp-pagenavi .current {\n  border-color: #12355d;\n  background-color: #12355d;\n  color: #dadada;\n}\n@media screen and (min-width: 897px) {\n.blog--content {\n    padding: 80px 0 0;\n    margin: 100px auto 0;\n    max-width: 1200px;\n    width: 80%;\n}\n.blog--content.single_cont {\n    padding: 80px 0 0;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content {\n    padding: 130px 5% 0;\n    margin: 0;\n    width: 100%;\n    max-width: none;\n}\n}\n.blog--content h2 {\n  margin-bottom: 30px;\n  font-size: 2rem;\n  font-weight: 600;\n  letter-spacing: 0.08em;\n  color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--content h2 {\n    font-size: 1.8rem;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--content--inner {\n    display: flex;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--content--mainarea {\n    flex: 1;\n}\n}\n.blog--content--mainarea .error_txt {\n  font-size: 1.6rem;\n  color: #dadada;\n  margin-top: 60px;\n  line-height: 1.5;\n}\n.blog--content--list {\n  margin-bottom: 40px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--list {\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n}\n}\n.blog--content--item {\n  margin-bottom: 20px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--item {\n    width: 47.5%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--item {\n    display: block;\n}\n}\n.blog--content--item h3 {\n  font-weight: 700;\n  line-height: 1.56;\n  color: #000;\n}\n@media screen and (min-width: 897px) {\n.blog--content--item h3 {\n    font-size: 18px;\n    letter-spacing: 0.04em;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--item h3 {\n    font-size: 1.6rem;\n    letter-spacing: 0.08em;\n}\n}\n.blog--content--item .writing {\n  display: flex;\n  align-items: center;\n  justify-content: flex-end;\n  padding-top: 5px;\n  margin-top: 10px;\n  border-top: 1px solid #4d4d4d;\n}\n@media screen and (max-width: 896px) {\n.blog--content--item .writing {\n    padding-top: 15px;\n    margin-top: 15px;\n}\n}\n.blog--content--item .writing .person {\n  display: flex;\n  align-items: center;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea {\n    width: 280px;\n    margin-left: 7.14%;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea {\n    margin-top: 100px;\n}\n}\n.blog--content--sidearea .searcharea {\n  background-color: #ececec;\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .searcharea {\n    position: relative;\n}\n}\n.blog--content--sidearea .searcharea .search-text {\n  padding: 0 10px 0 19px;\n  line-height: 50px;\n  background-color: transparent;\n  width: calc(100% - 35px);\n}\n.blog--content--sidearea .sideheading {\n  padding-top: 35px;\n  margin-top: 35px;\n  margin-bottom: 28px;\n  border-top: 1px solid #4d4d4d;\n  font-size: 16px;\n  font-family: NotoSansJP-Bold;\n  color: #333;\n}\n\n/* @media screen and (max-width: 896px) {\n        .blog--content--sidearea .sp_cat {\n            position: fixed;\n            top: 68px;\n            background: #000;\n            display: flex;\n            overflow-x: scroll;\n            width: 100%;\n            padding: 7px 0;\n        }\n    } */\n.blog--content--sidearea .categoryitem {\n  display: inline-block;\n  padding: 10px;\n  margin-bottom: 10px;\n  margin-right: 5px;\n  border: 1px solid #4d4d4d;\n  font-size: 13px;\n  font-family: NotoSansJP-Bold;\n  letter-spacing: 0;\n  color: #333;\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .categoryitem {\n    white-space: nowrap;\n}\n.blog--content--sidearea .categoryitem:last-of-type {\n    margin-right: 40px;\n}\n}\n.blog--content--sidearea .categoryitem.current {\n  background-color: #dadada;\n  color: #000;\n  pointer-events: none;\n}\n.blog--content--sidearea .categoryitem.pickup {\n  display: none;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .categoryitem:hover {\n    background-color: #dadada;\n    color: #000;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .recommend {\n    display: none;\n}\n}\n.blog--content--sidearea .recommend--item {\n  display: block;\n  margin-bottom: 15px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .recommend--item:hover .hvrunder {\n    background-position: left bottom;\n    background-size: 100% 1px;\n}\n}\n.blog--content--sidearea .recommend--item.popular {\n  position: relative;\n}\n.blog--content--sidearea .recommend--item.popular::after {\n  content: \"\";\n  width: 40px;\n  height: 50px;\n  position: absolute;\n  top: -1px;\n  right: 5px;\n}\n.blog--content--sidearea .recommend--item .bloginfo {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 11px 0 8px;\n}\n.blog--content--sidearea .recommend--item .bloginfo .time {\n  font-size: 13px;\n  color: #333;\n  font-family: DIN-Bold;\n}\n.blog--content--sidearea .recommend--item h3 {\n  font-family: NotoSansJP-Bold;\n  line-height: 1.42;\n  color: #000;\n  position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .recommend--item h3 {\n    font-size: 14px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .recommend--item h3 {\n    font-size: 1.6rem;\n    letter-spacing: 0.08em;\n}\n}\n.blog--content--sidearea .sharearea .item {\n  height: 70px;\n  margin-bottom: 10px;\n}\n.blog--content--sidearea .sharearea .item .txt {\n  margin-left: 16px;\n  font-size: 1.4rem;\n}\n.blog--content--sidearea .bnr_area {\n  margin-top: 30px;\n}\n.blog--header .blogtitle {\n  padding-bottom: 30px;\n  margin-bottom: 30px;\n  line-height: 1.4;\n  letter-spacing: 0.04em;\n  position: relative;\n  transition: 0.8s;\n  transform: translateY(5%);\n  opacity: 0;\n  border-bottom: 2px solid #dadada;\n}\n@media screen and (min-width: 897px) {\n.blog--header .blogtitle {\n    font-size: 3.6rem;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--header .blogtitle {\n    font-size: 2.4rem;\n}\n}\n.blog--header .bloginfo {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  margin-bottom: 8px;\n  transition: 1.4s;\n  transform: translateY(5%);\n  opacity: 0;\n}\n.blog--header .bloginfo .left .cat {\n  margin-bottom: 0;\n  font-size: 1.3rem;\n}\n@media screen and (max-width: 896px) {\n.blog--header .bloginfo .left .cat {\n    margin-top: 5px;\n}\n}\n.blog--header .bloginfo .left .cat.pickup {\n  display: none;\n}\n.blog--header .bloginfo .left .cat a {\n  color: #000;\n  display: block;\n}\n.blog--header .bloginfo .left .cat:hover {\n  background: #000;\n}\n.blog--header .bloginfo .left .cat:hover a {\n  color: #dadada;\n}\n.blog--header .personinfo {\n  transition: 1.4s;\n  transform: translateY(5%);\n  opacity: 0;\n}\n.blog--article .photo {\n  margin-top: 40px;\n  transition: 1.6s;\n  transform: translateY(5%);\n  opacity: 0;\n}\n.blog--article code {\n  background: #b4b4b4;\n  font-size: 12px;\n  padding: 25px;\n}\n.blog--article h2 {\n  padding-bottom: 15px;\n  margin-top: 120px;\n  border-bottom: 2px solid #dadada;\n  font-size: 3.4rem;\n  line-height: 1.4;\n  font-weight: 600;\n}\n@media screen and (max-width: 896px) {\n.blog--article h2 {\n    font-size: 2.2rem;\n}\n}\n.blog--article h3 {\n  margin-top: 80px;\n  font-size: 2.4rem;\n  letter-spacing: 0.05em;\n  line-height: 1.4;\n  color: #dadada;\n  position: relative;\n  padding-left: 25px;\n}\n.blog--article h3::before {\n  content: \"\";\n  width: 3px;\n  height: 100%;\n  background-color: #dadada;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n@media screen and (max-width: 896px) {\n.blog--article h3 {\n    font-size: 2rem;\n}\n}\n.blog--article h4 {\n  margin-top: 60px;\n  font-size: 2rem;\n  font-weight: 600;\n  color: #dadada;\n  margin-bottom: -13px;\n}\n@media screen and (max-width: 896px) {\n.blog--article h4 {\n    font-size: 1.8rem;\n}\n}\n.blog--article h5 {\n  margin-top: 60px;\n  font-size: 1.6rem;\n  color: #dadada;\n}\n.blog--article p {\n  margin-top: 30px;\n  font-size: 1.6rem;\n  line-height: 2;\n  letter-spacing: 0.04em;\n  color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--article p {\n    font-size: 1.4rem;\n}\n}\n.blog--article p em {\n  color: #000;\n  font-weight: 600;\n  background-color: #ffed2a;\n  font-style: normal;\n}\n.blog--article p a {\n  font-size: 1.6rem;\n  font-weight: 600;\n  color: #4babdd;\n  color: #4babdd;\n  border-bottom: 1px solid #4babdd;\n  padding-bottom: 4px;\n}\n@media screen and (max-width: 896px) {\n.blog--article p a {\n    font-size: 1.4rem;\n}\n}\n.blog--article p s a {\n  margin-top: 30px;\n  font-size: 1.6rem;\n  padding: 18px 60px;\n  display: inline-block;\n  text-align: center;\n  background-color: #efefef;\n  transition: 0.3s;\n  color: #000;\n  border-radius: 0%;\n  letter-spacing: 0.12em;\n  position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog--article p s a:hover {\n    background: #ffed2a;\n}\n}\n.blog--article .wp-block-image {\n  margin-top: 60px;\n  text-align: center;\n}\n.blog--article .wp-block-image figcaption {\n  margin-top: 20px;\n}\n.blog--article h2 + .wp-block-image,\n.blog--article h3 + .wp-block-image,\n.blog--article h4 + .wp-block-image,\n.blog--article h5 + .wp-block-image {\n  margin-top: 30px;\n}\n.blog--article ul,\n.blog--article ol {\n  margin-top: 80px;\n  padding: 50px;\n  border: 1px solid #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--article ul,\n  .blog--article ol {\n    padding: 30px 5%;\n}\n}\n.blog--article ul li,\n.blog--article ol li {\n  color: #dadada;\n  font-size: 1.6rem;\n  line-height: 1.7;\n  position: relative;\n  letter-spacing: 0.05em;\n}\n.blog--article ul li:not(:first-child),\n.blog--article ol li:not(:first-child) {\n  margin-top: 30px;\n}\n@media screen and (max-width: 896px) {\n.blog--article ul li,\n  .blog--article ol li {\n    margin-top: 14px;\n}\n}\n.blog--article ul li {\n  padding-left: 20px;\n}\n.blog--article ul li::before {\n  content: \"\";\n  background-color: #dadada;\n  width: 7px;\n  height: 7px;\n  border-radius: 50%;\n  position: absolute;\n  top: 0.7em;\n  left: 0;\n}\n.blog--article ol li {\n  margin-left: 25px;\n  list-style: auto;\n}\n.blog--article h2 + .wp-block-quote,\n.blog--article h3 + .wp-block-quote,\n.blog--article h4 + .wp-block-quote,\n.blog--article h5 + .wp-block-quote {\n  margin-top: 30px;\n}\n.blog--article .wp-block-quote {\n  position: relative;\n  padding: 40px 80px;\n  margin-top: 80px;\n  border: 1px solid #565656;\n  border-left: 4px solid #dadada;\n}\n.blog--article .wp-block-quote::after,\n.blog--article .wp-block-quote::before {\n  content: \"\";\n  position: absolute;\n  width: 25px;\n  height: 25px;\n  opacity: 1;\n}\n.blog--article .wp-block-quote p {\n  margin: 0;\n  font-size: 1.4rem;\n}\n.blog--article .wp-block-quote cite {\n  display: inline-block;\n  margin-top: 16px;\n  color: #dadada;\n  font-size: 1.3rem;\n}\n.blog--footer {\n  margin-top: 100px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer {\n    margin-top: 80px;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .sharearea ul {\n    display: flex;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .sharearea li {\n    width: 50%;\n}\n}\n.blog--footer .sharearea .item {\n  height: 95px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .sharearea .item {\n    height: 70px;\n}\n}\n.blog--footer .sharearea .item .txt {\n  margin-left: 16px;\n  font-size: 1.6rem;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .sharearea .item .txt {\n    font-size: 1.4rem;\n}\n}\n.blog--footer .authorinfo {\n  margin-top: 30px;\n  border: 1px solid #2b2b2b;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorinfo {\n    display: flex;\n    justify-content: center;\n    padding: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorinfo {\n    padding: 50px 5%;\n}\n}\n.blog--footer .authorinfo .icon {\n  width: 140px;\n  margin-right: 20px;\n}\n.blog--footer .authorinfo .textarea {\n  flex: 1;\n  margin-left: 20px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorinfo .textarea {\n    margin-top: 20px;\n}\n}\n.blog--footer .authorinfo .textarea .name {\n  font-size: 1.8rem;\n  font-weight: 700;\n  letter-spacing: 0.04em;\n  line-height: 1.5;\n  color: #dadada;\n}\n.blog--footer .authorinfo .textarea p {\n  margin-top: 18px;\n  font-size: 1.4rem;\n  line-height: 1.714;\n  color: #dadada;\n}\n.blog--footer .authorinfo .textarea .tw {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: 1px solid #2b2b2b;\n  padding: 15px;\n  margin-top: 30px;\n  width: 210px;\n  transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorinfo .textarea .tw:hover {\n    background: #dadada;\n}\n.blog--footer .authorinfo .textarea .tw:hover .icon {\n    filter: invert(0);\n}\n.blog--footer .authorinfo .textarea .tw:hover .txt {\n    color: #000;\n}\n}\n.blog--footer .authorinfo .textarea .tw .icon {\n  transition: 0.4s;\n  margin-right: 15px;\n  width: 20px;\n  filter: invert(1);\n}\n.blog--footer .authorinfo .textarea .tw .txt {\n  transition: 0.4s;\n  font-size: 1.4rem;\n  color: #dadada;\n  font-weight: 600;\n}\n.blog--footer .authorarticle {\n  margin-top: 30px;\n  border: 1px solid #2b2b2b;\n  position: relative;\n  padding: 62px 40px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle {\n    padding: 50px 5%;\n}\n}\n.blog--footer .authorarticle h4 {\n  font-size: 2rem;\n  letter-spacing: 0.04em;\n  margin-bottom: 40px;\n  color: #dadada;\n}\n.blog--footer .authorarticle--item {\n  padding-bottom: 20px;\n  margin-bottom: 20px;\n  border-bottom: 1px solid #2b2b2b;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item {\n    display: flex;\n    align-items: center;\n}\n.blog--footer .authorarticle--item:last-child {\n    border: none;\n    padding: 0;\n    margin: 0;\n}\n.blog--footer .authorarticle--item:hover .hvrunder {\n    background-position: left bottom;\n    background-size: 100% 1px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle--item {\n    display: block;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .thumb {\n    width: 43.75%;\n}\n.blog--footer .authorarticle--item .thumb .more_txt {\n    top: auto;\n    right: auto;\n    padding-bottom: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .textarea {\n    flex: 1;\n    margin-left: 30px;\n}\n}\n.blog--footer .authorarticle--item .textarea h5 {\n  font-size: 1.6rem;\n  font-weight: 700;\n  line-height: 1.625;\n  color: #000;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .textarea h5 {\n    margin: 14px 0 20px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle--item .textarea h5 {\n    margin: 0 0 16px;\n}\n}\n.blog--footer .authorarticle--item .textarea .cat {\n  padding: 2px 10px;\n  font-size: 1.2rem;\n}\n.blog--footer .authorarticle--item .textarea .cat.pickup {\n  display: none;\n}\n.blog--footer .authorarticle--item .writing {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 20px;\n}\n.blog--footer .authorarticle--item .personinfo {\n  display: flex;\n  align-items: center;\n}\n.blog--footer .authorarticle--item .personinfo .icon {\n  width: 40px;\n  margin-right: 10px;\n  border-radius: 50%;\n}\n.blog--footer .authorarticle--item .personinfo .name {\n  font-size: 1.3rem;\n  letter-spacing: 0.04em;\n  font-weight: bold;\n}\n.blog--footer .authorarticle .more_txt {\n  color: #dadada;\n  font-size: 1.4rem;\n  font-family: \"DIN\";\n  letter-spacing: 0.06em;\n  text-transform: uppercase;\n  position: relative;\n  padding-right: 20px;\n  position: absolute;\n  top: 63px;\n  right: 40px;\n  padding-bottom: 5px;\n}\n.blog--footer .authorarticle .more_txt::after,\n.blog--footer .authorarticle .more_txt::before {\n  content: \"\";\n  height: 1px;\n  background-color: #dadada;\n  position: absolute;\n  right: 0;\n  top: 50%;\n  transition: 0.3s;\n}\n.blog--footer .authorarticle .more_txt::after {\n  width: 6px;\n  transform: rotate(45deg) translateY(-3px);\n}\n.blog--footer .authorarticle .more_txt::before {\n  width: 10px;\n}\n.blog--footer .authorarticle .more_txt .underline {\n  position: relative;\n}\n.blog--footer .authorarticle .more_txt .underline::after {\n  content: \"\";\n  background: #dadada;\n  width: 100%;\n  height: 1px;\n  position: absolute;\n  bottom: -4px;\n  left: 0;\n  transform: scale(0, 1);\n  transition: transform 0.3s;\n  transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle .more_txt:hover::after,\n  .blog--footer .authorarticle .more_txt:hover::before {\n    right: -5%;\n}\n.blog--footer .authorarticle .more_txt:hover .underline::after {\n    transform-origin: left top;\n    transform: scale(1, 1);\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle .more_txt {\n    position: relative;\n    top: auto;\n    right: auto;\n    margin-top: 0;\n    display: inline-block;\n}\n.blog {\n    padding: 60px 5%;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23832,7 +24013,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.mycontents-wides {\n    padding: 60px 10% 120px;\n}\n.btn-contact {\n    background: var(--textcolor);\n    border-radius: 5px;\n    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%);\n    color: #fff;\n    flex: none;\n    font-size: 15px;\n    height: 60px;\n    justify-content: center;\n    margin: 24px 0px 0px 0px;\n    opacity: 1;\n    padding: 15px;\n    width: 40%;\n    max-width: 100%;\n}\n.btn-contact:hover {\n    color: #fff\n}\n.contents {\n    margin-top: 60px;\n    margin-bottom: 60px;\n}\n.readCopy {\n    font-size: 20px;\n    line-height: 1.4;\n    letter-spacing: 0em;\n    color: #000;\n    text-align: center;\n    margin-bottom: 30px;\n}\n.readCopy small {\n    display: block;\n    font-size: 15px;\n    line-height: 1.8666666667;\n    letter-spacing: 0em;\n}\n.readCopy small strong {\n    color: #e60039;\n}\n.btn-download {\n    position: relative;\n    display: flex;\n    width: 50%;\n    height: 40px;\n    justify-content: center;\n    align-items: center;\n    text-align: center;\n    font-weight: bold;\n    font-size: 14px;\n    color: #FFFFFF;\n    background: var(--textcolor);\n    box-shadow: 0px 4px 7px rgb(0 0 0 / 15%);\n    border-radius: 30px;\n}\n.contact-text {\n    margin-top: 0px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    text-align: center;\n    letter-spacing: 0.05em;\n    color: #333333;\n}\n@media (max-width: 767px) {\n.contact-text {\n        margin-top: -32px;\n        margin-bottom: 30px;\n        font-size: 15px;\n        line-height: 22px;\n}\n}\n.contact {\n    padding-top: 60px;\n    padding-bottom: 60px;\n    margin-bottom: 120px;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);\n    border-radius: 20px;\n}\n.contact table {\n    margin: 0 auto;\n    width: 630px;\n    border-collapse: separate;\n    border-spacing: 0 30px;\n    margin-bottom: 30px;\n    /*60 - 30*/\n}\n.contact th {\n    display: inline-block;\n    width: 170px;\n}\n.contact th label {\n    font-size: 16px;\n    line-height: 154.7%;\n    line-height: 40px;\n    letter-spacing: 0.05em;\n}\n.contact td {\n    display: inline-block;\n    width: calc(100% - 170px);\n}\n.contact .company-main input,\n.contact .name input,\n.contact .mail input,\n.contact .tell input {\n    padding: 0 15px;\n    line-height: 40px;\n    background: #FFFFFF;\n    border: 1px solid #727171;\n    box-sizing: border-box;\n    border-radius: 3px;\n    width: 100%;\n}\n.contact .name input {\n    width: calc((100% - 30px) / 2);\n    display: inline-block;\n}\n.contact .name td {\n    position: relative;\n}\n.mw_wp_form_confirm td {\n    padding-top: 7px;\n}\n.contact .name td input:last-child {\n    position: absolute;\n    top: 0;\n    right: 0;\n}\n.contact .body textarea {\n    padding: 15px;\n    width: 100%;\n    height: 230px;\n    line-height: 25px;\n    background: #FFFFFF;\n    border: 1px solid #727171;\n    box-sizing: border-box;\n    border-radius: 3px;\n}\n.contact .company-main input,\n.contact .name input,\n.contact .mail input,\n.contact .tell input {\n    height: 40px;\n}\n.contact input {\n    display: block;\n}\n.contact .mast {\n    position: relative;\n}\n.contact .mast::before {\n    content: \"必須\";\n    display: inline-block;\n    position: absolute;\n    width: 46px;\n    height: 28px;\n    top: 6px;\n    left: -76px;\n    background: #333333;\n    border-radius: 3px;\n    font-weight: 500;\n    font-size: 12px;\n    line-height: 28px;\n    color: #FFFFFF;\n    text-align: center;\n}\n.mw_wp_form_confirm .mast::before {\n    display: none;\n}\n.mw_wp_form_confirm .privacy-check {\n    display: none;\n}\n.privacy-check {\n    text-align: center;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 22px;\n    color: var(--textcolor);\n}\n.privacy-check a {\n    text-decoration: underline;\n}\n.privacy-check label {\n    display: inline-block;\n    margin-top: 12px;\n}\n.mwform-checkbox-field input {\n    display: inline-block;\n}\n.submit-btn {\n    display: flex;\n    justify-content: center;\n}\n.viewmore-btn_white {\n    background-color: #fff !important;\n    color: var(--textcolor) !important;\n    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15) !important;\n}\n.confirmation-btn {\n    position: relative;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 240px;\n    text-align: center;\n    font-weight: bold;\n    font-size: 16px;\n    letter-spacing: 0.1em;\n    color: #FFFFFF;\n    background: var(--textcolor);\n    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n    border-radius: 30px;\n    height: 60px;\n}\n.confirmation-btn:hover {\n    color: #fff;\n}\n.confirmation-btn::after {\n    position: absolute;\n    content: \"\";\n    display: inline-block;\n    height: 40px;\n    width: 40px;\n    top: 10px;\n    right: 8px;\n}\n.submit-btn br {\n    display: none;\n}\n.mw_wp_form_confirm .submit-btn {\n    display: flex;\n    justify-content: center;\n}\n.mw_wp_form_confirm .submit-btn input:first-child {\n    margin: 0;\n}\n.mw_wp_form_confirm .submit-btn input:last-child {\n    margin-right: 0;\n    margin-left: 60px;\n}\n@media (max-width: 1000px) {\ntable,\n    tbody,\n    tr,\n    th,\n    td {\n        display: block;\n}\n.contact table {\n        margin: 0 auto;\n        max-width: 600px;\n        width: 100%;\n        padding-left: 14px;\n        padding-right: 14px;\n        -webkit-appearance: none;\n        -webkit-text-size-adjust: 100%;\n}\n.contact th,\n    .contact td {\n        -webkit-appearance: none;\n        -webkit-text-size-adjust: 100%;\n        display: block;\n        width: 100%;\n}\n.contact th {\n        margin-top: 30px;\n        height: 32px;\n}\n.contact th label {\n        font-size: 14px;\n        line-height: 24px;\n}\n.mast {\n        padding-left: 54px;\n}\n.contact .mast::before {\n        width: 42px;\n        height: 24px;\n        line-height: 24px;\n        left: 0;\n        top: 0;\n}\n.contact .name input {\n        width: 100%;\n        position: relative !important;\n        -webkit-appearance: none;\n}\n.contact .name td input:first-child {\n        margin-bottom: 10px;\n}\n.mw_wp_form_confirm .mast {\n        padding-left: 0;\n}\n.contact .company-main input,\n    .contact .name input,\n    .contact .mail input,\n    .contact .tell input {\n        -webkit-appearance: none;\n        height: 50px;\n        font-size: 14px;\n        line-height: 21px;\n        padding-left: 12px;\n        padding-right: 12px;\n}\n.contact .body textarea {\n        -webkit-appearance: none;\n        padding: 14px 12px;\n        font-size: 14px;\n        line-height: 22px;\n        color: #727171;\n}\n.mw_wp_form_confirm .submit-btn {\n        display: block;\n        margin-top: 20px;\n        /*50 - 30*/\n}\n.mw_wp_form_confirm .submit-btn input:first-child {\n        -webkit-appearance: none;\n        margin: 0 auto 30px auto;\n}\n.mw_wp_form_confirm .submit-btn input:last-child {\n        -webkit-appearance: none;\n        margin: 0 auto;\n}\n.privacy-check {\n        margin-top: 30px;\n}\n}\n@media (max-width: 500px) {\n.privacy-check {\n        width: calc(100% - 30px);\n        margin: 30px auto 0 auto;\n        text-align: left;\n}\n.privacy-check .mwform-checkbox-field {\n        text-align: center;\n        display: block;\n}\n}\n.mw_wp_form_complete {\n    margin-bottom: 120px;\n    text-align: center;\n}\n.mw_wp_form_complete .complete-text {\n    margin-bottom: 120px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    text-align: center;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.viewmore-btn__img {\n\n    background-size: cover;\n}\n@media (max-width: 767px) {\n.mw_wp_form_complete {\n        margin-bottom: 60px;\n}\n.mw_wp_form_complete .complete-text {\n        margin-bottom: 50px;\n        font-size: 15px;\n        line-height: 22px;\n}\n}\n\n/*menu*/\n.menu {\n    margin-bottom: 0;\n}\n.contact .entry_job select,\n.contact .entry_category select,\n.contact .year select {\n    padding: 0 15px;\n    line-height: 40px;\n    background: #FFFFFF;\n    border: 1px solid #727171;\n    box-sizing: border-box;\n    border-radius: 3px;\n    width: 100%;\n}\n.select-contents {\n    position: relative;\n}\n.year .select-contents {\n    width: calc((100% - 80px) /2);\n    display: inline-block;\n}\n.year p {\n    display: inline-block;\n    line-height: 100%;\n    font-weight: 500;\n    font-size: 16px;\n}\n.year td p:nth-child(3) {\n    margin-right: 30px;\n}\n.select-contents::before {\n    position: absolute;\n    content: \"â–¼\";\n    font-size: 8px;\n    top: 16px;\n    right: 16px;\n    color: var(--textcolor);\n}\n.mw_wp_form_confirm .select-contents::before {\n    display: none;\n}\n.mw_wp_form_confirm .select-contents {\n    display: inline;\n}\n[type=\"file\"] {\n    display: none !important;\n}\n.mwform-file-delete {\n    position: absolute;\n    left: 0;\n    top: 9px;\n}\n.file__name {\n    display: inline-block;\n    margin-left: 15px;\n    line-height: 40px;\n}\n.file__text {\n    margin-top: 10px;\n    font-size: 12px;\n    line-height: 19px;\n    color: var(--textcolor);\n}\n.mw_wp_form_confirm .file__name {\n    margin-left: 0;\n}\n.mw-wp-form_file {\n    left: 0;\n    position: absolute;\n    display: inline-block;\n    text-align: left;\n    line-height: 40px;\n    height: 40px;\n    font-size: 16px;\n    background-color: #fff;\n    color: var(--textcolor);\n}\n.mw_wp_form_confirm .file__text {\n    display: none;\n}\n.mw_wp_form_complete {\n    margin-top: -120px;\n    margin-bottom: -60px;\n}\n.mw_wp_form_complete .viewmore-btn__img {\n    background-image: none;\n}\n@media (max-width: 767px) {\n.mw_wp_form_complete {\n        margin-top: -90px;\n        margin-bottom: -120px;\n}\n}\n.form-group.privacy_policy {\n    flex-flow: column wrap;\n}\n.form-group.privacy_policy .formHeading {\n    margin-bottom: 10px;\n}\n.form-group.privacy_policy .col-sm-9,\n.form-group.privacy_policy .formHeading {\n    width: 100%;\n    max-width: 1100px;\n    text-align: center;\n}\n.btn-primary {\n    line-height: 3;\n    padding: 0;\n    color: #fff;\n    border-color: #e60039;\n    border-radius: 32px;\n    background-color: #e60039;\n    font-size: 20px;\n    width: 368px;\n}\n.form-group:after {\n    display: block;\n    margin: 0 15px 15px 15px;\n    padding-bottom: 20px;\n    height: auto;\n    width: auto;\n    border-bottom: dotted 1px #CCC;\n}\n.form-group:after {\n    margin: 0;\n    padding-bottom: 15px;\n    border: none;\n    flex: 0 0 100%;\n}\n.btn-primary:active,\n.btn-primary:focus,\n.btn-primary:hover {\n    transition: .2s;\n    color: #e60039;\n    border-color: #e60039;\n    border-radius: 32px;\n    background-color: #fff;\n}\n.formInputOuter span.value span {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-right: 1em;\n}\n.privacy_policy .value {\n    display: flex;\n    justify-content: center;\n}\n.formInputOuter label {\n    margin-left: 3px;\n    font-weight: normal;\n    margin-bottom: 0px;\n}\n.formInputInner p.description {\n    font-size: 15px;\n    margin: 7px 0 0 0;\n}\nform.form p label {\n    color: #000000;\n}\n.privacy_policy {\n    text-align: center;\n}\n.privacy_policy a {\n    text-decoration: underline;\n    color: #000;\n}\n.formInputOuter {\n    display: inline-block;\n    width: 100%;\n}\n.formInputInner.last_name,\n.formInputInner.first_name,\n.formInputInner.last_kana,\n.formInputInner.first_kana {\n    display: block;\n    float: left;\n    width: 50%;\n}\n.formInputInner.last_name,\n.formInputInner.last_kana,\n.formInputInner.last_name p.description,\n.formInputInner.last_kana p.description {\n    padding-right: 5px;\n}\ninput[type=text].form-control:focus,\nselect.form-control:focus,\ntextarea.form-control:focus {\n    box-shadow: none;\n    background-color: #f5f5f5;\n}\n.primary-contact-form {\n    margin: 0 auto 30px;\n}\n.form-group {\n    flex-flow: row wrap;\n    align-items: center;\n    margin-bottom: 15px;\n    display: flex;\n}\n.formHeading {\n    margin-bottom: 0;\n    text-align: right;\n    margin-bottom: 10px;\n}\n.required .formHeading:before {\n    display: inline-block;\n    padding: 0;\n    content: '※';\n    color: #e60039;\n}\n.formHeading label {\n    font-weight: 700;\n    margin-bottom: 0;\n}\n.formInputOuter {\n    display: inline-block;\n    width: 100%;\n}\ninput[type=text].form-control:focus,\nselect.form-control:focus,\ntextarea.form-control:focus {\n    box-shadow: none;\n}\ninput[type=text].form-control,\nselect.form-control,\ntextarea.form-control {\n    padding: 10px 14px;\n    border: none;\n    border-radius: 0;\n    background-color: #f5f5f5;\n    box-shadow: none;\n}\n.formInputInner input,\n.formInputInner select,\n.formInputInner textarea {\n    color: #1e1e1e !important;\n}\n@media screen and (max-width: 767px) {\n.contact{\n        padding-top: 20px;\n        padding-bottom: 20px;\n}\n.primary-contact-form {\n        width: 100%;\n}\n.form-group {\n        flex-flow: column wrap;\n        text-align: left;\n}\n.formHeading {\n        text-align: left;\n}\n.contents {\nmargin: 0px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.mycontents-wides {\n  padding: 60px 10% 120px;\n}\n.btn-contact {\n  background: var(--textcolor);\n  border-radius: 5px;\n  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%);\n  color: #fff;\n  flex: none;\n  font-size: 15px;\n  height: 60px;\n  justify-content: center;\n  margin: 24px 0px 0px 0px;\n  opacity: 1;\n  padding: 15px;\n  width: 40%;\n  max-width: 100%;\n}\n.btn-contact:hover {\n  color: #fff\n}\n.contents {\n  margin-top: 60px;\n  margin-bottom: 60px;\n}\n.readCopy {\n  font-size: 20px;\n  line-height: 1.4;\n  letter-spacing: 0em;\n  color: #000;\n  text-align: center;\n  margin-bottom: 30px;\n}\n.readCopy small {\n  display: block;\n  font-size: 15px;\n  line-height: 1.8666666667;\n  letter-spacing: 0em;\n}\n.readCopy small strong {\n  color: #e60039;\n}\n.btn-download {\n  position: relative;\n  display: flex;\n  width: 50%;\n  height: 40px;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  font-weight: bold;\n  font-size: 14px;\n  color: #FFFFFF;\n  background: var(--textcolor);\n  box-shadow: 0px 4px 7px rgb(0 0 0 / 15%);\n  border-radius: 30px;\n}\n.contact-text {\n  margin-top: 0px;\n  font-weight: bold;\n  font-size: 16px;\n  line-height: 24px;\n  text-align: center;\n  letter-spacing: 0.05em;\n  color: #333333;\n}\n@media (max-width: 767px) {\n.contact-text {\n    margin-top: -32px;\n    margin-bottom: 30px;\n    font-size: 15px;\n    line-height: 22px;\n}\n}\n.contact {\n  padding-top: 60px;\n  padding-bottom: 60px;\n  margin-bottom: 120px;\n  background: #FFFFFF;\n  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);\n  border-radius: 20px;\n}\n.contact table {\n  margin: 0 auto;\n  width: 630px;\n  border-collapse: separate;\n  border-spacing: 0 30px;\n  margin-bottom: 30px;\n  /*60 - 30*/\n}\n.contact th {\n  display: inline-block;\n  width: 170px;\n}\n.contact th label {\n  font-size: 16px;\n  line-height: 154.7%;\n  line-height: 40px;\n  letter-spacing: 0.05em;\n}\n.contact td {\n  display: inline-block;\n  width: calc(100% - 170px);\n}\n.contact .company-main input,\n.contact .name input,\n.contact .mail input,\n.contact .tell input {\n  padding: 0 15px;\n  line-height: 40px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n  width: 100%;\n}\n.contact .name input {\n  width: calc((100% - 30px) / 2);\n  display: inline-block;\n}\n.contact .name td {\n  position: relative;\n}\n.mw_wp_form_confirm td {\n  padding-top: 7px;\n}\n.contact .name td input:last-child {\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n.contact .body textarea {\n  padding: 15px;\n  width: 100%;\n  height: 230px;\n  line-height: 25px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n}\n.contact .company-main input,\n.contact .name input,\n.contact .mail input,\n.contact .tell input {\n  height: 40px;\n}\n.contact input {\n  display: block;\n}\n.contact .mast {\n  position: relative;\n}\n.contact .mast::before {\n  content: \"必須\";\n  display: inline-block;\n  position: absolute;\n  width: 46px;\n  height: 28px;\n  top: 6px;\n  left: -76px;\n  background: #333333;\n  border-radius: 3px;\n  font-weight: 500;\n  font-size: 12px;\n  line-height: 28px;\n  color: #FFFFFF;\n  text-align: center;\n}\n.mw_wp_form_confirm .mast::before {\n  display: none;\n}\n.mw_wp_form_confirm .privacy-check {\n  display: none;\n}\n.privacy-check {\n  text-align: center;\n  font-weight: 500;\n  font-size: 14px;\n  line-height: 22px;\n  color: var(--textcolor);\n}\n.privacy-check a {\n  text-decoration: underline;\n}\n.privacy-check label {\n  display: inline-block;\n  margin-top: 12px;\n}\n.mwform-checkbox-field input {\n  display: inline-block;\n}\n.submit-btn {\n  display: flex;\n  justify-content: center;\n}\n.viewmore-btn_white {\n  background-color: #fff !important;\n  color: var(--textcolor) !important;\n  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15) !important;\n}\n.confirmation-btn {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 240px;\n  text-align: center;\n  font-weight: bold;\n  font-size: 16px;\n  letter-spacing: 0.1em;\n  color: #FFFFFF;\n  background: var(--textcolor);\n  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n  border-radius: 30px;\n  height: 60px;\n}\n.confirmation-btn:hover {\n  color: #fff;\n}\n.confirmation-btn::after {\n  position: absolute;\n  content: \"\";\n  display: inline-block;\n  height: 40px;\n  width: 40px;\n  top: 10px;\n  right: 8px;\n}\n.submit-btn br {\n  display: none;\n}\n.mw_wp_form_confirm .submit-btn {\n  display: flex;\n  justify-content: center;\n}\n.mw_wp_form_confirm .submit-btn input:first-child {\n  margin: 0;\n}\n.mw_wp_form_confirm .submit-btn input:last-child {\n  margin-right: 0;\n  margin-left: 60px;\n}\n@media (max-width: 1000px) {\ntable,\n  tbody,\n  tr,\n  th,\n  td {\n    display: block;\n}\n.contact table {\n    margin: 0 auto;\n    max-width: 600px;\n    width: 100%;\n    padding-left: 14px;\n    padding-right: 14px;\n    -webkit-appearance: none;\n    -webkit-text-size-adjust: 100%;\n}\n.contact th,\n  .contact td {\n    -webkit-appearance: none;\n    -webkit-text-size-adjust: 100%;\n    display: block;\n    width: 100%;\n}\n.contact th {\n    margin-top: 30px;\n    height: 32px;\n}\n.contact th label {\n    font-size: 14px;\n    line-height: 24px;\n}\n.mast {\n    padding-left: 54px;\n}\n.contact .mast::before {\n    width: 42px;\n    height: 24px;\n    line-height: 24px;\n    left: 0;\n    top: 0;\n}\n.contact .name input {\n    width: 100%;\n    position: relative !important;\n    -webkit-appearance: none;\n}\n.contact .name td input:first-child {\n    margin-bottom: 10px;\n}\n.mw_wp_form_confirm .mast {\n    padding-left: 0;\n}\n.contact .company-main input,\n  .contact .name input,\n  .contact .mail input,\n  .contact .tell input {\n    -webkit-appearance: none;\n    height: 50px;\n    font-size: 14px;\n    line-height: 21px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.contact .body textarea {\n    -webkit-appearance: none;\n    padding: 14px 12px;\n    font-size: 14px;\n    line-height: 22px;\n    color: #727171;\n}\n.mw_wp_form_confirm .submit-btn {\n    display: block;\n    margin-top: 20px;\n    /*50 - 30*/\n}\n.mw_wp_form_confirm .submit-btn input:first-child {\n    -webkit-appearance: none;\n    margin: 0 auto 30px auto;\n}\n.mw_wp_form_confirm .submit-btn input:last-child {\n    -webkit-appearance: none;\n    margin: 0 auto;\n}\n.privacy-check {\n    margin-top: 30px;\n}\n}\n@media (max-width: 500px) {\n.privacy-check {\n    width: calc(100% - 30px);\n    margin: 30px auto 0 auto;\n    text-align: left;\n}\n.privacy-check .mwform-checkbox-field {\n    text-align: center;\n    display: block;\n}\n}\n.mw_wp_form_complete {\n  margin-bottom: 120px;\n  text-align: center;\n}\n.mw_wp_form_complete .complete-text {\n  margin-bottom: 120px;\n  font-weight: bold;\n  font-size: 16px;\n  line-height: 24px;\n  text-align: center;\n  letter-spacing: 0.05em;\n  color: var(--textcolor);\n}\n.viewmore-btn__img {\n\n  background-size: cover;\n}\n@media (max-width: 767px) {\n.mw_wp_form_complete {\n    margin-bottom: 60px;\n}\n.mw_wp_form_complete .complete-text {\n    margin-bottom: 50px;\n    font-size: 15px;\n    line-height: 22px;\n}\n}\n\n/*menu*/\n.menu {\n  margin-bottom: 0;\n}\n.contact .entry_job select,\n.contact .entry_category select,\n.contact .year select {\n  padding: 0 15px;\n  line-height: 40px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n  width: 100%;\n}\n.select-contents {\n  position: relative;\n}\n.year .select-contents {\n  width: calc((100% - 80px) /2);\n  display: inline-block;\n}\n.year p {\n  display: inline-block;\n  line-height: 100%;\n  font-weight: 500;\n  font-size: 16px;\n}\n.year td p:nth-child(3) {\n  margin-right: 30px;\n}\n.select-contents::before {\n  position: absolute;\n  content: \"â–¼\";\n  font-size: 8px;\n  top: 16px;\n  right: 16px;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .select-contents::before {\n  display: none;\n}\n.mw_wp_form_confirm .select-contents {\n  display: inline;\n}\n[type=\"file\"] {\n  display: none !important;\n}\n.mwform-file-delete {\n  position: absolute;\n  left: 0;\n  top: 9px;\n}\n.file__name {\n  display: inline-block;\n  margin-left: 15px;\n  line-height: 40px;\n}\n.file__text {\n  margin-top: 10px;\n  font-size: 12px;\n  line-height: 19px;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .file__name {\n  margin-left: 0;\n}\n.mw-wp-form_file {\n  left: 0;\n  position: absolute;\n  display: inline-block;\n  text-align: left;\n  line-height: 40px;\n  height: 40px;\n  font-size: 16px;\n  background-color: #fff;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .file__text {\n  display: none;\n}\n.mw_wp_form_complete {\n  margin-top: -120px;\n  margin-bottom: -60px;\n}\n.mw_wp_form_complete .viewmore-btn__img {\n  background-image: none;\n}\n@media (max-width: 767px) {\n.mw_wp_form_complete {\n    margin-top: -90px;\n    margin-bottom: -120px;\n}\n}\n.form-group.privacy_policy {\n  flex-flow: column wrap;\n}\n.form-group.privacy_policy .formHeading {\n  margin-bottom: 10px;\n}\n.form-group.privacy_policy .col-sm-9,\n.form-group.privacy_policy .formHeading {\n  width: 100%;\n  max-width: 1100px;\n  text-align: center;\n}\n.btn-primary {\n  line-height: 3;\n  padding: 0;\n  color: #fff;\n  border-color: #e60039;\n  border-radius: 32px;\n  background-color: #e60039;\n  font-size: 20px;\n  width: 368px;\n}\n.form-group:after {\n  display: block;\n  margin: 0 15px 15px 15px;\n  padding-bottom: 20px;\n  height: auto;\n  width: auto;\n  border-bottom: dotted 1px #CCC;\n}\n.form-group:after {\n  margin: 0;\n  padding-bottom: 15px;\n  border: none;\n  flex: 0 0 100%;\n}\n.btn-primary:active,\n.btn-primary:focus,\n.btn-primary:hover {\n  transition: .2s;\n  color: #e60039;\n  border-color: #e60039;\n  border-radius: 32px;\n  background-color: #fff;\n}\n.formInputOuter span.value span {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-right: 1em;\n}\n.privacy_policy .value {\n  display: flex;\n  justify-content: center;\n}\n.formInputOuter label {\n  margin-left: 3px;\n  font-weight: normal;\n  margin-bottom: 0px;\n}\n.formInputInner p.description {\n  font-size: 15px;\n  margin: 7px 0 0 0;\n}\nform.form p label {\n  color: #000000;\n}\n.privacy_policy {\n  text-align: center;\n}\n.privacy_policy a {\n  text-decoration: underline;\n  color: #000;\n}\n.formInputOuter {\n  display: inline-block;\n  width: 100%;\n}\n.formInputInner.last_name,\n.formInputInner.first_name,\n.formInputInner.last_kana,\n.formInputInner.first_kana {\n  display: block;\n  float: left;\n  width: 50%;\n}\n.formInputInner.last_name,\n.formInputInner.last_kana,\n.formInputInner.last_name p.description,\n.formInputInner.last_kana p.description {\n  padding-right: 5px;\n}\ninput[type=text].form-control:focus,\nselect.form-control:focus,\ntextarea.form-control:focus {\n  box-shadow: none;\n  background-color: #f5f5f5;\n}\n.primary-contact-form {\n  margin: 0 auto 30px;\n}\n.form-group {\n  flex-flow: row wrap;\n  align-items: center;\n  margin-bottom: 15px;\n  display: flex;\n}\n.formHeading {\n  margin-bottom: 0;\n  text-align: right;\n  margin-bottom: 10px;\n}\n.required .formHeading:before {\n  display: inline-block;\n  padding: 0;\n  content: '※';\n  color: #e60039;\n}\n.formHeading label {\n  font-weight: 700;\n  margin-bottom: 0;\n}\n.formInputOuter {\n  display: inline-block;\n  width: 100%;\n}\ninput[type=text].form-control:focus,\nselect.form-control:focus,\ntextarea.form-control:focus {\n  box-shadow: none;\n}\ninput[type=text].form-control,\nselect.form-control,\ntextarea.form-control {\n  padding: 10px 14px;\n  border: none;\n  border-radius: 0;\n  background-color: #f5f5f5;\n  box-shadow: none;\n}\n.formInputInner input,\n.formInputInner select,\n.formInputInner textarea {\n  color: #1e1e1e !important;\n}\n@media screen and (max-width: 767px) {\n.contact {\n    padding-top: 20px;\n    padding-bottom: 20px;\n}\n.primary-contact-form {\n    width: 100%;\n}\n.form-group {\n    flex-flow: column wrap;\n    text-align: left;\n}\n.formHeading {\n    text-align: left;\n}\n.contents {\n    margin: 0px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24192,27 +24373,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\r\n    margin-top: 100px;\r\n    margin-bottom: 100px;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.single {\r\n    width: calc(100% - 440px);\n}\n.single__head {\r\n    margin-bottom: 60px;\r\n    padding: 30px 30px 20px 30px;\r\n    background: #FFFFFF;\r\n    border: none !important;;\r\n    box-sizing: border-box;\r\n    border-radius: 10px;\n}\n.single__head__title {\r\n    font-size: 35px;\r\n    padding-bottom: 30px;\r\n    margin-bottom: 30px;\r\n    line-height: 1.4;\r\n    letter-spacing: 0.04em;\r\n    position: relative;\r\n    transition: 0.8s;\r\n    transform: translateY(5%);\r\n    /* opacity: 0; */\r\n    border-bottom: 2px solid #333;\r\n    color: #333;\n}\n.single__head__flex {\r\n    display: flex;\n}\n.single__head__tags {\r\n    margin-left: auto!important;\r\n    text-align: right;\r\n    width: 50%;\r\n    font-weight: bold;\r\n    font-size: 12px;\r\n    line-height: 18px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__head__date {\r\n    width: 50%;\r\n    margin-left:0px!important;\r\n    display: inline-block;\r\n    text-align: left!important;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__thumbnail {\r\n    margin-bottom: 60px;\r\n    width: 100%;\r\n    height: 425px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    border-radius: 10px;\n}\r\n\r\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\r\n    padding: 20px 30px;\r\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\r\n    margin-bottom: 28px;\r\n    display: inline-block;\r\n    padding-left: 35px;\r\n    position: relative;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 4px;\r\n    display: inline-block;\r\n    width: 20px;\r\n    height: 16px;\r\n    content: \"\";\r\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\r\n    display: none;\n}\n.mokuji_ol {\r\n    counter-reset: item;\n}\n.rtoc-item {\r\n    margin-bottom: 10px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\n}\n.rtoc-item::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\n}\r\n\r\n/*å…±é€š*/\n.alignleft {\r\n    float: left;\r\n    margin-left: 0;\r\n    margin-right: 1em;\n}\n.alignright {\r\n    float: right;\r\n    margin-left: 1em;\r\n    margin-right: 0;\n}\n.aligncenter {\r\n    margin-left: auto;\r\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\r\n    text-align: center;\n}\nfigure {\r\n    margin-left: 0;\r\n    margin-right: 0;\n}\nbody {\r\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\r\n    box-sizing: inherit;\n}\n.single__contents h2 {\r\n    position: relative;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n    padding-left: 20px;\r\n    font-weight: bold;\r\n    font-size: 22px;\r\n    line-height: 32px;\r\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    top: 3px;\r\n    height: 26px;\r\n    width: 5px;\r\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\r\n    counter-reset: item;\n}\r\n/*\r\n.single__contents h2::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\r\n    color: #1363AB;\r\n}*/\n.single__contents p {\r\n    font-weight: 500;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor)\n}\n.alignfull {\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\r\n        max-width: none;\r\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\r\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\r\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\r\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        max-width: calc(var(--myw) + 300px) !important;\r\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\r\n        margin-left: -150px !important;\r\n        margin-right: -150px !important;\n}\n}\n.contents img {\r\n    max-width: 100%;\r\n    height: auto;\n}\n.contents p {\r\n    margin-bottom: 30px;\n}\r\n\r\n/*aside*/\n.aside {\r\n    width: 360px;\n}\n.aside__new {\r\n    margin-bottom: 60px;\n}\n.aside__title {\r\n    position: relative;\r\n    margin-left: 160px;\r\n    margin-bottom: 20px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    text-align: left;\n}\n.aside__title__new img {\r\n    position: absolute;\r\n    left: -32px;\r\n    top: 1px;\n}\n.aside__title__tags {\r\n    padding-left: 180px;\n}\n.aside__new__list {\r\n    margin-bottom: 10px;\r\n    position: relative;\r\n    height: 90px;\r\n    background: #FFFFFF;\r\n    border: 0.5px solid #C4C4C4;\r\n    box-sizing: border-box;\r\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\r\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\r\n    position: absolute;\r\n    top: 15px;\r\n    left: 20px;\r\n    height: 60px;\r\n    width: 60px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\n}\n.aside__new__list__title {\r\n    padding-left: 95px;\r\n    padding-top: 21px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n.aside__tags__list {\r\n    position: relative;\r\n    margin-left: 60px;\r\n    padding-left: 35px;\r\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    display: flex;\r\n    align-items: center;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\r\n    position: absolute;\r\n    content: \"\";\r\n    display: inline-block;\r\n    top: 0;\r\n    left: 0;\r\n    width: 20px;\r\n    height: 20px;\r\n    background: #FFFFFF;\r\n    border: 1px solid #333333;\r\n    box-sizing: border-box;\r\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\r\n        margin-bottom: 60px;\r\n        margin-top: 73px;\r\n        display: block;\n}\n.single {\r\n        width: 100%;\n}\n.single__head {\r\n        margin-bottom: 30px;\n}\n.aside {\r\n        display: none;\n}\n.single__head__title {\r\n        margin-bottom: 15px;\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__head__title::before {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n.single__thumbnail {\r\n        height: 150px;\r\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\r\n        padding: 20px 20px 5px 20px;\r\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\r\n        padding-left: 30px;\r\n        margin-bottom: 20px;\r\n        font-size: 15px;\r\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\r\n        top: 4px;\r\n        width: 17px;\r\n        height: 13px;\r\n        background-size: cover;\n}\n.rtoc-item {\r\n        font-size: 13px;\r\n        line-height: 19px;\r\n        margin-bottom: 15px;\n}\n.single__contents h2 {\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__contents h2::after {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__contents p {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents__foot {\r\n        margin-top: 50px;\r\n        margin-bottom: 60px;\n}\n}\r\n\r\n/*btns*/\n.btns {\r\n    padding-bottom: 120px;\r\n    width: 100%;\r\n    max-width: 370px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.btns a {\r\n    text-align: center;\r\n    display: inline-block;\r\n    width: 70px;\n}\n.btns__prev__img {\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-bottom: 20px;\r\n    cursor: pointer;\n}\n.btns__next__img {\r\n    transform: rotate(180deg);\n}\n.btns__prev__text {\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\r\n        padding-bottom: 60px;\n}\n.btns a {\r\n        width: 65px;\n}\n.btns__prev__img {\r\n        width: 60px;\r\n        height: 60px;\r\n        margin-bottom: 15px;\n}\n.btns__prev__text {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n}\r\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/news/NewsDetail.vue?vue&type=style&index=0&id=6cbd45da&lang=css&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/news/NewsDetail.vue?vue&type=style&index=0&id=6cbd45da&lang=css& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
