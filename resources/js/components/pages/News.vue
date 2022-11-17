@@ -16,7 +16,7 @@
                         <div v-for="detail in news" :key="detail.id">
                             <router-link :to="'/news/detail/'+detail.id+'/'" class="topic--content--item">
                                 <div class="img_box">
-                                    <img src="https://tomorrowgate.co.jp/asset/img/common/default.jpg" alt="">
+                                    <img :src="'https://admin.idenbrid.com/public/storage/news/'+detail.image" alt="">
                                 </div>
                                 <div class="text_area">
                                     <div class="topicinfo">

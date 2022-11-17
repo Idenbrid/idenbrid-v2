@@ -70,9 +70,9 @@ class BlogController extends Controller
         }
         $previous_blog = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$id])->first();
         if($previous_blog){
-            $blog = Blog::find($id);
-            $blog->like_count = $blog->like_count - 1;
-            $blog->update();
+            // $blog = Blog::find($id);
+            // $blog->like_count = $blog->like_count - 1;
+            // $blog->update();
             $previous_blog->delete();
             return response()->json([
                 'success' => true,
@@ -84,9 +84,9 @@ class BlogController extends Controller
             $blogLike->user_id = $session_id;
             $blogLike->blog_id = $id;
             $blogLike->save();
-            $blog = Blog::find($id);
-            $blog->like_count = $blog->like_count + 1;
-            $blog->update();
+            // $getBlog = Blog::find($id);
+            // $getBlog->like_count = $getBlog->like_count + 1;
+            // $getBlog->update();
             return response()->json([
                 'success' => true,
                 'is_liked'=>true,
