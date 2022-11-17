@@ -25,6 +25,7 @@ return array(
     'App\\Models\\Blog' => $baseDir . '/app/Models/Blog.php',
     'App\\Models\\BlogLike' => $baseDir . '/app/Models/BlogLike.php',
     'App\\Models\\News' => $baseDir . '/app/Models/News.php',
+    'App\\Models\\RequestedDoc' => $baseDir . '/app/Models/RequestedDoc.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\Work' => $baseDir . '/app/Models/Work.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',

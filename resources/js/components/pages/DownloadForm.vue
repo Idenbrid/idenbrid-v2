@@ -18,7 +18,7 @@
                          </div>
 
                      </div>
-                     <form name="billbill 事前登録" id="form" data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc="" class="sd">
+                     <form id="form" data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc="" class="sd">
                          <div data-s-eb910213-5e90-4c74-962c-99e6f7cb752c="" class="sd">
                              <div data-s-5d7bf798-6408-460a-a17b-3abceae4a8cf="" class="richText sd">
                                  <h2 data-uid="lVjvymHy" data-time="">IDENBRIDのサービスが3分でわかる</h2>
@@ -64,16 +64,16 @@
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
                                          Email<br></p>
-                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text" v-model="record.emails"
+                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text" v-model="record.email"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
 
 
                          </div>
-                         <button data-s-6515d892-7269-4cdb-aa2c-63ffa4072f0b="" class="button sd">
+                         <a @click="requestDoc()" data-s-6515d892-7269-4cdb-aa2c-63ffa4072f0b="" class="button sd">
                              <p data-s-0d898219-478c-43d2-b058-d1926a8d2536=""
                                  data-r-0_3_1_0_0_1_0d898219-478c-43d2-b058-d1926a8d2536="" class="text sd">資料請求（無料）</p>
-                         </button>
+                         </a>
                      </form>
                  </div>
              </section>
@@ -174,25 +174,38 @@
                 }
             }
         },
-         components: {
-             Navbar,
-             Footer,
-         },
-         metaInfo() {
-             return {
-                 title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
-                 meta: [{
-                     vmid: "description",
-                     name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
-                     content: "アイデンブリッドではお知らせやブログを定期的に更新しており、皆様が日々抱くサイト構築やアプリ開発の疑問やサイトをローンチした後の運用に関しての疑問に答えるブログ記事を公開しています。",
-                 }, ],
-             };
-         },
-
-         mounted() {
-
-
-         }
+        components: {
+            Navbar,
+        Footer,
+        },
+        methods: {
+            requestDoc() {
+                axios.post('/api/request-doc', this.record).then((res) => {
+                    if(res.data.success == true){
+                        this.record = {
+                            name: '',
+                            company_name: '',
+                            email: '',
+                        };
+                        alert('we will contact as soon. Thanks');
+                    }else{
+                        alert('please fill all fileds. Thanks')
+                    }
+                }).catch((err) => {
+                    alert('please fill all fileds. Thanks');
+                });
+            },
+        },
+        metaInfo() {
+            return {
+                title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+                meta: [{
+                    vmid: "description",
+                    name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
+                    content: "アイデンブリッドではお知らせやブログを定期的に更新しており、皆様が日々抱くサイト構築やアプリ開発の疑問やサイトをローンチした後の運用に関しての疑問に答えるブログ記事を公開しています。",
+                }, ],
+            };
+        },
      };
  </script>
 

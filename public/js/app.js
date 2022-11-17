@@ -5876,6 +5876,25 @@ __webpack_require__.r(__webpack_exports__);
     Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     Footer: _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
+  methods: {
+    requestDoc: function requestDoc() {
+      var _this = this;
+      axios.post('/api/request-doc', this.record).then(function (res) {
+        if (res.data.success == true) {
+          _this.record = {
+            name: '',
+            company_name: '',
+            email: ''
+          };
+          alert('we will contact as soon. Thanks');
+        } else {
+          alert('please fill all fileds. Thanks');
+        }
+      })["catch"](function (err) {
+        alert('please fill all fileds. Thanks');
+      });
+    }
+  },
   metaInfo: function metaInfo() {
     return {
       title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
@@ -5885,8 +5904,7 @@ __webpack_require__.r(__webpack_exports__);
         content: "アイデンブリッドではお知らせやブログを定期的に更新しており、皆様が日々抱くサイト構築やアプリ開発の疑問やサイトをローンチした後の運用に関しての疑問に答えるブログ記事を公開しています。"
       }]
     };
-  },
-  mounted: function mounted() {}
+  }
 });
 
 /***/ }),
@@ -10119,7 +10137,6 @@ var render = function render() {
   }, [_vm._m(1), _vm._v(" "), _c("form", {
     staticClass: "sd",
     attrs: {
-      name: "billbill 事前登録",
       id: "form",
       "data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc": ""
     }
@@ -10202,8 +10219,8 @@ var render = function render() {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: _vm.record.emails,
-      expression: "record.emails"
+      value: _vm.record.email,
+      expression: "record.email"
     }],
     staticClass: "sd",
     attrs: {
@@ -10215,15 +10232,31 @@ var render = function render() {
       "data-s-5878e812-d2f0-42ec-88de-15db7d7183ed": ""
     },
     domProps: {
-      value: _vm.record.emails
+      value: _vm.record.email
     },
     on: {
       input: function input($event) {
         if ($event.target.composing) return;
-        _vm.$set(_vm.record, "emails", $event.target.value);
+        _vm.$set(_vm.record, "email", $event.target.value);
       }
     }
-  })])]), _vm._v(" "), _vm._m(7)])])]), _vm._v(" "), _c("section", {
+  })])]), _vm._v(" "), _c("a", {
+    staticClass: "button sd",
+    attrs: {
+      "data-s-6515d892-7269-4cdb-aa2c-63ffa4072f0b": ""
+    },
+    on: {
+      click: function click($event) {
+        return _vm.requestDoc();
+      }
+    }
+  }, [_c("p", {
+    staticClass: "text sd",
+    attrs: {
+      "data-s-0d898219-478c-43d2-b058-d1926a8d2536": "",
+      "data-r-0_3_1_0_0_1_0d898219-478c-43d2-b058-d1926a8d2536": ""
+    }
+  }, [_vm._v("資料請求（無料）")])])])])]), _vm._v(" "), _c("section", {
     staticClass: "sd",
     attrs: {
       "data-s-696cf783-82e5-46e8-ba9c-cc3bb7d7386f": ""
@@ -10255,7 +10288,7 @@ var render = function render() {
       "data-s-b5862f2d-974a-4069-8398-72830dd372a5": "",
       "data-r-0_0_1_0_1_1_b5862f2d-974a-4069-8398-72830dd372a5": ""
     }
-  }, [_vm._v("01")]), _vm._v(" "), _vm._m(8), _vm._v(" "), _c("div", {
+  }, [_vm._v("01")]), _vm._v(" "), _vm._m(7), _vm._v(" "), _c("div", {
     staticClass: "sd",
     attrs: {
       "data-s-f0282e23-9495-40ef-9153-57b634611910": ""
@@ -10283,7 +10316,7 @@ var render = function render() {
       src: "/assets/videos/acomputer.mp4",
       type: "video/mp4"
     }
-  })])])])]), _vm._v(" "), _vm._m(9), _vm._v(" "), _vm._m(10)]), _vm._m(11)])]), _vm._v(" "), _c("section", {
+  })])])])]), _vm._v(" "), _vm._m(8), _vm._v(" "), _vm._m(9)]), _vm._m(10)])]), _vm._v(" "), _c("section", {
     staticClass: "menu"
   }, [_c("ul", {
     staticClass: "menu-contents mycontents-wide"
@@ -10480,21 +10513,6 @@ var staticRenderFns = [function () {
       "data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16": ""
     }
   }, [_vm._v("\n                                    Email"), _c("br")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("button", {
-    staticClass: "button sd",
-    attrs: {
-      "data-s-6515d892-7269-4cdb-aa2c-63ffa4072f0b": ""
-    }
-  }, [_c("p", {
-    staticClass: "text sd",
-    attrs: {
-      "data-s-0d898219-478c-43d2-b058-d1926a8d2536": "",
-      "data-r-0_3_1_0_0_1_0d898219-478c-43d2-b058-d1926a8d2536": ""
-    }
-  }, [_vm._v("資料請求（無料）")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;

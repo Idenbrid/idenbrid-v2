@@ -33,6 +33,8 @@ Route::get('latest-blog-detail/{id}', [BlogController::class,'latestBlogDetail']
 Route::post('/like-blog/{id}',[BlogController::class,'likeBlog']);
 Route::post('/unlike-blog/{id}',[BlogController::class,'unlikeBlog']);
 
+Route::post('/request-doc',[MailController::class,'requestDoc']);
+
 Route::get('news', [NewsController::class,'news']);
 Route::get('news-detail/{id}', [NewsController::class,'newsDetail']);
 Route::get('prev-news-detail/{id}', [NewsController::class,'prevNewsDetail']);
