@@ -376,7 +376,7 @@
                                                         type="text" required="" value="" class="text-field">
                                                   
                                                 </div>
-                                                <div class="sc-fzonjX hIMiPJ"><span>SKYPE OR PHONE (including the country code)*</span><input
+                                                <div class="sc-fzonjX hIMiPJ"><span>SKYPE OR PHONE*</span><input
                                                         placeholder="" autocomplete="off" minlength="3" name="name"
                                                         type="text" required="" value="" class="text-field">
                                               
@@ -398,23 +398,23 @@
                                     <div class="logo-wrapper">
                                         <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
                                                 alt=""></div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
+                                        <div><img src="https://dashboard.devteam.space/static/media/yandex.d9f9d084.svg"
                                                 alt=""></div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
+                                        <div><img src="https://dashboard.devteam.space/static/media/ubs.1f911510.svg"
                                                 alt=""></div>
                                         <div class="disney"><img
-                                                src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
+                                                src="https://dashboard.devteam.space/static/media/disney.cfa15be3.svg"
                                                 alt=""></div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
+                                        <div><img src="https://dashboard.devteam.space/static/media/samsung.31408c3f.svg"
                                                 alt="">
                                         </div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
+                                        <div><img src="https://dashboard.devteam.space/static/media/mi.a28a4be9.svg"
                                                 alt=""></div>
 
-                                        <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
+                                        <div><img src="https://dashboard.devteam.space/static/media/y-combinator.3ed0d18e.svg"
                                                 alt="">
                                         </div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
+                                        <div><img src="https://dashboard.devteam.space/static/media/500startups.4312811c.svg"
                                                 alt="">
                                         </div>
                                     </div>
@@ -812,7 +812,7 @@
 
     #heading {
 
-        font-size: 30px;
+        font-size: 26px;
         font-weight: bold;
         color: #282828;
         text-align: left;
@@ -970,7 +970,7 @@
         height: 19px;
         width: 19px;
     }
-    @media (max-width: 1309px)
+    @media (max-width: 1150px)
 {
 .vTcAG {
     display: none;
@@ -990,6 +990,23 @@
     }
 .inputCase{
    flex-direction: column;
+}
+.eXkYNB .container{
+    padding-top: 0px;
+}
+.vTcAG .vertical-wrapper {
+    background: #f7f7f7;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 }
 </style>
