@@ -14,11 +14,10 @@
                          <div data-s-8c456275-d38c-4330-9861-5284c2ecf314="" class="sd"><img
                                  data-s-5431fa2f-020d-4ebf-b26b-64990a3d6381="" alt=""
                                  src="/assets/img/docment-download.png" class="sd">
-
                          </div>
 
                      </div>
-                     <form id="form" data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc="" class="sd">
+                    <form @submit.prevent="requestDoc()" id="form" data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc="" class="sd">
                          <div data-s-eb910213-5e90-4c74-962c-99e6f7cb752c="" class="sd">
                              <div data-s-5d7bf798-6408-460a-a17b-3abceae4a8cf="" class="richText sd">
                                  <h2 data-uid="lVjvymHy" data-time="">IDENBRIDのサービスが3分でわかる</h2>
@@ -53,10 +52,9 @@
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
                                          会社名<br></p>
-                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text" v-model="record.company_name"
+                                 </div><input name="会社名" placeholder="ご入力ください" type="text" v-model="record.company_name"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
-
                          </div>
                          <div data-s-35332035-c140-45dd-b60a-8621c8b5808d="" class="sd">
                              <label data-s-96950b18-e375-45a4-8c53-565ab7b63484="" class="sd">
@@ -64,16 +62,14 @@
                                      <p data-s-5739f3dc-f3ea-4a89-9abb-661e6de01f16=""
                                          data-r-0_0_0_2_1_0_0_1_5739f3dc-f3ea-4a89-9abb-661e6de01f16="" class="text sd">
                                          Email<br></p>
-                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="text" v-model="record.email"
+                                 </div><input name="会社名" placeholder="ご入力ください" required="required" type="email" v-model="record.email"
                                      autocomplete="off" data-s-5878e812-d2f0-42ec-88de-15db7d7183ed="" class="sd">
                              </label>
-
-
                          </div>
-                         <a @click="requestDoc()" data-s-6515d892-7269-4cdb-aa2c-63ffa4072f0b="" class="button sd">
+                         <button data-s-6515d892-7269-4cdb-aa2c-63ffa4072f0b="" class="button sd">
                              <p data-s-0d898219-478c-43d2-b058-d1926a8d2536=""
                                  data-r-0_3_1_0_0_1_0d898219-478c-43d2-b058-d1926a8d2536="" class="text sd">資料請求（無料）</p>
-                         </a>
+                         </button>
                      </form>
                  </div>
              </section>

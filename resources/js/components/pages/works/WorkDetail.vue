@@ -22,7 +22,7 @@
         <Navbar />
         <main>
             <div class="mycontents-wide">
-                <img class="thumbnail" :src="'https://admin-idenbrid.idenbrid.jp/public/storage/work_images/'+work.image" alt="" loading="lazy"/>
+                <img class="thumbnail" :src="'https://admin-idenbrid.idenbrid.com/public/storage/work_images/'+work.image" alt="" loading="lazy"/>
             </div>
             <section class="work-text mycontents-wide">
                 <h2 class="subcontent-title subcontent-title_about">{{work.company}}</h2>
@@ -41,7 +41,7 @@
         <ul class="work-contents">
             <li  v-for="work in latest_works" :key="work.id" class="work-contents__list">
                 <router-link :to="'/work/detail/'+work.id+'/'">
-                    <img class="work-contents__list__thumbnail" :src="'https://admin-idenbrid.idenbrid.jp/public/storage/work_images/'+work.image" alt="" loading="lazy">
+                    <img class="work-contents__list__thumbnail" :src="'https://admin-idenbrid.idenbrid.com/public/storage/work_images/'+work.image" alt="" loading="lazy">
                     <p class="work-contents__list__company">{{work.company}}</p>
                     <p class="work-contents__list__title">{{work.title}}</p>
                     <p class="work-contents__list__tags">{{work.content}}</p>
