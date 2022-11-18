@@ -6005,14 +6005,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/Navbar.vue */ "./resources/js/components/layout/Navbar.vue");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 // import Footer from "../layout/Footer.vue";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      record: {
+        step_1: '',
+        step_2: '',
+        step_3: '',
+        step_4: [],
+        step_5: '',
+        step_6: '',
+        step_7: '',
+        project_name: '',
+        name: '',
+        email: '',
+        phone: ''
+      }
+    };
+  },
   components: {
     Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-    // Footer,
   },
-
+  methods: {
+    saveRequest: function saveRequest(id) {
+      var _this = this;
+      return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                axios.post("/api/submit-quotation", _this.record).then(function (res) {
+                  if (res.success == true) {
+                    alert('We will contact you soon. Thanks');
+                  }
+                })["catch"](function (err) {
+                  alert('please fill mandatory fileds. Thanks');
+                });
+              case 1:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    }
+  },
   mounted: function mounted() {
     window.setTimeout(function () {
       jQuery(document).ready(function () {
@@ -6023,7 +6066,6 @@ __webpack_require__.r(__webpack_exports__);
         jQuery(".next").click(function () {
           current_fs = jQuery(this).parent();
           next_fs = jQuery(this).parent().next();
-
           //show the next fieldset
           next_fs.show();
           //hide the current fieldset with style
@@ -6069,9 +6111,10 @@ __webpack_require__.r(__webpack_exports__);
             duration: 500
           });
         });
-        jQuery(".submit").click(function () {
-          return false;
-        });
+
+        // jQuery(".submit").click(function () {
+        //     return false;
+        // })
       });
     }, 1000);
   },
@@ -10739,32 +10782,7 @@ var render = function render() {
     staticClass: "eXkYNB"
   }, [_c("div", {
     staticClass: "container position-relative"
-  }, [_vm._m(0), _vm._v(" "), _c("div", {
-    staticClass: "sc-fzppAM vTcAG background"
-  }, [_vm._m(1), _c("svg", {
-    attrs: {
-      version: "1.1",
-      width: "100%",
-      height: "100px",
-      xmlns: "http://www.w3.org/2000/svg",
-      "xmlns:xlink": "http://www.w3.org/1999/xlink",
-      "xml:space": "preserve",
-      viewBox: "0 0 100 100",
-      preserveAspectRatio: "none"
-    }
-  }, [_c("polygon", {
-    attrs: {
-      fill: "#f7f7f7",
-      points: "0,100 100,0 100,100"
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "backgroundFill"
-  })])])])])], 1);
-};
-var staticRenderFns = [function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {}, [_c("div", {
+  }, [_c("div", {}, [_c("div", {
     staticClass: "step-form-card"
   }, [_c("form", {
     attrs: {
@@ -10772,92 +10790,148 @@ var staticRenderFns = [function () {
     }
   }, [_c("fieldset", [_c("div", {
     staticClass: "form-card"
-  }, [_c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("What do you need help with?")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("Step 1/7")])])]), _vm._v(" "), _c("ul", {
+  }, [_vm._m(0), _vm._v(" "), _c("ul", {
     staticClass: "my-4"
   }, [_c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_1,
+      expression: "record.step_1"
+    }],
     attrs: {
       type: "radio",
       id: "new-project",
+      value: "New project",
       name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_1, "New project")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_1", "New project");
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
       "for": "new-project"
     }
-  }, [_vm._v("New project\n                                                ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("New project\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_1,
+      expression: "record.step_1"
+    }],
     attrs: {
       type: "radio",
       id: "current-project",
+      value: "Current project that needs more developers",
       name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_1, "Current project that needs more developers")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_1", "Current project that needs more developers");
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
       "for": "current-project"
     }
-  }, [_vm._v("Current project that needs more\n                                                    developers\n                                                ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Current project that needs more developers\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_1,
+      expression: "record.step_1"
+    }],
     attrs: {
       type: "radio",
       id: "consultancy",
+      value: "Consultancy, code review, or debugging",
       name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_1, "Consultancy, code review, or debugging")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_1", "Consultancy, code review, or debugging");
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
       "for": "consultancy"
     }
-  }, [_vm._v("Consultancy, code review, or debugging\n                                                ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Consultancy, code review, or debugging\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_1,
+      expression: "record.step_1"
+    }],
     attrs: {
       type: "radio",
       id: "something-else",
+      value: "Something else",
       name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_1, "Something else")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_1", "Something else");
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
       "for": "something-else"
     }
-  }, [_vm._v("Something else\n                                                ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Something else\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })])])]), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
     attrs: {
+      disabled: _vm.record.step_1 == "",
       type: "button",
       name: "next",
       value: "Next"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card mb-4"
-  }, [_c("div", {
-    staticClass: "row mb-4"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("Describe your requirements below")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("Step 2/7")])])]), _vm._v(" "), _c("textarea", {
+  }, [_vm._m(1), _vm._v(" "), _c("textarea", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_2,
+      expression: "record.step_2"
+    }],
     staticClass: "form-textfield",
     attrs: {
       placeholder: "Example: I need to hire a senior Java developer for my existing team,OR I need a skilled development team to build a mobile app for the fashion industry.",
       name: "",
       rows: "8",
       cols: "90"
+    },
+    domProps: {
+      value: _vm.record.step_2
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "step_2", $event.target.value);
+      }
     }
   })]), _vm._v(" "), _c("input", {
     staticClass: "previous action-button-previous",
@@ -10869,59 +10943,95 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
     attrs: {
+      disabled: _vm.record.step_2 == "",
       type: "button",
       name: "next",
       value: "Next"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card"
-  }, [_c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("When do you need to start?")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("Step 3/7")])])]), _vm._v(" "), _c("ul", {
+  }, [_vm._m(2), _vm._v(" "), _c("ul", {
     staticClass: "my-4"
   }, [_c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_3,
+      expression: "record.step_3"
+    }],
     attrs: {
+      value: "As Soon As Possible",
       type: "radio",
       id: "as-soon",
       name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_3, "As Soon As Possible")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_3", "As Soon As Possible");
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
       "for": "as-soon"
     }
-  }, [_vm._v("As Soon As Possible\n                                                ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("As Soon As Possible\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_3,
+      expression: "record.step_3"
+    }],
     attrs: {
+      value: "In 2-4 weeks",
       type: "radio",
       id: "in-weeks",
       name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_3, "In 2-4 weeks")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_3", "In 2-4 weeks");
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
       "for": "in-weeks"
     }
-  }, [_vm._v("In 2-4 weeks\n                                                ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("In 2-4 weeks\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_3,
+      expression: "record.step_3"
+    }],
     attrs: {
+      value: "No rush",
       type: "radio",
       id: "no-rush",
       name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_3, "No rush")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_3", "No rush");
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
       "for": "no-rush"
     }
-  }, [_vm._v("No rush\n                                                ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("No rush\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })])])]), _vm._v(" "), _c("input", {
     staticClass: "previous action-button-previous",
@@ -10933,23 +11043,14 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
     attrs: {
+      disabled: _vm.record.step_3 == "",
       type: "button",
       name: "next",
       value: "Next"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card mb-4"
-  }, [_c("div", {
-    staticClass: "row mb-4"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("What skills do you require from your new\n                                                    developers?\n                                                ")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("Step 4/7")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(3), _vm._v(" "), _c("div", {
     staticClass: "new-developer-form"
   }, [_c("div", {
     staticClass: "my-4"
@@ -10960,11 +11061,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Mobile App",
       id: "demo_opt_1",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Mobile App") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Mobile App",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -10975,12 +11104,40 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "DevOps",
       id: "demo_opt_2",
       type: "checkbox",
       checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "DevOps") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "DevOps",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -10991,11 +11148,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Integration",
       id: "demo_opt_3",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Integration") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Integration",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11008,11 +11193,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Web App",
       id: "demo_opt_4",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Web App") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Web App",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11023,12 +11236,40 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Blockchain",
       id: "demo_opt_5",
       type: "checkbox",
       checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Blockchain") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Blockchain",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11039,11 +11280,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "UX/UI",
       id: "demo_opt_6",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "UX/UI") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "UX/UI",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11056,11 +11325,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "DApp",
       id: "demo_opt_7",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "DApp") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "DApp",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11071,12 +11368,40 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Data Engineering",
       id: "demo_opt_8",
       type: "checkbox",
       checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Data Engineering") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Data Engineering",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11087,11 +11412,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Code Review",
       id: "demo_opt_9",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Code Review") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Code Review",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11104,11 +11457,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Backend",
       id: "demo_opt_10",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Backend") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Backend",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11119,12 +11500,40 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "CyberSecurity",
       id: "demo_opt_11",
       type: "checkbox",
       checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "CyberSecurity") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "CyberSecurity",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11135,11 +11544,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Other",
       id: "demo_opt_12",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Other") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Other",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11152,11 +11589,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Frontend",
       id: "demo_opt_13",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Frontend") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Frontend",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11167,12 +11632,40 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "eCommerce",
       id: "demo_opt_14",
       type: "checkbox",
       checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "eCommerce") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "eCommerce",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11183,11 +11676,39 @@ var staticRenderFns = [function () {
       id: "inputPreview"
     }
   }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "css-checkbox",
     attrs: {
       name: "cssCheckbox",
+      value: "Artificial Intelligence",
       id: "demo_opt_15",
       type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Artificial Intelligence") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Artificial Intelligence",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
     }
   }), _vm._v(" "), _c("label", {
     attrs: {
@@ -11200,10 +11721,27 @@ var staticRenderFns = [function () {
       "for": "cars"
     }
   }, [_vm._v("TECH STACK (OPTIONAL)")]), _vm._v(" "), _c("select", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
     staticClass: "select-control",
     attrs: {
       name: "cars",
       id: "cars"
+    },
+    on: {
+      change: function change($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.$set(_vm.record, "step_4", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);
+      }
     }
   }, [_c("option", {
     attrs: {
@@ -11231,13 +11769,479 @@ var staticRenderFns = [function () {
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
     attrs: {
+      disabled: _vm.record.step_4.length == 0,
       type: "button",
       name: "next",
       value: "Next"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card"
+  }, [_vm._m(4), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_5,
+      expression: "record.step_5"
+    }],
+    attrs: {
+      type: "radio",
+      id: "short-term",
+      name: "selector2",
+      value: "I have a short-term project"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_5, "I have a short-term project")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_5", "I have a short-term project");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "short-term"
+    }
+  }, [_vm._v("I have a short-term project\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_5,
+      expression: "record.step_5"
+    }],
+    attrs: {
+      type: "radio",
+      id: "long-term",
+      name: "selector2",
+      value: "I have a long-term project with the need for\n                                                ongoing support"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_5, "I have a long-term project with the need for\n                                                ongoing support")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_5", "I have a long-term project with the need for\n                                                ongoing support");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "long-term"
+    }
+  }, [_vm._v("I have a long-term project with the need for\n                                                ongoing support\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_5,
+      expression: "record.step_5"
+    }],
+    attrs: {
+      type: "radio",
+      id: "know-yet",
+      name: "selector2",
+      value: "I don’t know yet"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_5, "I don’t know yet")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_5", "I don’t know yet");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "know-yet"
+    }
+  }, [_vm._v("I don’t know yet\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "BACK"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      disabled: _vm.record.step_5 == "",
+      type: "button",
+      name: "next",
+      value: "Next"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_vm._m(5), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "just-me",
+      name: "selector2",
+      value: "Just me"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "Just me")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "Just me");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "just-me"
+    }
+  }, [_vm._v("Just me\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "10—100",
+      name: "selector2",
+      value: "10—100"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "10—100")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "10—100");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "10—100"
+    }
+  }, [_vm._v("10—100\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "101—500",
+      name: "selector2",
+      value: "101—500"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "101—500")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "101—500");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "101—500"
+    }
+  }, [_vm._v("101—500\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "no-rush",
+      name: "selector2",
+      value: "501—1000"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "501—1000")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "501—1000");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "501—1000"
+    }
+  }, [_vm._v("501—1000\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "more-than-1000",
+      name: "selector2",
+      value: "More than 1000"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "More than 1000")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "More than 1000");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "more-than-1000"
+    }
+  }, [_vm._v("More than 1000\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "BACK"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      disabled: _vm.record.step_6 == "",
+      type: "button",
+      name: "next",
+      value: "Next"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_vm._m(6), _vm._v(" "), _c("div", {
+    staticClass: "my-4"
   }, [_c("div", {
+    staticClass: "inputCase"
+  }, [_c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("PROJECT NAME*")]), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.project_name,
+      expression: "record.project_name"
+    }],
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "title",
+      type: "text",
+      required: "",
+      value: ""
+    },
+    domProps: {
+      value: _vm.record.project_name
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "project_name", $event.target.value);
+      }
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("YOUR NAME*")]), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.name,
+      expression: "record.name"
+    }],
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "name",
+      type: "text",
+      required: "",
+      value: ""
+    },
+    domProps: {
+      value: _vm.record.name
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "name", $event.target.value);
+      }
+    }
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "inputCase"
+  }, [_c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("EMAIL")]), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.email,
+      expression: "record.email"
+    }],
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "title",
+      type: "text",
+      required: "",
+      value: ""
+    },
+    domProps: {
+      value: _vm.record.email
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "email", $event.target.value);
+      }
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("SKYPE OR PHONE*")]), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.phone,
+      expression: "record.phone"
+    }],
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "name",
+      type: "text",
+      required: "",
+      value: ""
+    },
+    domProps: {
+      value: _vm.record.phone
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "phone", $event.target.value);
+      }
+    }
+  })])])])]), _vm._v(" "), _c("input", {
+    staticClass: "action-button",
+    attrs: {
+      "data-v-f847ca3e": "",
+      name: "next",
+      value: "SUBMIT REQUEST"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.saveRequest();
+      }
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzppAM vTcAG background"
+  }, [_vm._m(7), _c("svg", {
+    attrs: {
+      version: "1.1",
+      width: "100%",
+      height: "100px",
+      xmlns: "http://www.w3.org/2000/svg",
+      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+      "xml:space": "preserve",
+      viewBox: "0 0 100 100",
+      preserveAspectRatio: "none"
+    }
+  }, [_c("polygon", {
+    attrs: {
+      fill: "#f7f7f7",
+      points: "0,100 100,0 100,100"
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "backgroundFill"
+  })])])])])], 1);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("What do you need help with?")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 1/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "row mb-4"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("Describe your requirements below")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 2/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("When do you need to start?")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 3/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "row mb-4"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("What skills do you require from your new\n                                                developers?\n                                            ")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 4/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-12"
@@ -11247,61 +12251,11 @@ var staticRenderFns = [function () {
     }
   }, [_vm._v("What is your project type?")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 5/7")])])]), _vm._v(" "), _c("ul", {
-    staticClass: "my-4"
-  }, [_c("li", [_c("input", {
-    attrs: {
-      type: "radio",
-      id: "short-term",
-      name: "selector2"
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "short-term"
-    }
-  }, [_vm._v("I have a short-term project\n                                                ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    attrs: {
-      type: "radio",
-      id: "long-term",
-      name: "selector2"
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "long-term"
-    }
-  }, [_vm._v("I have a long-term project with the need for\n                                                    ongoing support\n                                                ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    attrs: {
-      type: "radio",
-      id: "know-yet",
-      name: "selector2"
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "know-yet"
-    }
-  }, [_vm._v("I don’t know yet\n                                                ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })])])]), _vm._v(" "), _c("input", {
-    staticClass: "previous action-button-previous",
-    attrs: {
-      type: "button",
-      name: "previous",
-      value: "BACK"
-    }
-  }), _vm._v(" "), _c("input", {
-    staticClass: "next action-button",
-    attrs: {
-      type: "button",
-      name: "next",
-      value: "Next"
-    }
-  })]), _vm._v(" "), _c("fieldset", [_c("div", {
-    staticClass: "form-card"
-  }, [_c("div", {
+  }, [_vm._v("Step 5/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-12"
@@ -11311,85 +12265,11 @@ var staticRenderFns = [function () {
     }
   }, [_vm._v("How big is your company?")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 6/7")])])]), _vm._v(" "), _c("ul", {
-    staticClass: "my-4"
-  }, [_c("li", [_c("input", {
-    attrs: {
-      type: "radio",
-      id: "just-me",
-      name: "selector2"
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "just-me"
-    }
-  }, [_vm._v("Just me\n                                                ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    attrs: {
-      type: "radio",
-      id: "10—100",
-      name: "selector2"
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "10—100"
-    }
-  }, [_vm._v("10—100\n                                                ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    attrs: {
-      type: "radio",
-      id: "101—500",
-      name: "selector2"
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "101—500"
-    }
-  }, [_vm._v("101—500\n                                                ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    attrs: {
-      type: "radio",
-      id: "no-rush",
-      name: "selector2"
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "501—1000"
-    }
-  }, [_vm._v("501—1000\n                                                ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    attrs: {
-      type: "radio",
-      id: "more-than-1000",
-      name: "selector2"
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "more-than-1000"
-    }
-  }, [_vm._v("More than 1000\n                                                ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })])])]), _vm._v(" "), _c("input", {
-    staticClass: "previous action-button-previous",
-    attrs: {
-      type: "button",
-      name: "previous",
-      value: "BACK"
-    }
-  }), _vm._v(" "), _c("input", {
-    staticClass: "next action-button",
-    attrs: {
-      type: "button",
-      name: "next",
-      value: "Next"
-    }
-  })]), _vm._v(" "), _c("fieldset", [_c("div", {
-    staticClass: "form-card"
-  }, [_c("div", {
+  }, [_vm._v("Step 6/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-12"
@@ -11397,75 +12277,9 @@ var staticRenderFns = [function () {
     attrs: {
       id: "heading"
     }
-  }, [_vm._v("Submit Your Request to See Developers' Profiles\n                                                ")]), _vm._v(" "), _c("h2", {
+  }, [_vm._v("Submit Your Request to See Developers' Profiles\n                                            ")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 7/7")])])]), _vm._v(" "), _c("div", {
-    staticClass: "my-4"
-  }, [_c("div", {
-    staticClass: "inputCase"
-  }, [_c("div", {
-    staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("PROJECT NAME*")]), _c("input", {
-    staticClass: "text-field",
-    attrs: {
-      placeholder: "",
-      autocomplete: "off",
-      minlength: "3",
-      name: "title",
-      type: "text",
-      required: "",
-      value: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("YOUR NAME*")]), _c("input", {
-    staticClass: "text-field",
-    attrs: {
-      placeholder: "",
-      autocomplete: "off",
-      minlength: "3",
-      name: "name",
-      type: "text",
-      required: "",
-      value: ""
-    }
-  })])]), _vm._v(" "), _c("div", {
-    staticClass: "inputCase"
-  }, [_c("div", {
-    staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("EMAIL")]), _c("input", {
-    staticClass: "text-field",
-    attrs: {
-      placeholder: "",
-      autocomplete: "off",
-      minlength: "3",
-      name: "title",
-      type: "text",
-      required: "",
-      value: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("SKYPE OR PHONE*")]), _c("input", {
-    staticClass: "text-field",
-    attrs: {
-      placeholder: "",
-      autocomplete: "off",
-      minlength: "3",
-      name: "name",
-      type: "text",
-      required: "",
-      value: ""
-    }
-  })])])])]), _vm._v(" "), _c("input", {
-    staticClass: "action-button",
-    attrs: {
-      "data-v-f847ca3e": "",
-      type: "button",
-      name: "next",
-      value: "SUBMIT REQUEST"
-    }
-  })])])])]);
+  }, [_vm._v("Step 7/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
