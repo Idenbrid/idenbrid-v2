@@ -6005,104 +6005,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/Navbar.vue */ "./resources/js/components/layout/Navbar.vue");
-/* harmony import */ var _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/Footer.vue */ "./resources/js/components/layout/Footer.vue");
 
-
+// import Footer from "../layout/Footer.vue";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Footer: _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    // Footer,
   },
+
   mounted: function mounted() {
-    //jQuery time
-    var current_fs, next_fs, previous_fs; //fieldsets
-    var left, opacity, scale; //fieldset properties which we will animate
-    var animating; //flag to prevent quick multi-click glitches
+    window.setTimeout(function () {
+      jQuery(document).ready(function () {
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
+        var current = 1;
+        var steps = jQuery("fieldset").length;
+        jQuery(".next").click(function () {
+          current_fs = jQuery(this).parent();
+          next_fs = jQuery(this).parent().next();
 
-    $(".next").click(function () {
-      if (animating) return false;
-      animating = true;
-      current_fs = $(this).parent();
-      next_fs = $(this).parent().next();
-
-      //activate next step on progressbar using the index of next_fs
-      $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-      //show the next fieldset
-      next_fs.show();
-      //hide the current fieldset with style
-      current_fs.animate({
-        opacity: 0
-      }, {
-        step: function step(now, mx) {
-          //as the opacity of current_fs reduces to 0 - stored in "now"
-          //1. scale current_fs down to 80%
-          scale = 1 - (1 - now) * 0.2;
-          //2. bring next_fs from the right(50%)
-          left = now * 50 + "%";
-          //3. increase opacity of next_fs to 1 as it moves in
-          opacity = 1 - now;
-          current_fs.css({
-            'transform': 'scale(' + scale + ')',
-            'position': 'absolute'
+          //show the next fieldset
+          next_fs.show();
+          //hide the current fieldset with style
+          current_fs.animate({
+            opacity: 0
+          }, {
+            step: function step(now) {
+              // for making fielset appear animation
+              opacity = 1 - now;
+              current_fs.css({
+                'display': 'none',
+                'position': 'relative'
+              });
+              next_fs.css({
+                'opacity': opacity
+              });
+            },
+            duration: 500
           });
-          next_fs.css({
-            'left': left,
-            'opacity': opacity
+        });
+        jQuery(".previous").click(function () {
+          current_fs = jQuery(this).parent();
+          previous_fs = jQuery(this).parent().prev();
+
+          //show the previous fieldset
+          previous_fs.show();
+
+          //hide the current fieldset with style
+          current_fs.animate({
+            opacity: 0
+          }, {
+            step: function step(now) {
+              // for making fielset appear animation
+              opacity = 1 - now;
+              current_fs.css({
+                'display': 'none',
+                'position': 'relative'
+              });
+              previous_fs.css({
+                'opacity': opacity
+              });
+            },
+            duration: 500
           });
-        },
-        duration: 800,
-        complete: function complete() {
-          current_fs.hide();
-          animating = false;
-        },
-        //this comes from the custom easing plugin
-        easing: 'easeInOutBack'
+        });
+        jQuery(".submit").click(function () {
+          return false;
+        });
       });
-    });
-    $(".previous").click(function () {
-      if (animating) return false;
-      animating = true;
-      current_fs = $(this).parent();
-      previous_fs = $(this).parent().prev();
-
-      //de-activate current step on progressbar
-      $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-      //show the previous fieldset
-      previous_fs.show();
-      //hide the current fieldset with style
-      current_fs.animate({
-        opacity: 0
-      }, {
-        step: function step(now, mx) {
-          //as the opacity of current_fs reduces to 0 - stored in "now"
-          //1. scale previous_fs from 80% to 100%
-          scale = 0.8 + (1 - now) * 0.2;
-          //2. take current_fs to the right(50%) - from 0%
-          left = (1 - now) * 50 + "%";
-          //3. increase opacity of previous_fs to 1 as it moves in
-          opacity = 1 - now;
-          current_fs.css({
-            'left': left
-          });
-          previous_fs.css({
-            'transform': 'scale(' + scale + ')',
-            'opacity': opacity
-          });
-        },
-        duration: 800,
-        complete: function complete() {
-          current_fs.hide();
-          animating = false;
-        },
-        //this comes from the custom easing plugin
-        easing: 'easeInOutBack'
-      });
-    });
-    $(".submit").click(function () {
-      return false;
-    });
+    }, 1000);
   },
   metaInfo: function metaInfo() {
     return {
@@ -7590,7 +7561,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "get-start-btn",
     attrs: {
-      to: "/contact/"
+      to: "/getstarted/"
     }
   }, [_vm._v("Get Started")])], 1)])])]), _vm._v(" "), _c("div", {
     staticClass: "header-sp"
@@ -10762,46 +10733,136 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_c("div", {
+    staticClass: "eXkYNB"
+  }, [_c("div", {
+    staticClass: "container position-relative"
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzppAM vTcAG background"
+  }, [_vm._m(1), _c("svg", {
+    attrs: {
+      version: "1.1",
+      width: "100%",
+      height: "100px",
+      xmlns: "http://www.w3.org/2000/svg",
+      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+      "xml:space": "preserve",
+      viewBox: "0 0 100 100",
+      preserveAspectRatio: "none"
+    }
+  }, [_c("polygon", {
+    attrs: {
+      fill: "#f7f7f7",
+      points: "0,100 100,0 100,100"
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "backgroundFill"
+  })])])])])], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("main", [_c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-md-6 col-md-offset-3"
+  return _c("div", {}, [_c("div", {
+    staticClass: "step-form-card"
   }, [_c("form", {
     attrs: {
       id: "msform"
     }
-  }, [_c("ul", {
+  }, [_c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
     attrs: {
-      id: "progressbar"
+      id: "heading"
     }
-  }, [_c("li", {
-    staticClass: "active"
-  }, [_vm._v("Personal Details")]), _vm._v(" "), _c("li", [_vm._v("Social Profiles")]), _vm._v(" "), _c("li", [_vm._v("Account Setup")])]), _vm._v(" "), _c("fieldset", [_c("h2", {
-    staticClass: "fs-title"
-  }, [_vm._v("Personal Details")]), _vm._v(" "), _c("h3", {
-    staticClass: "fs-subtitle"
-  }, [_vm._v("Tell us something more about you")]), _vm._v(" "), _c("input", {
+  }, [_vm._v("What do you need help with?")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 1/7")])])]), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
     attrs: {
-      type: "text",
-      name: "fname",
-      placeholder: "First Name"
+      type: "radio",
+      id: "new-project",
+      name: "selector2"
     }
-  }), _vm._v(" "), _c("input", {
+  }), _vm._v(" "), _c("label", {
     attrs: {
-      type: "text",
-      name: "lname",
-      placeholder: "Last Name"
+      "for": "new-project"
     }
-  }), _vm._v(" "), _c("input", {
+  }, [_vm._v("New project\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
     attrs: {
-      type: "text",
-      name: "phone",
-      placeholder: "Phone"
+      type: "radio",
+      id: "current-project",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "current-project"
+    }
+  }, [_vm._v("Current project that needs more\n                                                    developers\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "consultancy",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "consultancy"
+    }
+  }, [_vm._v("Consultancy, code review, or debugging\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "something-else",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "something-else"
+    }
+  }, [_vm._v("Something else\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      type: "button",
+      name: "next",
+      value: "Next"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card mb-4"
+  }, [_c("div", {
+    staticClass: "row mb-4"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("Describe your requirements below")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 2/7")])])]), _vm._v(" "), _c("textarea", {
+    staticClass: "form-textfield",
+    attrs: {
+      placeholder: "Example: I need to hire a senior Java developer for my existing team,OR I need a skilled development team to build a mobile app for the fashion industry.",
+      name: "",
+      rows: "8",
+      cols: "90"
+    }
+  })]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "BACK"
     }
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
@@ -10810,34 +10871,62 @@ var staticRenderFns = [function () {
       name: "next",
       value: "Next"
     }
-  })]), _vm._v(" "), _c("fieldset", [_c("h2", {
-    staticClass: "fs-title"
-  }, [_vm._v("Social Profiles")]), _vm._v(" "), _c("h3", {
-    staticClass: "fs-subtitle"
-  }, [_vm._v("Your presence on the social network")]), _vm._v(" "), _c("input", {
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
     attrs: {
-      type: "text",
-      name: "twitter",
-      placeholder: "Twitter"
+      id: "heading"
     }
-  }), _vm._v(" "), _c("input", {
+  }, [_vm._v("When do you need to start?")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 3/7")])])]), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
     attrs: {
-      type: "text",
-      name: "facebook",
-      placeholder: "Facebook"
+      type: "radio",
+      id: "as-soon",
+      name: "selector2"
     }
-  }), _vm._v(" "), _c("input", {
+  }), _vm._v(" "), _c("label", {
     attrs: {
-      type: "text",
-      name: "gplus",
-      placeholder: "Google Plus"
+      "for": "as-soon"
     }
-  }), _vm._v(" "), _c("input", {
+  }, [_vm._v("As Soon As Possible\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "in-weeks",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "in-weeks"
+    }
+  }, [_vm._v("In 2-4 weeks\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "no-rush",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "no-rush"
+    }
+  }, [_vm._v("No rush\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
     staticClass: "previous action-button-previous",
     attrs: {
       type: "button",
       name: "previous",
-      value: "Previous"
+      value: "BACK"
     }
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
@@ -10846,50 +10935,587 @@ var staticRenderFns = [function () {
       name: "next",
       value: "Next"
     }
-  })]), _vm._v(" "), _c("fieldset", [_c("h2", {
-    staticClass: "fs-title"
-  }, [_vm._v("Create your account")]), _vm._v(" "), _c("h3", {
-    staticClass: "fs-subtitle"
-  }, [_vm._v("Fill in your credentials")]), _vm._v(" "), _c("input", {
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card mb-4"
+  }, [_c("div", {
+    staticClass: "row mb-4"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
     attrs: {
-      type: "text",
-      name: "email",
-      placeholder: "Email"
+      id: "heading"
     }
-  }), _vm._v(" "), _c("input", {
+  }, [_vm._v("What skills do you require from your new\n                                                    developers?\n                                                ")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 4/7")])])]), _vm._v(" "), _c("div", {
+    staticClass: "new-developer-form"
+  }, [_c("div", {
+    staticClass: "my-4"
+  }, [_c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
     attrs: {
-      type: "password",
-      name: "pass",
-      placeholder: "Password"
+      id: "inputPreview"
     }
-  }), _vm._v(" "), _c("input", {
+  }, [_c("input", {
+    staticClass: "css-checkbox",
     attrs: {
-      type: "password",
-      name: "cpass",
-      placeholder: "Confirm Password"
+      name: "cssCheckbox",
+      id: "demo_opt_1",
+      type: "checkbox"
     }
-  }), _vm._v(" "), _c("input", {
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_1"
+    }
+  }, [_vm._v("Mobile App")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_2",
+      type: "checkbox",
+      checked: ""
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_2"
+    }
+  }, [_vm._v("DevOps")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_3",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_3"
+    }
+  }, [_vm._v("Integration")])])]), _vm._v(" "), _c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_4",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_4"
+    }
+  }, [_vm._v("Web App")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_5",
+      type: "checkbox",
+      checked: ""
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_5"
+    }
+  }, [_vm._v("Blockchain")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_6",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_6"
+    }
+  }, [_vm._v("UX/UI")])])]), _vm._v(" "), _c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_7",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_7"
+    }
+  }, [_vm._v("DApp")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_8",
+      type: "checkbox",
+      checked: ""
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_8"
+    }
+  }, [_vm._v("Data Engineering")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_9",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_9"
+    }
+  }, [_vm._v("Code Review")])])]), _vm._v(" "), _c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_10",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_10"
+    }
+  }, [_vm._v("Backend")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_11",
+      type: "checkbox",
+      checked: ""
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_11"
+    }
+  }, [_vm._v("CyberSecurity")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_12",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_12"
+    }
+  }, [_vm._v("Other")])])]), _vm._v(" "), _c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_13",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_13"
+    }
+  }, [_vm._v("Frontend")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_14",
+      type: "checkbox",
+      checked: ""
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_14"
+    }
+  }, [_vm._v("eCommerce")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      id: "demo_opt_15",
+      type: "checkbox"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_15"
+    }
+  }, [_vm._v("Artificial Intelligence")])])]), _vm._v(" "), _c("div", {
+    staticClass: "d-flex flex-column my-4"
+  }, [_c("label", {
+    attrs: {
+      "for": "cars"
+    }
+  }, [_vm._v("TECH STACK (OPTIONAL)")]), _vm._v(" "), _c("select", {
+    staticClass: "select-control",
+    attrs: {
+      name: "cars",
+      id: "cars"
+    }
+  }, [_c("option", {
+    attrs: {
+      value: "volvo"
+    }
+  }, [_vm._v("Volvo")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "saab"
+    }
+  }, [_vm._v("Saab")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "mercedes"
+    }
+  }, [_vm._v("Mercedes")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "audi"
+    }
+  }, [_vm._v("Audi")])])])])])]), _vm._v(" "), _c("input", {
     staticClass: "previous action-button-previous",
     attrs: {
       type: "button",
       name: "previous",
-      value: "Previous"
+      value: "BACK"
     }
   }), _vm._v(" "), _c("input", {
-    staticClass: "submit action-button",
+    staticClass: "next action-button",
     attrs: {
-      type: "submit",
-      name: "submit",
-      value: "Submit"
+      type: "button",
+      name: "next",
+      value: "Next"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("What is your project type?")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 5/7")])])]), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "short-term",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "short-term"
+    }
+  }, [_vm._v("I have a short-term project\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "long-term",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "long-term"
+    }
+  }, [_vm._v("I have a long-term project with the need for\n                                                    ongoing support\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "know-yet",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "know-yet"
+    }
+  }, [_vm._v("I don’t know yet\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "BACK"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      type: "button",
+      name: "next",
+      value: "Next"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("How big is your company?")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 6/7")])])]), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "just-me",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "just-me"
+    }
+  }, [_vm._v("Just me\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "10—100",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "10—100"
+    }
+  }, [_vm._v("10—100\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "101—500",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "101—500"
+    }
+  }, [_vm._v("101—500\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "no-rush",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "501—1000"
+    }
+  }, [_vm._v("501—1000\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    attrs: {
+      type: "radio",
+      id: "more-than-1000",
+      name: "selector2"
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "more-than-1000"
+    }
+  }, [_vm._v("More than 1000\n                                                ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "BACK"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      type: "button",
+      name: "next",
+      value: "Next"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("Submit Your Request to See Developers' Profiles\n                                                ")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("Step 7/7")])])]), _vm._v(" "), _c("div", {
+    staticClass: "my-4"
+  }, [_c("div", {
+    staticClass: "inputCase"
+  }, [_c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("PROJECT NAME*")]), _c("input", {
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "title",
+      type: "text",
+      required: "",
+      value: ""
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("YOUR NAME*")]), _c("input", {
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "name",
+      type: "text",
+      required: "",
+      value: ""
     }
   })])]), _vm._v(" "), _c("div", {
-    staticClass: "dme_link"
-  }, [_c("p", [_c("a", {
+    staticClass: "inputCase"
+  }, [_c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("EMAIL")]), _c("input", {
+    staticClass: "text-field",
     attrs: {
-      href: "http://designify.me/code-snippets-js/",
-      target: "_blank"
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "title",
+      type: "text",
+      required: "",
+      value: ""
     }
-  }, [_vm._v("More Code Snippets")])])])])])]);
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("SKYPE OR PHONE*")]), _c("input", {
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "name",
+      type: "text",
+      required: "",
+      value: ""
+    }
+  })])])])]), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      "data-v-f847ca3e": "",
+      type: "button",
+      name: "next",
+      value: "SUBMIT REQUEST"
+    }
+  })])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "vertical-wrapper"
+  }, [_c("div", {
+    staticClass: "wrapper"
+  }, [_c("h3", [_vm._v("Our Dev Teams Are Trusted by the Best")]), _vm._v(" "), _c("div", {
+    staticClass: "logo-wrapper"
+  }, [_c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/yandex.d9f9d084.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/ubs.1f911510.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "disney"
+  }, [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/disney.cfa15be3.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/samsung.31408c3f.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/mi.a28a4be9.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/y-combinator.3ed0d18e.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/500startups.4312811c.svg",
+      alt: ""
+    }
+  })])])])]);
 }];
 render._withStripped = true;
 
@@ -23539,7 +24165,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\r\n    position: relative;\r\n    display: inline-block;\r\n    height: 35px;\r\n    margin-top: 30px;\r\n    margin-right: 32px;\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\r\n   \r\n    display: flex;\r\n    align-items: center;\r\n    border: 2px solid rgba(37, 115, 176, 1);\r\n    background-color: rgba(37, 115, 176, 1);\r\n    color: #fff;\r\n    min-height: 42px;\r\n    text-decoration: none;\r\n    text-transform: uppercase;\r\n    font-family: \"Barlow\", sans-serif;\r\n    font-size: 0.875rem;\r\n    line-height: 1.25;\r\n    padding: 9px 20px;\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    /* background: #000; */\r\n    padding: 15px 0;\r\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\r\n    position: relative;\r\n    display: inline-block;\r\n    height: 35px;\r\n    margin-top: 30px;\r\n    margin-right: 32px;\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\r\n   \r\n    display: flex;\r\n    align-items: center;\r\n    border: 2px solid rgba(37, 115, 176, 1);\r\n    color: rgba(37, 115, 176, 1);\r\n    min-height: 42px;\r\n    text-decoration: none;\r\n    text-transform: uppercase;\r\n    font-family: \"Barlow\", sans-serif;\r\n    font-size: 0.875rem;\r\n    line-height: 1.25;\r\n    padding: 9px 20px;\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\r\n    background-color: rgba(37, 115, 176, 1);\r\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    /* background: #000; */\r\n    padding: 15px 0;\r\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23755,7 +24381,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n/*form styles*/\n#msform[data-v-f847ca3e] {\r\n    text-align: center;\r\n    position: relative;\r\n    margin-top: 30px;\n}\n#msform fieldset[data-v-f847ca3e] {\r\n    background: white;\r\n    border: 0 none;\r\n    border-radius: 0px;\r\n    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);\r\n    padding: 20px 30px;\r\n    box-sizing: border-box;\r\n    width: 80%;\r\n    margin: 0 10%;\r\n\r\n    /*stacking fieldsets above each other*/\r\n    position: relative;\n}\r\n\r\n/*Hide all except first fieldset*/\n#msform fieldset[data-v-f847ca3e]:not(:first-of-type) {\r\n    display: none;\n}\r\n\r\n/*inputs*/\n#msform input[data-v-f847ca3e], #msform textarea[data-v-f847ca3e] {\r\n    padding: 15px;\r\n    border: 1px solid #ccc;\r\n    border-radius: 0px;\r\n    margin-bottom: 10px;\r\n    width: 100%;\r\n    box-sizing: border-box;\r\n    font-family: montserrat;\r\n    color: #2C3E50;\r\n    font-size: 13px;\n}\n#msform input[data-v-f847ca3e]:focus, #msform textarea[data-v-f847ca3e]:focus {\r\n    box-shadow: none !important;\r\n    border: 1px solid #ee0979;\r\n    outline-width: 0;\r\n    transition: All 0.5s ease-in;\r\n    -webkit-transition: All 0.5s ease-in;\r\n    -moz-transition: All 0.5s ease-in;\r\n    -o-transition: All 0.5s ease-in;\n}\r\n\r\n/*buttons*/\n#msform .action-button[data-v-f847ca3e] {\r\n    width: 100px;\r\n    background: #ee0979;\r\n    font-weight: bold;\r\n    color: white;\r\n    border: 0 none;\r\n    border-radius: 25px;\r\n    cursor: pointer;\r\n    padding: 10px 5px;\r\n    margin: 10px 5px;\n}\n#msform .action-button[data-v-f847ca3e]:hover, #msform .action-button[data-v-f847ca3e]:focus {\r\n    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;\n}\n#msform .action-button-previous[data-v-f847ca3e] {\r\n    width: 100px;\r\n    background: #C5C5F1;\r\n    font-weight: bold;\r\n    color: white;\r\n    border: 0 none;\r\n    border-radius: 25px;\r\n    cursor: pointer;\r\n    padding: 10px 5px;\r\n    margin: 10px 5px;\n}\n#msform .action-button-previous[data-v-f847ca3e]:hover, #msform .action-button-previous[data-v-f847ca3e]:focus {\r\n    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;\n}\r\n\r\n/*headings*/\n.fs-title[data-v-f847ca3e] {\r\n    font-size: 18px;\r\n    text-transform: uppercase;\r\n    color: #2C3E50;\r\n    margin-bottom: 10px;\r\n    letter-spacing: 2px;\r\n    font-weight: bold;\n}\n.fs-subtitle[data-v-f847ca3e] {\r\n    font-weight: normal;\r\n    font-size: 13px;\r\n    color: #666;\r\n    margin-bottom: 20px;\n}\r\n\r\n/*progressbar*/\n#progressbar[data-v-f847ca3e] {\r\n    margin-bottom: 30px;\r\n    overflow: hidden;\r\n    /*CSS counters to number the steps*/\r\n    counter-reset: step;\n}\n#progressbar li[data-v-f847ca3e] {\r\n    list-style-type: none;\r\n    color: white;\r\n    text-transform: uppercase;\r\n    font-size: 9px;\r\n    width: 33.33%;\r\n    float: left;\r\n    position: relative;\r\n    letter-spacing: 1px;\n}\n#progressbar li[data-v-f847ca3e]:before {\r\n    content: counter(step);\r\n    counter-increment: step;\r\n    width: 24px;\r\n    height: 24px;\r\n    line-height: 26px;\r\n    display: block;\r\n    font-size: 12px;\r\n    color: #333;\r\n    background: white;\r\n    border-radius: 25px;\r\n    margin: 0 auto 10px auto;\n}\r\n\r\n/*progressbar connectors*/\n#progressbar li[data-v-f847ca3e]:after {\r\n    content: '';\r\n    width: 100%;\r\n    height: 2px;\r\n    background: white;\r\n    position: absolute;\r\n    left: -50%;\r\n    top: 9px;\r\n    z-index: -1; /*put it behind the numbers*/\n}\n#progressbar li[data-v-f847ca3e]:first-child:after {\r\n    /*connector not needed before the first step*/\r\n    content: none;\n}\r\n\r\n/*marking active/completed steps green*/\r\n/*The number of the step and the connector before it = green*/\n#progressbar li.active[data-v-f847ca3e]:before, #progressbar li.active[data-v-f847ca3e]:after {\r\n    background: #ee0979;\r\n    color: white;\n}\r\n\r\n\r\n/* Not relevant to this form */\n.dme_link[data-v-f847ca3e] {\r\n    margin-top: 30px;\r\n    text-align: center;\n}\n.dme_link a[data-v-f847ca3e] {\r\n    background: #FFF;\r\n    font-weight: bold;\r\n    color: #ee0979;\r\n    border: 0 none;\r\n    border-radius: 25px;\r\n    cursor: pointer;\r\n    padding: 5px 25px;\r\n    font-size: 12px;\n}\n.dme_link a[data-v-f847ca3e]:hover, .dme_link a[data-v-f847ca3e]:focus {\r\n    background: #C5C5F1;\r\n    text-decoration: none;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.vTcAG img[data-v-f847ca3e] {\r\n    height: 52px;\n}\n.vTcAG h3[data-v-f847ca3e] {\r\n    margin-bottom: 28px;\r\n    margin-right: 30px;\n}\n.text-field[data-v-f847ca3e] {\r\n        width: 100%;\r\n        height: 59px;\r\n        padding-left: 10px;\r\n        font-size: 16px;\r\n        border-radius: 3px;\r\n        border: solid 1px #d7d7d7;\r\n        background-color: #ffffff;\n}\n.hIMiPJ span[data-v-f847ca3e] {\r\n        display: block;\r\n        margin-bottom: 10px;\r\n        font-size: 16px;\r\n        color: #35353B;\n}\n.inputCase[data-v-f847ca3e] {\r\n        display: flex;\r\n        margin-bottom: 34px;\n}\n.inputCase>div[data-v-f847ca3e] {\r\n        margin-right: 44px;\r\n        min-width: 310px;\n}\n.form-textfield[data-v-f847ca3e] {\r\n        width: 100%;\n}\n.form-card[data-v-f847ca3e] {\r\n        padding: 34px 0 65px;\r\n        min-height: 430px;\n}\n.eXkYNB .container[data-v-f847ca3e] {\r\n        background: white;\r\n        max-width: 1280px;\r\n        margin: 0 auto;\r\n        padding: 0 15px;\r\n        padding-bottom: 60px;\r\n        padding-top: 60px;\r\n        position: relative;\n}\n.step-form-card[data-v-f847ca3e] {\r\n        padding: 34px 0 0;\r\n        margin-bottom: 68px;\r\n        min-height: 430px;\r\n        height: 430px;\r\n        max-height: 430px;\r\n        width: 100%;\r\n        width: 664px;\r\n        max-width: 690px;\r\n        position: relative;\r\n        display: flex;\r\n        flex-direction: column;\n}\n.vTcAG .backgroundFill[data-v-f847ca3e] {\r\n        background: #f7f7f7;\r\n        position: fixed;\r\n        height: 100%;\r\n        width: 20px;\r\n        width: calc((100% - 1280px) / 2 + 407px);\r\n        top: 0;\r\n        right: 0;\n}\n.eXkYNB[data-v-f847ca3e] {\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: flex-start;\r\n        background: white;\r\n        padding-bottom: 70px;\r\n        min-height: calc(100% - 70px);\r\n        padding-top: 56px;\n}\n.vTcAG svg[data-v-f847ca3e] {\r\n        position: fixed;\r\n        right: calc((100% - 1280px) / 2 + 407px);\r\n        bottom: 0;\r\n        height: 100%;\r\n        width: 10vh;\n}\n.vTcAG[data-v-f847ca3e] {\r\n        position: absolute;\r\n        top: 0;\r\n        bottom: 0;\r\n        right: -15px;\n}\n.vTcAG .vertical-wrapper[data-v-f847ca3e] {\r\n        position: relative;\r\n        z-index: 1;\r\n        height: 100%;\r\n        display: flex;\r\n        align-items: center;\n}\n.vTcAG .wrapper[data-v-f847ca3e] {\r\n        display: flex;\r\n        z-index: 1;\r\n        flex-direction: column;\r\n        justify-content: flex-start;\r\n        align-items: flex-end;\n}\n.vTcAG h3[data-v-f847ca3e],\r\n    .vTcAG p[data-v-f847ca3e],\r\n    .vTcAG span[data-v-f847ca3e] {\r\n        font-size: 16px;\r\n        font-weight: bold;\r\n        text-align: right;\r\n        color: #b9b9b9;\n}\n<style>.vTcAG h3[data-v-f847ca3e] {\r\n        margin-bottom: 28px;\r\n        margin-right: 30px;\n}\n.vTcAG .logo-wrapper[data-v-f847ca3e] {\r\n        width: 422px;\r\n        display: flex;\r\n        flex-wrap: wrap;\r\n        justify-content: flex-end;\n}\n.vTcAG .logo-wrapper>div[data-v-f847ca3e] {\r\n        margin-right: 30px;\r\n        margin-bottom: 30px;\n}\n.select-control[data-v-f847ca3e] {\r\n        padding: 10px;\r\n        border: solid 1px #d7d7d7;\r\n        border-radius: 3px;\r\n        cursor: pointer;\r\n        min-height: 59px;\n}\n.checkbox-grid[data-v-f847ca3e] {\r\n        max-width: unset;\r\n        position: relative;\r\n        z-index: 5;\r\n        display: grid;\r\n        grid-auto-flow: row;\r\n        grid-template-columns: repeat(auto-fit, 220px);\r\n        grid-template-rows: repeat(5, auto);\r\n        margin: 10px 0px;\n}\n.form-textfield[data-v-f847ca3e] {\r\n        font-size: 16px;\r\n        border-radius: 3px;\r\n        border: solid 1px #d7d7d7;\r\n        background-color: #ffffff;\r\n        color: #35353B;\r\n        padding: 10px;\n}\nli[data-v-f847ca3e] {\r\n\r\n        position: relative;\n}\nli input[type=radio][data-v-f847ca3e] {\r\n        position: absolute;\r\n        visibility: hidden;\n}\nli label[data-v-f847ca3e] {\r\n        position: relative;\r\n        font-size: 1.35em;\r\n        padding: 0px 25px 0px 35px;\r\n        z-index: 9;\r\n        cursor: pointer;\r\n        -webkit-transition: all 0.25s linear;\n}\nli .check[data-v-f847ca3e] {\r\n        display: block;\r\n        position: absolute;\r\n        border: 3px solid #AAAAAA;\r\n        border-radius: 100%;\r\n        height: 21px;\r\n        width: 21px;\r\n        top: 6px;\r\n        left: 0px;\r\n        z-index: 5;\r\n        transition: border .25s linear;\r\n        -webkit-transition: border .25s linear;\n}\nli .check[data-v-f847ca3e]::before {\r\n        display: block;\r\n        position: absolute;\r\n        content: '';\r\n        border-radius: 100%;\r\n        height: 0.7rem;\r\n        width: 0.7rem;\r\n        top: 2px;\r\n        left: 2px;\r\n        margin: auto;\r\n        transition: background 0.25s linear;\r\n        -webkit-transition: background 0.25s linear;\n}\ninput[type=radio]:checked~.check[data-v-f847ca3e] {\r\n        border: 3px solid rgb(57, 108, 162);\n}\ninput[type=radio]:checked~.check[data-v-f847ca3e]::before {\r\n        background: rgb(57, 108, 162);\n}\n#heading[data-v-f847ca3e] {\r\n\r\n        font-size: 26px;\r\n        font-weight: bold;\r\n        color: #282828;\r\n        text-align: left;\n}\n#msform[data-v-f847ca3e] {\r\n        position: relative;\n}\n.form-card[data-v-f847ca3e] {\r\n        text-align: left\n}\n#msform fieldset[data-v-f847ca3e]:not(:first-of-type) {\r\n        display: none\n}\n#msform .action-button[data-v-f847ca3e] {\r\n        width: 170px;\r\n        height: 67px;\r\n        background: rgb(57, 108, 162);\r\n        font-weight: bold;\r\n        color: white;\r\n        border: 0 none;\r\n        border-radius: 0px;\r\n        cursor: pointer;\r\n        padding: 10px 5px;\r\n        margin: 10px 0px 10px 5px;\r\n        float: left;\r\n        text-align: center;\n}\n#msform .action-button[data-v-f847ca3e]:hover,\r\n    #msform .action-button[data-v-f847ca3e]:focus {\r\n        background-color: #311B92\n}\n#msform .action-button-previous[data-v-f847ca3e] {\r\n        width: 100px;\r\n        height: 67px;\r\n        font-size: 20px;\r\n        font-weight: bold;\r\n        color: rgb(57, 108, 162);\r\n        border: 0 none;\r\n        border-radius: 0px;\r\n        cursor: pointer;\r\n        padding: 10px 5px;\r\n        margin: 10px 5px 10px 0px;\r\n        float: left;\r\n        text-align: center;\n}\n.card[data-v-f847ca3e] {\r\n        z-index: 0;\r\n        border: none;\r\n        position: relative\n}\n.fs-title[data-v-f847ca3e] {\r\n        font-size: 25px;\r\n        color: #673AB7;\r\n        margin-bottom: 15px;\r\n        font-weight: normal;\r\n        text-align: left\n}\n.purple-text[data-v-f847ca3e] {\r\n        color: #673AB7;\r\n        font-weight: normal\n}\n.steps[data-v-f847ca3e] {\r\n        font-size: 18px;\r\n        color: #b9b9b9;\r\n        font-weight: normal;\n}\n.fieldlabels[data-v-f847ca3e] {\r\n        color: gray;\r\n        text-align: left\n}\n.fit-image[data-v-f847ca3e] {\r\n        width: 100%;\r\n        -o-object-fit: cover;\r\n           object-fit: cover\n}\n.css-checkbox[data-v-f847ca3e] {\r\n        position: absolute;\r\n        overflow: hidden;\r\n        clip: rect(0 0 0 0);\r\n        height: 1px;\r\n        width: 1px;\r\n        margin: -1px;\r\n        padding: 0;\r\n        border: 0;\n}\n#inputPreview[data-v-f847ca3e] {\r\n        display: flex;\r\n        gap: 20px;\n}\n.css-checkbox+label[data-v-f847ca3e] {\r\n        position: relative;\r\n        font-size: 18px;\r\n        cursor: pointer;\r\n        display: inline-flex;\r\n        align-items: center;\r\n        height: 19px;\r\n        color: #282828;\n}\n.css-checkbox+label[data-v-f847ca3e]::before {\r\n        content: \" \";\r\n        display: inline-block;\r\n        vertical-align: middle;\r\n        margin-right: 10px;\r\n        width: 20px;\r\n        height: 20px;\r\n        background-color: white;\r\n        border-width: 1px;\r\n        border-style: solid;\r\n        border-color: rgb(57, 108, 162);\r\n        border-radius: 2px;\r\n        box-shadow: none;\n}\n.css-checkbox:checked+label[data-v-f847ca3e]::after {\r\n        content: \" \";\r\n        background-image: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMDM5NWNhIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+\");\r\n        background-repeat: no-repeat;\r\n        background-size: 10px 10px;\r\n        background-position: center center;\r\n        position: absolute;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-left: 0px;\r\n        left: 0px;\r\n        top: 0px;\r\n        text-align: center;\r\n        background-color: transparent;\r\n        font-size: 10px;\r\n        height: 19px;\r\n        width: 19px;\n}\n@media (max-width: 1150px)\r\n{\n.vTcAG[data-v-f847ca3e] {\r\n    display: none;\n}\n}\n@media (max-width: 1300px)\r\n{\n.inEYMP .container[data-v-f847ca3e] {\r\n    padding-left: 32px;\r\n    padding-right: 32px;\n}\n}\n@media (max-width: 768px)\r\n{\n.step-form-card[data-v-f847ca3e]{\r\n        width:100%;\n}\n.inputCase[data-v-f847ca3e]{\r\n   flex-direction: column;\n}\n.eXkYNB .container[data-v-f847ca3e]{\r\n    padding-top: 0px;\n}\n.vTcAG .vertical-wrapper[data-v-f847ca3e] {\r\n    background: #f7f7f7;\r\n    width: calc(100% + 30px);\r\n    margin-left: -15px;\r\n    padding-top: 40px;\r\n    display: flex;\r\n    justify-content: center;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
