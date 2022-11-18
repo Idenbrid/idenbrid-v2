@@ -128,7 +128,7 @@
                             <router-link to="/contact/">お問い合わせ</router-link>
                         </li>
                         <li class="header-pc__nav__lists header-pc__nav__list_img mr-0 pr-0 ml-2">
-                            <router-link to="/contact/" class="get-start-btn">Get Started</router-link>
+                            <router-link to="/getstarted/" class="get-start-btn">Get Started</router-link>
                         </li>
                         <!-- <img src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/paper-airplane.svg" alt=""> -->
                     </ul>
@@ -276,6 +276,7 @@ jQuery('.header-sp__fixed__menu__left__list__pulus_blog').on('click', function (
     };
 </script>
 <style scoped>
+
 .header-pc__nav__lists {
     position: relative;
     display: inline-block;
@@ -291,8 +292,7 @@ jQuery('.header-sp__fixed__menu__left__list__pulus_blog').on('click', function (
     display: flex;
     align-items: center;
     border: 2px solid rgba(37, 115, 176, 1);
-    background-color: rgba(37, 115, 176, 1);
-    color: #fff;
+    color: rgba(37, 115, 176, 1);
     min-height: 42px;
     text-decoration: none;
     text-transform: uppercase;
@@ -303,6 +303,10 @@ jQuery('.header-sp__fixed__menu__left__list__pulus_blog').on('click', function (
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+.get-start-btn:hover{
+    background-color: rgba(37, 115, 176, 1);
+    color:#fff;
 }
 .side_fix {
     position: fixed;
