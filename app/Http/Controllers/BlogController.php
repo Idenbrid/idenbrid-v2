@@ -23,7 +23,11 @@ class BlogController extends Controller
                 $blog['is_liked']=0;
             }       
         } 
-        return $blogs;
+        $most_liked = Blog::orderBy('count', 'DESC')->limit(5)->get();
+        return response()->json([
+            'blogs' => $blogs,
+            'most_liked' => $most_liked,
+        ]);
     }
 
     public function blogDetail($id){
@@ -70,9 +74,9 @@ class BlogController extends Controller
         }
         $previous_blog = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$id])->first();
         if($previous_blog){
-            // $blog = Blog::find($id);
-            // $blog->like_count = $blog->like_count - 1;
-            // $blog->update();
+            $blog = Blog::find($id);
+            $blog->count = $blog->count-1;
+            $blog->update();
             $previous_blog->delete();
             return response()->json([
                 'success' => true,
@@ -84,9 +88,9 @@ class BlogController extends Controller
             $blogLike->user_id = $session_id;
             $blogLike->blog_id = $id;
             $blogLike->save();
-            // $getBlog = Blog::find($id);
-            // $getBlog->like_count = $getBlog->like_count + 1;
-            // $getBlog->update();
+            $getBlog = Blog::find($id);
+            $getBlog->count = $getBlog->count+1;
+            $getBlog->update();
             return response()->json([
                 'success' => true,
                 'is_liked'=>true,
@@ -121,6 +125,20 @@ class BlogController extends Controller
     //     }     
     // }
     public function searchBlog($keyword){
-        return Blog::Where('title', 'like', '%' . $keyword . '%')->get();
+
+        $session_id = session()->get('session_id');
+        $blogs = Blog::Where('title', 'like', '%' . $keyword . '%')->get();
+        foreach($blogs as $key => $blog){
+            $bl = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$blog->id])->first();
+            if($bl){
+                $blog['is_liked']=1;
+                $blog['count'] = BlogLike::where('blog_id', '=', $bl->blog_id)->count();
+            }
+            else{
+                $blog['is_liked']=0;
+            }       
+        }
+        return $blogs;
+
     }
 }

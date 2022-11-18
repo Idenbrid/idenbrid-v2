@@ -30,7 +30,7 @@
                             <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
                             </div>
                             <div class="scaleImg">
-                                <img :src="'https://admin-idenbrid.idenbrid.jp/public/storage/work_images/'+work.image"
+                                <img :src="'https://admin-idenbrid.idenbrid.com/public/storage/work_images/'+work.image"
                                     alt="">
                             </div>
                         </div>

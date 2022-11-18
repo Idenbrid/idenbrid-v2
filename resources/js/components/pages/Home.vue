@@ -209,11 +209,11 @@
                 <h3 class="content-title content-title_blog">BLOG</h3>
                 <p class="content-text content-text_blog">ウェブや業務システムそしてモバイルアプリ開発の際のお役立ち記事を掲載しています。</p>
                 <ul class="blog-contents">
-                    <li v-for="(blog,Blog) in blogs" :key="Blog" v-if="Blog < 3" class="blog-contents__list">
+                    <li v-for="(blog,Blog) in blogs.slice(Blog, 3)" :key="Blog" class="blog-contents__list">
                         <router-link :to="'/blog/detail/'+blog.id+'/'">
                             <p class="blog-contents__list__tags"><span>BLOG</span></p>
                             <img class="blog-contents__list__thumbnail"
-                                :src="'https://admin-idenbrid.idenbrid.jp/public/storage/blog_images/'+blog.image"
+                                :src="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/'+blog.image"
                                 alt="" loading="lazy">
                             <p class="blog-contents__list__title">{{blog.title}}</p>
                             <p class="blog-contents__list__date">{{blog.date}}</p>
@@ -276,7 +276,7 @@
         mounted() {
 
             axios.get('/api/blogs').then((res) => {
-                this.blogs = res.data.blogs;
+                this.blogs = res.data;
             }).catch((err) => {});
 
             axios.get('/api/news').then((res) => {

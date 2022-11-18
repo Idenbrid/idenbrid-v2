@@ -32,7 +32,7 @@
                     </div>
             </div>
 
-            <img class="single__thumbnail" :src="'https://admin-idenbrid.idenbrid.jp/public/storage/blog_images/'+blog.image" alt="" loading="lazy"/>
+            <img class="single__thumbnail" :src="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/'+blog.image" alt="" loading="lazy"/>
 
             <div class="single__contents" v-html="blog.description">
 
@@ -46,7 +46,7 @@
                 <ul class="aside__new__contents">
                     <li v-for="latest in latest_blogs" :key="latest.id" class="aside__new__list">
                         <router-link :to="'/blog/detail/'+latest.id">
-                            <img class="aside__new__list__thumbnail" :src="'https://admin-idenbrid.idenbrid.jp/public/storage/blog_images/'+latest.image" alt="" loading="lazy">
+                            <img class="aside__new__list__thumbnail" :src="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/'+latest.image" alt="" loading="lazy">
                             <p class="aside__new__list__title">{{latest.title}}</p>
                         </router-link>
                     </li>

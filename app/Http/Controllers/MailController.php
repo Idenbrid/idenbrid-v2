@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CompanyDocMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -39,10 +40,11 @@ class MailController extends Controller
         $requestDoc->name = $request->name;
         $requestDoc->email = $request->email;
         $requestDoc->company_name = $request->company_name;
-        $requestDoc->save();
+        if($requestDoc->save()){
+            Mail::to($request->email)->send(new CompanyDocMail($requestDoc));
+        }
         return response()->json([
             'success' => true,
         ]);
-
     }
 }
