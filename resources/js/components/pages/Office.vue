@@ -12,7 +12,7 @@
                 <div class="lead_inner">
                     <h3 class="lead_ttl fade_y on">
                         <h3 class="content-title">ENVIRONMENT</h3>
-                            "大切なのは、、<br>メンバーが働きたい環境構築"
+                        "大切なのは、、<br>メンバーが働きたい環境構築"
                     </h3>
                     <p class="lead_txt fade_y on">
                         1日の多くの時間を過ごすオフィス。<br
@@ -64,12 +64,14 @@
                 </div>
                 <div class="box flx aic jfc_sb">
                     <div class="map">
+
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212.68255807868914!2d74.3691103812307!3d31.471361215957668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919077f1c51c857%3A0xc165f90c052dd308!2sRahman%20and%20Rahman%20Dental%20Surgeons!5e0!3m2!1sen!2s!4v1665550517774!5m2!1sen!2s"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5116.628349312717!2d74.37810117146583!3d31.47108330229046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391907530d966bf3%3A0x99ab6b175fc81d7d!2zSURFTkJSSUQgSU5DLiAvIOOCouOCpOODh-ODs-ODluODquODg-ODieekvg!5e0!3m2!1sen!2s!4v1668775614632!5m2!1sen!2s"
                             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="text_area">
-                        <p class="place">パキスタン本社<br>〒54810<br>Basement 1st floor, 176 Y-Block, DHA Phase3, Lahore, Pakistan</p>
+                        <p class="place">パキスタン本社<br>〒54810<br>Basement 1st floor, 176 Y-Block, DHA Phase3, Lahore,
+                            Pakistan</p>
                         <p class="number">
                             TEL : <a href="tel:+923064041221" class="tel_link no_link">+92306-404-1221</a><br>
                             MAIL : <a href="mailto:helloworld@idenbrid.com">helloworld@idenbrid.com</a>
@@ -78,12 +80,13 @@
                             Lahore Airportよ<br class="sp">り車で15分<br>
                             Gulberg中心地よ<br class="sp">り車で20分
                         </p>
-                        <a href="https://tomorrowgate.co.jp/company/office/" class="more_txt fade_y on"><span
-                                class="underline">Google Map</span></a>
+                        <a href="https://www.google.com/maps/search/176+Y-Block,+DHA+Phase3,+Lahore,+Pakistan/@31.4722224,74.3767664,21z"
+                            class="more_txt fade_y on" target="_blank">
+                            <span class="underline">Google Map</span></a>
                     </div>
                 </div>
             </div>
-        
+
             <section class="menu-list">
                 <div class="menu-box">
                     <div class="item">
@@ -179,14 +182,15 @@
     };
 </script>
 <style>
-.btns-group {
-    padding-bottom: 120px;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
+    .btns-group {
+        padding-bottom: 120px;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .lead_area {
         padding: 120px 10% 250px;
     }

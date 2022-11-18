@@ -281,7 +281,7 @@ jQuery('.header-sp__fixed__menu__left__list__pulus_blog').on('click', function (
     position: relative;
     display: inline-block;
     height: 35px;
-    margin-top: 30px;
+    margin-top: 18px;
     margin-right: 32px;
     font-weight: bold;
     font-size: 14px;

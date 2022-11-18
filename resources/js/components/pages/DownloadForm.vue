@@ -1,14 +1,14 @@
  <template>
      <div>
          <Navbar />
-         <div class="mv_textarea">
+         <div class="mv_textarea"  id="form">
              <h2>
                  <strong class="en entxt">DOCUMENT REQUEST / 資料ダウンロード</strong>
                  <span class="jptxt">こちらではIDENBRIDの事業に関する資料のダウンロードができます</span>
              </h2>
          </div>
          <main>
-             <section class="">
+             <section class="" >
                  <div data-s-0e16e919-25dd-47be-9410-c87b0ca48625="" class="sd">
                      <div data-s-02bbc519-c345-4334-95d8-54c8794e13a6="" class="sd">
                          <div data-s-8c456275-d38c-4330-9861-5284c2ecf314="" class="sd"><img
@@ -17,7 +17,7 @@
                          </div>
 
                      </div>
-                    <form @submit.prevent="requestDoc()" id="form" data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc="" class="sd">
+                    <form @submit.prevent="requestDoc()"  data-s-52f5ada1-f2f2-4938-a67e-ed3a1ca95bfc="" class="sd">
                          <div data-s-eb910213-5e90-4c74-962c-99e6f7cb752c="" class="sd">
                              <div data-s-5d7bf798-6408-460a-a17b-3abceae4a8cf="" class="richText sd">
                                  <h2 data-uid="lVjvymHy" data-time="">IDENBRIDのサービスが3分でわかる</h2>
