@@ -385,7 +385,7 @@
                                         </div>
                                         </div>
                                         <input data-v-f847ca3e="" type="button" name="next" value="SUBMIT REQUEST"
-                                            class="next action-button">
+                                            class="action-button">
 
                                     </fieldset>
                                 </form>
@@ -536,13 +536,16 @@
     };
 </script>
 <style scoped>
+
 .vTcAG img {
-    height: 52px;
-}
-.vTcAG h3 {
-    margin-bottom: 28px;
-    margin-right: 30px;
-}
+        height: 52px;
+    }
+
+    .vTcAG h3 {
+        margin-bottom: 28px;
+        margin-right: 30px;
+    }
+
     .text-field {
         width: 100%;
         height: 59px;
@@ -596,7 +599,6 @@
         min-height: 430px;
         height: 430px;
         max-height: 430px;
-        width: 100%;
         width: 664px;
         max-width: 690px;
         position: relative;
@@ -695,7 +697,7 @@
         color: #b9b9b9;
     }
 
-    <style>.vTcAG h3 {
+    .vTcAG h3 {
         margin-bottom: 28px;
         margin-right: 30px;
     }
@@ -761,7 +763,7 @@
 
     li label {
         position: relative;
-        font-size: 1.35em;
+        font-size: 18px;
         padding: 0px 25px 0px 35px;
         z-index: 9;
         cursor: pointer;
@@ -852,7 +854,7 @@
 
     #msform .action-button:hover,
     #msform .action-button:focus {
-        background-color: #311B92
+        background-color: var(--textcolor);
     }
 
     #msform .action-button-previous {
@@ -970,43 +972,130 @@
         height: 19px;
         width: 19px;
     }
-    @media (max-width: 1150px)
-{
-.vTcAG {
-    display: none;
-}
-}
-@media (max-width: 1300px)
-{
-.inEYMP .container {
-    padding-left: 32px;
-    padding-right: 32px;
-}
-}
-@media (max-width: 768px)
-{
-    .step-form-card{
-        width:100%;
+
+    @media screen and (max-width: 1149px) and (min-width: 769px) {
+        .step-form-card {
+            margin: auto;
+            padding-top: 0px;
+        }
+
+        .eXkYNB {
+            padding-top: 20px;
+        }
     }
-.inputCase{
-   flex-direction: column;
-}
-.eXkYNB .container{
-    padding-top: 0px;
-}
-.vTcAG .vertical-wrapper {
-    background: #f7f7f7;
-    width: calc(100% + 30px);
-    margin-left: -15px;
-    padding-top: 40px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-}
+
+    @media (max-width: 1150px) {
+        .vTcAG {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .inEYMP .container {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .step-form-card {
+            width: 100%;
+            margin: auto;
+        }
+
+        .vTcAG img {
+            height: 35px;
+        }
+
+        .inputCase {
+            flex-direction: column;
+        }
+
+        .eXkYNB .container {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .vTcAG .vertical-wrapper {
+            background: #f7f7f7;
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            padding-top: 40px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .inEYMP .background {
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+
+        .vTcAG {
+            position: unset;
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            margin-top: 16px;
+        }
+
+        .vTcAG svg {
+            position: unset;
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            height: 7vw;
+        }
+
+        .eXkYNB {
+            padding-bottom: 0;
+        }
+
+        .step-form-card {
+            height: 100%;
+            max-height: 100%;
+        }
+
+        .vTcAG .backgroundFill {
+            position: unset;
+        }
+
+        .vTcAG .logo-wrapper {
+            width: 100%;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-bottom: 16px;
+        }
+
+        .vTcAG .wrapper h3 {
+            font-size: 14px;
+            margin-right: 0;
+            margin-bottom: 19px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .inputCase>div {
+            max-width: 100%;
+        }
+
+        #msform .action-button-previous,
+        #msform .action-button {
+            width: 100%;
+        }
+
+    }
 </style>
