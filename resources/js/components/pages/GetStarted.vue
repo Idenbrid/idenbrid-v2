@@ -1,432 +1,419 @@
 <template>
     <div>
         <Navbar />
-
         <main>
             <div class="eXkYNB">
                 <div class="container position-relative">
-                 
-                        <div class="">
-                            <div class="step-form-card">
-
-
-                                <form id="msform">
-
-                                    <fieldset>
-                                        <div class="form-card">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h2 id="heading">What do you need help with?</h2>
-                                                    <h2 class="steps">Step 1/7</h2>
-                                                </div>
-                                            </div>
-
-                                            <ul class="my-4">
-                                                <li>
-                                                    <input type="radio" id="new-project" name="selector2">
-                                                    <label for="new-project">New project
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="current-project" name="selector2">
-                                                    <label for="current-project">Current project that needs more
-                                                        developers
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="consultancy" name="selector2">
-                                                    <label for="consultancy">Consultancy, code review, or debugging
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="something-else" name="selector2">
-                                                    <label for="something-else">Something else
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <input type="button" name="next" class="next action-button" value="Next" />
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="form-card mb-4">
-                                            <div class="row mb-4">
-                                                <div class="col-12">
-                                                    <h2 id="heading">Describe your requirements below</h2>
-                                                    <h2 class="steps">Step 2/7</h2>
-                                                </div>
-
-                                            </div>
-                                            <textarea
-                                                placeholder="Example: I need to hire a senior Java developer for my existing team,OR I need a skilled development team to build a mobile app for the fashion industry."
-                                                name="" rows="8" cols="90" class="form-textfield"></textarea>
-                                        </div>
-                                        <input type="button" name="previous" class="previous action-button-previous"
-                                            value="BACK" />
-                                        <input type="button" name="next" class="next action-button" value="Next" />
-
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="form-card">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h2 id="heading">When do you need to start?</h2>
-                                                    <h2 class="steps">Step 3/7</h2>
-                                                </div>
-
-                                            </div>
-                                            <ul class="my-4">
-                                                <li>
-                                                    <input type="radio" id="as-soon" name="selector2">
-                                                    <label for="as-soon">As Soon As Possible
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="in-weeks" name="selector2">
-                                                    <label for="in-weeks">In 2-4 weeks
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="no-rush" name="selector2">
-                                                    <label for="no-rush">No rush
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-
-                                            </ul>
-
-                                        </div>
-                                        <input type="button" name="previous" class="previous action-button-previous"
-                                            value="BACK" />
-                                        <input type="button" name="next" class="next action-button" value="Next" />
-
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="form-card mb-4">
-                                            <div class="row mb-4">
-                                                <div class="col-12">
-                                                    <h2 id="heading">What skills do you require from your new
-                                                        developers?
-                                                    </h2>
-                                                    <h2 class="steps">Step 4/7</h2>
-                                                </div>
-
-                                            </div>
-                                            <div class="new-developer-form">
-
-                                                <div class="my-4">
-                                                    <div class="checkbox-grid">
-                                                        <div id="inputPreview">
-                                                            <input name="cssCheckbox" id="demo_opt_1" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_1">Mobile App</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_2" type="checkbox"
-                                                                class="css-checkbox" checked="">
-                                                            <label for="demo_opt_2">DevOps</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_3" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_3">Integration</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="checkbox-grid">
-                                                        <div id="inputPreview">
-                                                            <input name="cssCheckbox" id="demo_opt_4" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_4">Web App</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_5" type="checkbox"
-                                                                class="css-checkbox" checked="">
-                                                            <label for="demo_opt_5">Blockchain</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_6" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_6">UX/UI</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="checkbox-grid">
-                                                        <div id="inputPreview">
-                                                            <input name="cssCheckbox" id="demo_opt_7" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_7">DApp</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_8" type="checkbox"
-                                                                class="css-checkbox" checked="">
-                                                            <label for="demo_opt_8">Data Engineering</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_9" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_9">Code Review</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="checkbox-grid">
-                                                        <div id="inputPreview">
-                                                            <input name="cssCheckbox" id="demo_opt_10" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_10">Backend</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_11" type="checkbox"
-                                                                class="css-checkbox" checked="">
-                                                            <label for="demo_opt_11">CyberSecurity</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_12" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_12">Other</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="checkbox-grid">
-                                                        <div id="inputPreview">
-                                                            <input name="cssCheckbox" id="demo_opt_13" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_13">Frontend</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_14" type="checkbox"
-                                                                class="css-checkbox" checked="">
-                                                            <label for="demo_opt_14">eCommerce</label>
-
-                                                        </div>
-                                                        <div id="inputPreview">
-
-                                                            <input name="cssCheckbox" id="demo_opt_15" type="checkbox"
-                                                                class="css-checkbox">
-                                                            <label for="demo_opt_15">Artificial Intelligence</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex flex-column my-4">
-                                                        <label for="cars">TECH STACK (OPTIONAL)</label>
-
-                                                        <select name="cars" id="cars" class="select-control">
-                                                            <option value="volvo">Volvo</option>
-                                                            <option value="saab">Saab</option>
-                                                            <option value="mercedes">Mercedes</option>
-                                                            <option value="audi">Audi</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
+                    <div class="">
+                        <div class="step-form-card">
+                            <form id="msform">
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 id="heading">What do you need help with?</h2>
+                                                <h2 class="steps">Step 1/7</h2>
                                             </div>
                                         </div>
+                                        <ul class="my-4">
+                                            <li>
+                                                <input type="radio" id="new-project" value="New project" name="selector2" v-model="record.step_1">
+                                                <label for="new-project">New project
+                                                </label>
 
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="current-project" value="Current project that needs more developers" name="selector2" v-model="record.step_1">
+                                                <label for="current-project">Current project that needs more developers
+                                                </label>
 
-                                        <input type="button" name="previous" class="previous action-button-previous"
-                                            value="BACK" />
-                                        <input type="button" name="next" class="next action-button" value="Next" />
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="consultancy" value="Consultancy, code review, or debugging" name="selector2" v-model="record.step_1">
+                                                <label for="consultancy">Consultancy, code review, or debugging
+                                                </label>
 
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="form-card">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h2 id="heading">What is your project type?</h2>
-                                                    <h2 class="steps">Step 5/7</h2>
-                                                </div>
-
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="something-else" value="Something else" name="selector2" v-model="record.step_1">
+                                                <label for="something-else">Something else
+                                                </label>
+                                                <div class="check"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input :disabled="record.step_1 == ''" type="button" name="next" class="next action-button" value="Next" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card mb-4">
+                                        <div class="row mb-4">
+                                            <div class="col-12">
+                                                <h2 id="heading">Describe your requirements below</h2>
+                                                <h2 class="steps">Step 2/7</h2>
                                             </div>
-                                            <ul class="my-4">
-                                                <li>
-                                                    <input type="radio" id="short-term" name="selector2">
-                                                    <label for="short-term">I have a short-term project
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="long-term" name="selector2">
-                                                    <label for="long-term">I have a long-term project with the need for
-                                                        ongoing support
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="know-yet" name="selector2">
-                                                    <label for="know-yet">I don’t know yet
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-
-                                            </ul>
 
                                         </div>
-                                        <input type="button" name="previous" class="previous action-button-previous"
-                                            value="BACK" />
-                                        <input type="button" name="next" class="next action-button" value="Next" />
+                                        <textarea v-model="record.step_2"
+                                            placeholder="Example: I need to hire a senior Java developer for my existing team,OR I need a skilled development team to build a mobile app for the fashion industry."
+                                            name="" rows="8" cols="90" class="form-textfield"></textarea>
+                                    </div>
+                                    <input type="button" name="previous" class="previous action-button-previous"
+                                        value="BACK" />
+                                    <input :disabled="record.step_2 == ''" type="button" name="next" class="next action-button" value="Next" />
 
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="form-card">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h2 id="heading">How big is your company?</h2>
-                                                    <h2 class="steps">Step 6/7</h2>
-                                                </div>
-
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 id="heading">When do you need to start?</h2>
+                                                <h2 class="steps">Step 3/7</h2>
                                             </div>
-                                            <ul class="my-4">
-                                                <li>
-                                                    <input type="radio" id="just-me" name="selector2">
-                                                    <label for="just-me">Just me
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="10—100" name="selector2">
-                                                    <label for="10—100">10—100
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="101—500" name="selector2">
-                                                    <label for="101—500">101—500
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="no-rush" name="selector2">
-                                                    <label for="501—1000">501—1000
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-                                                <li>
-                                                    <input type="radio" id="more-than-1000" name="selector2">
-                                                    <label for="more-than-1000">More than 1000
-                                                    </label>
-
-                                                    <div class="check"></div>
-                                                </li>
-
-                                            </ul>
-
                                         </div>
-                                        <input type="button" name="previous" class="previous action-button-previous"
-                                            value="BACK" />
-                                        <input type="button" name="next" class="next action-button" value="Next" />
+                                        <ul class="my-4">
+                                            <li>
+                                                <input v-model="record.step_3" value="As Soon As Possible" type="radio" id="as-soon" name="selector2">
+                                                <label for="as-soon">As Soon As Possible
+                                                </label>
 
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="form-card">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h2 id="heading">Submit Your Request to See Developers' Profiles
-                                                    </h2>
-                                                    <h2 class="steps">Step 7/7</h2>
-                                                </div>
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input v-model="record.step_3" value="In 2-4 weeks" type="radio" id="in-weeks" name="selector2">
+                                                <label for="in-weeks">In 2-4 weeks
+                                                </label>
 
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input v-model="record.step_3" value="No rush" type="radio" id="no-rush" name="selector2">
+                                                <label for="no-rush">No rush
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="button" name="previous" class="previous action-button-previous"
+                                        value="BACK" />
+                                    <input :disabled="record.step_3 == ''" type="button" name="next" class="next action-button" value="Next" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card mb-4">
+                                        <div class="row mb-4">
+                                            <div class="col-12">
+                                                <h2 id="heading">What skills do you require from your new
+                                                    developers?
+                                                </h2>
+                                                <h2 class="steps">Step 4/7</h2>
                                             </div>
+                                        </div>
+                                        <div class="new-developer-form">
                                             <div class="my-4">
-                                            <div class="inputCase">
-                                                <div class="sc-fzonjX hIMiPJ"><span>PROJECT NAME*</span><input
-                                                        placeholder="" autocomplete="off" minlength="3" name="title"
-                                                        type="text" required="" value="" class="text-field">
-                                                   
+                                                <div class="checkbox-grid">
+                                                    <div id="inputPreview">
+                                                        <input name="cssCheckbox" value="Mobile App" v-model="record.step_4" id="demo_opt_1" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_1">Mobile App</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="DevOps" v-model="record.step_4" id="demo_opt_2" type="checkbox"
+                                                            class="css-checkbox" checked="">
+                                                        <label for="demo_opt_2">DevOps</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="Integration" v-model="record.step_4" id="demo_opt_3" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_3">Integration</label>
+                                                    </div>
                                                 </div>
-                                                <div class="sc-fzonjX hIMiPJ"><span>YOUR NAME*</span><input
-                                                        placeholder="" autocomplete="off" minlength="3" name="name"
-                                                        type="text" required="" value="" class="text-field">
-                                                  
+                                                <div class="checkbox-grid">
+                                                    <div id="inputPreview">
+                                                        <input name="cssCheckbox" value="Web App" v-model="record.step_4" id="demo_opt_4" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_4">Web App</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="Blockchain" v-model="record.step_4" id="demo_opt_5" type="checkbox"
+                                                            class="css-checkbox" checked="">
+                                                        <label for="demo_opt_5">Blockchain</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="UX/UI" v-model="record.step_4" id="demo_opt_6" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_6">UX/UI</label>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox-grid">
+                                                    <div id="inputPreview">
+                                                        <input name="cssCheckbox" value="DApp" v-model="record.step_4" id="demo_opt_7" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_7">DApp</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="Data Engineering" v-model="record.step_4" id="demo_opt_8" type="checkbox"
+                                                            class="css-checkbox" checked="">
+                                                        <label for="demo_opt_8">Data Engineering</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="Code Review" v-model="record.step_4" id="demo_opt_9" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_9">Code Review</label>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox-grid">
+                                                    <div id="inputPreview">
+                                                        <input name="cssCheckbox" value="Backend" v-model="record.step_4" id="demo_opt_10" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_10">Backend</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="CyberSecurity" v-model="record.step_4" id="demo_opt_11" type="checkbox"
+                                                            class="css-checkbox" checked="">
+                                                        <label for="demo_opt_11">CyberSecurity</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="Other" v-model="record.step_4" id="demo_opt_12" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_12">Other</label>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox-grid">
+                                                    <div id="inputPreview">
+                                                        <input name="cssCheckbox" value="Frontend" v-model="record.step_4" id="demo_opt_13" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_13">Frontend</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="eCommerce" v-model="record.step_4" id="demo_opt_14" type="checkbox"
+                                                            class="css-checkbox" checked="">
+                                                        <label for="demo_opt_14">eCommerce</label>
+
+                                                    </div>
+                                                    <div id="inputPreview">
+
+                                                        <input name="cssCheckbox" value="Artificial Intelligence" v-model="record.step_4" id="demo_opt_15" type="checkbox"
+                                                            class="css-checkbox">
+                                                        <label for="demo_opt_15">Artificial Intelligence</label>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column my-4">
+                                                    <label for="cars">TECH STACK (OPTIONAL)</label>
+
+                                                    <select name="cars" id="cars" class="select-control" v-model="record.step_4">
+                                                        <option value="volvo">Volvo</option>
+                                                        <option value="saab">Saab</option>
+                                                        <option value="mercedes">Mercedes</option>
+                                                        <option value="audi">Audi</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="inputCase">
-                                                <div class="sc-fzonjX hIMiPJ"><span>EMAIL</span><input
-                                                        placeholder="" autocomplete="off" minlength="3" name="title"
-                                                        type="text" required="" value="" class="text-field">
-                                                  
-                                                </div>
-                                                <div class="sc-fzonjX hIMiPJ"><span>SKYPE OR PHONE*</span><input
-                                                        placeholder="" autocomplete="off" minlength="3" name="name"
-                                                        type="text" required="" value="" class="text-field">
-                                              
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <input data-v-f847ca3e="" type="button" name="next" value="SUBMIT REQUEST"
-                                            class="next action-button">
-
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="sc-fzppAM vTcAG background">
-                            <div class="vertical-wrapper">
-                                <div class="wrapper">
-                                    <h3>Our Dev Teams Are Trusted by the Best</h3>
-                                    <div class="logo-wrapper">
-                                        <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
-                                                alt=""></div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/yandex.d9f9d084.svg"
-                                                alt=""></div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/ubs.1f911510.svg"
-                                                alt=""></div>
-                                        <div class="disney"><img
-                                                src="https://dashboard.devteam.space/static/media/disney.cfa15be3.svg"
-                                                alt=""></div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/samsung.31408c3f.svg"
-                                                alt="">
-                                        </div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/mi.a28a4be9.svg"
-                                                alt=""></div>
-
-                                        <div><img src="https://dashboard.devteam.space/static/media/y-combinator.3ed0d18e.svg"
-                                                alt="">
-                                        </div>
-                                        <div><img src="https://dashboard.devteam.space/static/media/500startups.4312811c.svg"
-                                                alt="">
                                         </div>
                                     </div>
-                                </div>
-                            </div><svg version="1.1" width="100%" height="100px" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 100 100"
-                                preserveAspectRatio="none">
-                                <polygon fill="#f7f7f7" points="0,100 100,0 100,100"></polygon>
-                            </svg>
-                            <div class="backgroundFill"></div>
+
+
+                                    <input type="button" name="previous" class="previous action-button-previous"
+                                        value="BACK" />
+                                    <input :disabled="record.step_4.length == 0" type="button" name="next" class="next action-button" value="Next" />
+
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 id="heading">What is your project type?</h2>
+                                                <h2 class="steps">Step 5/7</h2>
+                                            </div>
+
+                                        </div>
+                                        <ul class="my-4">
+                                            <li>
+                                                <input type="radio" id="short-term" name="selector2" v-model="record.step_5" value="I have a short-term project">
+                                                <label for="short-term">I have a short-term project
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" v-model="record.step_5" id="long-term" name="selector2" value="I have a long-term project with the need for
+                                                    ongoing support">
+                                                <label for="long-term">I have a long-term project with the need for
+                                                    ongoing support
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" v-model="record.step_5" id="know-yet" name="selector2" value="I don’t know yet">
+                                                <label for="know-yet">I don’t know yet
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <input type="button" name="previous" class="previous action-button-previous"
+                                        value="BACK" />
+                                    <input :disabled="record.step_5 == ''" type="button" name="next" class="next action-button" value="Next" />
+
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 id="heading">How big is your company?</h2>
+                                                <h2 class="steps">Step 6/7</h2>
+                                            </div>
+
+                                        </div>
+                                        <ul class="my-4">
+                                            <li>
+                                                <input type="radio" v-model="record.step_6" id="just-me" name="selector2" value="Just me">
+                                                <label for="just-me">Just me
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" v-model="record.step_6" id="10—100" name="selector2" value="10—100">
+                                                <label for="10—100">10—100
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" v-model="record.step_6" id="101—500" name="selector2" value="101—500">
+                                                <label for="101—500">101—500
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" v-model="record.step_6" id="no-rush" name="selector2" value="501—1000">
+                                                <label for="501—1000">501—1000
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" v-model="record.step_6" id="more-than-1000" name="selector2" value="More than 1000">
+                                                <label for="more-than-1000">More than 1000
+                                                </label>
+
+                                                <div class="check"></div>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <input type="button" name="previous" class="previous action-button-previous"
+                                        value="BACK" />
+                                    <input :disabled="record.step_6 == ''" type="button" name="next" class="next action-button" value="Next" />
+
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 id="heading">Submit Your Request to See Developers' Profiles
+                                                </h2>
+                                                <h2 class="steps">Step 7/7</h2>
+                                            </div>
+
+                                        </div>
+                                        <div class="my-4">
+                                            <div class="inputCase">
+                                                <div class="sc-fzonjX hIMiPJ"><span>PROJECT NAME*</span><input v-model="record.project_name"
+                                                        placeholder="" autocomplete="off" minlength="3" name="title"
+                                                        type="text" required value="" class="text-field">
+
+                                                </div>
+                                                <div class="sc-fzonjX hIMiPJ"><span>YOUR NAME*</span><input v-model="record.name"
+                                                        placeholder="" autocomplete="off" minlength="3" name="name"
+                                                        type="text" required="" value="" class="text-field">
+
+                                                </div>
+                                            </div>
+                                            <div class="inputCase">
+                                                <div class="sc-fzonjX hIMiPJ"><span>EMAIL</span><input placeholder="" v-model="record.email"
+                                                        autocomplete="off" minlength="3" name="title" type="text"
+                                                        required="" value="" class="text-field">
+
+                                                </div>
+                                                <div class="sc-fzonjX hIMiPJ"><span>SKYPE OR PHONE*</span><input v-model="record.phone"
+                                                        placeholder="" autocomplete="off" minlength="3" name="name"
+                                                        type="text" required value="" class="text-field">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input data-v-f847ca3e="" @click="saveRequest()" name="next" value="SUBMIT REQUEST" class="action-button">
+                                </fieldset>
+                            </form>
                         </div>
-               
+                    </div>
+                    <div class="sc-fzppAM vTcAG background">
+                        <div class="vertical-wrapper">
+                            <div class="wrapper">
+                                <h3>Our Dev Teams Are Trusted by the Best</h3>
+                                <div class="logo-wrapper">
+                                    <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
+                                            alt=""></div>
+                                    <div><img src="https://dashboard.devteam.space/static/media/yandex.d9f9d084.svg"
+                                            alt=""></div>
+                                    <div><img src="https://dashboard.devteam.space/static/media/ubs.1f911510.svg"
+                                            alt=""></div>
+                                    <div class="disney"><img
+                                            src="https://dashboard.devteam.space/static/media/disney.cfa15be3.svg"
+                                            alt=""></div>
+                                    <div><img src="https://dashboard.devteam.space/static/media/samsung.31408c3f.svg"
+                                            alt="">
+                                    </div>
+                                    <div><img src="https://dashboard.devteam.space/static/media/mi.a28a4be9.svg" alt="">
+                                    </div>
+
+                                    <div><img
+                                            src="https://dashboard.devteam.space/static/media/y-combinator.3ed0d18e.svg"
+                                            alt="">
+                                    </div>
+                                    <div><img
+                                            src="https://dashboard.devteam.space/static/media/500startups.4312811c.svg"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><svg version="1.1" width="100%" height="100px" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 100 100"
+                            preserveAspectRatio="none">
+                            <polygon fill="#f7f7f7" points="0,100 100,0 100,100"></polygon>
+                        </svg>
+                        <div class="backgroundFill"></div>
+                    </div>
+
                 </div>
             </div>
         </main>
@@ -437,9 +424,38 @@
     import Navbar from "../layout/Navbar.vue";
     // import Footer from "../layout/Footer.vue";
     export default {
+        data() {
+            return {
+                record: {
+                    step_1: '',
+                    step_2: '',
+                    step_3: '',
+                    step_4: [],
+                    step_5: '',
+                    step_6: '',
+                    step_7: '',
+                    project_name: '',
+                    name: '',
+                    email: '',
+                    phone: '',
+                },
+            }
+        },
         components: {
             Navbar,
-            // Footer,
+        },
+        methods: {
+            async saveRequest(id) {
+                axios.post("/api/submit-quotation" , this.record)
+                .then((res)=>{
+                    if (res.success == true) {
+                        alert('We will contact you soon. Thanks')
+                    }
+                })
+                .catch((err) =>{
+                    alert('please fill mandatory fileds. Thanks')
+                })
+            }
         },
         mounted: function () {
             window.setTimeout(function () {
@@ -450,15 +466,10 @@
                     var current = 1;
                     var steps = jQuery("fieldset").length;
 
-
-
                     jQuery(".next").click(function () {
 
                         current_fs = jQuery(this).parent();
                         next_fs = jQuery(this).parent().next();
-
-
-
                         //show the next fieldset
                         next_fs.show();
                         //hide the current fieldset with style
@@ -514,9 +525,9 @@
 
 
 
-                    jQuery(".submit").click(function () {
-                        return false;
-                    })
+                    // jQuery(".submit").click(function () {
+                    //     return false;
+                    // })
 
                 });
             }, 1000);
@@ -536,13 +547,15 @@
     };
 </script>
 <style scoped>
-.vTcAG img {
-    height: 52px;
-}
-.vTcAG h3 {
-    margin-bottom: 28px;
-    margin-right: 30px;
-}
+    .vTcAG img {
+        height: 52px;
+    }
+
+    .vTcAG h3 {
+        margin-bottom: 28px;
+        margin-right: 30px;
+    }
+
     .text-field {
         width: 100%;
         height: 59px;
@@ -970,43 +983,46 @@
         height: 19px;
         width: 19px;
     }
-    @media (max-width: 1150px)
-{
-.vTcAG {
-    display: none;
-}
-}
-@media (max-width: 1300px)
-{
-.inEYMP .container {
-    padding-left: 32px;
-    padding-right: 32px;
-}
-}
-@media (max-width: 768px)
-{
-    .step-form-card{
-        width:100%;
+
+    @media (max-width: 1150px) {
+        .vTcAG {
+            display: none;
+        }
     }
-.inputCase{
-   flex-direction: column;
-}
-.eXkYNB .container{
-    padding-top: 0px;
-}
-.vTcAG .vertical-wrapper {
-    background: #f7f7f7;
-    width: calc(100% + 30px);
-    margin-left: -15px;
-    padding-top: 40px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-}
+
+    @media (max-width: 1300px) {
+        .inEYMP .container {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .step-form-card {
+            width: 100%;
+        }
+
+        .inputCase {
+            flex-direction: column;
+        }
+
+        .eXkYNB .container {
+            padding-top: 0px;
+        }
+
+        .vTcAG .vertical-wrapper {
+            background: #f7f7f7;
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            padding-top: 40px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
 </style>

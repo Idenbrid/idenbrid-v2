@@ -35,6 +35,7 @@ Route::post('/like-blog/{id}',[BlogController::class,'likeBlog']);
 Route::post('/unlike-blog/{id}',[BlogController::class,'unlikeBlog']);
 
 Route::post('/request-doc',[MailController::class,'requestDoc']);
+Route::post('/submit-quotation',[MailController::class,'submitQuotation']);
 
 Route::get('news', [NewsController::class,'news']);
 Route::get('news-detail/{id}', [NewsController::class,'newsDetail']);
