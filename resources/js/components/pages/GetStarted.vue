@@ -486,10 +486,10 @@
             Navbar,
         },
         methods: {
-            async saveRequest(id) {
+            saveRequest(id) {
                 axios.post("/api/submit-quotation", this.record)
                     .then((res) => {
-                        if (res.success == true) {
+                        if (res.data.success == true) {
                             alert('We will contact you soon. Thanks')
                         }
                     })
