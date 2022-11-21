@@ -276,7 +276,7 @@
         mounted() {
 
             axios.get('/api/blogs').then((res) => {
-                this.blogs = res.data;
+                this.blogs = res.data.blogs;
             }).catch((err) => {});
 
             axios.get('/api/news').then((res) => {

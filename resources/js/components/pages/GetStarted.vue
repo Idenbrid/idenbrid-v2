@@ -244,14 +244,7 @@
                                                 </div>
                                                 <div class="d-flex flex-column my-4">
                                                     <label for="cars">TECH STACK (OPTIONAL)</label>
-
-                                                    <select name="cars" id="cars" class="select-control"
-                                                        v-model="record.step_4">
-                                                        <option value="volvo">Volvo</option>
-                                                        <option value="saab">Saab</option>
-                                                        <option value="mercedes">Mercedes</option>
-                                                        <option value="audi">Audi</option>
-                                                    </select>
+                                                    <multiselect v-model="record.step_4" :options="options" :multiple="true" ></multiselect>
                                                 </div>
                                             </div>
                                         </div>
@@ -461,9 +454,10 @@
         <!-- <Footer /> -->
     </div>
 </template>
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 <script>
     import Navbar from "../layout/Navbar.vue";
-    // import Footer from "../layout/Footer.vue";
+    import Multiselect from 'vue-multiselect';
     export default {
         data() {
             return {
@@ -480,22 +474,24 @@
                     email: '',
                     phone: '',
                 },
+                options: ['Laravel', 'Vuejs', 'Nodejs', 'Expressjs', 'Reactjs'],
             }
         },
         components: {
             Navbar,
+            Multiselect
         },
         methods: {
             saveRequest(id) {
                 axios.post("/api/submit-quotation", this.record)
-                    .then((res) => {
-                        if (res.data.success == true) {
-                            alert('We will contact you soon. Thanks')
-                        }
-                    })
-                    .catch((err) => {
-                        alert('please fill mandatory fileds. Thanks')
-                    })
+                .then((res) => {
+                    if (res.data.success == true) {
+                        alert('We will contact you soon. Thanks')
+                    }
+                })
+                .catch((err) => {
+                    alert('please fill mandatory fileds. Thanks')
+                })
             }
         },
         mounted: function () {
