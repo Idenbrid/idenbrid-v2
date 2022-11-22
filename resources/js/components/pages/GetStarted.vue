@@ -335,7 +335,7 @@
                                                 <label for="101—500">101—500
                                                 </label>
 
-                                                <div class="check"></div>
+                                                <div class="check"></div> 
                                             </li>
                                             <li>
                                                 <input type="radio" v-model="record.step_6" id="no-rush"
@@ -375,13 +375,13 @@
                                         </div>
                                         <div class="my-4">
                                             <div class="inputCase">
-                                                <div class="sc-fzonjX hIMiPJ"><span>PROJECT NAME*</span><input
+                                                <div class="sc-fzonjX hIMiPJ"><span>PROJECT NAME *</span><input
                                                         v-model="record.project_name" placeholder="" autocomplete="off"
                                                         minlength="3" name="title" type="text" required value=""
                                                         class="text-field">
 
                                                 </div>
-                                                <div class="sc-fzonjX hIMiPJ"><span>YOUR NAME*</span><input
+                                                <div class="sc-fzonjX hIMiPJ"><span>YOUR NAME *</span><input
                                                         v-model="record.name" placeholder="" autocomplete="off"
                                                         minlength="3" name="name" type="text" required="" value=""
                                                         class="text-field">
@@ -389,13 +389,13 @@
                                                 </div>
                                             </div>
                                             <div class="inputCase">
-                                                <div class="sc-fzonjX hIMiPJ"><span>EMAIL</span><input placeholder=""
+                                                <div class="sc-fzonjX hIMiPJ"><span>EMAIL *</span><input placeholder=""
                                                         v-model="record.email" autocomplete="off" minlength="3"
                                                         name="title" type="text" required="" value=""
                                                         class="text-field">
 
                                                 </div>
-                                                <div class="sc-fzonjX hIMiPJ"><span>SKYPE OR PHONE*</span><input
+                                                <div class="sc-fzonjX hIMiPJ"><span>SKYPE OR PHONE</span><input
                                                         v-model="record.phone" placeholder="" autocomplete="off"
                                                         minlength="3" name="name" type="text" required value=""
                                                         class="text-field">

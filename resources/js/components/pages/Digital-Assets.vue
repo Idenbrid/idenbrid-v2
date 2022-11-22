@@ -2,17 +2,17 @@
     <div>
         <Navbar />
         <div class="mv_textarea" bis_skin_checked="1">
-            <h2><strong class="en entxt">Digital Assets</strong> <span class="jptxt">Digital assets allow you to
-                    download the content data in original
-                    quality. We offer our users a digital format of the data as well as legal permission to use
-                    it.</span></h2>
+            <h2><strong class="en entxt">DIGITAL ASEETS / デジタルアセットデータ</strong>
+                 <span class="jptxt">
+                    アイデンブリッドが公式に提供している当社のロゴなどのデジタルデータになります。</span>
+                </h2>
         </div>
         <main>
             <section class="work mycontents-wide my-5">
                 <div class="section mediakit ">
                     <div class="container-slim">
                         <div class="mb-50">
-                            <h5>Logo</h5>
+                            <h5>Logo / ロゴ</h5>
                             <div class="kit kit-slim"><a href="/assets/img/logo/logo.svg" download="image"
                                     target="_blank" rel="noopener">
                                     <img src="/public/assets/img/logo/logo.svg" alt="" />
@@ -24,8 +24,8 @@
                             </div>
                         </div>
                         <div>
-                            <h5>Key Visual</h5>
-                            <p> Everything you need to know about IDENBRID INC.</p>
+                            <h5>Key Visual / キュービジュアル</h5>
+                            <p> 当社のブランド・サービスを表現しているアセットになります。</p>
                             <div class="kit"><a href="/assets/img/main-banner-2.png" download="image" rel="noopener">
                                     <img src="/public/assets/img/main-banner-2.png" alt="" />
                                 </a>
@@ -50,18 +50,18 @@
                     </div>
                     <div class="item">
 
-                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス＆アクセス
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">チーム
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">メンバー
                         </router-link>
                     </div>
                     <div class="item">
 
                         <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">デジタル資産</router-link>
+                                src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>
                     </div>
                 </div>
 

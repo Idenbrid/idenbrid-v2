@@ -7593,7 +7593,7 @@ var render = function render() {
     attrs: {
       to: "/getstarted/"
     }
-  }, [_vm._v("Get Started")])], 1)])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("開発見積依頼")])], 1)])])]), _vm._v(" "), _c("div", {
     staticClass: "header-sp"
   }, [_c("h1", {
     staticClass: "header-sp__img"
@@ -8282,7 +8282,7 @@ var staticRenderFns = [function () {
     staticClass: "en entxt"
   }, [_vm._v("ABOUT / 会社情報")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
-  }, [_vm._v("こちらはIDENBRID社の会社に関してをご覧頂けるページになります。")])])]);
+  }, [_vm._v("こちらはIDENBRID INC.の会社に関してをご覧頂けるページになります。")])])]);
 }];
 render._withStripped = true;
 
@@ -8376,7 +8376,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("オフィス\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("オフィス＆アクセス\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -8387,7 +8387,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Members-icon.svg"
     }
-  }), _vm._v("チーム\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("メンバー\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -8398,7 +8398,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("デジタル資産")])], 1)])])]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("デジタルアセット")])], 1)])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -8451,7 +8451,7 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("dl", [_c("dt", [_vm._v("IT開発事業")]), _vm._v(" "), _c("dd", [_vm._v("・ITコンサルティング（DX・コスト削減・新規ビジネス案件のITへの落とし込み等）"), _c("br"), _vm._v("\n                        ・ITシステム設計（要件定義・基本設計・テストケース・API・DB・システムアーキテクチャ等）"), _c("br"), _vm._v("\n                        ・UIUXデザイン（Webデザイン、スマホアプリデザイン、グラフィックデザイン等）"), _c("br"), _vm._v("\n                        ・ウェブシステム開発（フロントエンド実装、ECサイト、マッチングサイト、業務管理システム等）"), _c("br"), _vm._v("\n                        ・スマホアプリ開発（ライブ配信アプリ、マッチングアプリ、占いアプリ、業務アプリ等）"), _c("br"), _vm._v("\n                        ・インフラ開発（AWS、GCP、Azure・クラウドインフラ構築、DBマイグレーション等）"), _c("br"), _vm._v("\n                        ・LINEミニアプリ/API開発（メッセージAPI、会員証、ポイント、クーポンシステム等）"), _c("br"), _vm._v("\n                        ・SESエンジニア採用営業支援 ")])]);
+  return _c("dl", [_c("dt", [_vm._v("IT開発事業")]), _vm._v(" "), _c("dd", [_vm._v("・日本市場SDH：スタジオ開発ハブ（受託開発・ラボ型開発）"), _c("br"), _vm._v("\n                        ・SESエンジニア採用営業支援"), _c("br"), _vm._v("\n                        ・グローバル市場SDH：スタジオ開発ハブ（受託開発・ラボ型開発）"), _c("br"), _vm._v("\n                        ・パキスタン市場における自社アプリ開発・運営"), _c("br")])]);
 }];
 render._withStripped = true;
 
@@ -8535,7 +8535,7 @@ var render = function render() {
         }
       }
     }, [_vm._v("unlike")])])])], 1);
-  }), 0) : _c("h1", [_vm._v("No Data Found")])]), _vm._v(" "), _c("div", {
+  }), 0) : _c("h1", [_vm._v("また記事の投稿がございません。")])]), _vm._v(" "), _c("div", {
     staticClass: "blog--content--sidearea"
   }, [_c("div", {
     staticClass: "searcharea fade_y on"
@@ -8703,7 +8703,21 @@ var render = function render() {
     attrs: {
       id: "contents"
     }
-  }, [_vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("section", {
+  }, [_c("div", {
+    staticClass: "branding--mv"
+  }, [_c("div", {
+    staticClass: "text_area"
+  }, [_vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("router-link", {
+    staticClass: "btn-views",
+    attrs: {
+      to: "/download-form/"
+    }
+  }, [_vm._v("資料ダウンロード"), _c("i", {
+    staticClass: "fa fa-download ml-2",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })])], 1)]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", {
     staticClass: "solution-page my-5",
     attrs: {
       id: "expertise"
@@ -8712,7 +8726,7 @@ var render = function render() {
     staticClass: "content-title"
   }, [_vm._v("OUR EXPERTISE")]), _vm._v(" "), _c("ul", {
     staticClass: "service-contents"
-  }, [_vm._m(4), _vm._v(" "), _c("li", {
+  }, [_vm._m(5), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -8735,7 +8749,7 @@ var render = function render() {
     staticClass: "service-contents__list__title"
   }, [_vm._v("Mobile app development")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                    SNSアプリやマッチングアプリ・チャットアプリそしてライブ配信アプリや性格診断占いアプリや業務用の管理アプリなどカテゴリーを問わず、設計・開発・審査申請から保守まで丸っと一括で承っています。\n                                    また当社ではウェブシステムと連携したアプリ開発も得意としていますので出先から既存システムとのデータ共有されたアプリへのアクセスも可能とし、お客様の業務効率の改善に貢献します。\n                                ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                SNSアプリやマッチングアプリ・チャットアプリそしてライブ配信アプリや性格診断占いアプリや業務用の管理アプリなどカテゴリーを問わず、設計・開発・審査申請から保守まで丸っと一括で承っています。\n                                また当社ではウェブシステムと連携したアプリ開発も得意としていますので出先から既存システムとのデータ共有されたアプリへのアクセスも可能とし、お客様の業務効率の改善に貢献します。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -8758,7 +8772,7 @@ var render = function render() {
     staticClass: "service-contents__list__title"
   }, [_vm._v("System application development")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                    情報システム・顧客管理システム・在庫管理システム・業務用システムのウェブサービス構築や運用保守・セキュリティー対策など企業様向けの受託開発を行なっています。当社のエンジニアは多様な言語を取り扱えるほどAWSやAzureなどクラウドインラフサービスも専門領域です。\n                                ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                情報システム・顧客管理システム・在庫管理システム・業務用システムのウェブサービス構築や運用保守・セキュリティー対策など企業様向けの受託開発を行なっています。当社のエンジニアは多様な言語を取り扱えるほどAWSやAzureなどクラウドインラフサービスも専門領域です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -8781,7 +8795,7 @@ var render = function render() {
     staticClass: "service-contents__list__title"
   }, [_vm._v("Web creative・Digital marketing")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                    コーポレイトサイトの作成やポートフォリオサイトそしてLP構築などを手がけています。WordPressを使用したり、最新のJavaScript系言語をフロント開発に用いています。またデジタルマーケティングではSEO、SMOやSNS運用そして英語圏ならば運用から保守まで一括して行います。\n                                ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                コーポレイトサイトの作成やポートフォリオサイトそしてLP構築などを手がけています。WordPressを使用したり、最新のJavaScript系言語をフロント開発に用いています。またデジタルマーケティングではSEO、SMOやSNS運用そして英語圏ならば運用から保守まで一括して行います。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -8804,11 +8818,11 @@ var render = function render() {
     staticClass: "service-contents__list__title"
   }, [_vm._v("Web design・UIUX designing")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text service-contents__list_last__text"
-  }, [_vm._v("当社ではAdobe\n                                    XDを用いてウェブサイト・ウェブシステムやアプリケーションそしてスマホアプリのUIUXデザイン制作を行なっています。最初にワイヤーフレームを組みお客様の意図がきちんと反映されるようにコミュニケーションをしっかり取らせて頂いております。\n                                ")])])])], 1)])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("当社ではAdobe\n                                XDを用いてウェブサイト・ウェブシステムやアプリケーションそしてスマホアプリのUIUXデザイン制作を行なっています。最初にワイヤーフレームを組みお客様の意図がきちんと反映されるようにコミュニケーションをしっかり取らせて頂いております。\n                            ")])])])], 1)])]), _vm._v(" "), _c("section", {
     staticClass: "quote-us"
   }, [_c("h2", {
     staticClass: "heading cont-h1"
-  }, [_vm._v("Contact us")]), _vm._v(" "), _c("span", [_vm._v("Either you have a meer idea or concrete project details, get a qoute from us. We look forward to work with you. ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("お問い合わせ")]), _vm._v(" "), _c("span", [_vm._v("開発のご相談、お見積りが知りたい、どんなお悩みもお伺いします！ ")]), _vm._v(" "), _c("div", {
     staticClass: "qoute-button"
   }, [_c("router-link", {
     staticClass: "contactbtn fade_y on",
@@ -8816,7 +8830,7 @@ var render = function render() {
       to: "/contact/",
       bis_skin_checked: "1"
     }
-  }, [_vm._v("今すぐ相談してみる")])], 1)]), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)])]), _vm._v(" "), _c("Footer")], 1);
+  }, [_vm._v("今すぐ相談してみる")])], 1)]), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7), _vm._v(" "), _vm._m(8)])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -8825,35 +8839,25 @@ var staticRenderFns = [function () {
     staticClass: "mv_textarea"
   }, [_c("h2", [_c("strong", {
     staticClass: "en entxt"
-  }, [_vm._v("STUDIO DEVELOPMENT HUB / 受託開発")]), _vm._v(" "), _c("span", {
+  }, [_vm._v("STUDIO DEVELOPMENT HUB / スタジオ開発ハブ")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
   }, [_vm._v("ITシステム設計、UIUXデザイン、ウェブシステム、モバイルアプリ構築、クラウドサーバー、ウェブ制作")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "branding--mv"
-  }, [_c("div", {
-    staticClass: "text_area"
-  }, [_c("h3", {
+  return _c("h3", {
     staticClass: "fade_y on"
-  }, [_vm._v("熱狂的なブランドは"), _c("br", {
+  }, [_vm._v("プロジェクトを基本とした受託開発、"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("ビジョンから生まれる")]), _vm._v(" "), _c("p", {
+  }), _vm._v("エンジニア要員：リソース型の２方式サービスを展開")]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v('\n                            "持続可能なITシステム・アプリをお客様と共に作り上げる"'), _c("br", {
+  }, [_vm._v("\n                        IDENBRIDではワンストップにて、ウェブシステムとスマホアプリ開発を得意とするソフトウェア開発会社です。要件定義からシステム設計、UIUXデザインそして開発、またウェブからスマホそしてクラウドまで一社で完結開発致します"), _c("br", {
     staticClass: "pc"
-  })]), _vm._v(" "), _c("a", {
-    staticClass: "btn-views",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("資料ダウンロード"), _c("i", {
-    staticClass: "fa fa-download ml-2",
-    attrs: {
-      "aria-hidden": "true"
-    }
-  })])])]);
+  })]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -8867,11 +8871,11 @@ var staticRenderFns = [function () {
     staticClass: "heading"
   }, [_c("span", {
     staticClass: "sub en fade_y on"
-  }, [_vm._v("\n                                    SERVICE\n                                ")]), _vm._v(" "), _c("h3", {
+  }, [_vm._v("\n                                SERVICE\n                            ")]), _vm._v(" "), _c("h3", {
     staticClass: "fade_y on"
-  }, [_vm._v('"IDENBRID DEVELOPMENT ISM アイデンブリッドの開発主義"')])]), _vm._v(" "), _c("p", {
+  }, [_vm._v("IDENBRID DEVELOPMENT ISM"), _c("br"), _vm._v("アイデンブリッドの開発主義")])]), _vm._v(" "), _c("p", {
     staticClass: "lead fade_y on"
-  }, [_vm._v("\n                                要件定義、基本設計など他社が見切り発車しがちな開発の基礎となる部分を丁寧に行い、お客様が実現されたいシステムとの乖離がないようにきちんと対応します。そして単純にソフトウェアの開発だけではなく、お客さまが何に困られているのかつまり「ユーザーペイン」をきちんとヒアリングし、その解消を得意としています。\n                            ")])])])]);
+  }, [_vm._v("\n                            要件定義、基本設計など他社が見切り発車しがちな開発の基礎となる設計・書類作成フェーズを丁寧に行い、お客様が実現されたいシステムとの乖離がないようにきちんと対応します。そして単純にソフトウェアの開発だけではなく、お客さまが何に困られているのかつまり「ユーザーペイン」をきちんとヒアリングし、その課題の解消を得意としています。\n                        ")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -8897,9 +8901,9 @@ var staticRenderFns = [function () {
     staticClass: "pc"
   }), _vm._v("【システム・アプリの開発は当社のみで完結】")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("\n                                    私たちは上流工程、要件定義・基本設計、システム設計"), _c("br", {
+  }, [_vm._v("\n                                私たちは上流工程、要件定義・基本設計、システム設計"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("UIUXデザイン、ウェブからアプリそしてクラウドまで一社にて構築を可能としております。\n                                ")])])]), _vm._v(" "), _c("div", {
+  }), _vm._v("UIUXデザイン、ウェブからアプリそしてクラウドまで一社にて構築を可能としております。\n                            ")])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
     staticClass: "en num fade_y on"
@@ -8907,13 +8911,13 @@ var staticRenderFns = [function () {
     staticClass: "textarea"
   }, [_c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("自トップクラスの提案力"), _c("br", {
+  }, [_vm._v("ITに詳しくないお客様の開発を得意"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("（ユーザーペイン解消の最優先）")]), _vm._v(" "), _c("p", {
+  }), _vm._v("【ユーザーペイン解消の最優先】")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v('\n                                    "お客様は実現したい内容をどのように達成したらいいのかわからないことがよくございます。\n'), _c("br", {
+  }, [_vm._v("\n                                当社はほとんどIT会社の下請けとして仕事をしておらず、エンド様と直接契約して開発を行なっています。\n                                  "), _c("br", {
     staticClass: "pc"
-  }), _vm._v('当社では実現までの道のり、そしてお客様の課題・問題解決を徹底して行います。"\n                                ')])])]), _vm._v(" "), _c("div", {
+  }), _vm._v("その中でたくさんのITに詳しくない企業様の要件をシステムやアプリに落とし込むことにご好評頂いております。\n                            ")])])]), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("div", {
     staticClass: "en num fade_y on"
@@ -8923,17 +8927,17 @@ var staticRenderFns = [function () {
     staticClass: "fade_y on"
   }, [_vm._v("開発マネジメントとスピード感"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("（圧倒的なコストパフォーマンス）")]), _vm._v(" "), _c("p", {
+  }), _vm._v("【圧倒的なコストパフォーマンス】")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("\n                                    当社では「ワン・スリーシステム」を導入し、"), _c("br", {
+  }, [_vm._v("\n                                当社では「ワン・スリーシステム」（1時間返信3日以内書類作成提出）を導入し、"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("お客様のアウトプットに対するリードタイムをしっかりマネジメントしています。\n                                ")])])])])]);
+  }), _vm._v("お客様のアウトプットに対するタイムマネジメントをしっかりしています。\n                            ")])])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("li", {
     staticClass: "service-contents__text"
-  }, [_c("p", [_vm._v("アイデンブリッド社はシステム開発やそれに伴うデザイン業務、またモバイルアプリの開発やウェブ制作などITに関わるプラットフォームに広く精通しています。特にDXを求めるお客様のコンサルも含めたトータルサポートを行なっています。\n                        ")])]);
+  }, [_c("p", [_vm._v("アイデンブリッド社はシステム開発やそれに伴うデザイン業務、またモバイルアプリの開発やウェブ制作などITに関わるプラットフォームに広く精通しています。特にDXを求めるお客様のコンサルも含めたトータルサポートを行なっています。\n                    ")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -8943,9 +8947,9 @@ var staticRenderFns = [function () {
     staticClass: "heading"
   }, [_c("span", {
     staticClass: "sub en fade_y on"
-  }, [_vm._v("RESULT")]), _vm._v(" "), _c("h3", {
+  }, [_vm._v("OUR COMMITMENT")]), _vm._v(" "), _c("h3", {
     staticClass: "fade_y on"
-  }, [_vm._v("ブランディングで実現できること")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("私たちの使命")])]), _vm._v(" "), _c("div", {
     staticClass: "branding--result--list"
   }, [_c("div", {
     staticClass: "branding--result--item"
@@ -8958,9 +8962,9 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("優良顧客の獲得")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("お客様のご希望を実現")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("強力なブランドを構築し、濃い関係をつくることで、自社の経営理念に共感したお客様を獲得")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("クライアントが作りたいもの、困っていることにフォーカスし、ご要望をITにて叶えます")])]), _vm._v(" "), _c("div", {
     staticClass: "branding--result--item"
   }, [_c("div", {
     staticClass: "icon fade_y on"
@@ -8971,9 +8975,9 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("価格競争からの脱却")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("コストパフォーマンスの高い開発")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("お客様に対して価格以上のブランド価値を体感してもらうことで、従来の費用による比較対象から脱却できます。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("お客さまが価格以上の価値を実感していただくとともに、他社との比較においても費用対効果の高い仕事をします")])]), _vm._v(" "), _c("div", {
     staticClass: "branding--result--item"
   }, [_c("div", {
     staticClass: "icon fade_y on"
@@ -8984,9 +8988,9 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("利益率の向上")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ビジネスのグロースに並走")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("ブランドイメージ向上による価格競争からの脱却と、社員生産性UPにより高い利益率を確保することができます。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("お客様の成長をITという側面よりともに支える存在としてご一緒に走ります")])]), _vm._v(" "), _c("div", {
     staticClass: "branding--result--item"
   }, [_c("div", {
     staticClass: "icon fade_y on"
@@ -8997,9 +9001,9 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("優秀人材の獲得")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("カスタマーサクセス")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("就職活動以前から貴社を深く認知しファンにすることで、中長期的な育てる採用を実践し優秀な人材を採用できます。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("クライアントのアラートをすぐに察知できるよう常にお客様担当が寄り添って開発を進めます")])]), _vm._v(" "), _c("div", {
     staticClass: "branding--result--item"
   }, [_c("div", {
     staticClass: "icon fade_y on"
@@ -9010,9 +9014,9 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("採用コストの軽減")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("タイムマネジメントの徹底")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("求人媒体や人材紹介会社を使わずに自社への直接応募を増やすことで、採用にかかる時間とコストを削減します。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("各タスクごと、チームごとの時間管理をツールを使って徹底しています")])]), _vm._v(" "), _c("div", {
     staticClass: "branding--result--item"
   }, [_c("div", {
     staticClass: "icon fade_y on"
@@ -9023,9 +9027,9 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("広告コストの軽減")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("作業効率の改善")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("ブランド認知によるホームページやSNSからの直接問い合わせを増やすことで、従来の営業広告費を削減します。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("コミュニケーションプラットフォームや自社システムにおいて仕事の効率化を図っています")])]), _vm._v(" "), _c("div", {
     staticClass: "branding--result--item"
   }, [_c("div", {
     staticClass: "icon fade_y on"
@@ -9036,9 +9040,9 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("離職率の低下")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("クライアントとのリレーションの構築")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("理念を発信することで価値観の不一致を防ぎ、仕事へのやりがいをつくり出し、早期離職の防止に繋がります。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("プロダクトファーストではなく、あくまでお客様ファーストの精神でお客様との関係構築を大切にしています")])]), _vm._v(" "), _c("div", {
     staticClass: "branding--result--item"
   }, [_c("div", {
     staticClass: "icon fade_y on"
@@ -9049,9 +9053,9 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("h4", {
     staticClass: "fade_y on"
-  }, [_vm._v("エンゲージメント強化")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("マーケットへのインパクトをともに")]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("ビジョンに共感する仲間を集め実践する組織づくりをすることで、会社と社員のエンゲージメントを高めます。")])])])]);
+  }, [_vm._v("一つひとつのプロジェクトがマーケットにインパクトを与えられるよう真剣に向き合って仕事します")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -9061,11 +9065,9 @@ var staticRenderFns = [function () {
     staticClass: "heading"
   }, [_c("span", {
     staticClass: "sub en fade_y on"
-  }, [_vm._v("COMPARE")]), _vm._v(" "), _c("h3", {
+  }, [_vm._v("CHECK OTHERS")]), _vm._v(" "), _c("h3", {
     staticClass: "fade_y on"
-  }, [_vm._v("トゥモローゲートと"), _c("br", {
-    staticClass: "sp"
-  }), _vm._v("他ブランディング会社の違い")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("IDENBRIDと他社開発会社の比較")])]), _vm._v(" "), _c("div", {
     staticClass: "scroll"
   }, [_c("p", {
     staticClass: "en"
@@ -9077,73 +9079,57 @@ var staticRenderFns = [function () {
     staticClass: "w-100"
   }, [_c("tbody", [_c("tr", {
     staticClass: "fade_y on"
-  }, [_c("th"), _vm._v(" "), _c("th", [_vm._v("デザイン会社")]), _vm._v(" "), _c("th", [_vm._v("経営コンサルティンティング")]), _vm._v(" "), _c("th", [_vm._v("人材コンサルティング会社")]), _vm._v(" "), _c("th", {
+  }, [_c("th"), _vm._v(" "), _c("th", [_vm._v("デザイン専門会社")]), _vm._v(" "), _c("th", [_vm._v("オフショア開発会社")]), _vm._v(" "), _c("th", [_vm._v("日本開発Sler会社")]), _vm._v(" "), _c("th", {
     staticClass: "tg"
-  }, [_vm._v("トゥモローゲート")])]), _vm._v(" "), _c("tr", {
+  }, [_vm._v("IDENBRID")])]), _vm._v(" "), _c("tr", {
     staticClass: "fade_y on"
-  }, [_c("th", [_vm._v("経営理念設計")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_c("th", [_vm._v("上流工程・システム設計")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("×")]), _vm._v("経営理念設計はできない")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_vm._v("×")]), _vm._v("システム設計はできない")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("◯")]), _vm._v("経営理念設計ができる")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_vm._v("◯")]), _vm._v("できる会社もあるが、要件が伝わりづらい")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("△")]), _vm._v("専門ではないが"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("アドバイスはできる")]), _vm._v(" "), _c("td", {
+  }, [_vm._v("△")]), _vm._v("専門人材がいれば設計可能")]), _vm._v(" "), _c("td", {
     staticClass: "tg"
   }, [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("◯")]), _vm._v("経営理念設計ができる")])]), _vm._v(" "), _c("tr", {
+  }, [_vm._v("◯")]), _vm._v("ワンストップでシステム設計もできる")])]), _vm._v(" "), _c("tr", {
     staticClass: "fade_y on"
-  }, [_c("th", [_vm._v("コンサルティング")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_c("th", [_vm._v("UIUXデザイン")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("△")]), _vm._v("デザインに関する"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("コンサルティングはできる")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_vm._v("△")]), _vm._v("UIUXデザインの作成ができる")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("△")]), _vm._v("経営に関する"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("コンサルティングはできる")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_vm._v("△")]), _vm._v("別会社に発注する必要あり")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("△")]), _vm._v("採用に関する"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("コンサルティングはできる")]), _vm._v(" "), _c("td", {
+  }, [_vm._v("△")]), _vm._v("専門人材がいればUIUXデザイン可能")]), _vm._v(" "), _c("td", {
     staticClass: "tg"
   }, [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("◯")]), _vm._v("ブランドづくりにおける"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("デザイン＆コンサルティング"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("ができる\n                                    ")])]), _vm._v(" "), _c("tr", {
+  }, [_vm._v("◯")]), _vm._v("ワンストップでUIUXデザインもできる\n                                ")])]), _vm._v(" "), _c("tr", {
     staticClass: "fade_y on"
-  }, [_c("th", [_vm._v("デザイン")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_c("th", [_vm._v("保守・メンテナンス")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("◯")]), _vm._v("デザインすることができる")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_vm._v("◯")]), _vm._v("保守を受けることはできない")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("×")]), _vm._v("デザインは外注制作となる")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_vm._v("×")]), _vm._v("保守を受けることはできるが、"), _c("br"), _vm._v("コミュニケーションが多く必要")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("△")]), _vm._v("デザインは外注制作となる")]), _vm._v(" "), _c("td", {
+  }, [_vm._v("△")]), _vm._v("保守を受けることができる")]), _vm._v(" "), _c("td", {
     staticClass: "tg"
   }, [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("◯")]), _vm._v("デザインすることができる")])]), _vm._v(" "), _c("tr", {
+  }, [_vm._v("◯")]), _vm._v("ワンストップで保守もできる")])]), _vm._v(" "), _c("tr", {
     staticClass: "fade_y on"
   }, [_c("th", [_vm._v("価格")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("△")]), _vm._v("別途コンサル会社との"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("契約が必要になる")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_vm._v("△")]), _vm._v("デザインのみなので割高となる")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("×")]), _vm._v("外注制作で割高となる")]), _vm._v(" "), _c("td", [_c("span", {
+  }, [_vm._v("×")]), _vm._v("単価は日本企業より安い可能性が大")]), _vm._v(" "), _c("td", [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("×")]), _vm._v("外注制作で割高となる")]), _vm._v(" "), _c("td", {
+  }, [_vm._v("×")]), _vm._v("金額感は割高可能性大")]), _vm._v(" "), _c("td", {
     staticClass: "tg"
   }, [_c("span", {
     staticClass: "marks"
-  }, [_vm._v("◯")]), _vm._v("内製化による高い"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("コストパフォーマンス")])])])])])]);
+  }, [_vm._v("◯")]), _vm._v("日本とパキスタンの混合チームでリーズナブル")])])])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -9191,7 +9177,7 @@ var render = function render() {
   }, [_vm._m(1), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
-    staticClass: "col-md-7 primary-contact-form contact"
+    staticClass: "col-md-8 primary-contact-form contact"
   }, [_c("div", {
     staticClass: "row m-0"
   }, [_c("div", {
@@ -9635,13 +9621,24 @@ var render = function render() {
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "form-group row form-field privacy_policy pd-checkbox required"
-  }, [_vm._m(10), _vm._v(" "), _c("div", {
-    staticClass: "col-md-8"
+  }, [_c("div", {
+    staticClass: "col-md-10"
   }, [_c("div", {
     staticClass: "formInputOuter privacy_policy"
   }, [_c("div", {
     staticClass: "formInputInner privacy_policy"
-  }, [_c("span", {
+  }, [_c("p", {
+    staticClass: "description"
+  }, [_c("label", {
+    attrs: {
+      "for": "agreecheck"
+    }
+  }, [_c("router-link", {
+    attrs: {
+      to: "/privacypolicy",
+      target: "_top"
+    }
+  }, [_vm._v("\n                                    プライバシーポリシー")]), _vm._v("\n                                  をよくお読みの上、問題なければチェックしてください\n                                ")], 1)]), _vm._v(" "), _c("span", {
     staticClass: "value"
   }, [_c("span", [_c("input", {
     directives: [{
@@ -9683,18 +9680,7 @@ var render = function render() {
     attrs: {
       "for": "880722_2642pi_880722_2642_13998"
     }
-  }, [_vm._v("同意する")])])]), _vm._v(" "), _c("p", {
-    staticClass: "description"
-  }, [_c("label", {
-    attrs: {
-      "for": "agreecheck"
-    }
-  }, [_c("router-link", {
-    attrs: {
-      to: "/privacypolicy",
-      target: "_top"
-    }
-  }, [_vm._v("\n                                    プライバシーポリシー")]), _vm._v("\n                                  をよくお読みの上、問題なければチェックしてください\n                                ")], 1)]), _vm._v(" "), _c("div", {
+  }, [_vm._v("同意する")])])]), _vm._v(" "), _c("div", {
     staticStyle: {
       display: "none"
     },
@@ -9709,14 +9695,14 @@ var render = function render() {
     }
   }), _vm._v(" "), _c("div", {
     staticClass: "contentFormAfter"
-  }), _vm._v(" "), _vm._m(11), _vm._v(" "), _c("input", {
+  }), _vm._v(" "), _vm._m(10), _vm._v(" "), _c("input", {
     attrs: {
       type: "hidden",
       name: "hiddenDependentFields",
       id: "hiddenDependentFields",
       value: ""
     }
-  })])])])]), _vm._v(" "), _vm._m(12)])])])])]), _vm._v(" "), _c("Footer")], 1);
+  })])])])]), _vm._v(" "), _vm._m(11)])])])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -9829,17 +9815,6 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "formHeading col-md-3"
-  }, [_c("label", {
-    staticClass: "field-label col-form-label",
-    attrs: {
-      "for": "880722_2642pi_880722_2642"
-    }
-  }, [_vm._v("プライバシーポリシー")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
   return _c("p", {
     staticClass: "submit d-flex justify-content-center"
   }, [_c("input", {
@@ -9918,7 +9893,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("オフィス\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("オフィス＆アクセス\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -9929,7 +9904,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Members-icon.svg"
     }
-  }), _vm._v("チーム\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("メンバー\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -9940,7 +9915,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("デジタル資産")])], 1)])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("デジタルアセット")])], 1)])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -9952,9 +9927,9 @@ var staticRenderFns = [function () {
     }
   }, [_c("h2", [_c("strong", {
     staticClass: "en entxt"
-  }, [_vm._v("Digital Assets")]), _vm._v(" "), _c("span", {
+  }, [_vm._v("DIGITAL ASEETS / デジタルアセットデータ")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
-  }, [_vm._v("Digital assets allow you to\n                download the content data in original\n                quality. We offer our users a digital format of the data as well as legal permission to use\n                it.")])])]);
+  }, [_vm._v("\n                アイデンブリッドが公式に提供している当社のロゴなどのデジタルデータになります。")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -9966,7 +9941,7 @@ var staticRenderFns = [function () {
     staticClass: "container-slim"
   }, [_c("div", {
     staticClass: "mb-50"
-  }, [_c("h5", [_vm._v("Logo")]), _vm._v(" "), _c("div", {
+  }, [_c("h5", [_vm._v("Logo / ロゴ")]), _vm._v(" "), _c("div", {
     staticClass: "kit kit-slim"
   }, [_c("a", {
     attrs: {
@@ -9991,7 +9966,7 @@ var staticRenderFns = [function () {
       src: "/public/assets/img/idenbrid-favicon-digital-assets.jpg",
       alt: ""
     }
-  })])])]), _vm._v(" "), _c("div", [_c("h5", [_vm._v("Key Visual")]), _vm._v(" "), _c("p", [_vm._v(" Everything you need to know about IDENBRID INC.")]), _vm._v(" "), _c("div", {
+  })])])]), _vm._v(" "), _c("div", [_c("h5", [_vm._v("Key Visual / キュービジュアル")]), _vm._v(" "), _c("p", [_vm._v(" 当社のブランド・サービスを表現しているアセットになります。")]), _vm._v(" "), _c("div", {
     staticClass: "kit"
   }, [_c("a", {
     attrs: {
@@ -11996,7 +11971,7 @@ var render = function render() {
     staticClass: "inputCase"
   }, [_c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("PROJECT NAME*")]), _c("input", {
+  }, [_c("span", [_vm._v("PROJECT NAME *")]), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -12024,7 +11999,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("YOUR NAME*")]), _c("input", {
+  }, [_c("span", [_vm._v("YOUR NAME *")]), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -12054,7 +12029,7 @@ var render = function render() {
     staticClass: "inputCase"
   }, [_c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("EMAIL")]), _c("input", {
+  }, [_c("span", [_vm._v("EMAIL *")]), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -12082,7 +12057,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("SKYPE OR PHONE*")]), _c("input", {
+  }, [_c("span", [_vm._v("SKYPE OR PHONE")]), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -12318,7 +12293,17 @@ var render = function render() {
     attrs: {
       id: "/"
     }
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("video", {
+  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("router-link", {
+    staticClass: "btn-views",
+    attrs: {
+      to: "/download-form/"
+    }
+  }, [_vm._v("資料ダウンロード"), _c("i", {
+    staticClass: "fa fa-download ml-2",
+    attrs: {
+      "aria-hidden": "true"
+    }
+  })]), _vm._v(" "), _c("video", {
     staticClass: "top-hero__video",
     attrs: {
       src: "/public/assets/videos/Banner_video.mp4",
@@ -12330,7 +12315,7 @@ var render = function render() {
     domProps: {
       muted: true
     }
-  })]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", [_c("div", {
+  })], 1), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("section", [_c("div", {
     staticClass: "c-message"
   }, [_c("div", {
     staticClass: "c-message__bgimg",
@@ -12347,7 +12332,7 @@ var render = function render() {
     staticClass: "mycontents-wide"
   }, [_c("div", {
     staticClass: "c-message__content"
-  }, [_vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _c("div", {
+  }, [_vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _c("div", {
     staticClass: "c-message__button u-hidden-lg"
   }, [_c("router-link", {
     staticClass: "c-button is-md",
@@ -12362,18 +12347,18 @@ var render = function render() {
     staticClass: "service-row my-5"
   }, [_c("div", {
     staticClass: "service-col"
-  }, [_vm._m(7), _vm._v(" "), _c("p", {
+  }, [_vm._m(6), _vm._v(" "), _c("p", {
     staticClass: "service-p"
-  }, [_vm._v("スタジオ型開発ハブは、一般的に言われるオフショア開発におけるラボ型開発のようなサービスを指し当社ではパキスタン拠点人材を人月ベースでご提供致します。\n                    ")]), _vm._v(" "), _c("router-link", {
+  }, [_vm._v("スタジオ開発ハブは、一般的に言われるオフショア開発におけるラボ型開発のようなサービスを指し当社ではパキスタン拠点人材を人月ベースでご提供致します。\n                    ")]), _vm._v(" "), _c("router-link", {
     staticClass: "viewmore-btn viewmore-btn_service mt-5",
     attrs: {
       to: "/solutions/"
     }
-  }, [_vm._v("View\n                        More")])], 1), _vm._v(" "), _vm._m(8)]), _vm._v(" "), _c("div", {
+  }, [_vm._v("View\n                        More")])], 1), _vm._v(" "), _vm._m(7)]), _vm._v(" "), _c("div", {
     staticClass: "service-row my-5"
-  }, [_vm._m(9), _vm._v(" "), _c("div", {
+  }, [_vm._m(8), _vm._v(" "), _c("div", {
     staticClass: "service-col"
-  }, [_vm._m(10), _vm._v(" "), _c("p", {
+  }, [_vm._m(9), _vm._v(" "), _c("p", {
     staticClass: "service-p"
   }, [_vm._v("\n                        SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。\n                    ")]), _vm._v(" "), _c("router-link", {
     staticClass: "viewmore-btn viewmore-btn_service mt-5",
@@ -12493,7 +12478,7 @@ var render = function render() {
     staticClass: "mt-5"
   }, [_c("div", {
     staticClass: "c-recruit"
-  }, [_vm._m(11), _vm._v(" "), _c("div", {
+  }, [_vm._m(10), _vm._v(" "), _c("div", {
     staticClass: "c-recruit__bottom"
   }, [_c("div", {
     staticClass: "mycontents-wide"
@@ -12527,7 +12512,7 @@ var render = function render() {
     staticClass: "c-recruit__bottom-content"
   }, [_c("div", {
     staticClass: "c-recruit__bottom-button"
-  }, [_vm._v("VIDEO")])])])], 1), _vm._v(" "), _c("div", {
+  }, [_vm._v("VIDEOを見る")])])])], 1), _vm._v(" "), _c("div", {
     staticClass: "large-6 small-12"
   }, [_c("router-link", {
     staticClass: "c-recruit__bottom-item",
@@ -12555,7 +12540,7 @@ var render = function render() {
     staticClass: "c-recruit__bottom-content"
   }, [_c("div", {
     staticClass: "c-recruit__bottom-button"
-  }, [_vm._v("BLOG")])])])], 1)])])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("BLOGを見る")])])])], 1)])])])])]), _vm._v(" "), _c("section", {
     staticClass: "blog-home mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_blog"
@@ -12590,7 +12575,7 @@ var render = function render() {
     attrs: {
       to: "/blog/"
     }
-  }, [_vm._v("View More\n\n            ")])], 1), _vm._v(" "), _vm._m(12)]), _vm._v(" "), _c("Footer")], 1);
+  }, [_vm._v("View More\n\n            ")])], 1), _vm._v(" "), _vm._m(11)]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -12627,20 +12612,6 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("a", {
-    staticClass: "btn-views",
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("資料ダウンロード"), _c("i", {
-    staticClass: "fa fa-download ml-2",
-    attrs: {
-      "aria-hidden": "true"
-    }
-  })]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
   return _c("div", {
     staticClass: "scroll scroll_top"
   }, [_c("p", {
@@ -12659,7 +12630,7 @@ var staticRenderFns = [function () {
     staticClass: "content-title c-message__title"
   }, [_vm._v("CEO MESSAGE")]), _vm._v(" "), _c("div", {
     staticClass: "c-message__title-sub"
-  }, [_vm._v("「パキスタンから世界へ」"), _c("br"), _vm._v("\n                                ITを届けるHubを作るストーリー")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("「パキスタンから世界一必要とされるIT企業になる」"), _c("br"), _vm._v("\n                                なぜ私たちはパキスタンでIT企業を設立したのか")]), _vm._v(" "), _c("div", {
     staticClass: "c-message__button u-hidden-sm"
   }, [_c("a", {
     staticClass: "viewmore-btn viewmore-btn_service mt-3",
@@ -12696,7 +12667,7 @@ var staticRenderFns = [function () {
     attrs: {
       src: "/assets/img/icons/SHD.png"
     }
-  }), _vm._v("SEH：スタジオ型開発ハブ\n                    ")]);
+  }), _vm._v("SDH：スタジオ開発ハブ\n                    ")]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12857,7 +12828,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("オフィス\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("オフィス＆アクセス\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -12868,7 +12839,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Members-icon.svg"
     }
-  }), _vm._v("チーム\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("メンバー\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -12879,7 +12850,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("デジタル資産")])], 1)])])]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("デジタルアセット")])], 1)])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -12888,9 +12859,9 @@ var staticRenderFns = [function () {
     staticClass: "mv_textarea"
   }, [_c("h2", [_c("strong", {
     staticClass: "en entxt"
-  }, [_vm._v("MEMBER")])]), _vm._v(" "), _c("p", {
+  }, [_vm._v("MEMBER / メンバー")])]), _vm._v(" "), _c("p", {
     staticClass: "about-subcontents__text"
-  }, [_vm._v("こちらは当社の情報や沿革など会社概要を確認いただけすページです。")])]);
+  }, [_vm._v("個性豊かなメンバーを知ることで当社をより深く知ることができます")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12902,15 +12873,15 @@ var staticRenderFns = [function () {
     staticClass: "member_tab"
   }, [_c("li", {
     staticClass: "active all"
-  }, [_vm._v("ALL")]), _vm._v(" "), _c("li", {
+  }, [_vm._v("全て")]), _vm._v(" "), _c("li", {
     staticClass: "senki"
-  }, [_vm._v("戦略企画部")]), _vm._v(" "), _c("li", {
+  }, [_vm._v("マネジメント")]), _vm._v(" "), _c("li", {
     staticClass: "ishou"
-  }, [_vm._v("意匠制作部")]), _vm._v(" "), _c("li", {
+  }, [_vm._v("エンジニア")]), _vm._v(" "), _c("li", {
     staticClass: "jinji"
-  }, [_vm._v("人事総務部")]), _vm._v(" "), _c("li", {
+  }, [_vm._v("ビジネス")]), _vm._v(" "), _c("li", {
     staticClass: "kouhou"
-  }, [_vm._v("広報発信部")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("オフィス")])]), _vm._v(" "), _c("div", {
     staticClass: "member_tab_block"
   }, [_c("ul", {
     staticClass: "member_list"
@@ -13606,7 +13577,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("オフィス\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("オフィス＆アクセス\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -13617,7 +13588,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Members-icon.svg"
     }
-  }), _vm._v("チーム\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("メンバー\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -13628,7 +13599,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("デジタル資産")])], 1)])])]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("デジタルアセット")])], 1)])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -13655,21 +13626,23 @@ var staticRenderFns = [function () {
     staticClass: "text_area"
   }, [_c("div", {
     staticClass: "ttl"
-  }, [_c("h3", [_vm._v("私たちが戦うフィールドは「全世界」"), _c("br", {
+  }, [_c("h3", [_vm._v("日本人が創業したパキスタンから"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("テクノロジーでかっこよく世界をアップデート")])]), _vm._v(" "), _c("p", {
+  }), _vm._v("世界一必要とされるIT企業になる")])]), _vm._v(" "), _c("p", {
     staticClass: "lead"
-  }, [_vm._v("\n                                新型コロナウイルスが依然として猛威を振るう中、日々の生活が困難な状況におられる皆様に心よりお見舞いを申し上げるとともに一所懸命に治療などに取り組まれている医療従事者の方々には深く心より御礼を申し上げます。\n                            ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("\n                                2020年1月私たち日本人の手によってIDENBRIDがパキスタンにて産声をあげました。\n                            ")]), _vm._v(" "), _c("p", {
     staticClass: "lead"
-  }, [_vm._v("\n                                さて、私たちの創業から、そしてコロナ禍における生活が始まって約2年が経過しました。私たちIDENBRIDは2030年までにこの競争激しいインドを含む南アジアの中でパキスタン拠点の会社としてNo.1になることを掲げています。\n                            ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("\n                                それから今まで私たちはパキスタンから世界一必要とされるIT企業になるという目標に向けてひたすら走り続けています。\n                            ")]), _vm._v(" "), _c("p", {
     staticClass: "lead"
-  }, [_vm._v("\n                                IT開発業界の中にいる私たちは世界中でこのコロナによって更にビジネスのIT化を進める動きが顕著になっていることを感じていています。日本においてもこれまでDXと散々騒がれていても変わっていなかった業務に「改革のメス」を入れる企業も増え、互いが競い合うように効率化をITで実現しているのが見えるようになってきました。\n                            ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("\n                                毎日の私たちを突き動かすのはひとえに私たちを頼りにしてくれるクライアントそして共にお客様の「ユーザーペインをITで解決する」というビジョンを共有しているチーム、仲間の存在です。\n                            ")]), _vm._v(" "), _c("p", {
     staticClass: "lead"
-  }, [_vm._v("\n                                当社ではグローバルマーケットへのアクセスができる稀有な企業としてのアドバンテージを最大限活かしたビジネス展開を今後も行い、加速するIT化の波を更に大きなものにできるよう積極的に世界中のITイノベーションに取り組んでいきます。\n                            ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("\n                                私たちは世界一必要とされるIT企業グループへという目標に辿り着くため、単純な売上だけでなくお客様ファーストが会社全体として実行されてこそ、必要とされるという目標が達成されると信じています。\n                            ")]), _vm._v(" "), _c("p", {
     staticClass: "lead"
-  }, [_vm._v("\n                                当社ではグローバルマーケットへのアクセスができる稀有な企業としてのアドバンテージを最大限活かしたビジネス展開を今後も行い、加速するIT化の波を更に大きなものにできるよう積極的に世界中のITイノベーションに取り組んでいきます。\n                            ")]), _vm._v(" "), _c("p", [_vm._v("そしてその根幹には「ユーザーペイン解消」という最も大切なお客様の声を大事にした開発が現場レベルで実現されるよう今後も会社として各クライアントに貢献して参ります。")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("そのためにOLPを導入し、リーダーの育成にも力を入れています。海外における日本人起業家の1人として、目標に向かって、足を止めずにただただ突き進んで参ります。")]), _vm._v(" "), _c("p", {
+    staticClass: "lead"
+  }, [_vm._v("皆様のご支援、応援、何卒引き続きよろしくお願いします。")]), _vm._v(" "), _c("p", {
     staticClass: "lead name"
-  }, [_vm._v("2022年9月"), _c("br"), _vm._v("IDENBRID INC."), _c("br"), _vm._v("代表CEO 中村 奏画")])])])])])]);
+  }, [_vm._v("2022年10月"), _c("br"), _vm._v("IDENBRID INC."), _c("br"), _vm._v("創業者兼CEO 中村 奏画")])])])])])]);
 }];
 render._withStripped = true;
 
@@ -14109,7 +14082,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("オフィス\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("オフィス＆アクセス\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -14120,7 +14093,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Members-icon.svg"
     }
-  }), _vm._v("チーム\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("メンバー\n                    ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -14131,7 +14104,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("デジタル資産")])], 1)])])]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("デジタルアセット")])], 1)])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -14142,7 +14115,7 @@ var staticRenderFns = [function () {
     staticClass: "en entxt"
   }, [_vm._v("OFFICE & ACCESS / オフィス&アクセス")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
-  }, [_vm._v("パキスタンにある本社をご紹介")])])]);
+  }, [_vm._v("パキスタンラホール市の本社をご紹介")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -14154,13 +14127,13 @@ var staticRenderFns = [function () {
     staticClass: "lead_ttl fade_y on"
   }, [_c("h3", {
     staticClass: "content-title"
-  }, [_vm._v("ENVIRONMENT")]), _vm._v('\n                    "大切なのは、、'), _c("br"), _vm._v('メンバーが働きたい環境構築"\n                ')]), _vm._v(" "), _c("p", {
+  }, [_vm._v("OFFICE ENVIRONMENT")]), _vm._v("\n                    大切なのは、"), _c("br"), _vm._v("チームが働きたい環境構築\n                ")]), _vm._v(" "), _c("p", {
     staticClass: "lead_txt fade_y on"
   }, [_vm._v("\n                    1日の多くの時間を過ごすオフィス。"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("コロナがあってからリモート環境で仕事することも増えたが、"), _c("br"), _vm._v("当社では今でもオフィスの存在を大切にしている。"), _c("br"), _vm._v("社員が１箇所に集まって、集中した時のパワーは凄い。"), _c("br", {
+  }), _vm._v("コロナがあってからリモート環境で仕事することも増えましたが"), _c("br"), _vm._v("当社では今でもオフィスの存在を大切にしています。"), _c("br"), _vm._v("チームが１箇所に集まって、集中した時のパワーは凄い。"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("この会社で仕事したいと思ってもらえるようなスペース作りが"), _c("br"), _vm._v("私たちが今後も目指す方向性である。")])])]);
+  }), _vm._v("この会社で仕事したいと思ってもらえるようなスペース作りが"), _c("br"), _vm._v("私たちのクリエイティブを支える今後も目指していく方向性です。")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -14233,7 +14206,7 @@ var staticRenderFns = [function () {
     staticClass: "access--index highlight_blk"
   }, [_c("div", {
     staticClass: "logo"
-  }, [_c("h1", [_vm._v("IDENBRID")])]), _vm._v(" "), _c("div", {
+  }, [_c("h1", [_vm._v("ACCEESS to Us")])]), _vm._v(" "), _c("div", {
     staticClass: "box flx aic jfc_sb"
   }, [_c("div", {
     staticClass: "map"
@@ -14250,7 +14223,7 @@ var staticRenderFns = [function () {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "place"
-  }, [_vm._v("パキスタン本社"), _c("br"), _vm._v("〒54810"), _c("br"), _vm._v("Basement 1st floor, 176 Y-Block, DHA Phase3, Lahore,\n                        Pakistan")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("パキスタン本社"), _c("br"), _vm._v("〒54000"), _c("br"), _vm._v("Basement 1st floor, 176 Y-Block, DHA Phase3, Lahore,\n                        Pakistan")]), _vm._v(" "), _c("p", {
     staticClass: "number"
   }, [_vm._v("\n                        TEL : "), _c("a", {
     staticClass: "tel_link no_link",
@@ -14604,7 +14577,7 @@ var staticRenderFns = [function () {
     staticClass: "en entxt"
   }, [_vm._v("POLICY / 経営理念")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
-  }, [_vm._v("IDENBRIDはどこに向っているのか")])])]);
+  }, [_vm._v("IDENBRIDとは")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -14616,9 +14589,9 @@ var staticRenderFns = [function () {
     staticClass: "col-md-6 policy-content"
   }, [_c("div", {
     staticClass: "policy-title"
-  }, [_c("h3", [_vm._v("日本人が起業した"), _c("br"), _vm._v("パキスタン拠点の"), _c("br"), _vm._v("グローバルIT開発企業")])]), _vm._v(" "), _c("div", {
+  }, [_c("h3", [_vm._v("日本人によって起業された"), _c("br"), _vm._v("パキスタン発のグローバルIT開発企業")])]), _vm._v(" "), _c("div", {
     staticClass: "policy-prgh"
-  }, [_c("p", [_vm._v("\n            2020年1月。コロナウィルスが世界中に蔓延するする直前に\n            "), _c("br"), _vm._v("パキスタンのラホール市で産声を上げたIDENBRID社。\n            "), _c("br"), _c("br"), _vm._v("日本人である代表がパキスタンから世界を相手にするIT開発ハブを立ててやると意気込んで\n            "), _c("br"), _vm._v("\n            つくった会社は、初めた当初日本との違いに戸惑いを覚えることの連続だった。\n            "), _c("br"), _c("br"), _vm._v("なのでチームに毎日毎日徹底したことはたった一つ。\n            "), _c("br"), _vm._v("お客様の「ユーザーペインを解決するIT会社になるぞ」本当にそれだけだった。\n          ")])])]), _vm._v(" "), _c("div", {
+  }, [_c("p", [_vm._v("\n            私たちIDENBRID INC.は、パキスタンのラホールを拠点とするグローバルIT企業です。\n            "), _c("br"), _vm._v("社名は、「Identity」と「Hybrid」を組み合わせたもので、\n            "), _c("br"), _c("br"), _vm._v("国際色豊かなスタッフがそれぞれの国の良さを引き出し、\n            "), _c("br"), _vm._v("\n            共存していくという意味が込められています。\n            "), _c("br"), _c("br"), _vm._v("日本人が海外の地で創業した会社がITを通じて世界中の人々に価値を提供し、\n            "), _c("br"), _vm._v("日々直面する課題をITの力を持って解決することが当社の大きな目標です。\n          ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-md-6 policy-img"
   }, [_c("img", {
     attrs: {
@@ -14635,15 +14608,15 @@ var staticRenderFns = [function () {
     staticClass: "medium-tern-content text-center"
   }, [_c("div", {
     staticClass: "medium-tern-title text-center"
-  }, [_c("h2", [_vm._v("IDENBRIDのミッション")]), _vm._v(" "), _c("span", [_vm._v("制定：2020年1月")])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("IDENBRIDの存在意義")]), _vm._v(" "), _c("span", [_vm._v("制定：2020年1月")])]), _vm._v(" "), _c("div", {
     staticClass: "most-intersting"
-  }, [_c("h2", [_vm._v("\n          テクノロジーで未来をかっこよくアップデート\n        ")]), _vm._v(" "), _c("span", [_vm._v(" できる会社になること")])]), _vm._v(" "), _c("hr", {
+  }, [_c("h2", [_vm._v("\n          アイデンブリッドのMVV：ミッション・ビジョン・バリューとは\n        ")]), _vm._v(" "), _c("span", [_vm._v(" 私たちの目指す道")])]), _vm._v(" "), _c("hr", {
     staticClass: "bg-white m-0"
   })]), _vm._v(" "), _c("div", {
     staticClass: "policy-slider position-relative"
   }, [_c("h2", {
     staticClass: "policy-h"
-  }, [_vm._v("ミッション達成に向けた取り組み")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("MISSION / ミッション")]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slider-title"
   }, [_c("div", {
     staticClass: "swiper-pagination custom-swiper-pagination"
@@ -14667,9 +14640,9 @@ var staticRenderFns = [function () {
     staticClass: "num"
   }, [_vm._v("01.")]), _vm._v(" "), _c("div", {
     staticClass: "slider-img-title"
-  }, [_c("span", [_vm._v("グループビジョン")]), _vm._v(" "), _c("h2", [_vm._v("GROUP VISION")])]), _vm._v(" "), _c("div", {
+  }, [_c("span", [_vm._v("テクノロジーで未来をかっこよくアップデート")]), _vm._v(" "), _c("h2", [_vm._v("Update the future in style")])]), _vm._v(" "), _c("div", {
     staticClass: "slider-img-about"
-  }, [_c("h2", [_vm._v("パキスタンから世界一必要とされるIT開発グループになる")])])])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("ITを通じて私たちが未来を変えるって本気で信じてます")])])])]), _vm._v(" "), _c("div", {
     staticClass: "mbl-col col-md-6"
   }, [_c("div", {
     staticClass: "slider-img"
@@ -14690,9 +14663,9 @@ var staticRenderFns = [function () {
     staticClass: "num"
   }, [_vm._v("02.")]), _vm._v(" "), _c("div", {
     staticClass: "slider-img-title"
-  }, [_c("span", [_vm._v("グループバリュー")]), _vm._v(" "), _c("h2", [_vm._v("GROUP VALUE")])]), _vm._v(" "), _c("div", {
+  }, [_c("span", [_vm._v("クライアントのユーザーペインの解決こそが我々の提供価値")]), _vm._v(" "), _c("h2", [_vm._v("Client User Pain Resolution")])]), _vm._v(" "), _c("div", {
     staticClass: "slider-img-about"
-  }, [_c("h2", [_vm._v("お客様のユーザーペインの解決こそが我々の提供価値")])])])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("クライアントファーストを実行するために私たちのできることを押し付けるのでなく"), _c("br"), _vm._v("\n                      お客様の困っていることを解決します")])])])]), _vm._v(" "), _c("div", {
     staticClass: "mbl-col col-md-6"
   }, [_c("div", {
     staticClass: "slider-img"
@@ -14713,9 +14686,9 @@ var staticRenderFns = [function () {
     staticClass: "num"
   }, [_vm._v("03.")]), _vm._v(" "), _c("div", {
     staticClass: "slider-img-title"
-  }, [_c("span", [_vm._v("国際マーケットへの挑戦")]), _vm._v(" "), _c("h2", [_vm._v("GROUP CHALLENGE")])]), _vm._v(" "), _c("div", {
+  }, [_c("span", [_vm._v("10条からなるリーダーシップ論に沿った判断基準")]), _vm._v(" "), _c("h2", [_vm._v("Our Leadership Philosophy")])]), _vm._v(" "), _c("div", {
     staticClass: "slider-img-about"
-  }, [_c("h2", [_vm._v("日本やパキスタンにとどまらないインターナショナル市場で成長する")])])])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("このOLPに沿って会社経営、"), _c("br"), _vm._v("\n                      採用活動、事業判断を行っています")])])])]), _vm._v(" "), _c("div", {
     staticClass: "mbl-col col-md-6"
   }, [_c("div", {
     staticClass: "slider-img"
@@ -14751,12 +14724,9 @@ var staticRenderFns = [function () {
       "data-s-b20f914c-17e4-4a7c-b734-7b81b5904637": "",
       "data-r-1_0_0_2_b20f914c-17e4-4a7c-b734-7b81b5904637": ""
     }
-  }, [_vm._v("\n          IDENBRIDの取り組む3つの大きな挑戦")])]), _vm._v(" "), _c("a", {
+  }, [_vm._v("\n          IDENBRIDの取り組む3つの大きな挑戦")])]), _vm._v(" "), _c("div", {
     staticClass: "sd",
     attrs: {
-      href: "https://herp.careers/v1/dely/W6lhLIRjVdVV",
-      rel: "noopener",
-      target: "_blank",
       "data-s-1a890182-2468-4c25-afbe-34ef0a944bce": ""
     }
   }, [_c("div", {
@@ -14787,17 +14757,14 @@ var staticRenderFns = [function () {
       "data-s-3488d0a9-bd1d-449b-b109-0c53335de055": "",
       "data-r-2_0_1_0_1_2_3488d0a9-bd1d-449b-b109-0c53335de055": ""
     }
-  }, [_vm._v("\n              スタジオ型開発ハブサービス：SEHを促進し、10年後の世界における 開発中心地が南アジアに移った際のイニシアチブをIDNEBRIDが握っていきます。")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n              スタジオ開発ハブサービス：SDHを促進し、10年後の世界における"), _c("br"), _vm._v("\n              開発中心地が南アジアに移った際のイニシアチブをIDNEBRIDが握っていきます。")]), _vm._v(" "), _c("div", {
     staticClass: "sd",
     attrs: {
       "data-s-21e4a63e-e023-411e-a192-303946499407": ""
     }
-  })])])]), _c("a", {
+  })])])]), _vm._v(" "), _c("div", {
     staticClass: "sd",
     attrs: {
-      href: "https://herp.careers/v1/dely/9zrq4gA36K8b",
-      rel: "noopener",
-      target: "_blank",
       "data-s-1a890182-2468-4c25-afbe-34ef0a944bce": ""
     }
   }, [_c("div", {
@@ -14822,7 +14789,7 @@ var staticRenderFns = [function () {
       "data-s-43881428-4fb8-49b3-a8b6-581f27d95706": "",
       "data-r-1_0_1_4_1_2_43881428-4fb8-49b3-a8b6-581f27d95706": ""
     }
-  }, [_vm._v("\n              2025年末までに国際市場と日本における売上高比率を 8：2を目標とし、圧倒的グルーバル企業へ成長")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("\n              2025年末までに国際市場と日本における売上高比率を"), _c("br"), _vm._v("\n              9：1を目標とし、圧倒的グルーバル企業へ成長")]), _vm._v(" "), _c("p", {
     staticClass: "text sd appear",
     attrs: {
       "data-s-3488d0a9-bd1d-449b-b109-0c53335de055": "",
@@ -14833,12 +14800,9 @@ var staticRenderFns = [function () {
     attrs: {
       "data-s-21e4a63e-e023-411e-a192-303946499407": ""
     }
-  })])])]), _c("a", {
+  })])])]), _vm._v(" "), _c("div", {
     staticClass: "sd",
     attrs: {
-      href: "https://herp.careers/v1/dely/fEkHjL6Qv_R2",
-      rel: "noopener",
-      target: "_blank",
       "data-s-1a890182-2468-4c25-afbe-34ef0a944bce": ""
     }
   }, [_c("div", {
@@ -15092,13 +15056,13 @@ var render = function render() {
     }
   })])]), _vm._v(" "), _c("h4", [_c("span", {
     staticClass: "department fade_y on"
-  }, [_vm._v("ODH：オンライン開発ハブ")]), _vm._v(" "), _c("strong", {
+  }, [_vm._v("SDH：スタジオ開発ハブ")]), _vm._v(" "), _c("strong", {
     staticClass: "phrase fade_y on"
-  }, [_vm._v("プロジェクト単位にて受託開発を行うサービスになります。"), _c("br", {
+  }, [_vm._v("受託開発またはラボ型開発サービスになります。"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("どのようなものを開発するのか決まっている場合にはこちらのサービスになります。")])]), _vm._v(" "), _c("p", {
+  }), _vm._v("設計・デザイン、ウェブ、スマホまでワンストップにて当社でお受けしております。")])]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("\n                            ONLINE DEVELOPMENT\n                            HUB通称ODHでは主にスタートアップや中小企業様に人気でプロジェクト単位での受託開発を行っているサービスになります。小規模から大規模まで幅広く対応しております。\n                        ")])])], 1), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n                            STUDIO DEVELOPMENT HUB通称SDHでは、ITサービスを開発されたい企業様や自社にはITに詳しい人材やエンジニアがいないので外注したいお客様に向けた受託開発サービスです。\n                        ")])])], 1), _vm._v(" "), _c("div", {
     staticClass: "recruit--person--item hoverScale",
     attrs: {
       bis_skin_checked: "1"
@@ -15145,9 +15109,17 @@ var render = function render() {
     attrs: {
       to: "/branding"
     }
-  }, [_vm._v("ONLINE DEVELOPMENT HUB : ODH"), _c("br"), _c("span", {
+  }, [_vm._v("STUDIO DEVELOPMENT HUB : SDH"), _c("br"), _c("span", {
     staticClass: "label pc"
-  }, [_vm._v("今オンライン開発ハブ（プロジェクト型受託開発）")])])], 1), _vm._v(" "), _vm._m(3)])]), _vm._v(" "), _vm._m(4)]), _vm._v(" "), _c("Footer")], 1);
+  }, [_vm._v("スタジオ開発ハブ（受託開発）")])])], 1), _vm._v(" "), _c("li", [_c("router-link", {
+    attrs: {
+      to: "/system-engineering-service/"
+    }
+  }, [_vm._v("SES"), _c("br"), _c("span", {
+    staticClass: "label pc"
+  }, [_vm._v("エンジニア採用支援（常駐・フルリモート業務委託）")]), _c("span", {
+    staticClass: "label sp"
+  }, [_vm._v("気軽にメール登録")])])], 1)])]), _vm._v(" "), _vm._m(3)]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -15158,17 +15130,17 @@ var staticRenderFns = [function () {
     staticClass: "en entxt"
   }, [_vm._v("BUSINESS / 事業紹介")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
-  }, [_vm._v("IDENBRIDがお届けしているIT開発のサービス")])])]);
+  }, [_vm._v("IDENBRIDがお届けしているIT開発・営業支援のサービス内容")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
     staticClass: "recruit--leadtxt"
-  }, [_c("h3", [_vm._v("ビジネスを動かすITサービスは"), _c("br", {
+  }, [_c("h3", [_vm._v("私たちのITサービスはユーザーペインの解消"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("アイデアから始まります")]), _vm._v(" "), _c("p", [_vm._v("単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、\n                "), _c("br", {
+  }), _vm._v("つまりお客様の課題をITで解決することです")]), _vm._v(" "), _c("p", [_vm._v("単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、\n                "), _c("br", {
     staticClass: "pc"
-  }), _vm._v("お客様の求めているユーザーペインを解決してこそ、その先のエンドユーザーに届くITサービスが実現できるのです。\n            ")])]);
+  }), _vm._v("お客様の困っていることを解決してこそ、その先のユーザーに届くITサービスが実現できるのです。\n            ")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -15182,18 +15154,6 @@ var staticRenderFns = [function () {
   }, [_vm._v("SERVICES")]), _vm._v(" "), _c("h3", {
     staticClass: "fade_y on"
   }, [_vm._v("サービスのご紹介")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("li", [_c("a", {
-    attrs: {
-      href: "/system-engineering-service/"
-    }
-  }, [_vm._v("SES"), _c("br"), _c("span", {
-    staticClass: "label pc"
-  }, [_vm._v("エンジニア採用支援（常駐・フルリモート業務委託）")]), _c("span", {
-    staticClass: "label sp"
-  }, [_vm._v("気軽にメール登録")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -16492,79 +16452,23 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", {
-    staticClass: "menu"
-  }, [_c("ul", {
-    staticClass: "menu-contents mycontents-wide"
-  }, [_c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/about/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail",
-    attrs: {
-      src: "/public/assets/img/icons/company.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("会社概要")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("COMPANY")])])])], 1), _vm._v(" "), _c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/blog/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail menu-contents__list__thumbnail_news",
-    attrs: {
-      src: "/public/assets/img/icons/WWW.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("ブログ")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("BLOG")])])])], 1), _vm._v(" "), _c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/onlinedevelopmenthub/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail",
-    attrs: {
-      src: "/public/assets/img/icons/Partnership.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("オンライン開発ハブ")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("DEVELOPEMENT")])])])], 1)])]), _vm._v(" "), _vm._m(5)]), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "hero_Heading"
-  }, [_c("h2", {
-    staticClass: "hero"
-  }, [_vm._v("System application development")])]);
+    staticClass: "mv_textarea"
+  }, [_c("h2", [_c("strong", {
+    staticClass: "en entxt"
+  }, [_vm._v("SES / エンジニア採用営業支援")]), _vm._v(" "), _c("span", {
+    staticClass: "jptxt"
+  }, [_vm._v("SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "system-sec mycontents-wide"
+  return _c("main", [_c("section", {
+    staticClass: "system-sec mycontents-wide mt-5"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
   }, [_vm._v("サービスシステム開発")]), _vm._v(" "), _c("p", {
@@ -16643,47 +16547,7 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("コミュニティーシステム")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        オンラインサロンやオンラインスクール、などオンライン上でのコミュニティーシステムを開発いたします。月額課金や単発販売などニーズに応じた設定が可能です。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system07.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("動画配信システム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        動画コンテンツの配信から販売などを行えるシステムを開発いたします。"), _c("br"), _vm._v("大容量の動画の配信も可能な大規模開発をも行うことができます。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system08.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("LIVEシステム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リアルタイムのLIVE配信機能からスーパーチェット、スタンプ送信機能を搭載したシステムをご提供しております。"), _c("br"), _vm._v("SNSアプリと掛け合わせた開発など新規事業開発にご利用いただいております。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system09.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("メディアサイトシステム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        オウンドメディアや自社ブログなどでご利用いただけるメディアサイトシステムです。"), _c("br"), _vm._v("記事投稿エディターやCMS機能、広告配信機能などニーズに合わせて対応可能です。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        オンラインサロンやオンラインスクール、などオンライン上でのコミュニティーシステムを開発いたします。月額課金や単発販売などニーズに応じた設定が可能です。")])])])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -16763,11 +16627,7 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("営業管理システム")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])])])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -16811,11 +16671,43 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("クラウド開発")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        サーバーコストの削減やオンプレミスからの移管支援などを行っております。"), _c("br"), _vm._v("様々なシステムのクラウド化による業務効率化を得意としております。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        サーバーコストの削減やオンプレミスからの移管支援などを行っております。"), _c("br"), _vm._v("様々なシステムのクラウド化による業務効率化を得意としております。")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("営業管理システム")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("営業管理システム")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("営業管理システム")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])])])]), _vm._v(" "), _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
@@ -16875,131 +16767,55 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "contact mycontents-wide mt-5"
-  }, [_c("h3", {
-    staticClass: "content-title content-title_contact"
-  }, [_vm._v("お問い合わせ")]), _vm._v(" "), _c("img", {
-    staticClass: "contact__img",
-    attrs: {
-      src: "/public/assets/img/icons/Operator.png",
-      alt: "",
-      width: "80px"
-    }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "content-text content-text_contact"
-  }, [_vm._v("お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。\n            ")]), _vm._v(" "), _c("div", {
-    staticClass: "contact__btns"
-  }, [_c("button", {
-    staticClass: "btn-wide btn-wide_call",
-    attrs: {
-      "data-toggle": "modal",
-      "data-target": "#linescancode"
-    }
+  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "menu-list"
   }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Line-white.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Line-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("会社LINE ID")])]), _vm._v(" "), _c("a", {
-    staticClass: "btn-wide btn-wide_call",
-    attrs: {
-      href: "mailto:helloworld@idenbrid.com"
-    }
+    staticClass: "menu-box"
   }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
     attrs: {
-      src: "/public/assets/img/icons/Mail-White.png",
-      alt: ""
+      href: "/system-application/"
     }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Mail-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("\n                        helloworld@idenbrid.com\n                    ")])]), _vm._v(" "), _c("a", {
-    staticClass: "btn-wide",
-    attrs: {
-      href: "skype:live:.cid.3145b74a3504693c?chat"
-    }
-  }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Skype-White.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Skype-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_contact"
-  }, [_vm._v("会社Skype ID")])])]), _vm._v(" "), _c("div", {
-    staticClass: "modal fade",
-    attrs: {
-      id: "linescancode",
-      tabindex: "-1",
-      role: "dialog",
-      "aria-labelledby": "linescancode",
-      "aria-hidden": "true"
-    }
-  }, [_c("div", {
-    staticClass: "modal-dialog modal-dialog-centered",
-    attrs: {
-      role: "document"
-    }
-  }, [_c("div", {
-    staticClass: "modal-content"
-  }, [_c("div", {
-    staticClass: "modal-header"
-  }, [_c("h5", {
-    staticClass: "modal-title",
-    attrs: {
-      id: "exampleModalLongTitle"
-    }
-  }, [_vm._v("ID検索はこちらから、LINE ID: idenbrid")]), _vm._v(" "), _c("button", {
-    staticClass: "close",
-    attrs: {
-      type: "button",
-      "data-dismiss": "modal",
-      "aria-label": "Close"
-    }
-  }, [_c("span", {
-    attrs: {
-      "aria-hidden": "true"
-    }
-  }, [_vm._v("×")])])]), _vm._v(" "), _c("div", {
-    staticClass: "modal-body"
   }, [_c("img", {
     attrs: {
-      src: "/public/assets/img/line-code.jpg",
-      width: "100%"
+      src: "/assets/img/icons/Person-icon.svg"
     }
-  })])])])])]);
+  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text router-link-exact-active router-link-active",
+    attrs: {
+      href: "/mobile-app-development/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Message-icon.svg"
+    }
+  }), _vm._v("Mobile app development\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
+    attrs: {
+      href: "/web-design-UIUX-designing/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Building-icon.svg"
+    }
+  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
+    attrs: {
+      href: "/web-creative-digital-marketing/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Digital-Assets.svg"
+    }
+  }), _vm._v("Web creative・Digital marketing")])])])])])]);
 }];
 render._withStripped = true;
 
@@ -18854,15 +18670,15 @@ var staticRenderFns = [function () {
     staticClass: "mv_textarea"
   }, [_c("h2", [_c("strong", {
     staticClass: "en entxt"
-  }, [_vm._v("System Engineering Service")]), _vm._v(" "), _c("span", {
+  }, [_vm._v("SES / エンジニア採用営業支援")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
-  }, [_vm._v("皆様へのご挨拶")])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。")])])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide mt-5"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("サービスシステム開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("エンジニアスタイルのご紹介・エンジニア様向けサービス")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("\n                whitecanvasは、もっとも新事業開発支援を得意としております。"), _c("br"), _vm._v("クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("\n                エンジニアスタイルは、当社が展開するエンジニアやデザイナーの案件獲得支援サービスになります。"), _c("br"), _vm._v("\n                登録して頂くだけで希望する条件にあった案件につけるようにサポートさせて頂きます。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -18874,9 +18690,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("フルスクラッチ開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("スタイルくん")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        オーダーメイドのシステム設計により特殊な業務の対応や他者との差別化を図ることが可能です。また、パッケージ開発より自由にシステムをカスタマイズできる利点もございます。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        スタイルくんが皆様の案件獲得のために全力でお手伝い・サポートさせて頂きます！")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -18886,9 +18702,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("マッチングシステム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("希望条件交渉力")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        BtoBマッチングのみならず、CtoCサービスのWEBサービス主にオークションサービスやフリマサービスなど開発いたします。エスクロー決済の導入も可能です。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        当社ではエンジニア・デザイナーの方々がより快適でお仕事に取り組めるようにご希望条件に沿った勤務形態をしっかりとご提案します")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -18898,9 +18714,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("売買システム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("契約単価")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("商材を問わずユーザー間で売買ができるシステムを構築致します。"), _c("br"), _vm._v("運営側のユーザー管理、運用まで考えた設計を提供致します。\n                    ")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("エンジニア・デザイナーの方々に少しでも大きく還元できるように単価交渉としっかりとした還元率を実現しています\n                    ")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -18910,9 +18726,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("ECシステム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("フルリモート案件")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        パッケージ開発やASP開発をはじめとし、オリジナルでの制作も可能です。"), _c("br"), _vm._v("決済システムや顧客管理システムと連携し、より効果的なECサイトを制作いたします。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        よりエンジニアの方が働きやすい環境を提供し、通勤の時間なども節約でき大人気の条件の一つです")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -18922,9 +18738,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("ポータルシステム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("スキルを伸ばす環境")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        企業内ポータルサイトやクチコミポータルサイト、不動産ポータルサイトなど様々なジャンルに対応しております。メッセージ機能や投稿機能などを入れ込むことも可能です。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        単純にできる仕事をするだけでなく、挑戦できる環境下で自身のスキルアップにも繋がる案件を紹介しております")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -18934,53 +18750,61 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("コミュニティーシステム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("頼れるカスタマーサクセス")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        オンラインサロンやオンラインスクール、などオンライン上でのコミュニティーシステムを開発いたします。月額課金や単発販売などニーズに応じた設定が可能です。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        万が一トラブルがあった場合にはエンジニアスタイルがしっかりと間に入り、状況把握からお客様の不安払拭に努めます")])])])]), _vm._v(" "), _c("section", {
+    staticClass: "system-sec mycontents-wide mt-5"
+  }, [_c("h2", {
+    staticClass: "system-sec__tiile"
+  }, [_vm._v("人材を必要としている案件側企業様向けのご案内")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__text"
+  }, [_vm._v("\n                当社ではエンジニアスキルのみでなく、高いコミュニケーション能力があり、責任感のある仕事にコミットできる人材が揃っています。上流から下流までチームで揃えることもでき、ワンストップにてチーム構成までご提案できます。\n            ")]), _vm._v(" "), _c("ul", {
+    staticClass: "system-sec__contents"
+  }, [_c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system07.svg",
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system01.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("動画配信システム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("豊富な人材データベース")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        動画コンテンツの配信から販売などを行えるシステムを開発いたします。"), _c("br"), _vm._v("大容量の動画の配信も可能な大規模開発をも行うことができます。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        他のSES会社では見つからないような人材を受託開発も行なっている会社ならではの視点とネットワークにてご提案可能です")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system08.svg",
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system02.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("LIVEシステム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("柔軟な提案力")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リアルタイムのLIVE配信機能からスーパーチェット、スタンプ送信機能を搭載したシステムをご提供しております。"), _c("br"), _vm._v("SNSアプリと掛け合わせた開発など新規事業開発にご利用いただいております。\n                    ")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        商流制限や条件交渉などせっかくいい人材がいても諸条件によって折り合いがつかないこともございますが当サービスでは良い人材の採用を第一優先に柔軟な提案をスピード感持って行います")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system09.svg",
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system03.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("メディアサイトシステム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("スピード対応")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        オウンドメディアや自社ブログなどでご利用いただけるメディアサイトシステムです。"), _c("br"), _vm._v("記事投稿エディターやCMS機能、広告配信機能などニーズに合わせて対応可能です。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("急募の急ぎ案件や大人数を必要とする募集であっても当サービスが提案と対応をさせて頂きます。\n                    ")])])])]), _vm._v(" "), _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("FLOW")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("エンジニアスタイル利用の流れ")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    企画から開発、運用まで一貫して対応を行っております。"), _c("br"), _vm._v("お問い合わせからクローズまで一連の流れをご確認ください。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n                    私たちのデータベースに会員登録から実際にお仕事を開始するまでのフローをご説明します。")])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -18994,9 +18818,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("ヒヤリング・お見積もり")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("当サービスへの会員登録")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("エンジニアスタイルのデータベースに人材登録させて頂き、先方のお客様へご提案を開始します。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -19006,9 +18830,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("仕様・要件定義")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("書類選考")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("登録頂いた情報を元にご提案を進めるためにスキルセットシートを作成し、書類選考の通過を目指します。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -19018,9 +18842,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("デザイン制作・システム開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("面談・条件調整")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("\n                            ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。"), _c("br"), _vm._v("そして開発工程のコーディング、システム開発を行います。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            1-2回当社を含むお客様と面談を実施させて頂きます。そこではこれまでの経験など面接にてお話し頂きます。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -19030,9 +18854,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("契約・勤務開始")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("契約書類がしっかりと手続き完了しましたら、勤務開始です！\n                        ")])])])])]), _vm._v(" "), _c("div", {
     staticClass: "branding--contact"
   }, [_c("h3", {
     staticClass: "fade_y on"
@@ -24922,7 +24746,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\r\n    width: 100%;\r\n    overflow: hidden;\r\n    box-sizing: content-box;\n}\n.bg-color{\r\n    background-color: #1a202c;\r\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\r\n    animation-name: fadeIn;\n}\n.loopCopy .area {\r\n    white-space: nowrap;\r\n    width: 100%;\r\n    padding-right: 100%;\r\n    box-sizing: content-box;\r\n    animation-iteration-count: infinite;\r\n    animation-timing-function: linear;\r\n    animation-name: ticker;\r\n    animation-duration: 10s;\r\n    height: 60px;\r\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\r\n    opacity: 1;\r\n    animation-duration: 0.5s;\r\n    animation-iteration-count: 1;\r\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\r\n    animation-fill-mode: both;\n}\nfooter {\r\n  background: #1a202c;\n}\n.container-request {\r\n  padding: 0px 74px !important;\n}\n.fonter-text{\r\n  color: #DADADA;\n}\n.footer-logo {\r\n  width: 20%;\r\n  margin: auto;\r\n  display: flex;\n}\n.col-content {\r\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\r\n  width: 100%;\r\n  height: auto;\n}\n.section-request {\r\n  padding: 80px 0px 60px;\n}\n.contact-main{\r\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\r\n  color: #fff;\r\n  font-size: 40px;\n}\n.contact-request-col {\r\n  padding: 50px 0px;\n}\n.request-contact-heading {\r\n  font-size: 20px;\r\n  letter-spacing: 0.1em;\r\n  color: #DADADA;\r\n  text-align: center;\r\n  font-weight: 700;\r\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\r\n  content: \"\";\r\n  background-color: #000;\r\n  height: 1px;\r\n  width: 40px;\r\n  position: absolute;\r\n  right: 6.5%;\r\n  top: 50%;\r\n  opacity: 0;\r\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\r\n    opacity: 1;\r\n    right: 5%;\r\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\r\n  transform: rotate(45deg);\r\n  width: 10px;\r\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\r\n  font-size: 12px;\r\n  letter-spacing: 0.06em;\r\n  color: #DADADA;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\r\n   font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\r\n  border: 1px solid #ffffff;\r\n  background: none !important;\r\n  transition: 0.6s ease;\r\n  cursor: pointer;\r\n  height: 149.25px;\r\n  border-radius: 0px;\n}\n.card:hover {\r\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\r\n.card:hover .request-contact-heading {\r\n  color: #000000;\n}\n.footer-menu-heading h2 {\r\n  text-align: center;\r\n  color: #ffff;\n}\n.foot-menu-group {\r\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\r\n  color: #DADADA;\r\n  font-size: 14px;\r\n  letter-spacing: 0.1em;\r\n  font-weight: bold;\r\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 30px;\r\n  margin: 25px 0px 0px;\n}\n.twitter {\r\n  color: #fff;\r\n  font-size: 27px;\n}\n.copyright {\r\n  margin-top: 40px;\r\n  font-size: 14px;\r\n  color: #777;\r\n  letter-spacing: 0.18em;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \r\n   width: 100%; \r\n   height: 85px;\r\n   padding-top: 20px;\r\n   margin: 0px 40px;\n}\n.contact__btns{\r\n    padding: 0px 150px;\n}\n.content-text_contact{\r\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\r\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 85%;\r\n    -moz-column-gap: 100px;\r\n         column-gap: 100px;\r\n    margin: 2px auto;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\r\n    font-size: 1.7rem;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.contact__btns {\r\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 90%;\r\n    -moz-column-gap: 180px;\r\n         column-gap: 180px;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\nh2 {\r\n    font-size: 1.5rem;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 80%;\r\n    -moz-column-gap: 230px;\r\n         column-gap: 230px;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.btn-wide {\r\n    margin: 0px 18px 30px;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\r\n    display: none;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.content-text_contact{\r\n    padding: 40px 30px;\r\n    margin: 0;\r\n    font-size: 14px;\n}\n.btn-wide{\r\n   margin: 0px 0px 30px;\n}\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\n    width: 100%;\n    overflow: hidden;\n    box-sizing: content-box;\n}\n.bg-color{\n    background-color: #1a202c;\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\n    animation-name: fadeIn;\n}\n.loopCopy .area {\n    white-space: nowrap;\n    width: 100%;\n    padding-right: 100%;\n    box-sizing: content-box;\n    animation-iteration-count: infinite;\n    animation-timing-function: linear;\n    animation-name: ticker;\n    animation-duration: 10s;\n    height: 60px;\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\n    opacity: 1;\n    animation-duration: 0.5s;\n    animation-iteration-count: 1;\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\n    animation-fill-mode: both;\n}\nfooter {\n  background: #1a202c;\n}\n.container-request {\n  padding: 0px 74px !important;\n}\n.fonter-text{\n  color: #DADADA;\n}\n.footer-logo {\n  width: 20%;\n  margin: auto;\n  display: flex;\n}\n.col-content {\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\n  width: 100%;\n  height: auto;\n}\n.section-request {\n  padding: 80px 0px 60px;\n}\n.contact-main{\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\n  color: #fff;\n  font-size: 40px;\n}\n.contact-request-col {\n  padding: 50px 0px;\n}\n.request-contact-heading {\n  font-size: 20px;\n  letter-spacing: 0.1em;\n  color: #DADADA;\n  text-align: center;\n  font-weight: 700;\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\n  content: \"\";\n  background-color: #000;\n  height: 1px;\n  width: 40px;\n  position: absolute;\n  right: 6.5%;\n  top: 50%;\n  opacity: 0;\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\n    opacity: 1;\n    right: 5%;\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\n  transform: rotate(45deg);\n  width: 10px;\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\n  font-size: 12px;\n  letter-spacing: 0.06em;\n  color: #DADADA;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\n   font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\n  border: 1px solid #ffffff;\n  background: none !important;\n  transition: 0.6s ease;\n  cursor: pointer;\n  height: 149.25px;\n  border-radius: 0px;\n}\n.card:hover {\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\n.card:hover .request-contact-heading {\n  color: #000000;\n}\n.footer-menu-heading h2 {\n  text-align: center;\n  color: #ffff;\n}\n.foot-menu-group {\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\n  color: #DADADA;\n  font-size: 14px;\n  letter-spacing: 0.1em;\n  font-weight: bold;\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 30px;\n  margin: 25px 0px 0px;\n}\n.twitter {\n  color: #fff;\n  font-size: 27px;\n}\n.copyright {\n  margin-top: 40px;\n  font-size: 14px;\n  color: #777;\n  letter-spacing: 0.18em;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \n   width: 100%; \n   height: 85px;\n   padding-top: 20px;\n   margin: 0px 40px;\n}\n.contact__btns{\n    padding: 0px 150px;\n}\n.content-text_contact{\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 85%;\n    -moz-column-gap: 100px;\n         column-gap: 100px;\n    margin: 2px auto;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\n    font-size: 1.7rem;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.contact__btns {\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 90%;\n    -moz-column-gap: 180px;\n         column-gap: 180px;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\nh2 {\n    font-size: 1.5rem;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 80%;\n    -moz-column-gap: 230px;\n         column-gap: 230px;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.btn-wide {\n    margin: 0px 18px 30px;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\n    display: none;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.content-text_contact{\n    padding: 40px 30px;\n    margin: 0;\n    font-size: 14px;\n}\n.btn-wide{\n   margin: 0px 0px 30px;\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24946,7 +24770,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\r\n    position: relative;\r\n    display: inline-block;\r\n    height: 35px;\r\n    margin-top: 18px;\r\n    margin-right: 32px;\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\r\n   \r\n    display: flex;\r\n    align-items: center;\r\n    border: 2px solid rgba(37, 115, 176, 1);\r\n    color: rgba(37, 115, 176, 1);\r\n    min-height: 42px;\r\n    text-decoration: none;\r\n    text-transform: uppercase;\r\n    font-family: \"Barlow\", sans-serif;\r\n    font-size: 0.875rem;\r\n    line-height: 1.25;\r\n    padding: 9px 20px;\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\r\n    background-color: rgba(37, 115, 176, 1);\r\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    /* background: #000; */\r\n    padding: 15px 0;\r\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\n    position: relative;\n    display: inline-block;\n    height: 35px;\n    margin-top: 18px;\n    margin-right: 32px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\n   \n    display: flex;\n    align-items: center;\n    border: 2px solid rgba(37, 115, 176, 1);\n    color: rgba(37, 115, 176, 1);\n    min-height: 42px;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-family: \"Barlow\", sans-serif;\n    font-size: 0.875rem;\n    line-height: 1.25;\n    padding: 9px 20px;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\n    background-color: rgba(37, 115, 176, 1);\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\n    position: fixed;\n    right: 0;\n    top: 50%;\n    transform: translate(100%, -50%);\n    z-index: 100001;\n    transition: 0.4s;\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    background-color: rgb(57, 108, 162);\n    display: flex;\n    border: solid 1px rgb(57, 108, 162);\n    cursor: pointer;\n    justify-content: center;\n    align-items: center;\n    padding: 25px 0;\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    display: block;\n    -o-writing-mode: vertical-rl;\n    writing-mode: vertical-rl;\n    font-size: 14px;\n    color: #dadada;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.18px;\n    transition: 0.4s;\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    /* background: #000; */\n    padding: 15px 0;\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    color: #dadada;\n    font-size: 12px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25018,7 +24842,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.profile--index {\n    padding: 80px 10%;\n    background-color: #fff;\n}\n.profile--index .prof_tbl {\n    padding: 0 0 60px;\n}\n.profile.loaded .profile--index .prof_tbl dl {\n    transform: translateY(0);\n    /* opacity: 1; */\n}\n.profile--index .prof_tbl dl {\n    transition: .6s;\n    /* opacity: 0; */\n    display: flex;\n    align-items: baseline;\n    margin: 0;\n}\n.profile--index .prof_tbl dl dt {\n    width: 190px;\n    padding: 20px 0;\n    font-size: 16px;\n    letter-spacing: 0.15em;\n    line-height: 1.875;\n    font-weight: bold;\n}\n.highlight_blk *::-moz-selection {\n    background: #000;\n    color: #dadada;\n}\n.highlight_blk *::selection {\n    background: #000;\n    color: #dadada;\n}\n.profile--index .prof_tbl dl dd {\n    width: calc(100% - 5em);\n    padding: 20px 50px;\n    font-size: 14px;\n    letter-spacing: 0.04em;\n    line-height: 1.7;\n    position: relative;\n    margin: 0;\n    font-family: NotoSansJP-Regular;\n    font-weight: 400;\n}\n.profile--index .prof_tbl dl dd::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    background-color: #d9d9d9;\n    width: 1px;\n    height: 112%;\n}\n*:before,\n*:after {\n    box-sizing: inherit;\n}\n.profile.loaded .profile--index .prof_tbl dl {\n    transform: translateY(0);\n    opacity: 1;\n}\n.profile--index .prof_tbl dl {\n    transition: .6s;\n    opacity: 1;\n    display: flex;\n    align-items: baseline;\n}\n.profile--index .prof_tbl dl dt {\n    width: 190px;\n    padding: 20px 0;\n    font-size: 16px;\n    letter-spacing: 0.15em;\n    line-height: 1.875;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (max-width: 896px) {\n.profile--index {\n        padding: 80px 5%;\n}\n.profile--index {\n        padding: 80px 40px;\n}\n.profile--index .prof_tbl {\n        padding: 0;\n}\n.profile--index .prof_tbl dl {\n        display: block;\n}\n.profile--index .prof_tbl dl dt {\n        font-size: 14px;\n        width: 100%;\n        padding: 0 0 15px 10px;\n        line-height: 1;\n        position: relative;\n}\n.profile--index .prof_tbl dl dt::before {\n        content: \"\";\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        background-color: #d9d9d9;\n        width: 100%;\n        height: 1px;\n}\n.profile--index .prof_tbl dl dd {\n        width: 100%;\n        padding: 10px 0 0 10px;\n}\n.profile--index .prof_tbl dl:not(:first-child) {\n        margin-top: 45px;\n}\n.profile--index .prof_tbl dl dd::before {\n        height: 0%;\n}\n}\n.access--index {\n    padding: 100px 10%;\n    background-color: #fff;\n}\n.logo h1 {\n    font-size: 40px;\n    font-family: DIN-Bold;\n    font-weight: bold;\n    color: #000;\n}\n.access--index .box {\n    display: flex;\n    flex-direction: row-reverse;\n    align-items: center;\n    justify-content: space-between;\n    padding-top: 50px;\n}\n.access--index .box .map {\n    transform: translateY(3%);\n    transition: .6s;\n\n    filter: grayscale(1);\n    width: 50%;\n    height: 20vw;\n}\n.access.loaded .access--index .map {\n    transform: translateY(0);\n    opacity: 1;\n}\n.access--index .box .map iframe {\n    width: 100%;\n    height: 100%;\n}\n.access--index .box .text_area {\n    width: 45%;\n    padding: 0 60px 0 0;\n}\n.access--index .box .text_area p {\n    font-size: 14px;\n    line-height: 1.85;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.04em;\n    color: #000;\n    font-weight: 500;\n    transform: translateY(10%);\n    transition: .6s;\n}\n.access.loaded .access--index .text_area p {\n    transform: translateY(0);\n    opacity: 1;\n}\n.access--index .box .text_area p.place {\n    margin-top: 34px;\n}\n.sp {\n    display: none;\n}\n.access--index .box .text_area p.number {\n    margin-top: 15px;\n}\n.tel_link {\n    color: #000;\n}\n.tel_link.no_link {\n    pointer-events: none;\n}\n.access--index .box .text_area p.station {\n    margin-top: 20px;\n    margin-bottom: 40px;\n}\n.access--index .box .text_area .more_txt {\n    color: #000;\n    font-size: 16px;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-family: NotoSansJP-Regular;\n}\n.access--index .box .text_area .more_txt::after,\n.access--index .box .text_area .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #000;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.access--index .box .text_area .more_txt::before {\n    width: 10px;\n}\n.access--index .box .text_area .more_txt:hover::after,\n.access--index .box .text_area .more_txt:hover::before {\n    right: -5%;\n}\n.access--index .box .text_area .more_txt .underline {\n    position: relative;\n}\n.access--index .box .text_area .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.access--index .box .text_area .more_txt .underline::after {\n    content: \"\";\n    background: #000;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.access--index .box .text_area .more_txt:hover .underline::after {\n    transform-origin: left top;\n    transform: scale(1, 1);\n}\n@media screen and (max-width: 896px) {\n.menu-list {\n        background-color: rgb(216, 222, 228);\n        padding: 100px 2%;\n}\n.access--index {\n        padding: 0px 5% 0;\n        display: block;\n}\n.access--index .box {\n        display: block;\n}\n.access--index .box .map {\n        width: 100%;\n        height: 250px;\n}\n.access--index .box .text_area {\n        width: 100%;\n        margin-top: 30px;\n        padding-bottom: 50px;\n}\n.access--index .box .text_area p.place {\n        margin-top: 18px;\n}\n.sp {\n        display: block;\n}\n.tel_link {\n        text-decoration: underline;\n}\n.access--index .box .text_area p.station {\n        margin-top: 15px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.profile--index {\n    padding: 80px 10%;\n    background-color: #fff;\n}\n.profile--index .prof_tbl {\n    padding: 0 0 60px;\n}\n.profile.loaded .profile--index .prof_tbl dl {\n    transform: translateY(0);\n    /* opacity: 1; */\n}\n.profile--index .prof_tbl dl {\n    transition: .6s;\n    /* opacity: 0; */\n    display: flex;\n    align-items: baseline;\n    margin: 0;\n}\n.profile--index .prof_tbl dl dt {\n    width: 190px;\n    padding: 20px 0;\n    font-size: 16px;\n    letter-spacing: 0.15em;\n    line-height: 1.875;\n    font-weight: bold;\n}\n.highlight_blk *::-moz-selection {\n    background: #000;\n    color: #dadada;\n}\n.highlight_blk *::selection {\n    background: #000;\n    color: #dadada;\n}\n.profile--index .prof_tbl dl dd {\n    width: calc(100% - 5em);\n    padding: 20px 50px;\n    font-size: 14px;\n    letter-spacing: 0.04em;\n    line-height: 1.7;\n    position: relative;\n    margin: 0;\n    font-family: NotoSansJP-Regular;\n    font-weight: 400;\n}\n.profile--index .prof_tbl dl dd::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    background-color: #d9d9d9;\n    width: 1px;\n    height: 112%;\n}\n*:before,\n*:after {\n    box-sizing: inherit;\n}\n.profile.loaded .profile--index .prof_tbl dl {\n    transform: translateY(0);\n    opacity: 1;\n}\n.profile--index .prof_tbl dl {\n    transition: .6s;\n    opacity: 1;\n    display: flex;\n    align-items: baseline;\n}\n.profile--index .prof_tbl dl dt {\n    width: 190px;\n    padding: 20px 0;\n    font-size: 16px;\n    letter-spacing: 0.15em;\n    line-height: 1.875;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (max-width: 896px) {\n.profile--index {\n        padding: 80px 5%;\n}\n.profile--index {\n        padding: 80px 40px;\n}\n.profile--index .prof_tbl {\n        padding: 0;\n}\n.profile--index .prof_tbl dl {\n        display: block;\n}\n.profile--index .prof_tbl dl dt {\n        font-size: 14px;\n        width: 100%;\n        padding: 0 0 15px 10px;\n        line-height: 1;\n        position: relative;\n}\n.profile--index .prof_tbl dl dt::before {\n        content: \"\";\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        background-color: #d9d9d9;\n        width: 100%;\n        height: 1px;\n}\n.profile--index .prof_tbl dl dd {\n        width: 100%;\n        padding: 10px 0 0 10px;\n}\n.profile--index .prof_tbl dl:not(:first-child) {\n        margin-top: 45px;\n}\n.profile--index .prof_tbl dl dd::before {\n        height: 0%;\n}\n}\n.access--index {\n    padding: 100px 10%;\n    background-color: #fff;\n}\n.logo h1 {\n    font-size: 40px;\n    font-family: DIN-Bold;\n    font-weight: bold;\n    color: #000;\n}\n.access--index .box {\n    display: flex;\n    flex-direction: row-reverse;\n    align-items: center;\n    justify-content: space-between;\n    padding-top: 50px;\n}\n.access--index .box .map {\n    transform: translateY(3%);\n    transition: .6s;\n    width: 50%;\n    height: 20vw;\n}\n.access.loaded .access--index .map {\n    transform: translateY(0);\n    opacity: 1;\n}\n.access--index .box .map iframe {\n    width: 100%;\n    height: 100%;\n}\n.access--index .box .text_area {\n    width: 45%;\n    padding: 0 60px 0 0;\n}\n.access--index .box .text_area p {\n    font-size: 14px;\n    line-height: 1.85;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.04em;\n    color: #000;\n    font-weight: 500;\n    transform: translateY(10%);\n    transition: .6s;\n}\n.access.loaded .access--index .text_area p {\n    transform: translateY(0);\n    opacity: 1;\n}\n.access--index .box .text_area p.place {\n    margin-top: 34px;\n}\n.sp {\n    display: none;\n}\n.access--index .box .text_area p.number {\n    margin-top: 15px;\n}\n.tel_link {\n    color: #000;\n}\n.tel_link.no_link {\n    pointer-events: none;\n}\n.access--index .box .text_area p.station {\n    margin-top: 20px;\n    margin-bottom: 40px;\n}\n.access--index .box .text_area .more_txt {\n    color: #000;\n    font-size: 16px;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-family: NotoSansJP-Regular;\n}\n.access--index .box .text_area .more_txt::after,\n.access--index .box .text_area .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #000;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.access--index .box .text_area .more_txt::before {\n    width: 10px;\n}\n.access--index .box .text_area .more_txt:hover::after,\n.access--index .box .text_area .more_txt:hover::before {\n    right: -5%;\n}\n.access--index .box .text_area .more_txt .underline {\n    position: relative;\n}\n.access--index .box .text_area .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.access--index .box .text_area .more_txt .underline::after {\n    content: \"\";\n    background: #000;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.access--index .box .text_area .more_txt:hover .underline::after {\n    transform-origin: left top;\n    transform: scale(1, 1);\n}\n@media screen and (max-width: 896px) {\n.menu-list {\n        background-color: rgb(216, 222, 228);\n        padding: 100px 2%;\n}\n.access--index {\n        padding: 0px 5% 0;\n        display: block;\n}\n.access--index .box {\n        display: block;\n}\n.access--index .box .map {\n        width: 100%;\n        height: 250px;\n}\n.access--index .box .text_area {\n        width: 100%;\n        margin-top: 30px;\n        padding-bottom: 50px;\n}\n.access--index .box .text_area p.place {\n        margin-top: 18px;\n}\n.sp {\n        display: block;\n}\n.tel_link {\n        text-decoration: underline;\n}\n.access--index .box .text_area p.station {\n        margin-top: 15px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25090,7 +24914,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.mycontents-wides {\n  padding: 60px 10% 120px;\n}\n.btn-contact {\n  background: var(--textcolor);\n  border-radius: 5px;\n  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%);\n  color: #fff;\n  flex: none;\n  font-size: 15px;\n  height: 60px;\n  justify-content: center;\n  margin: 24px 0px 0px 0px;\n  opacity: 1;\n  padding: 15px;\n  width: 40%;\n  max-width: 100%;\n}\n.btn-contact:hover {\n  color: #fff\n}\n.contents {\n  margin-top: 60px;\n  margin-bottom: 60px;\n}\n.readCopy {\n  font-size: 20px;\n  line-height: 1.4;\n  letter-spacing: 0em;\n  color: #000;\n  text-align: center;\n  margin-bottom: 30px;\n}\n.readCopy small {\n  display: block;\n  font-size: 15px;\n  line-height: 1.8666666667;\n  letter-spacing: 0em;\n}\n.readCopy small strong {\n  color: #e60039;\n}\n.btn-download {\n  position: relative;\n  display: flex;\n  width: 50%;\n  height: 40px;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  font-weight: bold;\n  font-size: 14px;\n  color: #FFFFFF;\n  background: var(--textcolor);\n  box-shadow: 0px 4px 7px rgb(0 0 0 / 15%);\n  border-radius: 30px;\n}\n.contact-text {\n  margin-top: 0px;\n  font-weight: bold;\n  font-size: 16px;\n  line-height: 24px;\n  text-align: center;\n  letter-spacing: 0.05em;\n  color: #333333;\n}\n@media (max-width: 767px) {\n.contact-text {\n    margin-top: -32px;\n    margin-bottom: 30px;\n    font-size: 15px;\n    line-height: 22px;\n}\n}\n.contact {\n  padding-top: 60px;\n  padding-bottom: 60px;\n  margin-bottom: 120px;\n  background: #FFFFFF;\n  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);\n  border-radius: 20px;\n}\n.contact table {\n  margin: 0 auto;\n  width: 630px;\n  border-collapse: separate;\n  border-spacing: 0 30px;\n  margin-bottom: 30px;\n  /*60 - 30*/\n}\n.contact th {\n  display: inline-block;\n  width: 170px;\n}\n.contact th label {\n  font-size: 16px;\n  line-height: 154.7%;\n  line-height: 40px;\n  letter-spacing: 0.05em;\n}\n.contact td {\n  display: inline-block;\n  width: calc(100% - 170px);\n}\n.contact .company-main input,\n.contact .name input,\n.contact .mail input,\n.contact .tell input {\n  padding: 0 15px;\n  line-height: 40px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n  width: 100%;\n}\n.contact .name input {\n  width: calc((100% - 30px) / 2);\n  display: inline-block;\n}\n.contact .name td {\n  position: relative;\n}\n.mw_wp_form_confirm td {\n  padding-top: 7px;\n}\n.contact .name td input:last-child {\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n.contact .body textarea {\n  padding: 15px;\n  width: 100%;\n  height: 230px;\n  line-height: 25px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n}\n.contact .company-main input,\n.contact .name input,\n.contact .mail input,\n.contact .tell input {\n  height: 40px;\n}\n.contact input {\n  display: block;\n}\n.contact .mast {\n  position: relative;\n}\n.contact .mast::before {\n  content: \"必須\";\n  display: inline-block;\n  position: absolute;\n  width: 46px;\n  height: 28px;\n  top: 6px;\n  left: -76px;\n  background: #333333;\n  border-radius: 3px;\n  font-weight: 500;\n  font-size: 12px;\n  line-height: 28px;\n  color: #FFFFFF;\n  text-align: center;\n}\n.mw_wp_form_confirm .mast::before {\n  display: none;\n}\n.mw_wp_form_confirm .privacy-check {\n  display: none;\n}\n.privacy-check {\n  text-align: center;\n  font-weight: 500;\n  font-size: 14px;\n  line-height: 22px;\n  color: var(--textcolor);\n}\n.privacy-check a {\n  text-decoration: underline;\n}\n.privacy-check label {\n  display: inline-block;\n  margin-top: 12px;\n}\n.mwform-checkbox-field input {\n  display: inline-block;\n}\n.submit-btn {\n  display: flex;\n  justify-content: center;\n}\n.viewmore-btn_white {\n  background-color: #fff !important;\n  color: var(--textcolor) !important;\n  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15) !important;\n}\n.confirmation-btn {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 240px;\n  text-align: center;\n  font-weight: bold;\n  font-size: 16px;\n  letter-spacing: 0.1em;\n  color: #FFFFFF;\n  background: var(--textcolor);\n  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n  border-radius: 30px;\n  height: 60px;\n}\n.confirmation-btn:hover {\n  color: #fff;\n}\n.confirmation-btn::after {\n  position: absolute;\n  content: \"\";\n  display: inline-block;\n  height: 40px;\n  width: 40px;\n  top: 10px;\n  right: 8px;\n}\n.submit-btn br {\n  display: none;\n}\n.mw_wp_form_confirm .submit-btn {\n  display: flex;\n  justify-content: center;\n}\n.mw_wp_form_confirm .submit-btn input:first-child {\n  margin: 0;\n}\n.mw_wp_form_confirm .submit-btn input:last-child {\n  margin-right: 0;\n  margin-left: 60px;\n}\n@media (max-width: 1000px) {\ntable,\n  tbody,\n  tr,\n  th,\n  td {\n    display: block;\n}\n.contact table {\n    margin: 0 auto;\n    max-width: 600px;\n    width: 100%;\n    padding-left: 14px;\n    padding-right: 14px;\n    -webkit-appearance: none;\n    -webkit-text-size-adjust: 100%;\n}\n.contact th,\n  .contact td {\n    -webkit-appearance: none;\n    -webkit-text-size-adjust: 100%;\n    display: block;\n    width: 100%;\n}\n.contact th {\n    margin-top: 30px;\n    height: 32px;\n}\n.contact th label {\n    font-size: 14px;\n    line-height: 24px;\n}\n.mast {\n    padding-left: 54px;\n}\n.contact .mast::before {\n    width: 42px;\n    height: 24px;\n    line-height: 24px;\n    left: 0;\n    top: 0;\n}\n.contact .name input {\n    width: 100%;\n    position: relative !important;\n    -webkit-appearance: none;\n}\n.contact .name td input:first-child {\n    margin-bottom: 10px;\n}\n.mw_wp_form_confirm .mast {\n    padding-left: 0;\n}\n.contact .company-main input,\n  .contact .name input,\n  .contact .mail input,\n  .contact .tell input {\n    -webkit-appearance: none;\n    height: 50px;\n    font-size: 14px;\n    line-height: 21px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.contact .body textarea {\n    -webkit-appearance: none;\n    padding: 14px 12px;\n    font-size: 14px;\n    line-height: 22px;\n    color: #727171;\n}\n.mw_wp_form_confirm .submit-btn {\n    display: block;\n    margin-top: 20px;\n    /*50 - 30*/\n}\n.mw_wp_form_confirm .submit-btn input:first-child {\n    -webkit-appearance: none;\n    margin: 0 auto 30px auto;\n}\n.mw_wp_form_confirm .submit-btn input:last-child {\n    -webkit-appearance: none;\n    margin: 0 auto;\n}\n.privacy-check {\n    margin-top: 30px;\n}\n}\n@media (max-width: 500px) {\n.privacy-check {\n    width: calc(100% - 30px);\n    margin: 30px auto 0 auto;\n    text-align: left;\n}\n.privacy-check .mwform-checkbox-field {\n    text-align: center;\n    display: block;\n}\n}\n.mw_wp_form_complete {\n  margin-bottom: 120px;\n  text-align: center;\n}\n.mw_wp_form_complete .complete-text {\n  margin-bottom: 120px;\n  font-weight: bold;\n  font-size: 16px;\n  line-height: 24px;\n  text-align: center;\n  letter-spacing: 0.05em;\n  color: var(--textcolor);\n}\n.viewmore-btn__img {\n\n  background-size: cover;\n}\n@media (max-width: 767px) {\n.mw_wp_form_complete {\n    margin-bottom: 60px;\n}\n.mw_wp_form_complete .complete-text {\n    margin-bottom: 50px;\n    font-size: 15px;\n    line-height: 22px;\n}\n}\n\n/*menu*/\n.menu {\n  margin-bottom: 0;\n}\n.contact .entry_job select,\n.contact .entry_category select,\n.contact .year select {\n  padding: 0 15px;\n  line-height: 40px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n  width: 100%;\n}\n.select-contents {\n  position: relative;\n}\n.year .select-contents {\n  width: calc((100% - 80px) /2);\n  display: inline-block;\n}\n.year p {\n  display: inline-block;\n  line-height: 100%;\n  font-weight: 500;\n  font-size: 16px;\n}\n.year td p:nth-child(3) {\n  margin-right: 30px;\n}\n.select-contents::before {\n  position: absolute;\n  content: \"â–¼\";\n  font-size: 8px;\n  top: 16px;\n  right: 16px;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .select-contents::before {\n  display: none;\n}\n.mw_wp_form_confirm .select-contents {\n  display: inline;\n}\n[type=\"file\"] {\n  display: none !important;\n}\n.mwform-file-delete {\n  position: absolute;\n  left: 0;\n  top: 9px;\n}\n.file__name {\n  display: inline-block;\n  margin-left: 15px;\n  line-height: 40px;\n}\n.file__text {\n  margin-top: 10px;\n  font-size: 12px;\n  line-height: 19px;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .file__name {\n  margin-left: 0;\n}\n.mw-wp-form_file {\n  left: 0;\n  position: absolute;\n  display: inline-block;\n  text-align: left;\n  line-height: 40px;\n  height: 40px;\n  font-size: 16px;\n  background-color: #fff;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .file__text {\n  display: none;\n}\n.mw_wp_form_complete {\n  margin-top: -120px;\n  margin-bottom: -60px;\n}\n.mw_wp_form_complete .viewmore-btn__img {\n  background-image: none;\n}\n@media (max-width: 767px) {\n.mw_wp_form_complete {\n    margin-top: -90px;\n    margin-bottom: -120px;\n}\n}\n.form-group.privacy_policy {\n  flex-flow: column wrap;\n}\n.form-group.privacy_policy .formHeading {\n  margin-bottom: 10px;\n}\n.form-group.privacy_policy .col-sm-9,\n.form-group.privacy_policy .formHeading {\n  width: 100%;\n  max-width: 1100px;\n  text-align: center;\n}\n.btn-primary {\n  line-height: 3;\n  padding: 0;\n  color: #fff;\n  border-color: #e60039;\n  border-radius: 32px;\n  background-color: #e60039;\n  font-size: 20px;\n  width: 368px;\n}\n.form-group:after {\n  display: block;\n  margin: 0 15px 15px 15px;\n  padding-bottom: 20px;\n  height: auto;\n  width: auto;\n  border-bottom: dotted 1px #CCC;\n}\n.form-group:after {\n  margin: 0;\n  padding-bottom: 15px;\n  border: none;\n  flex: 0 0 100%;\n}\n.btn-primary:active,\n.btn-primary:focus,\n.btn-primary:hover {\n  transition: .2s;\n  color: #e60039;\n  border-color: #e60039;\n  border-radius: 32px;\n  background-color: #fff;\n}\n.formInputOuter span.value span {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-right: 1em;\n}\n.privacy_policy .value {\n  display: flex;\n  justify-content: center;\n}\n.formInputOuter label {\n  margin-left: 3px;\n  font-weight: normal;\n  margin-bottom: 0px;\n}\n.formInputInner p.description {\n  font-size: 15px;\n  margin: 7px 0 0 0;\n}\nform.form p label {\n  color: #000000;\n}\n.privacy_policy {\n  text-align: center;\n}\n.privacy_policy a {\n  text-decoration: underline;\n  color: #000;\n}\n.formInputOuter {\n  display: inline-block;\n  width: 100%;\n}\n.formInputInner.last_name,\n.formInputInner.first_name,\n.formInputInner.last_kana,\n.formInputInner.first_kana {\n  display: block;\n  float: left;\n  width: 50%;\n}\n.formInputInner.last_name,\n.formInputInner.last_kana,\n.formInputInner.last_name p.description,\n.formInputInner.last_kana p.description {\n  padding-right: 5px;\n}\ninput[type=text].form-control:focus,\nselect.form-control:focus,\ntextarea.form-control:focus {\n  box-shadow: none;\n  background-color: #f5f5f5;\n}\n.primary-contact-form {\n  margin: 0 auto 30px;\n}\n.form-group {\n  flex-flow: row wrap;\n  align-items: center;\n  margin-bottom: 15px;\n  display: flex;\n}\n.formHeading {\n  margin-bottom: 0;\n  text-align: right;\n  margin-bottom: 10px;\n}\n.required .formHeading:before {\n  display: inline-block;\n  padding: 0;\n  content: '※';\n  color: #e60039;\n}\n.formHeading label {\n  font-weight: 700;\n  margin-bottom: 0;\n}\n.formInputOuter {\n  display: inline-block;\n  width: 100%;\n}\ninput[type=text].form-control:focus,\nselect.form-control:focus,\ntextarea.form-control:focus {\n  box-shadow: none;\n}\ninput[type=text].form-control,\nselect.form-control,\ntextarea.form-control {\n  padding: 10px 14px;\n  border: none;\n  border-radius: 0;\n  background-color: #f5f5f5;\n  box-shadow: none;\n}\n.formInputInner input,\n.formInputInner select,\n.formInputInner textarea {\n  color: #1e1e1e !important;\n}\n@media screen and (max-width: 767px) {\n.contact {\n    padding-top: 20px;\n    padding-bottom: 20px;\n}\n.primary-contact-form {\n    width: 100%;\n}\n.form-group {\n    flex-flow: column wrap;\n    text-align: left;\n}\n.formHeading {\n    text-align: left;\n}\n.contents {\n    margin: 0px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.mycontents-wides {\n  padding: 60px 10% 120px;\n}\n.btn-contact {\n  background: var(--textcolor);\n  border-radius: 5px;\n  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%);\n  color: #fff;\n  flex: none;\n  font-size: 15px;\n  height: 60px;\n  justify-content: center;\n  margin: 24px 0px 0px 0px;\n  opacity: 1;\n  padding: 15px;\n  width: 40%;\n  max-width: 100%;\n}\n.btn-contact:hover {\n  color: #fff\n}\n.contents {\n  margin-top: 60px;\n  margin-bottom: 60px;\n}\n.readCopy {\n  font-size: 20px;\n  line-height: 1.4;\n  letter-spacing: 0em;\n  color: #000;\n  text-align: center;\n  margin-bottom: 30px;\n}\n.readCopy small {\n  display: block;\n  font-size: 15px;\n  line-height: 1.8666666667;\n  letter-spacing: 0em;\n}\n.readCopy small strong {\n  color: #e60039;\n}\n.btn-download {\n  position: relative;\n  display: flex;\n  width: 50%;\n  height: 40px;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  font-weight: bold;\n  font-size: 14px;\n  color: #FFFFFF;\n  background: var(--textcolor);\n  box-shadow: 0px 4px 7px rgb(0 0 0 / 15%);\n  border-radius: 30px;\n}\n.contact-text {\n  margin-top: 0px;\n  font-weight: bold;\n  font-size: 16px;\n  line-height: 24px;\n  text-align: center;\n  letter-spacing: 0.05em;\n  color: #333333;\n}\n@media (max-width: 767px) {\n.contact-text {\n    margin-top: -32px;\n    margin-bottom: 30px;\n    font-size: 15px;\n    line-height: 22px;\n}\n}\n.contact {\n  padding-top: 60px;\n  padding-bottom: 60px;\n  margin-bottom: 120px;\n  background: #FFFFFF;\n  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);\n  border-radius: 20px;\n}\n.contact table {\n  margin: 0 auto;\n  width: 630px;\n  border-collapse: separate;\n  border-spacing: 0 30px;\n  margin-bottom: 30px;\n  /*60 - 30*/\n}\n.contact th {\n  display: inline-block;\n  width: 170px;\n}\n.contact th label {\n  font-size: 16px;\n  line-height: 154.7%;\n  line-height: 40px;\n  letter-spacing: 0.05em;\n}\n.contact td {\n  display: inline-block;\n  width: calc(100% - 170px);\n}\n.contact .company-main input,\n.contact .name input,\n.contact .mail input,\n.contact .tell input {\n  padding: 0 15px;\n  line-height: 40px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n  width: 100%;\n}\n.contact .name input {\n  width: calc((100% - 30px) / 2);\n  display: inline-block;\n}\n.contact .name td {\n  position: relative;\n}\n.mw_wp_form_confirm td {\n  padding-top: 7px;\n}\n.contact .name td input:last-child {\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n.contact .body textarea {\n  padding: 15px;\n  width: 100%;\n  height: 230px;\n  line-height: 25px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n}\n.contact .company-main input,\n.contact .name input,\n.contact .mail input,\n.contact .tell input {\n  height: 40px;\n}\n.contact input {\n  display: block;\n}\n.contact .mast {\n  position: relative;\n}\n.contact .mast::before {\n  content: \"必須\";\n  display: inline-block;\n  position: absolute;\n  width: 46px;\n  height: 28px;\n  top: 6px;\n  left: -76px;\n  background: #333333;\n  border-radius: 3px;\n  font-weight: 500;\n  font-size: 12px;\n  line-height: 28px;\n  color: #FFFFFF;\n  text-align: center;\n}\n.mw_wp_form_confirm .mast::before {\n  display: none;\n}\n.mw_wp_form_confirm .privacy-check {\n  display: none;\n}\n.privacy-check {\n  text-align: center;\n  font-weight: 500;\n  font-size: 14px;\n  line-height: 22px;\n  color: var(--textcolor);\n}\n.privacy-check a {\n  text-decoration: underline;\n}\n.privacy-check label {\n  display: inline-block;\n  margin-top: 12px;\n}\n.mwform-checkbox-field input {\n  display: inline-block;\n}\n.submit-btn {\n  display: flex;\n  justify-content: center;\n}\n.viewmore-btn_white {\n  background-color: #fff !important;\n  color: var(--textcolor) !important;\n  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15) !important;\n}\n.confirmation-btn {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 240px;\n  text-align: center;\n  font-weight: bold;\n  font-size: 16px;\n  letter-spacing: 0.1em;\n  color: #FFFFFF;\n  background: var(--textcolor);\n  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n  border-radius: 30px;\n  height: 60px;\n}\n.confirmation-btn:hover {\n  color: #fff;\n}\n.confirmation-btn::after {\n  position: absolute;\n  content: \"\";\n  display: inline-block;\n  height: 40px;\n  width: 40px;\n  top: 10px;\n  right: 8px;\n}\n.submit-btn br {\n  display: none;\n}\n.mw_wp_form_confirm .submit-btn {\n  display: flex;\n  justify-content: center;\n}\n.mw_wp_form_confirm .submit-btn input:first-child {\n  margin: 0;\n}\n.mw_wp_form_confirm .submit-btn input:last-child {\n  margin-right: 0;\n  margin-left: 60px;\n}\n@media (max-width: 1000px) {\ntable,\n  tbody,\n  tr,\n  th,\n  td {\n    display: block;\n}\n.contact table {\n    margin: 0 auto;\n    max-width: 600px;\n    width: 100%;\n    padding-left: 14px;\n    padding-right: 14px;\n    -webkit-appearance: none;\n    -webkit-text-size-adjust: 100%;\n}\n.contact th,\n  .contact td {\n    -webkit-appearance: none;\n    -webkit-text-size-adjust: 100%;\n    display: block;\n    width: 100%;\n}\n.contact th {\n    margin-top: 30px;\n    height: 32px;\n}\n.contact th label {\n    font-size: 14px;\n    line-height: 24px;\n}\n.mast {\n    padding-left: 54px;\n}\n.contact .mast::before {\n    width: 42px;\n    height: 24px;\n    line-height: 24px;\n    left: 0;\n    top: 0;\n}\n.contact .name input {\n    width: 100%;\n    position: relative !important;\n    -webkit-appearance: none;\n}\n.contact .name td input:first-child {\n    margin-bottom: 10px;\n}\n.mw_wp_form_confirm .mast {\n    padding-left: 0;\n}\n.contact .company-main input,\n  .contact .name input,\n  .contact .mail input,\n  .contact .tell input {\n    -webkit-appearance: none;\n    height: 50px;\n    font-size: 14px;\n    line-height: 21px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.contact .body textarea {\n    -webkit-appearance: none;\n    padding: 14px 12px;\n    font-size: 14px;\n    line-height: 22px;\n    color: #727171;\n}\n.mw_wp_form_confirm .submit-btn {\n    display: block;\n    margin-top: 20px;\n    /*50 - 30*/\n}\n.mw_wp_form_confirm .submit-btn input:first-child {\n    -webkit-appearance: none;\n    margin: 0 auto 30px auto;\n}\n.mw_wp_form_confirm .submit-btn input:last-child {\n    -webkit-appearance: none;\n    margin: 0 auto;\n}\n.privacy-check {\n    margin-top: 30px;\n}\n}\n@media (max-width: 500px) {\n.privacy-check {\n    width: calc(100% - 30px);\n    margin: 30px auto 0 auto;\n    text-align: left;\n}\n.privacy-check .mwform-checkbox-field {\n    text-align: center;\n    display: block;\n}\n}\n.mw_wp_form_complete {\n  margin-bottom: 120px;\n  text-align: center;\n}\n.mw_wp_form_complete .complete-text {\n  margin-bottom: 120px;\n  font-weight: bold;\n  font-size: 16px;\n  line-height: 24px;\n  text-align: center;\n  letter-spacing: 0.05em;\n  color: var(--textcolor);\n}\n.viewmore-btn__img {\n\n  background-size: cover;\n}\n@media (max-width: 767px) {\n.mw_wp_form_complete {\n    margin-bottom: 60px;\n}\n.mw_wp_form_complete .complete-text {\n    margin-bottom: 50px;\n    font-size: 15px;\n    line-height: 22px;\n}\n}\n\n/*menu*/\n.menu {\n  margin-bottom: 0;\n}\n.contact .entry_job select,\n.contact .entry_category select,\n.contact .year select {\n  padding: 0 15px;\n  line-height: 40px;\n  background: #FFFFFF;\n  border: 1px solid #727171;\n  box-sizing: border-box;\n  border-radius: 3px;\n  width: 100%;\n}\n.select-contents {\n  position: relative;\n}\n.year .select-contents {\n  width: calc((100% - 80px) /2);\n  display: inline-block;\n}\n.year p {\n  display: inline-block;\n  line-height: 100%;\n  font-weight: 500;\n  font-size: 16px;\n}\n.year td p:nth-child(3) {\n  margin-right: 30px;\n}\n.select-contents::before {\n  position: absolute;\n  content: \"â–¼\";\n  font-size: 8px;\n  top: 16px;\n  right: 16px;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .select-contents::before {\n  display: none;\n}\n.mw_wp_form_confirm .select-contents {\n  display: inline;\n}\n[type=\"file\"] {\n  display: none !important;\n}\n.mwform-file-delete {\n  position: absolute;\n  left: 0;\n  top: 9px;\n}\n.file__name {\n  display: inline-block;\n  margin-left: 15px;\n  line-height: 40px;\n}\n.file__text {\n  margin-top: 10px;\n  font-size: 12px;\n  line-height: 19px;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .file__name {\n  margin-left: 0;\n}\n.mw-wp-form_file {\n  left: 0;\n  position: absolute;\n  display: inline-block;\n  text-align: left;\n  line-height: 40px;\n  height: 40px;\n  font-size: 16px;\n  background-color: #fff;\n  color: var(--textcolor);\n}\n.mw_wp_form_confirm .file__text {\n  display: none;\n}\n.mw_wp_form_complete {\n  margin-top: -120px;\n  margin-bottom: -60px;\n}\n.mw_wp_form_complete .viewmore-btn__img {\n  background-image: none;\n}\n@media (max-width: 767px) {\n.mw_wp_form_complete {\n    margin-top: -90px;\n    margin-bottom: -120px;\n}\n}\n.form-group.privacy_policy {\n  flex-flow: column wrap;\n}\n.form-group.privacy_policy .formHeading {\n  margin-bottom: 10px;\n}\n.form-group.privacy_policy .col-sm-9,\n.form-group.privacy_policy .formHeading {\n  width: 100%;\n  max-width: 1100px;\n  text-align: center;\n}\n.btn-primary {\n  line-height: 3;\n  padding: 0;\n  color: #fff;\n  border-color: #e60039;\n  border-radius: 32px;\n  background-color: #e60039;\n  font-size: 20px;\n  width: 368px;\n}\n.form-group:after {\n  display: block;\n  margin: 0 15px 15px 15px;\n  padding-bottom: 20px;\n  height: auto;\n  width: auto;\n  border-bottom: dotted 1px #CCC;\n}\n.form-group:after {\n  margin: 0;\n  padding-bottom: 15px;\n  border: none;\n  flex: 0 0 100%;\n}\n.btn-primary:active,\n.btn-primary:focus,\n.btn-primary:hover {\n  transition: .2s;\n  color: #e60039;\n  border-color: #e60039;\n  border-radius: 32px;\n  background-color: #fff;\n}\n.formInputOuter span.value span {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-right: 1em;\n}\n.privacy_policy .value {\n  display: flex;\n  justify-content: center;\n}\n.formInputOuter label {\n  margin-left: 3px;\n  font-weight: normal;\n  margin-bottom: 0px;\n}\n.formInputInner p.description {\n  font-size: 15px;\n  margin: 7px 0 0 0;\n}\nform.form p label {\n  color: #000000;\n}\n.privacy_policy {\n  text-align: center;\n}\n.privacy_policy a {\n  text-decoration: underline;\n  color: #000;\n}\n.formInputOuter {\n  display: inline-block;\n  width: 100%;\n}\n.formInputInner.last_name,\n.formInputInner.first_name,\n.formInputInner.last_kana,\n.formInputInner.first_kana {\n  display: block;\n  float: left;\n  width: 50%;\n}\n.formInputInner.last_name,\n.formInputInner.last_kana,\n.formInputInner.last_name p.description,\n.formInputInner.last_kana p.description {\n  padding-right: 5px;\n}\ninput[type=text].form-control:focus,\nselect.form-control:focus,\ntextarea.form-control:focus {\n  box-shadow: none;\n  background-color: #f5f5f5;\n}\n.primary-contact-form {\n  margin: 0 auto 30px;\n}\n.form-group {\n  flex-flow: row wrap;\n  align-items: center;\n  margin-bottom: 15px;\n  display: flex;\n}\n.formHeading {\n  margin-bottom: 0;\n  text-align: right;\n  margin-bottom: 10px;\n}\n.required .formHeading:before {\n  display: inline-block;\n  padding: 0;\n  content: '※';\n  color: #e60039;\n}\n.formHeading label {\n  font-weight: 700;\n  margin-bottom: 0;\n  font-size: 12px;\n}\n.formInputOuter {\n  display: inline-block;\n  width: 100%;\n}\ninput[type=text].form-control:focus,\nselect.form-control:focus,\ntextarea.form-control:focus {\n  box-shadow: none;\n}\ninput[type=text].form-control,\nselect.form-control,\ntextarea.form-control {\n  padding: 10px 14px;\n  border: none;\n  border-radius: 0;\n  background-color: #f5f5f5;\n  box-shadow: none;\n}\n.formInputInner input,\n.formInputInner select,\n.formInputInner textarea {\n  color: #1e1e1e !important;\n}\n@media screen and (max-width: 767px) {\n.contact {\n    padding-top: 20px;\n    padding-bottom: 20px;\n}\n.primary-contact-form {\n    width: 100%;\n}\n.form-group {\n    flex-flow: column wrap;\n    text-align: left;\n}\n.formHeading {\n    text-align: left;\n}\n.contents {\n    margin: 0px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25474,7 +25298,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\r\n    margin-top: 100px;\r\n    margin-bottom: 100px;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.single {\r\n    width: calc(100% - 440px);\n}\n.single__head {\r\n    margin-bottom: 60px;\r\n    padding: 30px 30px 20px 30px;\r\n    background: #FFFFFF;\r\n    border: none !important;;\r\n    box-sizing: border-box;\r\n    border-radius: 10px;\n}\n.single__head__title {\r\n    font-size: 35px;\r\n    padding-bottom: 30px;\r\n    margin-bottom: 30px;\r\n    line-height: 1.4;\r\n    letter-spacing: 0.04em;\r\n    position: relative;\r\n    transition: 0.8s;\r\n    transform: translateY(5%);\r\n    /* opacity: 0; */\r\n    border-bottom: 2px solid #333;\r\n    color: #333;\n}\n.single__head__flex {\r\n    display: flex;\n}\n.single__head__tags {\r\n    margin-left: auto!important;\r\n    text-align: right;\r\n    width: 50%;\r\n    font-weight: bold;\r\n    font-size: 12px;\r\n    line-height: 18px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__head__date {\r\n    width: 50%;\r\n    margin-left:0px!important;\r\n    display: inline-block;\r\n    text-align: left!important;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__thumbnail {\r\n    margin-bottom: 60px;\r\n    width: 100%;\r\n    height: 425px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    border-radius: 10px;\n}\r\n\r\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\r\n    padding: 20px 30px;\r\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\r\n    margin-bottom: 28px;\r\n    display: inline-block;\r\n    padding-left: 35px;\r\n    position: relative;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 4px;\r\n    display: inline-block;\r\n    width: 20px;\r\n    height: 16px;\r\n    content: \"\";\r\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\r\n    display: none;\n}\n.mokuji_ol {\r\n    counter-reset: item;\n}\n.rtoc-item {\r\n    margin-bottom: 10px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\n}\n.rtoc-item::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\n}\r\n\r\n/*å…±é€š*/\n.alignleft {\r\n    float: left;\r\n    margin-left: 0;\r\n    margin-right: 1em;\n}\n.alignright {\r\n    float: right;\r\n    margin-left: 1em;\r\n    margin-right: 0;\n}\n.aligncenter {\r\n    margin-left: auto;\r\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\r\n    text-align: center;\n}\nfigure {\r\n    margin-left: 0;\r\n    margin-right: 0;\n}\nbody {\r\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\r\n    box-sizing: inherit;\n}\n.single__contents h2 {\r\n    position: relative;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n    padding-left: 20px;\r\n    font-weight: bold;\r\n    font-size: 22px;\r\n    line-height: 32px;\r\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    top: 3px;\r\n    height: 26px;\r\n    width: 5px;\r\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\r\n    counter-reset: item;\n}\r\n/*\r\n.single__contents h2::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\r\n    color: #1363AB;\r\n}*/\n.single__contents p {\r\n    font-weight: 500;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor)\n}\n.alignfull {\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\r\n        max-width: none;\r\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\r\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\r\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\r\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        max-width: calc(var(--myw) + 300px) !important;\r\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\r\n        margin-left: -150px !important;\r\n        margin-right: -150px !important;\n}\n}\n.contents img {\r\n    max-width: 100%;\r\n    height: auto;\n}\n.contents p {\r\n    margin-bottom: 30px;\n}\r\n\r\n/*aside*/\n.aside {\r\n    width: 360px;\n}\n.aside__new {\r\n    margin-bottom: 60px;\n}\n.aside__title {\r\n    position: relative;\r\n    margin-left: 160px;\r\n    margin-bottom: 20px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    text-align: left;\n}\n.aside__title__new img {\r\n    position: absolute;\r\n    left: -32px;\r\n    top: 1px;\n}\n.aside__title__tags {\r\n    padding-left: 180px;\n}\n.aside__new__list {\r\n    margin-bottom: 10px;\r\n    position: relative;\r\n    height: 90px;\r\n    background: #FFFFFF;\r\n    border: 0.5px solid #C4C4C4;\r\n    box-sizing: border-box;\r\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\r\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\r\n    position: absolute;\r\n    top: 15px;\r\n    left: 20px;\r\n    height: 60px;\r\n    width: 60px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\n}\n.aside__new__list__title {\r\n    padding-left: 95px;\r\n    padding-top: 21px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n.aside__tags__list {\r\n    position: relative;\r\n    margin-left: 60px;\r\n    padding-left: 35px;\r\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    display: flex;\r\n    align-items: center;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\r\n    position: absolute;\r\n    content: \"\";\r\n    display: inline-block;\r\n    top: 0;\r\n    left: 0;\r\n    width: 20px;\r\n    height: 20px;\r\n    background: #FFFFFF;\r\n    border: 1px solid #333333;\r\n    box-sizing: border-box;\r\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\r\n        margin-bottom: 60px;\r\n        margin-top: 73px;\r\n        display: block;\n}\n.single {\r\n        width: 100%;\n}\n.single__head {\r\n        margin-bottom: 30px;\n}\n.aside {\r\n        display: none;\n}\n.single__head__title {\r\n        margin-bottom: 15px;\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__head__title::before {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n.single__thumbnail {\r\n        height: 150px;\r\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\r\n        padding: 20px 20px 5px 20px;\r\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\r\n        padding-left: 30px;\r\n        margin-bottom: 20px;\r\n        font-size: 15px;\r\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\r\n        top: 4px;\r\n        width: 17px;\r\n        height: 13px;\r\n        background-size: cover;\n}\n.rtoc-item {\r\n        font-size: 13px;\r\n        line-height: 19px;\r\n        margin-bottom: 15px;\n}\n.single__contents h2 {\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__contents h2::after {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__contents p {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents__foot {\r\n        margin-top: 50px;\r\n        margin-bottom: 60px;\n}\n}\r\n\r\n/*btns*/\n.btns {\r\n    padding-bottom: 120px;\r\n    width: 100%;\r\n    max-width: 370px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.btns a {\r\n    text-align: center;\r\n    display: inline-block;\r\n    width: 70px;\n}\n.btns__prev__img {\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-bottom: 20px;\r\n    cursor: pointer;\n}\n.btns__next__img {\r\n    transform: rotate(180deg);\n}\n.btns__prev__text {\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\r\n        padding-bottom: 60px;\n}\n.btns a {\r\n        width: 65px;\n}\n.btns__prev__img {\r\n        width: 60px;\r\n        height: 60px;\r\n        margin-bottom: 15px;\n}\n.btns__prev__text {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\n    margin-top: 100px;\n    margin-bottom: 100px;\n    display: flex;\n    justify-content: space-between;\n}\n.single {\n    width: calc(100% - 440px);\n}\n.single__head {\n    margin-bottom: 60px;\n    padding: 30px 30px 20px 30px;\n    background: #FFFFFF;\n    border: none !important;;\n    box-sizing: border-box;\n    border-radius: 10px;\n}\n.single__head__title {\n    font-size: 35px;\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    line-height: 1.4;\n    letter-spacing: 0.04em;\n    position: relative;\n    transition: 0.8s;\n    transform: translateY(5%);\n    /* opacity: 0; */\n    border-bottom: 2px solid #333;\n    color: #333;\n}\n.single__head__flex {\n    display: flex;\n}\n.single__head__tags {\n    margin-left: auto!important;\n    text-align: right;\n    width: 50%;\n    font-weight: bold;\n    font-size: 12px;\n    line-height: 18px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__head__date {\n    width: 50%;\n    margin-left:0px!important;\n    display: inline-block;\n    text-align: left!important;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__thumbnail {\n    margin-bottom: 60px;\n    width: 100%;\n    height: 425px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 10px;\n}\n\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\n    padding: 20px 30px;\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\n    margin-bottom: 28px;\n    display: inline-block;\n    padding-left: 35px;\n    position: relative;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\n    position: absolute;\n    left: 0;\n    top: 4px;\n    display: inline-block;\n    width: 20px;\n    height: 16px;\n    content: \"\";\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\n    display: none;\n}\n.mokuji_ol {\n    counter-reset: item;\n}\n.rtoc-item {\n    margin-bottom: 10px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.rtoc-item::before {\n    counter-increment: item;\n    content: counter(item)'.';\n}\n\n/*å…±é€š*/\n.alignleft {\n    float: left;\n    margin-left: 0;\n    margin-right: 1em;\n}\n.alignright {\n    float: right;\n    margin-left: 1em;\n    margin-right: 0;\n}\n.aligncenter {\n    margin-left: auto;\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\n    text-align: center;\n}\nfigure {\n    margin-left: 0;\n    margin-right: 0;\n}\nbody {\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\n    box-sizing: inherit;\n}\n.single__contents h2 {\n    position: relative;\n    margin-bottom: 30px;\n    margin-top: 30px;\n    padding-left: 20px;\n    font-weight: bold;\n    font-size: 22px;\n    line-height: 32px;\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    top: 3px;\n    height: 26px;\n    width: 5px;\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\n    counter-reset: item;\n}\n/*\n.single__contents h2::before {\n    counter-increment: item;\n    content: counter(item)'.';\n    color: #1363AB;\n}*/\n.single__contents p {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor)\n}\n.alignfull {\n    margin-left: -20px;\n    margin-right: -20px;\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\n        max-width: none;\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\n        max-width: calc(var(--myw) + 300px) !important;\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\n        margin-left: -150px !important;\n        margin-right: -150px !important;\n}\n}\n.contents img {\n    max-width: 100%;\n    height: auto;\n}\n.contents p {\n    margin-bottom: 30px;\n}\n\n/*aside*/\n.aside {\n    width: 360px;\n}\n.aside__new {\n    margin-bottom: 60px;\n}\n.aside__title {\n    position: relative;\n    margin-left: 160px;\n    margin-bottom: 20px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    text-align: left;\n}\n.aside__title__new img {\n    position: absolute;\n    left: -32px;\n    top: 1px;\n}\n.aside__title__tags {\n    padding-left: 180px;\n}\n.aside__new__list {\n    margin-bottom: 10px;\n    position: relative;\n    height: 90px;\n    background: #FFFFFF;\n    border: 0.5px solid #C4C4C4;\n    box-sizing: border-box;\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\n    position: absolute;\n    top: 15px;\n    left: 20px;\n    height: 60px;\n    width: 60px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.aside__new__list__title {\n    padding-left: 95px;\n    padding-top: 21px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n.aside__tags__list {\n    position: relative;\n    margin-left: 60px;\n    padding-left: 35px;\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    display: flex;\n    align-items: center;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\n    position: absolute;\n    content: \"\";\n    display: inline-block;\n    top: 0;\n    left: 0;\n    width: 20px;\n    height: 20px;\n    background: #FFFFFF;\n    border: 1px solid #333333;\n    box-sizing: border-box;\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\n        margin-bottom: 60px;\n        margin-top: 73px;\n        display: block;\n}\n.single {\n        width: 100%;\n}\n.single__head {\n        margin-bottom: 30px;\n}\n.aside {\n        display: none;\n}\n.single__head__title {\n        margin-bottom: 15px;\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__head__title::before {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\n        font-size: 13px;\n        line-height: 19px;\n}\n.single__thumbnail {\n        height: 150px;\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\n        padding: 20px 20px 5px 20px;\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\n        padding-left: 30px;\n        margin-bottom: 20px;\n        font-size: 15px;\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\n        top: 4px;\n        width: 17px;\n        height: 13px;\n        background-size: cover;\n}\n.rtoc-item {\n        font-size: 13px;\n        line-height: 19px;\n        margin-bottom: 15px;\n}\n.single__contents h2 {\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__contents h2::after {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__contents p {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents__foot {\n        margin-top: 50px;\n        margin-bottom: 60px;\n}\n}\n\n/*btns*/\n.btns {\n    padding-bottom: 120px;\n    width: 100%;\n    max-width: 370px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n}\n.btns a {\n    text-align: center;\n    display: inline-block;\n    width: 70px;\n}\n.btns__prev__img {\n    width: 40px;\n    height: 40px;\n    margin-bottom: 20px;\n    cursor: pointer;\n}\n.btns__next__img {\n    transform: rotate(180deg);\n}\n.btns__prev__text {\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\n        padding-bottom: 60px;\n}\n.btns a {\n        width: 65px;\n}\n.btns__prev__img {\n        width: 60px;\n        height: 60px;\n        margin-bottom: 15px;\n}\n.btns__prev__text {\n        font-size: 13px;\n        line-height: 19px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

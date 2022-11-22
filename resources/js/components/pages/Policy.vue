@@ -5,24 +5,24 @@
     <div class="mv_textarea">
       <h2>
         <strong class="en entxt">POLICY / 経営理念</strong>
-        <span class="jptxt">IDENBRIDはどこに向っているのか</span>
+        <span class="jptxt">IDENBRIDとは</span>
       </h2>
     </div>
     <section class="section-policy">
       <div class="d-flex flex-wrap">
         <div class="col-md-6 policy-content">
           <div class="policy-title">
-            <h3>日本人が起業した<br />パキスタン拠点の<br>グローバルIT開発企業</h3>
+            <h3>日本人によって起業された<br />パキスタン発のグローバルIT開発企業</h3>
           </div>
           <div class="policy-prgh">
             <p>
-              2020年1月。コロナウィルスが世界中に蔓延するする直前に
-              <br />パキスタンのラホール市で産声を上げたIDENBRID社。
-              <br /><br />日本人である代表がパキスタンから世界を相手にするIT開発ハブを立ててやると意気込んで
+              私たちIDENBRID INC.は、パキスタンのラホールを拠点とするグローバルIT企業です。
+              <br />社名は、「Identity」と「Hybrid」を組み合わせたもので、
+              <br /><br />国際色豊かなスタッフがそれぞれの国の良さを引き出し、
               <br />
-              つくった会社は、初めた当初日本との違いに戸惑いを覚えることの連続だった。
-              <br /><br />なのでチームに毎日毎日徹底したことはたった一つ。
-              <br />お客様の「ユーザーペインを解決するIT会社になるぞ」本当にそれだけだった。
+              共存していくという意味が込められています。
+              <br /><br />日本人が海外の地で創業した会社がITを通じて世界中の人々に価値を提供し、
+              <br />日々直面する課題をITの力を持って解決することが当社の大きな目標です。
             </p>
           </div>
         </div>
@@ -34,14 +34,14 @@
     <section class="medium-term-vision">
       <div class="medium-tern-content text-center">
         <div class="medium-tern-title text-center">
-          <h2>IDENBRIDのミッション</h2>
+          <h2>IDENBRIDの存在意義</h2>
           <span>制定：2020年1月</span>
         </div>
         <div class="most-intersting">
           <h2>
-            テクノロジーで未来をかっこよくアップデート
+            アイデンブリッドのMVV：ミッション・ビジョン・バリューとは
           </h2>
-          <span> できる会社になること</span>
+          <span> 私たちの目指す道</span>
         </div>
         <hr class="bg-white m-0" />
       </div>
@@ -49,7 +49,7 @@
       <!-- swiper carousel  -->
 
       <div class="policy-slider position-relative">
-        <h2 class="policy-h">ミッション達成に向けた取り組み</h2>
+        <h2 class="policy-h">MISSION / ミッション</h2>
         <div class="swiper-slider-title ">
 
           <div class="swiper-pagination custom-swiper-pagination"></div>
@@ -64,12 +64,12 @@
                   <div class="swiper-content text-left">
                     <span class="num">01.</span>
                     <div class="slider-img-title">
-                      <span>グループビジョン</span>
+                      <span>テクノロジーで未来をかっこよくアップデート</span>
 
-                      <h2>GROUP VISION</h2>
+                      <h2>Update the future in style</h2>
                     </div>
                     <div class="slider-img-about">
-                      <h2>パキスタンから世界一必要とされるIT開発グループになる</h2>
+                      <h2>ITを通じて私たちが未来を変えるって本気で信じてます</h2>
 
                     </div>
                   </div>
@@ -87,12 +87,13 @@
                   <div class="swiper-content text-left">
                     <span class="num">02.</span>
                     <div class="slider-img-title">
-                      <span>グループバリュー</span>
+                      <span>クライアントのユーザーペインの解決こそが我々の提供価値</span>
 
-                      <h2>GROUP VALUE</h2>
+                      <h2>Client User Pain Resolution</h2>
                     </div>
                     <div class="slider-img-about">
-                      <h2>お客様のユーザーペインの解決こそが我々の提供価値</h2>
+                      <h2>クライアントファーストを実行するために私たちのできることを押し付けるのでなく<br>
+                        お客様の困っていることを解決します</h2>
                     </div>
                   </div>
                 </div>
@@ -109,12 +110,13 @@
                   <div class="swiper-content text-left">
                     <span class="num">03.</span>
                     <div class="slider-img-title">
-                      <span>国際マーケットへの挑戦</span>
+                      <span>10条からなるリーダーシップ論に沿った判断基準</span>
 
-                      <h2>GROUP CHALLENGE</h2>
+                      <h2>Our Leadership Philosophy</h2>
                     </div>
                     <div class="slider-img-about">
-                      <h2>日本やパキスタンにとどまらないインターナショナル市場で成長する</h2>
+                      <h2>このOLPに沿って会社経営、<br>
+                        採用活動、事業判断を行っています</h2>
                     </div>
                   </div>
                 </div>
@@ -142,8 +144,7 @@
             class="text sd">
             IDENBRIDの取り組む3つの大きな挑戦</h2>
         </section>
-        <a href="https://herp.careers/v1/dely/W6lhLIRjVdVV" rel="noopener" target="_blank"
-          data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
+        <div data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
           <div data-s-7176ffac-e55a-4752-a76d-c0084eaf6d23="" data-r-0_0_1_2_7176ffac-e55a-4752-a76d-c0084eaf6d23=""
             class="image sd">
 
@@ -159,12 +160,13 @@
                 日本市場におけるリソース型の<br>エンジニア採用シェアをベトナム市場から奪取</p>
               <p data-s-3488d0a9-bd1d-449b-b109-0c53335de055=""
                 data-r-2_0_1_0_1_2_3488d0a9-bd1d-449b-b109-0c53335de055="" class="text sd">
-                スタジオ型開発ハブサービス：SEHを促進し、10年後の世界における 開発中心地が南アジアに移った際のイニシアチブをIDNEBRIDが握っていきます。</p>
+                スタジオ開発ハブサービス：SDHを促進し、10年後の世界における<br>
+                開発中心地が南アジアに移った際のイニシアチブをIDNEBRIDが握っていきます。</p>
               <div data-s-21e4a63e-e023-411e-a192-303946499407="" class="sd"></div>
             </div>
           </div>
-        </a><a href="https://herp.careers/v1/dely/9zrq4gA36K8b" rel="noopener" target="_blank"
-          data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
+        </div>
+        <div data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
           <div data-s-7176ffac-e55a-4752-a76d-c0084eaf6d23="" data-r-0_4_1_2_7176ffac-e55a-4752-a76d-c0084eaf6d23=""
             class="image sd imag-02">
 
@@ -177,7 +179,8 @@
                 class="sd appear"> -->
               <p data-s-43881428-4fb8-49b3-a8b6-581f27d95706=""
                 data-r-1_0_1_4_1_2_43881428-4fb8-49b3-a8b6-581f27d95706="" class="text sd appear">
-                2025年末までに国際市場と日本における売上高比率を 8：2を目標とし、圧倒的グルーバル企業へ成長</p>
+                2025年末までに国際市場と日本における売上高比率を<br>
+                9：1を目標とし、圧倒的グルーバル企業へ成長</p>
               <p data-s-3488d0a9-bd1d-449b-b109-0c53335de055=""
                 data-r-2_0_1_4_1_2_3488d0a9-bd1d-449b-b109-0c53335de055="" class="text sd appear">
                 売上の大半を占める日本からの売上高を下げることなく、<br>パキスタンエンジニアチームの組織改革を徹底し、期間内に目標を達成します。</p>
@@ -186,8 +189,8 @@
               </div>
             </div>
           </div>
-        </a><a href="https://herp.careers/v1/dely/fEkHjL6Qv_R2" rel="noopener" target="_blank"
-          data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
+        </div>
+        <div data-s-1a890182-2468-4c25-afbe-34ef0a944bce="" class="sd">
           <div data-s-7176ffac-e55a-4752-a76d-c0084eaf6d23="" data-r-0_5_1_2_7176ffac-e55a-4752-a76d-c0084eaf6d23=""
             class="image sd image-03">
 
@@ -208,7 +211,7 @@
 
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </section>
     <div class="branding--contact" bis_skin_checked="1">

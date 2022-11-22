@@ -4,7 +4,7 @@
         <div class="mv_textarea">
             <h2>
                 <strong class="en entxt">ABOUT / 会社情報</strong>
-                <span class="jptxt">こちらはIDENBRID社の会社に関してをご覧頂けるページになります。</span>
+                <span class="jptxt">こちらはIDENBRID INC.の会社に関してをご覧頂けるページになります。</span>
             </h2>
         </div>
         <section class="about-section">

@@ -14,7 +14,7 @@
                     <span class="horo-text-b" style="transition-delay: 1.15s;">お客様のユーザーペインを解決します。</span>
 
                 </h2>
-                <a class="btn-views" href="">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></a>
+                <router-link class="btn-views" to="/download-form/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
                 <video class="top-hero__video" src="/public/assets/videos/Banner_video.mp4" autoplay muted loop
                     playsinline></video>
             </section>
@@ -33,8 +33,8 @@
                         <div class="c-message__content">
                             <div class="c-message__box large-7 small-12">
                                 <h3 class="content-title c-message__title">CEO MESSAGE</h3>
-                                <div class="c-message__title-sub">「パキスタンから世界へ」<br>
-                                    ITを届けるHubを作るストーリー</div>
+                                <div class="c-message__title-sub">「パキスタンから世界一必要とされるIT企業になる」<br>
+                                    なぜ私たちはパキスタンでIT企業を設立したのか</div>
                                 <div class="c-message__button u-hidden-sm"><a href="/solutions/"
                                         class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View
                                         More</a></div>
@@ -57,9 +57,9 @@
                 <div class="service-row  my-5">
                     <div class="service-col">
 
-                        <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon">SEH：スタジオ型開発ハブ
+                        <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon">SDH：スタジオ開発ハブ
                         </h2>
-                        <p class="service-p">スタジオ型開発ハブは、一般的に言われるオフショア開発におけるラボ型開発のようなサービスを指し当社ではパキスタン拠点人材を人月ベースでご提供致します。
+                        <p class="service-p">スタジオ開発ハブは、一般的に言われるオフショア開発におけるラボ型開発のようなサービスを指し当社ではパキスタン拠点人材を人月ベースでご提供致します。
                         </p>
                         <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
@@ -180,7 +180,7 @@
                                         <div class="c-recruit__bottom-content">
 
 
-                                            <div class="c-recruit__bottom-button">VIDEO</div>
+                                            <div class="c-recruit__bottom-button">VIDEOを見る</div>
                                         </div>
                                     </router-link>
                                 </div>
@@ -195,7 +195,7 @@
                                         </div>
                                         <div class="c-recruit__bottom-content">
 
-                                            <div class="c-recruit__bottom-button">BLOG</div>
+                                            <div class="c-recruit__bottom-button">BLOGを見る</div>
                                         </div>
                                     </router-link>
                                 </div>

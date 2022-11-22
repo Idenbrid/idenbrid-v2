@@ -1,11 +1,12 @@
 <template>
     <div>
         <Navbar />
+        <div class="mv_textarea">
+            <h2><strong class="en entxt">SES / エンジニア採用営業支援</strong> <span
+                    class="jptxt">SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。</span></h2>
+        </div>
         <main>
-            <div class="hero_Heading">
-                <h2 class="hero">System application development</h2>
-            </div>
-            <section class="system-sec mycontents-wide">
+            <section class="system-sec mycontents-wide mt-5">
                 <h2 class="system-sec__tiile">サービスシステム開発</h2>
                 <p class="system-sec__text">
                     whitecanvasは、もっとも新事業開発支援を得意としております。<br>クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。</p>
@@ -59,7 +60,7 @@
                         <p class="system-sec__list__text">
                             オンラインサロンやオンラインスクール、などオンライン上でのコミュニティーシステムを開発いたします。月額課金や単発販売などニーズに応じた設定が可能です。</p>
                     </li>
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system07.svg"
                             alt="">
@@ -83,7 +84,7 @@
                         <h3 class="system-sec__list__title">メディアサイトシステム</h3>
                         <p class="system-sec__list__text">
                             オウンドメディアや自社ブログなどでご利用いただけるメディアサイトシステムです。<br>記事投稿エディターやCMS機能、広告配信機能などニーズに合わせて対応可能です。</p>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
@@ -142,6 +143,7 @@
                             リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。<br>社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。
                         </p>
                     </li>
+
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
@@ -173,6 +175,33 @@
                         <p class="system-sec__list__text">
                             サーバーコストの削減やオンプレミスからの移管支援などを行っております。<br>様々なシステムのクラウド化による業務効率化を得意としております。</p>
                     </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">営業管理システム</h3>
+                        <p class="system-sec__list__text">
+                            リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。<br>社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。
+                        </p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">営業管理システム</h3>
+                        <p class="system-sec__list__text">
+                            リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。<br>社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。
+                        </p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">営業管理システム</h3>
+                        <p class="system-sec__list__text">
+                            リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。<br>社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。
+                        </p>
+                    </li>
                 </ul>
             </section>
             <section class="flow">
@@ -185,31 +214,23 @@
                 <div class="flow__scroll mycontents-wide">
                     <ul class="flow__contents">
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail"
-                                src="/assets/img/solution/flow/No-1.jpg"
-                                alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-1.jpg" alt="">
                             <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
                             <p class="flow__list__text">制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。</p>
                         </li>
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail"
-                                src="/assets/img/solution/flow/No-2.jpg"
-                                alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-2.jpg" alt="">
                             <h4 class="flow__list__title">仕様・要件定義</h4>
                             <p class="flow__list__text">Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。</p>
                         </li>
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail"
-                                src="/assets/img/solution/flow/No-3.jpg"
-                                alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-3.jpg" alt="">
                             <h4 class="flow__list__title">デザイン制作・システム開発</h4>
                             <p class="flow__list__text">
                                 ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。<br>そして開発工程のコーディング、システム開発を行います。</p>
                         </li>
                         <li class="flow__list">
-                            <img class="flow__list__thumbnail"
-                                src="/assets/img/solution/flow/No-4.jpg"
-                                alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-4.jpg" alt="">
                             <h4 class="flow__list__title">リリース・保守・運営</h4>
                             <p class="flow__list__text">テストをおえて修正完了後、本番環境へのリリースを行います。<br>リリース後のサイト分析、保守、運営までサポート致します。
                             </p>
@@ -218,8 +239,32 @@
                 </div>
 
             </section>
-
-            <section class="menu">
+            <section>
+                <section class="menu-list">
+                    <div class="menu-box">
+                        <div class="item">
+                            <a href="/system-application/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
+                                application <br>development
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/mobile-app-development/" class="text router-link-exact-active router-link-active"><img
+                                    src="/assets/img/icons/Message-icon.svg">Mobile app development
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/web-design-UIUX-designing/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
+                                design・UIUX designing
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/web-creative-digital-marketing/" class="text">
+                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
@@ -283,24 +328,24 @@
                         <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
                     </a>
                 </div>
-                <!-- Modal -->
-                <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="/public/assets/img/line-code.jpg" width="100%" />
-                            </div>
+          
+            <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/public/assets/img/line-code.jpg" width="100%" />
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            </section> -->
         </main>
         <Footer />
     </div>

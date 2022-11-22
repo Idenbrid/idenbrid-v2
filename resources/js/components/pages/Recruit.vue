@@ -6,13 +6,13 @@
             <div class="mv_textarea-recruit">
                 <h2>
                     <strong class="en entxt">BUSINESS / 事業紹介</strong>
-                    <span class="jptxt">IDENBRIDがお届けしているIT開発のサービス</span>
+                    <span class="jptxt">IDENBRIDがお届けしているIT開発・営業支援のサービス内容</span>
                 </h2>
             </div>
             <div class="recruit--leadtxt">
-                <h3>ビジネスを動かすITサービスは<br class="pc">アイデアから始まります</h3>
+                <h3>私たちのITサービスはユーザーペインの解消<br class="pc">つまりお客様の課題をITで解決することです</h3>
                 <p>単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、
-                    <br class="pc">お客様の求めているユーザーペインを解決してこそ、その先のエンドユーザーに届くITサービスが実現できるのです。
+                    <br class="pc">お客様の困っていることを解決してこそ、その先のユーザーに届くITサービスが実現できるのです。
                 </p>
             </div>
             <div class="recruit--person highlight_blk" bis_skin_checked="1">
@@ -32,13 +32,12 @@
                                 </div>
                             </div>
                             <h4>
-                                <span class="department fade_y on">ODH：オンライン開発ハブ</span>
-                                <strong class="phrase fade_y on">プロジェクト単位にて受託開発を行うサービスになります。<br
-                                        class="pc">どのようなものを開発するのか決まっている場合にはこちらのサービスになります。</strong>
+                                <span class="department fade_y on">SDH：スタジオ開発ハブ</span>
+                                <strong class="phrase fade_y on">受託開発またはラボ型開発サービスになります。<br
+                                        class="pc">設計・デザイン、ウェブ、スマホまでワンストップにて当社でお受けしております。</strong>
                             </h4>
                             <p class="fade_y on">
-                                ONLINE DEVELOPMENT
-                                HUB通称ODHでは主にスタートアップや中小企業様に人気でプロジェクト単位での受託開発を行っているサービスになります。小規模から大規模まで幅広く対応しております。
+                                STUDIO DEVELOPMENT HUB通称SDHでは、ITサービスを開発されたい企業様や自社にはITに詳しい人材やエンジニアがいないので外注したいお客様に向けた受託開発サービスです。
                             </p>
                         </router-link>
                     </div>
@@ -67,12 +66,12 @@
                 <ul class="entryarea recruit--contactarea--bnr">
 
                     <li>
-                        <router-link to="/branding">ONLINE DEVELOPMENT HUB : ODH<br><span
-                                class="label pc">今オンライン開発ハブ（プロジェクト型受託開発）</span></router-link>
+                        <router-link to="/branding">STUDIO DEVELOPMENT HUB : SDH<br><span
+                                class="label pc">スタジオ開発ハブ（受託開発）</span></router-link>
                     </li>
-                    <li><a href="/system-engineering-service/" class="">SES<br><span
+                    <li><router-link to="/system-engineering-service/" class="">SES<br><span
                                 class="label pc">エンジニア採用支援（常駐・フルリモート業務委託）</span><span
-                                class="label sp">気軽にメール登録</span></a></li>
+                                class="label sp">気軽にメール登録</span></router-link></li>
                 </ul>
             </div>
             <div class="branding--contact" bis_skin_checked="1">

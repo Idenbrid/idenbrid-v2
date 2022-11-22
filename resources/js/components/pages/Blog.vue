@@ -60,7 +60,7 @@
               <a title="ページ 5" href="#" class="page larger">5</a>
               <a rel="next" aria-label="Next Page" href="#" class="nextpostslink"><i class="fas fa-angle-right"></i></a>
             </div> -->
-                        <h1 v-else>No Data Found</h1>
+                        <h1 v-else>また記事の投稿がございません。</h1>
                     </div>
                     <div class="blog--content--sidearea">
                         <div class="searcharea fade_y on">

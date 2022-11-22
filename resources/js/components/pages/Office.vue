@@ -4,20 +4,20 @@
         <div class="mv_textarea">
             <h2>
                 <strong class="en entxt">OFFICE & ACCESS / オフィス&アクセス</strong>
-                <span class="jptxt">パキスタンにある本社をご紹介</span>
+                <span class="jptxt">パキスタンラホール市の本社をご紹介</span>
             </h2>
         </div>
         <main>
             <div class="lead_area">
                 <div class="lead_inner">
                     <h3 class="lead_ttl fade_y on">
-                        <h3 class="content-title">ENVIRONMENT</h3>
-                        "大切なのは、、<br>メンバーが働きたい環境構築"
+                        <h3 class="content-title">OFFICE ENVIRONMENT</h3>
+                        大切なのは、<br>チームが働きたい環境構築
                     </h3>
                     <p class="lead_txt fade_y on">
                         1日の多くの時間を過ごすオフィス。<br
-                            class="pc">コロナがあってからリモート環境で仕事することも増えたが、<br>当社では今でもオフィスの存在を大切にしている。<br>社員が１箇所に集まって、集中した時のパワーは凄い。<br
-                            class="pc">この会社で仕事したいと思ってもらえるようなスペース作りが<br>私たちが今後も目指す方向性である。</p>
+                            class="pc">コロナがあってからリモート環境で仕事することも増えましたが<br>当社では今でもオフィスの存在を大切にしています。<br>チームが１箇所に集まって、集中した時のパワーは凄い。<br
+                            class="pc">この会社で仕事したいと思ってもらえるようなスペース作りが<br>私たちのクリエイティブを支える今後も目指していく方向性です。</p>
                 </div>
             </div>
             <div class="slider-title">
@@ -60,7 +60,7 @@
             </div>
             <div class="access--index highlight_blk">
                 <div class="logo">
-                    <h1>IDENBRID</h1>
+                    <h1>ACCEESS to Us</h1>
                 </div>
                 <div class="box flx aic jfc_sb">
                     <div class="map">
@@ -70,7 +70,7 @@
                             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="text_area">
-                        <p class="place">パキスタン本社<br>〒54810<br>Basement 1st floor, 176 Y-Block, DHA Phase3, Lahore,
+                        <p class="place">パキスタン本社<br>〒54000<br>Basement 1st floor, 176 Y-Block, DHA Phase3, Lahore,
                             Pakistan</p>
                         <p class="number">
                             TEL : <a href="tel:+923064041221" class="tel_link no_link">+92306-404-1221</a><br>
@@ -101,18 +101,18 @@
                     </div>
                     <div class="item">
 
-                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス＆アクセス
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">チーム
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">メンバー
                         </router-link>
                     </div>
                     <div class="item">
 
                         <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">デジタル資産</router-link>
+                                src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>
                     </div>
                 </div>
 

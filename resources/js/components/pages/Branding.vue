@@ -3,7 +3,7 @@
         <Navbar />
         <div class="mv_textarea">
         <h2>
-            <strong class="en entxt">STUDIO DEVELOPMENT HUB / 受託開発</strong>
+            <strong class="en entxt">STUDIO DEVELOPMENT HUB / スタジオ開発ハブ</strong>
             <span class="jptxt">ITシステム設計、UIUXデザイン、ウェブシステム、モバイルアプリ構築、クラウドサーバー、ウェブ制作</span>
         </h2>
     </div>
@@ -12,12 +12,12 @@
 
                 <div class="branding--mv">
                     <div class="text_area">
-                        <h3 class="fade_y on">熱狂的なブランドは<br class="pc">ビジョンから生まれる</h3>
+                        <h3 class="fade_y on">プロジェクトを基本とした受託開発、<br class="pc">エンジニア要員：リソース型の２方式サービスを展開</h3>
                         <p class="fade_y on">
-                            "持続可能なITシステム・アプリをお客様と共に作り上げる"<br
+                            IDENBRIDではワンストップにて、ウェブシステムとスマホアプリ開発を得意とするソフトウェア開発会社です。要件定義からシステム設計、UIUXデザインそして開発、またウェブからスマホそしてクラウドまで一社で完結開発致します<br
                                 class="pc">
                         </p>
-                        <a class="btn-views" href="">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></a>
+                        <router-link class="btn-views" to="/download-form/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
                     </div>
     
                 </div>
@@ -28,10 +28,10 @@
                                 <span class="sub en fade_y on">
                                     SERVICE
                                 </span>
-                                <h3 class="fade_y on">"IDENBRID DEVELOPMENT ISM アイデンブリッドの開発主義"</h3>
+                                <h3 class="fade_y on">IDENBRID DEVELOPMENT ISM<br>アイデンブリッドの開発主義</h3>
                             </div>
                             <p class="lead fade_y on">
-                                要件定義、基本設計など他社が見切り発車しがちな開発の基礎となる部分を丁寧に行い、お客様が実現されたいシステムとの乖離がないようにきちんと対応します。そして単純にソフトウェアの開発だけではなく、お客さまが何に困られているのかつまり「ユーザーペイン」をきちんとヒアリングし、その解消を得意としています。
+                                要件定義、基本設計など他社が見切り発車しがちな開発の基礎となる設計・書類作成フェーズを丁寧に行い、お客様が実現されたいシステムとの乖離がないようにきちんと対応します。そして単純にソフトウェアの開発だけではなく、お客さまが何に困られているのかつまり「ユーザーペイン」をきちんとヒアリングし、その課題の解消を得意としています。
                             </p>
                         </div>
                     </div>
@@ -57,11 +57,10 @@
                         <div class="item">
                             <div class="en num fade_y on">02</div>
                             <div class="textarea">
-                                <h4 class="fade_y on">自トップクラスの提案力<br class="pc">（ユーザーペイン解消の最優先）</h4>
+                                <h4 class="fade_y on">ITに詳しくないお客様の開発を得意<br class="pc">【ユーザーペイン解消の最優先】</h4>
                                 <p class="fade_y on">
-                                    "お客様は実現したい内容をどのように達成したらいいのかわからないことがよくございます。
-<br
-                                        class="pc">当社では実現までの道のり、そしてお客様の課題・問題解決を徹底して行います。"
+                                    当社はほとんどIT会社の下請けとして仕事をしておらず、エンド様と直接契約して開発を行なっています。
+                                      <br class="pc">その中でたくさんのITに詳しくない企業様の要件をシステムやアプリに落とし込むことにご好評頂いております。
                                 </p>
                             </div>
                         </div>
@@ -69,10 +68,10 @@
                         <div class="item">
                             <div class="en num fade_y on">03</div>
                             <div class="textarea">
-                                <h4 class="fade_y on">開発マネジメントとスピード感<br class="pc">（圧倒的なコストパフォーマンス）</h4>
+                                <h4 class="fade_y on">開発マネジメントとスピード感<br class="pc">【圧倒的なコストパフォーマンス】</h4>
                                 <p class="fade_y on">
-                                    当社では「ワン・スリーシステム」を導入し、<br
-                                        class="pc">お客様のアウトプットに対するリードタイムをしっかりマネジメントしています。
+                                    当社では「ワン・スリーシステム」（1時間返信3日以内書類作成提出）を導入し、<br
+                                        class="pc">お客様のアウトプットに対するタイムマネジメントをしっかりしています。
                                 </p>
                             </div>
                         </div>
@@ -150,8 +149,8 @@
 
             </section>
             <section class="quote-us">
-                <h2 class="heading cont-h1">Contact us</h2>
-                <span>Either you have a meer idea or concrete project details, get a qoute from us. We look forward to work with you. </span>
+                <h2 class="heading cont-h1">お問い合わせ</h2>
+                <span>開発のご相談、お見積りが知りたい、どんなお悩みもお伺いします！ </span>
                 <div class="qoute-button">
              
                    
@@ -160,72 +159,72 @@
             </section>
                 <div class="branding--result">
                     <div class="heading">
-                        <span class="sub en fade_y on">RESULT</span>
-                        <h3 class="fade_y on">ブランディングで実現できること</h3>
+                        <span class="sub en fade_y on">OUR COMMITMENT</span>
+                        <h3 class="fade_y on">私たちの使命</h3>
                     </div>
                     <div class="branding--result--list">
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
                                     src="https://tomorrowgate.co.jp/asset/img/service/branding/result01.svg" alt="">
                             </div>
-                            <h4 class="fade_y on">優良顧客の獲得</h4>
-                            <p class="fade_y on">強力なブランドを構築し、濃い関係をつくることで、自社の経営理念に共感したお客様を獲得</p>
+                            <h4 class="fade_y on">お客様のご希望を実現</h4>
+                            <p class="fade_y on">クライアントが作りたいもの、困っていることにフォーカスし、ご要望をITにて叶えます</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
                                     src="https://tomorrowgate.co.jp/asset/img/service/branding/result02.svg" alt="">
                             </div>
-                            <h4 class="fade_y on">価格競争からの脱却</h4>
-                            <p class="fade_y on">お客様に対して価格以上のブランド価値を体感してもらうことで、従来の費用による比較対象から脱却できます。</p>
+                            <h4 class="fade_y on">コストパフォーマンスの高い開発</h4>
+                            <p class="fade_y on">お客さまが価格以上の価値を実感していただくとともに、他社との比較においても費用対効果の高い仕事をします</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
                                     src="https://tomorrowgate.co.jp/asset/img/service/branding/result03.svg" alt="">
                             </div>
-                            <h4 class="fade_y on">利益率の向上</h4>
-                            <p class="fade_y on">ブランドイメージ向上による価格競争からの脱却と、社員生産性UPにより高い利益率を確保することができます。</p>
+                            <h4 class="fade_y on">ビジネスのグロースに並走</h4>
+                            <p class="fade_y on">お客様の成長をITという側面よりともに支える存在としてご一緒に走ります</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
                                     src="https://tomorrowgate.co.jp/asset/img/service/branding/result04.svg" alt="">
                             </div>
-                            <h4 class="fade_y on">優秀人材の獲得</h4>
-                            <p class="fade_y on">就職活動以前から貴社を深く認知しファンにすることで、中長期的な育てる採用を実践し優秀な人材を採用できます。</p>
+                            <h4 class="fade_y on">カスタマーサクセス</h4>
+                            <p class="fade_y on">クライアントのアラートをすぐに察知できるよう常にお客様担当が寄り添って開発を進めます</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
                                     src="https://tomorrowgate.co.jp/asset/img/service/branding/result05.svg" alt="">
                             </div>
-                            <h4 class="fade_y on">採用コストの軽減</h4>
-                            <p class="fade_y on">求人媒体や人材紹介会社を使わずに自社への直接応募を増やすことで、採用にかかる時間とコストを削減します。</p>
+                            <h4 class="fade_y on">タイムマネジメントの徹底</h4>
+                            <p class="fade_y on">各タスクごと、チームごとの時間管理をツールを使って徹底しています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
                                     src="https://tomorrowgate.co.jp/asset/img/service/branding/result06.svg" alt="">
                             </div>
-                            <h4 class="fade_y on">広告コストの軽減</h4>
-                            <p class="fade_y on">ブランド認知によるホームページやSNSからの直接問い合わせを増やすことで、従来の営業広告費を削減します。</p>
+                            <h4 class="fade_y on">作業効率の改善</h4>
+                            <p class="fade_y on">コミュニケーションプラットフォームや自社システムにおいて仕事の効率化を図っています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
                                     src="https://tomorrowgate.co.jp/asset/img/service/branding/result07.svg" alt="">
                             </div>
-                            <h4 class="fade_y on">離職率の低下</h4>
-                            <p class="fade_y on">理念を発信することで価値観の不一致を防ぎ、仕事へのやりがいをつくり出し、早期離職の防止に繋がります。</p>
+                            <h4 class="fade_y on">クライアントとのリレーションの構築</h4>
+                            <p class="fade_y on">プロダクトファーストではなく、あくまでお客様ファーストの精神でお客様との関係構築を大切にしています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
                                     src="https://tomorrowgate.co.jp/asset/img/service/branding/result08.svg" alt="">
                             </div>
-                            <h4 class="fade_y on">エンゲージメント強化</h4>
-                            <p class="fade_y on">ビジョンに共感する仲間を集め実践する組織づくりをすることで、会社と社員のエンゲージメントを高めます。</p>
+                            <h4 class="fade_y on">マーケットへのインパクトをともに</h4>
+                            <p class="fade_y on">一つひとつのプロジェクトがマーケットにインパクトを与えられるよう真剣に向き合って仕事します</p>
                         </div>
                     </div>
                 </div>
                 <div class="branding--compare">
                     <div class="heading">
-                        <span class="sub en fade_y on">COMPARE</span>
-                        <h3 class="fade_y on">トゥモローゲートと<br class="sp">他ブランディング会社の違い</h3>
+                        <span class="sub en fade_y on">CHECK OTHERS</span>
+                        <h3 class="fade_y on">IDENBRIDと他社開発会社の比較</h3>
                     </div>
                     <div class="scroll">
                         <p class="en">SCROLL</p>
@@ -236,40 +235,39 @@
                             <tbody>
                                 <tr class="fade_y on">
                                     <th></th>
-                                    <th>デザイン会社</th>
-                                    <th>経営コンサルティンティング</th>
-                                    <th>人材コンサルティング会社</th>
-                                    <th class="tg">トゥモローゲート</th>
+                                    <th>デザイン専門会社</th>
+                                    <th>オフショア開発会社</th>
+                                    <th>日本開発Sler会社</th>
+                                    <th class="tg">IDENBRID</th>
                                 </tr>
                                 <tr class="fade_y on">
-                                    <th>経営理念設計</th>
-                                    <td><span class="marks">×</span>経営理念設計はできない</td>
-                                    <td><span class="marks">◯</span>経営理念設計ができる</td>
-                                    <td><span class="marks">△</span>専門ではないが<br class="pc">アドバイスはできる</td>
-                                    <td class="tg"><span class="marks">◯</span>経営理念設計ができる</td>
+                                    <th>上流工程・システム設計</th>
+                                    <td><span class="marks">×</span>システム設計はできない</td>
+                                    <td><span class="marks">◯</span>できる会社もあるが、要件が伝わりづらい</td>
+                                    <td><span class="marks">△</span>専門人材がいれば設計可能</td>
+                                    <td class="tg"><span class="marks">◯</span>ワンストップでシステム設計もできる</td>
                                 </tr>
                                 <tr class="fade_y on">
-                                    <th>コンサルティング</th>
-                                    <td><span class="marks">△</span>デザインに関する<br class="pc">コンサルティングはできる</td>
-                                    <td><span class="marks">△</span>経営に関する<br class="pc">コンサルティングはできる</td>
-                                    <td><span class="marks">△</span>採用に関する<br class="pc">コンサルティングはできる</td>
-                                    <td class="tg"><span class="marks">◯</span>ブランドづくりにおける<br
-                                            class="pc">デザイン＆コンサルティング<br class="pc">ができる
+                                    <th>UIUXデザイン</th>
+                                    <td><span class="marks">△</span>UIUXデザインの作成ができる</td>
+                                    <td><span class="marks">△</span>別会社に発注する必要あり</td>
+                                    <td><span class="marks">△</span>専門人材がいればUIUXデザイン可能</td>
+                                    <td class="tg"><span class="marks">◯</span>ワンストップでUIUXデザインもできる
                                     </td>
                                 </tr>
                                 <tr class="fade_y on">
-                                    <th>デザイン</th>
-                                    <td><span class="marks">◯</span>デザインすることができる</td>
-                                    <td><span class="marks">×</span>デザインは外注制作となる</td>
-                                    <td><span class="marks">△</span>デザインは外注制作となる</td>
-                                    <td class="tg"><span class="marks">◯</span>デザインすることができる</td>
+                                    <th>保守・メンテナンス</th>
+                                    <td><span class="marks">◯</span>保守を受けることはできない</td>
+                                    <td><span class="marks">×</span>保守を受けることはできるが、<br>コミュニケーションが多く必要</td>
+                                    <td><span class="marks">△</span>保守を受けることができる</td>
+                                    <td class="tg"><span class="marks">◯</span>ワンストップで保守もできる</td>
                                 </tr>
                                 <tr class="fade_y on">
                                     <th>価格</th>
-                                    <td><span class="marks">△</span>別途コンサル会社との<br class="pc">契約が必要になる</td>
-                                    <td><span class="marks">×</span>外注制作で割高となる</td>
-                                    <td><span class="marks">×</span>外注制作で割高となる</td>
-                                    <td class="tg"><span class="marks">◯</span>内製化による高い<br class="pc">コストパフォーマンス</td>
+                                    <td><span class="marks">△</span>デザインのみなので割高となる</td>
+                                    <td><span class="marks">×</span>単価は日本企業より安い可能性が大</td>
+                                    <td><span class="marks">×</span>金額感は割高可能性大</td>
+                                    <td class="tg"><span class="marks">◯</span>日本とパキスタンの混合チームでリーズナブル</td>
                                 </tr>
                             </tbody>
                         </table>

@@ -14,25 +14,23 @@
                         <div class="box">
                             <div class="text_area">
                                 <div class="ttl">
-                                    <h3>私たちが戦うフィールドは「全世界」<br class="pc">テクノロジーでかっこよく世界をアップデート</h3>
+                                    <h3>日本人が創業したパキスタンから<br class="pc">世界一必要とされるIT企業になる</h3>
                                 </div>
                                 <p class="lead">
-                                    新型コロナウイルスが依然として猛威を振るう中、日々の生活が困難な状況におられる皆様に心よりお見舞いを申し上げるとともに一所懸命に治療などに取り組まれている医療従事者の方々には深く心より御礼を申し上げます。
+                                    2020年1月私たち日本人の手によってIDENBRIDがパキスタンにて産声をあげました。
                                 </p>
                                 <p class="lead">
-                                    さて、私たちの創業から、そしてコロナ禍における生活が始まって約2年が経過しました。私たちIDENBRIDは2030年までにこの競争激しいインドを含む南アジアの中でパキスタン拠点の会社としてNo.1になることを掲げています。
+                                    それから今まで私たちはパキスタンから世界一必要とされるIT企業になるという目標に向けてひたすら走り続けています。
                                 </p>
                                 <p class="lead">
-                                    IT開発業界の中にいる私たちは世界中でこのコロナによって更にビジネスのIT化を進める動きが顕著になっていることを感じていています。日本においてもこれまでDXと散々騒がれていても変わっていなかった業務に「改革のメス」を入れる企業も増え、互いが競い合うように効率化をITで実現しているのが見えるようになってきました。
+                                    毎日の私たちを突き動かすのはひとえに私たちを頼りにしてくれるクライアントそして共にお客様の「ユーザーペインをITで解決する」というビジョンを共有しているチーム、仲間の存在です。
                                 </p>
                                 <p class="lead">
-                                    当社ではグローバルマーケットへのアクセスができる稀有な企業としてのアドバンテージを最大限活かしたビジネス展開を今後も行い、加速するIT化の波を更に大きなものにできるよう積極的に世界中のITイノベーションに取り組んでいきます。
+                                    私たちは世界一必要とされるIT企業グループへという目標に辿り着くため、単純な売上だけでなくお客様ファーストが会社全体として実行されてこそ、必要とされるという目標が達成されると信じています。
                                 </p>
-                                <p class="lead">
-                                    当社ではグローバルマーケットへのアクセスができる稀有な企業としてのアドバンテージを最大限活かしたビジネス展開を今後も行い、加速するIT化の波を更に大きなものにできるよう積極的に世界中のITイノベーションに取り組んでいきます。
-                                </p>
-                                <p>そしてその根幹には「ユーザーペイン解消」という最も大切なお客様の声を大事にした開発が現場レベルで実現されるよう今後も会社として各クライアントに貢献して参ります。</p>
-                                <p class="lead name">2022年9月<br>IDENBRID INC.<br>代表CEO 中村 奏画</p>
+                               <p  class="lead">そのためにOLPを導入し、リーダーの育成にも力を入れています。海外における日本人起業家の1人として、目標に向かって、足を止めずにただただ突き進んで参ります。</p>
+                               <p class="lead">皆様のご支援、応援、何卒引き続きよろしくお願いします。</p> 
+                               <p class="lead name">2022年10月<br>IDENBRID INC.<br>創業者兼CEO 中村 奏画</p>
                             </div>
                         </div>
                     </div>
@@ -53,18 +51,18 @@
                     </div>
                     <div class="item">
 
-                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス＆アクセス
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">チーム
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">メンバー
                         </router-link>
                     </div>
                     <div class="item">
 
                         <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">デジタル資産</router-link>
+                                src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>
                     </div>
                 </div>
 

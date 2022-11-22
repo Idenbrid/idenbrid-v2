@@ -4,18 +4,18 @@
         <main>
             <div class="mv_textarea">
                 <h2>
-                    <strong class="en entxt">MEMBER</strong>
+                    <strong class="en entxt">MEMBER / メンバー</strong>
                 </h2>
-                <p class="about-subcontents__text">こちらは当社の情報や沿革など会社概要を確認いただけすページです。</p>
+                <p class="about-subcontents__text">個性豊かなメンバーを知ることで当社をより深く知ることができます</p>
             </div>
             <div class="member--index highlight_blk">
                 <div class="member_inner">
                     <ul class="member_tab">
-                        <li class="active all">ALL</li>
-                        <li class="senki">戦略企画部</li>
-                        <li class="ishou">意匠制作部</li>
-                        <li class="jinji">人事総務部</li>
-                        <li class="kouhou">広報発信部</li>
+                        <li class="active all">全て</li>
+                        <li class="senki">マネジメント</li>
+                        <li class="ishou">エンジニア</li>
+                        <li class="jinji">ビジネス</li>
+                        <li class="kouhou">オフィス</li>
                     </ul>
                     <div class="member_tab_block">
                         <ul class="member_list">
@@ -534,18 +534,18 @@
                     </div>
                     <div class="item">
 
-                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス＆アクセス
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">チーム
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">メンバー
                         </router-link>
                     </div>
                     <div class="item">
 
                         <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">デジタル資産</router-link>
+                                src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>
                     </div>
                 </div>
 

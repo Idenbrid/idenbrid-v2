@@ -172,7 +172,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-7 primary-contact-form contact">
+              <div class="col-md-8 primary-contact-form contact">
                 <div class="row m-0">
                   <div class="col-md-12">
                     <form @submit.prevent="sendMail" class="form" id="pardot-form">
@@ -301,15 +301,13 @@
                         </div>
                       </div>
                       <div class="form-group row form-field  privacy_policy pd-checkbox required   ">
-                        <div class="formHeading col-md-3">
+                        <!-- <div class="formHeading col-md-3">
                           <label class="field-label col-form-label" for="880722_2642pi_880722_2642">プライバシーポリシー</label>
-                        </div>
-                        <div class="col-md-8">
+                        </div> -->
+                        <div class="col-md-10">
                           <div class="formInputOuter  privacy_policy">
                             <div class="formInputInner  privacy_policy ">
-                              <span class="value"><span>
-                                  <input v-model="agree" type="checkbox" name="880722_2642pi_880722_2642_13998" id="880722_2642pi_880722_2642_13998" value="13998" onchange="">
-                                  <label class="inline" for="880722_2642pi_880722_2642_13998">同意する</label></span></span>
+                             
                               <p class="description">
                                 <label for="agreecheck">
                                   <router-link to="/privacypolicy" target="_top">
@@ -317,6 +315,11 @@
                                   をよくお読みの上、問題なければチェックしてください
                                 </label>
                               </p>
+                              <span class="value"><span>
+                                  <input v-model="agree" type="checkbox" name="880722_2642pi_880722_2642_13998" id="880722_2642pi_880722_2642_13998" value="13998" onchange="">
+                                  <label class="inline" for="880722_2642pi_880722_2642_13998">同意する</label>
+                                </span>
+                              </span>
                               <div id="error_for_880722_2642pi_880722_2642" style="display:none"></div>
                             </div>
                           </div>
@@ -1156,6 +1159,7 @@
   .formHeading label {
     font-weight: 700;
     margin-bottom: 0;
+    font-size: 12px;
   }
 
   .formInputOuter {

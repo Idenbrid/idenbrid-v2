@@ -52,14 +52,11 @@
                     </dl>
                     <dl>
                         <dt>IT開発事業</dt>
-                        <dd>・ITコンサルティング（DX・コスト削減・新規ビジネス案件のITへの落とし込み等）<br>
-                            ・ITシステム設計（要件定義・基本設計・テストケース・API・DB・システムアーキテクチャ等）<br>
-                            ・UIUXデザイン（Webデザイン、スマホアプリデザイン、グラフィックデザイン等）<br>
-                            ・ウェブシステム開発（フロントエンド実装、ECサイト、マッチングサイト、業務管理システム等）<br>
-                            ・スマホアプリ開発（ライブ配信アプリ、マッチングアプリ、占いアプリ、業務アプリ等）<br>
-                            ・インフラ開発（AWS、GCP、Azure・クラウドインフラ構築、DBマイグレーション等）<br>
-                            ・LINEミニアプリ/API開発（メッセージAPI、会員証、ポイント、クーポンシステム等）<br>
-                            ・SESエンジニア採用営業支援 </dd>
+                        <dd>・日本市場SDH：スタジオ開発ハブ（受託開発・ラボ型開発）<br>
+                            ・SESエンジニア採用営業支援<br>
+                            ・グローバル市場SDH：スタジオ開発ハブ（受託開発・ラボ型開発）<br>
+                            ・パキスタン市場における自社アプリ開発・運営<br>
+                            </dd>
                     </dl>
                 </div>
             </div>
@@ -84,18 +81,18 @@
                     </div>
                     <div class="item">
 
-                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス＆アクセス
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">チーム
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">メンバー
                         </router-link>
                     </div>
                     <div class="item">
 
                         <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">デジタル資産</router-link>
+                                src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>
                     </div>
                 </div>
 
@@ -290,8 +287,6 @@
     .access--index .box .map {
         transform: translateY(3%);
         transition: .6s;
-
-        filter: grayscale(1);
         width: 50%;
         height: 20vw;
     }

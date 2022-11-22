@@ -4,89 +4,101 @@
         <main>
             <div class="mv_textarea">
                 <h2>
-                    <strong class="en entxt">System Engineering Service</strong>
-                    <span class="jptxt">皆様へのご挨拶</span>
+                    <strong class="en entxt">SES / エンジニア採用営業支援</strong>
+                    <span class="jptxt">SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。</span>
                 </h2>
             </div>
             <section class="system-sec mycontents-wide mt-5">
-                <h2 class="system-sec__tiile">サービスシステム開発</h2>
+                <h2 class="system-sec__tiile">エンジニアスタイルのご紹介・エンジニア様向けサービス</h2>
                 <p class="system-sec__text">
-                    whitecanvasは、もっとも新事業開発支援を得意としております。<br>クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。</p>
+                    エンジニアスタイルは、当社が展開するエンジニアやデザイナーの案件獲得支援サービスになります。<br>
+                    登録して頂くだけで希望する条件にあった案件につけるようにサポートさせて頂きます。</p>
 
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system01.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">フルスクラッチ開発</h3>
+                        <h3 class="system-sec__list__title">スタイルくん</h3>
                         <p class="system-sec__list__text">
-                            オーダーメイドのシステム設計により特殊な業務の対応や他者との差別化を図ることが可能です。また、パッケージ開発より自由にシステムをカスタマイズできる利点もございます。</p>
+                            スタイルくんが皆様の案件獲得のために全力でお手伝い・サポートさせて頂きます！</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system02.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">マッチングシステム</h3>
+                        <h3 class="system-sec__list__title">希望条件交渉力</h3>
                         <p class="system-sec__list__text">
-                            BtoBマッチングのみならず、CtoCサービスのWEBサービス主にオークションサービスやフリマサービスなど開発いたします。エスクロー決済の導入も可能です。</p>
+                            当社ではエンジニア・デザイナーの方々がより快適でお仕事に取り組めるようにご希望条件に沿った勤務形態をしっかりとご提案します</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system03.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">売買システム</h3>
-                        <p class="system-sec__list__text">商材を問わずユーザー間で売買ができるシステムを構築致します。<br>運営側のユーザー管理、運用まで考えた設計を提供致します。
+                        <h3 class="system-sec__list__title">契約単価</h3>
+                        <p class="system-sec__list__text">エンジニア・デザイナーの方々に少しでも大きく還元できるように単価交渉としっかりとした還元率を実現しています
                         </p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system04.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">ECシステム</h3>
+                        <h3 class="system-sec__list__title">フルリモート案件</h3>
                         <p class="system-sec__list__text">
-                            パッケージ開発やASP開発をはじめとし、オリジナルでの制作も可能です。<br>決済システムや顧客管理システムと連携し、より効果的なECサイトを制作いたします。</p>
+                            よりエンジニアの方が働きやすい環境を提供し、通勤の時間なども節約でき大人気の条件の一つです</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system05.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">ポータルシステム</h3>
+                        <h3 class="system-sec__list__title">スキルを伸ばす環境</h3>
                         <p class="system-sec__list__text">
-                            企業内ポータルサイトやクチコミポータルサイト、不動産ポータルサイトなど様々なジャンルに対応しております。メッセージ機能や投稿機能などを入れ込むことも可能です。</p>
+                            単純にできる仕事をするだけでなく、挑戦できる環境下で自身のスキルアップにも繋がる案件を紹介しております</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system06.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">コミュニティーシステム</h3>
+                        <h3 class="system-sec__list__title">頼れるカスタマーサクセス</h3>
                         <p class="system-sec__list__text">
-                            オンラインサロンやオンラインスクール、などオンライン上でのコミュニティーシステムを開発いたします。月額課金や単発販売などニーズに応じた設定が可能です。</p>
+                            万が一トラブルがあった場合にはエンジニアスタイルがしっかりと間に入り、状況把握からお客様の不安払拭に努めます</p>
+                    </li>
+
+                </ul>
+            </section>
+            <section class="system-sec mycontents-wide mt-5">
+                <h2 class="system-sec__tiile">人材を必要としている案件側企業様向けのご案内</h2>
+                <p class="system-sec__text">
+                    当社ではエンジニアスキルのみでなく、高いコミュニケーション能力があり、責任感のある仕事にコミットできる人材が揃っています。上流から下流までチームで揃えることもでき、ワンストップにてチーム構成までご提案できます。
+                </p>
+
+                <ul class="system-sec__contents ">
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system01.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">豊富な人材データベース</h3>
+                        <p class="system-sec__list__text">
+                            他のSES会社では見つからないような人材を受託開発も行なっている会社ならではの視点とネットワークにてご提案可能です</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system07.svg"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system02.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">動画配信システム</h3>
+                        <h3 class="system-sec__list__title">柔軟な提案力</h3>
                         <p class="system-sec__list__text">
-                            動画コンテンツの配信から販売などを行えるシステムを開発いたします。<br>大容量の動画の配信も可能な大規模開発をも行うことができます。</p>
+                            商流制限や条件交渉などせっかくいい人材がいても諸条件によって折り合いがつかないこともございますが当サービスでは良い人材の採用を第一優先に柔軟な提案をスピード感持って行います</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system08.svg"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system03.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">LIVEシステム</h3>
-                        <p class="system-sec__list__text">
-                            リアルタイムのLIVE配信機能からスーパーチェット、スタンプ送信機能を搭載したシステムをご提供しております。<br>SNSアプリと掛け合わせた開発など新規事業開発にご利用いただいております。
+                        <h3 class="system-sec__list__title">スピード対応</h3>
+                        <p class="system-sec__list__text">急募の急ぎ案件や大人数を必要とする募集であっても当サービスが提案と対応をさせて頂きます。
                         </p>
                     </li>
-                    <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system09.svg"
-                            alt="">
-                        <h3 class="system-sec__list__title">メディアサイトシステム</h3>
-                        <p class="system-sec__list__text">
-                            オウンドメディアや自社ブログなどでご利用いただけるメディアサイトシステムです。<br>記事投稿エディターやCMS機能、広告配信機能などニーズに合わせて対応可能です。</p>
-                    </li>
+
+
                 </ul>
             </section>
             <!-- <section class="system-sec mycontents-wide">
@@ -180,9 +192,9 @@
             </section> -->
             <section class="flow">
                 <div class="mycontents-wide">
-                    <h3 class="content-title content-title_flow">FLOW</h3>
+                    <h3 class="content-title content-title_flow">エンジニアスタイル利用の流れ</h3>
                     <p class="content-text content-subtitle_flow">
-                        企画から開発、運用まで一貫して対応を行っております。<br>お問い合わせからクローズまで一連の流れをご確認ください。</p>
+                        私たちのデータベースに会員登録から実際にお仕事を開始するまでのフローをご説明します。</p>
                 </div>
 
                 <div class="flow__scroll mycontents-wide">
@@ -191,30 +203,30 @@
                             <img class="flow__list__thumbnail"
                                 src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow01.png"
                                 alt="">
-                            <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
-                            <p class="flow__list__text">制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。</p>
+                            <h4 class="flow__list__title">当サービスへの会員登録</h4>
+                            <p class="flow__list__text">エンジニアスタイルのデータベースに人材登録させて頂き、先方のお客様へご提案を開始します。</p>
                         </li>
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail"
                                 src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow02.png"
                                 alt="">
-                            <h4 class="flow__list__title">仕様・要件定義</h4>
-                            <p class="flow__list__text">Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。</p>
+                            <h4 class="flow__list__title">書類選考</h4>
+                            <p class="flow__list__text">登録頂いた情報を元にご提案を進めるためにスキルセットシートを作成し、書類選考の通過を目指します。</p>
                         </li>
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail"
                                 src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow03.png"
                                 alt="">
-                            <h4 class="flow__list__title">デザイン制作・システム開発</h4>
+                            <h4 class="flow__list__title">面談・条件調整</h4>
                             <p class="flow__list__text">
-                                ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。<br>そして開発工程のコーディング、システム開発を行います。</p>
+                                1-2回当社を含むお客様と面談を実施させて頂きます。そこではこれまでの経験など面接にてお話し頂きます。</p>
                         </li>
                         <li class="flow__list">
                             <img class="flow__list__thumbnail"
                                 src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow04.png"
                                 alt="">
-                            <h4 class="flow__list__title">リリース・保守・運営</h4>
-                            <p class="flow__list__text">テストをおえて修正完了後、本番環境へのリリースを行います。<br>リリース後のサイト分析、保守、運営までサポート致します。
+                            <h4 class="flow__list__title">契約・勤務開始</h4>
+                            <p class="flow__list__text">契約書類がしっかりと手続き完了しましたら、勤務開始です！
                             </p>
                         </li>
                     </ul>
@@ -261,7 +273,7 @@
                     IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>ご質問がありましたらお気軽にご相談ください。
                 </h3>
                 <div class="fade_y on"><a href="https://tomorrowgate.co.jp/contact/"
-                     class="contactbtn fade_y on">今すぐ相談してみる</a></div>
+                        class="contactbtn fade_y on">今すぐ相談してみる</a></div>
             </div>
             <!-- <section class="contact mycontents-wide mt-5">
                 <h3 class="content-title content-title_contact">お問い合わせ</h3>

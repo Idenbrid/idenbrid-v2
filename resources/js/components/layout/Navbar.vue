@@ -128,7 +128,7 @@
                             <router-link to="/contact/">お問い合わせ</router-link>
                         </li>
                         <li class="header-pc__nav__lists header-pc__nav__list_img mr-0 pr-0 ml-2">
-                            <router-link to="/getstarted/" class="get-start-btn">Get Started</router-link>
+                            <router-link to="/getstarted/" class="get-start-btn">開発見積依頼</router-link>
                         </li>
                         <!-- <img src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/paper-airplane.svg" alt=""> -->
                     </ul>
