@@ -7528,7 +7528,7 @@ var render = function render() {
     staticClass: "header-pc__nav__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/recruit/"
+      to: "/business/"
     }
   }, [_vm._v("事業紹介")])], 1), _vm._v(" "), _c("li", {
     staticClass: "header-pc__nav__list"
@@ -7540,7 +7540,7 @@ var render = function render() {
     staticClass: "header-pc__nav__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/about-company/"
+      to: "/about/"
     }
   }, [_vm._v("会社情報")])], 1), _vm._v(" "), _c("li", {
     staticClass: "header-pc__nav__list header-pc__nav__list_img mr-0 pr-0"
@@ -7566,7 +7566,7 @@ var render = function render() {
     staticClass: "header-pc__nav__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/recruit/"
+      to: "/business/"
     }
   }, [_vm._v("事業紹介")])], 1), _vm._v(" "), _c("li", {
     staticClass: "header-pc__nav__list"
@@ -7578,7 +7578,7 @@ var render = function render() {
     staticClass: "header-pc__nav__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/about-company/"
+      to: "/about/"
     }
   }, [_vm._v("会社情報")])], 1), _vm._v(" "), _c("li", {
     staticClass: "header-pc__nav__list header-pc__nav__list_img mr-0 pr-0"
@@ -7591,7 +7591,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "get-start-btn",
     attrs: {
-      to: "/getstarted/"
+      to: "/quote/"
     }
   }, [_vm._v("開発見積依頼")])], 1)])])]), _vm._v(" "), _c("div", {
     staticClass: "header-sp"
@@ -7639,7 +7639,7 @@ var render = function render() {
     staticClass: "header-sp__fixed__menu__left__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/recruit/"
+      to: "/business/"
     }
   }, [_vm._v("事業紹介")])], 1), _vm._v(" "), _c("li", {
     staticClass: "header-sp__fixed__menu__left__list"
@@ -7651,7 +7651,7 @@ var render = function render() {
     staticClass: "header-sp__fixed__menu__left__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/about-company/"
+      to: "/about/"
     }
   }, [_vm._v("会社情報")])], 1), _vm._v(" "), _c("li", {
     staticClass: "header-sp__fixed__menu__left__list"
@@ -7665,7 +7665,7 @@ var render = function render() {
     staticClass: "fix_btn"
   }, [_c("router-link", {
     attrs: {
-      to: "/download-form/"
+      to: "/doc/"
     }
   }, [_c("span", {
     staticClass: "txt"
@@ -7674,7 +7674,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "key",
     attrs: {
-      to: "/faqs"
+      to: "/faq"
     }
   }, [_c("span", {
     staticClass: "txt"
@@ -15872,9 +15872,9 @@ var render = function render() {
     staticClass: "service-contents__list__subtitle"
   }, [_vm._v("スマホアプリ開発")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("Mobile app development")]), _vm._v(" "), _c("p", {
+  }, [_vm._v(" スマホiOS/Androidアプリ開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                SNSアプリやマッチングアプリ・チャットアプリそしてライブ配信アプリや性格診断占いアプリや業務用の管理アプリなどカテゴリーを問わず、設計・開発・審査申請から保守まで丸っと一括で承っています。\n                                また当社ではウェブシステムと連携したアプリ開発も得意としていますので出先から既存システムとのデータ共有されたアプリへのアクセスも可能とし、お客様の業務効率の改善に貢献します。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -15895,9 +15895,9 @@ var render = function render() {
     staticClass: "service-contents__list__subtitle"
   }, [_vm._v("システム開発")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("System application development")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ウェブシステム開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                情報システム・顧客管理システム・在庫管理システム・業務用システムのウェブサービス構築や運用保守・セキュリティー対策など企業様向けの受託開発を行なっています。当社のエンジニアは多様な言語を取り扱えるほどAWSやAzureなどクラウドインラフサービスも専門領域です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -15918,9 +15918,9 @@ var render = function render() {
     staticClass: "service-contents__list__subtitle"
   }, [_vm._v("ウェブ制作・デジタルマーケティング")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("Web creative・Digital marketing")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ラボ型オフショア開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                コーポレイトサイトの作成やポートフォリオサイトそしてLP構築などを手がけています。WordPressを使用したり、最新のJavaScript系言語をフロント開発に用いています。またデジタルマーケティングではSEO、SMOやSNS運用そして英語圏ならば運用から保守まで一括して行います。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -15941,9 +15941,9 @@ var render = function render() {
     staticClass: "service-contents__list__subtitle"
   }, [_vm._v("デザイン制作")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("Web design・UIUX designing")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("UIUXデザイン制作")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text service-contents__list_last__text"
-  }, [_vm._v("当社ではAdobe\n                                XDを用いてウェブサイト・ウェブシステムやアプリケーションそしてスマホアプリのUIUXデザイン制作を行なっています。最初にワイヤーフレームを組みお客様の意図がきちんと反映されるようにコミュニケーションをしっかり取らせて頂いております。\n                            ")])])])], 1)])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("Footer")], 1);
+  }, [_vm._v("当社ではAdobe\n                                XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。\n                            ")])])])], 1)])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -15960,7 +15960,7 @@ var staticRenderFns = [function () {
     _c = _vm._self._c;
   return _c("li", {
     staticClass: "service-contents__text"
-  }, [_c("p", [_vm._v("アイデンブリッド社はシステム開発やそれに伴うデザイン業務、またモバイルアプリの開発やウェブ制作などITに関わるプラットフォームに広く精通しています。特にDXを求めるお客様のコンサルも含めたトータルサポートを行なっています。\n                    ")])]);
+  }, [_c("p", [_vm._v("アイデンブリッドはワンストップ開発を展開しており、要件定義そしてシステム設計からUIUXデザイン、ウェブ開発、モバイルアプリ開発またクラウドまで対応しています。そして実現されたい要件をシステムやアプリに落とし込むことを得意としています。\n                    ")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -19277,32 +19277,32 @@ var routes = [
   path: '/idenspire/:string?/',
   component: _components_pages_services_Idenspire_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
-  path: '/download-form/:string?/',
+  path: '/doc/:string?/',
   component: _components_pages_DownloadForm_vue__WEBPACK_IMPORTED_MODULE_26__["default"]
 }, {
-  path: '/recruit/:string?/',
+  path: '/business/:string?/',
   component: _components_pages_Recruit_vue__WEBPACK_IMPORTED_MODULE_28__["default"]
 }, {
-  path: '/getstarted/',
+  path: '/quote/',
   component: _components_pages_GetStarted_vue__WEBPACK_IMPORTED_MODULE_33__["default"]
 }, {
-  path: '/system-engineering-service/:string?/',
+  path: '/engineerstyle/:string?/',
   component: _components_pages_services_Ses_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
 }, {
-  path: '/branding/:string?/',
+  path: '/studiodevelopmenthub/:string?/',
   component: _components_pages_Branding_vue__WEBPACK_IMPORTED_MODULE_27__["default"]
 }, {
-  path: '/about-company',
+  path: '/about',
   component: _components_pages_AboutCompany_vue__WEBPACK_IMPORTED_MODULE_16__["default"]
 },
 //Access
 {
-  path: '/access/',
+  path: '/company/',
   component: _components_pages_Access_vue__WEBPACK_IMPORTED_MODULE_31__["default"]
 },
 //Movies
 {
-  path: '/movies/',
+  path: '/video/',
   component: _components_pages_Movies_vue__WEBPACK_IMPORTED_MODULE_30__["default"]
 },
 // work
@@ -19320,16 +19320,16 @@ var routes = [
   path: '/onlinedevelopmenthub/:string?/',
   component: _components_pages_Partnerships_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
 }, {
-  path: '/system-application/:string?/',
+  path: '/development/:string?/',
   component: _components_pages_expertise_SystemApplicationDevelopment_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
 }, {
-  path: '/mobile-app-development/:string?/',
+  path: '/mobileapp/:string?/',
   component: _components_pages_expertise_MobileAppDevelopment_vue__WEBPACK_IMPORTED_MODULE_11__["default"]
 }, {
-  path: '/web-creative-digital-marketing/:string?/',
+  path: '/webitconsulting/:string?/',
   component: _components_pages_expertise_WebCreativeDigitalmarketing_vue__WEBPACK_IMPORTED_MODULE_12__["default"]
 }, {
-  path: '/web-design-UIUX-designing/:string?/',
+  path: '/uiuxdesign/:string?/',
   component: _components_pages_expertise_WebDesignUIUXdesigning_vue__WEBPACK_IMPORTED_MODULE_13__["default"]
 },
 //About
@@ -19344,7 +19344,7 @@ var routes = [
 },
 //Faq
 {
-  path: '/faqs/',
+  path: '/faq/',
   component: _components_pages_Faq_vue__WEBPACK_IMPORTED_MODULE_19__["default"]
 },
 //Office
