@@ -7305,20 +7305,11 @@ var staticRenderFns = [function () {
   return _c("section", {
     staticClass: "bg-color"
   }, [_c("div", {
-    staticClass: "loopCopy isAnim anim-fadeIn inView",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "loopCopy isAnim anim-fadeIn inView"
   }, [_c("div", {
-    staticClass: "area",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "area"
   }, [_c("div", {
-    staticClass: "copy",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "copy"
   })])])]);
 }, function () {
   var _vm = this,

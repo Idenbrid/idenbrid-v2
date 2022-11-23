@@ -2,9 +2,9 @@
     <div>
        <footer>
          <section class="bg-color">
-                <div class="loopCopy isAnim anim-fadeIn inView" bis_skin_checked="1">
-			<div class="area" bis_skin_checked="1">
-				<div class="copy" bis_skin_checked="1"></div>
+                <div class="loopCopy isAnim anim-fadeIn inView">
+			<div class="area">
+				<div class="copy"></div>
 			</div>
 		</div>
             </section>
