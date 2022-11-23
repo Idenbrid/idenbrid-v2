@@ -85,7 +85,7 @@
                         </p>
                     </li>
                     <li class="service-contents__list">
-                        <router-link to="/mobile-app-development/">
+                        <router-link to="/mobileapp/">
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
@@ -101,7 +101,7 @@
                         </router-link>
                     </li>
                     <li class="service-contents__list">
-                        <router-link to="/system-application/">
+                        <router-link to="/development/">
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
@@ -116,7 +116,7 @@
                         </router-link>
                     </li>
                     <li class="service-contents__list">
-                        <router-link to="/web-creative-digital-marketing/">
+                        <router-link to="/webitconsulting/">
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
@@ -131,7 +131,7 @@
                         </router-link>
                     </li>
                     <li class="service-contents__list">
-                        <router-link to="/web-design-UIUX-designing/">
+                        <router-link to="/uiuxdesign/">
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"

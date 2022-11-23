@@ -331,22 +331,22 @@
                 <section class="menu-list">
                     <div class="menu-box">
                         <div class="item">
-                            <a href="/system-application/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
+                            <a href="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
                                 application <br>development
                             </a>
                         </div>
                         <div class="item">
-                            <a href="/mobile-app-development/" class="text router-link-exact-active router-link-active"><img
+                            <a href="/mobileapp/" class="text router-link-exact-active router-link-active"><img
                                     src="/assets/img/icons/Message-icon.svg">Mobile app development
                             </a>
                         </div>
                         <div class="item">
-                            <a href="/web-design-UIUX-designing/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
+                            <a href="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
                                 design・UIUX designing
                             </a>
                         </div>
                         <div class="item">
-                            <a href="/web-creative-digital-marketing/" class="text">
+                            <a href="/webitconsulting/" class="text">
                                 <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</a>
                         </div>
                     </div>

@@ -7213,7 +7213,7 @@ var render = function render() {
     staticClass: "card-body contact-request-col"
   }, [_c("router-link", {
     attrs: {
-      to: "/download-form/"
+      to: "/doc/"
     }
   }, [_c("h4", {
     staticClass: "request-contact-heading"
@@ -7278,7 +7278,7 @@ var render = function render() {
     staticClass: "foot-menu-group"
   }, [_c("h4", [_c("router-link", {
     attrs: {
-      to: "/about-company/"
+      to: "/about/"
     }
   }, [_vm._v("会社情報")])], 1)]), _vm._v(" "), _c("div", {
     staticClass: "foot-menu-group"
@@ -8188,7 +8188,7 @@ var render = function render() {
     staticClass: "link-set"
   }, [_c("router-link", {
     attrs: {
-      to: "/access/"
+      to: "/company/"
     }
   }, [_c("div", {
     staticClass: "link-card"
@@ -8348,7 +8348,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "text",
     attrs: {
-      to: "/access/"
+      to: "/company/"
     }
   }, [_c("img", {
     attrs: {
@@ -8628,7 +8628,16 @@ var render = function render() {
     }), _vm._v(_vm._s(blog.count) + "\n                                ")])]), _vm._v(" "), _c("h3", {
       staticClass: "hvrunder"
     }, [_vm._v("\n                                " + _vm._s(blog.title) + "\n                            ")])]);
-  }), 1)])])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("Footer")], 1);
+  }), 1)])])]), _vm._v(" "), _c("div", {
+    staticClass: "branding--contact"
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "fade_y on"
+  }, [_c("router-link", {
+    staticClass: "contactbtn fade_y on",
+    attrs: {
+      to: "/contact/"
+    }
+  }, [_vm._v("今すぐ相談してみる")])], 1)])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -8659,25 +8668,9 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "branding--contact",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("h3", {
+  return _c("h3", {
     staticClass: "fade_y on"
-  }, [_vm._v("\n                IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで"), _c("br"), _vm._v("ご質問がありましたらお気軽にご相談ください。\n            ")]), _vm._v(" "), _c("div", {
-    staticClass: "fade_y on",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("a", {
-    staticClass: "contactbtn fade_y on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/contact/",
-      bis_skin_checked: "1"
-    }
-  }, [_vm._v("今すぐ相談してみる")])])]);
+  }, [_vm._v("\n                IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで"), _c("br"), _vm._v("ご質問がありましたらお気軽にご相談ください。\n            ")]);
 }];
 render._withStripped = true;
 
@@ -8710,7 +8703,7 @@ var render = function render() {
   }, [_vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("router-link", {
     staticClass: "btn-views",
     attrs: {
-      to: "/download-form/"
+      to: "/doc/"
     }
   }, [_vm._v("資料ダウンロード"), _c("i", {
     staticClass: "fa fa-download ml-2",
@@ -8730,7 +8723,7 @@ var render = function render() {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/mobile-app-development/"
+      to: "/mobileapp/"
     }
   }, [_c("div", {
     staticClass: "service-items"
@@ -8753,7 +8746,7 @@ var render = function render() {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/system-application/"
+      to: "/development/"
     }
   }, [_c("div", {
     staticClass: "service-items"
@@ -8776,7 +8769,7 @@ var render = function render() {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/web-creative-digital-marketing/"
+      to: "/webitconsulting/"
     }
   }, [_c("div", {
     staticClass: "service-items"
@@ -8799,7 +8792,7 @@ var render = function render() {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/web-design-UIUX-designing/"
+      to: "/uiuxdesign/"
     }
   }, [_c("div", {
     staticClass: "service-items"
@@ -9865,7 +9858,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "text",
     attrs: {
-      to: "/access/"
+      to: "/company/"
     }
   }, [_c("img", {
     attrs: {
@@ -9915,7 +9908,16 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("デジタルアセット")])], 1)])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("デジタルアセット")])], 1)])]), _vm._v(" "), _c("div", {
+    staticClass: "branding--contact"
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "fade_y on"
+  }, [_c("router-link", {
+    staticClass: "contactbtn fade_y on",
+    attrs: {
+      to: "/contact/"
+    }
+  }, [_vm._v("今すぐ相談してみる")])], 1)])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -9983,20 +9985,11 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "branding--contact"
-  }, [_c("h3", {
+  return _c("h3", {
     staticClass: "fade_y on"
   }, [_vm._v("ブランディングに関するご質問があれば"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("まずはお気軽にご相談ください")]), _vm._v(" "), _c("div", {
-    staticClass: "fade_y on"
-  }, [_c("a", {
-    staticClass: "contactbtn fade_y on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/contact/"
-    }
-  }, [_vm._v("今すぐ相談してみる")])])]);
+  }), _vm._v("まずはお気軽にご相談ください")]);
 }];
 render._withStripped = true;
 
@@ -12312,7 +12305,7 @@ var render = function render() {
   }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("router-link", {
     staticClass: "btn-views",
     attrs: {
-      to: "/download-form/"
+      to: "/doc/"
     }
   }, [_vm._v("資料ダウンロード"), _c("i", {
     staticClass: "fa fa-download ml-2",
@@ -12816,7 +12809,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "text",
     attrs: {
-      to: "/access/"
+      to: "/company/"
     }
   }, [_c("img", {
     attrs: {
@@ -14192,7 +14185,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "text",
     attrs: {
-      to: "/access/"
+      to: "/company/"
     }
   }, [_c("img", {
     attrs: {
@@ -14558,7 +14551,16 @@ var render = function render() {
     }, [_vm._v("NEWS")])])]), _vm._v(" "), _c("h3", {
       staticClass: "hvrunder"
     }, [_vm._v(_vm._s(detail.title))])])])], 1);
-  }), _vm._v(" "), _vm._m(1)], 2), _vm._v(" "), _vm._m(2)])]), _vm._v(" "), _vm._m(3)]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v(" "), _vm._m(1)], 2), _vm._v(" "), _vm._m(2)])]), _vm._v(" "), _c("div", {
+    staticClass: "branding--contact"
+  }, [_vm._m(3), _vm._v(" "), _c("div", {
+    staticClass: "fade_y on"
+  }, [_c("router-link", {
+    staticClass: "contactbtn fade_y on",
+    attrs: {
+      to: "/contact/"
+    }
+  }, [_vm._v("今すぐ相談してみる")])], 1)])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -14646,27 +14648,11 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "branding--contact",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("h3", {
+  return _c("h3", {
     staticClass: "fade_y on"
   }, [_vm._v("ブランディングに関するご質問があれば"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("まずはお気軽にご相談ください")]), _vm._v(" "), _c("div", {
-    staticClass: "fade_y on",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("a", {
-    staticClass: "contactbtn fade_y on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/contact/",
-      bis_skin_checked: "1"
-    }
-  }, [_vm._v("今すぐ相談してみる")])])]);
+  }), _vm._v("まずはお気軽にご相談ください")]);
 }];
 render._withStripped = true;
 
@@ -14697,7 +14683,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "text",
     attrs: {
-      to: "/access/"
+      to: "/company/"
     }
   }, [_c("img", {
     attrs: {
@@ -15209,7 +15195,16 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("div", {
+    staticClass: "branding--contact"
+  }, [_vm._m(4), _vm._v(" "), _c("div", {
+    staticClass: "fade_y on"
+  }, [_c("router-link", {
+    staticClass: "contactbtn fade_y on",
+    attrs: {
+      to: "/contact/"
+    }
+  }, [_vm._v("今すぐ相談してみる")])], 1)]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -15480,25 +15475,9 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "branding--contact",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("h3", {
+  return _c("h3", {
     staticClass: "fade_y on"
-  }, [_vm._v("IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで"), _c("br"), _vm._v("\n      ご質問がありましたらお気軽にご相談ください。")]), _vm._v(" "), _c("div", {
-    staticClass: "fade_y on",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("a", {
-    staticClass: "contactbtn fade_y on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/contact/",
-      bis_skin_checked: "1"
-    }
-  }, [_vm._v("今すぐ相談してみる")])])]);
+  }, [_vm._v("IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで"), _c("br"), _vm._v("\n      ご質問がありましたらお気軽にご相談ください。")]);
 }];
 render._withStripped = true;
 
@@ -15655,43 +15634,25 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("div", {
-    staticClass: "recruit--person highlight_blk",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "recruit--person highlight_blk"
   }, [_vm._m(2), _vm._v(" "), _c("div", {
-    staticClass: "recruit--person--list",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "recruit--person--list"
   }, [_c("div", {
-    staticClass: "recruit--person--item hoverScale",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "recruit--person--item hoverScale"
   }, [_c("router-link", {
     attrs: {
-      to: "/branding/"
+      to: "/studiodevelopmenthub/"
     }
   }, [_c("div", {
-    staticClass: "thumb",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "thumb"
   }, [_c("div", {
-    staticClass: "hvrtxt en",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txt"
   }, [_c("span", {
     staticClass: "underline"
   }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
       src: "https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg",
@@ -15705,34 +15666,22 @@ var render = function render() {
     staticClass: "pc"
   }), _vm._v("設計・デザイン、ウェブ、スマホまでワンストップにて当社でお受けしております。")])]), _vm._v(" "), _c("p", {
     staticClass: "fade_y on"
-  }, [_vm._v("\n                            STUDIO DEVELOPMENT HUB通称SDHでは、ITサービスを開発されたい企業様や自社にはITに詳しい人材やエンジニアがいないので外注したいお客様に向けた受託開発サービスです。\n                        ")])])], 1), _vm._v(" "), _c("div", {
-    staticClass: "recruit--person--item hoverScale",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+  }, [_vm._v("\n                            STUDIO DEVELOPMENT\n                            HUB通称SDHでは、ITサービスを開発されたい企業様や自社にはITに詳しい人材やエンジニアがいないので外注したいお客様に向けた受託開発サービスです。\n                        ")])])], 1), _vm._v(" "), _c("div", {
+    staticClass: "recruit--person--item hoverScale"
   }, [_c("router-link", {
     attrs: {
-      to: "/system-engineering-service/"
+      to: "/engineerstyle/"
     }
   }, [_c("div", {
-    staticClass: "thumb",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "thumb"
   }, [_c("div", {
-    staticClass: "hvrtxt en",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txt"
   }, [_c("span", {
     staticClass: "underline"
   }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
       src: "https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg",
@@ -15750,19 +15699,28 @@ var render = function render() {
     staticClass: "entryarea recruit--contactarea--bnr"
   }, [_c("li", [_c("router-link", {
     attrs: {
-      to: "/branding"
+      to: "/studiodevelopmenthub"
     }
   }, [_vm._v("STUDIO DEVELOPMENT HUB : SDH"), _c("br"), _c("span", {
     staticClass: "label pc"
   }, [_vm._v("スタジオ開発ハブ（受託開発）")])])], 1), _vm._v(" "), _c("li", [_c("router-link", {
     attrs: {
-      to: "/system-engineering-service/"
+      to: "/engineerstyle/"
     }
   }, [_vm._v("SES"), _c("br"), _c("span", {
     staticClass: "label pc"
   }, [_vm._v("エンジニア採用支援（常駐・フルリモート業務委託）")]), _c("span", {
     staticClass: "label sp"
-  }, [_vm._v("気軽にメール登録")])])], 1)])]), _vm._v(" "), _vm._m(3)]), _vm._v(" "), _c("Footer")], 1);
+  }, [_vm._v("気軽にメール登録")])])], 1)])]), _vm._v(" "), _c("div", {
+    staticClass: "branding--contact"
+  }, [_vm._m(3), _vm._v(" "), _c("div", {
+    staticClass: "fade_y on"
+  }, [_c("router-link", {
+    staticClass: "contactbtn fade_y on",
+    attrs: {
+      to: "/contact/"
+    }
+  }, [_vm._v("今すぐ相談してみる")])], 1)])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -15788,10 +15746,7 @@ var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "heading",
-    attrs: {
-      bis_skin_checked: "1"
-    }
+    staticClass: "heading"
   }, [_c("span", {
     staticClass: "sub en fade_y on"
   }, [_vm._v("SERVICES")]), _vm._v(" "), _c("h3", {
@@ -15800,27 +15755,11 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "branding--contact",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("h3", {
+  return _c("h3", {
     staticClass: "fade_y on"
   }, [_vm._v("ブランディングに関するご質問があれば"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("まずはお気軽にご相談ください")]), _vm._v(" "), _c("div", {
-    staticClass: "fade_y on",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("a", {
-    staticClass: "contactbtn fade_y on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/contact/",
-      bis_skin_checked: "1"
-    }
-  }, [_vm._v("今すぐ相談してみる")])])]);
+  }), _vm._v("まずはお気軽にご相談ください")]);
 }];
 render._withStripped = true;
 
@@ -15855,7 +15794,7 @@ var render = function render() {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/mobile-app-development/"
+      to: "/mobileapp/"
     }
   }, [_c("div", {
     staticClass: "service-items"
@@ -15878,7 +15817,7 @@ var render = function render() {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/system-application/"
+      to: "/development/"
     }
   }, [_c("div", {
     staticClass: "service-items"
@@ -15901,7 +15840,7 @@ var render = function render() {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/web-creative-digital-marketing/"
+      to: "/webitconsulting/"
     }
   }, [_c("div", {
     staticClass: "service-items"
@@ -15924,7 +15863,7 @@ var render = function render() {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
-      to: "/web-design-UIUX-designing/"
+      to: "/uiuxdesign/"
     }
   }, [_c("div", {
     staticClass: "service-items"
@@ -15943,7 +15882,16 @@ var render = function render() {
     staticClass: "service-contents__list__title"
   }, [_vm._v("UIUXデザイン制作")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text service-contents__list_last__text"
-  }, [_vm._v("当社ではAdobe\n                                XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。\n                            ")])])])], 1)])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("Footer")], 1);
+  }, [_vm._v("当社ではAdobe\n                                XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。\n                            ")])])])], 1)])]), _vm._v(" "), _c("div", {
+    staticClass: "branding--contact"
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "fade_y on"
+  }, [_c("router-link", {
+    staticClass: "contactbtn fade_y on",
+    attrs: {
+      to: "/contact/"
+    }
+  }, [_vm._v("今すぐ相談してみる")])], 1)])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -15964,27 +15912,11 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "branding--contact",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("h3", {
+  return _c("h3", {
     staticClass: "fade_y on"
   }, [_vm._v("ブランディングに関するご質問があれば"), _c("br", {
     staticClass: "pc"
-  }), _vm._v("まずはお気軽にご相談ください")]), _vm._v(" "), _c("div", {
-    staticClass: "fade_y on",
-    attrs: {
-      bis_skin_checked: "1"
-    }
-  }, [_c("a", {
-    staticClass: "contactbtn fade_y on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/contact/",
-      bis_skin_checked: "1"
-    }
-  }, [_vm._v("今すぐ相談してみる")])])]);
+  }), _vm._v("まずはお気軽にご相談ください")]);
 }];
 render._withStripped = true;
 
@@ -16740,7 +16672,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/system-application/"
+      href: "/development/"
     }
   }, [_c("img", {
     attrs: {
@@ -16751,7 +16683,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text router-link-exact-active router-link-active",
     attrs: {
-      href: "/mobile-app-development/"
+      href: "/mobileapp/"
     }
   }, [_c("img", {
     attrs: {
@@ -16762,7 +16694,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/web-design-UIUX-designing/"
+      href: "/uiuxdesign/"
     }
   }, [_c("img", {
     attrs: {
@@ -16773,7 +16705,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/web-creative-digital-marketing/"
+      href: "/webitconsulting/"
     }
   }, [_c("img", {
     attrs: {
@@ -17125,7 +17057,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/system-application/"
+      href: "/development/"
     }
   }, [_c("img", {
     attrs: {
@@ -17136,7 +17068,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text router-link-exact-active router-link-active",
     attrs: {
-      href: "/mobile-app-development/"
+      href: "/mobileapp/"
     }
   }, [_c("img", {
     attrs: {
@@ -17147,7 +17079,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/web-design-UIUX-designing/"
+      href: "/uiuxdesign/"
     }
   }, [_c("img", {
     attrs: {
@@ -17158,7 +17090,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/web-creative-digital-marketing/"
+      href: "/webitconsulting/"
     }
   }, [_c("img", {
     attrs: {
@@ -17504,7 +17436,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/system-application/"
+      href: "/development/"
     }
   }, [_c("img", {
     attrs: {
@@ -17515,7 +17447,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text router-link-exact-active router-link-active",
     attrs: {
-      href: "/mobile-app-development/"
+      href: "/mobileapp/"
     }
   }, [_c("img", {
     attrs: {
@@ -17526,7 +17458,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/web-design-UIUX-designing/"
+      href: "/uiuxdesign/"
     }
   }, [_c("img", {
     attrs: {
@@ -17537,7 +17469,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/web-creative-digital-marketing/"
+      href: "/webitconsulting/"
     }
   }, [_c("img", {
     attrs: {
@@ -17883,7 +17815,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/system-application/"
+      href: "/development/"
     }
   }, [_c("img", {
     attrs: {
@@ -17894,7 +17826,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text router-link-exact-active router-link-active",
     attrs: {
-      href: "/mobile-app-development/"
+      href: "/mobileapp/"
     }
   }, [_c("img", {
     attrs: {
@@ -17905,7 +17837,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/web-design-UIUX-designing/"
+      href: "/uiuxdesign/"
     }
   }, [_c("img", {
     attrs: {
@@ -17916,7 +17848,7 @@ var staticRenderFns = [function () {
   }, [_c("a", {
     staticClass: "text",
     attrs: {
-      href: "/web-creative-digital-marketing/"
+      href: "/webitconsulting/"
     }
   }, [_c("img", {
     attrs: {
@@ -18722,18 +18654,31 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("div", {
+    staticClass: "branding--contact"
+  }, [_vm._m(4), _vm._v(" "), _c("div", {
+    staticClass: "fade_y on"
+  }, [_c("router-link", {
+    staticClass: "contactbtn fade_y on",
+    attrs: {
+      to: "/contact/"
+    }
+  }, [_vm._v("今すぐ相談してみる")])], 1)])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("main", [_c("div", {
+  return _c("div", {
     staticClass: "mv_textarea"
   }, [_c("h2", [_c("strong", {
     staticClass: "en entxt"
   }, [_vm._v("SES / エンジニア採用営業支援")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
-  }, [_vm._v("SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。")])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide mt-5"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -18813,7 +18758,11 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("頼れるカスタマーサクセス")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        万が一トラブルがあった場合にはエンジニアスタイルがしっかりと間に入り、状況把握からお客様の不安払拭に努めます")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("\n                        万が一トラブルがあった場合にはエンジニアスタイルがしっかりと間に入り、状況把握からお客様の不安払拭に努めます")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide mt-5"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -18857,7 +18806,11 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("スピード対応")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("急募の急ぎ案件や大人数を必要とする募集であっても当サービスが提案と対応をさせて頂きます。\n                    ")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("急募の急ぎ案件や大人数を必要とする募集であっても当サービスが提案と対応をさせて頂きます。\n                    ")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
@@ -18917,18 +18870,13 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("契約・勤務開始")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("契約書類がしっかりと手続き完了しましたら、勤務開始です！\n                        ")])])])])]), _vm._v(" "), _c("div", {
-    staticClass: "branding--contact"
-  }, [_c("h3", {
+  }, [_vm._v("契約書類がしっかりと手続き完了しましたら、勤務開始です！\n                        ")])])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("h3", {
     staticClass: "fade_y on"
-  }, [_vm._v("\n                IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで"), _c("br"), _vm._v("ご質問がありましたらお気軽にご相談ください。\n            ")]), _vm._v(" "), _c("div", {
-    staticClass: "fade_y on"
-  }, [_c("a", {
-    staticClass: "contactbtn fade_y on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/contact/"
-    }
-  }, [_vm._v("今すぐ相談してみる")])])])]);
+  }, [_vm._v("\n                IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで"), _c("br"), _vm._v("ご質問がありましたらお気軽にご相談ください。\n            ")]);
 }];
 render._withStripped = true;
 
@@ -24807,7 +24755,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\r\n    width: 100%;\r\n    overflow: hidden;\r\n    box-sizing: content-box;\n}\n.bg-color{\r\n    background-color: #1a202c;\r\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\r\n    animation-name: fadeIn;\n}\n.loopCopy .area {\r\n    white-space: nowrap;\r\n    width: 100%;\r\n    padding-right: 100%;\r\n    box-sizing: content-box;\r\n    animation-iteration-count: infinite;\r\n    animation-timing-function: linear;\r\n    animation-name: ticker;\r\n    animation-duration: 10s;\r\n    height: 60px;\r\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\r\n    opacity: 1;\r\n    animation-duration: 0.5s;\r\n    animation-iteration-count: 1;\r\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\r\n    animation-fill-mode: both;\n}\nfooter {\r\n  background: #1a202c;\n}\n.container-request {\r\n  padding: 0px 74px !important;\n}\n.fonter-text{\r\n  color: #DADADA;\n}\n.footer-logo {\r\n  width: 20%;\r\n  margin: auto;\r\n  display: flex;\n}\n.col-content {\r\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\r\n  width: 100%;\r\n  height: auto;\n}\n.section-request {\r\n  padding: 80px 0px 60px;\n}\n.contact-main{\r\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\r\n  color: #fff;\r\n  font-size: 40px;\n}\n.contact-request-col {\r\n  padding: 50px 0px;\n}\n.request-contact-heading {\r\n  font-size: 20px;\r\n  letter-spacing: 0.1em;\r\n  color: #DADADA;\r\n  text-align: center;\r\n  font-weight: 700;\r\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\r\n  content: \"\";\r\n  background-color: #000;\r\n  height: 1px;\r\n  width: 40px;\r\n  position: absolute;\r\n  right: 6.5%;\r\n  top: 50%;\r\n  opacity: 0;\r\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\r\n    opacity: 1;\r\n    right: 5%;\r\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\r\n  transform: rotate(45deg);\r\n  width: 10px;\r\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\r\n  font-size: 12px;\r\n  letter-spacing: 0.06em;\r\n  color: #DADADA;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\r\n   font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\r\n  border: 1px solid #ffffff;\r\n  background: none !important;\r\n  transition: 0.6s ease;\r\n  cursor: pointer;\r\n  height: 149.25px;\r\n  border-radius: 0px;\n}\n.card:hover {\r\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\r\n.card:hover .request-contact-heading {\r\n  color: #000000;\n}\n.footer-menu-heading h2 {\r\n  text-align: center;\r\n  color: #ffff;\n}\n.foot-menu-group {\r\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\r\n  color: #DADADA;\r\n  font-size: 14px;\r\n  letter-spacing: 0.1em;\r\n  font-weight: bold;\r\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 30px;\r\n  margin: 25px 0px 0px;\n}\n.twitter {\r\n  color: #fff;\r\n  font-size: 27px;\n}\n.copyright {\r\n  margin-top: 40px;\r\n  font-size: 14px;\r\n  color: #777;\r\n  letter-spacing: 0.18em;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \r\n   width: 100%; \r\n   height: 85px;\r\n   padding-top: 20px;\r\n   margin: 0px 40px;\n}\n.contact__btns{\r\n    padding: 0px 150px;\n}\n.content-text_contact{\r\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\r\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 85%;\r\n    -moz-column-gap: 100px;\r\n         column-gap: 100px;\r\n    margin: 2px auto;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\r\n    font-size: 1.7rem;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.contact__btns {\r\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 90%;\r\n    -moz-column-gap: 180px;\r\n         column-gap: 180px;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\nh2 {\r\n    font-size: 1.5rem;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 80%;\r\n    -moz-column-gap: 230px;\r\n         column-gap: 230px;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.btn-wide {\r\n    margin: 0px 18px 30px;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\r\n    display: none;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.content-text_contact{\r\n    padding: 40px 30px;\r\n    margin: 0;\r\n    font-size: 14px;\n}\n.btn-wide{\r\n   margin: 0px 0px 30px;\n}\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\n    width: 100%;\n    overflow: hidden;\n    box-sizing: content-box;\n}\n.bg-color{\n    background-color: #1a202c;\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\n    animation-name: fadeIn;\n}\n.loopCopy .area {\n    white-space: nowrap;\n    width: 100%;\n    padding-right: 100%;\n    box-sizing: content-box;\n    animation-iteration-count: infinite;\n    animation-timing-function: linear;\n    animation-name: ticker;\n    animation-duration: 10s;\n    height: 60px;\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\n    opacity: 1;\n    animation-duration: 0.5s;\n    animation-iteration-count: 1;\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\n    animation-fill-mode: both;\n}\nfooter {\n  background: #1a202c;\n}\n.container-request {\n  padding: 0px 74px !important;\n}\n.fonter-text{\n  color: #DADADA;\n}\n.footer-logo {\n  width: 20%;\n  margin: auto;\n  display: flex;\n}\n.col-content {\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\n  width: 100%;\n  height: auto;\n}\n.section-request {\n  padding: 80px 0px 60px;\n}\n.contact-main{\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\n  color: #fff;\n  font-size: 40px;\n}\n.contact-request-col {\n  padding: 50px 0px;\n}\n.request-contact-heading {\n  font-size: 20px;\n  letter-spacing: 0.1em;\n  color: #DADADA;\n  text-align: center;\n  font-weight: 700;\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\n  content: \"\";\n  background-color: #000;\n  height: 1px;\n  width: 40px;\n  position: absolute;\n  right: 6.5%;\n  top: 50%;\n  opacity: 0;\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\n    opacity: 1;\n    right: 5%;\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\n  transform: rotate(45deg);\n  width: 10px;\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\n  font-size: 12px;\n  letter-spacing: 0.06em;\n  color: #DADADA;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\n   font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\n  border: 1px solid #ffffff;\n  background: none !important;\n  transition: 0.6s ease;\n  cursor: pointer;\n  height: 149.25px;\n  border-radius: 0px;\n}\n.card:hover {\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\n.card:hover .request-contact-heading {\n  color: #000000;\n}\n.footer-menu-heading h2 {\n  text-align: center;\n  color: #ffff;\n}\n.foot-menu-group {\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\n  color: #DADADA;\n  font-size: 14px;\n  letter-spacing: 0.1em;\n  font-weight: bold;\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 30px;\n  margin: 25px 0px 0px;\n}\n.twitter {\n  color: #fff;\n  font-size: 27px;\n}\n.copyright {\n  margin-top: 40px;\n  font-size: 14px;\n  color: #777;\n  letter-spacing: 0.18em;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \n   width: 100%; \n   height: 85px;\n   padding-top: 20px;\n   margin: 0px 40px;\n}\n.contact__btns{\n    padding: 0px 150px;\n}\n.content-text_contact{\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 85%;\n    -moz-column-gap: 100px;\n         column-gap: 100px;\n    margin: 2px auto;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\n    font-size: 1.7rem;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.contact__btns {\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 90%;\n    -moz-column-gap: 180px;\n         column-gap: 180px;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\nh2 {\n    font-size: 1.5rem;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 80%;\n    -moz-column-gap: 230px;\n         column-gap: 230px;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.btn-wide {\n    margin: 0px 18px 30px;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\n    display: none;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.content-text_contact{\n    padding: 40px 30px;\n    margin: 0;\n    font-size: 14px;\n}\n.btn-wide{\n   margin: 0px 0px 30px;\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24831,7 +24779,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\r\n    position: relative;\r\n    display: inline-block;\r\n    height: 35px;\r\n    margin-top: 18px;\r\n    margin-right: 32px;\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\r\n   \r\n    display: flex;\r\n    align-items: center;\r\n    border: 2px solid rgba(37, 115, 176, 1);\r\n    color: rgba(37, 115, 176, 1);\r\n    min-height: 42px;\r\n    text-decoration: none;\r\n    text-transform: uppercase;\r\n    font-family: \"Barlow\", sans-serif;\r\n    font-size: 0.875rem;\r\n    line-height: 1.25;\r\n    padding: 9px 20px;\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\r\n    background-color: rgba(37, 115, 176, 1);\r\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    /* background: #000; */\r\n    padding: 15px 0;\r\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\n    position: relative;\n    display: inline-block;\n    height: 35px;\n    margin-top: 18px;\n    margin-right: 32px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\n   \n    display: flex;\n    align-items: center;\n    border: 2px solid rgba(37, 115, 176, 1);\n    color: rgba(37, 115, 176, 1);\n    min-height: 42px;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-family: \"Barlow\", sans-serif;\n    font-size: 0.875rem;\n    line-height: 1.25;\n    padding: 9px 20px;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\n    background-color: rgba(37, 115, 176, 1);\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\n    position: fixed;\n    right: 0;\n    top: 50%;\n    transform: translate(100%, -50%);\n    z-index: 100001;\n    transition: 0.4s;\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    background-color: rgb(57, 108, 162);\n    display: flex;\n    border: solid 1px rgb(57, 108, 162);\n    cursor: pointer;\n    justify-content: center;\n    align-items: center;\n    padding: 25px 0;\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    display: block;\n    -o-writing-mode: vertical-rl;\n    writing-mode: vertical-rl;\n    font-size: 14px;\n    color: #dadada;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.18px;\n    transition: 0.4s;\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    /* background: #000; */\n    padding: 15px 0;\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    color: #dadada;\n    font-size: 12px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25167,7 +25115,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n  /*blog-brns*/\n.news-contents__list {\n      position: relative;\n      background: #FFFFFF;\n      box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);\n      border-radius: 10px;\n      transition: 1s;\n}\n.news-subcontents__text {\n      font-weight: bold;\n      font-size: 16px;\n      line-height: 24px;\n      width: calc((100% - 415px) / 1);\n      text-align: center;\n      margin: auto;\n}\n.news__btns {\n      margin-bottom: 60px;\n      position: relative;\n      display: flex;\n}\n.news__btns__list {\n      display: inline-block;\n      margin-right: 60px;\n}\n.news__btns__list_hr {\n      position: absolute;\n      width: 0.7px;\n      height: 50px;\n      background-color: var(--textcolor);\n      left: 156px;\n      bottom: 0;\n}\n.news__btns__list__label {\n      margin-bottom: 3px;\n      font-weight: bold;\n      font-size: 24px;\n      line-height: 36px;\n      letter-spacing: 0.05em;\n      color: var(--textcolor);\n}\n.news__btns__list_select {\n      display: inline-block;\n      width: 124px;\n      height: 24px;\n      background: #FFFFFF;\n      border: 0.5px solid #727171;\n      box-sizing: border-box;\n      border-radius: 2px;\n      font-weight: 500;\n      font-size: 13px;\n      line-height: 20px;\n}\n.select-container {\n      overflow: hidden;\n      position: relative;\n}\n.select-container::before {\n      position: absolute;\n      top: 50%;\n      right: 8px;\n      transform: translateY(-50%);\n      content: \"▼\";\n      font-size: 6px;\n      color: var(--textcolor);\n}\n\n  /*blog-contents*/\n.news-contents__list__tags {\n      width: 74px;\n      top: 20px;\n      left: -22px;\n}\n.news-contents {\n      display: flex;\n      margin-bottom: 40px;\n      flex-wrap: wrap;\n}\n.news-contents__list {\n      width: calc((100% - 65px * 2) / 3);\n      margin-right: 65px;\n      margin-bottom: 60px;\n}\n.news-contents .news-contents__list:nth-child(3n) {\n      margin-right: 0;\n}\n.news-contents__list__tags {\n      transform: rotate(90deg);\n      position: absolute;\n      width: 78px;\n      height: 34px;\n      top: 23px;\n      left: -25px;\n      text-align: right;\n}\n.news-contents__list__tags span {\n      padding-left: 5px;\n      display: inline-block;\n      position: absolute;\n      top: 10px;\n      right: 0;\n      font-weight: bold;\n      font-size: 14px;\n      line-height: 130%;\n      letter-spacing: 0.1em;\n      background-color: #FFFFFF;\n}\n.news-contents__list__tags::before {\n      position: absolute;\n      left: 0;\n      top: 18px;\n      content: \"\";\n      display: inline-block;\n      height: 2px;\n      width: 100%;\n      background-color: var(--textcolor);\n}\n.news-contents__list__title {\n      margin: 10px 20px 21px 36px;\n      font-weight: bold;\n      font-size: 16px;\n      line-height: 24px;\n}\n.news-contents__list__date {\n      margin-bottom: 20px;\n      margin-right: 20px;\n      display: block;\n      text-align: right;\n      font-weight: bold;\n      font-size: 14px;\n      line-height: 21px;\n}\n@media (max-width: 767px) {\n.news-subcontents__text {\n          width: 100%;\n}\n.news {\n          margin-bottom: 60px;\n}\n.news-contents {\n          margin-bottom: 20px;\n          justify-content: space-between;\n}\n.news-contents__list {\n          width: calc((100% - 35px) / 2);\n          margin-right: 0;\n          margin-bottom: 30px;\n}\n.news-contents__list__tags {\n          width: 74px;\n          top: 20px;\n          left: -22px;\n}\n}\n@media (max-width: 500px) {\n.news-contents {\n          display: block;\n          margin-bottom: 50px;\n}\n.news-contents__list {\n          width: 100%;\n          margin-bottom: 30px;\n}\n}\n.wp-pagenavi a,\n  .wp-pagenavi span {\n      text-decoration: none;\n      border: 1px solid #BFBFBF;\n      padding: 3px 5px;\n      margin: 2px;\n}\n.wp-pagenavi {\n      display: flex;\n      justify-content: center\n}\n.wp-pagenavi span,\n  .wp-pagenavi a {\n      border: 1px solid #bfbfbf7a;\n      color: #000;\n      font-size: 16px;\n      height: 50px;\n      line-height: 46px;\n      text-align: center;\n      transition: .4s;\n      width: 50px;\n      background: #FFFFFF;\n      box-shadow: 0px 10px 20px rgb(188 204 227 / 21%);\n      border-radius: 5px;\n}\n.wp-pagenavi span:hover,\n  .wp-pagenavi a:hover {\n      border-color: #12355D;\n      background-color: #12355D;\n      color: #dadada\n}\n.wp-pagenavi span:hover::after,\n  .wp-pagenavi a:hover::after {\n      filter: invert(1)\n}\n.wp-pagenavi .nextpostslink,\n  .wp-pagenavi .previouspostslink,\n  .wp-pagenavi .first,\n  .wp-pagenavi .last {\n      overflow: hidden;\n      position: relative\n}\n.wp-pagenavi .nextpostslink::after,\n  .wp-pagenavi .previouspostslink::after,\n  .wp-pagenavi .first::after,\n  .wp-pagenavi .last::after {\n      content: \"\";\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      transform: translate(-50%, -50%);\n      transition: 0.4s\n}\n.wp-pagenavi .nextpostslink::after {\n      background: url(/) no-repeat center;\n      background-size: 100%;\n      width: 23px;\n      height: 23px\n}\n.wp-pagenavi .previouspostslink::after {\n      background: url(/) no-repeat center;\n      background-size: 100%;\n      width: 23px;\n      height: 23px\n}\n.wp-pagenavi .first::after {\n      background: url(/) no-repeat center;\n      background-size: 100%;\n      width: 12px;\n      height: 12px\n}\n.wp-pagenavi .current {\n      border-color: #12355D;\n      background-color: #12355D;\n      color: #dadada\n}\n.img_box img {\n      max-width: 100%;\n      height: auto;\n      vertical-align: bottom;\n}\n.topic.loaded .topic--content--item {\n      transform: translateY(0);\n      opacity: 1\n}\n.topic--content--sidearea{\n      width:15%;\n}\n.topic.loaded .topic--content--sidearea li {\n      transform: translateY(0);\n      opacity: 1\n}\n.topic.loaded .topic--header .info {\n      transform: translateY(0);\n      opacity: 1\n}\n.topic.loaded .topic--header .title {\n      transform: translateY(0);\n      opacity: 1\n}\n.topic.loaded .topic--article {\n      transform: translateY(0);\n      opacity: 1\n}\n.topic--content {\n      display: flex;\n      background-color: #fff\n}\n.topic--content--mainarea {\n      width: 100%\n}\n@media screen and (min-width: 897px) {\n.topic--content {\n          flex-direction: row-reverse;\n          justify-content: flex-end;\n          padding: 60px 10% 100px;\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content {\n          flex-direction: column-reverse;\n          padding: 80px 5%\n}\n.topic--content--sidearea{\n      width:100%;\n}\n}\n.topic--content--item {\n      display: flex;\n      align-items: center;\n      transition: .6s;\n      opacity: 1\n}\n@media screen and (min-width: 897px) {\n.topic--content--item {\n          margin-bottom: 60px\n}\n.topic--content--item:hover .text_area h3 {\n          background-position: left bottom;\n          background-size: 100% 1px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content--item {\n          margin-bottom: 40px\n}\n}\n.topic--content--item .img_box {\n      width: 160px;\n      margin-right: 25px\n}\n.topic--content--item .text_area {\n      width: calc(100% - 160px)\n}\n.topic--content--item .text_area .topicinfo {\n      margin-bottom: 10px;\n      display: flex;\n      align-items: center;\n}\n.topic--content--item .text_area .new-tag {\n      background: rgb(224, 224, 224);\n      padding: 4px 8px;\n      font-size: 12px;\n}\n@media screen and (max-width: 896px) {\n.topic--content--item .text_area .topicinfo {\n          margin-bottom: 5px\n}\n}\n.topic--content--item .text_area .topicinfo .time,\n  .topic--content--item .text_area .topicinfo .cat {\n      font-size: 11px;\n      color: #929191\n}\n.topic--content--item .text_area .topicinfo .time {\n      font-weight: 700;\n      margin-right: 10px;\n}\n.topic--content--item .text_area .topicinfo .cat {\n      display: inline-block;\n      margin-left: 10px\n}\n.topic--content--item .text_area h3 {\n      display: inline;\n      background: url(/assets/img/line.jpg) no-repeat left bottom;\n      transition: background-size 0.4s ease;\n      background-position: right bottom;\n      background-size: 0 1px;\n      will-change: background-size;\n      line-height: 1.8;\n      color: #000\n}\n@media screen and (min-width: 897px) {\n.topic--content--item .text_area h3 {\n          font-size: 18px;\n          font-weight: 700;\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content--item .text_area h3 {\n          font-size: 1.4rem\n}\n}\n@media screen and (min-width: 897px) {\n.topic--content--sidearea {\n          margin-right: 120px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content--sidearea {\n          display: flex;\n          margin: 0 0 60px\n}\n}\n.topic--content--sidearea li {\n      transform: translateY(15%);\n      transition: .6s;\n      opacity: 1\n}\n@media screen and (min-width: 897px) {\n.topic--content--sidearea li {\n          margin-bottom: 32px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content--sidearea li {\n          margin-right: 20px\n}\n}\n.topic--content--sidearea .categoryitem {\n      position: relative;\n      color: #b7b7b7;\n      font-size: 14px;\n      letter-spacing: .05em;\n      text-transform: uppercase\n}\n.topic--content--sidearea .categoryitem::after {\n      content: \"\";\n      background: #b7b7b7;\n      width: 100%;\n      height: 1px;\n      position: absolute;\n      bottom: -4px;\n      left: 0;\n      transform: scale(0, 1);\n      transition: transform 0.3s;\n      transform-origin: right top\n}\n@media screen and (min-width: 897px) {\n.topic--content--sidearea .categoryitem:hover::after {\n          transform-origin: left top;\n          transform: scale(1, 1)\n}\n}\n.topic--content--sidearea .categoryitem.current {\n      color: #000\n}\n.topic--content--sidearea .categoryitem.current::after {\n      background: #000;\n      transform: scale(1, 1)\n}\n@media screen and (min-width: 897px) {\n.topic--content--sidearea .categoryitem:hover {\n          color: #000\n}\n.topic--content--sidearea .categoryitem:hover::after {\n          background: #000\n}\n}\n.topic .topicarea {\n      background-color: #fff\n}\n@media screen and (min-width: 897px) {\n.topic .topicarea {\n          padding: 60px 15% 140px\n}\n}\n@media screen and (max-width: 896px) {\n.topic .topicarea {\n          padding: 40px 5% 80px\n}\n}\n.topic--header .info {\n      display: flex;\n      align-items: center;\n      transform: translateY(15%);\n      transition: .6s;\n      opacity: 1\n}\n.topic--header .info .time {\n      font-size: 1.3rem;\n      color: #929191\n}\n.topic--header .info .cat {\n      margin-left: 10px;\n      font-size: 1.3rem;\n      color: #929191\n}\n.topic--header .title {\n      transform: translateY(15%);\n      transition: .8s;\n      opacity: 1;\n      margin-top: 30px;\n      font-weight: 700;\n      line-height: 1.3;\n      letter-spacing: 0.08em\n}\n@media screen and (min-width: 897px) {\n.topic--header .title {\n          font-size: 3.2rem\n}\n}\n@media screen and (max-width: 896px) {\n.topic--header .title {\n          font-size: 2rem\n}\n}\n.topic--article {\n      transform: translateY(1%);\n      transition: 1s;\n      opacity: 1;\n      margin-top: 40px\n}\n.topic--article .photo {\n      text-align: center\n}\n.topic--article h2 {\n      margin-top: 60px;\n      margin-bottom: 50px\n}\n@media screen and (min-width: 897px) {\n.topic--article h2 {\n          font-size: 2rem\n}\n}\n@media screen and (max-width: 896px) {\n.topic--article h2 {\n          font-size: 1.8rem\n}\n}\n.topic--article h2 {\n      margin-top: 60px;\n      margin-bottom: 50px;\n      color: #929191\n}\n@media screen and (min-width: 897px) {\n.topic--article h2 {\n          font-size: 1.8rem\n}\n}\n@media screen and (max-width: 896px) {\n.topic--article h2 {\n          font-size: 1.6rem\n}\n}\n.topic--article p {\n      margin-top: 30px;\n      font-size: 1.4rem;\n      line-height: 2\n}\n.topic--article a {\n      font-size: 1.4rem;\n      text-decoration: underline\n}\n.topic--article .wp-block-image {\n      margin-top: 80px\n}\n@media screen and (min-width: 897px) {\n.topic--footer {\n          margin-top: 140px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--footer {\n          margin-top: 60px\n}\n}\n.topic--footer ul {\n      display: flex;\n      justify-content: space-between;\n      align-items: center\n}\n@media screen and (min-width: 897px) {\n.topic--footer .arrowbtn {\n          width: 50px;\n          height: 50px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--footer .arrowbtn {\n          width: 40px;\n          height: 40px\n}\n}\n.topic--footer .arrowbtn a {\n      position: relative;\n      display: block;\n      width: 100%;\n      height: 100%;\n      background-color: #000;\n      border: 1px solid #000;\n      transition: 0.6s ease\n}\n@media screen and (min-width: 897px) {\n.topic--footer .arrowbtn a:hover {\n          background-color: #fff\n}\n.topic--footer .arrowbtn a:hover:before,\n      .topic--footer .arrowbtn a:hover:after {\n          background: #000\n}\n}\n.topic--footer .arrowbtn a:before,\n  .topic--footer .arrowbtn a:after {\n      transition: 0.6s ease;\n      content: \"\";\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      width: 10px;\n      height: 1px;\n      background-color: #fff\n}\n.topic--footer .prev a:before {\n      transform: translate(-50%, -50%) rotate(45deg);\n      margin-top: 4px\n}\n.topic--footer .prev a:after {\n      transform: translate(-50%, -50%) rotate(-45deg);\n      margin-top: -3px\n}\n.topic--footer .next a:before {\n      transform: translate(-50%, -50%) rotate(45deg);\n      margin-top: -4px\n}\n.topic--footer .next a:after {\n      transform: translate(-50%, -50%) rotate(-45deg);\n      margin-top: 3px\n}\n.topic--footer .listback {\n      position: relative;\n      color: #000;\n      font-size: 1.8rem;\n      letter-spacing: .05em;\n      text-transform: uppercase;\n      position: relative\n}\n.topic--footer .listback::after {\n      content: \"\";\n      background: #000;\n      width: 100%;\n      height: 1px;\n      position: absolute;\n      bottom: -4px;\n      left: 0;\n      transform: scale(0, 1);\n      transition: transform 0.3s;\n      transform-origin: right top\n}\n@media screen and (min-width: 897px) {\n.topic--footer .listback:hover::after {\n          transform-origin: left top;\n          transform: scale(1, 1)\n}\n}\n@media screen and (max-width: 896px) {\n.topic--footer .listback {\n          font-size: 1.4rem;\n          letter-spacing: 0.05em\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n/*blog-brns*/\n.news-contents__list {\n    position: relative;\n    background: #FFFFFF;\n    box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);\n    border-radius: 10px;\n    transition: 1s;\n}\n.news-subcontents__text {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    width: calc((100% - 415px) / 1);\n    text-align: center;\n    margin: auto;\n}\n.news__btns {\n    margin-bottom: 60px;\n    position: relative;\n    display: flex;\n}\n.news__btns__list {\n    display: inline-block;\n    margin-right: 60px;\n}\n.news__btns__list_hr {\n    position: absolute;\n    width: 0.7px;\n    height: 50px;\n    background-color: var(--textcolor);\n    left: 156px;\n    bottom: 0;\n}\n.news__btns__list__label {\n    margin-bottom: 3px;\n    font-weight: bold;\n    font-size: 24px;\n    line-height: 36px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.news__btns__list_select {\n    display: inline-block;\n    width: 124px;\n    height: 24px;\n    background: #FFFFFF;\n    border: 0.5px solid #727171;\n    box-sizing: border-box;\n    border-radius: 2px;\n    font-weight: 500;\n    font-size: 13px;\n    line-height: 20px;\n}\n.select-container {\n    overflow: hidden;\n    position: relative;\n}\n.select-container::before {\n    position: absolute;\n    top: 50%;\n    right: 8px;\n    transform: translateY(-50%);\n    content: \"▼\";\n    font-size: 6px;\n    color: var(--textcolor);\n}\n\n/*blog-contents*/\n.news-contents__list__tags {\n    width: 74px;\n    top: 20px;\n    left: -22px;\n}\n.news-contents {\n    display: flex;\n    margin-bottom: 40px;\n    flex-wrap: wrap;\n}\n.news-contents__list {\n    width: calc((100% - 65px * 2) / 3);\n    margin-right: 65px;\n    margin-bottom: 60px;\n}\n.news-contents .news-contents__list:nth-child(3n) {\n    margin-right: 0;\n}\n.news-contents__list__tags {\n    transform: rotate(90deg);\n    position: absolute;\n    width: 78px;\n    height: 34px;\n    top: 23px;\n    left: -25px;\n    text-align: right;\n}\n.news-contents__list__tags span {\n    padding-left: 5px;\n    display: inline-block;\n    position: absolute;\n    top: 10px;\n    right: 0;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 130%;\n    letter-spacing: 0.1em;\n    background-color: #FFFFFF;\n}\n.news-contents__list__tags::before {\n    position: absolute;\n    left: 0;\n    top: 18px;\n    content: \"\";\n    display: inline-block;\n    height: 2px;\n    width: 100%;\n    background-color: var(--textcolor);\n}\n.news-contents__list__title {\n    margin: 10px 20px 21px 36px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.news-contents__list__date {\n    margin-bottom: 20px;\n    margin-right: 20px;\n    display: block;\n    text-align: right;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n@media (max-width: 767px) {\n.news-subcontents__text {\n        width: 100%;\n}\n.news {\n        margin-bottom: 60px;\n}\n.news-contents {\n        margin-bottom: 20px;\n        justify-content: space-between;\n}\n.news-contents__list {\n        width: calc((100% - 35px) / 2);\n        margin-right: 0;\n        margin-bottom: 30px;\n}\n.news-contents__list__tags {\n        width: 74px;\n        top: 20px;\n        left: -22px;\n}\n}\n@media (max-width: 500px) {\n.news-contents {\n        display: block;\n        margin-bottom: 50px;\n}\n.news-contents__list {\n        width: 100%;\n        margin-bottom: 30px;\n}\n}\n.wp-pagenavi a,\n.wp-pagenavi span {\n    text-decoration: none;\n    border: 1px solid #BFBFBF;\n    padding: 3px 5px;\n    margin: 2px;\n}\n.wp-pagenavi {\n    display: flex;\n    justify-content: center\n}\n.wp-pagenavi span,\n.wp-pagenavi a {\n    border: 1px solid #bfbfbf7a;\n    color: #000;\n    font-size: 16px;\n    height: 50px;\n    line-height: 46px;\n    text-align: center;\n    transition: .4s;\n    width: 50px;\n    background: #FFFFFF;\n    box-shadow: 0px 10px 20px rgb(188 204 227 / 21%);\n    border-radius: 5px;\n}\n.wp-pagenavi span:hover,\n.wp-pagenavi a:hover {\n    border-color: #12355D;\n    background-color: #12355D;\n    color: #dadada\n}\n.wp-pagenavi span:hover::after,\n.wp-pagenavi a:hover::after {\n    filter: invert(1)\n}\n.wp-pagenavi .nextpostslink,\n.wp-pagenavi .previouspostslink,\n.wp-pagenavi .first,\n.wp-pagenavi .last {\n    overflow: hidden;\n    position: relative\n}\n.wp-pagenavi .nextpostslink::after,\n.wp-pagenavi .previouspostslink::after,\n.wp-pagenavi .first::after,\n.wp-pagenavi .last::after {\n    content: \"\";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    transition: 0.4s\n}\n.wp-pagenavi .nextpostslink::after {\n    background: url(/) no-repeat center;\n    background-size: 100%;\n    width: 23px;\n    height: 23px\n}\n.wp-pagenavi .previouspostslink::after {\n    background: url(/) no-repeat center;\n    background-size: 100%;\n    width: 23px;\n    height: 23px\n}\n.wp-pagenavi .first::after {\n    background: url(/) no-repeat center;\n    background-size: 100%;\n    width: 12px;\n    height: 12px\n}\n.wp-pagenavi .current {\n    border-color: #12355D;\n    background-color: #12355D;\n    color: #dadada\n}\n.img_box img {\n    max-width: 100%;\n    height: auto;\n    vertical-align: bottom;\n}\n.topic.loaded .topic--content--item {\n    transform: translateY(0);\n    opacity: 1\n}\n.topic--content--sidearea {\n    width: 15%;\n}\n.topic.loaded .topic--content--sidearea li {\n    transform: translateY(0);\n    opacity: 1\n}\n.topic.loaded .topic--header .info {\n    transform: translateY(0);\n    opacity: 1\n}\n.topic.loaded .topic--header .title {\n    transform: translateY(0);\n    opacity: 1\n}\n.topic.loaded .topic--article {\n    transform: translateY(0);\n    opacity: 1\n}\n.topic--content {\n    display: flex;\n    background-color: #fff\n}\n.topic--content--mainarea {\n    width: 100%\n}\n@media screen and (min-width: 897px) {\n.topic--content {\n        flex-direction: row-reverse;\n        justify-content: flex-end;\n        padding: 60px 10% 100px;\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content {\n        flex-direction: column-reverse;\n        padding: 80px 5%\n}\n.topic--content--sidearea {\n        width: 100%;\n}\n}\n.topic--content--item {\n    display: flex;\n    align-items: center;\n    transition: .6s;\n    opacity: 1\n}\n@media screen and (min-width: 897px) {\n.topic--content--item {\n        margin-bottom: 60px\n}\n.topic--content--item:hover .text_area h3 {\n        background-position: left bottom;\n        background-size: 100% 1px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content--item {\n        margin-bottom: 40px\n}\n}\n.topic--content--item .img_box {\n    width: 160px;\n    margin-right: 25px\n}\n.topic--content--item .text_area {\n    width: calc(100% - 160px)\n}\n.topic--content--item .text_area .topicinfo {\n    margin-bottom: 10px;\n    display: flex;\n    align-items: center;\n}\n.topic--content--item .text_area .new-tag {\n    background: rgb(224, 224, 224);\n    padding: 4px 8px;\n    font-size: 12px;\n}\n@media screen and (max-width: 896px) {\n.topic--content--item .text_area .topicinfo {\n        margin-bottom: 5px\n}\n}\n.topic--content--item .text_area .topicinfo .time,\n.topic--content--item .text_area .topicinfo .cat {\n    font-size: 11px;\n    color: #929191\n}\n.topic--content--item .text_area .topicinfo .time {\n    font-weight: 700;\n    margin-right: 10px;\n}\n.topic--content--item .text_area .topicinfo .cat {\n    display: inline-block;\n    margin-left: 10px\n}\n.topic--content--item .text_area h3 {\n    display: inline;\n    background: url(/assets/img/line.jpg) no-repeat left bottom;\n    transition: background-size 0.4s ease;\n    background-position: right bottom;\n    background-size: 0 1px;\n    will-change: background-size;\n    line-height: 1.8;\n    color: #000\n}\n@media screen and (min-width: 897px) {\n.topic--content--item .text_area h3 {\n        font-size: 18px;\n        font-weight: 700;\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content--item .text_area h3 {\n        font-size: 1.4rem\n}\n}\n@media screen and (min-width: 897px) {\n.topic--content--sidearea {\n        margin-right: 120px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content--sidearea {\n        display: flex;\n        margin: 0 0 60px\n}\n}\n.topic--content--sidearea li {\n    transform: translateY(15%);\n    transition: .6s;\n    opacity: 1\n}\n@media screen and (min-width: 897px) {\n.topic--content--sidearea li {\n        margin-bottom: 32px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--content--sidearea li {\n        margin-right: 20px\n}\n}\n.topic--content--sidearea .categoryitem {\n    position: relative;\n    color: #b7b7b7;\n    font-size: 14px;\n    letter-spacing: .05em;\n    text-transform: uppercase\n}\n.topic--content--sidearea .categoryitem::after {\n    content: \"\";\n    background: #b7b7b7;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top\n}\n@media screen and (min-width: 897px) {\n.topic--content--sidearea .categoryitem:hover::after {\n        transform-origin: left top;\n        transform: scale(1, 1)\n}\n}\n.topic--content--sidearea .categoryitem.current {\n    color: #000\n}\n.topic--content--sidearea .categoryitem.current::after {\n    background: #000;\n    transform: scale(1, 1)\n}\n@media screen and (min-width: 897px) {\n.topic--content--sidearea .categoryitem:hover {\n        color: #000\n}\n.topic--content--sidearea .categoryitem:hover::after {\n        background: #000\n}\n}\n.topic .topicarea {\n    background-color: #fff\n}\n@media screen and (min-width: 897px) {\n.topic .topicarea {\n        padding: 60px 15% 140px\n}\n}\n@media screen and (max-width: 896px) {\n.topic .topicarea {\n        padding: 40px 5% 80px\n}\n}\n.topic--header .info {\n    display: flex;\n    align-items: center;\n    transform: translateY(15%);\n    transition: .6s;\n    opacity: 1\n}\n.topic--header .info .time {\n    font-size: 1.3rem;\n    color: #929191\n}\n.topic--header .info .cat {\n    margin-left: 10px;\n    font-size: 1.3rem;\n    color: #929191\n}\n.topic--header .title {\n    transform: translateY(15%);\n    transition: .8s;\n    opacity: 1;\n    margin-top: 30px;\n    font-weight: 700;\n    line-height: 1.3;\n    letter-spacing: 0.08em\n}\n@media screen and (min-width: 897px) {\n.topic--header .title {\n        font-size: 3.2rem\n}\n}\n@media screen and (max-width: 896px) {\n.topic--header .title {\n        font-size: 2rem\n}\n}\n.topic--article {\n    transform: translateY(1%);\n    transition: 1s;\n    opacity: 1;\n    margin-top: 40px\n}\n.topic--article .photo {\n    text-align: center\n}\n.topic--article h2 {\n    margin-top: 60px;\n    margin-bottom: 50px\n}\n@media screen and (min-width: 897px) {\n.topic--article h2 {\n        font-size: 2rem\n}\n}\n@media screen and (max-width: 896px) {\n.topic--article h2 {\n        font-size: 1.8rem\n}\n}\n.topic--article h2 {\n    margin-top: 60px;\n    margin-bottom: 50px;\n    color: #929191\n}\n@media screen and (min-width: 897px) {\n.topic--article h2 {\n        font-size: 1.8rem\n}\n}\n@media screen and (max-width: 896px) {\n.topic--article h2 {\n        font-size: 1.6rem\n}\n}\n.topic--article p {\n    margin-top: 30px;\n    font-size: 1.4rem;\n    line-height: 2\n}\n.topic--article a {\n    font-size: 1.4rem;\n    text-decoration: underline\n}\n.topic--article .wp-block-image {\n    margin-top: 80px\n}\n@media screen and (min-width: 897px) {\n.topic--footer {\n        margin-top: 140px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--footer {\n        margin-top: 60px\n}\n}\n.topic--footer ul {\n    display: flex;\n    justify-content: space-between;\n    align-items: center\n}\n@media screen and (min-width: 897px) {\n.topic--footer .arrowbtn {\n        width: 50px;\n        height: 50px\n}\n}\n@media screen and (max-width: 896px) {\n.topic--footer .arrowbtn {\n        width: 40px;\n        height: 40px\n}\n}\n.topic--footer .arrowbtn a {\n    position: relative;\n    display: block;\n    width: 100%;\n    height: 100%;\n    background-color: #000;\n    border: 1px solid #000;\n    transition: 0.6s ease\n}\n@media screen and (min-width: 897px) {\n.topic--footer .arrowbtn a:hover {\n        background-color: #fff\n}\n.topic--footer .arrowbtn a:hover:before,\n    .topic--footer .arrowbtn a:hover:after {\n        background: #000\n}\n}\n.topic--footer .arrowbtn a:before,\n.topic--footer .arrowbtn a:after {\n    transition: 0.6s ease;\n    content: \"\";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    width: 10px;\n    height: 1px;\n    background-color: #fff\n}\n.topic--footer .prev a:before {\n    transform: translate(-50%, -50%) rotate(45deg);\n    margin-top: 4px\n}\n.topic--footer .prev a:after {\n    transform: translate(-50%, -50%) rotate(-45deg);\n    margin-top: -3px\n}\n.topic--footer .next a:before {\n    transform: translate(-50%, -50%) rotate(45deg);\n    margin-top: -4px\n}\n.topic--footer .next a:after {\n    transform: translate(-50%, -50%) rotate(-45deg);\n    margin-top: 3px\n}\n.topic--footer .listback {\n    position: relative;\n    color: #000;\n    font-size: 1.8rem;\n    letter-spacing: .05em;\n    text-transform: uppercase;\n    position: relative\n}\n.topic--footer .listback::after {\n    content: \"\";\n    background: #000;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top\n}\n@media screen and (min-width: 897px) {\n.topic--footer .listback:hover::after {\n        transform-origin: left top;\n        transform: scale(1, 1)\n}\n}\n@media screen and (max-width: 896px) {\n.topic--footer .listback {\n        font-size: 1.4rem;\n        letter-spacing: 0.05em\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25287,7 +25235,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.hoverScale .thumb {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: DIN-Bold;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n    position: relative;\n    font-family: DIN-Bold;\n    font-size: 14px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .scaleImg {\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.6);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n}\n.recruit_fix {\n    position: sticky;\n    left: 0;\n    right: 0;\n    bottom: -50%;\n    /* left: 50%; */\n    opacity: 0;\n    /* transform: translateX(-50%); */\n    z-index: 20;\n    padding: 10px 0;\n    width: 80%;\n    transition: 0.4s;\n}\n.recruit_fix.visibility {\n    bottom: 12px;\n    opacity: 1;\n}\n.recruit_fix {\n    margin: auto;\n    z-index: 20;\n    width: 82%;\n}\n.recruit_fix ul {\n    justify-content: space-between;\n}\n.recruit_fix ul li {\n    margin: auto;\n    width: 40%;\n}\n.recruit_fix ul li a {\n    width: 100%;\n    padding: 16px 0;\n    margin-top: 0;\n    font-size: 1.6rem;\n    line-height: 1.7;\n}\n.recruit--leadtxt h3 {\n    font-size: 38px;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr.entryarea li a {\n        padding: 25px 0;\n        margin-top: 20px;\n        font-size: 16px;\n}\n.recruit--contactarea--bnr.entryarea li a:hover {\n        background-color: #fff;\n        color: #000;\n}\n}\n.recruit .recruit_fix ul li a .label {\n    font-size: 12px;\n    font-weight: 500;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n    font-size: 12px;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.05em;\n    text-align: center;\n}\n.recruit--contactarea--bnr.entryarea li a {\n    position: relative;\n    display: block;\n    border: 1px solid #2b2b2b;\n    background-color: #000;\n    letter-spacing: 0.12em;\n    text-align: center;\n    color: #dadada;\n    font-size: 16px;\n    transition: 0.6s ease;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr {\n        display: flex;\n        justify-content: center;\n}\n}\n.recruit_fix ul {\n    justify-content: space-between;\n}\n.recruit-fix {\n    bottom: 12px;\n    opacity: 1;\n}\n.mv_textarea-recruit {\n    /* color: #dadada; */\n    background-color: #000;\n}\n@media screen and (max-width: 896px) {\n.recruit_fix ul {\n        display: flex;\n        padding: 0;\n}\n.recruit_fix ul li a {\n        font-size: 14px;\n        padding: 13px 0;\n}\n.recruit_fix ul li a .label {\n        font-size: 10px;\n}\n.recruit_fix {\n        width: 100%;\n}\n}\n.mv_textarea-recruit .entxt {\n    display: block;\n    font-size: 40px;\n    letter-spacing: 0.1em;\n    text-transform: uppercase;\n    transform: translateY(15%);\n    transition: 0.6s;\n    opacity: 1;\n    color: #fff;\n    font-weight: bold;\n    text-align: left;\n    margin-bottom: 20px;\n}\n@media screen and (max-width: 896px) {\n.mv_textarea-recruit {\n        padding: 30px 5% 0px;\n        font-size: 2.8rem;\n}\n}\n.mv_textarea-recruit .jptxt {\n    transform: translateY(15%);\n    transition: 0.6s;\n    opacity: 1;\n    font-size: 13px;\n    letter-spacing: 0.08em;\n    color: #fff;\n}\n.sp {\n    display: none;\n}\n@media screen and (max-width: 896px) {\n.sp {\n        display: block;\n}\n}\n.recruit--leadtxt {\n    /* padding: 40px 10% 100px; */\n    padding: 130px 10% 170px;\n    color: #dadada;\n    position: relative;\n    z-index: 1;\n    margin-top: 0px;\n    background-color: #000;\n    background: url('/assets/img/all-member.png') no-repeat center;\n    background-blend-mode: overlay;\n    background-color: rgba(0, 0, 0, 0.5);\n}\n\n/* .recruit--leadtxt::after {\n    content: \"\";\n    background: url('/assets/img/all_member.jpg') no-repeat center;\n    background-size: 100%;\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    opacity: 0.3;\n    z-index: -1;\n} */\n@media screen and (max-width: 896px) {\n.recruit--leadtxt::after {\n        background: url('/assets/img/all_member.jpg') no-repeat center;\n        background-size: 300%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt {\n        padding: 30px 5% 60px;\n}\n}\n.recruit--leadtxt h3 {\n    line-height: 1.63;\n    transform: translateY(10%);\n    transition: 0.6s;\n    opacity: 1;\n    color: #dadada;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--leadtxt h3 {\n        font-size: 38px;\n        letter-spacing: 0.2em;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt h3 {\n        font-size: 20px;\n        letter-spacing: 0.12em;\n}\n}\n.recruit--leadtxt p {\n    transform: translateY(10%);\n    transition: 0.9s;\n    opacity: 1;\n    margin-top: 30px;\n    letter-spacing: 0.12em;\n    line-height: 2;\n    font-size: 16px;\n    font-family: NotoSansJP-Regular;\n    font-weight: 400;\n    color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt p {\n        font-size: 14px;\n}\n}\n@media screen and (max-width: 500px) {\n.recruit--contactarea--bnr.entryarea li a {\n        font-size: 10px;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n        font-size: 8px;\n}\n.recruit_fix.visibility {\n        bottom: -10px;\n}\n.recruit_fix ul li {\n        width: 49%;\n        margin: 0px auto 0px 0px;\n}\n.recruit--leadtxt {\n        margin-top: 0px;\n}\n}\n.recruit.loaded .recruit--leadtxt h3 {\n    transform: translateY(0);\n    opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt p {\n    transform: translateY(0);\n    opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt .photo {\n    transform: translateY(0);\n    opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .pararel {\n        bottom: 90px;\n}\n}\n.recruit .mv_textarea-recruit {\n    position: relative;\n    z-index: 2;\n}\n.recruit .recruit_fix {\n    position: fixed;\n    bottom: -50px;\n    left: 50%;\n    opacity: 0;\n    transform: translateX(-50%);\n    z-index: 20;\n    padding: 10px 2%;\n    width: 60%;\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix {\n        left: 0;\n        width: 100%;\n        transform: translateX(0);\n}\n}\n.recruit .recruit_fix.visibility {\n    bottom: 12px;\n    opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix.visibility {\n        bottom: 8px;\n}\n}\n.recruit .recruit_fix ul {\n    justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul {\n        display: flex;\n        padding: 0;\n}\n}\n.recruit .recruit_fix ul li {\n    margin: 0;\n    width: 49%;\n}\n.recruit .recruit_fix ul li a {\n    width: 100%;\n    padding: 16px 0;\n    margin-top: 0;\n    font-size: 1.6rem;\n    line-height: 1.7;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a {\n        font-size: 1.4rem;\n        padding: 13px 0;\n}\n}\n.recruit .recruit_fix ul li a::before,\n.recruit .recruit_fix ul li a::after {\n    content: none;\n}\n.recruit .recruit_fix ul li a .label {\n    font-size: 1.2rem;\n    font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a .label {\n        font-size: 1rem;\n}\n}\n.recruit--person {\n    background-color: #fff;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.recruit_fix.visibility {\n        margin-bottom: 80px;\n}\n.recruit--person {\n        padding: 180px 10% 100px;\n}\n.mv_textarea-recruit {\n        padding: 40px 10% 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person {\n        padding: 40px 5%;\n}\n}\n.recruit--person .heading .sub {\n\n    font-size: 16px;\n    letter-spacing: 0.08em;\n    line-height: 16px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    font-weight: 400;\n}\n.recruit--person .heading h3 {\n    font-size: 20px;\n    margin-top: 23px;\n    letter-spacing: 0.08em;\n    line-height: 20px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    font-weight: 700;\n}\n.recruit--person--list {\n    margin-top: 80px;\n}\n@media screen and (min-width: 897px) {\n.recruit--person--list {\n        display: flex;\n        flex-wrap: wrap;\n        justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--list {\n        margin-top: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item {\n        width: 48.5%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item {\n        margin-top: 40px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item:nth-child(4) {\n        margin-top: 140px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item h4 {\n        margin-top: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 {\n        margin-top: 24px;\n}\n}\n.recruit--person--item h4 .department {\n    display: block;\n    font-size: 16px;\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    margin-bottom: 0px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    line-height: 16px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .department {\n        font-size: 14px;\n}\n}\n.recruit--person--item h4 .phrase {\n    display: block;\n    margin-top: 15px;\n    font-size: 16px;\n    line-height: 24px;\n    letter-spacing: 0.1em;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    background-color: #dadada;\n    padding: 15px 5px;\n    min-height: 105px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .phrase {\n        font-size: 20px;\n}\n}\n.recruit--person--item p {\n    margin-top: 20px;\n    font-size: 14px;\n    line-height: 2;\n    letter-spacing: 0.1em;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n}\n@media screen and (max-width: 425px) {\n.mv_textarea-recruit .jptxt{\n        font-size: 12px;\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.hoverScale .thumb {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: DIN-Bold;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n    position: relative;\n    font-family: DIN-Bold;\n    font-size: 14px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .scaleImg {\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.6);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n}\n.recruit_fix {\n    position: sticky;\n    left: 0;\n    right: 0;\n    bottom: -50%;\n    /* left: 50%; */\n    opacity: 0;\n    /* transform: translateX(-50%); */\n    z-index: 20;\n    padding: 10px 0;\n    width: 80%;\n    transition: 0.4s;\n}\n.recruit_fix.visibility {\n    bottom: 12px;\n    opacity: 1;\n}\n.recruit_fix {\n    margin: auto;\n    z-index: 20;\n    width: 82%;\n}\n.recruit_fix ul {\n    justify-content: space-between;\n}\n.recruit_fix ul li {\n    margin: auto;\n    width: 40%;\n}\n.recruit_fix ul li a {\n    width: 100%;\n    padding: 16px 0;\n    margin-top: 0;\n    font-size: 1.6rem;\n    line-height: 1.7;\n}\n.recruit--leadtxt h3 {\n    font-size: 38px;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr.entryarea li a {\n        padding: 25px 0;\n        margin-top: 20px;\n        font-size: 16px;\n}\n.recruit--contactarea--bnr.entryarea li a:hover {\n        background-color: #fff;\n        color: #000;\n}\n}\n.recruit .recruit_fix ul li a .label {\n    font-size: 12px;\n    font-weight: 500;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n    font-size: 12px;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.05em;\n    text-align: center;\n}\n.recruit--contactarea--bnr.entryarea li a {\n    position: relative;\n    display: block;\n    border: 1px solid #2b2b2b;\n    background-color: #000;\n    letter-spacing: 0.12em;\n    text-align: center;\n    color: #dadada;\n    font-size: 16px;\n    transition: 0.6s ease;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr {\n        display: flex;\n        justify-content: center;\n}\n}\n.recruit_fix ul {\n    justify-content: space-between;\n}\n.recruit-fix {\n    bottom: 12px;\n    opacity: 1;\n}\n.mv_textarea-recruit {\n    /* color: #dadada; */\n    background-color: #000;\n}\n@media screen and (max-width: 896px) {\n.recruit_fix ul {\n        display: flex;\n        padding: 0;\n}\n.recruit_fix ul li a {\n        font-size: 14px;\n        padding: 13px 0;\n}\n.recruit_fix ul li a .label {\n        font-size: 10px;\n}\n.recruit_fix {\n        width: 100%;\n}\n}\n.mv_textarea-recruit .entxt {\n    display: block;\n    font-size: 40px;\n    letter-spacing: 0.1em;\n    text-transform: uppercase;\n    transform: translateY(15%);\n    transition: 0.6s;\n    opacity: 1;\n    color: #fff;\n    font-weight: bold;\n    text-align: left;\n    margin-bottom: 20px;\n}\n@media screen and (max-width: 896px) {\n.mv_textarea-recruit {\n        padding: 30px 5% 0px;\n        font-size: 2.8rem;\n}\n}\n.mv_textarea-recruit .jptxt {\n    transform: translateY(15%);\n    transition: 0.6s;\n    opacity: 1;\n    font-size: 13px;\n    letter-spacing: 0.08em;\n    color: #fff;\n}\n.sp {\n    display: none;\n}\n@media screen and (max-width: 896px) {\n.sp {\n        display: block;\n}\n}\n.recruit--leadtxt {\n    /* padding: 40px 10% 100px; */\n    padding: 130px 10% 170px;\n    color: #dadada;\n    position: relative;\n    z-index: 1;\n    margin-top: 0px;\n    background-color: #000;\n    background: url('/assets/img/all-member.png') no-repeat center;\n    background-blend-mode: overlay;\n    background-color: rgba(0, 0, 0, 0.5);\n}\n\n/* .recruit--leadtxt::after {\n    content: \"\";\n    background: url('/assets/img/all_member.jpg') no-repeat center;\n    background-size: 100%;\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    opacity: 0.3;\n    z-index: -1;\n} */\n@media screen and (max-width: 896px) {\n.recruit--leadtxt::after {\n        background: url('/assets/img/all_member.jpg') no-repeat center;\n        background-size: 300%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt {\n        padding: 30px 5% 60px;\n}\n}\n.recruit--leadtxt h3 {\n    line-height: 1.63;\n    transform: translateY(10%);\n    transition: 0.6s;\n    opacity: 1;\n    color: #dadada;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--leadtxt h3 {\n        font-size: 38px;\n        letter-spacing: 0.2em;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt h3 {\n        font-size: 20px;\n        letter-spacing: 0.12em;\n}\n}\n.recruit--leadtxt p {\n    transform: translateY(10%);\n    transition: 0.9s;\n    opacity: 1;\n    margin-top: 30px;\n    letter-spacing: 0.12em;\n    line-height: 2;\n    font-size: 16px;\n    font-family: NotoSansJP-Regular;\n    font-weight: 400;\n    color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt p {\n        font-size: 14px;\n}\n}\n@media screen and (max-width: 500px) {\n.recruit--contactarea--bnr.entryarea li a {\n        font-size: 10px;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n        font-size: 8px;\n}\n.recruit_fix.visibility {\n        bottom: -10px;\n}\n.recruit_fix ul li {\n        width: 49%;\n        margin: 0px auto 0px 0px;\n}\n.recruit--leadtxt {\n        margin-top: 0px;\n}\n}\n.recruit.loaded .recruit--leadtxt h3 {\n    transform: translateY(0);\n    opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt p {\n    transform: translateY(0);\n    opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt .photo {\n    transform: translateY(0);\n    opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .pararel {\n        bottom: 90px;\n}\n}\n.recruit .mv_textarea-recruit {\n    position: relative;\n    z-index: 2;\n}\n.recruit .recruit_fix {\n    position: fixed;\n    bottom: -50px;\n    left: 50%;\n    opacity: 0;\n    transform: translateX(-50%);\n    z-index: 20;\n    padding: 10px 2%;\n    width: 60%;\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix {\n        left: 0;\n        width: 100%;\n        transform: translateX(0);\n}\n}\n.recruit .recruit_fix.visibility {\n    bottom: 12px;\n    opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix.visibility {\n        bottom: 8px;\n}\n}\n.recruit .recruit_fix ul {\n    justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul {\n        display: flex;\n        padding: 0;\n}\n}\n.recruit .recruit_fix ul li {\n    margin: 0;\n    width: 49%;\n}\n.recruit .recruit_fix ul li a {\n    width: 100%;\n    padding: 16px 0;\n    margin-top: 0;\n    font-size: 1.6rem;\n    line-height: 1.7;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a {\n        font-size: 1.4rem;\n        padding: 13px 0;\n}\n}\n.recruit .recruit_fix ul li a::before,\n.recruit .recruit_fix ul li a::after {\n    content: none;\n}\n.recruit .recruit_fix ul li a .label {\n    font-size: 1.2rem;\n    font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a .label {\n        font-size: 1rem;\n}\n}\n.recruit--person {\n    background-color: #fff;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.recruit_fix.visibility {\n        margin-bottom: 80px;\n}\n.recruit--person {\n        padding: 180px 10% 100px;\n}\n.mv_textarea-recruit {\n        padding: 40px 10% 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person {\n        padding: 40px 5%;\n}\n}\n.recruit--person .heading .sub {\n\n    font-size: 16px;\n    letter-spacing: 0.08em;\n    line-height: 16px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    font-weight: 400;\n}\n.recruit--person .heading h3 {\n    font-size: 20px;\n    margin-top: 23px;\n    letter-spacing: 0.08em;\n    line-height: 20px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    font-weight: 700;\n}\n.recruit--person--list {\n    margin-top: 80px;\n}\n@media screen and (min-width: 897px) {\n.recruit--person--list {\n        display: flex;\n        flex-wrap: wrap;\n        justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--list {\n        margin-top: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item {\n        width: 48.5%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item {\n        margin-top: 40px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item:nth-child(4) {\n        margin-top: 140px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item h4 {\n        margin-top: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 {\n        margin-top: 24px;\n}\n}\n.recruit--person--item h4 .department {\n    display: block;\n    font-size: 16px;\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    margin-bottom: 0px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    line-height: 16px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .department {\n        font-size: 14px;\n}\n}\n.recruit--person--item h4 .phrase {\n    display: block;\n    margin-top: 15px;\n    font-size: 16px;\n    line-height: 24px;\n    letter-spacing: 0.1em;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    background-color: #dadada;\n    padding: 15px 5px;\n    min-height: 105px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .phrase {\n        font-size: 20px;\n}\n}\n.recruit--person--item p {\n    margin-top: 20px;\n    font-size: 14px;\n    line-height: 2;\n    letter-spacing: 0.1em;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n}\n@media screen and (max-width: 425px) {\n.mv_textarea-recruit .jptxt {\n        font-size: 12px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25359,7 +25307,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\r\n    margin-top: 100px;\r\n    margin-bottom: 100px;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.single {\r\n    width: calc(100% - 440px);\n}\n.single__head {\r\n    margin-bottom: 60px;\r\n    padding: 30px 30px 20px 30px;\r\n    background: #FFFFFF;\r\n    border: none !important;;\r\n    box-sizing: border-box;\r\n    border-radius: 10px;\n}\n.single__head__title {\r\n    font-size: 35px;\r\n    padding-bottom: 30px;\r\n    margin-bottom: 30px;\r\n    line-height: 1.4;\r\n    letter-spacing: 0.04em;\r\n    position: relative;\r\n    transition: 0.8s;\r\n    transform: translateY(5%);\r\n    /* opacity: 0; */\r\n    border-bottom: 2px solid #333;\r\n    color: #333;\n}\n.single__head__flex {\r\n    display: flex;\n}\n.single__head__tags {\r\n    margin-left: auto!important;\r\n    text-align: right;\r\n    width: 50%;\r\n    font-weight: bold;\r\n    font-size: 12px;\r\n    line-height: 18px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__head__date {\r\n    width: 50%;\r\n    margin-left:0px!important;\r\n    display: inline-block;\r\n    text-align: left!important;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__thumbnail {\r\n    margin-bottom: 60px;\r\n    width: 100%;\r\n    height: 425px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    border-radius: 10px;\n}\r\n\r\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\r\n    padding: 20px 30px;\r\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\r\n    margin-bottom: 28px;\r\n    display: inline-block;\r\n    padding-left: 35px;\r\n    position: relative;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 4px;\r\n    display: inline-block;\r\n    width: 20px;\r\n    height: 16px;\r\n    content: \"\";\r\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\r\n    display: none;\n}\n.mokuji_ol {\r\n    counter-reset: item;\n}\n.rtoc-item {\r\n    margin-bottom: 10px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\n}\n.rtoc-item::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\n}\r\n\r\n/*å…±é€š*/\n.alignleft {\r\n    float: left;\r\n    margin-left: 0;\r\n    margin-right: 1em;\n}\n.alignright {\r\n    float: right;\r\n    margin-left: 1em;\r\n    margin-right: 0;\n}\n.aligncenter {\r\n    margin-left: auto;\r\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\r\n    text-align: center;\n}\nfigure {\r\n    margin-left: 0;\r\n    margin-right: 0;\n}\nbody {\r\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\r\n    box-sizing: inherit;\n}\n.single__contents h2 {\r\n    position: relative;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n    padding-left: 20px;\r\n    font-weight: bold;\r\n    font-size: 22px;\r\n    line-height: 32px;\r\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    top: 3px;\r\n    height: 26px;\r\n    width: 5px;\r\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\r\n    counter-reset: item;\n}\r\n/*\r\n.single__contents h2::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\r\n    color: #1363AB;\r\n}*/\n.single__contents p {\r\n    font-weight: 500;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor)\n}\n.alignfull {\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\r\n        max-width: none;\r\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\r\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\r\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\r\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        max-width: calc(var(--myw) + 300px) !important;\r\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\r\n        margin-left: -150px !important;\r\n        margin-right: -150px !important;\n}\n}\n.contents img {\r\n    max-width: 100%;\r\n    height: auto;\n}\n.contents p {\r\n    margin-bottom: 30px;\n}\r\n\r\n/*aside*/\n.aside {\r\n    width: 360px;\n}\n.aside__new {\r\n    margin-bottom: 60px;\n}\n.aside__title {\r\n    position: relative;\r\n    margin-left: 160px;\r\n    margin-bottom: 20px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    text-align: left;\n}\n.aside__title__new img {\r\n    position: absolute;\r\n    left: -32px;\r\n    top: 1px;\n}\n.aside__title__tags {\r\n    padding-left: 180px;\n}\n.aside__new__list {\r\n    margin-bottom: 10px;\r\n    position: relative;\r\n    height: 90px;\r\n    background: #FFFFFF;\r\n    border: 0.5px solid #C4C4C4;\r\n    box-sizing: border-box;\r\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\r\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\r\n    position: absolute;\r\n    top: 15px;\r\n    left: 20px;\r\n    height: 60px;\r\n    width: 60px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\n}\n.aside__new__list__title {\r\n    padding-left: 95px;\r\n    padding-top: 21px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n.aside__tags__list {\r\n    position: relative;\r\n    margin-left: 60px;\r\n    padding-left: 35px;\r\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    display: flex;\r\n    align-items: center;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\r\n    position: absolute;\r\n    content: \"\";\r\n    display: inline-block;\r\n    top: 0;\r\n    left: 0;\r\n    width: 20px;\r\n    height: 20px;\r\n    background: #FFFFFF;\r\n    border: 1px solid #333333;\r\n    box-sizing: border-box;\r\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\r\n        margin-bottom: 60px;\r\n        margin-top: 73px;\r\n        display: block;\n}\n.single {\r\n        width: 100%;\n}\n.single__head {\r\n        margin-bottom: 30px;\n}\n.aside {\r\n        display: none;\n}\n.single__head__title {\r\n        margin-bottom: 15px;\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__head__title::before {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n.single__thumbnail {\r\n        height: 150px;\r\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\r\n        padding: 20px 20px 5px 20px;\r\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\r\n        padding-left: 30px;\r\n        margin-bottom: 20px;\r\n        font-size: 15px;\r\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\r\n        top: 4px;\r\n        width: 17px;\r\n        height: 13px;\r\n        background-size: cover;\n}\n.rtoc-item {\r\n        font-size: 13px;\r\n        line-height: 19px;\r\n        margin-bottom: 15px;\n}\n.single__contents h2 {\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__contents h2::after {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__contents p {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents__foot {\r\n        margin-top: 50px;\r\n        margin-bottom: 60px;\n}\n}\r\n\r\n/*btns*/\n.btns {\r\n    padding-bottom: 120px;\r\n    width: 100%;\r\n    max-width: 370px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.btns a {\r\n    text-align: center;\r\n    display: inline-block;\r\n    width: 70px;\n}\n.btns__prev__img {\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-bottom: 20px;\r\n    cursor: pointer;\n}\n.btns__next__img {\r\n    transform: rotate(180deg);\n}\n.btns__prev__text {\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\r\n        padding-bottom: 60px;\n}\n.btns a {\r\n        width: 65px;\n}\n.btns__prev__img {\r\n        width: 60px;\r\n        height: 60px;\r\n        margin-bottom: 15px;\n}\n.btns__prev__text {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\n    margin-top: 100px;\n    margin-bottom: 100px;\n    display: flex;\n    justify-content: space-between;\n}\n.single {\n    width: calc(100% - 440px);\n}\n.single__head {\n    margin-bottom: 60px;\n    padding: 30px 30px 20px 30px;\n    background: #FFFFFF;\n    border: none !important;;\n    box-sizing: border-box;\n    border-radius: 10px;\n}\n.single__head__title {\n    font-size: 35px;\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    line-height: 1.4;\n    letter-spacing: 0.04em;\n    position: relative;\n    transition: 0.8s;\n    transform: translateY(5%);\n    /* opacity: 0; */\n    border-bottom: 2px solid #333;\n    color: #333;\n}\n.single__head__flex {\n    display: flex;\n}\n.single__head__tags {\n    margin-left: auto!important;\n    text-align: right;\n    width: 50%;\n    font-weight: bold;\n    font-size: 12px;\n    line-height: 18px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__head__date {\n    width: 50%;\n    margin-left:0px!important;\n    display: inline-block;\n    text-align: left!important;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__thumbnail {\n    margin-bottom: 60px;\n    width: 100%;\n    height: 425px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 10px;\n}\n\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\n    padding: 20px 30px;\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\n    margin-bottom: 28px;\n    display: inline-block;\n    padding-left: 35px;\n    position: relative;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\n    position: absolute;\n    left: 0;\n    top: 4px;\n    display: inline-block;\n    width: 20px;\n    height: 16px;\n    content: \"\";\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\n    display: none;\n}\n.mokuji_ol {\n    counter-reset: item;\n}\n.rtoc-item {\n    margin-bottom: 10px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.rtoc-item::before {\n    counter-increment: item;\n    content: counter(item)'.';\n}\n\n/*å…±é€š*/\n.alignleft {\n    float: left;\n    margin-left: 0;\n    margin-right: 1em;\n}\n.alignright {\n    float: right;\n    margin-left: 1em;\n    margin-right: 0;\n}\n.aligncenter {\n    margin-left: auto;\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\n    text-align: center;\n}\nfigure {\n    margin-left: 0;\n    margin-right: 0;\n}\nbody {\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\n    box-sizing: inherit;\n}\n.single__contents h2 {\n    position: relative;\n    margin-bottom: 30px;\n    margin-top: 30px;\n    padding-left: 20px;\n    font-weight: bold;\n    font-size: 22px;\n    line-height: 32px;\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    top: 3px;\n    height: 26px;\n    width: 5px;\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\n    counter-reset: item;\n}\n/*\n.single__contents h2::before {\n    counter-increment: item;\n    content: counter(item)'.';\n    color: #1363AB;\n}*/\n.single__contents p {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor)\n}\n.alignfull {\n    margin-left: -20px;\n    margin-right: -20px;\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\n        max-width: none;\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\n        max-width: calc(var(--myw) + 300px) !important;\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\n        margin-left: -150px !important;\n        margin-right: -150px !important;\n}\n}\n.contents img {\n    max-width: 100%;\n    height: auto;\n}\n.contents p {\n    margin-bottom: 30px;\n}\n\n/*aside*/\n.aside {\n    width: 360px;\n}\n.aside__new {\n    margin-bottom: 60px;\n}\n.aside__title {\n    position: relative;\n    margin-left: 160px;\n    margin-bottom: 20px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    text-align: left;\n}\n.aside__title__new img {\n    position: absolute;\n    left: -32px;\n    top: 1px;\n}\n.aside__title__tags {\n    padding-left: 180px;\n}\n.aside__new__list {\n    margin-bottom: 10px;\n    position: relative;\n    height: 90px;\n    background: #FFFFFF;\n    border: 0.5px solid #C4C4C4;\n    box-sizing: border-box;\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\n    position: absolute;\n    top: 15px;\n    left: 20px;\n    height: 60px;\n    width: 60px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.aside__new__list__title {\n    padding-left: 95px;\n    padding-top: 21px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n.aside__tags__list {\n    position: relative;\n    margin-left: 60px;\n    padding-left: 35px;\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    display: flex;\n    align-items: center;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\n    position: absolute;\n    content: \"\";\n    display: inline-block;\n    top: 0;\n    left: 0;\n    width: 20px;\n    height: 20px;\n    background: #FFFFFF;\n    border: 1px solid #333333;\n    box-sizing: border-box;\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\n        margin-bottom: 60px;\n        margin-top: 73px;\n        display: block;\n}\n.single {\n        width: 100%;\n}\n.single__head {\n        margin-bottom: 30px;\n}\n.aside {\n        display: none;\n}\n.single__head__title {\n        margin-bottom: 15px;\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__head__title::before {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\n        font-size: 13px;\n        line-height: 19px;\n}\n.single__thumbnail {\n        height: 150px;\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\n        padding: 20px 20px 5px 20px;\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\n        padding-left: 30px;\n        margin-bottom: 20px;\n        font-size: 15px;\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\n        top: 4px;\n        width: 17px;\n        height: 13px;\n        background-size: cover;\n}\n.rtoc-item {\n        font-size: 13px;\n        line-height: 19px;\n        margin-bottom: 15px;\n}\n.single__contents h2 {\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__contents h2::after {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__contents p {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents__foot {\n        margin-top: 50px;\n        margin-bottom: 60px;\n}\n}\n\n/*btns*/\n.btns {\n    padding-bottom: 120px;\n    width: 100%;\n    max-width: 370px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n}\n.btns a {\n    text-align: center;\n    display: inline-block;\n    width: 70px;\n}\n.btns__prev__img {\n    width: 40px;\n    height: 40px;\n    margin-bottom: 20px;\n    cursor: pointer;\n}\n.btns__next__img {\n    transform: rotate(180deg);\n}\n.btns__prev__text {\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\n        padding-bottom: 60px;\n}\n.btns a {\n        width: 65px;\n}\n.btns__prev__img {\n        width: 60px;\n        height: 60px;\n        margin-bottom: 15px;\n}\n.btns__prev__text {\n        font-size: 13px;\n        line-height: 19px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -64135,7 +64083,7 @@ Vue.compile = compileToFunctions;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\xampp\\\\htdocs\\\\idenbrid-v2"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"C:\\\\xampp\\\\htdocs\\\\idenbrid-v2","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"_args":[["axios@0.21.4","/Applications/XAMPP/xamppfiles/htdocs/v2"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"/Applications/XAMPP/xamppfiles/htdocs/v2","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
 
 /***/ })
 

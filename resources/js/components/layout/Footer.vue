@@ -117,7 +117,7 @@
             <div class="foot-menu-group">
               <h4>
                 <!-- <router-link to="/about-company/" class="">会社情報</router-link> -->
-                <router-link to="/about-company/">会社情報</router-link>
+                <router-link to="/about/">会社情報</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
