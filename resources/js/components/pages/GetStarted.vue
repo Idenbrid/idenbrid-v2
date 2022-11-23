@@ -11,15 +11,15 @@
                                     <div class="form-card">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h2 id="heading">What do you need help with?</h2>
-                                                <h2 class="steps">Step 1/7</h2>
+                                                <h2 id="heading">どのような案件に対する見積もりでしょうか？</h2>
+                                                <h2 class="steps">ステップ 1/7</h2>
                                             </div>
                                         </div>
                                         <ul class="my-4">
                                             <li>
                                                 <input type="radio" id="new-project" value="New project"
                                                     name="selector2" v-model="record.step_1">
-                                                <label for="new-project">New project
+                                                <label for="new-project">新規開発プロジェクト
                                                 </label>
 
                                                 <div class="check"></div>
@@ -28,7 +28,7 @@
                                                 <input type="radio" id="current-project"
                                                     value="Current project that needs more developers" name="selector2"
                                                     v-model="record.step_1">
-                                                <label for="current-project">Current project that needs more developers
+                                                <label for="current-project">現在進行形プロジェクトの追加エンジニア人材
                                                 </label>
 
                                                 <div class="check"></div>
@@ -37,7 +37,7 @@
                                                 <input type="radio" id="consultancy"
                                                     value="Consultancy, code review, or debugging" name="selector2"
                                                     v-model="record.step_1">
-                                                <label for="consultancy">Consultancy, code review, or debugging
+                                                <label for="consultancy">コンサルティング・コードレビュー・バグ直し
                                                 </label>
 
                                                 <div class="check"></div>
@@ -45,47 +45,47 @@
                                             <li>
                                                 <input type="radio" id="something-else" value="Something else"
                                                     name="selector2" v-model="record.step_1">
-                                                <label for="something-else">Something else
+                                                <label for="something-else">その他
                                                 </label>
                                                 <div class="check"></div>
                                             </li>
                                         </ul>
                                     </div>
                                     <input :disabled="record.step_1 == ''" type="button" name="next"
-                                        class="next action-button" value="Next" />
+                                        class="next action-button" value="次へ" />
                                 </fieldset>
                                 <fieldset>
                                     <div class="form-card mb-4">
                                         <div class="row mb-4">
                                             <div class="col-12">
-                                                <h2 id="heading">Describe your requirements below</h2>
-                                                <h2 class="steps">Step 2/7</h2>
+                                                <h2 id="heading">仕様や要件について下記にご記入ください</h2>
+                                                <h2 class="steps">ステップ 2/7</h2>
                                             </div>
 
                                         </div>
                                         <textarea v-model="record.step_2"
-                                            placeholder="Example: I need to hire a senior Java developer for my existing team,OR I need a skilled development team to build a mobile app for the fashion industry."
+                                            placeholder="例：現在社内にて新規ECサイトの構築を検討しており、クラウドをベースにしたサイト及びモバイルアプリをiOSのみ開発したいのですが、期間と費用を教えて欲しいです。"
                                             name="" rows="8" cols="90" class="form-textfield"></textarea>
                                     </div>
                                     <input type="button" name="previous" class="previous action-button-previous"
-                                        value="BACK" />
+                                        value="戻る" />
                                     <input :disabled="record.step_2 == ''" type="button" name="next"
-                                        class="next action-button" value="Next" />
+                                        class="next action-button" value="次へ" />
 
                                 </fieldset>
                                 <fieldset>
                                     <div class="form-card">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h2 id="heading">When do you need to start?</h2>
-                                                <h2 class="steps">Step 3/7</h2>
+                                                <h2 id="heading">開始時期はいつからですか？</h2>
+                                                <h2 class="steps">ステップ 3/7</h2>
                                             </div>
                                         </div>
                                         <ul class="my-4">
                                             <li>
                                                 <input v-model="record.step_3" value="As Soon As Possible" type="radio"
                                                     id="as-soon" name="selector2">
-                                                <label for="as-soon">As Soon As Possible
+                                                <label for="as-soon">なるべくすぐに
                                                 </label>
 
                                                 <div class="check"></div>
@@ -93,7 +93,7 @@
                                             <li>
                                                 <input v-model="record.step_3" value="In 2-4 weeks" type="radio"
                                                     id="in-weeks" name="selector2">
-                                                <label for="in-weeks">In 2-4 weeks
+                                                <label for="in-weeks">2 - 4週間以内に着手
                                                 </label>
 
                                                 <div class="check"></div>
@@ -101,7 +101,7 @@
                                             <li>
                                                 <input v-model="record.step_3" value="No rush" type="radio" id="no-rush"
                                                     name="selector2">
-                                                <label for="no-rush">No rush
+                                                <label for="no-rush">時期は未定
                                                 </label>
 
                                                 <div class="check"></div>
@@ -109,18 +109,17 @@
                                         </ul>
                                     </div>
                                     <input type="button" name="previous" class="previous action-button-previous"
-                                        value="BACK" />
+                                        value="戻る" />
                                     <input :disabled="record.step_3 == ''" type="button" name="next"
-                                        class="next action-button" value="Next" />
+                                        class="next action-button" value="次へ" />
                                 </fieldset>
                                 <fieldset>
                                     <div class="form-card mb-4">
                                         <div class="row mb-4">
                                             <div class="col-12">
-                                                <h2 id="heading">What skills do you require from your new
-                                                    developers?
+                                                <h2 id="heading">どのような開発・エンジニアが必要ですか？
                                                 </h2>
-                                                <h2 class="steps">Step 4/7</h2>
+                                                <h2 class="steps">ステップ 4/7</h2>
                                             </div>
                                         </div>
                                         <div class="new-developer-form">
@@ -130,7 +129,7 @@
                                                         <input name="cssCheckbox" value="Mobile App"
                                                             v-model="record.step_4" id="demo_opt_1" type="checkbox"
                                                             class="css-checkbox">
-                                                        <label for="demo_opt_1">Mobile App</label>
+                                                        <label for="demo_opt_1">ウェブアプリ・システム</label>
 
                                                     </div>
                                                     <div id="inputPreview">
@@ -138,7 +137,7 @@
                                                         <input name="cssCheckbox" value="DevOps" v-model="record.step_4"
                                                             id="demo_opt_2" type="checkbox" class="css-checkbox"
                                                             checked="">
-                                                        <label for="demo_opt_2">DevOps</label>
+                                                        <label for="demo_opt_2">フロントエンド</label>
 
                                                     </div>
                                                     <div id="inputPreview">
@@ -146,7 +145,7 @@
                                                         <input name="cssCheckbox" value="Integration"
                                                             v-model="record.step_4" id="demo_opt_3" type="checkbox"
                                                             class="css-checkbox">
-                                                        <label for="demo_opt_3">Integration</label>
+                                                        <label for="demo_opt_3">ECサイト</label>
                                                     </div>
                                                 </div>
                                                 <div class="checkbox-grid">
@@ -154,7 +153,7 @@
                                                         <input name="cssCheckbox" value="Web App"
                                                             v-model="record.step_4" id="demo_opt_4" type="checkbox"
                                                             class="css-checkbox">
-                                                        <label for="demo_opt_4">Web App</label>
+                                                        <label for="demo_opt_4">モバイルアプリ</label>
 
                                                     </div>
                                                     <div id="inputPreview">
@@ -162,21 +161,21 @@
                                                         <input name="cssCheckbox" value="Blockchain"
                                                             v-model="record.step_4" id="demo_opt_5" type="checkbox"
                                                             class="css-checkbox" checked="">
-                                                        <label for="demo_opt_5">Blockchain</label>
+                                                        <label for="demo_opt_5">ブロックチェーン</label>
 
                                                     </div>
                                                     <div id="inputPreview">
 
                                                         <input name="cssCheckbox" value="UX/UI" v-model="record.step_4"
                                                             id="demo_opt_6" type="checkbox" class="css-checkbox">
-                                                        <label for="demo_opt_6">UX/UI</label>
+                                                        <label for="demo_opt_6">API結合</label>
                                                     </div>
                                                 </div>
                                                 <div class="checkbox-grid">
                                                     <div id="inputPreview">
                                                         <input name="cssCheckbox" value="DApp" v-model="record.step_4"
                                                             id="demo_opt_7" type="checkbox" class="css-checkbox">
-                                                        <label for="demo_opt_7">DApp</label>
+                                                        <label for="demo_opt_7">システム設計</label>
 
                                                     </div>
                                                     <div id="inputPreview">
@@ -184,7 +183,7 @@
                                                         <input name="cssCheckbox" value="Data Engineering"
                                                             v-model="record.step_4" id="demo_opt_8" type="checkbox"
                                                             class="css-checkbox" checked="">
-                                                        <label for="demo_opt_8">Data Engineering</label>
+                                                        <label for="demo_opt_8">ブロックチェーン</label>
 
                                                     </div>
                                                     <div id="inputPreview">
@@ -192,7 +191,7 @@
                                                         <input name="cssCheckbox" value="Code Review"
                                                             v-model="record.step_4" id="demo_opt_9" type="checkbox"
                                                             class="css-checkbox">
-                                                        <label for="demo_opt_9">Code Review</label>
+                                                        <label for="demo_opt_9">AI（人工知能）</label>
                                                     </div>
                                                 </div>
                                                 <div class="checkbox-grid">
@@ -200,7 +199,7 @@
                                                         <input name="cssCheckbox" value="Backend"
                                                             v-model="record.step_4" id="demo_opt_10" type="checkbox"
                                                             class="css-checkbox">
-                                                        <label for="demo_opt_10">Backend</label>
+                                                        <label for="demo_opt_10">UIUXデザイン</label>
 
                                                     </div>
                                                     <div id="inputPreview">
@@ -208,14 +207,14 @@
                                                         <input name="cssCheckbox" value="CyberSecurity"
                                                             v-model="record.step_4" id="demo_opt_11" type="checkbox"
                                                             class="css-checkbox" checked="">
-                                                        <label for="demo_opt_11">CyberSecurity</label>
+                                                        <label for="demo_opt_11">データエンジニア</label>
 
                                                     </div>
                                                     <div id="inputPreview">
 
                                                         <input name="cssCheckbox" value="Other" v-model="record.step_4"
                                                             id="demo_opt_12" type="checkbox" class="css-checkbox">
-                                                        <label for="demo_opt_12">Other</label>
+                                                        <label for="demo_opt_12">QA・テスト</label>
                                                     </div>
                                                 </div>
                                                 <div class="checkbox-grid">
@@ -223,7 +222,7 @@
                                                         <input name="cssCheckbox" value="Frontend"
                                                             v-model="record.step_4" id="demo_opt_13" type="checkbox"
                                                             class="css-checkbox">
-                                                        <label for="demo_opt_13">Frontend</label>
+                                                        <label for="demo_opt_13">バックエンド・API</label>
 
                                                     </div>
                                                     <div id="inputPreview">
@@ -231,7 +230,7 @@
                                                         <input name="cssCheckbox" value="eCommerce"
                                                             v-model="record.step_4" id="demo_opt_14" type="checkbox"
                                                             class="css-checkbox" checked="">
-                                                        <label for="demo_opt_14">eCommerce</label>
+                                                        <label for="demo_opt_14">サイバーセキュリティー</label>
 
                                                     </div>
                                                     <div id="inputPreview">
@@ -239,11 +238,11 @@
                                                         <input name="cssCheckbox" value="Artificial Intelligence"
                                                             v-model="record.step_4" id="demo_opt_15" type="checkbox"
                                                             class="css-checkbox">
-                                                        <label for="demo_opt_15">Artificial Intelligence</label>
+                                                        <label for="demo_opt_15">その他</label>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column my-4">
-                                                    <label for="cars">TECH STACK (OPTIONAL)</label>
+                                                    <label for="cars">技術指定（自由記載欄）</label>
                                                     <multiselect v-model="record.step_4" :options="options" :multiple="true" ></multiselect>
                                                 </div>
                                             </div>
@@ -252,17 +251,17 @@
 
 
                                     <input type="button" name="previous" class="previous action-button-previous"
-                                        value="BACK" />
+                                        value="戻る" />
                                     <input :disabled="record.step_4.length == 0" type="button" name="next"
-                                        class="next action-button" value="Next" />
+                                        class="next action-button" value="次へ" />
 
                                 </fieldset>
                                 <fieldset>
                                     <div class="form-card">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h2 id="heading">What is your project type?</h2>
-                                                <h2 class="steps">Step 5/7</h2>
+                                                <h2 id="heading">どのようなプロジェクトですか？</h2>
+                                                <h2 class="steps">ステップ 5/7</h2>
                                             </div>
 
                                         </div>
@@ -270,7 +269,7 @@
                                             <li>
                                                 <input type="radio" id="short-term" name="selector2"
                                                     v-model="record.step_5" value="I have a short-term project">
-                                                <label for="short-term">I have a short-term project
+                                                <label for="short-term">短期で完了する小さなプロジェクト
                                                 </label>
 
                                                 <div class="check"></div>
@@ -279,8 +278,7 @@
                                                 <input type="radio" v-model="record.step_5" id="long-term"
                                                     name="selector2" value="I have a long-term project with the need for
                                                     ongoing support">
-                                                <label for="long-term">I have a long-term project with the need for
-                                                    ongoing support
+                                                <label for="long-term">大きな規模で長期間必要なプロジェクト
                                                 </label>
 
                                                 <div class="check"></div>
@@ -288,7 +286,7 @@
                                             <li>
                                                 <input type="radio" v-model="record.step_5" id="know-yet"
                                                     name="selector2" value="I don’t know yet">
-                                                <label for="know-yet">I don’t know yet
+                                                <label for="know-yet">わからないので相談したい
                                                 </label>
 
                                                 <div class="check"></div>
@@ -298,17 +296,17 @@
 
                                     </div>
                                     <input type="button" name="previous" class="previous action-button-previous"
-                                        value="BACK" />
+                                        value="戻る" />
                                     <input :disabled="record.step_5 == ''" type="button" name="next"
-                                        class="next action-button" value="Next" />
+                                        class="next action-button" value="次へ" />
 
                                 </fieldset>
                                 <fieldset>
                                     <div class="form-card">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h2 id="heading">How big is your company?</h2>
-                                                <h2 class="steps">Step 6/7</h2>
+                                                <h2 id="heading">会社規模はどれくらいになりますか？</h2>
+                                                <h2 class="steps">ステップ 6/7</h2>
                                             </div>
 
                                         </div>
@@ -316,7 +314,7 @@
                                             <li>
                                                 <input type="radio" v-model="record.step_6" id="just-me"
                                                     name="selector2" value="Just me">
-                                                <label for="just-me">Just me
+                                                <label for="just-me">1人の個人事業主
                                                 </label>
 
                                                 <div class="check"></div>
@@ -324,7 +322,7 @@
                                             <li>
                                                 <input type="radio" v-model="record.step_6" id="10—100" name="selector2"
                                                     value="10—100">
-                                                <label for="10—100">10—100
+                                                <label for="10—100">10 - 100人規模
                                                 </label>
 
                                                 <div class="check"></div>
@@ -332,7 +330,7 @@
                                             <li>
                                                 <input type="radio" v-model="record.step_6" id="101—500"
                                                     name="selector2" value="101—500">
-                                                <label for="101—500">101—500
+                                                <label for="101—500">101 - 500人規模
                                                 </label>
 
                                                 <div class="check"></div> 
@@ -340,7 +338,7 @@
                                             <li>
                                                 <input type="radio" v-model="record.step_6" id="no-rush"
                                                     name="selector2" value="501—1000">
-                                                <label for="501—1000">501—1000
+                                                <label for="501—1000">501 - 1000人規模
                                                 </label>
 
                                                 <div class="check"></div>
@@ -348,7 +346,7 @@
                                             <li>
                                                 <input type="radio" v-model="record.step_6" id="more-than-1000"
                                                     name="selector2" value="More than 1000">
-                                                <label for="more-than-1000">More than 1000
+                                                <label for="more-than-1000">1000人以上規模
                                                 </label>
 
                                                 <div class="check"></div>
@@ -358,30 +356,30 @@
 
                                     </div>
                                     <input type="button" name="previous" class="previous action-button-previous"
-                                        value="BACK" />
+                                        value="戻る" />
                                     <input :disabled="record.step_6 == ''" type="button" name="next"
-                                        class="next action-button" value="Next" />
+                                        class="next action-button" value="次へ" />
 
                                 </fieldset>
                                 <fieldset>
                                     <div class="form-card">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h2 id="heading">Submit Your Request to See Developers' Profiles
+                                                <h2 id="heading">お見積作成のためのオンラインヒアリングURL送付先
                                                 </h2>
-                                                <h2 class="steps">Step 7/7</h2>
+                                                <h2 class="steps">ステップ 7/7</h2>
                                             </div>
 
                                         </div>
                                         <div class="my-4">
                                             <div class="inputCase">
-                                                <div class="sc-fzonjX hIMiPJ"><span>PROJECT NAME *</span><input
+                                                <div class="sc-fzonjX hIMiPJ"><span>会社名*</span><input
                                                         v-model="record.project_name" placeholder="" autocomplete="off"
                                                         minlength="3" name="title" type="text" required value=""
                                                         class="text-field">
 
                                                 </div>
-                                                <div class="sc-fzonjX hIMiPJ"><span>YOUR NAME *</span><input
+                                                <div class="sc-fzonjX hIMiPJ"><span>お名前*</span><input
                                                         v-model="record.name" placeholder="" autocomplete="off"
                                                         minlength="3" name="name" type="text" required="" value=""
                                                         class="text-field">
@@ -389,13 +387,13 @@
                                                 </div>
                                             </div>
                                             <div class="inputCase">
-                                                <div class="sc-fzonjX hIMiPJ"><span>EMAIL *</span><input placeholder=""
+                                                <div class="sc-fzonjX hIMiPJ"><span>メールアドレス* </span><input placeholder=""
                                                         v-model="record.email" autocomplete="off" minlength="3"
                                                         name="title" type="text" required="" value=""
                                                         class="text-field">
 
                                                 </div>
-                                                <div class="sc-fzonjX hIMiPJ"><span>SKYPE OR PHONE</span><input
+                                                <div class="sc-fzonjX hIMiPJ"><span>電話番号*</span><input
                                                         v-model="record.phone" placeholder="" autocomplete="off"
                                                         minlength="3" name="name" type="text" required value=""
                                                         class="text-field">
@@ -404,7 +402,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input data-v-f847ca3e="" @click="saveRequest()" name="next" value="SUBMIT REQUEST"
+                                    <input data-v-f847ca3e="" @click="saveRequest()" name="next" value="送信"
                                         class="action-button">
                                 </fieldset>
                             </form>
@@ -413,7 +411,7 @@
                     <div class="sc-fzppAM vTcAG background">
                         <div class="vertical-wrapper">
                             <div class="wrapper">
-                                <h3>Our Dev Teams Are Trusted by the Best</h3>
+                                <h3>私たちの開発チームは最高の信頼を得ています</h3>
                                 <div class="logo-wrapper">
                                     <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
                                             alt=""></div>
@@ -474,7 +472,7 @@
                     email: '',
                     phone: '',
                 },
-                options: ['Laravel', 'Vuejs', 'Nodejs', 'Expressjs', 'Reactjs'],
+                options: ['ウェブアプリ・システム', 'モバイルアプリ', 'システム設計', 'UIUXデザイン', 'バックエンド・API','フロントエンド','DevOps','ブロックチェーン','データエンジニア','サイバーセキュリティー','ECサイト','API結合','AI（人工知能）','QA・テスト','その他',''],
             }
         },
         components: {
@@ -825,8 +823,8 @@
         border: 3px solid #AAAAAA;
         border-radius: 100%;
         height: 21px;
-        width: 21px;
-        top: 6px;
+        width: 22px;
+        top: 2px;
         left: 0px;
         z-index: 5;
         transition: border .25s linear;
@@ -837,16 +835,17 @@
 
     li .check::before {
         display: block;
-        position: absolute;
-        content: '';
-        border-radius: 100%;
-        height: 0.7rem;
-        width: 0.7rem;
-        top: 2px;
-        left: 2px;
-        margin: auto;
-        transition: background 0.25s linear;
-        -webkit-transition: background 0.25s linear;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 0.7rem;
+    width: 0.7rem;
+    top: 2px;
+    left: 3px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+
     }
 
     input[type=radio]:checked~.check {
@@ -977,7 +976,7 @@
 
     .css-checkbox+label {
         position: relative;
-        font-size: 18px;
+        font-size: 16px;
         cursor: pointer;
         display: inline-flex;
         align-items: center;

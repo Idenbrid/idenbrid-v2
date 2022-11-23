@@ -6025,7 +6025,7 @@ __webpack_require__.r(__webpack_exports__);
         email: '',
         phone: ''
       },
-      options: ['Laravel', 'Vuejs', 'Nodejs', 'Expressjs', 'Reactjs']
+      options: ['ウェブアプリ・システム', 'モバイルアプリ', 'システム設計', 'UIUXデザイン', 'バックエンド・API', 'フロントエンド', 'DevOps', 'ブロックチェーン', 'データエンジニア', 'サイバーセキュリティー', 'ECサイト', 'API結合', 'AI（人工知能）', 'QA・テスト', 'その他', '']
     };
   },
   components: {
@@ -10566,7 +10566,7 @@ var staticRenderFns = [function () {
       "aria-controls": "pills-home",
       "aria-selected": "true"
     }
-  }, [_c("span", [_vm._v("外注先を探しているお客様：契約編")])])]), _vm._v(" "), _c("li", {
+  }, [_c("span", [_vm._v("外注先を探しているお客様：開発編")])])]), _vm._v(" "), _c("li", {
     staticClass: "nav-item",
     attrs: {
       role: "presentation"
@@ -10582,7 +10582,7 @@ var staticRenderFns = [function () {
       "aria-controls": "pills-profile",
       "aria-selected": "false"
     }
-  }, [_c("span", [_vm._v("プロジェクトを探している方")])])])])])]), _vm._v(" "), _c("div", {
+  }, [_c("span", [_vm._v("外注先を探しているお客様：契約編")])])])])])]), _vm._v(" "), _c("div", {
     staticClass: "faqList"
   }, [_c("div", {
     staticClass: "inner"
@@ -10602,19 +10602,19 @@ var staticRenderFns = [function () {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("開発されたソフトウェアの著作権は誰にありますか？")]), _vm._v(" "), _c("dd", [_vm._v("アイデンブリッドが進めている開発サービスの総称です。当社では主にシステムやアプリの受託開発を受けております。また企業様からのリソースをベースとしたラボ型開発も受けてつけております。これからの開発サービスを当社ではSDHと呼んでいます。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Q. SEH：スタジオ型開発ハブとはなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("A.アイデンブリッドが進めている開発サービスの総称です。当社では主にシステムやアプリの受託開発を受けております。また企業様からのリソースをベースとしたラボ型開発も受けてつけております。これからの開発サービスを当社ではSDHと呼んでいます。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" 開発において社内にITに詳しい者がいませんが大丈夫でしょうか？ ")]), _vm._v(" "), _c("dd", [_vm._v("当社のお客様は8割以上が社内に詳しい方がいないので私たちを頼って頂いておりますのでご安心ください。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Q.開発において社内にITに詳しい者がいませんが大丈夫でしょうか？ ")]), _vm._v(" "), _c("dd", [_vm._v("A.当社のお客様は8割以上が社内に詳しい方がいないので私たちを頼って頂いておりますのでご安心ください。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("ウェブのUIUXデザインはなんのツールを使って行いますか？")]), _vm._v(" "), _c("dd", [_vm._v(".当社では基本的にAdobe XDそしてFigmaを使っています。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Q.ウェブのUIUXデザインはなんのツールを使って行いますか？")]), _vm._v(" "), _c("dd", [_vm._v("A.当社では基本的にAdobe XDそしてFigmaを使っています。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" UIUXの修正は何回まで可能でしょうか？ ")]), _vm._v(" "), _c("dd", [_c("div", {
+  }, [_vm._v("Q.UIUXの修正は何回まで可能でしょうか？ ")]), _vm._v(" "), _c("dd", [_c("div", {
     staticClass: "faq-inner",
     staticStyle: {
       display: "block"
@@ -10627,7 +10627,7 @@ var staticRenderFns = [function () {
       "list-style": "disc",
       "padding-left": "25px"
     }
-  }, [_c("li", [_vm._v("当社では初稿をお出しして最大その後2回（初稿を含めて3回）まで対応しております。")])]), _vm._v(" "), _c("div", {
+  }, [_c("li", [_vm._v("A.当社では初稿をお出しして最大その後2回（初稿を含めて3回）まで対応しております。")])]), _vm._v(" "), _c("div", {
     staticStyle: {
       position: "absolute",
       left: "-71px",
@@ -10646,19 +10646,19 @@ var staticRenderFns = [function () {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" アプリやシステムの開発期間はどれくらいになりますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("規模や案件ごとに異なりますが通常2-6ヶ月規模のものが多いです。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v(" Q.アプリやシステムの開発期間はどれくらいになりますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("A.規模や案件ごとに異なりますが通常2-6ヶ月規模のものが多いです。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" Q.完成したシステムやアプリをどのタイミング確認できますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("お客様がどこまで担当して頂けるかによりますが、RFPや実現されたいページや機能の仕様など書類に落とし込まれたものがあると助かります。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v(" Q.開発開始するために、クライアントが準備すべき必要なものは何がありますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("A.お客様がどこまで担当して頂けるかによりますが、RFPや実現されたいページや機能の仕様など書類に落とし込まれたものがあると助かります。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" 開発中にはどのようにプロジェクト管理をしますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("ソースコードのバージョンコントロールはGitHubにて、進捗チケット管理はAsanaにて行っています。またその他、仕様要件などはGoogle\n                                    Spreadsheetを使用しています。。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v(" Q.開発中にはどのようにプロジェクト管理をしますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("A.ソースコードのバージョンコントロールはGitHubにて、進捗チケット管理はAsanaにて行っています。またその他、仕様要件などはGoogle\n                                    Spreadsheetを使用しています。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" 開発中などはどのように定期的にコミュニケーションをとれますか？ ")]), _vm._v(" "), _c("dd", [_c("p", [_vm._v("開発中は定例や不定期の打ち合わせを設定させて頂き活発にコニュニケーションを取っています。")]), _vm._v(" "), _c("p", [_vm._v("作業を行っています。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("Q.開発中などはどのように定期的にコミュニケーションをとれますか？ ")]), _vm._v(" "), _c("dd", [_c("p", [_vm._v("A.開発中は定例や不定期の打ち合わせを設定させて頂き活発にコニュニケーションを取っています。\n                                    ")]), _vm._v(" "), _c("p", [_vm._v("作業を行っています。")]), _vm._v(" "), _c("ul", {
     staticStyle: {
       "list-style": "number",
       "padding-left": "20px"
@@ -10718,7 +10718,23 @@ var staticRenderFns = [function () {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("人月単価を教えてください。")]), _vm._v(" "), _c("dd", [_vm._v("作業場所とエンジニアのレベルによって異なりますが、参考価格を掲載いたします。\n\n                                    パキスタンにいるエンジニアは30万円台\n                                    日本にいるエンジニアは70万円〜140万円\n                                    詳細はお問い合わせください。")])])])])])])])]);
+  }, [_vm._v("Q.開発されたソフトウェアの著作権は誰にありますか？")]), _vm._v(" "), _c("dd", [_vm._v("A.当社では契約ごとに定めていますが、基本的に著作権はクライアントへ帰属します。")])]), _vm._v(" "), _c("div", {
+    staticClass: "tab-main"
+  }, [_c("dt", {
+    staticClass: "f_bold"
+  }, [_vm._v("Q.成果物の定義はどのように決まりますか？")]), _vm._v(" "), _c("dd", [_vm._v("A.請負契約の場合には仕様要件の定義、品質基準の定義を行い、ソースコードなどの実装したシステム自体を成果物として定義します。準委任契約の場合には月末に稼働報告書をご提出致します。\n                                ")])]), _vm._v(" "), _c("div", {
+    staticClass: "tab-main"
+  }, [_c("dt", {
+    staticClass: "f_bold"
+  }, [_vm._v("Q.システムの開発において想定される契約書類はなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("A.各お客様と基本的に基本契約書いわゆる業務委託契約書を締結します。\n                                    他にも各プロジェクトごとに個別契約書を締結します")])]), _vm._v(" "), _c("div", {
+    staticClass: "tab-main"
+  }, [_c("dt", {
+    staticClass: "f_bold"
+  }, [_vm._v("Q.見積書はどのように作成するのですか？")]), _vm._v(" "), _c("dd", [_vm._v("A.各仕事ごとの項目分けを行いその中で工数に沿って計算します。")])]), _vm._v(" "), _c("div", {
+    staticClass: "tab-main"
+  }, [_c("dt", {
+    staticClass: "f_bold"
+  }, [_vm._v("Q.工数の単位で人月や人日とはなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("A.こちらは1人のエンジニアあたりが1ヶ月または1日稼働した場合という意味になります。")])])])])])])])]);
 }];
 render._withStripped = true;
 
@@ -10779,7 +10795,7 @@ var render = function render() {
     attrs: {
       "for": "new-project"
     }
-  }, [_vm._v("New project\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("新規開発プロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -10806,7 +10822,7 @@ var render = function render() {
     attrs: {
       "for": "current-project"
     }
-  }, [_vm._v("Current project that needs more developers\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("現在進行形プロジェクトの追加エンジニア人材\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -10833,7 +10849,7 @@ var render = function render() {
     attrs: {
       "for": "consultancy"
     }
-  }, [_vm._v("Consultancy, code review, or debugging\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("コンサルティング・コードレビュー・バグ直し\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -10860,7 +10876,7 @@ var render = function render() {
     attrs: {
       "for": "something-else"
     }
-  }, [_vm._v("Something else\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("その他\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })])])]), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
@@ -10868,7 +10884,7 @@ var render = function render() {
       disabled: _vm.record.step_1 == "",
       type: "button",
       name: "next",
-      value: "Next"
+      value: "次へ"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card mb-4"
@@ -10881,7 +10897,7 @@ var render = function render() {
     }],
     staticClass: "form-textfield",
     attrs: {
-      placeholder: "Example: I need to hire a senior Java developer for my existing team,OR I need a skilled development team to build a mobile app for the fashion industry.",
+      placeholder: "例：現在社内にて新規ECサイトの構築を検討しており、クラウドをベースにしたサイト及びモバイルアプリをiOSのみ開発したいのですが、期間と費用を教えて欲しいです。",
       name: "",
       rows: "8",
       cols: "90"
@@ -10900,7 +10916,7 @@ var render = function render() {
     attrs: {
       type: "button",
       name: "previous",
-      value: "BACK"
+      value: "戻る"
     }
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
@@ -10908,7 +10924,7 @@ var render = function render() {
       disabled: _vm.record.step_2 == "",
       type: "button",
       name: "next",
-      value: "Next"
+      value: "次へ"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card"
@@ -10939,7 +10955,7 @@ var render = function render() {
     attrs: {
       "for": "as-soon"
     }
-  }, [_vm._v("As Soon As Possible\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("なるべくすぐに\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -10966,7 +10982,7 @@ var render = function render() {
     attrs: {
       "for": "in-weeks"
     }
-  }, [_vm._v("In 2-4 weeks\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("2 - 4週間以内に着手\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -10993,14 +11009,14 @@ var render = function render() {
     attrs: {
       "for": "no-rush"
     }
-  }, [_vm._v("No rush\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("時期は未定\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })])])]), _vm._v(" "), _c("input", {
     staticClass: "previous action-button-previous",
     attrs: {
       type: "button",
       name: "previous",
-      value: "BACK"
+      value: "戻る"
     }
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
@@ -11008,7 +11024,7 @@ var render = function render() {
       disabled: _vm.record.step_3 == "",
       type: "button",
       name: "next",
-      value: "Next"
+      value: "次へ"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card mb-4"
@@ -11061,7 +11077,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_1"
     }
-  }, [_vm._v("Mobile App")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ウェブアプリ・システム")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11105,7 +11121,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_2"
     }
-  }, [_vm._v("DevOps")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("フロントエンド")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11148,7 +11164,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_3"
     }
-  }, [_vm._v("Integration")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ECサイト")])])]), _vm._v(" "), _c("div", {
     staticClass: "checkbox-grid"
   }, [_c("div", {
     attrs: {
@@ -11193,7 +11209,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_4"
     }
-  }, [_vm._v("Web App")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("モバイルアプリ")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11237,7 +11253,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_5"
     }
-  }, [_vm._v("Blockchain")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ブロックチェーン")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11280,7 +11296,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_6"
     }
-  }, [_vm._v("UX/UI")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("API結合")])])]), _vm._v(" "), _c("div", {
     staticClass: "checkbox-grid"
   }, [_c("div", {
     attrs: {
@@ -11325,7 +11341,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_7"
     }
-  }, [_vm._v("DApp")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("システム設計")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11369,7 +11385,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_8"
     }
-  }, [_vm._v("Data Engineering")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ブロックチェーン")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11412,7 +11428,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_9"
     }
-  }, [_vm._v("Code Review")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("AI（人工知能）")])])]), _vm._v(" "), _c("div", {
     staticClass: "checkbox-grid"
   }, [_c("div", {
     attrs: {
@@ -11457,7 +11473,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_10"
     }
-  }, [_vm._v("Backend")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("UIUXデザイン")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11501,7 +11517,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_11"
     }
-  }, [_vm._v("CyberSecurity")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("データエンジニア")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11544,7 +11560,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_12"
     }
-  }, [_vm._v("Other")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("QA・テスト")])])]), _vm._v(" "), _c("div", {
     staticClass: "checkbox-grid"
   }, [_c("div", {
     attrs: {
@@ -11589,7 +11605,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_13"
     }
-  }, [_vm._v("Frontend")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("バックエンド・API")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11633,7 +11649,7 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_14"
     }
-  }, [_vm._v("eCommerce")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("サイバーセキュリティー")])]), _vm._v(" "), _c("div", {
     attrs: {
       id: "inputPreview"
     }
@@ -11676,13 +11692,13 @@ var render = function render() {
     attrs: {
       "for": "demo_opt_15"
     }
-  }, [_vm._v("Artificial Intelligence")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("その他")])])]), _vm._v(" "), _c("div", {
     staticClass: "d-flex flex-column my-4"
   }, [_c("label", {
     attrs: {
       "for": "cars"
     }
-  }, [_vm._v("TECH STACK (OPTIONAL)")]), _vm._v(" "), _c("multiselect", {
+  }, [_vm._v("技術指定（自由記載欄）")]), _vm._v(" "), _c("multiselect", {
     attrs: {
       options: _vm.options,
       multiple: true
@@ -11699,7 +11715,7 @@ var render = function render() {
     attrs: {
       type: "button",
       name: "previous",
-      value: "BACK"
+      value: "戻る"
     }
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
@@ -11707,7 +11723,7 @@ var render = function render() {
       disabled: _vm.record.step_4.length == 0,
       type: "button",
       name: "next",
-      value: "Next"
+      value: "次へ"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card"
@@ -11738,7 +11754,7 @@ var render = function render() {
     attrs: {
       "for": "short-term"
     }
-  }, [_vm._v("I have a short-term project\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("短期で完了する小さなプロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -11765,7 +11781,7 @@ var render = function render() {
     attrs: {
       "for": "long-term"
     }
-  }, [_vm._v("I have a long-term project with the need for\n                                                ongoing support\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("大きな規模で長期間必要なプロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -11792,14 +11808,14 @@ var render = function render() {
     attrs: {
       "for": "know-yet"
     }
-  }, [_vm._v("I don’t know yet\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("わからないので相談したい\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })])])]), _vm._v(" "), _c("input", {
     staticClass: "previous action-button-previous",
     attrs: {
       type: "button",
       name: "previous",
-      value: "BACK"
+      value: "戻る"
     }
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
@@ -11807,7 +11823,7 @@ var render = function render() {
       disabled: _vm.record.step_5 == "",
       type: "button",
       name: "next",
-      value: "Next"
+      value: "次へ"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card"
@@ -11838,7 +11854,7 @@ var render = function render() {
     attrs: {
       "for": "just-me"
     }
-  }, [_vm._v("Just me\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("1人の個人事業主\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -11865,7 +11881,7 @@ var render = function render() {
     attrs: {
       "for": "10—100"
     }
-  }, [_vm._v("10—100\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("10 - 100人規模\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -11892,7 +11908,7 @@ var render = function render() {
     attrs: {
       "for": "101—500"
     }
-  }, [_vm._v("101—500\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("101 - 500人規模\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -11919,7 +11935,7 @@ var render = function render() {
     attrs: {
       "for": "501—1000"
     }
-  }, [_vm._v("501—1000\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("501 - 1000人規模\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })]), _vm._v(" "), _c("li", [_c("input", {
     directives: [{
@@ -11946,14 +11962,14 @@ var render = function render() {
     attrs: {
       "for": "more-than-1000"
     }
-  }, [_vm._v("More than 1000\n                                            ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("1000人以上規模\n                                            ")]), _vm._v(" "), _c("div", {
     staticClass: "check"
   })])])]), _vm._v(" "), _c("input", {
     staticClass: "previous action-button-previous",
     attrs: {
       type: "button",
       name: "previous",
-      value: "BACK"
+      value: "戻る"
     }
   }), _vm._v(" "), _c("input", {
     staticClass: "next action-button",
@@ -11961,7 +11977,7 @@ var render = function render() {
       disabled: _vm.record.step_6 == "",
       type: "button",
       name: "next",
-      value: "Next"
+      value: "次へ"
     }
   })]), _vm._v(" "), _c("fieldset", [_c("div", {
     staticClass: "form-card"
@@ -11971,7 +11987,7 @@ var render = function render() {
     staticClass: "inputCase"
   }, [_c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("PROJECT NAME *")]), _c("input", {
+  }, [_c("span", [_vm._v("会社名*")]), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -11999,7 +12015,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("YOUR NAME *")]), _c("input", {
+  }, [_c("span", [_vm._v("お名前*")]), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -12029,7 +12045,7 @@ var render = function render() {
     staticClass: "inputCase"
   }, [_c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("EMAIL *")]), _c("input", {
+  }, [_c("span", [_vm._v("メールアドレス* ")]), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -12057,7 +12073,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("SKYPE OR PHONE")]), _c("input", {
+  }, [_c("span", [_vm._v("電話番号*")]), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -12088,7 +12104,7 @@ var render = function render() {
     attrs: {
       "data-v-f847ca3e": "",
       name: "next",
-      value: "SUBMIT REQUEST"
+      value: "送信"
     },
     on: {
       click: function click($event) {
@@ -12128,9 +12144,9 @@ var staticRenderFns = [function () {
     attrs: {
       id: "heading"
     }
-  }, [_vm._v("What do you need help with?")]), _vm._v(" "), _c("h2", {
+  }, [_vm._v("どのような案件に対する見積もりでしょうか？")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 1/7")])])]);
+  }, [_vm._v("ステップ 1/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12142,9 +12158,9 @@ var staticRenderFns = [function () {
     attrs: {
       id: "heading"
     }
-  }, [_vm._v("Describe your requirements below")]), _vm._v(" "), _c("h2", {
+  }, [_vm._v("仕様や要件について下記にご記入ください")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 2/7")])])]);
+  }, [_vm._v("ステップ 2/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12156,9 +12172,9 @@ var staticRenderFns = [function () {
     attrs: {
       id: "heading"
     }
-  }, [_vm._v("When do you need to start?")]), _vm._v(" "), _c("h2", {
+  }, [_vm._v("開始時期はいつからですか？")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 3/7")])])]);
+  }, [_vm._v("ステップ 3/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12170,9 +12186,9 @@ var staticRenderFns = [function () {
     attrs: {
       id: "heading"
     }
-  }, [_vm._v("What skills do you require from your new\n                                                developers?\n                                            ")]), _vm._v(" "), _c("h2", {
+  }, [_vm._v("どのような開発・エンジニアが必要ですか？\n                                            ")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 4/7")])])]);
+  }, [_vm._v("ステップ 4/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12184,9 +12200,9 @@ var staticRenderFns = [function () {
     attrs: {
       id: "heading"
     }
-  }, [_vm._v("What is your project type?")]), _vm._v(" "), _c("h2", {
+  }, [_vm._v("どのようなプロジェクトですか？")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 5/7")])])]);
+  }, [_vm._v("ステップ 5/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12198,9 +12214,9 @@ var staticRenderFns = [function () {
     attrs: {
       id: "heading"
     }
-  }, [_vm._v("How big is your company?")]), _vm._v(" "), _c("h2", {
+  }, [_vm._v("会社規模はどれくらいになりますか？")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 6/7")])])]);
+  }, [_vm._v("ステップ 6/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12212,9 +12228,9 @@ var staticRenderFns = [function () {
     attrs: {
       id: "heading"
     }
-  }, [_vm._v("Submit Your Request to See Developers' Profiles\n                                            ")]), _vm._v(" "), _c("h2", {
+  }, [_vm._v("お見積作成のためのオンラインヒアリングURL送付先\n                                            ")]), _vm._v(" "), _c("h2", {
     staticClass: "steps"
-  }, [_vm._v("Step 7/7")])])]);
+  }, [_vm._v("ステップ 7/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -12222,7 +12238,7 @@ var staticRenderFns = [function () {
     staticClass: "vertical-wrapper"
   }, [_c("div", {
     staticClass: "wrapper"
-  }, [_c("h3", [_vm._v("Our Dev Teams Are Trusted by the Best")]), _vm._v(" "), _c("div", {
+  }, [_c("h3", [_vm._v("私たちの開発チームは最高の信頼を得ています")]), _vm._v(" "), _c("div", {
     staticClass: "logo-wrapper"
   }, [_c("div", [_c("img", {
     attrs: {
@@ -12870,18 +12886,74 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "member_inner"
   }, [_c("ul", {
-    staticClass: "member_tab"
+    staticClass: "nav nav-pills mb-3 member_tab",
+    attrs: {
+      id: "pills-tab",
+      role: "tablist"
+    }
   }, [_c("li", {
-    staticClass: "active all"
-  }, [_vm._v("全て")]), _vm._v(" "), _c("li", {
-    staticClass: "senki"
-  }, [_vm._v("マネジメント")]), _vm._v(" "), _c("li", {
-    staticClass: "ishou"
-  }, [_vm._v("エンジニア")]), _vm._v(" "), _c("li", {
-    staticClass: "jinji"
-  }, [_vm._v("ビジネス")]), _vm._v(" "), _c("li", {
-    staticClass: "kouhou"
-  }, [_vm._v("オフィス")])]), _vm._v(" "), _c("div", {
+    staticClass: "nav-item",
+    attrs: {
+      role: "presentation"
+    }
+  }, [_c("button", {
+    staticClass: "nav-link active",
+    attrs: {
+      id: "pills-home-tab",
+      "data-toggle": "pill",
+      "data-target": "#pills-home",
+      type: "button",
+      role: "tab",
+      "aria-controls": "pills-home",
+      "aria-selected": "true"
+    }
+  }, [_vm._v("全て")])]), _vm._v(" "), _c("li", {
+    staticClass: "nav-item",
+    attrs: {
+      role: "presentation"
+    }
+  }, [_c("button", {
+    staticClass: "nav-link",
+    attrs: {
+      id: "pills-profile-tab",
+      "data-toggle": "pill",
+      "data-target": "#pills-profile",
+      type: "button",
+      role: "tab",
+      "aria-controls": "pills-profile",
+      "aria-selected": "false"
+    }
+  }, [_vm._v("マネジメント")])]), _vm._v(" "), _c("li", {
+    staticClass: "nav-item",
+    attrs: {
+      role: "presentation"
+    }
+  }, [_c("button", {
+    staticClass: "nav-link",
+    attrs: {
+      id: "pills-contact-tab",
+      "data-toggle": "pill",
+      "data-target": "#pills-contact",
+      type: "button",
+      role: "tab",
+      "aria-controls": "pills-contact",
+      "aria-selected": "false"
+    }
+  }, [_vm._v("エンジニア")])])]), _vm._v(" "), _c("div", {
+    staticClass: "tab-content",
+    attrs: {
+      id: "pills-tabContent"
+    }
+  }, [_c("div", {
+    staticClass: "tab-pane fade active show",
+    attrs: {
+      id: "pills-home",
+      role: "tabpanel",
+      "aria-labelledby": "pills-home-tab"
+    }
+  }, [_c("div", {
+    staticClass: "member_inner"
+  }, [_c("div", {
     staticClass: "member_tab_block"
   }, [_c("ul", {
     staticClass: "member_list"
@@ -12936,185 +13008,6 @@ var staticRenderFns = [function () {
   }, [_vm._v("RYO IKEDA")]), _vm._v(" "), _c("p", {
     staticClass: "part"
   }, [_vm._v("取締役")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li senki on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member03.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("JUNPEI NISHIZAKI")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("取締役")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li senki on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member04.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("TATSUHIRO MIZUKI")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("執行役員")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li kouhou on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member05.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("SUSUMU YONEMURA")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("メディア戦略室長")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li ishou on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member06.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("NAOHIRO TAKAUMA")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("フロントエンドエンジニア")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li ishou on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member07.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("KEISUKE YOSHIMOTO")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("アートディレクター")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li senki on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member08.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("HIROYUKI FUKUNARI")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("ブランディング"), _c("br", {
-    staticClass: "sp"
-  }), _vm._v("プロデューサー")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li senki on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member09.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("TAKASHI SHIN")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("ブランディング"), _c("br", {
-    staticClass: "sp"
-  }), _vm._v("プロデューサー")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li jinji kouhou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -13518,7 +13411,757 @@ var staticRenderFns = [function () {
     staticClass: "part"
   }, [_vm._v("ブランディング"), _c("br", {
     staticClass: "sp"
-  }), _vm._v("プロデューサー")])])])])])])]);
+  }), _vm._v("プロデューサー")])])])])])])]), _vm._v(" "), _c("div", {
+    staticClass: "tab-pane fade",
+    attrs: {
+      id: "pills-profile",
+      role: "tabpanel",
+      "aria-labelledby": "pills-profile-tab"
+    }
+  }, [_c("div", {
+    staticClass: "member_inner",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "member_tab_block",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("ul", {
+    staticClass: "member_list",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("li", {
+    staticClass: "parent_li senki on",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "img_box",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hoverScale",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "thumb",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hvrtxt en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("span", {
+    staticClass: "more_txts",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("img", {
+    attrs: {
+      "data-v-4494d8b0": "",
+      src: "https://tomorrowgate.co.jp/asset/img/member/member03.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("p", {
+    staticClass: "name en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("JUNPEI NISHIZAKI")]), _vm._v(" "), _c("p", {
+    staticClass: "part",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("取締役")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li senki on",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "img_box",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hoverScale",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "thumb",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hvrtxt en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("span", {
+    staticClass: "more_txts",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("img", {
+    attrs: {
+      "data-v-4494d8b0": "",
+      src: "https://tomorrowgate.co.jp/asset/img/member/member04.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("p", {
+    staticClass: "name en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("TATSUHIRO MIZUKI")]), _vm._v(" "), _c("p", {
+    staticClass: "part",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("執行役員")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li senki on",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "img_box",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hoverScale",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "thumb",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hvrtxt en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("span", {
+    staticClass: "more_txts",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("img", {
+    attrs: {
+      "data-v-4494d8b0": "",
+      src: "https://tomorrowgate.co.jp/asset/img/member/member08.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("p", {
+    staticClass: "name en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("HIROYUKI FUKUNARI")]), _vm._v(" "), _c("p", {
+    staticClass: "part",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("ブランディング"), _c("br", {
+    staticClass: "sp",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }), _vm._v("プロデューサー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li senki on",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "img_box",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hoverScale",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "thumb",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hvrtxt en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("span", {
+    staticClass: "more_txts",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("img", {
+    attrs: {
+      "data-v-4494d8b0": "",
+      src: "https://tomorrowgate.co.jp/asset/img/member/member09.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("p", {
+    staticClass: "name en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("TAKASHI SHIN")]), _vm._v(" "), _c("p", {
+    staticClass: "part",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("ブランディング"), _c("br", {
+    staticClass: "sp",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }), _vm._v("プロデューサー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li senki on",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "img_box",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hoverScale",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "thumb",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hvrtxt en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("span", {
+    staticClass: "more_txts",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("img", {
+    attrs: {
+      "data-v-4494d8b0": "",
+      src: "https://tomorrowgate.co.jp/asset/img/member/member18.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("p", {
+    staticClass: "name en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("RISA TACHIBANA")]), _vm._v(" "), _c("p", {
+    staticClass: "part",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("ブランディング"), _c("br", {
+    staticClass: "sp",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }), _vm._v("プロデューサー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li senki on",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "img_box",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hoverScale",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "thumb",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hvrtxt en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("span", {
+    staticClass: "more_txts",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("img", {
+    attrs: {
+      "data-v-4494d8b0": "",
+      src: "https://tomorrowgate.co.jp/asset/img/member/member24.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("p", {
+    staticClass: "name en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("RYO FUMIOKA")]), _vm._v(" "), _c("p", {
+    staticClass: "part",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("ブランディング"), _c("br", {
+    staticClass: "sp",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }), _vm._v("プロデューサー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li senki on",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "img_box",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hoverScale",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "thumb",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("div", {
+    staticClass: "hvrtxt en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("span", {
+    staticClass: "more_txts",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("img", {
+    attrs: {
+      "data-v-4494d8b0": "",
+      src: "https://tomorrowgate.co.jp/asset/img/member/member26.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_c("p", {
+    staticClass: "name en",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("REMI ONISHI")]), _vm._v(" "), _c("p", {
+    staticClass: "part",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }, [_vm._v("ブランディング"), _c("br", {
+    staticClass: "sp",
+    attrs: {
+      "data-v-4494d8b0": ""
+    }
+  }), _vm._v("プロデューサー")])])])])])])]), _vm._v(" "), _c("div", {
+    staticClass: "tab-pane fade",
+    attrs: {
+      id: "pills-contact",
+      role: "tabpanel",
+      "aria-labelledby": "pills-contact-tab"
+    }
+  }, [_c("div", {
+    staticClass: "member_inner"
+  }, [_c("div", {
+    staticClass: "member_tab_block"
+  }, [_c("ul", {
+    staticClass: "member_list"
+  }, [_c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member02.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("RYO IKEDA")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("取締役")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member11.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("HIROKI NISHIKAWA")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("フロントエンドエンジニア")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member13.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("YUJI KUMEGAWA")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("アートディレクター")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member15.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("WEI YEH")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou none on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member16.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("KANAKO OSAKA")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member17.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("YOSHIYASU YAMASHITA")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("クリエイティブ"), _c("br", {
+    staticClass: "sp"
+  }), _vm._v("ディレクター")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member19.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("MIYU KOHARA")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("クリエイティブディレクター")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member20.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("MARIKA NAKAHATA")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member21.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("HSU YU CHENG")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou kouhou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member22.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("SYUHEI MAKIGI")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("コピーライター")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member23.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("YUKI MINE")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+    staticClass: "parent_li ishou on"
+  }, [_c("div", {
+    staticClass: "img_box"
+  }, [_c("div", {
+    staticClass: "hoverScale"
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/member/member25.jpg",
+      alt: ""
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "text_area"
+  }, [_c("p", {
+    staticClass: "name en"
+  }, [_vm._v("LEE SOHEE")]), _vm._v(" "), _c("p", {
+    staticClass: "part"
+  }, [_vm._v("映像クリエイター")])])])])])])])])])]);
 }];
 render._withStripped = true;
 
@@ -24404,7 +25047,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.vTcAG img[data-v-f847ca3e] {\n    height: 52px;\n}\n.vTcAG h3[data-v-f847ca3e] {\n    margin-bottom: 28px;\n    margin-right: 30px;\n}\n.text-field[data-v-f847ca3e] {\n    width: 100%;\n    height: 59px;\n    padding-left: 10px;\n    font-size: 16px;\n    border-radius: 3px;\n    border: solid 1px #d7d7d7;\n    background-color: #ffffff;\n}\n.hIMiPJ span[data-v-f847ca3e] {\n    display: block;\n    margin-bottom: 10px;\n    font-size: 16px;\n    color: #35353B;\n}\n.inputCase[data-v-f847ca3e] {\n    display: flex;\n    margin-bottom: 34px;\n}\n.inputCase>div[data-v-f847ca3e] {\n    margin-right: 44px;\n    min-width: 310px;\n}\n.form-textfield[data-v-f847ca3e] {\n    width: 100%;\n}\n.form-card[data-v-f847ca3e] {\n    padding: 34px 0 65px;\n    min-height: 430px;\n}\n.eXkYNB .container[data-v-f847ca3e] {\n    background: white;\n    max-width: 1280px;\n    margin: 0 auto;\n    padding: 0 15px;\n    padding-bottom: 60px;\n    padding-top: 60px;\n    position: relative;\n}\n.step-form-card[data-v-f847ca3e] {\n    padding: 34px 0 0;\n    margin-bottom: 68px;\n    min-height: 430px;\n    height: 430px;\n    max-height: 430px;\n    width: 664px;\n    max-width: 690px;\n    position: relative;\n    display: flex;\n    flex-direction: column;\n}\n.vTcAG .backgroundFill[data-v-f847ca3e] {\n    background: #f7f7f7;\n    position: fixed;\n    height: 100%;\n    width: 20px;\n    width: calc((100% - 1280px) / 2 + 407px);\n    top: 0;\n    right: 0;\n}\n.eXkYNB[data-v-f847ca3e] {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    background: white;\n    padding-bottom: 70px;\n    min-height: calc(100% - 70px);\n    padding-top: 56px;\n}\n.vTcAG svg[data-v-f847ca3e] {\n    position: fixed;\n    right: calc((100% - 1280px) / 2 + 407px);\n    bottom: 0;\n    height: 100%;\n    width: 10vh;\n}\n.vTcAG[data-v-f847ca3e] {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: -15px;\n}\n.vTcAG .vertical-wrapper[data-v-f847ca3e] {\n    position: relative;\n    z-index: 1;\n    height: 100%;\n    display: flex;\n    align-items: center;\n}\n.vTcAG .wrapper[data-v-f847ca3e] {\n    display: flex;\n    z-index: 1;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: flex-end;\n}\n.vTcAG h3[data-v-f847ca3e],\n.vTcAG p[data-v-f847ca3e],\n.vTcAG span[data-v-f847ca3e] {\n    font-size: 16px;\n    font-weight: bold;\n    text-align: right;\n    color: #b9b9b9;\n}\n.vTcAG h3[data-v-f847ca3e] {\n    margin-bottom: 28px;\n    margin-right: 30px;\n}\n.vTcAG .logo-wrapper[data-v-f847ca3e] {\n    width: 422px;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: flex-end;\n}\n.vTcAG .logo-wrapper>div[data-v-f847ca3e] {\n    margin-right: 30px;\n    margin-bottom: 30px;\n}\n.select-control[data-v-f847ca3e] {\n    padding: 10px;\n    border: solid 1px #d7d7d7;\n    border-radius: 3px;\n    cursor: pointer;\n    min-height: 59px;\n}\n.checkbox-grid[data-v-f847ca3e] {\n    max-width: unset;\n    position: relative;\n    z-index: 5;\n    display: grid;\n    grid-auto-flow: row;\n    grid-template-columns: repeat(auto-fit, 220px);\n    grid-template-rows: repeat(5, auto);\n    margin: 10px 0px;\n}\n.form-textfield[data-v-f847ca3e] {\n    font-size: 16px;\n    border-radius: 3px;\n    border: solid 1px #d7d7d7;\n    background-color: #ffffff;\n    color: #35353B;\n    padding: 10px;\n}\nli[data-v-f847ca3e] {\n\n    position: relative;\n}\nli input[type=radio][data-v-f847ca3e] {\n    position: absolute;\n    visibility: hidden;\n}\nli label[data-v-f847ca3e] {\n    position: relative;\n    font-size: 18px;\n    padding: 0px 25px 0px 35px;\n    z-index: 9;\n    cursor: pointer;\n    -webkit-transition: all 0.25s linear;\n}\nli .check[data-v-f847ca3e] {\n    display: block;\n    position: absolute;\n    border: 3px solid #AAAAAA;\n    border-radius: 100%;\n    height: 21px;\n    width: 21px;\n    top: 6px;\n    left: 0px;\n    z-index: 5;\n    transition: border .25s linear;\n    -webkit-transition: border .25s linear;\n}\nli .check[data-v-f847ca3e]::before {\n    display: block;\n    position: absolute;\n    content: '';\n    border-radius: 100%;\n    height: 0.7rem;\n    width: 0.7rem;\n    top: 2px;\n    left: 2px;\n    margin: auto;\n    transition: background 0.25s linear;\n    -webkit-transition: background 0.25s linear;\n}\ninput[type=radio]:checked~.check[data-v-f847ca3e] {\n    border: 3px solid rgb(57, 108, 162);\n}\ninput[type=radio]:checked~.check[data-v-f847ca3e]::before {\n    background: rgb(57, 108, 162);\n}\n#heading[data-v-f847ca3e] {\n\n    font-size: 26px;\n    font-weight: bold;\n    color: #282828;\n    text-align: left;\n}\n#msform[data-v-f847ca3e] {\n    position: relative;\n}\n.form-card[data-v-f847ca3e] {\n    text-align: left\n}\n#msform fieldset[data-v-f847ca3e]:not(:first-of-type) {\n    display: none\n}\n#msform .action-button[data-v-f847ca3e] {\n    width: 170px;\n    height: 67px;\n    background: rgb(57, 108, 162);\n    font-weight: bold;\n    color: white;\n    border: 0 none;\n    border-radius: 0px;\n    cursor: pointer;\n    padding: 10px 5px;\n    margin: 10px 0px 10px 5px;\n    float: left;\n    text-align: center;\n}\n#msform .action-button[data-v-f847ca3e]:hover,\n#msform .action-button[data-v-f847ca3e]:focus {\n    background-color: var(--textcolor);\n}\n#msform .action-button-previous[data-v-f847ca3e] {\n    width: 100px;\n    height: 67px;\n    font-size: 20px;\n    font-weight: bold;\n    color: rgb(57, 108, 162);\n    border: 0 none;\n    border-radius: 0px;\n    cursor: pointer;\n    padding: 10px 5px;\n    margin: 10px 5px 10px 0px;\n    float: left;\n    text-align: center;\n}\n.card[data-v-f847ca3e] {\n    z-index: 0;\n    border: none;\n    position: relative\n}\n.fs-title[data-v-f847ca3e] {\n    font-size: 25px;\n    color: #673AB7;\n    margin-bottom: 15px;\n    font-weight: normal;\n    text-align: left\n}\n.purple-text[data-v-f847ca3e] {\n    color: #673AB7;\n    font-weight: normal\n}\n.steps[data-v-f847ca3e] {\n    font-size: 18px;\n    color: #b9b9b9;\n    font-weight: normal;\n}\n.fieldlabels[data-v-f847ca3e] {\n    color: gray;\n    text-align: left\n}\n.fit-image[data-v-f847ca3e] {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover\n}\n.css-checkbox[data-v-f847ca3e] {\n    position: absolute;\n    overflow: hidden;\n    clip: rect(0 0 0 0);\n    height: 1px;\n    width: 1px;\n    margin: -1px;\n    padding: 0;\n    border: 0;\n}\n#inputPreview[data-v-f847ca3e] {\n    display: flex;\n    gap: 20px;\n}\n.css-checkbox+label[data-v-f847ca3e] {\n    position: relative;\n    font-size: 18px;\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    height: 19px;\n    color: #282828;\n}\n.css-checkbox+label[data-v-f847ca3e]::before {\n    content: \" \";\n    display: inline-block;\n    vertical-align: middle;\n    margin-right: 10px;\n    width: 20px;\n    height: 20px;\n    background-color: white;\n    border-width: 1px;\n    border-style: solid;\n    border-color: rgb(57, 108, 162);\n    border-radius: 2px;\n    box-shadow: none;\n}\n.css-checkbox:checked+label[data-v-f847ca3e]::after {\n    content: \" \";\n    background-image: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMDM5NWNhIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+\");\n    background-repeat: no-repeat;\n    background-size: 10px 10px;\n    background-position: center center;\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-left: 0px;\n    left: 0px;\n    top: 0px;\n    text-align: center;\n    background-color: transparent;\n    font-size: 10px;\n    height: 19px;\n    width: 19px;\n}\n@media screen and (max-width: 1149px) and (min-width: 769px) {\n.step-form-card[data-v-f847ca3e] {\n        margin: auto;\n        padding-top: 0px;\n}\n.eXkYNB[data-v-f847ca3e] {\n        padding-top: 20px;\n}\n}\n@media (max-width: 1150px) {\n.vTcAG[data-v-f847ca3e] {\n        display: none;\n}\n}\n@media (max-width: 1300px) {\n.inEYMP .container[data-v-f847ca3e] {\n        padding-left: 32px;\n        padding-right: 32px;\n}\n}\n@media (max-width: 768px) {\n.step-form-card[data-v-f847ca3e] {\n        width: 100%;\n        margin: auto;\n}\n.vTcAG img[data-v-f847ca3e] {\n        height: 35px;\n}\n.inputCase[data-v-f847ca3e] {\n        flex-direction: column;\n}\n.eXkYNB .container[data-v-f847ca3e] {\n        padding-top: 0px;\n        padding-bottom: 0px;\n}\n.vTcAG .vertical-wrapper[data-v-f847ca3e] {\n        background: #f7f7f7;\n        width: calc(100% + 30px);\n        margin-left: -15px;\n        padding-top: 40px;\n        display: flex;\n        justify-content: center;\n}\n.inEYMP .background[data-v-f847ca3e] {\n        flex-grow: 1;\n}\n.vTcAG[data-v-f847ca3e] {\n        position: unset;\n        width: 100%;\n        display: flex;\n        flex-direction: column-reverse;\n        margin-top: 16px;\n}\n.vTcAG svg[data-v-f847ca3e] {\n        position: unset;\n        width: calc(100% + 30px);\n        margin-left: -15px;\n        height: 7vw;\n}\n.eXkYNB[data-v-f847ca3e] {\n        padding-bottom: 0;\n}\n.step-form-card[data-v-f847ca3e] {\n        height: 100%;\n        max-height: 100%;\n}\n.vTcAG .backgroundFill[data-v-f847ca3e] {\n        position: unset;\n}\n.vTcAG .logo-wrapper[data-v-f847ca3e] {\n        width: 100%;\n        justify-content: center;\n        padding-bottom: 16px;\n}\n.vTcAG .wrapper h3[data-v-f847ca3e] {\n        font-size: 14px;\n        margin-right: 0;\n        margin-bottom: 19px;\n        width: 100%;\n        text-align: center;\n}\n.inputCase>div[data-v-f847ca3e] {\n        max-width: 100%;\n}\n#msform .action-button-previous[data-v-f847ca3e],\n    #msform .action-button[data-v-f847ca3e] {\n        width: 100%;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.vTcAG img[data-v-f847ca3e] {\n    height: 52px;\n}\n.vTcAG h3[data-v-f847ca3e] {\n    margin-bottom: 28px;\n    margin-right: 30px;\n}\n.text-field[data-v-f847ca3e] {\n    width: 100%;\n    height: 59px;\n    padding-left: 10px;\n    font-size: 16px;\n    border-radius: 3px;\n    border: solid 1px #d7d7d7;\n    background-color: #ffffff;\n}\n.hIMiPJ span[data-v-f847ca3e] {\n    display: block;\n    margin-bottom: 10px;\n    font-size: 16px;\n    color: #35353B;\n}\n.inputCase[data-v-f847ca3e] {\n    display: flex;\n    margin-bottom: 34px;\n}\n.inputCase>div[data-v-f847ca3e] {\n    margin-right: 44px;\n    min-width: 310px;\n}\n.form-textfield[data-v-f847ca3e] {\n    width: 100%;\n}\n.form-card[data-v-f847ca3e] {\n    padding: 34px 0 65px;\n    min-height: 430px;\n}\n.eXkYNB .container[data-v-f847ca3e] {\n    background: white;\n    max-width: 1280px;\n    margin: 0 auto;\n    padding: 0 15px;\n    padding-bottom: 60px;\n    padding-top: 60px;\n    position: relative;\n}\n.step-form-card[data-v-f847ca3e] {\n    padding: 34px 0 0;\n    margin-bottom: 68px;\n    min-height: 430px;\n    height: 430px;\n    max-height: 430px;\n    width: 664px;\n    max-width: 690px;\n    position: relative;\n    display: flex;\n    flex-direction: column;\n}\n.vTcAG .backgroundFill[data-v-f847ca3e] {\n    background: #f7f7f7;\n    position: fixed;\n    height: 100%;\n    width: 20px;\n    width: calc((100% - 1280px) / 2 + 407px);\n    top: 0;\n    right: 0;\n}\n.eXkYNB[data-v-f847ca3e] {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    background: white;\n    padding-bottom: 70px;\n    min-height: calc(100% - 70px);\n    padding-top: 56px;\n}\n.vTcAG svg[data-v-f847ca3e] {\n    position: fixed;\n    right: calc((100% - 1280px) / 2 + 407px);\n    bottom: 0;\n    height: 100%;\n    width: 10vh;\n}\n.vTcAG[data-v-f847ca3e] {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: -15px;\n}\n.vTcAG .vertical-wrapper[data-v-f847ca3e] {\n    position: relative;\n    z-index: 1;\n    height: 100%;\n    display: flex;\n    align-items: center;\n}\n.vTcAG .wrapper[data-v-f847ca3e] {\n    display: flex;\n    z-index: 1;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: flex-end;\n}\n.vTcAG h3[data-v-f847ca3e],\n.vTcAG p[data-v-f847ca3e],\n.vTcAG span[data-v-f847ca3e] {\n    font-size: 16px;\n    font-weight: bold;\n    text-align: right;\n    color: #b9b9b9;\n}\n.vTcAG h3[data-v-f847ca3e] {\n    margin-bottom: 28px;\n    margin-right: 30px;\n}\n.vTcAG .logo-wrapper[data-v-f847ca3e] {\n    width: 422px;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: flex-end;\n}\n.vTcAG .logo-wrapper>div[data-v-f847ca3e] {\n    margin-right: 30px;\n    margin-bottom: 30px;\n}\n.select-control[data-v-f847ca3e] {\n    padding: 10px;\n    border: solid 1px #d7d7d7;\n    border-radius: 3px;\n    cursor: pointer;\n    min-height: 59px;\n}\n.checkbox-grid[data-v-f847ca3e] {\n    max-width: unset;\n    position: relative;\n    z-index: 5;\n    display: grid;\n    grid-auto-flow: row;\n    grid-template-columns: repeat(auto-fit, 220px);\n    grid-template-rows: repeat(5, auto);\n    margin: 10px 0px;\n}\n.form-textfield[data-v-f847ca3e] {\n    font-size: 16px;\n    border-radius: 3px;\n    border: solid 1px #d7d7d7;\n    background-color: #ffffff;\n    color: #35353B;\n    padding: 10px;\n}\nli[data-v-f847ca3e] {\n\n    position: relative;\n}\nli input[type=radio][data-v-f847ca3e] {\n    position: absolute;\n    visibility: hidden;\n}\nli label[data-v-f847ca3e] {\n    position: relative;\n    font-size: 18px;\n    padding: 0px 25px 0px 35px;\n    z-index: 9;\n    cursor: pointer;\n    -webkit-transition: all 0.25s linear;\n}\nli .check[data-v-f847ca3e] {\n    display: block;\n    position: absolute;\n    border: 3px solid #AAAAAA;\n    border-radius: 100%;\n    height: 21px;\n    width: 22px;\n    top: 2px;\n    left: 0px;\n    z-index: 5;\n    transition: border .25s linear;\n    -webkit-transition: border .25s linear;\n}\nli .check[data-v-f847ca3e]::before {\n    display: block;\nposition: absolute;\ncontent: '';\nborder-radius: 100%;\nheight: 0.7rem;\nwidth: 0.7rem;\ntop: 2px;\nleft: 3px;\nmargin: auto;\ntransition: background 0.25s linear;\n-webkit-transition: background 0.25s linear;\n}\ninput[type=radio]:checked~.check[data-v-f847ca3e] {\n    border: 3px solid rgb(57, 108, 162);\n}\ninput[type=radio]:checked~.check[data-v-f847ca3e]::before {\n    background: rgb(57, 108, 162);\n}\n#heading[data-v-f847ca3e] {\n\n    font-size: 26px;\n    font-weight: bold;\n    color: #282828;\n    text-align: left;\n}\n#msform[data-v-f847ca3e] {\n    position: relative;\n}\n.form-card[data-v-f847ca3e] {\n    text-align: left\n}\n#msform fieldset[data-v-f847ca3e]:not(:first-of-type) {\n    display: none\n}\n#msform .action-button[data-v-f847ca3e] {\n    width: 170px;\n    height: 67px;\n    background: rgb(57, 108, 162);\n    font-weight: bold;\n    color: white;\n    border: 0 none;\n    border-radius: 0px;\n    cursor: pointer;\n    padding: 10px 5px;\n    margin: 10px 0px 10px 5px;\n    float: left;\n    text-align: center;\n}\n#msform .action-button[data-v-f847ca3e]:hover,\n#msform .action-button[data-v-f847ca3e]:focus {\n    background-color: var(--textcolor);\n}\n#msform .action-button-previous[data-v-f847ca3e] {\n    width: 100px;\n    height: 67px;\n    font-size: 20px;\n    font-weight: bold;\n    color: rgb(57, 108, 162);\n    border: 0 none;\n    border-radius: 0px;\n    cursor: pointer;\n    padding: 10px 5px;\n    margin: 10px 5px 10px 0px;\n    float: left;\n    text-align: center;\n}\n.card[data-v-f847ca3e] {\n    z-index: 0;\n    border: none;\n    position: relative\n}\n.fs-title[data-v-f847ca3e] {\n    font-size: 25px;\n    color: #673AB7;\n    margin-bottom: 15px;\n    font-weight: normal;\n    text-align: left\n}\n.purple-text[data-v-f847ca3e] {\n    color: #673AB7;\n    font-weight: normal\n}\n.steps[data-v-f847ca3e] {\n    font-size: 18px;\n    color: #b9b9b9;\n    font-weight: normal;\n}\n.fieldlabels[data-v-f847ca3e] {\n    color: gray;\n    text-align: left\n}\n.fit-image[data-v-f847ca3e] {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover\n}\n.css-checkbox[data-v-f847ca3e] {\n    position: absolute;\n    overflow: hidden;\n    clip: rect(0 0 0 0);\n    height: 1px;\n    width: 1px;\n    margin: -1px;\n    padding: 0;\n    border: 0;\n}\n#inputPreview[data-v-f847ca3e] {\n    display: flex;\n    gap: 20px;\n}\n.css-checkbox+label[data-v-f847ca3e] {\n    position: relative;\n    font-size: 16px;\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    height: 19px;\n    color: #282828;\n}\n.css-checkbox+label[data-v-f847ca3e]::before {\n    content: \" \";\n    display: inline-block;\n    vertical-align: middle;\n    margin-right: 10px;\n    width: 20px;\n    height: 20px;\n    background-color: white;\n    border-width: 1px;\n    border-style: solid;\n    border-color: rgb(57, 108, 162);\n    border-radius: 2px;\n    box-shadow: none;\n}\n.css-checkbox:checked+label[data-v-f847ca3e]::after {\n    content: \" \";\n    background-image: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMDM5NWNhIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+\");\n    background-repeat: no-repeat;\n    background-size: 10px 10px;\n    background-position: center center;\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-left: 0px;\n    left: 0px;\n    top: 0px;\n    text-align: center;\n    background-color: transparent;\n    font-size: 10px;\n    height: 19px;\n    width: 19px;\n}\n@media screen and (max-width: 1149px) and (min-width: 769px) {\n.step-form-card[data-v-f847ca3e] {\n        margin: auto;\n        padding-top: 0px;\n}\n.eXkYNB[data-v-f847ca3e] {\n        padding-top: 20px;\n}\n}\n@media (max-width: 1150px) {\n.vTcAG[data-v-f847ca3e] {\n        display: none;\n}\n}\n@media (max-width: 1300px) {\n.inEYMP .container[data-v-f847ca3e] {\n        padding-left: 32px;\n        padding-right: 32px;\n}\n}\n@media (max-width: 768px) {\n.step-form-card[data-v-f847ca3e] {\n        width: 100%;\n        margin: auto;\n}\n.vTcAG img[data-v-f847ca3e] {\n        height: 35px;\n}\n.inputCase[data-v-f847ca3e] {\n        flex-direction: column;\n}\n.eXkYNB .container[data-v-f847ca3e] {\n        padding-top: 0px;\n        padding-bottom: 0px;\n}\n.vTcAG .vertical-wrapper[data-v-f847ca3e] {\n        background: #f7f7f7;\n        width: calc(100% + 30px);\n        margin-left: -15px;\n        padding-top: 40px;\n        display: flex;\n        justify-content: center;\n}\n.inEYMP .background[data-v-f847ca3e] {\n        flex-grow: 1;\n}\n.vTcAG[data-v-f847ca3e] {\n        position: unset;\n        width: 100%;\n        display: flex;\n        flex-direction: column-reverse;\n        margin-top: 16px;\n}\n.vTcAG svg[data-v-f847ca3e] {\n        position: unset;\n        width: calc(100% + 30px);\n        margin-left: -15px;\n        height: 7vw;\n}\n.eXkYNB[data-v-f847ca3e] {\n        padding-bottom: 0;\n}\n.step-form-card[data-v-f847ca3e] {\n        height: 100%;\n        max-height: 100%;\n}\n.vTcAG .backgroundFill[data-v-f847ca3e] {\n        position: unset;\n}\n.vTcAG .logo-wrapper[data-v-f847ca3e] {\n        width: 100%;\n        justify-content: center;\n        padding-bottom: 16px;\n}\n.vTcAG .wrapper h3[data-v-f847ca3e] {\n        font-size: 14px;\n        margin-right: 0;\n        margin-bottom: 19px;\n        width: 100%;\n        text-align: center;\n}\n.inputCase>div[data-v-f847ca3e] {\n        max-width: 100%;\n}\n#msform .action-button-previous[data-v-f847ca3e],\n    #msform .action-button[data-v-f847ca3e] {\n        width: 100%;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24452,7 +25095,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.member--index[data-v-4494d8b0] {\n    padding: 60px 10% 140px;\n}\n.member--index .member_inner .member_tab[data-v-4494d8b0] {\n    display: flex;\n}\nul[data-v-4494d8b0],\nli[data-v-4494d8b0] {\n    list-style: none;\n}\n.member--index .member_inner .member_tab_block .member_list[data-v-4494d8b0] {\n    display: flex;\n    justify-content: flex-start;\n    flex-wrap: wrap;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li.on[data-v-4494d8b0] {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.member_list .hoverScale[data-v-4494d8b0] {\n    cursor: pointer;\n}\n.member_list .hoverScale .thumb[data-v-4494d8b0] {\n    overflow: hidden;\n    position: relative;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt[data-v-4494d8b0] {\n    opacity: 1;\n    transform: scale(1.1);\n}\n.member_list .hoverScale .thumb .hvrtxt[data-v-4494d8b0] {\n    position: absolute;\n    top: 50%;\n    left: 40%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.member_list .hoverScale .thumb .hvrtxt .more_txts[data-v-4494d8b0] {\n    color: #dadada;\n    font-size: 14px;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: capitalize;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.member_list .hoverScale .thumb .scaleImg[data-v-4494d8b0] {\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.member_list .hoverScale .thumb[data-v-4494d8b0]::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.6);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.member_list .hoverScale:hover .thumb[data-v-4494d8b0]::after {\n        opacity: 1;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt[data-v-4494d8b0] {\n        transform: translate(-34%, -50%);\n        opacity: 1;\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt .more_txtss[data-v-4494d8b0]::after,\n    .member_list .hoverScale:hover .thumb .hvrtxt .more_txtss[data-v-4494d8b0]::before {\n        right: -5px;\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt .more_txtss .underline[data-v-4494d8b0]::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .scaleImg[data-v-4494d8b0] {\n        transform: scale(1.1);\n}\n}\n.hoverScaleIcon[data-v-4494d8b0] {\n    transition: 0.35s;\n    display: block;\n}\n.hoverScaleIcon img[data-v-4494d8b0] {\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.hoverScaleIcon[data-v-4494d8b0]:hover {\n        transform: scale(1.2);\n}\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area[data-v-4494d8b0] {\n    margin-top: 20px;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .name[data-v-4494d8b0] {\n    font-size: 18px;\n    font-weight: bold;\n    letter-spacing: 0.05px;\n    font-family: DIN-Bold;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part[data-v-4494d8b0] {\n    letter-spacing: 0.04px;\n    font-size: 13px;\n    font-family: NotoSansJP-Regular;\n    margin-top: 8px;\n    font-weight: 400;\n    color: black;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0] {\n    position: relative;\n    color: #000;\n    font-size: 14px;\n    letter-spacing: .04em;\n    cursor: pointer;\n    font-family: NotoSansJP-Medium;\n    line-height: 1.4;\n    font-weight: 500;\n}\n.member--index .member_inner .member_tab li.active[data-v-4494d8b0]::after {\n    transform-origin: left top;\n    transform: scale(1, 1);\n}\n*[data-v-4494d8b0]:before,\n*[data-v-4494d8b0]:after {\n    box-sizing: inherit;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0]::after {\n    content: \"\";\n    background: #000;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.member--index .member_inner .member_tab li[data-v-4494d8b0]:hover::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n}\n}\n.hoverScaleIcon[data-v-4494d8b0] {\n    transition: 0.35s;\n    display: block;\n}\n.hoverScaleIcon img[data-v-4494d8b0] {\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\nimg[data-v-4494d8b0] {\n    max-width: 100%;\n    height: auto;\n    vertical-align: bottom;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li[data-v-4494d8b0] {\n    transition: 0.3s;\n    transform: translateY(2%);\n    opacity: 0;\n    margin-top: 60px;\n    width: 19%;\n    margin-right: 1%;\n}\n@media screen and (min-width: 897px) {\n.member--index .member_inner .member_tab li[data-v-4494d8b0]:not(:last-child) {\n        margin-right: 30px;\n}\n}\n@media screen and (max-width: 896px) {\n.member--index[data-v-4494d8b0] {\n        padding: 40px 5% 80px;\n}\n.member--index .member_inner .member_tab[data-v-4494d8b0] {\n        justify-content: space-between;\n        flex-wrap: wrap;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0] {\n        width: 48%;\n        padding-left: 10px;\n        margin-bottom: 20px;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0]::before {\n        content: \"\";\n        width: 100%;\n        height: 1px;\n        background: #dadada;\n        position: absolute;\n        bottom: -5px;\n        left: 0;\n}\n.member--index .member_inner .member_tab_block .member_list[data-v-4494d8b0] {\n        justify-content: space-between;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li[data-v-4494d8b0] {\n        margin-top: 50px;\n        width: 48%;\n        margin-right: 0%;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .name[data-v-4494d8b0] {\n        font-size: 14px;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part[data-v-4494d8b0] {\n        font-size: 12px;\n        margin-top: 10px;\n        line-height: 1.5;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.member--index[data-v-4494d8b0] {\n    padding: 60px 10% 140px;\n}\n.member--index .member_inner .member_tab[data-v-4494d8b0] {\n    display: flex;\n}\nul[data-v-4494d8b0],\nli[data-v-4494d8b0] {\n    list-style: none;\n}\n.member--index .member_inner .member_tab_block .member_list[data-v-4494d8b0] {\n    display: flex;\n    justify-content: flex-start;\n    flex-wrap: wrap;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li.on[data-v-4494d8b0] {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.member_list .hoverScale[data-v-4494d8b0] {\n    cursor: pointer;\n}\n.member_list .hoverScale .thumb[data-v-4494d8b0] {\n    overflow: hidden;\n    position: relative;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt[data-v-4494d8b0] {\n    opacity: 1;\n    transform: scale(1.1);\n}\n.member_list .hoverScale .thumb .hvrtxt[data-v-4494d8b0] {\n    position: absolute;\n    top: 50%;\n    left: 40%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.member_list .hoverScale .thumb .hvrtxt .more_txts[data-v-4494d8b0] {\n    color: #dadada;\n    font-size: 14px;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: capitalize;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.member_list .hoverScale .thumb .scaleImg[data-v-4494d8b0] {\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.member_list .hoverScale .thumb[data-v-4494d8b0]::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.6);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.member_list .hoverScale:hover .thumb[data-v-4494d8b0]::after {\n        opacity: 1;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt[data-v-4494d8b0] {\n        transform: translate(-34%, -50%);\n        opacity: 1;\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt .more_txtss[data-v-4494d8b0]::after,\n    .member_list .hoverScale:hover .thumb .hvrtxt .more_txtss[data-v-4494d8b0]::before {\n        right: -5px;\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt .more_txtss .underline[data-v-4494d8b0]::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .scaleImg[data-v-4494d8b0] {\n        transform: scale(1.1);\n}\n}\n.hoverScaleIcon[data-v-4494d8b0] {\n    transition: 0.35s;\n    display: block;\n}\n.hoverScaleIcon img[data-v-4494d8b0] {\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.hoverScaleIcon[data-v-4494d8b0]:hover {\n        transform: scale(1.2);\n}\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area[data-v-4494d8b0] {\n    margin-top: 20px;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .name[data-v-4494d8b0] {\n    font-size: 18px;\n    font-weight: bold;\n    letter-spacing: 0.05px;\n    font-family: DIN-Bold;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part[data-v-4494d8b0] {\n    letter-spacing: 0.04px;\n    font-size: 13px;\n    font-family: NotoSansJP-Regular;\n    margin-top: 8px;\n    font-weight: 400;\n    color: black;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0] {\n    position: relative;\n    color: #000;\n    font-size: 14px;\n    letter-spacing: .04em;\n    cursor: pointer;\n    font-family: NotoSansJP-Medium;\n    line-height: 1.4;\n    font-weight: 500;\n}\n.member--index .member_inner .member_tab li.active[data-v-4494d8b0]::after {\n    transform-origin: left top;\n    transform: scale(1, 1);\n}\n*[data-v-4494d8b0]:before,\n*[data-v-4494d8b0]:after {\n    box-sizing: inherit;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0]::after {\n    content: \"\";\n    background: #000;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.member--index .member_inner .member_tab li[data-v-4494d8b0]:hover::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n}\n}\n.hoverScaleIcon[data-v-4494d8b0] {\n    transition: 0.35s;\n    display: block;\n}\n.hoverScaleIcon img[data-v-4494d8b0] {\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\nimg[data-v-4494d8b0] {\n    max-width: 100%;\n    height: auto;\n    vertical-align: bottom;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li[data-v-4494d8b0] {\n    transition: 0.3s;\n    transform: translateY(2%);\n    opacity: 0;\n    margin-top: 60px;\n    width: 19%;\n    margin-right: 1%;\n}\n.nav-pills .nav-link.active[data-v-4494d8b0]{\n    background: transparent;\n    color: #000;\n}\n@media screen and (min-width: 897px) {\n.member--index .member_inner .member_tab li[data-v-4494d8b0]:not(:last-child) {\n        margin-right: 30px;\n}\n}\n@media screen and (max-width: 896px) {\n.member--index[data-v-4494d8b0] {\n        padding: 40px 5% 80px;\n}\n.member--index .member_inner .member_tab[data-v-4494d8b0] {\n        justify-content: space-between;\n        flex-wrap: wrap;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0] {\n        width: 48%;\n        padding-left: 10px;\n        margin-bottom: 20px;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0]::before {\n        content: \"\";\n        width: 100%;\n        height: 1px;\n        background: #dadada;\n        position: absolute;\n        bottom: -5px;\n        left: 0;\n}\n.member--index .member_inner .member_tab_block .member_list[data-v-4494d8b0] {\n        justify-content: space-between;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li[data-v-4494d8b0] {\n        margin-top: 50px;\n        width: 48%;\n        margin-right: 0%;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .name[data-v-4494d8b0] {\n        font-size: 14px;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part[data-v-4494d8b0] {\n        font-size: 12px;\n        margin-top: 10px;\n        line-height: 1.5;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

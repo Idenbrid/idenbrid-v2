@@ -10,14 +10,31 @@
             </div>
             <div class="member--index highlight_blk">
                 <div class="member_inner">
-                    <ul class="member_tab">
+                    <ul class="nav nav-pills mb-3 member_tab" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                data-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">全て</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">マネジメント</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">エンジニア</button>
+                        </li>
+                    </ul>
+                    <!-- <ul class="member_tab">
                         <li class="active all">全て</li>
                         <li class="senki">マネジメント</li>
                         <li class="ishou">エンジニア</li>
                         <li class="jinji">ビジネス</li>
                         <li class="kouhou">オフィス</li>
-                    </ul>
-                    <div class="member_tab_block">
+                    </ul> -->
+                    <!-- <div class="member_tab_block">
                         <ul class="member_list">
                             <li class="parent_li all on">
                                 <div class="img_box">
@@ -516,7 +533,781 @@
                                 </div>
                             </li>
                         </ul>
+                    </div> -->
+               
+
+                     <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+               
+                <div class="member_inner">
+                    <div class="member_tab_block">
+                        <ul class="member_list">
+                            <li class="parent_li all on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member01.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">KOHEI NISHIZAKI</p>
+                                    <p class="part">代表取締役</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member02.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">RYO IKEDA</p>
+                                    <p class="part">取締役</p>
+                                </div>
+                            </li>
+                           
+                            <li class="parent_li jinji kouhou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member10.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">MIHO OSAKABE</p>
+                                    <p class="part">広報担当</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member11.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">HIROKI NISHIKAWA</p>
+                                    <p class="part">フロントエンドエンジニア</p>
+                                </div>
+                            </li>
+                            <li class="parent_li jinji on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member12.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">AYUMI URASHITA</p>
+                                    <p class="part">採用担当</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member13.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">YUJI KUMEGAWA</p>
+                                    <p class="part">アートディレクター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member15.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">WEI YEH</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou none on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member16.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">KANAKO OSAKA</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member17.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">YOSHIYASU YAMASHITA</p>
+                                    <p class="part">クリエイティブ<br class="sp">ディレクター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li senki on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member18.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">RISA TACHIBANA</p>
+                                    <p class="part">ブランディング<br class="sp">プロデューサー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member19.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">MIYU KOHARA</p>
+                                    <p class="part">クリエイティブディレクター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member20.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">MARIKA NAKAHATA</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member21.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">HSU YU CHENG</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou kouhou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member22.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">SYUHEI MAKIGI</p>
+                                    <p class="part">コピーライター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member23.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">YUKI MINE</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li senki on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member24.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">RYO FUMIOKA</p>
+                                    <p class="part">ブランディング<br class="sp">プロデューサー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member25.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">LEE SOHEE</p>
+                                    <p class="part">映像クリエイター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li senki on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member26.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">REMI ONISHI</p>
+                                    <p class="part">ブランディング<br class="sp">プロデューサー</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+              
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                   
+                        <div data-v-4494d8b0="" class="member_inner">
+                            <div data-v-4494d8b0="" class="member_tab_block">
+                                <ul data-v-4494d8b0="" class="member_list">
+                                   
+                                    <li data-v-4494d8b0="" class="parent_li senki on">
+                                        <div data-v-4494d8b0="" class="img_box">
+                                            <div data-v-4494d8b0="" class="hoverScale">
+                                                <div data-v-4494d8b0="" class="thumb">
+                                                    <div data-v-4494d8b0="" class="hvrtxt en"><span data-v-4494d8b0=""
+                                                            class="more_txts">nspirational quotes and
+                                                            business advice from uber successful CEO’s. Bookmark it now
+                                                            to keep
+                                                            the inspiration flowing!</span></div>
+                                                    <div data-v-4494d8b0="" class="scaleImg"><img data-v-4494d8b0=""
+                                                            src="https://tomorrowgate.co.jp/asset/img/member/member03.jpg"
+                                                            alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-4494d8b0="" class="text_area">
+                                            <p data-v-4494d8b0="" class="name en">JUNPEI NISHIZAKI</p>
+                                            <p data-v-4494d8b0="" class="part">取締役</p>
+                                        </div>
+                                    </li>
+                                    <li data-v-4494d8b0="" class="parent_li senki on">
+                                        <div data-v-4494d8b0="" class="img_box">
+                                            <div data-v-4494d8b0="" class="hoverScale">
+                                                <div data-v-4494d8b0="" class="thumb">
+                                                    <div data-v-4494d8b0="" class="hvrtxt en"><span data-v-4494d8b0=""
+                                                            class="more_txts">nspirational quotes and
+                                                            business advice from uber successful CEO’s. Bookmark it now
+                                                            to keep
+                                                            the inspiration flowing!</span></div>
+                                                    <div data-v-4494d8b0="" class="scaleImg"><img data-v-4494d8b0=""
+                                                            src="https://tomorrowgate.co.jp/asset/img/member/member04.jpg"
+                                                            alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-4494d8b0="" class="text_area">
+                                            <p data-v-4494d8b0="" class="name en">TATSUHIRO MIZUKI</p>
+                                            <p data-v-4494d8b0="" class="part">執行役員</p>
+                                        </div>
+                                    </li>
+                                    <li data-v-4494d8b0="" class="parent_li senki on">
+                                        <div data-v-4494d8b0="" class="img_box">
+                                            <div data-v-4494d8b0="" class="hoverScale">
+                                                <div data-v-4494d8b0="" class="thumb">
+                                                    <div data-v-4494d8b0="" class="hvrtxt en"><span data-v-4494d8b0=""
+                                                            class="more_txts">nspirational quotes and
+                                                            business advice from uber successful CEO’s. Bookmark it now
+                                                            to keep
+                                                            the inspiration flowing!</span></div>
+                                                    <div data-v-4494d8b0="" class="scaleImg"><img data-v-4494d8b0=""
+                                                            src="https://tomorrowgate.co.jp/asset/img/member/member08.jpg"
+                                                            alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-4494d8b0="" class="text_area">
+                                            <p data-v-4494d8b0="" class="name en">HIROYUKI FUKUNARI</p>
+                                            <p data-v-4494d8b0="" class="part">ブランディング<br data-v-4494d8b0=""
+                                                    class="sp">プロデューサー</p>
+                                        </div>
+                                    </li>
+                                    <li data-v-4494d8b0="" class="parent_li senki on">
+                                        <div data-v-4494d8b0="" class="img_box">
+                                            <div data-v-4494d8b0="" class="hoverScale">
+                                                <div data-v-4494d8b0="" class="thumb">
+                                                    <div data-v-4494d8b0="" class="hvrtxt en"><span data-v-4494d8b0=""
+                                                            class="more_txts">nspirational quotes and
+                                                            business advice from uber successful CEO’s. Bookmark it now
+                                                            to keep
+                                                            the inspiration flowing!</span></div>
+                                                    <div data-v-4494d8b0="" class="scaleImg"><img data-v-4494d8b0=""
+                                                            src="https://tomorrowgate.co.jp/asset/img/member/member09.jpg"
+                                                            alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-4494d8b0="" class="text_area">
+                                            <p data-v-4494d8b0="" class="name en">TAKASHI SHIN</p>
+                                            <p data-v-4494d8b0="" class="part">ブランディング<br data-v-4494d8b0=""
+                                                    class="sp">プロデューサー</p>
+                                        </div>
+                                    </li>
+                                    <li data-v-4494d8b0="" class="parent_li senki on">
+                                        <div data-v-4494d8b0="" class="img_box">
+                                            <div data-v-4494d8b0="" class="hoverScale">
+                                                <div data-v-4494d8b0="" class="thumb">
+                                                    <div data-v-4494d8b0="" class="hvrtxt en"><span data-v-4494d8b0=""
+                                                            class="more_txts">nspirational quotes and
+                                                            business advice from uber successful CEO’s. Bookmark it now
+                                                            to keep
+                                                            the inspiration flowing!</span></div>
+                                                    <div data-v-4494d8b0="" class="scaleImg"><img data-v-4494d8b0=""
+                                                            src="https://tomorrowgate.co.jp/asset/img/member/member18.jpg"
+                                                            alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-4494d8b0="" class="text_area">
+                                            <p data-v-4494d8b0="" class="name en">RISA TACHIBANA</p>
+                                            <p data-v-4494d8b0="" class="part">ブランディング<br data-v-4494d8b0=""
+                                                    class="sp">プロデューサー</p>
+                                        </div>
+                                    </li>
+                                    <li data-v-4494d8b0="" class="parent_li senki on">
+                                        <div data-v-4494d8b0="" class="img_box">
+                                            <div data-v-4494d8b0="" class="hoverScale">
+                                                <div data-v-4494d8b0="" class="thumb">
+                                                    <div data-v-4494d8b0="" class="hvrtxt en"><span data-v-4494d8b0=""
+                                                            class="more_txts">nspirational quotes and
+                                                            business advice from uber successful CEO’s. Bookmark it now
+                                                            to keep
+                                                            the inspiration flowing!</span></div>
+                                                    <div data-v-4494d8b0="" class="scaleImg"><img data-v-4494d8b0=""
+                                                            src="https://tomorrowgate.co.jp/asset/img/member/member24.jpg"
+                                                            alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-4494d8b0="" class="text_area">
+                                            <p data-v-4494d8b0="" class="name en">RYO FUMIOKA</p>
+                                            <p data-v-4494d8b0="" class="part">ブランディング<br data-v-4494d8b0=""
+                                                    class="sp">プロデューサー</p>
+                                        </div>
+                                    </li>
+                                    <li data-v-4494d8b0="" class="parent_li senki on">
+                                        <div data-v-4494d8b0="" class="img_box">
+                                            <div data-v-4494d8b0="" class="hoverScale">
+                                                <div data-v-4494d8b0="" class="thumb">
+                                                    <div data-v-4494d8b0="" class="hvrtxt en"><span data-v-4494d8b0=""
+                                                            class="more_txts">nspirational quotes and
+                                                            business advice from uber successful CEO’s. Bookmark it now
+                                                            to keep
+                                                            the inspiration flowing!</span></div>
+                                                    <div data-v-4494d8b0="" class="scaleImg"><img data-v-4494d8b0=""
+                                                            src="https://tomorrowgate.co.jp/asset/img/member/member26.jpg"
+                                                            alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-4494d8b0="" class="text_area">
+                                            <p data-v-4494d8b0="" class="name en">REMI ONISHI</p>
+                                            <p data-v-4494d8b0="" class="part">ブランディング<br data-v-4494d8b0=""
+                                                    class="sp">プロデューサー</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    
+                <div class="member_inner">
+                    <div class="member_tab_block">
+                        <ul class="member_list">
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member02.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">RYO IKEDA</p>
+                                    <p class="part">取締役</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member11.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">HIROKI NISHIKAWA</p>
+                                    <p class="part">フロントエンドエンジニア</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member13.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">YUJI KUMEGAWA</p>
+                                    <p class="part">アートディレクター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member15.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">WEI YEH</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou none on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member16.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">KANAKO OSAKA</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member17.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">YOSHIYASU YAMASHITA</p>
+                                    <p class="part">クリエイティブ<br class="sp">ディレクター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member19.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">MIYU KOHARA</p>
+                                    <p class="part">クリエイティブディレクター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member20.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">MARIKA NAKAHATA</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member21.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">HSU YU CHENG</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou kouhou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member22.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">SYUHEI MAKIGI</p>
+                                    <p class="part">コピーライター</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member23.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">YUKI MINE</p>
+                                    <p class="part">クリエイティブデザイナー</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">nspirational quotes and
+                                                    business advice from uber successful CEO’s. Bookmark it now to keep
+                                                    the inspiration flowing!</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="https://tomorrowgate.co.jp/asset/img/member/member25.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">LEE SOHEE</p>
+                                    <p class="part">映像クリエイター</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+               
+                 </div> 
+                </div>
+            </div> 
                 </div>
             </div>
 
@@ -786,7 +1577,10 @@
         width: 19%;
         margin-right: 1%;
     }
-
+    .nav-pills .nav-link.active{
+        background: transparent;
+        color: #000;
+    }
     @media screen and (min-width: 897px) {
         .member--index .member_inner .member_tab li:not(:last-child) {
             margin-right: 30px;
