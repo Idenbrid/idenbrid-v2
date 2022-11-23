@@ -53,37 +53,37 @@ const routes = [
     component: Idenspire
 },
 {
-    path: '/download-form/:string?/',
+    path: '/doc/:string?/',
     component: downloadform
 },
 {
-    path: '/recruit/:string?/',
+    path: '/business/:string?/',
     component: Recruit
 },
 {
-    path: '/getstarted/',
+    path: '/quote/',
     component: GetStarted
 },
 {
-    path: '/system-engineering-service/:string?/',
+    path: '/engineerstyle/:string?/',
     component: Ses
 },
 {
-    path: '/branding/:string?/',
+    path: '/studiodevelopmenthub/:string?/',
     component: Branding
 },
 {
-    path: '/about-company',
+    path: '/about',
     component: AboutCompany
 },
 //Access
 {
-    path: '/access/',
+    path: '/company/',
     component: Access
 },
 //Movies
 {
-    path: '/movies/',
+    path: '/video/',
     component: Movies
 },
 // work
@@ -102,19 +102,19 @@ const routes = [
     component: Partnerships
 },
 {
-    path: '/system-application/:string?/',
+    path: '/development/:string?/',
     component: SystemApplication
 },
 {
-    path: '/mobile-app-development/:string?/',
+    path: '/mobileapp/:string?/',
     component: MobileAppDevelopment
 },
 {
-    path: '/web-creative-digital-marketing/:string?/',
+    path: '/webitconsulting/:string?/',
     component: WebCreativeDigitalmarketing
 },
 {
-    path: '/web-design-UIUX-designing/:string?/',
+    path: '/uiuxdesign/:string?/',
     component: WebDesignUIUXdesigning
 },
 //About
@@ -130,7 +130,7 @@ const routes = [
 },
 //Faq
 {
-    path: '/faqs/',
+    path: '/faq/',
     component: Faq
 },
 //Office

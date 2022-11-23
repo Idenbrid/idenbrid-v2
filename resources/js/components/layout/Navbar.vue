@@ -28,13 +28,13 @@
                             <router-link to="/policy/">経営理念</router-link>
                         </li>
                         <li class="header-pc__nav__list">
-                            <router-link to="/recruit/">事業紹介</router-link>
+                            <router-link to="/business/">事業紹介</router-link>
                         </li>
                         <li class="header-pc__nav__list">
                             <router-link to="/works/">仕事実績</router-link>
                         </li>
                         <li class="header-pc__nav__list">
-                            <router-link to="/about-company/">会社情報</router-link>
+                            <router-link to="/about/">会社情報</router-link>
                         </li>
                         <!-- <li class="header-pc__nav__list"><router-link to="/onlinedevelopmenthub/">ONLINE DEVELOPEMENT HUB</router-link></li>-->
                         <!--<li class="header-pc__nav__list"><router-link to="/news/">NEWS</router-link></li>-->
@@ -113,13 +113,13 @@
                             <router-link to="/policy/">経営理念</router-link>
                         </li>
                         <li class="header-pc__nav__list">
-                            <router-link to="/recruit/">事業紹介</router-link>
+                            <router-link to="/business/">事業紹介</router-link>
                         </li>
                         <li class="header-pc__nav__list">
                             <router-link to="/works/">仕事実績</router-link>
                         </li>
                         <li class="header-pc__nav__list">
-                            <router-link to="/about-company/">会社情報</router-link>
+                            <router-link to="/about/">会社情報</router-link>
                         </li>
                         <!-- <li class="header-pc__nav__list"><router-link to="/onlinedevelopmenthub/">ONLINE DEVELOPEMENT HUB</router-link></li>-->
                         <!--<li class="header-pc__nav__list"><router-link to="/news/">NEWS</router-link></li>-->
@@ -128,7 +128,7 @@
                             <router-link to="/contact/">お問い合わせ</router-link>
                         </li>
                         <li class="header-pc__nav__lists header-pc__nav__list_img mr-0 pr-0 ml-2">
-                            <router-link to="/getstarted/" class="get-start-btn">開発見積依頼</router-link>
+                            <router-link to="/quote/" class="get-start-btn">開発見積依頼</router-link>
                         </li>
                         <!-- <img src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/paper-airplane.svg" alt=""> -->
                     </ul>
@@ -160,13 +160,13 @@
                             <router-link to="/policy/">経営理念</router-link>
                         </li>
                         <li  class="header-sp__fixed__menu__left__list">
-                            <router-link to="/recruit/">事業紹介</router-link>
+                            <router-link to="/business/">事業紹介</router-link>
                         </li>
                         <li class="header-sp__fixed__menu__left__list">
                             <router-link to="/works/">仕事実績</router-link>
                         </li>
                         <li  class="header-sp__fixed__menu__left__list">
-                            <router-link to="/about-company/">会社情報</router-link>
+                            <router-link to="/about/">会社情報</router-link>
                         </li>
                         <!-- <li class="header-pc__nav__list"><router-link to="/onlinedevelopmenthub/">ONLINE DEVELOPEMENT HUB</router-link></li>-->
                         <!--<li class="header-pc__nav__list"><router-link to="/news/">NEWS</router-link></li>-->
@@ -230,10 +230,10 @@
        
         <div class="side_fix on">
             <div class="fix_btn">
-                <router-link to="/download-form/"><span class="txt">資料ダウンロード</span></router-link>
+                <router-link to="/doc/"><span class="txt">資料ダウンロード</span></router-link>
             </div>
             <div class="pararel fix_btn">
-                <router-link to="/faqs" class="key">
+                <router-link to="/faq" class="key">
                     <span class="txt">よくある質問</span>
                 </router-link>
             </div>
