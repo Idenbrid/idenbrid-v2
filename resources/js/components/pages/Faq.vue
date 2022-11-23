@@ -31,29 +31,29 @@
                             <div class="tab-pane fade show active isAnim anim-fadeInUp inView" id="pills-home"
                                 role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q. SEH：スタジオ型開発ハブとはなんですか？</dt>
-                                    <dd>A.アイデンブリッドが進めている開発サービスの総称です。当社では主にシステムやアプリの受託開発を受けております。また企業様からのリソースをベースとしたラボ型開発も受けてつけております。これからの開発サービスを当社ではSDHと呼んでいます。
+                                    <dt class="f_bold">SEH：スタジオ型開発ハブとはなんですか？</dt>
+                                    <dd>アイデンブリッドが進めている開発サービスの総称です。当社では主にシステムやアプリの受託開発を受けております。また企業様からのリソースをベースとしたラボ型開発も受けてつけております。これからの開発サービスを当社ではSDHと呼んでいます。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.開発において社内にITに詳しい者がいませんが大丈夫でしょうか？ </dt>
-                                    <dd>A.当社のお客様は8割以上が社内に詳しい方がいないので私たちを頼って頂いておりますのでご安心ください。
+                                    <dt class="f_bold">開発において社内にITに詳しい者がいませんが大丈夫でしょうか？ </dt>
+                                    <dd>当社のお客様は8割以上が社内に詳しい方がいないので私たちを頼って頂いておりますのでご安心ください。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.ウェブのUIUXデザインはなんのツールを使って行いますか？</dt>
-                                    <dd>A.当社では基本的にAdobe XDそしてFigmaを使っています。
+                                    <dt class="f_bold">ウェブのUIUXデザインはなんのツールを使って行いますか？</dt>
+                                    <dd>当社では基本的にAdobe XDそしてFigmaを使っています。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.UIUXの修正は何回まで可能でしょうか？ </dt>
+                                    <dt class="f_bold">UIUXの修正は何回まで可能でしょうか？ </dt>
                                     <dd>
                                         <div class="faq-inner" bis_skin_checked="1" style="display: block;">
                                             <ul style="list-style: disc; padding-left: 25px;">
-                                                <li>A.当社では初稿をお出しして最大その後2回（初稿を含めて3回）まで対応しております。</li>
+                                                <li>当社では初稿をお出しして最大その後2回（初稿を含めて3回）まで対応しております。</li>
                                                 <!-- <li>上記の所有権</li> -->
                                             </ul>
                                             <div id="gtx-trans" style="position: absolute; left: -71px; top: 1.2px;"
@@ -66,28 +66,28 @@
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> Q.アプリやシステムの開発期間はどれくらいになりますか？ </dt>
-                                    <dd>A.規模や案件ごとに異なりますが通常2-6ヶ月規模のものが多いです。
+                                    <dt class="f_bold">アプリやシステムの開発期間はどれくらいになりますか？ </dt>
+                                    <dd>規模や案件ごとに異なりますが通常2-6ヶ月規模のものが多いです。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> Q.開発開始するために、クライアントが準備すべき必要なものは何がありますか？ </dt>
-                                    <dd>A.お客様がどこまで担当して頂けるかによりますが、RFPや実現されたいページや機能の仕様など書類に落とし込まれたものがあると助かります。
+                                    <dt class="f_bold">開発開始するために、クライアントが準備すべき必要なものは何がありますか？ </dt>
+                                    <dd>お客様がどこまで担当して頂けるかによりますが、RFPや実現されたいページや機能の仕様など書類に落とし込まれたものがあると助かります。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold"> Q.開発中にはどのようにプロジェクト管理をしますか？ </dt>
-                                    <dd>A.ソースコードのバージョンコントロールはGitHubにて、進捗チケット管理はAsanaにて行っています。またその他、仕様要件などはGoogle
+                                    <dt class="f_bold">開発中にはどのようにプロジェクト管理をしますか？ </dt>
+                                    <dd>ソースコードのバージョンコントロールはGitHubにて、進捗チケット管理はAsanaにて行っています。またその他、仕様要件などはGoogle
                                         Spreadsheetを使用しています。
                                     </dd>
                                 </div>
 
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.開発中などはどのように定期的にコミュニケーションをとれますか？ </dt>
+                                    <dt class="f_bold">開発中などはどのように定期的にコミュニケーションをとれますか？ </dt>
                                     <dd>
-                                        <p>A.開発中は定例や不定期の打ち合わせを設定させて頂き活発にコニュニケーションを取っています。
+                                        <p>開発中は定例や不定期の打ち合わせを設定させて頂き活発にコニュニケーションを取っています。
                                         </p>
                                         <p>作業を行っています。</p>
                                         <ul style="list-style: number; padding-left: 20px;">
@@ -178,26 +178,26 @@
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                 aria-labelledby="pills-profile-tab">
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.開発されたソフトウェアの著作権は誰にありますか？</dt>
-                                    <dd>A.当社では契約ごとに定めていますが、基本的に著作権はクライアントへ帰属します。</dd>
+                                    <dt class="f_bold">開発されたソフトウェアの著作権は誰にありますか？</dt>
+                                    <dd>当社では契約ごとに定めていますが、基本的に著作権はクライアントへ帰属します。</dd>
                                 </div>
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.成果物の定義はどのように決まりますか？</dt>
-                                    <dd>A.請負契約の場合には仕様要件の定義、品質基準の定義を行い、ソースコードなどの実装したシステム自体を成果物として定義します。準委任契約の場合には月末に稼働報告書をご提出致します。
+                                    <dt class="f_bold">成果物の定義はどのように決まりますか？</dt>
+                                    <dd>請負契約の場合には仕様要件の定義、品質基準の定義を行い、ソースコードなどの実装したシステム自体を成果物として定義します。準委任契約の場合には月末に稼働報告書をご提出致します。
                                     </dd>
                                 </div>
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.システムの開発において想定される契約書類はなんですか？</dt>
-                                    <dd>A.各お客様と基本的に基本契約書いわゆる業務委託契約書を締結します。
+                                    <dt class="f_bold">システムの開発において想定される契約書類はなんですか？</dt>
+                                    <dd>各お客様と基本的に基本契約書いわゆる業務委託契約書を締結します。
                                         他にも各プロジェクトごとに個別契約書を締結します</dd>
                                 </div>
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.見積書はどのように作成するのですか？</dt>
-                                    <dd>A.各仕事ごとの項目分けを行いその中で工数に沿って計算します。</dd>
+                                    <dt class="f_bold">見積書はどのように作成するのですか？</dt>
+                                    <dd>各仕事ごとの項目分けを行いその中で工数に沿って計算します。</dd>
                                 </div>
                                 <div class="tab-main">
-                                    <dt class="f_bold">Q.工数の単位で人月や人日とはなんですか？</dt>
-                                    <dd>A.こちらは1人のエンジニアあたりが1ヶ月または1日稼働した場合という意味になります。</dd>
+                                    <dt class="f_bold">工数の単位で人月や人日とはなんですか？</dt>
+                                    <dd>こちらは1人のエンジニアあたりが1ヶ月または1日稼働した場合という意味になります。</dd>
                                 </div>
                             </div>
                         </div>
