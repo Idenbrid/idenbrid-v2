@@ -1315,7 +1315,7 @@
                 <div class="menu-box">
                     <div class="item">
 
-                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">会社概要
+                        <router-link to="/company/" class="text"><img src="/assets/img/icons/Person-icon.svg">会社概要
                         </router-link>
                     </div>
                     <div class="item">

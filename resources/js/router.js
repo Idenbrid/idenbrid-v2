@@ -37,160 +37,162 @@ import GetStarted from './components/pages/GetStarted.vue'
 
 
 const routes = [
-   // Home
-   {
-    path: '/',
-    component: Home
-},
- // Service
- {
-    path: '/solutions/:string?/',
-    component: Service
-},
+    // Home
+    {
+        path: '/',
+        component: Home
+    },
+    // Service
+    {
+        path: '/solutions/:string?/',
+        component: Service
+    },
 
-{
-    path: '/idenspire/:string?/',
-    component: Idenspire
-},
-{
-    path: '/doc/:string?/',
-    component: downloadform
-},
-{
-    path: '/business/:string?/',
-    component: Recruit
-},
-{
-    path: '/quote/',
-    component: GetStarted
-},
-{
-    path: '/engineerstyle/:string?/',
-    component: Ses
-},
-{
-    path: '/studiodevelopmenthub/:string?/',
-    component: Branding
-},
-{
-    path: '/about',
-    component: AboutCompany
-},
-//Access
-{
-    path: '/company/',
-    component: Access
-},
-//Movies
-{
-    path: '/video/',
-    component: Movies
-},
-// work
-{
-    path: '/works/',
-    component: Work
-},
-//Message
-{
-    path: '/message/',
-    component: Message
-},
-// onlinedevelopmenthub
-{
-    path: '/onlinedevelopmenthub/:string?/',
-    component: Partnerships
-},
-{
-    path: '/development/:string?/',
-    component: SystemApplication
-},
-{
-    path: '/mobileapp/:string?/',
-    component: MobileAppDevelopment
-},
-{
-    path: '/webitconsulting/:string?/',
-    component: WebCreativeDigitalmarketing
-},
-{
-    path: '/uiuxdesign/:string?/',
-    component: WebDesignUIUXdesigning
-},
-//About
-{
-    path: '/about/:string?/',
-    component: About
-},
+    {
+        path: '/idenspire/:string?/',
+        component: Idenspire
+    },
+    {
+        path: '/doc/:string?/',
+        component: downloadform
+    },
+    {
+        path: '/business/:string?/',
+        component: Recruit
+    },
+    {
+        path: '/quote/',
+        component: GetStarted
+    },
+    {
+        path: '/engineerstyle/:string?/',
+        component: Ses
+    },
+    {
+        path: '/studiodevelopmenthub/:string?/',
+        component: Branding
+    },
+    {
+        path: '/about',
+        component: AboutCompany
+    },
+    //Access
+    {
+        path: '/company/',
+        component: Access
+    },
+    //Movies
+    {
+        path: '/video/',
+        component: Movies
+    },
+    // work
+    {
+        path: '/works/',
+        component: Work
+    },
+    //Message
+    {
+        path: '/message/',
+        component: Message
+    },
+    // onlinedevelopmenthub
+    {
+        path: '/onlinedevelopmenthub/:string?/',
+        component: Partnerships
+    },
+    {
+        path: '/development/:string?/',
+        component: SystemApplication
+    },
+    {
+        path: '/mobileapp/:string?/',
+        component: MobileAppDevelopment
+    },
+    {
+        path: '/webitconsulting/:string?/',
+        component: WebCreativeDigitalmarketing
+    },
+    {
+        path: '/uiuxdesign/:string?/',
+        component: WebDesignUIUXdesigning
+    },
+    //About
+    {
+        path: '/about/:string?/',
+        component: About
+    },
 
-//digitalasset
-{
-    path: '/digitalasset/',
-    component: DigitalAssets
-},
-//Faq
-{
-    path: '/faq/',
-    component: Faq
-},
-//Office
-{
-    path: '/office/',
-    component: Office
-},
-//Faq
-{
-    path: '/privacypolicy/',
-    component: PrivacyPolicy
-},
-//Contact
-{
-    path: '/contact/',
-    component: Contact
-},
-//Blog
-{
-    path: '/blog/',
-    component: Blog
-},
-//Policy
-{
-    path: '/policy/',
-    component: Policy
-},
-//News
-{
-    path: '/news/',
-    component: News
-},
+    //digitalasset
+    {
+        path: '/digitalasset/',
+        component: DigitalAssets
+    },
+    //Faq
+    {
+        path: '/faq/',
+        component: Faq
+    },
+    //Office
+    {
+        path: '/office/',
+        component: Office
+    },
+    //Faq
+    {
+        path: '/privacypolicy/',
+        component: PrivacyPolicy
+    },
+    //Contact
+    {
+        path: '/contact/',
+        component: Contact
+    },
+    //Blog
+    {
+        path: '/blog/',
+        component: Blog
+    },
+    //Policy
+    {
+        path: '/policy/',
+        component: Policy
+    },
+    //News
+    {
+        path: '/news/',
+        component: News
+    },
 
-//post blod detail
-{
-    path: '/news/detail/:id/',
-    component: NewsDetail
-},
-//post sitemap
-{
-    path: '/blog/detail/:id/',
-    component: BlogDetail
-},
+    //post blod detail
+    {
+        path: '/news/detail/:id/',
+        component: NewsDetail
+    },
+    //post sitemap
+    {
+        path: '/blog/detail/:id/',
+        component: BlogDetail
+    },
 
 
-//work
-{
-    path: '/work/detail/:id/',
-    component: WorkDetail
-},
-{
-    path: '/member',
-    component: Member
-},
+    //work
+    {
+        path: '/work/detail/:id/',
+        component: WorkDetail
+    },
+    {
+        path: '/member',
+        component: Member
+    },
 ];
 export default new VueRouter({
-    routes ,
+    routes,
     mode: 'history',
     scrollBehavior() {
-        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('app').scrollIntoView({
+            behavior: 'smooth'
+        });
     }
 
-    })
+})

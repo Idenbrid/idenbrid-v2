@@ -2,7 +2,7 @@
     <div>
         <Navbar />
         <main>
-            
+
             <div class="mv_textarea-recruit">
                 <h2>
                     <strong class="en entxt">BUSINESS / 事業紹介</strong>
@@ -15,19 +15,19 @@
                     <br class="pc">お客様の困っていることを解決してこそ、その先のユーザーに届くITサービスが実現できるのです。
                 </p>
             </div>
-            <div class="recruit--person highlight_blk" bis_skin_checked="1">
-                <div class="heading" bis_skin_checked="1">
+            <div class="recruit--person highlight_blk">
+                <div class="heading">
                     <span class="sub en fade_y on">SERVICES</span>
                     <h3 class="fade_y on">サービスのご紹介</h3>
                 </div>
-                <div class="recruit--person--list" bis_skin_checked="1">
+                <div class="recruit--person--list">
 
-                    <div class="recruit--person--item hoverScale" bis_skin_checked="1">
-                        <router-link to="/branding/">
-                            <div class="thumb" bis_skin_checked="1">
-                                <div class="hvrtxt en" bis_skin_checked="1"><span class="more_txt"><span
-                                            class="underline">MORE</span></span></div>
-                                <div class="scaleImg" bis_skin_checked="1"><img
+                    <div class="recruit--person--item hoverScale">
+                        <router-link to="/studiodevelopmenthub/">
+                            <div class="thumb">
+                                <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
+                                </div>
+                                <div class="scaleImg"><img
                                         src="https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg" alt="">
                                 </div>
                             </div>
@@ -37,16 +37,17 @@
                                         class="pc">設計・デザイン、ウェブ、スマホまでワンストップにて当社でお受けしております。</strong>
                             </h4>
                             <p class="fade_y on">
-                                STUDIO DEVELOPMENT HUB通称SDHでは、ITサービスを開発されたい企業様や自社にはITに詳しい人材やエンジニアがいないので外注したいお客様に向けた受託開発サービスです。
+                                STUDIO DEVELOPMENT
+                                HUB通称SDHでは、ITサービスを開発されたい企業様や自社にはITに詳しい人材やエンジニアがいないので外注したいお客様に向けた受託開発サービスです。
                             </p>
                         </router-link>
                     </div>
-                    <div class="recruit--person--item hoverScale" bis_skin_checked="1">
-                        <router-link to="/system-engineering-service/">
-                            <div class="thumb" bis_skin_checked="1">
-                                <div class="hvrtxt en" bis_skin_checked="1"><span class="more_txt"><span
-                                            class="underline">MORE</span></span></div>
-                                <div class="scaleImg" bis_skin_checked="1"><img
+                    <div class="recruit--person--item hoverScale">
+                        <router-link to="/engineerstyle/">
+                            <div class="thumb">
+                                <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
+                                </div>
+                                <div class="scaleImg"><img
                                         src="https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg" alt="">
                                 </div>
                             </div>
@@ -66,18 +67,21 @@
                 <ul class="entryarea recruit--contactarea--bnr">
 
                     <li>
-                        <router-link to="/branding">STUDIO DEVELOPMENT HUB : SDH<br><span
+                        <router-link to="/studiodevelopmenthub">STUDIO DEVELOPMENT HUB : SDH<br><span
                                 class="label pc">スタジオ開発ハブ（受託開発）</span></router-link>
                     </li>
-                    <li><router-link to="/system-engineering-service/" class="">SES<br><span
-                                class="label pc">エンジニア採用支援（常駐・フルリモート業務委託）</span><span
-                                class="label sp">気軽にメール登録</span></router-link></li>
+                    <li>
+                        <router-link to="/engineerstyle/" class="">SES<br><span
+                                class="label pc">エンジニア採用支援（常駐・フルリモート業務委託）</span><span class="label sp">気軽にメール登録</span>
+                        </router-link>
+                    </li>
                 </ul>
             </div>
-            <div class="branding--contact" bis_skin_checked="1">
+            <div class="branding--contact">
                 <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
-                <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
-                        class="contactbtn fade_y on" bis_skin_checked="1">今すぐ相談してみる</a></div>
+                <div class="fade_y on">
+                    <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+                </div>
             </div>
         </main>
         <Footer />
@@ -306,7 +310,7 @@
     .mv_textarea-recruit {
         /* color: #dadada; */
         background-color: #000;
-       
+
     }
 
     @media screen and (max-width: 896px) {
@@ -725,10 +729,10 @@
         font-family: "Noto Sans JP", sans-serif;
         color: #000;
     }
+
     @media screen and (max-width: 425px) {
-        .mv_textarea-recruit .jptxt{
+        .mv_textarea-recruit .jptxt {
             font-size: 12px;
         }
     }
-
 </style>

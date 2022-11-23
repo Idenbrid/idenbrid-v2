@@ -14,7 +14,7 @@
                     <span class="horo-text-b" style="transition-delay: 1.15s;">お客様のユーザーペインを解決します。</span>
 
                 </h2>
-                <router-link class="btn-views" to="/download-form/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
+                <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
                 <video class="top-hero__video" src="/public/assets/videos/Banner_video.mp4" autoplay muted loop
                     playsinline></video>
             </section>

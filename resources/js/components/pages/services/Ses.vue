@@ -272,8 +272,9 @@
                 <h3 class="fade_y on">
                     IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>ご質問がありましたらお気軽にご相談ください。
                 </h3>
-                <div class="fade_y on"><a href="https://tomorrowgate.co.jp/contact/"
-                        class="contactbtn fade_y on">今すぐ相談してみる</a></div>
+                <div class="fade_y on">
+                    <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+                </div>
             </div>
             <!-- <section class="contact mycontents-wide mt-5">
                 <h3 class="content-title content-title_contact">お問い合わせ</h3>

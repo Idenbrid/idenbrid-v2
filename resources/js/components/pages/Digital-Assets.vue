@@ -40,7 +40,7 @@
                 <div class="menu-box">
                     <div class="item">
 
-                        <router-link to="/access/" class="text"><img src="/assets/img/icons/Person-icon.svg">会社概要
+                        <router-link to="/company/" class="text"><img src="/assets/img/icons/Person-icon.svg">会社概要
                         </router-link>
                     </div>
                     <div class="item">
@@ -68,8 +68,8 @@
             </section>
             <div class="branding--contact">
                 <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
-                <div class="fade_y on"><a href="https://tomorrowgate.co.jp/contact/"
-                        class="contactbtn fade_y on">今すぐ相談してみる</a></div>
+                <div class="fade_y on"><router-link to="/contact/"
+                        class="contactbtn fade_y on">今すぐ相談してみる</router-link></div>
             </div>
         </main>
         <Footer />

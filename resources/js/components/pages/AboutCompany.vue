@@ -9,7 +9,7 @@
         </div>
         <section class="about-section">
             <div class="link-set">
-                <router-link to="/access/">
+                <router-link to="/company/">
                     <div class="link-card">
                         <div class="link-img">
                             <img src="/assets/img/Company.png" alt="">

@@ -43,7 +43,7 @@
                         </div>
                     </div>
 
-                    <ul class="topic--content--sidearea" >
+                    <ul class="topic--content--sidearea">
                         <li><a href="https://tomorrowgate.co.jp/topic/" class="en categoryitem current">全て</a></li>
                         <li><a href="https://tomorrowgate.co.jp/topic/category/news/" class="en categoryitem">ニュース</a>
                         </li>
@@ -55,10 +55,11 @@
                 </div>
             </section>
 
-            <div class="branding--contact" bis_skin_checked="1">
+            <div class="branding--contact">
                 <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
-                <div class="fade_y on" bis_skin_checked="1"><a href="https://tomorrowgate.co.jp/contact/"
-                        class="contactbtn fade_y on" bis_skin_checked="1">今すぐ相談してみる</a></div>
+                <div class="fade_y on">
+                    <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+                </div>
             </div>
         </main>
         <Footer />
@@ -387,9 +388,11 @@
         transform: translateY(0);
         opacity: 1
     }
-  .topic--content--sidearea{
-        width:15%;
+
+    .topic--content--sidearea {
+        width: 15%;
     }
+
     .topic.loaded .topic--content--sidearea li {
         transform: translateY(0);
         opacity: 1
@@ -432,9 +435,10 @@
             flex-direction: column-reverse;
             padding: 80px 5%
         }
-     .topic--content--sidearea{
-        width:100%;
-    }
+
+        .topic--content--sidearea {
+            width: 100%;
+        }
     }
 
     .topic--content--item {

@@ -15,7 +15,7 @@
             <div class="mb-4 contents-box pr-4">
               <div class="card">
                 <div class="card-body contact-request-col">
-                  <router-link to="/download-form/">
+                  <router-link to="/doc/">
                     <h4 class="request-contact-heading">
                       資料ダウンロード <br />
                       <span class="contact-col-sub-heading"

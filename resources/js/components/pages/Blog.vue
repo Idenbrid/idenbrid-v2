@@ -32,7 +32,8 @@
                                             <span class="more_txt"><span class="underline">MORE</span></span>
                                         </div>
                                         <div class="scaleImg">
-                                            <img :src="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +blog.image" alt="" loading="lazy" />
+                                            <img :src="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +blog.image"
+                                                alt="" loading="lazy" />
                                         </div>
                                     </div>
                                     <div class="bloginfo">
@@ -105,16 +106,18 @@
                         </div> -->
                         <h4 class="sideheading pc">人気記事ランキング</h4>
                         <div class="recommend--list popular pc">
-                            <router-link :to="'/blog/detail/' + blog.id + '/'" v-for="blog in most_liked" :key="blog.id" class="hoverScale recommend--item popular">
+                            <router-link :to="'/blog/detail/' + blog.id + '/'" v-for="blog in most_liked" :key="blog.id"
+                                class="hoverScale recommend--item popular">
                                 <div class="thumb photo thumb-img">
                                     <div class="hvrtxt en">
                                         <span class="more_txt"><span class="underline">MORE</span></span>
                                     </div>
                                     <div class="scaleImg scale-img">
                                         <img width="1200" height="630"
-                                        :src="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +blog.image"
+                                            :src="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +blog.image"
                                             class="attachment-full size-full wp-post-image" alt="" loading="lazy"
-                                            :srcset="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +blog.image" sizes="(max-width: 1200px) 100vw, 1200px" />
+                                            :srcset="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +blog.image"
+                                            sizes="(max-width: 1200px) 100vw, 1200px" />
                                     </div>
                                 </div>
                                 <div class="bloginfo">
@@ -170,13 +173,12 @@
                     </div>
                 </div>
             </section>
-            <div class="branding--contact" bis_skin_checked="1">
+            <div class="branding--contact">
                 <h3 class="fade_y on">
                     IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br />ご質問がありましたらお気軽にご相談ください。
                 </h3>
-                <div class="fade_y on" bis_skin_checked="1">
-                    <a href="https://tomorrowgate.co.jp/contact/" class="contactbtn fade_y on"
-                        bis_skin_checked="1">今すぐ相談してみる</a>
+                <div class="fade_y on">
+                    <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
                 </div>
             </div>
         </main>

@@ -17,7 +17,7 @@
                             IDENBRIDではワンストップにて、ウェブシステムとスマホアプリ開発を得意とするソフトウェア開発会社です。要件定義からシステム設計、UIUXデザインそして開発、またウェブからスマホそしてクラウドまで一社で完結開発致します<br
                                 class="pc">
                         </p>
-                        <router-link class="btn-views" to="/download-form/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
+                        <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
                     </div>
     
                 </div>
