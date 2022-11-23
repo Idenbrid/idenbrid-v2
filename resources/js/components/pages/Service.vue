@@ -22,10 +22,10 @@
                                     <img class="service-contents__list__thumbnail"
                                         src="/public/assets/img/solution/Solution_Img_01.png" alt="" loading="lazy">
                                 </div>
-                                <p class="service-contents__list__subtitle">スマホアプリ開発</p>
-                                <h4 class="service-contents__list__title"> スマホiOS/Androidアプリ開発</h4>
+                                <p class="service-contents__list__subtitle">Software development</p>
+                                <h4 class="service-contents__list__title"> ウェブシステム開発</h4>
                                 <p class="service-contents__list__text">
-                                    ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。
+                                    ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。
                                 </p>
                             </div>
                         </router-link>
@@ -37,10 +37,10 @@
                                     <img class="service-contents__list__thumbnail"
                                         src="/public/assets/img/solution/Solution_Img_02.png" alt="" loading="lazy">
                                 </div>
-                                <p class="service-contents__list__subtitle">システム開発</p>
-                                <h4 class="service-contents__list__title">ウェブシステム開発</h4>
+                                <p class="service-contents__list__subtitle">Mobile app development</p>
+                                <h4 class="service-contents__list__title">スマホiOS/Androidアプリ開発</h4>
                                 <p class="service-contents__list__text">
-                                    ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。
+                                    ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。
                                 </p>
                             </div>
                         </router-link>
@@ -52,10 +52,10 @@
                                     <img class="service-contents__list__thumbnail"
                                         src="/public/assets/img/solution/Solution_Img_03.png" alt="" loading="lazy">
                                 </div>
-                                <p class="service-contents__list__subtitle">ウェブ制作・デジタルマーケティング</p>
-                                <h4 class="service-contents__list__title">ラボ型オフショア開発</h4>
+                                <p class="service-contents__list__subtitle">Web design / UIUX design</p>
+                                <h4 class="service-contents__list__title">UIUXデザイン制作</h4>
                                 <p class="service-contents__list__text">
-                                    当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。
+                                    当社ではAdobe XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。
                                 </p>
                             </div>
                         </router-link>
@@ -67,10 +67,9 @@
                                     <img class="service-contents__list__thumbnail"
                                         src="/public/assets/img/solution/Solution_Img_04.png" alt="" loading="lazy">
                                 </div>
-                                <p class="service-contents__list__subtitle">デザイン制作</p>
-                                <h4 class="service-contents__list__title">UIUXデザイン制作</h4>
-                                <p class="service-contents__list__text service-contents__list_last__text">当社ではAdobe
-                                    XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。
+                                <p class="service-contents__list__subtitle">Off-shore Labo Development</p>
+                                <h4 class="service-contents__list__title">ラボ型オフショア開発</h4>
+                                <p class="service-contents__list__text service-contents__list_last__text">当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。
                                 </p>
                             </div>
                         </router-link>
