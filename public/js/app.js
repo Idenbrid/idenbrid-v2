@@ -15779,78 +15779,16 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7), _vm._v(" "), _c("section", {
-    staticClass: "menu"
-  }, [_c("ul", {
-    staticClass: "menu-contents mycontents-wide"
-  }, [_c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/about/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail",
-    attrs: {
-      src: "/public/assets/img/icons/company.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("会社概要")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("COMPANY")])])])], 1), _vm._v(" "), _c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/blog/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail menu-contents__list__thumbnail_news",
-    attrs: {
-      src: "/public/assets/img/icons/WWW.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("ブログ")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("BLOG")])])])], 1), _vm._v(" "), _c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/onlinedevelopmenthub/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail",
-    attrs: {
-      src: "/public/assets/img/icons/Partnership.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("オンライン開発ハブ")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("DEVELOPEMENT")])])])], 1)])]), _vm._v(" "), _vm._m(8)]), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
+  return _c("main", [_c("div", {
     staticClass: "hero_Heading"
   }, [_c("h2", {
     staticClass: "hero"
-  }, [_vm._v("Mobile app development")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("Mobile app development")])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -15894,11 +15832,43 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("ハイブリットアプリ")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。\n                    ")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。\n                    ")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app01.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("IOSアプリ")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        SwiftやObjective-Cでのネイティブアプリ開発を行っております。iPhoneをはじめとしiPadアプリの開発も可能です。"), _c("br"), _vm._v("開発からAppleストアへの申請まで一貫して対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app02.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("Androidアプリ")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        KotlinやJavaでのネイティブアプリ開発を行っております。"), _c("br"), _vm._v("ネイティブ開発の利点を最大限生かしたプログラムを提供しております。")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app03.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("ハイブリットアプリ")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。\n                    ")])])])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -15978,11 +15948,7 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("チャットアプリ")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        社内チャットツールの開発やWEBサービスと連携したアプリの開発が可能です。業務効率化やWEBサービスのアプリ版の開発をお任せください。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        社内チャットツールの開発やWEBサービスと連携したアプリの開発が可能です。業務効率化やWEBサービスのアプリ版の開発をお任せください。")])])])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -16062,191 +16028,7 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("打刻アプリ")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモートワークが進んでいる現代で、どこからでも打刻ができるアプリを開発いたします。給与計算システムと連動することでより労務の負担を軽減することが可能です。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "system-sec mycontents-wide"
-  }, [_c("h2", {
-    staticClass: "system-sec__tiile"
-  }, [_vm._v("情報管理・データベース設計")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__text"
-  }, [_vm._v("顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など"), _c("br"), _vm._v("クライアントの課題に沿ったご提案をさせていただきます。")]), _vm._v(" "), _c("ul", {
-    staticClass: "system-sec__contents system-sec__contents_last"
-  }, [_c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("保守運用")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        WEBサイト運営で起こりうるリスク回避の支援を行います。"), _c("br"), _vm._v("脆弱なシステムによるハッキング被害などからお客様の大切な情報をお守りします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("インフラ構築")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモート業務が進む今、社外からの利用も多いため運用範囲を拡大し、利便性の高いインフラを構築致します。それに伴うセキュリティー対策も万全に行います。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("クラウド開発")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        サーバーコストの削減やオンプレミスからの移管支援などを行っております。"), _c("br"), _vm._v("様々なシステムのクラウド化による業務効率化を得意としております。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "system-sec mycontents-wide"
-  }, [_c("h2", {
-    staticClass: "system-sec__tiile"
-  }, [_vm._v("ビジネスアプリケーション")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__text"
-  }, [_vm._v("業務用アプリや社内アプリの開発を行っております。"), _c("br"), _vm._v("アプリによる業務効率化やWEBシステムからの切り替えなどご相談ください。")]), _vm._v(" "), _c("ul", {
-    staticClass: "system-sec__contents"
-  }, [_c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("予約アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        飲食店や美容室、ホテルなどで使用されております。導入により電話やメール対応の人的ソースの削減、営業時間外でも対応できる為予約の取りこぼし防止対策になります。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("スケジュール管理アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        アルバイトのシフトや打刻管理など業務効率化向けアプリから一般ユーザー層使用を想定したスケジュール管理アプリを提供いたします。細かな時間管理や与管理機能まで開発可能です。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("画像解析アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        画像を分析して、様々なデータへの変換や、画像から肌の状態など分析し状態データの解析など幅広い画像解析系のアプリを開発いたします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app04.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("プロジェクト管理アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        建築現場などで利用されている施工管理や、プロジェクトの進捗管理ができるアプリを開発しております。ToDoやガントチャート機能などが搭載されております。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("日報アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモートワークで便利な日報アプリの開発をいたします。"), _c("br"), _vm._v("在宅ワークのコミュニケーション課題を解決するアプリをご提供いたします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app06.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("打刻アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモートワークが進んでいる現代で、どこからでも打刻ができるアプリを開発いたします。給与計算システムと連動することでより労務の負担を軽減することが可能です。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "system-sec mycontents-wide"
-  }, [_c("h2", {
-    staticClass: "system-sec__tiile"
-  }, [_vm._v("情報管理・データベース設計")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__text"
-  }, [_vm._v("顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など"), _c("br"), _vm._v("クライアントの課題に沿ったご提案をさせていただきます。")]), _vm._v(" "), _c("ul", {
-    staticClass: "system-sec__contents system-sec__contents_last"
-  }, [_c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("保守運用")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        WEBサイト運営で起こりうるリスク回避の支援を行います。"), _c("br"), _vm._v("脆弱なシステムによるハッキング被害などからお客様の大切な情報をお守りします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("インフラ構築")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモート業務が進む今、社外からの利用も多いため運用範囲を拡大し、利便性の高いインフラを構築致します。それに伴うセキュリティー対策も万全に行います。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("クラウド開発")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        サーバーコストの削減やオンプレミスからの移管支援などを行っております。"), _c("br"), _vm._v("様々なシステムのクラウド化による業務効率化を得意としております。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        リモートワークが進んでいる現代で、どこからでも打刻ができるアプリを開発いたします。給与計算システムと連動することでより労務の負担を軽減することが可能です。")])])])]), _vm._v(" "), _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
@@ -16263,7 +16045,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow01.png",
+      src: "/assets/img/solution/flow/No-1.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -16275,7 +16057,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow02.png",
+      src: "/assets/img/solution/flow/No-2.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -16287,7 +16069,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow03.png",
+      src: "/assets/img/solution/flow/No-3.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -16299,138 +16081,62 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow04.png",
+      src: "/assets/img/solution/flow/No-4.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
   }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "contact mycontents-wide mt-5"
-  }, [_c("h3", {
-    staticClass: "content-title content-title_contact"
-  }, [_vm._v("お問い合わせ")]), _vm._v(" "), _c("img", {
-    staticClass: "contact__img",
-    attrs: {
-      src: "/public/assets/img/icons/Operator.png",
-      alt: "",
-      width: "80px"
-    }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "content-text content-text_contact"
-  }, [_vm._v("お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。\n            ")]), _vm._v(" "), _c("div", {
-    staticClass: "contact__btns"
-  }, [_c("button", {
-    staticClass: "btn-wide btn-wide_call",
-    attrs: {
-      "data-toggle": "modal",
-      "data-target": "#linescancode"
-    }
+  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "menu-list"
   }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Line-white.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Line-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("会社LINE ID")])]), _vm._v(" "), _c("a", {
-    staticClass: "btn-wide btn-wide_call",
-    attrs: {
-      href: "mailto:helloworld@idenbrid.com"
-    }
+    staticClass: "menu-box"
   }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
     attrs: {
-      src: "/public/assets/img/icons/Mail-White.png",
-      alt: ""
+      href: "/system-application/"
     }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Mail-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("\n                        helloworld@idenbrid.com\n                    ")])]), _vm._v(" "), _c("a", {
-    staticClass: "btn-wide",
-    attrs: {
-      href: "skype:live:.cid.3145b74a3504693c?chat"
-    }
-  }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Skype-White.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Skype-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_contact"
-  }, [_vm._v("会社Skype ID")])])]), _vm._v(" "), _c("div", {
-    staticClass: "modal fade",
-    attrs: {
-      id: "linescancode",
-      tabindex: "-1",
-      role: "dialog",
-      "aria-labelledby": "linescancode",
-      "aria-hidden": "true"
-    }
-  }, [_c("div", {
-    staticClass: "modal-dialog modal-dialog-centered",
-    attrs: {
-      role: "document"
-    }
-  }, [_c("div", {
-    staticClass: "modal-content"
-  }, [_c("div", {
-    staticClass: "modal-header"
-  }, [_c("h5", {
-    staticClass: "modal-title",
-    attrs: {
-      id: "exampleModalLongTitle"
-    }
-  }, [_vm._v("ID検索はこちらから、LINE ID: idenbrid")]), _vm._v(" "), _c("button", {
-    staticClass: "close",
-    attrs: {
-      type: "button",
-      "data-dismiss": "modal",
-      "aria-label": "Close"
-    }
-  }, [_c("span", {
-    attrs: {
-      "aria-hidden": "true"
-    }
-  }, [_vm._v("×")])])]), _vm._v(" "), _c("div", {
-    staticClass: "modal-body"
   }, [_c("img", {
     attrs: {
-      src: "/public/assets/img/line-code.jpg",
-      width: "100%"
+      src: "/assets/img/icons/Person-icon.svg"
     }
-  })])])])])]);
+  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text router-link-exact-active router-link-active",
+    attrs: {
+      href: "/mobile-app-development/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Message-icon.svg"
+    }
+  }), _vm._v("Mobile app development\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
+    attrs: {
+      href: "/web-design-UIUX-designing/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Building-icon.svg"
+    }
+  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
+    attrs: {
+      href: "/web-creative-digital-marketing/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Digital-Assets.svg"
+    }
+  }), _vm._v("Web creative・Digital marketing")])])])])])]);
 }];
 render._withStripped = true;
 
@@ -16837,78 +16543,16 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _c("section", {
-    staticClass: "menu"
-  }, [_c("ul", {
-    staticClass: "menu-contents mycontents-wide"
-  }, [_c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/about/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail",
-    attrs: {
-      src: "/public/assets/img/icons/company.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("会社概要")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("COMPANY")])])])], 1), _vm._v(" "), _c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/blog/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail menu-contents__list__thumbnail_news",
-    attrs: {
-      src: "/public/assets/img/icons/WWW.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("ブログ")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("BLOG")])])])], 1), _vm._v(" "), _c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/onlinedevelopmenthub/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail",
-    attrs: {
-      src: "/public/assets/img/icons/Partnership.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("オンライン開発ハブ")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("DEVELOPEMENT")])])])], 1)])]), _vm._v(" "), _vm._m(6)]), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
+  return _c("main", [_c("div", {
     staticClass: "hero_Heading"
   }, [_c("h2", {
     staticClass: "hero"
-  }, [_vm._v("Web creative・Digital marketing")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("Web creative・Digital marketing")])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -16988,83 +16632,7 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("オンラインショップ")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        場所や時間、実店舗の場所に問わず世界中に人々に商品を販売ができるようになります。インターネットの普及している現代では有効な販売手段となることは間違いありません。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web07.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("多言語サイト")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        グローバル化が進んでいる現代では特に海外展開や外国人観光客をターゲットに行なっている企業の多言語対応を必須と言えるでしょう。対応していないだけで顧客を逃しかねません。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web08.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("会員制サイト")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        会員向けの限定コンテンツの配信や、販売を行うことが可能です。"), _c("br"), _vm._v("有料会員や商品の販売によるビジネスモデルを簡単に手に入れることができます。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web09.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("レスポンシブサイト")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        スマートフォンの普及が高い今、対応は必須と言えるでしょう。SEO評価にも影響があり、それによる機会損失を回避するためにも対応が必要でしょう。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web10.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("アフリエイトサイト")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        SEO最適化されたアフリエイトサイトの制作が可能です。キーワード選定やGoogleアナリティスクの導入など一貫して支援を行っております。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web11.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("予約サイト")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        飲食店や美容室、ホテルなどで使用されております。導入により電話やメールの対応の人的ソースの削減、営業時間外でも対応できる為予約の取りこぼし防止対策にもなります。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web12.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("CMS構築")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        WEBサイトは作って終わりではありません。むしろその後の運営が大切になります。その運営を専門知識がなくても簡単に運営ができるよう、CMSを構築します。それにより後の運営費削減にも繋がります。\n                    ")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        場所や時間、実店舗の場所に問わず世界中に人々に商品を販売ができるようになります。インターネットの普及している現代では有効な販売手段となることは間違いありません。")])])])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17144,47 +16712,7 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("キーワード設計")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        狙っている検索ワードの競合調査から適切なKPIを設定し、設定したKPIが正しく計測できているかを調査し、タグ設定などを行います。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing07.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("WEBサイト分析")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        オーダーメイドのシステム設計により特殊な業務の対応や他者との差別化を図ることが可能です。また、パッケージ開発より自由にシステムをカスタマイズできる利点もございます。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing08.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("SNS運用")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        BtoBマッチングのみならず、CtoCサービスのWEBサービス主にオークションサービスやフリマサービスなど開発いたします。エスクロー済の導入も可能です。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing09.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("コピーライティング")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        日々の業務が忙しい企業の方々のWEBサイトの更新や運用を代行致します。"), _c("br"), _vm._v("またバージョン対応や様々なエラーなどにも対応致します。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        狙っている検索ワードの競合調査から適切なKPIを設定し、設定したKPIが正しく計測できているかを調査し、タグ設定などを行います。")])])])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17228,59 +16756,43 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("広告分析")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。"), _c("br"), _vm._v("改善立案から実行まで対応可能です。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "system-sec mycontents-wide"
-  }, [_c("h2", {
-    staticClass: "system-sec__tiile"
-  }, [_vm._v("運用支援・保守運用")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__text"
-  }, [_vm._v("\n                制作後の運用サポートや他社からの切り替え、日々のWEBサイトの更新代行を行っております。"), _c("br"), _vm._v("ITに詳しい担当者がいなくても安心してご依頼いただけます。")]), _vm._v(" "), _c("ul", {
-    staticClass: "system-sec__contents system-sec__contents_last"
-  }, [_c("li", {
+  }, [_vm._v("\n                        リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。"), _c("br"), _vm._v("改善立案から実行まで対応可能です。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/maintenance01.svg",
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad01.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("WEBサイト運営代行")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("リスディング広告")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        日々の業務が忙しい企業の方々のWEBサイトの更新や運用を代行致します。"), _c("br"), _vm._v("またバージョン対応や様々なエラーなどにも対応致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        検索結果に連動した広告で見込み顧客の獲得が高い広告です。適切なワードと入礼ロジックで運営を代行し分析、改善しながら最適な広告運営を致します。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/maintenance02.svg",
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad02.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("サーバー/ドメイン移管")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("SNS広告")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        サーバーやドメインの移管などスポットのご依頼も承ることができます。"), _c("br"), _vm._v("使用量を分析して最善のサーバーのご提案なども可能です。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        Twitter、Facebook、Instagramの広告を運用致します。"), _c("br"), _vm._v("企業のサービス内容、商品から最適な広告を提案致します。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/maintenance03.svg",
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad03.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("サーバー保守・運用")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("広告分析")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("難しいサーバーの設定やリソース監視、不正アクセス対策障害復旧にてお客様のサーバーを安全に保守管理致します。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("\n                        リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。"), _c("br"), _vm._v("改善立案から実行まで対応可能です。")])])])]), _vm._v(" "), _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
@@ -17297,7 +16809,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow01.png",
+      src: "/assets/img/solution/flow/No-1.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17309,7 +16821,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow02.png",
+      src: "/assets/img/solution/flow/No-2.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17321,7 +16833,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow03.png",
+      src: "/assets/img/solution/flow/No-3.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17333,138 +16845,62 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow04.png",
+      src: "/assets/img/solution/flow/No-4.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
   }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "contact mycontents-wide mt-5"
-  }, [_c("h3", {
-    staticClass: "content-title content-title_contact"
-  }, [_vm._v("お問い合わせ")]), _vm._v(" "), _c("img", {
-    staticClass: "contact__img",
-    attrs: {
-      src: "/public/assets/img/icons/Operator.png",
-      alt: "",
-      width: "80px"
-    }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "content-text content-text_contact"
-  }, [_vm._v("お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。\n            ")]), _vm._v(" "), _c("div", {
-    staticClass: "contact__btns"
-  }, [_c("button", {
-    staticClass: "btn-wide btn-wide_call",
-    attrs: {
-      "data-toggle": "modal",
-      "data-target": "#linescancode"
-    }
+  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "menu-list"
   }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Line-white.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Line-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("会社LINE ID")])]), _vm._v(" "), _c("a", {
-    staticClass: "btn-wide btn-wide_call",
-    attrs: {
-      href: "mailto:helloworld@idenbrid.com"
-    }
+    staticClass: "menu-box"
   }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
     attrs: {
-      src: "/public/assets/img/icons/Mail-White.png",
-      alt: ""
+      href: "/system-application/"
     }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Mail-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("\n                        helloworld@idenbrid.com\n                    ")])]), _vm._v(" "), _c("a", {
-    staticClass: "btn-wide",
-    attrs: {
-      href: "skype:live:.cid.3145b74a3504693c?chat"
-    }
-  }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Skype-White.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Skype-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_contact"
-  }, [_vm._v("会社Skype ID")])])]), _vm._v(" "), _c("div", {
-    staticClass: "modal fade",
-    attrs: {
-      id: "linescancode",
-      tabindex: "-1",
-      role: "dialog",
-      "aria-labelledby": "linescancode",
-      "aria-hidden": "true"
-    }
-  }, [_c("div", {
-    staticClass: "modal-dialog modal-dialog-centered",
-    attrs: {
-      role: "document"
-    }
-  }, [_c("div", {
-    staticClass: "modal-content"
-  }, [_c("div", {
-    staticClass: "modal-header"
-  }, [_c("h5", {
-    staticClass: "modal-title",
-    attrs: {
-      id: "exampleModalLongTitle"
-    }
-  }, [_vm._v("ID検索はこちらから、LINE ID: idenbrid")]), _vm._v(" "), _c("button", {
-    staticClass: "close",
-    attrs: {
-      type: "button",
-      "data-dismiss": "modal",
-      "aria-label": "Close"
-    }
-  }, [_c("span", {
-    attrs: {
-      "aria-hidden": "true"
-    }
-  }, [_vm._v("×")])])]), _vm._v(" "), _c("div", {
-    staticClass: "modal-body"
   }, [_c("img", {
     attrs: {
-      src: "/public/assets/img/line-code.jpg",
-      width: "100%"
+      src: "/assets/img/icons/Person-icon.svg"
     }
-  })])])])])]);
+  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text router-link-exact-active router-link-active",
+    attrs: {
+      href: "/mobile-app-development/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Message-icon.svg"
+    }
+  }), _vm._v("Mobile app development\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
+    attrs: {
+      href: "/web-design-UIUX-designing/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Building-icon.svg"
+    }
+  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
+    attrs: {
+      href: "/web-creative-digital-marketing/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Digital-Assets.svg"
+    }
+  }), _vm._v("Web creative・Digital marketing")])])])])])]);
 }];
 render._withStripped = true;
 
@@ -17486,78 +16922,16 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("section", {
-    staticClass: "menu"
-  }, [_c("ul", {
-    staticClass: "menu-contents mycontents-wide"
-  }, [_c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/about/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail",
-    attrs: {
-      src: "/public/assets/img/icons/company.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("会社概要")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("COMPANY")])])])], 1), _vm._v(" "), _c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/blog/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail menu-contents__list__thumbnail_news",
-    attrs: {
-      src: "/public/assets/img/icons/WWW.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("ブログ")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("BLOG")])])])], 1), _vm._v(" "), _c("li", {
-    staticClass: "menu-contents__list"
-  }, [_c("router-link", {
-    attrs: {
-      to: "/onlinedevelopmenthub/"
-    }
-  }, [_c("img", {
-    staticClass: "menu-contents__list__thumbnail",
-    attrs: {
-      src: "/public/assets/img/icons/Partnership.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("div", {
-    staticClass: "menu-contents__list__text"
-  }, [_c("p", {
-    staticClass: "menu-contents__list__subtitle"
-  }, [_vm._v("オンライン開発ハブ")]), _vm._v(" "), _c("h4", {
-    staticClass: "menu-contents__list__title"
-  }, [_vm._v("DEVELOPEMENT")])])])], 1)])]), _vm._v(" "), _vm._m(4)]), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", {
+  return _c("main", [_c("div", {
     staticClass: "hero_Heading"
   }, [_c("h2", {
     staticClass: "hero"
-  }, [_vm._v("Web design・UIUX designing")])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("Web design・UIUX designing")])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17625,11 +16999,19 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("レスポンシブデザイン")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design05.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("レスポンシブデザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。")])])])]), _vm._v(" "), _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17673,11 +17055,123 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
+  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("名刺デザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("パンフレットデザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]), _vm._v(" "), _c("section", {
+    staticClass: "system-sec mycontents-wide"
+  }, [_c("h2", {
+    staticClass: "system-sec__tiile"
+  }, [_vm._v("グラフィック")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__text"
+  }, [_vm._v("\n                チラシ、ポスターなどのグラフィックデザイン制作も行っております。webサイトと一貫して承ることが"), _c("br"), _vm._v("できるためブランドイメージの統一を図ることができます。")]), _vm._v(" "), _c("ul", {
+    staticClass: "system-sec__contents system-sec__contents_last"
+  }, [_c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("名刺デザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("パンフレットデザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("名刺デザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("パンフレットデザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]), _vm._v(" "), _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
@@ -17694,7 +17188,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow01.png",
+      src: "/assets/img/solution/flow/No-1.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17706,7 +17200,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow02.png",
+      src: "/assets/img/solution/flow/No-2.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17718,7 +17212,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow03.png",
+      src: "/assets/img/solution/flow/No-3.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17730,138 +17224,62 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow04.png",
+      src: "/assets/img/solution/flow/No-4.jpg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
   }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "contact mycontents-wide mt-5"
-  }, [_c("h3", {
-    staticClass: "content-title content-title_contact"
-  }, [_vm._v("お問い合わせ")]), _vm._v(" "), _c("img", {
-    staticClass: "contact__img",
-    attrs: {
-      src: "/public/assets/img/icons/Operator.png",
-      alt: "",
-      width: "80px"
-    }
-  }), _vm._v(" "), _c("p", {
-    staticClass: "content-text content-text_contact"
-  }, [_vm._v("お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。\n            ")]), _vm._v(" "), _c("div", {
-    staticClass: "contact__btns"
-  }, [_c("button", {
-    staticClass: "btn-wide btn-wide_call",
-    attrs: {
-      "data-toggle": "modal",
-      "data-target": "#linescancode"
-    }
+  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "menu-list"
   }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Line-white.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Line-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("会社LINE ID")])]), _vm._v(" "), _c("a", {
-    staticClass: "btn-wide btn-wide_call",
-    attrs: {
-      href: "mailto:helloworld@idenbrid.com"
-    }
+    staticClass: "menu-box"
   }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
     attrs: {
-      src: "/public/assets/img/icons/Mail-White.png",
-      alt: ""
+      href: "/system-application/"
     }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Mail-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("\n                        helloworld@idenbrid.com\n                    ")])]), _vm._v(" "), _c("a", {
-    staticClass: "btn-wide",
-    attrs: {
-      href: "skype:live:.cid.3145b74a3504693c?chat"
-    }
-  }, [_c("div", {
-    staticClass: "btn-wide__imgs"
-  }, [_c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Skype-White.png",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("img", {
-    staticClass: "btn-wide__img",
-    attrs: {
-      src: "/public/assets/img/icons/Skype-Black.png",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("p", {
-    staticClass: "btn-wide__text btn-wide__text_contact"
-  }, [_vm._v("会社Skype ID")])])]), _vm._v(" "), _c("div", {
-    staticClass: "modal fade",
-    attrs: {
-      id: "linescancode",
-      tabindex: "-1",
-      role: "dialog",
-      "aria-labelledby": "linescancode",
-      "aria-hidden": "true"
-    }
-  }, [_c("div", {
-    staticClass: "modal-dialog modal-dialog-centered",
-    attrs: {
-      role: "document"
-    }
-  }, [_c("div", {
-    staticClass: "modal-content"
-  }, [_c("div", {
-    staticClass: "modal-header"
-  }, [_c("h5", {
-    staticClass: "modal-title",
-    attrs: {
-      id: "exampleModalLongTitle"
-    }
-  }, [_vm._v("ID検索はこちらから、LINE ID: idenbrid")]), _vm._v(" "), _c("button", {
-    staticClass: "close",
-    attrs: {
-      type: "button",
-      "data-dismiss": "modal",
-      "aria-label": "Close"
-    }
-  }, [_c("span", {
-    attrs: {
-      "aria-hidden": "true"
-    }
-  }, [_vm._v("×")])])]), _vm._v(" "), _c("div", {
-    staticClass: "modal-body"
   }, [_c("img", {
     attrs: {
-      src: "/public/assets/img/line-code.jpg",
-      width: "100%"
+      src: "/assets/img/icons/Person-icon.svg"
     }
-  })])])])])]);
+  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text router-link-exact-active router-link-active",
+    attrs: {
+      href: "/mobile-app-development/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Message-icon.svg"
+    }
+  }), _vm._v("Mobile app development\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
+    attrs: {
+      href: "/web-design-UIUX-designing/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Building-icon.svg"
+    }
+  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])]), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("a", {
+    staticClass: "text",
+    attrs: {
+      href: "/web-creative-digital-marketing/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Digital-Assets.svg"
+    }
+  }), _vm._v("Web creative・Digital marketing")])])])])])]);
 }];
 render._withStripped = true;
 
@@ -24746,7 +24164,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\n    width: 100%;\n    overflow: hidden;\n    box-sizing: content-box;\n}\n.bg-color{\n    background-color: #1a202c;\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\n    animation-name: fadeIn;\n}\n.loopCopy .area {\n    white-space: nowrap;\n    width: 100%;\n    padding-right: 100%;\n    box-sizing: content-box;\n    animation-iteration-count: infinite;\n    animation-timing-function: linear;\n    animation-name: ticker;\n    animation-duration: 10s;\n    height: 60px;\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\n    opacity: 1;\n    animation-duration: 0.5s;\n    animation-iteration-count: 1;\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\n    animation-fill-mode: both;\n}\nfooter {\n  background: #1a202c;\n}\n.container-request {\n  padding: 0px 74px !important;\n}\n.fonter-text{\n  color: #DADADA;\n}\n.footer-logo {\n  width: 20%;\n  margin: auto;\n  display: flex;\n}\n.col-content {\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\n  width: 100%;\n  height: auto;\n}\n.section-request {\n  padding: 80px 0px 60px;\n}\n.contact-main{\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\n  color: #fff;\n  font-size: 40px;\n}\n.contact-request-col {\n  padding: 50px 0px;\n}\n.request-contact-heading {\n  font-size: 20px;\n  letter-spacing: 0.1em;\n  color: #DADADA;\n  text-align: center;\n  font-weight: 700;\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\n  content: \"\";\n  background-color: #000;\n  height: 1px;\n  width: 40px;\n  position: absolute;\n  right: 6.5%;\n  top: 50%;\n  opacity: 0;\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\n    opacity: 1;\n    right: 5%;\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\n  transform: rotate(45deg);\n  width: 10px;\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\n  font-size: 12px;\n  letter-spacing: 0.06em;\n  color: #DADADA;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\n   font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\n  border: 1px solid #ffffff;\n  background: none !important;\n  transition: 0.6s ease;\n  cursor: pointer;\n  height: 149.25px;\n  border-radius: 0px;\n}\n.card:hover {\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\n.card:hover .request-contact-heading {\n  color: #000000;\n}\n.footer-menu-heading h2 {\n  text-align: center;\n  color: #ffff;\n}\n.foot-menu-group {\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\n  color: #DADADA;\n  font-size: 14px;\n  letter-spacing: 0.1em;\n  font-weight: bold;\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 30px;\n  margin: 25px 0px 0px;\n}\n.twitter {\n  color: #fff;\n  font-size: 27px;\n}\n.copyright {\n  margin-top: 40px;\n  font-size: 14px;\n  color: #777;\n  letter-spacing: 0.18em;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \n   width: 100%; \n   height: 85px;\n   padding-top: 20px;\n   margin: 0px 40px;\n}\n.contact__btns{\n    padding: 0px 150px;\n}\n.content-text_contact{\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 85%;\n    -moz-column-gap: 100px;\n         column-gap: 100px;\n    margin: 2px auto;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\n    font-size: 1.7rem;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.contact__btns {\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 90%;\n    -moz-column-gap: 180px;\n         column-gap: 180px;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\nh2 {\n    font-size: 1.5rem;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 80%;\n    -moz-column-gap: 230px;\n         column-gap: 230px;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.btn-wide {\n    margin: 0px 18px 30px;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\n    display: none;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.content-text_contact{\n    padding: 40px 30px;\n    margin: 0;\n    font-size: 14px;\n}\n.btn-wide{\n   margin: 0px 0px 30px;\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\r\n    width: 100%;\r\n    overflow: hidden;\r\n    box-sizing: content-box;\n}\n.bg-color{\r\n    background-color: #1a202c;\r\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\r\n    animation-name: fadeIn;\n}\n.loopCopy .area {\r\n    white-space: nowrap;\r\n    width: 100%;\r\n    padding-right: 100%;\r\n    box-sizing: content-box;\r\n    animation-iteration-count: infinite;\r\n    animation-timing-function: linear;\r\n    animation-name: ticker;\r\n    animation-duration: 10s;\r\n    height: 60px;\r\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\r\n    opacity: 1;\r\n    animation-duration: 0.5s;\r\n    animation-iteration-count: 1;\r\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\r\n    animation-fill-mode: both;\n}\nfooter {\r\n  background: #1a202c;\n}\n.container-request {\r\n  padding: 0px 74px !important;\n}\n.fonter-text{\r\n  color: #DADADA;\n}\n.footer-logo {\r\n  width: 20%;\r\n  margin: auto;\r\n  display: flex;\n}\n.col-content {\r\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\r\n  width: 100%;\r\n  height: auto;\n}\n.section-request {\r\n  padding: 80px 0px 60px;\n}\n.contact-main{\r\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\r\n  color: #fff;\r\n  font-size: 40px;\n}\n.contact-request-col {\r\n  padding: 50px 0px;\n}\n.request-contact-heading {\r\n  font-size: 20px;\r\n  letter-spacing: 0.1em;\r\n  color: #DADADA;\r\n  text-align: center;\r\n  font-weight: 700;\r\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\r\n  content: \"\";\r\n  background-color: #000;\r\n  height: 1px;\r\n  width: 40px;\r\n  position: absolute;\r\n  right: 6.5%;\r\n  top: 50%;\r\n  opacity: 0;\r\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\r\n    opacity: 1;\r\n    right: 5%;\r\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\r\n  transform: rotate(45deg);\r\n  width: 10px;\r\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\r\n  font-size: 12px;\r\n  letter-spacing: 0.06em;\r\n  color: #DADADA;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\r\n   font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\r\n  border: 1px solid #ffffff;\r\n  background: none !important;\r\n  transition: 0.6s ease;\r\n  cursor: pointer;\r\n  height: 149.25px;\r\n  border-radius: 0px;\n}\n.card:hover {\r\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\r\n.card:hover .request-contact-heading {\r\n  color: #000000;\n}\n.footer-menu-heading h2 {\r\n  text-align: center;\r\n  color: #ffff;\n}\n.foot-menu-group {\r\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\r\n  color: #DADADA;\r\n  font-size: 14px;\r\n  letter-spacing: 0.1em;\r\n  font-weight: bold;\r\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 30px;\r\n  margin: 25px 0px 0px;\n}\n.twitter {\r\n  color: #fff;\r\n  font-size: 27px;\n}\n.copyright {\r\n  margin-top: 40px;\r\n  font-size: 14px;\r\n  color: #777;\r\n  letter-spacing: 0.18em;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \r\n   width: 100%; \r\n   height: 85px;\r\n   padding-top: 20px;\r\n   margin: 0px 40px;\n}\n.contact__btns{\r\n    padding: 0px 150px;\n}\n.content-text_contact{\r\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\r\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 85%;\r\n    -moz-column-gap: 100px;\r\n         column-gap: 100px;\r\n    margin: 2px auto;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\r\n    font-size: 1.7rem;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.contact__btns {\r\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 90%;\r\n    -moz-column-gap: 180px;\r\n         column-gap: 180px;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\nh2 {\r\n    font-size: 1.5rem;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 80%;\r\n    -moz-column-gap: 230px;\r\n         column-gap: 230px;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.btn-wide {\r\n    margin: 0px 18px 30px;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\r\n    display: none;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.content-text_contact{\r\n    padding: 40px 30px;\r\n    margin: 0;\r\n    font-size: 14px;\n}\n.btn-wide{\r\n   margin: 0px 0px 30px;\n}\n}\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24770,7 +24188,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\n    position: relative;\n    display: inline-block;\n    height: 35px;\n    margin-top: 18px;\n    margin-right: 32px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\n   \n    display: flex;\n    align-items: center;\n    border: 2px solid rgba(37, 115, 176, 1);\n    color: rgba(37, 115, 176, 1);\n    min-height: 42px;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-family: \"Barlow\", sans-serif;\n    font-size: 0.875rem;\n    line-height: 1.25;\n    padding: 9px 20px;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\n    background-color: rgba(37, 115, 176, 1);\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\n    position: fixed;\n    right: 0;\n    top: 50%;\n    transform: translate(100%, -50%);\n    z-index: 100001;\n    transition: 0.4s;\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    background-color: rgb(57, 108, 162);\n    display: flex;\n    border: solid 1px rgb(57, 108, 162);\n    cursor: pointer;\n    justify-content: center;\n    align-items: center;\n    padding: 25px 0;\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    display: block;\n    -o-writing-mode: vertical-rl;\n    writing-mode: vertical-rl;\n    font-size: 14px;\n    color: #dadada;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.18px;\n    transition: 0.4s;\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    /* background: #000; */\n    padding: 15px 0;\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    color: #dadada;\n    font-size: 12px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\r\n    position: relative;\r\n    display: inline-block;\r\n    height: 35px;\r\n    margin-top: 18px;\r\n    margin-right: 32px;\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\r\n   \r\n    display: flex;\r\n    align-items: center;\r\n    border: 2px solid rgba(37, 115, 176, 1);\r\n    color: rgba(37, 115, 176, 1);\r\n    min-height: 42px;\r\n    text-decoration: none;\r\n    text-transform: uppercase;\r\n    font-family: \"Barlow\", sans-serif;\r\n    font-size: 0.875rem;\r\n    line-height: 1.25;\r\n    padding: 9px 20px;\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\r\n    background-color: rgba(37, 115, 176, 1);\r\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    /* background: #000; */\r\n    padding: 15px 0;\r\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25298,7 +24716,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\n    margin-top: 100px;\n    margin-bottom: 100px;\n    display: flex;\n    justify-content: space-between;\n}\n.single {\n    width: calc(100% - 440px);\n}\n.single__head {\n    margin-bottom: 60px;\n    padding: 30px 30px 20px 30px;\n    background: #FFFFFF;\n    border: none !important;;\n    box-sizing: border-box;\n    border-radius: 10px;\n}\n.single__head__title {\n    font-size: 35px;\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    line-height: 1.4;\n    letter-spacing: 0.04em;\n    position: relative;\n    transition: 0.8s;\n    transform: translateY(5%);\n    /* opacity: 0; */\n    border-bottom: 2px solid #333;\n    color: #333;\n}\n.single__head__flex {\n    display: flex;\n}\n.single__head__tags {\n    margin-left: auto!important;\n    text-align: right;\n    width: 50%;\n    font-weight: bold;\n    font-size: 12px;\n    line-height: 18px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__head__date {\n    width: 50%;\n    margin-left:0px!important;\n    display: inline-block;\n    text-align: left!important;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__thumbnail {\n    margin-bottom: 60px;\n    width: 100%;\n    height: 425px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 10px;\n}\n\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\n    padding: 20px 30px;\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\n    margin-bottom: 28px;\n    display: inline-block;\n    padding-left: 35px;\n    position: relative;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\n    position: absolute;\n    left: 0;\n    top: 4px;\n    display: inline-block;\n    width: 20px;\n    height: 16px;\n    content: \"\";\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\n    display: none;\n}\n.mokuji_ol {\n    counter-reset: item;\n}\n.rtoc-item {\n    margin-bottom: 10px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.rtoc-item::before {\n    counter-increment: item;\n    content: counter(item)'.';\n}\n\n/*å…±é€š*/\n.alignleft {\n    float: left;\n    margin-left: 0;\n    margin-right: 1em;\n}\n.alignright {\n    float: right;\n    margin-left: 1em;\n    margin-right: 0;\n}\n.aligncenter {\n    margin-left: auto;\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\n    text-align: center;\n}\nfigure {\n    margin-left: 0;\n    margin-right: 0;\n}\nbody {\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\n    box-sizing: inherit;\n}\n.single__contents h2 {\n    position: relative;\n    margin-bottom: 30px;\n    margin-top: 30px;\n    padding-left: 20px;\n    font-weight: bold;\n    font-size: 22px;\n    line-height: 32px;\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    top: 3px;\n    height: 26px;\n    width: 5px;\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\n    counter-reset: item;\n}\n/*\n.single__contents h2::before {\n    counter-increment: item;\n    content: counter(item)'.';\n    color: #1363AB;\n}*/\n.single__contents p {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor)\n}\n.alignfull {\n    margin-left: -20px;\n    margin-right: -20px;\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\n        max-width: none;\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\n        max-width: calc(var(--myw) + 300px) !important;\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\n        margin-left: -150px !important;\n        margin-right: -150px !important;\n}\n}\n.contents img {\n    max-width: 100%;\n    height: auto;\n}\n.contents p {\n    margin-bottom: 30px;\n}\n\n/*aside*/\n.aside {\n    width: 360px;\n}\n.aside__new {\n    margin-bottom: 60px;\n}\n.aside__title {\n    position: relative;\n    margin-left: 160px;\n    margin-bottom: 20px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    text-align: left;\n}\n.aside__title__new img {\n    position: absolute;\n    left: -32px;\n    top: 1px;\n}\n.aside__title__tags {\n    padding-left: 180px;\n}\n.aside__new__list {\n    margin-bottom: 10px;\n    position: relative;\n    height: 90px;\n    background: #FFFFFF;\n    border: 0.5px solid #C4C4C4;\n    box-sizing: border-box;\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\n    position: absolute;\n    top: 15px;\n    left: 20px;\n    height: 60px;\n    width: 60px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.aside__new__list__title {\n    padding-left: 95px;\n    padding-top: 21px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n.aside__tags__list {\n    position: relative;\n    margin-left: 60px;\n    padding-left: 35px;\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    display: flex;\n    align-items: center;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\n    position: absolute;\n    content: \"\";\n    display: inline-block;\n    top: 0;\n    left: 0;\n    width: 20px;\n    height: 20px;\n    background: #FFFFFF;\n    border: 1px solid #333333;\n    box-sizing: border-box;\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\n        margin-bottom: 60px;\n        margin-top: 73px;\n        display: block;\n}\n.single {\n        width: 100%;\n}\n.single__head {\n        margin-bottom: 30px;\n}\n.aside {\n        display: none;\n}\n.single__head__title {\n        margin-bottom: 15px;\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__head__title::before {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\n        font-size: 13px;\n        line-height: 19px;\n}\n.single__thumbnail {\n        height: 150px;\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\n        padding: 20px 20px 5px 20px;\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\n        padding-left: 30px;\n        margin-bottom: 20px;\n        font-size: 15px;\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\n        top: 4px;\n        width: 17px;\n        height: 13px;\n        background-size: cover;\n}\n.rtoc-item {\n        font-size: 13px;\n        line-height: 19px;\n        margin-bottom: 15px;\n}\n.single__contents h2 {\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__contents h2::after {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__contents p {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents__foot {\n        margin-top: 50px;\n        margin-bottom: 60px;\n}\n}\n\n/*btns*/\n.btns {\n    padding-bottom: 120px;\n    width: 100%;\n    max-width: 370px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n}\n.btns a {\n    text-align: center;\n    display: inline-block;\n    width: 70px;\n}\n.btns__prev__img {\n    width: 40px;\n    height: 40px;\n    margin-bottom: 20px;\n    cursor: pointer;\n}\n.btns__next__img {\n    transform: rotate(180deg);\n}\n.btns__prev__text {\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\n        padding-bottom: 60px;\n}\n.btns a {\n        width: 65px;\n}\n.btns__prev__img {\n        width: 60px;\n        height: 60px;\n        margin-bottom: 15px;\n}\n.btns__prev__text {\n        font-size: 13px;\n        line-height: 19px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\r\n    margin-top: 100px;\r\n    margin-bottom: 100px;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.single {\r\n    width: calc(100% - 440px);\n}\n.single__head {\r\n    margin-bottom: 60px;\r\n    padding: 30px 30px 20px 30px;\r\n    background: #FFFFFF;\r\n    border: none !important;;\r\n    box-sizing: border-box;\r\n    border-radius: 10px;\n}\n.single__head__title {\r\n    font-size: 35px;\r\n    padding-bottom: 30px;\r\n    margin-bottom: 30px;\r\n    line-height: 1.4;\r\n    letter-spacing: 0.04em;\r\n    position: relative;\r\n    transition: 0.8s;\r\n    transform: translateY(5%);\r\n    /* opacity: 0; */\r\n    border-bottom: 2px solid #333;\r\n    color: #333;\n}\n.single__head__flex {\r\n    display: flex;\n}\n.single__head__tags {\r\n    margin-left: auto!important;\r\n    text-align: right;\r\n    width: 50%;\r\n    font-weight: bold;\r\n    font-size: 12px;\r\n    line-height: 18px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__head__date {\r\n    width: 50%;\r\n    margin-left:0px!important;\r\n    display: inline-block;\r\n    text-align: left!important;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__thumbnail {\r\n    margin-bottom: 60px;\r\n    width: 100%;\r\n    height: 425px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    border-radius: 10px;\n}\r\n\r\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\r\n    padding: 20px 30px;\r\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\r\n    margin-bottom: 28px;\r\n    display: inline-block;\r\n    padding-left: 35px;\r\n    position: relative;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 4px;\r\n    display: inline-block;\r\n    width: 20px;\r\n    height: 16px;\r\n    content: \"\";\r\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\r\n    display: none;\n}\n.mokuji_ol {\r\n    counter-reset: item;\n}\n.rtoc-item {\r\n    margin-bottom: 10px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\n}\n.rtoc-item::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\n}\r\n\r\n/*å…±é€š*/\n.alignleft {\r\n    float: left;\r\n    margin-left: 0;\r\n    margin-right: 1em;\n}\n.alignright {\r\n    float: right;\r\n    margin-left: 1em;\r\n    margin-right: 0;\n}\n.aligncenter {\r\n    margin-left: auto;\r\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\r\n    text-align: center;\n}\nfigure {\r\n    margin-left: 0;\r\n    margin-right: 0;\n}\nbody {\r\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\r\n    box-sizing: inherit;\n}\n.single__contents h2 {\r\n    position: relative;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n    padding-left: 20px;\r\n    font-weight: bold;\r\n    font-size: 22px;\r\n    line-height: 32px;\r\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    top: 3px;\r\n    height: 26px;\r\n    width: 5px;\r\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\r\n    counter-reset: item;\n}\r\n/*\r\n.single__contents h2::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\r\n    color: #1363AB;\r\n}*/\n.single__contents p {\r\n    font-weight: 500;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor)\n}\n.alignfull {\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\r\n        max-width: none;\r\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\r\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\r\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\r\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        max-width: calc(var(--myw) + 300px) !important;\r\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\r\n        margin-left: -150px !important;\r\n        margin-right: -150px !important;\n}\n}\n.contents img {\r\n    max-width: 100%;\r\n    height: auto;\n}\n.contents p {\r\n    margin-bottom: 30px;\n}\r\n\r\n/*aside*/\n.aside {\r\n    width: 360px;\n}\n.aside__new {\r\n    margin-bottom: 60px;\n}\n.aside__title {\r\n    position: relative;\r\n    margin-left: 160px;\r\n    margin-bottom: 20px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    text-align: left;\n}\n.aside__title__new img {\r\n    position: absolute;\r\n    left: -32px;\r\n    top: 1px;\n}\n.aside__title__tags {\r\n    padding-left: 180px;\n}\n.aside__new__list {\r\n    margin-bottom: 10px;\r\n    position: relative;\r\n    height: 90px;\r\n    background: #FFFFFF;\r\n    border: 0.5px solid #C4C4C4;\r\n    box-sizing: border-box;\r\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\r\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\r\n    position: absolute;\r\n    top: 15px;\r\n    left: 20px;\r\n    height: 60px;\r\n    width: 60px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\n}\n.aside__new__list__title {\r\n    padding-left: 95px;\r\n    padding-top: 21px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n.aside__tags__list {\r\n    position: relative;\r\n    margin-left: 60px;\r\n    padding-left: 35px;\r\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    display: flex;\r\n    align-items: center;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\r\n    position: absolute;\r\n    content: \"\";\r\n    display: inline-block;\r\n    top: 0;\r\n    left: 0;\r\n    width: 20px;\r\n    height: 20px;\r\n    background: #FFFFFF;\r\n    border: 1px solid #333333;\r\n    box-sizing: border-box;\r\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\r\n        margin-bottom: 60px;\r\n        margin-top: 73px;\r\n        display: block;\n}\n.single {\r\n        width: 100%;\n}\n.single__head {\r\n        margin-bottom: 30px;\n}\n.aside {\r\n        display: none;\n}\n.single__head__title {\r\n        margin-bottom: 15px;\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__head__title::before {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n.single__thumbnail {\r\n        height: 150px;\r\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\r\n        padding: 20px 20px 5px 20px;\r\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\r\n        padding-left: 30px;\r\n        margin-bottom: 20px;\r\n        font-size: 15px;\r\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\r\n        top: 4px;\r\n        width: 17px;\r\n        height: 13px;\r\n        background-size: cover;\n}\n.rtoc-item {\r\n        font-size: 13px;\r\n        line-height: 19px;\r\n        margin-bottom: 15px;\n}\n.single__contents h2 {\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__contents h2::after {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__contents p {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents__foot {\r\n        margin-top: 50px;\r\n        margin-bottom: 60px;\n}\n}\r\n\r\n/*btns*/\n.btns {\r\n    padding-bottom: 120px;\r\n    width: 100%;\r\n    max-width: 370px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.btns a {\r\n    text-align: center;\r\n    display: inline-block;\r\n    width: 70px;\n}\n.btns__prev__img {\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-bottom: 20px;\r\n    cursor: pointer;\n}\n.btns__next__img {\r\n    transform: rotate(180deg);\n}\n.btns__prev__text {\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\r\n        padding-bottom: 60px;\n}\n.btns a {\r\n        width: 65px;\n}\n.btns__prev__img {\r\n        width: 60px;\r\n        height: 60px;\r\n        margin-bottom: 15px;\n}\n.btns__prev__text {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -64074,7 +63492,7 @@ Vue.compile = compileToFunctions;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_args":[["axios@0.21.4","/Applications/XAMPP/xamppfiles/htdocs/v2"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"/Applications/XAMPP/xamppfiles/htdocs/v2","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\xampp\\\\htdocs\\\\idenbrid-v2"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"C:\\\\xampp\\\\htdocs\\\\idenbrid-v2","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
 
 /***/ })
 

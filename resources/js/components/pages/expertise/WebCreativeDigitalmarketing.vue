@@ -61,7 +61,7 @@
                         <p class="system-sec__list__text">
                             場所や時間、実店舗の場所に問わず世界中に人々に商品を販売ができるようになります。インターネットの普及している現代では有効な販売手段となることは間違いありません。</p>
                     </li>
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web07.svg"
                             alt="">
@@ -109,7 +109,7 @@
                         <p class="system-sec__list__text">
                             WEBサイトは作って終わりではありません。むしろその後の運営が大切になります。その運営を専門知識がなくても簡単に運営ができるよう、CMSを構築します。それにより後の運営費削減にも繋がります。
                         </p>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
@@ -163,7 +163,7 @@
                         <p class="system-sec__list__text">
                             狙っている検索ワードの競合調査から適切なKPIを設定し、設定したKPIが正しく計測できているかを調査し、タグ設定などを行います。</p>
                     </li>
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing07.svg"
                             alt="">
@@ -186,7 +186,7 @@
                         <h3 class="system-sec__list__title">コピーライティング</h3>
                         <p class="system-sec__list__text">
                             日々の業務が忙しい企業の方々のWEBサイトの更新や運用を代行致します。<br>またバージョン対応や様々なエラーなどにも対応致します。</p>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
@@ -218,9 +218,93 @@
                         <p class="system-sec__list__text">
                             リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。<br>改善立案から実行まで対応可能です。</p>
                     </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad01.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">リスディング広告</h3>
+                        <p class="system-sec__list__text">
+                            検索結果に連動した広告で見込み顧客の獲得が高い広告です。適切なワードと入礼ロジックで運営を代行し分析、改善しながら最適な広告運営を致します。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad02.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">SNS広告</h3>
+                        <p class="system-sec__list__text">
+                            Twitter、Facebook、Instagramの広告を運用致します。<br>企業のサービス内容、商品から最適な広告を提案致します。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad03.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">広告分析</h3>
+                        <p class="system-sec__list__text">
+                            リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。<br>改善立案から実行まで対応可能です。</p>
+                    </li>
                 </ul>
             </section>
-            <section class="system-sec mycontents-wide">
+            <section class="flow">
+                <div class="mycontents-wide">
+                    <h3 class="content-title content-title_flow">FLOW</h3>
+                    <p class="content-text content-subtitle_flow">
+                        企画から開発、運用まで一貫して対応を行っております。<br>お問い合わせからクローズまで一連の流れをご確認ください。</p>
+                </div>
+
+                <div class="flow__scroll mycontents-wide">
+                    <ul class="flow__contents">
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-1.jpg" alt="">
+                            <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
+                            <p class="flow__list__text">制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-2.jpg" alt="">
+                            <h4 class="flow__list__title">仕様・要件定義</h4>
+                            <p class="flow__list__text">Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-3.jpg" alt="">
+                            <h4 class="flow__list__title">デザイン制作・システム開発</h4>
+                            <p class="flow__list__text">
+                                ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。<br>そして開発工程のコーディング、システム開発を行います。</p>
+                        </li>
+                        <li class="flow__list">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-4.jpg" alt="">
+                            <h4 class="flow__list__title">リリース・保守・運営</h4>
+                            <p class="flow__list__text">テストをおえて修正完了後、本番環境へのリリースを行います。<br>リリース後のサイト分析、保守、運営までサポート致します。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <section>
+                <section class="menu-list">
+                    <div class="menu-box">
+                        <div class="item">
+                            <a href="/system-application/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
+                                application <br>development
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/mobile-app-development/" class="text router-link-exact-active router-link-active"><img
+                                    src="/assets/img/icons/Message-icon.svg">Mobile app development
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/web-design-UIUX-designing/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
+                                design・UIUX designing
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/web-creative-digital-marketing/" class="text">
+                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">運用支援・保守運用</h2>
                 <p class="system-sec__text">
                     制作後の運用サポートや他社からの切り替え、日々のWEBサイトの更新代行を行っております。<br>ITに詳しい担当者がいなくても安心してご依頼いただけます。</p>
@@ -293,9 +377,9 @@
                     </ul>
                 </div>
 
-            </section>
+            </section> -->
 
-            <section class="menu">
+            <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
@@ -359,7 +443,7 @@
                         <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
                     </a>
                 </div>
-                <!-- Modal -->
+              
                 <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -376,7 +460,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
         <Footer />
     </div>

@@ -49,6 +49,13 @@
                         <h3 class="system-sec__list__title">レスポンシブデザイン</h3>
                         <p class="system-sec__list__text">どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。</p>
                     </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design05.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">レスポンシブデザイン</h3>
+                        <p class="system-sec__list__text">どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。</p>
+                    </li>
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
@@ -80,9 +87,86 @@
                         <h3 class="system-sec__list__title">パッケージデザイン</h3>
                         <p class="system-sec__list__text">ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。</p>
                     </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">名刺デザイン</h3>
+                        <p class="system-sec__list__text">名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">パンフレットデザイン</h3>
+                        <p class="system-sec__list__text">
+                            体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。
+                        </p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">パッケージデザイン</h3>
+                        <p class="system-sec__list__text">ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。</p>
+                    </li>
                 </ul>
             </section>
-            <section class="flow">
+            <section class="system-sec mycontents-wide">
+                <h2 class="system-sec__tiile">グラフィック</h2>
+                <p class="system-sec__text">
+                    チラシ、ポスターなどのグラフィックデザイン制作も行っております。webサイトと一貫して承ることが<br>できるためブランドイメージの統一を図ることができます。</p>
+
+                <ul class="system-sec__contents system-sec__contents_last">
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">名刺デザイン</h3>
+                        <p class="system-sec__list__text">名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">パンフレットデザイン</h3>
+                        <p class="system-sec__list__text">
+                            体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。
+                        </p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">パッケージデザイン</h3>
+                        <p class="system-sec__list__text">ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">名刺デザイン</h3>
+                        <p class="system-sec__list__text">名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">パンフレットデザイン</h3>
+                        <p class="system-sec__list__text">
+                            体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。
+                        </p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">パッケージデザイン</h3>
+                        <p class="system-sec__list__text">ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- <section class="flow">
                 <div class="mycontents-wide">
                     <h3 class="content-title content-title_flow">FLOW</h3>
                     <p class="content-text content-subtitle_flow">
@@ -124,9 +208,44 @@
                     </ul>
                 </div>
 
+            </section> -->
+            <section class="flow">
+                <div class="mycontents-wide">
+                    <h3 class="content-title content-title_flow">FLOW</h3>
+                    <p class="content-text content-subtitle_flow">
+                        企画から開発、運用まで一貫して対応を行っております。<br>お問い合わせからクローズまで一連の流れをご確認ください。</p>
+                </div>
+
+                <div class="flow__scroll mycontents-wide">
+                    <ul class="flow__contents">
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-1.jpg" alt="">
+                            <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
+                            <p class="flow__list__text">制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-2.jpg" alt="">
+                            <h4 class="flow__list__title">仕様・要件定義</h4>
+                            <p class="flow__list__text">Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-3.jpg" alt="">
+                            <h4 class="flow__list__title">デザイン制作・システム開発</h4>
+                            <p class="flow__list__text">
+                                ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。<br>そして開発工程のコーディング、システム開発を行います。</p>
+                        </li>
+                        <li class="flow__list">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-4.jpg" alt="">
+                            <h4 class="flow__list__title">リリース・保守・運営</h4>
+                            <p class="flow__list__text">テストをおえて修正完了後、本番環境へのリリースを行います。<br>リリース後のサイト分析、保守、運営までサポート致します。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
             </section>
 
-            <section class="menu">
+            <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
@@ -190,7 +309,7 @@
                         <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
                     </a>
                 </div>
-                <!-- Modal -->
+              
                 <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -207,6 +326,31 @@
                         </div>
                     </div>
                 </div>
+            </section> -->
+            <section>
+                <section class="menu-list">
+                    <div class="menu-box">
+                        <div class="item">
+                            <a href="/system-application/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
+                                application <br>development
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/mobile-app-development/" class="text router-link-exact-active router-link-active"><img
+                                    src="/assets/img/icons/Message-icon.svg">Mobile app development
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/web-design-UIUX-designing/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
+                                design・UIUX designing
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/web-creative-digital-marketing/" class="text">
+                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</a>
+                        </div>
+                    </div>
+                </section>
             </section>
         </main>
         <Footer />

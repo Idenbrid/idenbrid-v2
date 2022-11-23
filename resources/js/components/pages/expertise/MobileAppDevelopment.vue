@@ -37,6 +37,34 @@
                             IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。
                         </p>
                     </li>
+                    <!-- *************** BY AZEEM ************ -->
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app01.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">IOSアプリ</h3>
+                        <p class="system-sec__list__text">
+                            SwiftやObjective-Cでのネイティブアプリ開発を行っております。iPhoneをはじめとしiPadアプリの開発も可能です。<br>開発からAppleストアへの申請まで一貫して対応しております。
+                        </p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app02.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">Androidアプリ</h3>
+                        <p class="system-sec__list__text">
+                            KotlinやJavaでのネイティブアプリ開発を行っております。<br>ネイティブ開発の利点を最大限生かしたプログラムを提供しております。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app03.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">ハイブリットアプリ</h3>
+                        <p class="system-sec__list__text">
+                            IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。
+                        </p>
+                    </li>
+                    <!-- *************** BY AZEEM ************ -->
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
@@ -151,7 +179,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="system-sec mycontents-wide">
+            <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">情報管理・データベース設計</h2>
                 <p class="system-sec__text">顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など<br>クライアントの課題に沿ったご提案をさせていただきます。</p>
 
@@ -180,6 +208,32 @@
                         <p class="system-sec__list__text">
                             サーバーコストの削減やオンプレミスからの移管支援などを行っております。<br>様々なシステムのクラウド化による業務効率化を得意としております。</p>
                     </li>
+                   
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure01.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">保守運用</h3>
+                        <p class="system-sec__list__text">
+                            WEBサイト運営で起こりうるリスク回避の支援を行います。<br>脆弱なシステムによるハッキング被害などからお客様の大切な情報をお守りします。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure02.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">インフラ構築</h3>
+                        <p class="system-sec__list__text">
+                            リモート業務が進む今、社外からの利用も多いため運用範囲を拡大し、利便性の高いインフラを構築致します。それに伴うセキュリティー対策も万全に行います。</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure03.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">クラウド開発</h3>
+                        <p class="system-sec__list__text">
+                            サーバーコストの削減やオンプレミスからの移管支援などを行っております。<br>様々なシステムのクラウド化による業務効率化を得意としております。</p>
+                    </li>
+                   
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
@@ -267,8 +321,8 @@
                             サーバーコストの削減やオンプレミスからの移管支援などを行っております。<br>様々なシステムのクラウド化による業務効率化を得意としております。</p>
                     </li>
                 </ul>
-            </section>
-            <section class="flow">
+            </section> -->
+            <!-- <section class="flow">
                 <div class="mycontents-wide">
                     <h3 class="content-title content-title_flow">FLOW</h3>
                     <p class="content-text content-subtitle_flow">
@@ -310,9 +364,68 @@
                     </ul>
                 </div>
 
-            </section>
+            </section> -->
+            <section class="flow">
+                <div class="mycontents-wide">
+                    <h3 class="content-title content-title_flow">FLOW</h3>
+                    <p class="content-text content-subtitle_flow">
+                        企画から開発、運用まで一貫して対応を行っております。<br>お問い合わせからクローズまで一連の流れをご確認ください。</p>
+                </div>
 
-            <section class="menu">
+                <div class="flow__scroll mycontents-wide">
+                    <ul class="flow__contents">
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-1.jpg" alt="">
+                            <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
+                            <p class="flow__list__text">制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-2.jpg" alt="">
+                            <h4 class="flow__list__title">仕様・要件定義</h4>
+                            <p class="flow__list__text">Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-3.jpg" alt="">
+                            <h4 class="flow__list__title">デザイン制作・システム開発</h4>
+                            <p class="flow__list__text">
+                                ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。<br>そして開発工程のコーディング、システム開発を行います。</p>
+                        </li>
+                        <li class="flow__list">
+                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-4.jpg" alt="">
+                            <h4 class="flow__list__title">リリース・保守・運営</h4>
+                            <p class="flow__list__text">テストをおえて修正完了後、本番環境へのリリースを行います。<br>リリース後のサイト分析、保守、運営までサポート致します。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <section>
+                <section class="menu-list">
+                    <div class="menu-box">
+                        <div class="item">
+                            <a href="/system-application/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
+                                application <br>development
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/mobile-app-development/" class="text router-link-exact-active router-link-active"><img
+                                    src="/assets/img/icons/Message-icon.svg">Mobile app development
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/web-design-UIUX-designing/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
+                                design・UIUX designing
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/web-creative-digital-marketing/" class="text">
+                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
@@ -376,7 +489,7 @@
                         <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
                     </a>
                 </div>
-                <!-- Modal -->
+              
                 <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -393,7 +506,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
         <Footer />
     </div>
