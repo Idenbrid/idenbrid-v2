@@ -270,9 +270,9 @@
             </section>
             <section class="flow">
                 <div class="mycontents-wide">
-                    <h3 class="content-title content-title_flow">FLOW</h3>
+                    <h3 class="content-title content-title_flow">PROCESS</h3>
                     <p class="content-text content-subtitle_flow">
-                        企画から開発、運用まで一貫して対応を行っております。<br>お問い合わせからクローズまで一連の流れをご確認ください。</p>
+                        契約と開発の流れ</p>
                 </div>
 
                 <div class="flow__scroll mycontents-wide">
