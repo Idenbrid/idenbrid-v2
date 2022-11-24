@@ -10586,19 +10586,19 @@ var staticRenderFns = [function () {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q. SEH：スタジオ型開発ハブとはなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("A.アイデンブリッドが進めている開発サービスの総称です。当社では主にシステムやアプリの受託開発を受けております。また企業様からのリソースをベースとしたラボ型開発も受けてつけております。これからの開発サービスを当社ではSDHと呼んでいます。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("SEH：スタジオ型開発ハブとはなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("アイデンブリッドが進めている開発サービスの総称です。当社では主にシステムやアプリの受託開発を受けております。また企業様からのリソースをベースとしたラボ型開発も受けてつけております。これからの開発サービスを当社ではSDHと呼んでいます。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.開発において社内にITに詳しい者がいませんが大丈夫でしょうか？ ")]), _vm._v(" "), _c("dd", [_vm._v("A.当社のお客様は8割以上が社内に詳しい方がいないので私たちを頼って頂いておりますのでご安心ください。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("開発において社内にITに詳しい者がいませんが大丈夫でしょうか？ ")]), _vm._v(" "), _c("dd", [_vm._v("当社のお客様は8割以上が社内に詳しい方がいないので私たちを頼って頂いておりますのでご安心ください。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.ウェブのUIUXデザインはなんのツールを使って行いますか？")]), _vm._v(" "), _c("dd", [_vm._v("A.当社では基本的にAdobe XDそしてFigmaを使っています。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ウェブのUIUXデザインはなんのツールを使って行いますか？")]), _vm._v(" "), _c("dd", [_vm._v("当社では基本的にAdobe XDそしてFigmaを使っています。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.UIUXの修正は何回まで可能でしょうか？ ")]), _vm._v(" "), _c("dd", [_c("div", {
+  }, [_vm._v("UIUXの修正は何回まで可能でしょうか？ ")]), _vm._v(" "), _c("dd", [_c("div", {
     staticClass: "faq-inner",
     staticStyle: {
       display: "block"
@@ -10611,7 +10611,7 @@ var staticRenderFns = [function () {
       "list-style": "disc",
       "padding-left": "25px"
     }
-  }, [_c("li", [_vm._v("A.当社では初稿をお出しして最大その後2回（初稿を含めて3回）まで対応しております。")])]), _vm._v(" "), _c("div", {
+  }, [_c("li", [_vm._v("当社では初稿をお出しして最大その後2回（初稿を含めて3回）まで対応しております。")])]), _vm._v(" "), _c("div", {
     staticStyle: {
       position: "absolute",
       left: "-71px",
@@ -10630,19 +10630,19 @@ var staticRenderFns = [function () {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" Q.アプリやシステムの開発期間はどれくらいになりますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("A.規模や案件ごとに異なりますが通常2-6ヶ月規模のものが多いです。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("アプリやシステムの開発期間はどれくらいになりますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("規模や案件ごとに異なりますが通常2-6ヶ月規模のものが多いです。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" Q.開発開始するために、クライアントが準備すべき必要なものは何がありますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("A.お客様がどこまで担当して頂けるかによりますが、RFPや実現されたいページや機能の仕様など書類に落とし込まれたものがあると助かります。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("開発開始するために、クライアントが準備すべき必要なものは何がありますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("お客様がどこまで担当して頂けるかによりますが、RFPや実現されたいページや機能の仕様など書類に落とし込まれたものがあると助かります。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v(" Q.開発中にはどのようにプロジェクト管理をしますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("A.ソースコードのバージョンコントロールはGitHubにて、進捗チケット管理はAsanaにて行っています。またその他、仕様要件などはGoogle\n                                    Spreadsheetを使用しています。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("開発中にはどのようにプロジェクト管理をしますか？ ")]), _vm._v(" "), _c("dd", [_vm._v("ソースコードのバージョンコントロールはGitHubにて、進捗チケット管理はAsanaにて行っています。またその他、仕様要件などはGoogle\n                                    Spreadsheetを使用しています。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.開発中などはどのように定期的にコミュニケーションをとれますか？ ")]), _vm._v(" "), _c("dd", [_c("p", [_vm._v("A.開発中は定例や不定期の打ち合わせを設定させて頂き活発にコニュニケーションを取っています。\n                                    ")]), _vm._v(" "), _c("p", [_vm._v("作業を行っています。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("開発中などはどのように定期的にコミュニケーションをとれますか？ ")]), _vm._v(" "), _c("dd", [_c("p", [_vm._v("開発中は定例や不定期の打ち合わせを設定させて頂き活発にコニュニケーションを取っています。\n                                    ")]), _vm._v(" "), _c("p", [_vm._v("作業を行っています。")]), _vm._v(" "), _c("ul", {
     staticStyle: {
       "list-style": "number",
       "padding-left": "20px"
@@ -10702,23 +10702,23 @@ var staticRenderFns = [function () {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.開発されたソフトウェアの著作権は誰にありますか？")]), _vm._v(" "), _c("dd", [_vm._v("A.当社では契約ごとに定めていますが、基本的に著作権はクライアントへ帰属します。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("開発されたソフトウェアの著作権は誰にありますか？")]), _vm._v(" "), _c("dd", [_vm._v("当社では契約ごとに定めていますが、基本的に著作権はクライアントへ帰属します。")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.成果物の定義はどのように決まりますか？")]), _vm._v(" "), _c("dd", [_vm._v("A.請負契約の場合には仕様要件の定義、品質基準の定義を行い、ソースコードなどの実装したシステム自体を成果物として定義します。準委任契約の場合には月末に稼働報告書をご提出致します。\n                                ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("成果物の定義はどのように決まりますか？")]), _vm._v(" "), _c("dd", [_vm._v("請負契約の場合には仕様要件の定義、品質基準の定義を行い、ソースコードなどの実装したシステム自体を成果物として定義します。準委任契約の場合には月末に稼働報告書をご提出致します。\n                                ")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.システムの開発において想定される契約書類はなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("A.各お客様と基本的に基本契約書いわゆる業務委託契約書を締結します。\n                                    他にも各プロジェクトごとに個別契約書を締結します")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("システムの開発において想定される契約書類はなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("各お客様と基本的に基本契約書いわゆる業務委託契約書を締結します。\n                                    他にも各プロジェクトごとに個別契約書を締結します")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.見積書はどのように作成するのですか？")]), _vm._v(" "), _c("dd", [_vm._v("A.各仕事ごとの項目分けを行いその中で工数に沿って計算します。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("見積書はどのように作成するのですか？")]), _vm._v(" "), _c("dd", [_vm._v("各仕事ごとの項目分けを行いその中で工数に沿って計算します。")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("Q.工数の単位で人月や人日とはなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("A.こちらは1人のエンジニアあたりが1ヶ月または1日稼働した場合という意味になります。")])])])])])])])]);
+  }, [_vm._v("工数の単位で人月や人日とはなんですか？")]), _vm._v(" "), _c("dd", [_vm._v("こちらは1人のエンジニアあたりが1ヶ月または1日稼働した場合という意味になります。")])])])])])])])]);
 }];
 render._withStripped = true;
 
@@ -12086,7 +12086,7 @@ var render = function render() {
   })])])])]), _vm._v(" "), _c("input", {
     staticClass: "action-button",
     attrs: {
-      "data-v-f847ca3e": "",
+      type: "submit",
       name: "next",
       value: "送信"
     },
@@ -15800,11 +15800,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__subtitle"
-  }, [_vm._v("Software development")]), _vm._v(" "), _c("h4", {
+  }, [_vm._v("Mobile app development")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v(" ウェブシステム開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v(" スマホiOS/Androidアプリ開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -15823,11 +15823,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__subtitle"
-  }, [_vm._v("Mobile app development")]), _vm._v(" "), _c("h4", {
+  }, [_vm._v("Software development")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("スマホiOS/Androidアプリ開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ウェブシステム開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -15846,11 +15846,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__subtitle"
-  }, [_vm._v("Web design / UIUX design")]), _vm._v(" "), _c("h4", {
+  }, [_vm._v("Off-shore Labo Development")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("UIUXデザイン制作")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ラボ型オフショア開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                当社ではAdobe XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -15869,11 +15869,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__subtitle"
-  }, [_vm._v("Off-shore Labo Development")]), _vm._v(" "), _c("h4", {
+  }, [_vm._v("Web design / UIUX design")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("ラボ型オフショア開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("UIUXデザイン制作")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text service-contents__list_last__text"
-  }, [_vm._v("当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。\n                            ")])])])], 1)])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("当社ではAdobe XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。\n                            ")])])])], 1)])]), _vm._v(" "), _c("div", {
     staticClass: "branding--contact"
   }, [_vm._m(2), _vm._v(" "), _c("div", {
     staticClass: "fade_y on"
@@ -16345,16 +16345,68 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "menu-list"
+  }, [_c("div", {
+    staticClass: "menu-box"
+  }, [_c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/development/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Person-icon.svg"
+    }
+  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text router-link-exact-active router-link-active",
+    attrs: {
+      to: "/mobileapp/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Message-icon.svg"
+    }
+  }), _vm._v("Mobile app development\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/uiuxdesign/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Building-icon.svg"
+    }
+  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/webitconsulting/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Digital-Assets.svg"
+    }
+  }), _vm._v("Web creative・Digital marketing")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("main", [_c("div", {
+  return _c("div", {
     staticClass: "hero_Heading"
   }, [_c("h2", {
     staticClass: "hero"
-  }, [_vm._v("Mobile app development")])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("Mobile app development")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -16434,7 +16486,11 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("ハイブリットアプリ")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。\n                    ")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("\n                        IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。\n                    ")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -16514,7 +16570,11 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("チャットアプリ")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        社内チャットツールの開発やWEBサービスと連携したアプリの開発が可能です。業務効率化やWEBサービスのアプリ版の開発をお任せください。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("\n                        社内チャットツールの開発やWEBサービスと連携したアプリの開発が可能です。業務効率化やWEBサービスのアプリ版の開発をお任せください。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -16594,15 +16654,19 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("打刻アプリ")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモートワークが進んでいる現代で、どこからでも打刻ができるアプリを開発いたします。給与計算システムと連動することでより労務の負担を軽減することが可能です。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("\n                        リモートワークが進んでいる現代で、どこからでも打刻ができるアプリを開発いたします。給与計算システムと連動することでより労務の負担を軽減することが可能です。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("FLOW")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("PROCESS")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    企画から開発、運用まで一貫して対応を行っております。"), _c("br"), _vm._v("お問い合わせからクローズまで一連の流れをご確認ください。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n                    契約と開発の流れ")])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -16654,55 +16718,7 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("section", [_c("section", {
-    staticClass: "menu-list"
-  }, [_c("div", {
-    staticClass: "menu-box"
-  }, [_c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/development/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Person-icon.svg"
-    }
-  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text router-link-exact-active router-link-active",
-    attrs: {
-      href: "/mobileapp/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Message-icon.svg"
-    }
-  }), _vm._v("Mobile app development\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/uiuxdesign/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Building-icon.svg"
-    }
-  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/webitconsulting/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Digital-Assets.svg"
-    }
-  }), _vm._v("Web creative・Digital marketing")])])])])])]);
+  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
 }];
 render._withStripped = true;
 
@@ -16724,7 +16740,55 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("main", [_vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "menu-list"
+  }, [_c("div", {
+    staticClass: "menu-box"
+  }, [_c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/development/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Person-icon.svg"
+    }
+  }), _vm._v("ウェブシステム開発\n                            ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text router-link-exact-active router-link-active",
+    attrs: {
+      to: "/mobileapp/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Message-icon.svg"
+    }
+  }), _vm._v("スマホアプリ開発\n                            ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/uiuxdesign/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Building-icon.svg"
+    }
+  }), _vm._v("UIUXデザイン制作\n                            ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/webitconsulting/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Digital-Assets.svg"
+    }
+  }), _vm._v("オフショア開発")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -16733,19 +16797,17 @@ var staticRenderFns = [function () {
     staticClass: "mv_textarea"
   }, [_c("h2", [_c("strong", {
     staticClass: "en entxt"
-  }, [_vm._v("SES / エンジニア採用営業支援")]), _vm._v(" "), _c("span", {
-    staticClass: "jptxt"
-  }, [_vm._v("SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。")])])]);
+  }, [_vm._v("Software development / ウェブシステム開発")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("main", [_c("section", {
+  return _c("section", {
     staticClass: "system-sec mycontents-wide mt-5"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("サービスシステム開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("IT受託開発・プロジェクトベース")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("\n                whitecanvasは、もっとも新事業開発支援を得意としております。"), _c("br"), _vm._v("クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("\n                    当社はウェブ開発から事業を始めました会社となり、このウェブ領域における開発を得意としています。開発は基本的にスクラッチ開発と言われるゼロから全てを開発しまして、WordPressのようなCMSに頼ることなく、構築する技術を保有しています。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -16757,9 +16819,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("フルスクラッチ開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("システム設計や書類作成も得意")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        オーダーメイドのシステム設計により特殊な業務の対応や他者との差別化を図ることが可能です。また、パッケージ開発より自由にシステムをカスタマイズできる利点もございます。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            当社ではきちんとシステム・インフラ設計図を作ることができ、各詳細設計書類・テストケースも作成してきちんと検収まで行うので大手企業様からもご好評いただいております。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -16769,9 +16831,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("マッチングシステム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ITに詳しくないお客様に強い")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        BtoBマッチングのみならず、CtoCサービスのWEBサービス主にオークションサービスやフリマサービスなど開発いたします。エスクロー決済の導入も可能です。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            私たちのエンドクライアント企業様は社内にIT人材がおらず、当社を頼ってくださっていることも多くあります。当社はきちんとしたヒアリングからそれをシステムに落とし込むことを得意としています")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -16781,51 +16843,19 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("売買システム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("対応範囲")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("商材を問わずユーザー間で売買ができるシステムを構築致します。"), _c("br"), _vm._v("運営側のユーザー管理、運用まで考えた設計を提供致します。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system04.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("ECシステム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        パッケージ開発やASP開発をはじめとし、オリジナルでの制作も可能です。"), _c("br"), _vm._v("決済システムや顧客管理システムと連携し、より効果的なECサイトを制作いたします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("ポータルシステム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        企業内ポータルサイトやクチコミポータルサイト、不動産ポータルサイトなど様々なジャンルに対応しております。メッセージ機能や投稿機能などを入れ込むことも可能です。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system06.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("コミュニティーシステム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        オンラインサロンやオンラインスクール、などオンライン上でのコミュニティーシステムを開発いたします。月額課金や単発販売などニーズに応じた設定が可能です。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("フルスクラッチ開発・マッチング・EC（売買システム）・ポータル・管理システム・ダッシュボード・コミュニケーションシステム・会員管理・予約管理・自動見積もりシステム・営業管理システムなど他多数\n                        ")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("情報管理・データベース設計")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("当社がご提供できる技術やソルーション")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("\n                whitecanvasは、もっとも新事業開発支援を得意としております。"), _c("br"), _vm._v("クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("\n                    当社ではCtoC系ウェブサービスやSaaS開発また業務管理システムまで幅広く開発に対応しています。どのようなサービスを私たちが提供可能かをご説明させて頂きます。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -16837,9 +16867,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("予約管理システム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ワンストップ開発")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        飲食店や美容室、ホテルなどで使用されております。導入により電話やメールの対応の人的ソースの削減、営業時間外でも対応できる為予約の取りこぼし防止対策にもなります。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            当社のウェブ開発では設計から要件定義そしてデザインから開発またテストまで一社完結で開発をシステムフローを組んでいます。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -16849,9 +16879,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("会員システム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("開発言語・クラウド")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リアル店舗の顧客会員のシステムやオンラインサロンなどの会員制サイトシステムを開発致します。会員行動分析機能などの開発も行うことができます。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            開発言語はPHP/LaravelやNode.js、Python/djangoなどモダンそして広く一般的な言語を使用しています。またインフラはAWS、GCP、Azureなどのクラウド環境にも対応しております。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -16861,133 +16891,21 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("自動見積もりシステム")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("PWA")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        お問い合わせいただいた内容から自動で見積もりを作成するシステムを開発いたします。"), _c("br"), _vm._v("すぐに顧客が見積もりをもらえることで見込み顧客を逃しません。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db04.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("アンケート管理システム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        顧客アンケートや既存ユーザーの満足度アンケートなどを自動で管理できるシステムを提供致します。複数のテンプレやフォームを用意し、使い勝手の良いシステムを構築致します。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("顧客管理システム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        ECサイトと連携した顧客管理システムを導入することで販売データの分析や顧客分析が可能となるシステムを開発します。"), _c("br"), _vm._v("分析したいデータに合わせて使い勝手の良いシステムを構築致します。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("営業管理システム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])])])]), _vm._v(" "), _c("section", {
-    staticClass: "system-sec mycontents-wide"
-  }, [_c("h2", {
-    staticClass: "system-sec__tiile"
-  }, [_vm._v("情報管理・データベース設計")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__text"
-  }, [_vm._v("顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など"), _c("br"), _vm._v("クライアントの課題に沿ったご提案をさせていただきます。")]), _vm._v(" "), _c("ul", {
-    staticClass: "system-sec__contents system-sec__contents_last"
-  }, [_c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("保守運用")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        WEBサイト運営で起こりうるリスク回避の支援を行います。"), _c("br"), _vm._v("脆弱なシステムによるハッキング被害などからお客様の大切な情報をお守りします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("インフラ構築")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモート業務が進む今、社外からの利用も多いため運用範囲を拡大し、利便性の高いインフラを構築致します。それに伴うセキュリティー対策も万全に行います。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/infrastructure03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("クラウド開発")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        サーバーコストの削減やオンプレミスからの移管支援などを行っております。"), _c("br"), _vm._v("様々なシステムのクラウド化による業務効率化を得意としております。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("営業管理システム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("営業管理システム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("営業管理システム")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。"), _c("br"), _vm._v("社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。\n                    ")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("\n                            アプリのような利便性を追求されたいがウェブベースにて開発をされたいお客様へPWAを勧めており、お客様のユーザーペインの解消のために視野の広い提案を行なっています。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("FLOW")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ウェブシステム開発におけるフロー")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    企画から開発、運用まで一貫して対応を行っております。"), _c("br"), _vm._v("お問い合わせからクローズまで一連の流れをご確認ください。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v('\n                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで\n一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"')])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -17003,7 +16921,7 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("ヒヤリング・お見積もり")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("お問い合わせを頂き、開発されたい内容の書類RFPや内容をもとにヒアリングそして予算に合わせてお見積もりを作成します。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17013,9 +16931,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("仕様・要件定義")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("要件定義・基本設計")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("当社のフォーマットに合わせて、仕様を整理しどのような開発を進めるのかを定義します。スケジュールの管理などもこちらで行います。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17025,9 +16943,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("デザイン制作・システム開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("UIUXデザイン・開発")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("\n                            ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。"), _c("br"), _vm._v("そして開発工程のコーディング、システム開発を行います。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                画面遷移図からデザインを起こし、詳細設計書に基づきシステム・アプリ・インフラ開発を進めて参ります。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17037,57 +16955,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("テスト・納品")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("section", [_c("section", {
-    staticClass: "menu-list"
-  }, [_c("div", {
-    staticClass: "menu-box"
-  }, [_c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/development/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Person-icon.svg"
-    }
-  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text router-link-exact-active router-link-active",
-    attrs: {
-      href: "/mobileapp/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Message-icon.svg"
-    }
-  }), _vm._v("Mobile app development\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/uiuxdesign/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Building-icon.svg"
-    }
-  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/webitconsulting/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Digital-Assets.svg"
-    }
-  }), _vm._v("Web creative・Digital marketing")])])])])])]);
+  }, [_vm._v("テストケースに基づき検収を行いお客様にもご確認頂き、アプリの審査やサーバーへのディプロイ作業を進めます。\n                            ")])])])])]);
 }];
 render._withStripped = true;
 
@@ -17109,16 +16979,68 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "menu-list"
+  }, [_c("div", {
+    staticClass: "menu-box"
+  }, [_c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/development/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Person-icon.svg"
+    }
+  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text router-link-exact-active router-link-active",
+    attrs: {
+      to: "/mobileapp/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Message-icon.svg"
+    }
+  }), _vm._v("Mobile app development\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/uiuxdesign/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Building-icon.svg"
+    }
+  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/webitconsulting/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Digital-Assets.svg"
+    }
+  }), _vm._v("Web creative・Digital marketing\n                        ")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("main", [_c("div", {
+  return _c("div", {
     staticClass: "hero_Heading"
   }, [_c("h2", {
     staticClass: "hero"
-  }, [_vm._v("Web creative・Digital marketing")])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("Web creative・Digital marketing")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17198,7 +17120,11 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("オンラインショップ")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        場所や時間、実店舗の場所に問わず世界中に人々に商品を販売ができるようになります。インターネットの普及している現代では有効な販売手段となることは間違いありません。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("\n                        場所や時間、実店舗の場所に問わず世界中に人々に商品を販売ができるようになります。インターネットの普及している現代では有効な販売手段となることは間違いありません。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17278,7 +17204,11 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("キーワード設計")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        狙っている検索ワードの競合調査から適切なKPIを設定し、設定したKPIが正しく計測できているかを調査し、タグ設定などを行います。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("\n                        狙っている検索ワードの競合調査から適切なKPIを設定し、設定したKPIが正しく計測できているかを調査し、タグ設定などを行います。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17358,15 +17288,19 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("広告分析")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。"), _c("br"), _vm._v("改善立案から実行まで対応可能です。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("\n                        リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。"), _c("br"), _vm._v("改善立案から実行まで対応可能です。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("FLOW")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("PROCESS")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    企画から開発、運用まで一貫して対応を行っております。"), _c("br"), _vm._v("お問い合わせからクローズまで一連の流れをご確認ください。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n                    契約と開発の流れ")])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -17418,55 +17352,7 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("section", [_c("section", {
-    staticClass: "menu-list"
-  }, [_c("div", {
-    staticClass: "menu-box"
-  }, [_c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/development/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Person-icon.svg"
-    }
-  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text router-link-exact-active router-link-active",
-    attrs: {
-      href: "/mobileapp/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Message-icon.svg"
-    }
-  }), _vm._v("Mobile app development\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/uiuxdesign/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Building-icon.svg"
-    }
-  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/webitconsulting/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Digital-Assets.svg"
-    }
-  }), _vm._v("Web creative・Digital marketing")])])])])])]);
+  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
 }];
 render._withStripped = true;
 
@@ -17488,16 +17374,68 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")], 1);
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", [_c("section", {
+    staticClass: "menu-list"
+  }, [_c("div", {
+    staticClass: "menu-box"
+  }, [_c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/development/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Person-icon.svg"
+    }
+  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text router-link-exact-active router-link-active",
+    attrs: {
+      to: "/mobileapp/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Message-icon.svg"
+    }
+  }), _vm._v("Mobile app development\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/uiuxdesign/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Building-icon.svg"
+    }
+  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])], 1), _vm._v(" "), _c("div", {
+    staticClass: "item"
+  }, [_c("router-link", {
+    staticClass: "text",
+    attrs: {
+      to: "/webitconsulting/"
+    }
+  }, [_c("img", {
+    attrs: {
+      src: "/assets/img/icons/Digital-Assets.svg"
+    }
+  }), _vm._v("Web creative・Digital marketing")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("main", [_c("div", {
+  return _c("div", {
     staticClass: "hero_Heading"
   }, [_c("h2", {
     staticClass: "hero"
-  }, [_vm._v("Web design・UIUX designing")])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("Web design・UIUX designing")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17577,7 +17515,11 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("レスポンシブデザイン")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17657,7 +17599,11 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
@@ -17737,15 +17683,19 @@ var staticRenderFns = [function () {
     staticClass: "system-sec__list__title"
   }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("section", {
     staticClass: "flow"
   }, [_c("div", {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("FLOW")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("PROCESS")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    企画から開発、運用まで一貫して対応を行っております。"), _c("br"), _vm._v("お問い合わせからクローズまで一連の流れをご確認ください。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n                    契約と開発の流れ")])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -17797,55 +17747,7 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]), _vm._v(" "), _c("section", [_c("section", {
-    staticClass: "menu-list"
-  }, [_c("div", {
-    staticClass: "menu-box"
-  }, [_c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/development/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Person-icon.svg"
-    }
-  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text router-link-exact-active router-link-active",
-    attrs: {
-      href: "/mobileapp/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Message-icon.svg"
-    }
-  }), _vm._v("Mobile app development\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/uiuxdesign/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Building-icon.svg"
-    }
-  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])]), _vm._v(" "), _c("div", {
-    staticClass: "item"
-  }, [_c("a", {
-    staticClass: "text",
-    attrs: {
-      href: "/webitconsulting/"
-    }
-  }, [_c("img", {
-    attrs: {
-      src: "/assets/img/icons/Digital-Assets.svg"
-    }
-  }), _vm._v("Web creative・Digital marketing")])])])])])]);
+  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
 }];
 render._withStripped = true;
 
@@ -18569,9 +18471,9 @@ var staticRenderFns = [function () {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("FLOW")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("PROCESS")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    企画から開発、運用まで一貫して対応を行っております。"), _c("br"), _vm._v("お問い合わせからクローズまで一連の流れをご確認ください。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n                    契約と開発の流れ")])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -24746,7 +24648,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\r\n    width: 100%;\r\n    overflow: hidden;\r\n    box-sizing: content-box;\n}\n.bg-color{\r\n    background-color: #1a202c;\r\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\r\n    animation-name: fadeIn;\n}\n.loopCopy .area {\r\n    white-space: nowrap;\r\n    width: 100%;\r\n    padding-right: 100%;\r\n    box-sizing: content-box;\r\n    animation-iteration-count: infinite;\r\n    animation-timing-function: linear;\r\n    animation-name: ticker;\r\n    animation-duration: 10s;\r\n    height: 60px;\r\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\r\n    transform: translate(0, 0);\r\n    visibility: visible;\n}\n100% {\r\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\r\n    opacity: 1;\r\n    animation-duration: 0.5s;\r\n    animation-iteration-count: 1;\r\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\r\n    animation-fill-mode: both;\n}\nfooter {\r\n  background: #1a202c;\n}\n.container-request {\r\n  padding: 0px 74px !important;\n}\n.fonter-text{\r\n  color: #DADADA;\n}\n.footer-logo {\r\n  width: 20%;\r\n  margin: auto;\r\n  display: flex;\n}\n.col-content {\r\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\r\n  width: 100%;\r\n  height: auto;\n}\n.section-request {\r\n  padding: 80px 0px 60px;\n}\n.contact-main{\r\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\r\n  color: #fff;\r\n  font-size: 40px;\n}\n.contact-request-col {\r\n  padding: 50px 0px;\n}\n.request-contact-heading {\r\n  font-size: 20px;\r\n  letter-spacing: 0.1em;\r\n  color: #DADADA;\r\n  text-align: center;\r\n  font-weight: 700;\r\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\r\n  content: \"\";\r\n  background-color: #000;\r\n  height: 1px;\r\n  width: 40px;\r\n  position: absolute;\r\n  right: 6.5%;\r\n  top: 50%;\r\n  opacity: 0;\r\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\r\n    opacity: 1;\r\n    right: 5%;\r\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\r\n  transform: rotate(45deg);\r\n  width: 10px;\r\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\r\n  font-size: 12px;\r\n  letter-spacing: 0.06em;\r\n  color: #DADADA;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\r\n   font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\r\n  border: 1px solid #ffffff;\r\n  background: none !important;\r\n  transition: 0.6s ease;\r\n  cursor: pointer;\r\n  height: 149.25px;\r\n  border-radius: 0px;\n}\n.card:hover {\r\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\r\n.card:hover .request-contact-heading {\r\n  color: #000000;\n}\n.footer-menu-heading h2 {\r\n  text-align: center;\r\n  color: #ffff;\n}\n.foot-menu-group {\r\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\r\n  color: #DADADA;\r\n  font-size: 14px;\r\n  letter-spacing: 0.1em;\r\n  font-weight: bold;\r\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 30px;\r\n  margin: 25px 0px 0px;\n}\n.twitter {\r\n  color: #fff;\r\n  font-size: 27px;\n}\n.copyright {\r\n  margin-top: 40px;\r\n  font-size: 14px;\r\n  color: #777;\r\n  letter-spacing: 0.18em;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n  font-weight: 400;\r\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \r\n   width: 100%; \r\n   height: 85px;\r\n   padding-top: 20px;\r\n   margin: 0px 40px;\n}\n.contact__btns{\r\n    padding: 0px 150px;\n}\n.content-text_contact{\r\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\r\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 85%;\r\n    -moz-column-gap: 100px;\r\n         column-gap: 100px;\r\n    margin: 2px auto;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\r\n    font-size: 1.7rem;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.contact__btns {\r\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 90%;\r\n    -moz-column-gap: 180px;\r\n         column-gap: 180px;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\nh2 {\r\n    font-size: 1.5rem;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n    width: 80%;\r\n    -moz-column-gap: 230px;\r\n         column-gap: 230px;\n}\n.foot-menu-group {\r\n    margin-right: 0px;\n}\n.btn-wide {\r\n    margin: 0px 18px 30px;\n}\n.contact__btns {\r\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\r\n    display: none;\n}\n.pad {\r\n    padding: 60px 0px !important;\n}\n.content-text_contact{\r\n    padding: 40px 30px;\r\n    margin: 0;\r\n    font-size: 14px;\n}\n.btn-wide{\r\n   margin: 0px 0px 30px;\n}\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\n    width: 100%;\n    overflow: hidden;\n    box-sizing: content-box;\n}\n.bg-color{\n    background-color: #1a202c;\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\n    animation-name: fadeIn;\n}\n.loopCopy .area {\n    white-space: nowrap;\n    width: 100%;\n    padding-right: 100%;\n    box-sizing: content-box;\n    animation-iteration-count: infinite;\n    animation-timing-function: linear;\n    animation-name: ticker;\n    animation-duration: 10s;\n    height: 60px;\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\n    opacity: 1;\n    animation-duration: 0.5s;\n    animation-iteration-count: 1;\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\n    animation-fill-mode: both;\n}\nfooter {\n  background: #1a202c;\n}\n.container-request {\n  padding: 0px 74px !important;\n}\n.fonter-text{\n  color: #DADADA;\n}\n.footer-logo {\n  width: 20%;\n  margin: auto;\n  display: flex;\n}\n.col-content {\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\n  width: 100%;\n  height: auto;\n}\n.section-request {\n  padding: 80px 0px 60px;\n}\n.contact-main{\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\n  color: #fff;\n  font-size: 40px;\n}\n.contact-request-col {\n  padding: 50px 0px;\n}\n.request-contact-heading {\n  font-size: 20px;\n  letter-spacing: 0.1em;\n  color: #DADADA;\n  text-align: center;\n  font-weight: 700;\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\n  content: \"\";\n  background-color: #000;\n  height: 1px;\n  width: 40px;\n  position: absolute;\n  right: 6.5%;\n  top: 50%;\n  opacity: 0;\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\n    opacity: 1;\n    right: 5%;\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\n  transform: rotate(45deg);\n  width: 10px;\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\n  font-size: 12px;\n  letter-spacing: 0.06em;\n  color: #DADADA;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\n   font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\n  border: 1px solid #ffffff;\n  background: none !important;\n  transition: 0.6s ease;\n  cursor: pointer;\n  height: 149.25px;\n  border-radius: 0px;\n}\n.card:hover {\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\n.card:hover .request-contact-heading {\n  color: #000000;\n}\n.footer-menu-heading h2 {\n  text-align: center;\n  color: #ffff;\n}\n.foot-menu-group {\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\n  color: #DADADA;\n  font-size: 14px;\n  letter-spacing: 0.1em;\n  font-weight: bold;\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 30px;\n  margin: 25px 0px 0px;\n}\n.twitter {\n  color: #fff;\n  font-size: 27px;\n}\n.copyright {\n  margin-top: 40px;\n  font-size: 14px;\n  color: #777;\n  letter-spacing: 0.18em;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \n   width: 100%; \n   height: 85px;\n   padding-top: 20px;\n   margin: 0px 40px;\n}\n.contact__btns{\n    padding: 0px 150px;\n}\n.content-text_contact{\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 85%;\n    -moz-column-gap: 100px;\n         column-gap: 100px;\n    margin: 2px auto;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\n    font-size: 1.7rem;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.contact__btns {\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 90%;\n    -moz-column-gap: 180px;\n         column-gap: 180px;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\nh2 {\n    font-size: 1.5rem;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 80%;\n    -moz-column-gap: 230px;\n         column-gap: 230px;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.btn-wide {\n    margin: 0px 18px 30px;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\n    display: none;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.content-text_contact{\n    padding: 40px 30px;\n    margin: 0;\n    font-size: 14px;\n}\n.btn-wide{\n   margin: 0px 0px 30px;\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24770,7 +24672,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\r\n    position: relative;\r\n    display: inline-block;\r\n    height: 35px;\r\n    margin-top: 18px;\r\n    margin-right: 32px;\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\r\n   \r\n    display: flex;\r\n    align-items: center;\r\n    border: 2px solid rgba(37, 115, 176, 1);\r\n    color: rgba(37, 115, 176, 1);\r\n    min-height: 42px;\r\n    text-decoration: none;\r\n    text-transform: uppercase;\r\n    font-family: \"Barlow\", sans-serif;\r\n    font-size: 0.875rem;\r\n    line-height: 1.25;\r\n    padding: 9px 20px;\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\r\n    background-color: rgba(37, 115, 176, 1);\r\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\r\n    position: fixed;\r\n    right: 0;\r\n    top: 50%;\r\n    transform: translate(100%, -50%);\r\n    z-index: 100001;\r\n    transition: 0.4s;\r\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\r\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    background-color: rgb(57, 108, 162);\r\n    display: flex;\r\n    border: solid 1px rgb(57, 108, 162);\r\n    cursor: pointer;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 25px 0;\r\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    display: block;\r\n    -o-writing-mode: vertical-rl;\r\n    writing-mode: vertical-rl;\r\n    font-size: 14px;\r\n    color: #dadada;\r\n    font-family: NotoSansJP-Medium;\r\n    letter-spacing: 0.18px;\r\n    transition: 0.4s;\r\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\r\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\r\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\r\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\r\n    /* background: #000; */\r\n    padding: 15px 0;\r\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\r\n    color: #dadada;\r\n    font-size: 12px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\n    position: relative;\n    display: inline-block;\n    height: 35px;\n    margin-top: 18px;\n    margin-right: 32px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\n   \n    display: flex;\n    align-items: center;\n    border: 2px solid rgba(37, 115, 176, 1);\n    color: rgba(37, 115, 176, 1);\n    min-height: 42px;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-family: \"Barlow\", sans-serif;\n    font-size: 0.875rem;\n    line-height: 1.25;\n    padding: 9px 20px;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\n    background-color: rgba(37, 115, 176, 1);\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\n    position: fixed;\n    right: 0;\n    top: 50%;\n    transform: translate(100%, -50%);\n    z-index: 100001;\n    transition: 0.4s;\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    background-color: rgb(57, 108, 162);\n    display: flex;\n    border: solid 1px rgb(57, 108, 162);\n    cursor: pointer;\n    justify-content: center;\n    align-items: center;\n    padding: 25px 0;\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    display: block;\n    -o-writing-mode: vertical-rl;\n    writing-mode: vertical-rl;\n    font-size: 14px;\n    color: #dadada;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.18px;\n    transition: 0.4s;\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    /* background: #000; */\n    padding: 15px 0;\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    color: #dadada;\n    font-size: 12px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25298,7 +25200,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\r\n    margin-top: 100px;\r\n    margin-bottom: 100px;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.single {\r\n    width: calc(100% - 440px);\n}\n.single__head {\r\n    margin-bottom: 60px;\r\n    padding: 30px 30px 20px 30px;\r\n    background: #FFFFFF;\r\n    border: none !important;;\r\n    box-sizing: border-box;\r\n    border-radius: 10px;\n}\n.single__head__title {\r\n    font-size: 35px;\r\n    padding-bottom: 30px;\r\n    margin-bottom: 30px;\r\n    line-height: 1.4;\r\n    letter-spacing: 0.04em;\r\n    position: relative;\r\n    transition: 0.8s;\r\n    transform: translateY(5%);\r\n    /* opacity: 0; */\r\n    border-bottom: 2px solid #333;\r\n    color: #333;\n}\n.single__head__flex {\r\n    display: flex;\n}\n.single__head__tags {\r\n    margin-left: auto!important;\r\n    text-align: right;\r\n    width: 50%;\r\n    font-weight: bold;\r\n    font-size: 12px;\r\n    line-height: 18px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__head__date {\r\n    width: 50%;\r\n    margin-left:0px!important;\r\n    display: inline-block;\r\n    text-align: left!important;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.single__thumbnail {\r\n    margin-bottom: 60px;\r\n    width: 100%;\r\n    height: 425px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    border-radius: 10px;\n}\r\n\r\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\r\n    padding: 20px 30px;\r\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\r\n    margin-bottom: 28px;\r\n    display: inline-block;\r\n    padding-left: 35px;\r\n    position: relative;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 4px;\r\n    display: inline-block;\r\n    width: 20px;\r\n    height: 16px;\r\n    content: \"\";\r\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\r\n    display: none;\n}\n.mokuji_ol {\r\n    counter-reset: item;\n}\n.rtoc-item {\r\n    margin-bottom: 10px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\n}\n.rtoc-item::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\n}\r\n\r\n/*å…±é€š*/\n.alignleft {\r\n    float: left;\r\n    margin-left: 0;\r\n    margin-right: 1em;\n}\n.alignright {\r\n    float: right;\r\n    margin-left: 1em;\r\n    margin-right: 0;\n}\n.aligncenter {\r\n    margin-left: auto;\r\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\r\n    text-align: center;\n}\nfigure {\r\n    margin-left: 0;\r\n    margin-right: 0;\n}\nbody {\r\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\r\n    box-sizing: inherit;\n}\n.single__contents h2 {\r\n    position: relative;\r\n    margin-bottom: 30px;\r\n    margin-top: 30px;\r\n    padding-left: 20px;\r\n    font-weight: bold;\r\n    font-size: 22px;\r\n    line-height: 32px;\r\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    top: 3px;\r\n    height: 26px;\r\n    width: 5px;\r\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\r\n    counter-reset: item;\n}\r\n/*\r\n.single__contents h2::before {\r\n    counter-increment: item;\r\n    content: counter(item)'.';\r\n    color: #1363AB;\r\n}*/\n.single__contents p {\r\n    font-weight: 500;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor)\n}\n.alignfull {\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\r\n        max-width: none;\r\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\r\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\r\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\r\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\r\n        max-width: calc(var(--myw) + 300px) !important;\r\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\r\n        margin-left: -150px !important;\r\n        margin-right: -150px !important;\n}\n}\n.contents img {\r\n    max-width: 100%;\r\n    height: auto;\n}\n.contents p {\r\n    margin-bottom: 30px;\n}\r\n\r\n/*aside*/\n.aside {\r\n    width: 360px;\n}\n.aside__new {\r\n    margin-bottom: 60px;\n}\n.aside__title {\r\n    position: relative;\r\n    margin-left: 160px;\r\n    margin-bottom: 20px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    text-align: left;\n}\n.aside__title__new img {\r\n    position: absolute;\r\n    left: -32px;\r\n    top: 1px;\n}\n.aside__title__tags {\r\n    padding-left: 180px;\n}\n.aside__new__list {\r\n    margin-bottom: 10px;\r\n    position: relative;\r\n    height: 90px;\r\n    background: #FFFFFF;\r\n    border: 0.5px solid #C4C4C4;\r\n    box-sizing: border-box;\r\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\r\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\r\n    position: absolute;\r\n    top: 15px;\r\n    left: 20px;\r\n    height: 60px;\r\n    width: 60px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\n}\n.aside__new__list__title {\r\n    padding-left: 95px;\r\n    padding-top: 21px;\r\n    font-weight: bold;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    color: var(--textcolor);\n}\n.aside__tags__list {\r\n    position: relative;\r\n    margin-left: 60px;\r\n    padding-left: 35px;\r\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\r\n    font-weight: bold;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    display: flex;\r\n    align-items: center;\r\n    letter-spacing: 0.05em;\r\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\r\n    position: absolute;\r\n    content: \"\";\r\n    display: inline-block;\r\n    top: 0;\r\n    left: 0;\r\n    width: 20px;\r\n    height: 20px;\r\n    background: #FFFFFF;\r\n    border: 1px solid #333333;\r\n    box-sizing: border-box;\r\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\r\n        margin-bottom: 60px;\r\n        margin-top: 73px;\r\n        display: block;\n}\n.single {\r\n        width: 100%;\n}\n.single__head {\r\n        margin-bottom: 30px;\n}\n.aside {\r\n        display: none;\n}\n.single__head__title {\r\n        margin-bottom: 15px;\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__head__title::before {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n.single__thumbnail {\r\n        height: 150px;\r\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\r\n        padding: 20px 20px 5px 20px;\r\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\r\n        padding-left: 30px;\r\n        margin-bottom: 20px;\r\n        font-size: 15px;\r\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\r\n        top: 4px;\r\n        width: 17px;\r\n        height: 13px;\r\n        background-size: cover;\n}\n.rtoc-item {\r\n        font-size: 13px;\r\n        line-height: 19px;\r\n        margin-bottom: 15px;\n}\n.single__contents h2 {\r\n        font-size: 24px;\r\n        line-height: 36px;\n}\n.single__contents h2::after {\r\n        height: 30px;\r\n        width: 5px;\r\n        top: 3px;\n}\n.single__contents p {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\r\n        font-size: 14px;\r\n        line-height: 21px;\n}\n.single__contents__foot {\r\n        margin-top: 50px;\r\n        margin-bottom: 60px;\n}\n}\r\n\r\n/*btns*/\n.btns {\r\n    padding-bottom: 120px;\r\n    width: 100%;\r\n    max-width: 370px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    justify-content: space-between;\n}\n.btns a {\r\n    text-align: center;\r\n    display: inline-block;\r\n    width: 70px;\n}\n.btns__prev__img {\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-bottom: 20px;\r\n    cursor: pointer;\n}\n.btns__next__img {\r\n    transform: rotate(180deg);\n}\n.btns__prev__text {\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 21px;\r\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\r\n        padding-bottom: 60px;\n}\n.btns a {\r\n        width: 65px;\n}\n.btns__prev__img {\r\n        width: 60px;\r\n        height: 60px;\r\n        margin-bottom: 15px;\n}\n.btns__prev__text {\r\n        font-size: 13px;\r\n        line-height: 19px;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\n    margin-top: 100px;\n    margin-bottom: 100px;\n    display: flex;\n    justify-content: space-between;\n}\n.single {\n    width: calc(100% - 440px);\n}\n.single__head {\n    margin-bottom: 60px;\n    padding: 30px 30px 20px 30px;\n    background: #FFFFFF;\n    border: none !important;;\n    box-sizing: border-box;\n    border-radius: 10px;\n}\n.single__head__title {\n    font-size: 35px;\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    line-height: 1.4;\n    letter-spacing: 0.04em;\n    position: relative;\n    transition: 0.8s;\n    transform: translateY(5%);\n    /* opacity: 0; */\n    border-bottom: 2px solid #333;\n    color: #333;\n}\n.single__head__flex {\n    display: flex;\n}\n.single__head__tags {\n    margin-left: auto!important;\n    text-align: right;\n    width: 50%;\n    font-weight: bold;\n    font-size: 12px;\n    line-height: 18px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__head__date {\n    width: 50%;\n    margin-left:0px!important;\n    display: inline-block;\n    text-align: left!important;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__thumbnail {\n    margin-bottom: 60px;\n    width: 100%;\n    height: 425px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 10px;\n}\n\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\n    padding: 20px 30px;\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\n    margin-bottom: 28px;\n    display: inline-block;\n    padding-left: 35px;\n    position: relative;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\n    position: absolute;\n    left: 0;\n    top: 4px;\n    display: inline-block;\n    width: 20px;\n    height: 16px;\n    content: \"\";\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\n    display: none;\n}\n.mokuji_ol {\n    counter-reset: item;\n}\n.rtoc-item {\n    margin-bottom: 10px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.rtoc-item::before {\n    counter-increment: item;\n    content: counter(item)'.';\n}\n\n/*å…±é€š*/\n.alignleft {\n    float: left;\n    margin-left: 0;\n    margin-right: 1em;\n}\n.alignright {\n    float: right;\n    margin-left: 1em;\n    margin-right: 0;\n}\n.aligncenter {\n    margin-left: auto;\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\n    text-align: center;\n}\nfigure {\n    margin-left: 0;\n    margin-right: 0;\n}\nbody {\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\n    box-sizing: inherit;\n}\n.single__contents h2 {\n    position: relative;\n    margin-bottom: 30px;\n    margin-top: 30px;\n    padding-left: 20px;\n    font-weight: bold;\n    font-size: 22px;\n    line-height: 32px;\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    top: 3px;\n    height: 26px;\n    width: 5px;\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\n    counter-reset: item;\n}\n/*\n.single__contents h2::before {\n    counter-increment: item;\n    content: counter(item)'.';\n    color: #1363AB;\n}*/\n.single__contents p {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor)\n}\n.alignfull {\n    margin-left: -20px;\n    margin-right: -20px;\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\n        max-width: none;\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\n        max-width: calc(var(--myw) + 300px) !important;\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\n        margin-left: -150px !important;\n        margin-right: -150px !important;\n}\n}\n.contents img {\n    max-width: 100%;\n    height: auto;\n}\n.contents p {\n    margin-bottom: 30px;\n}\n\n/*aside*/\n.aside {\n    width: 360px;\n}\n.aside__new {\n    margin-bottom: 60px;\n}\n.aside__title {\n    position: relative;\n    margin-left: 160px;\n    margin-bottom: 20px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    text-align: left;\n}\n.aside__title__new img {\n    position: absolute;\n    left: -32px;\n    top: 1px;\n}\n.aside__title__tags {\n    padding-left: 180px;\n}\n.aside__new__list {\n    margin-bottom: 10px;\n    position: relative;\n    height: 90px;\n    background: #FFFFFF;\n    border: 0.5px solid #C4C4C4;\n    box-sizing: border-box;\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\n    position: absolute;\n    top: 15px;\n    left: 20px;\n    height: 60px;\n    width: 60px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.aside__new__list__title {\n    padding-left: 95px;\n    padding-top: 21px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n.aside__tags__list {\n    position: relative;\n    margin-left: 60px;\n    padding-left: 35px;\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    display: flex;\n    align-items: center;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\n    position: absolute;\n    content: \"\";\n    display: inline-block;\n    top: 0;\n    left: 0;\n    width: 20px;\n    height: 20px;\n    background: #FFFFFF;\n    border: 1px solid #333333;\n    box-sizing: border-box;\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\n        margin-bottom: 60px;\n        margin-top: 73px;\n        display: block;\n}\n.single {\n        width: 100%;\n}\n.single__head {\n        margin-bottom: 30px;\n}\n.aside {\n        display: none;\n}\n.single__head__title {\n        margin-bottom: 15px;\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__head__title::before {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\n        font-size: 13px;\n        line-height: 19px;\n}\n.single__thumbnail {\n        height: 150px;\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\n        padding: 20px 20px 5px 20px;\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\n        padding-left: 30px;\n        margin-bottom: 20px;\n        font-size: 15px;\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\n        top: 4px;\n        width: 17px;\n        height: 13px;\n        background-size: cover;\n}\n.rtoc-item {\n        font-size: 13px;\n        line-height: 19px;\n        margin-bottom: 15px;\n}\n.single__contents h2 {\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__contents h2::after {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__contents p {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents__foot {\n        margin-top: 50px;\n        margin-bottom: 60px;\n}\n}\n\n/*btns*/\n.btns {\n    padding-bottom: 120px;\n    width: 100%;\n    max-width: 370px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n}\n.btns a {\n    text-align: center;\n    display: inline-block;\n    width: 70px;\n}\n.btns__prev__img {\n    width: 40px;\n    height: 40px;\n    margin-bottom: 20px;\n    cursor: pointer;\n}\n.btns__next__img {\n    transform: rotate(180deg);\n}\n.btns__prev__text {\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\n        padding-bottom: 60px;\n}\n.btns a {\n        width: 65px;\n}\n.btns__prev__img {\n        width: 60px;\n        height: 60px;\n        margin-bottom: 15px;\n}\n.btns__prev__text {\n        font-size: 13px;\n        line-height: 19px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -64074,7 +63976,7 @@ Vue.compile = compileToFunctions;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\xampp\\\\htdocs\\\\idenbrid-v2"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"C:\\\\xampp\\\\htdocs\\\\idenbrid-v2","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"_args":[["axios@0.21.4","/Applications/XAMPP/xamppfiles/htdocs/v2"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"/Applications/XAMPP/xamppfiles/htdocs/v2","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
 
 /***/ })
 

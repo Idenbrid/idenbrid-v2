@@ -12,7 +12,7 @@
 
                 <ul class="system-sec__contents system-sec__contents_design">
                     <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail"
+                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design01.svg"
                             alt="">
                         <h3 class="system-sec__list__title">WEBデザイン</h3>
