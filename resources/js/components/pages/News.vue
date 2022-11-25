@@ -75,7 +75,7 @@
         },
         metaInfo() {
             return {
-                title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+                title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | お知らせ",
                 meta: [{
                     vmid: "description",
                     name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
