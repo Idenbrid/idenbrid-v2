@@ -2,41 +2,42 @@
     <div>
         <Navbar />
         <div class="mv_textarea">
-            <h2><strong class="en entxt">SES / エンジニア採用営業支援</strong> <span
-                    class="jptxt">SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。</span></h2>
+            <h2><strong class="en entxt">Software development / ウェブシステム開発</strong> 
+                <!-- <span
+                    class="jptxt">SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。</span>--></h2> 
         </div>
         <main>
             <section class="system-sec mycontents-wide mt-5">
-                <h2 class="system-sec__tiile">サービスシステム開発</h2>
+                <h2 class="system-sec__tiile">IT受託開発・プロジェクトベース</h2>
                 <p class="system-sec__text">
-                    whitecanvasは、もっとも新事業開発支援を得意としております。<br>クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。</p>
+                    当社はウェブ開発から事業を始めました会社となり、このウェブ領域における開発を得意としています。開発は基本的にスクラッチ開発と言われるゼロから全てを開発しまして、WordPressのようなCMSに頼ることなく、構築する技術を保有しています。</p>
 
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system01.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">フルスクラッチ開発</h3>
+                        <h3 class="system-sec__list__title">システム設計や書類作成も得意</h3>
                         <p class="system-sec__list__text">
-                            オーダーメイドのシステム設計により特殊な業務の対応や他者との差別化を図ることが可能です。また、パッケージ開発より自由にシステムをカスタマイズできる利点もございます。</p>
+                            当社ではきちんとシステム・インフラ設計図を作ることができ、各詳細設計書類・テストケースも作成してきちんと検収まで行うので大手企業様からもご好評いただいております。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system02.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">マッチングシステム</h3>
+                        <h3 class="system-sec__list__title">ITに詳しくないお客様に強い</h3>
                         <p class="system-sec__list__text">
-                            BtoBマッチングのみならず、CtoCサービスのWEBサービス主にオークションサービスやフリマサービスなど開発いたします。エスクロー決済の導入も可能です。</p>
+                            私たちのエンドクライアント企業様は社内にIT人材がおらず、当社を頼ってくださっていることも多くあります。当社はきちんとしたヒアリングからそれをシステムに落とし込むことを得意としています</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system03.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">売買システム</h3>
-                        <p class="system-sec__list__text">商材を問わずユーザー間で売買ができるシステムを構築致します。<br>運営側のユーザー管理、運用まで考えた設計を提供致します。
+                        <h3 class="system-sec__list__title">対応範囲</h3>
+                        <p class="system-sec__list__text">フルスクラッチ開発・マッチング・EC（売買システム）・ポータル・管理システム・ダッシュボード・コミュニケーションシステム・会員管理・予約管理・自動見積もりシステム・営業管理システムなど他多数
                         </p>
                     </li>
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system04.svg"
                             alt="">
@@ -59,7 +60,7 @@
                         <h3 class="system-sec__list__title">コミュニティーシステム</h3>
                         <p class="system-sec__list__text">
                             オンラインサロンやオンラインスクール、などオンライン上でのコミュニティーシステムを開発いたします。月額課金や単発販売などニーズに応じた設定が可能です。</p>
-                    </li>
+                    </li> -->
                     <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system07.svg"
@@ -88,36 +89,36 @@
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
-                <h2 class="system-sec__tiile">情報管理・データベース設計</h2>
+                <h2 class="system-sec__tiile">当社がご提供できる技術やソルーション</h2>
                 <p class="system-sec__text">
-                    whitecanvasは、もっとも新事業開発支援を得意としております。<br>クライアントの企画をもとにクリエイティブとテクノロジーの両面からご支援いたします。</p>
+                    当社ではCtoC系ウェブサービスやSaaS開発また業務管理システムまで幅広く開発に対応しています。どのようなサービスを私たちが提供可能かをご説明させて頂きます。</p>
 
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db01.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">予約管理システム</h3>
+                        <h3 class="system-sec__list__title">ワンストップ開発</h3>
                         <p class="system-sec__list__text">
-                            飲食店や美容室、ホテルなどで使用されております。導入により電話やメールの対応の人的ソースの削減、営業時間外でも対応できる為予約の取りこぼし防止対策にもなります。</p>
+                            当社のウェブ開発では設計から要件定義そしてデザインから開発またテストまで一社完結で開発をシステムフローを組んでいます。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db02.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">会員システム</h3>
+                        <h3 class="system-sec__list__title">開発言語・クラウド</h3>
                         <p class="system-sec__list__text">
-                            リアル店舗の顧客会員のシステムやオンラインサロンなどの会員制サイトシステムを開発致します。会員行動分析機能などの開発も行うことができます。</p>
+                            開発言語はPHP/LaravelやNode.js、Python/djangoなどモダンそして広く一般的な言語を使用しています。またインフラはAWS、GCP、Azureなどのクラウド環境にも対応しております。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db03.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">自動見積もりシステム</h3>
+                        <h3 class="system-sec__list__title">PWA</h3>
                         <p class="system-sec__list__text">
-                            お問い合わせいただいた内容から自動で見積もりを作成するシステムを開発いたします。<br>すぐに顧客が見積もりをもらえることで見込み顧客を逃しません。</p>
+                            アプリのような利便性を追求されたいがウェブベースにて開発をされたいお客様へPWAを勧めており、お客様のユーザーペインの解消のために視野の広い提案を行なっています。</p>
                     </li>
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/db04.svg"
                             alt="">
@@ -142,11 +143,11 @@
                         <p class="system-sec__list__text">
                             リード顧客の管理や獲得から納品までのスケジュール管理、原価率管理などが行えるシステム開発を行っております。<br>社内メモ機能などを入れることで引き継ぎ工数削減にもつなげることができます。
                         </p>
-                    </li>
+                    </li> -->
 
                 </ul>
             </section>
-            <section class="system-sec mycontents-wide">
+            <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">情報管理・データベース設計</h2>
                 <p class="system-sec__text">顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など<br>クライアントの課題に沿ったご提案をさせていただきます。</p>
 
@@ -203,12 +204,13 @@
                         </p>
                     </li>
                 </ul>
-            </section>
+            </section> -->
             <section class="flow">
                 <div class="mycontents-wide">
-                    <h3 class="content-title content-title_flow">FLOW</h3>
+                    <h3 class="content-title content-title_flow">ウェブシステム開発におけるフロー</h3>
                     <p class="content-text content-subtitle_flow">
-                        企画から開発、運用まで一貫して対応を行っております。<br>お問い合わせからクローズまで一連の流れをご確認ください。</p>
+                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで
+一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"</p>
                 </div>
 
                 <div class="flow__scroll mycontents-wide">
@@ -216,23 +218,23 @@
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-1.jpg" alt="">
                             <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
-                            <p class="flow__list__text">制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。</p>
+                            <p class="flow__list__text">お問い合わせを頂き、開発されたい内容の書類RFPや内容をもとにヒアリングそして予算に合わせてお見積もりを作成します。</p>
                         </li>
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-2.jpg" alt="">
-                            <h4 class="flow__list__title">仕様・要件定義</h4>
-                            <p class="flow__list__text">Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。</p>
+                            <h4 class="flow__list__title">要件定義・基本設計</h4>
+                            <p class="flow__list__text">当社のフォーマットに合わせて、仕様を整理しどのような開発を進めるのかを定義します。スケジュールの管理などもこちらで行います。</p>
                         </li>
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-3.jpg" alt="">
-                            <h4 class="flow__list__title">デザイン制作・システム開発</h4>
+                            <h4 class="flow__list__title">UIUXデザイン・開発</h4>
                             <p class="flow__list__text">
-                                ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。<br>そして開発工程のコーディング、システム開発を行います。</p>
+                                画面遷移図からデザインを起こし、詳細設計書に基づきシステム・アプリ・インフラ開発を進めて参ります。</p>
                         </li>
                         <li class="flow__list">
                             <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-4.jpg" alt="">
-                            <h4 class="flow__list__title">リリース・保守・運営</h4>
-                            <p class="flow__list__text">テストをおえて修正完了後、本番環境へのリリースを行います。<br>リリース後のサイト分析、保守、運営までサポート致します。
+                            <h4 class="flow__list__title">テスト・納品</h4>
+                            <p class="flow__list__text">テストケースに基づき検収を行いお客様にもご確認頂き、アプリの審査やサーバーへのディプロイ作業を進めます。
                             </p>
                         </li>
                     </ul>
@@ -243,23 +245,21 @@
                 <section class="menu-list">
                     <div class="menu-box">
                         <div class="item">
-                            <a href="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
-                                application <br>development
-                            </a>
+                            <router-link to="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">ウェブシステム開発
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/mobileapp/" class="text router-link-exact-active router-link-active"><img
-                                    src="/assets/img/icons/Message-icon.svg">Mobile app development
-                            </a>
+                            <router-link to="/mobileapp/" class="text router-link-exact-active router-link-active"><img
+                                    src="/assets/img/icons/Message-icon.svg">スマホアプリ開発
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
-                                design・UIUX designing
-                            </a>
+                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">UIUXデザイン制作
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/webitconsulting/" class="text">
-                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</a>
+                            <router-link to="/webitconsulting/" class="text">
+                                <img src="/assets/img/icons/Digital-Assets.svg">オフショア開発</router-link>
                         </div>
                     </div>
                 </section>

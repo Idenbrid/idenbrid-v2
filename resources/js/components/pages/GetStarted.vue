@@ -402,7 +402,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input data-v-f847ca3e="" @click="saveRequest()" name="next" value="送信"
+                                    <input type="submit" @click="saveRequest()" name="next" value="送信"
                                         class="action-button">
                                 </fieldset>
                             </form>

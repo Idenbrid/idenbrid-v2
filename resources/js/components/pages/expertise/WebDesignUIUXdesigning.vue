@@ -12,7 +12,7 @@
 
                 <ul class="system-sec__contents system-sec__contents_design">
                     <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail"
+                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design01.svg"
                             alt="">
                         <h3 class="system-sec__list__title">WEBデザイン</h3>
@@ -211,9 +211,9 @@
             </section> -->
             <section class="flow">
                 <div class="mycontents-wide">
-                    <h3 class="content-title content-title_flow">FLOW</h3>
+                    <h3 class="content-title content-title_flow">PROCESS</h3>
                     <p class="content-text content-subtitle_flow">
-                        企画から開発、運用まで一貫して対応を行っております。<br>お問い合わせからクローズまで一連の流れをご確認ください。</p>
+                        契約と開発の流れ</p>
                 </div>
 
                 <div class="flow__scroll mycontents-wide">
@@ -331,23 +331,23 @@
                 <section class="menu-list">
                     <div class="menu-box">
                         <div class="item">
-                            <a href="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
+                            <router-link to="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
                                 application <br>development
-                            </a>
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/mobileapp/" class="text router-link-exact-active router-link-active"><img
+                            <router-link to="/mobileapp/" class="text router-link-exact-active router-link-active"><img
                                     src="/assets/img/icons/Message-icon.svg">Mobile app development
-                            </a>
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
+                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
                                 design・UIUX designing
-                            </a>
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/webitconsulting/" class="text">
-                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</a>
+                            <router-link to="/webitconsulting/" class="text">
+                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</router-link>
                         </div>
                     </div>
                 </section>

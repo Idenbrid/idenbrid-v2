@@ -2,29 +2,31 @@
     <div>
         <Navbar />
         <main>
-            <div class="hero_Heading">
-                <h2 class="hero">Mobile app development</h2>
-            </div>
-            <section class="system-sec mycontents-wide">
-                <h2 class="system-sec__tiile">IOS、Androidアプリ</h2>
+            <div class="mv_textarea">
+            <h2><strong class="en entxt">iOS・Android mobile app / スマホアプリ開発</strong> 
+                <!-- <span
+                    class="jptxt">SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。</span>--></h2> 
+        </div>
+            <section class="system-sec mycontents-wide mt-5 ">
+                <h2 class="system-sec__tiile">クライアント目線に立ったアプリ開発</h2>
                 <p class="system-sec__text">
-                    IOSアプリ、Androidアプリどちらも対応を行っております。<br>お客様のニーズに合わせてコストを抑えられるハイブリットアプリののご提案も可能です。</p>
+                    IDENBRIDではエンジニア目線ではなくクライアント企業様そしてエンドユーザーにとってどのようなアプリが必要なのかという観点により開発を進めています。</p>
 
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app01.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">IOSアプリ</h3>
+                        <h3 class="system-sec__list__title">ワンストップ開発</h3>
                         <p class="system-sec__list__text">
-                            SwiftやObjective-Cでのネイティブアプリ開発を行っております。iPhoneをはじめとしiPadアプリの開発も可能です。<br>開発からAppleストアへの申請まで一貫して対応しております。
+                            アプリの設計、UIUXデザインそしてiOSまたAndroidの両OSにおける開発また審査からセキュリティ対応まで責任持って開発するフローにて対応させて頂きます。
                         </p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app02.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">Androidアプリ</h3>
+                        <h3 class="system-sec__list__title">クロスプラットフォーム開発</h3>
                         <p class="system-sec__list__text">
                             KotlinやJavaでのネイティブアプリ開発を行っております。<br>ネイティブ開発の利点を最大限生かしたプログラムを提供しております。</p>
                     </li>
@@ -367,9 +369,9 @@
             </section> -->
             <section class="flow">
                 <div class="mycontents-wide">
-                    <h3 class="content-title content-title_flow">FLOW</h3>
+                    <h3 class="content-title content-title_flow">PROCESS</h3>
                     <p class="content-text content-subtitle_flow">
-                        企画から開発、運用まで一貫して対応を行っております。<br>お問い合わせからクローズまで一連の流れをご確認ください。</p>
+                        契約と開発の流れ</p>
                 </div>
 
                 <div class="flow__scroll mycontents-wide">
@@ -404,23 +406,23 @@
                 <section class="menu-list">
                     <div class="menu-box">
                         <div class="item">
-                            <a href="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
+                            <router-link to="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
                                 application <br>development
-                            </a>
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/mobileapp/" class="text router-link-exact-active router-link-active"><img
+                            <router-link to="/mobileapp/" class="text router-link-exact-active router-link-active"><img
                                     src="/assets/img/icons/Message-icon.svg">Mobile app development
-                            </a>
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
+                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
                                 design・UIUX designing
-                            </a>
+                            </router-link>
                         </div>
                         <div class="item">
-                            <a href="/webitconsulting/" class="text">
-                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</a>
+                            <router-link to="/webitconsulting/" class="text">
+                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</router-link>
                         </div>
                     </div>
                 </section>
