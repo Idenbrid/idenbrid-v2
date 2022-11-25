@@ -107,7 +107,7 @@
         },
         metaInfo() {
             return {
-                title: "クラウドソーシングシステム開発 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+                title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 仕事実績詳細",
                 meta: [{
                     vmid: "description",
                     name: "description",
