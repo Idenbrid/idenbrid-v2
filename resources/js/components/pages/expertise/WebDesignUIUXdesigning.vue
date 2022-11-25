@@ -2,22 +2,24 @@
     <div>
         <Navbar />
         <main>
-            <div class="hero_Heading">
-                <h2 class="hero">Web design・UIUX designing</h2>
-            </div>
+            <div class="mv_textarea">
+            <h2><strong class="en entxt">UIUX design / UIUXフロント設計</strong> 
+                <!-- <span
+                    class="jptxt">SESとはシステムエンジニアリングサービスの略で、エンジニア人材を必要とされている企業様の採用支援を行うビジネスです。</span>--></h2> 
+        </div>
             <section class="system-sec mycontents-wide">
-                <h2 class="system-sec__tiile">Webデザイン</h2>
+                <h2 class="system-sec__tiile">フロントデザイン設計</h2>
                 <p class="system-sec__text">
-                    会社や事業の顔となるデザイン。ユーザー体験を徹底的に追求したUI／UXデザインとブランドイメージ<br>やクライアントの課題を汲み取ったデザインをご提供したします。</p>
+                    デザインはユーザーがウェブやアプリに触れる際に最も重要視される接点になりそのデザイン性や利便性はアプリ自体の評価を左右します。そのためIDENBRIDではそのデザイン開発の工程に力を入れております。</p>
 
                 <ul class="system-sec__contents system-sec__contents_design">
                     <li class="system-sec__list">
                          <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design01.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">WEBデザイン</h3>
+                        <h3 class="system-sec__list__title">画面遷移図</h3>
                         <p class="system-sec__list__text">
-                            ブランドイメージと汲み取り、目的に沿った最適なデザインをご提供いたします。<br>企画から撮影など一貫して承ることができます。</p>
+                            一般的にワイヤーフレームと呼ばれる図解を作成し、どのボタンやリンクを押すと次のページに移動するのかという挙動を確認する設計図を作成します。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
