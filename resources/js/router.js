@@ -28,12 +28,12 @@ import News from './components/pages/News.vue'
 import NewsDetail from './components/pages/news/NewsDetail.vue'
 import downloadform from './components/pages/DownloadForm.vue'
 import Branding from './components/pages/Branding.vue'
-import Recruit from './components/pages/Recruit.vue'
+import Business from './components/pages/Business.vue'
 import Message from './components/pages/Message.vue'
-import Movies from './components/pages/Movies.vue'
+import Videos from './components/pages/Videos.vue'
 import Access from './components/pages/Access.vue'
 import Office from './components/pages/Office.vue'
-import GetStarted from './components/pages/GetStarted.vue'
+import Quote from './components/pages/Quote.vue'
 
 
 const routes = [
@@ -58,11 +58,11 @@ const routes = [
     },
     {
         path: '/business/:string?/',
-        component: Recruit
+        component: Business
     },
     {
         path: '/quote/',
-        component: GetStarted
+        component: Quote
     },
     {
         path: '/engineerstyle/:string?/',

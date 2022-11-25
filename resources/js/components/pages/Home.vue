@@ -14,7 +14,8 @@
                     <span class="horo-text-b" style="transition-delay: 1.15s;">お客様のユーザーペインを解決します。</span>
 
                 </h2>
-                <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
+                <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i>
+                </router-link>
                 <video class="top-hero__video" src="/public/assets/videos/Banner_video.mp4" autoplay muted loop
                     playsinline></video>
             </section>
@@ -91,7 +92,8 @@
                 <div class="new-box new">
                     <div class="new-listing new" v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 5">
                         <router-link :to="'/news/detail/'+detail.id+'/'" class="new-link new">
-                          
+                            <div class="img_box">
+                                <img :src="'https://admin.idenbrid.com/public/storage/news/'+detail.image" alt=""></div>
                             <div class="new-item new">
                                 <div class="new-meta">
                                     <p class="text new mr-2 mt-0 new-date">
@@ -103,8 +105,7 @@
                                 <p class="text new-content">
                                     {{detail.title}}</p>
                             </div>
-                            <div class="img_box">
-                                <img :src="'https://admin.idenbrid.com/public/storage/news/'+detail.image" alt=""></div>
+
                         </router-link>
                     </div>
                     <router-link class="viewmore-btn viewmore-btn_center" to="/news/">View More
@@ -170,7 +171,7 @@
                         <div class="mycontents-wide">
                             <div class="c-recruit__bottom-block row">
                                 <div class="large-6 small-12">
-                                    <router-link class="c-recruit__bottom-item" to="/movies/">
+                                    <router-link class="c-recruit__bottom-item" to="/video/">
 
                                         <div class="c-recruit__bottom-bgimg">
                                             <video width="100%" autoplay loop muted>
@@ -668,7 +669,7 @@
     .new-box {
         align-content: center;
         align-items: center;
-        background: #ffff;
+        background: #f7f7f7;
         flex-wrap: nowrap;
         flex: none;
         justify-content: center;
