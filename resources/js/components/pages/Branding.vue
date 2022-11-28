@@ -13,7 +13,7 @@
                     <div class="text_area">
                         <h3 class="fade_y on">プロジェクトを基本とした受託開発、<br class="pc">エンジニア要員：リソース型の２方式サービスを展開</h3>
                         <p class="fade_y on">
-                            IDENBRIDではワンストップにて、ウェブシステムとスマホアプリ開発を得意とするソフトウェア開発会社です。要件定義からシステム設計、UIUXデザインそして開発、またウェブからスマホそしてクラウドまで一社で完結開発致します<br
+                            IDENBRIDではワンストップにて、ウェブシステムとスマホアプリ開発を得意とするソフトウェア開発会社です。<br>要件定義からシステム設計、UIUXデザインそして開発、またウェブからスマホそしてクラウドまで一社で完結開発致します<br
                                 class="pc">
                         </p>
                         <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
@@ -1124,8 +1124,9 @@
     }
 
     .branding--mv {
-        background: url(/assets/img/sdhbanner.png) no-repeat center;
+        background: url(/assets/img/sdh-bg-img.png) no-repeat center;
         background-size: cover;
+        background-position: top center;
         padding: 100px 10%;
         margin-top: 0px;
     }

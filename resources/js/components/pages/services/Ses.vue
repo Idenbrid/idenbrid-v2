@@ -17,7 +17,7 @@
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system01.svg"
+                            src="/assets/img/icons/ses-img-01.svg"
                             alt="">
                         <h3 class="system-sec__list__title">スタイルくん</h3>
                         <p class="system-sec__list__text">
@@ -25,7 +25,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system02.svg"
+                            src="/assets/img/icons/ses-img-02.svg"
                             alt="">
                         <h3 class="system-sec__list__title">希望条件交渉力</h3>
                         <p class="system-sec__list__text">
@@ -33,36 +33,13 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system03.svg"
+                            src="/assets/img/icons/ses-img-03.svg"
                             alt="">
                         <h3 class="system-sec__list__title">契約単価</h3>
                         <p class="system-sec__list__text">エンジニア・デザイナーの方々に少しでも大きく還元できるように単価交渉としっかりとした還元率を実現しています
                         </p>
                     </li>
-                    <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system04.svg"
-                            alt="">
-                        <h3 class="system-sec__list__title">フルリモート案件</h3>
-                        <p class="system-sec__list__text">
-                            よりエンジニアの方が働きやすい環境を提供し、通勤の時間なども節約でき大人気の条件の一つです</p>
-                    </li>
-                    <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system05.svg"
-                            alt="">
-                        <h3 class="system-sec__list__title">スキルを伸ばす環境</h3>
-                        <p class="system-sec__list__text">
-                            単純にできる仕事をするだけでなく、挑戦できる環境下で自身のスキルアップにも繋がる案件を紹介しております</p>
-                    </li>
-                    <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system06.svg"
-                            alt="">
-                        <h3 class="system-sec__list__title">頼れるカスタマーサクセス</h3>
-                        <p class="system-sec__list__text">
-                            万が一トラブルがあった場合にはエンジニアスタイルがしっかりと間に入り、状況把握からお客様の不安払拭に努めます</p>
-                    </li>
+                  
 
                 </ul>
             </section>
@@ -75,7 +52,7 @@
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system01.svg"
+                            src="/assets/img/icons/ses-img-04.svg"
                             alt="">
                         <h3 class="system-sec__list__title">豊富な人材データベース</h3>
                         <p class="system-sec__list__text">
@@ -83,7 +60,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system02.svg"
+                            src="/assets/img/icons/ses-img-05.svg"
                             alt="">
                         <h3 class="system-sec__list__title">柔軟な提案力</h3>
                         <p class="system-sec__list__text">
@@ -91,7 +68,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/system03.svg"
+                            src="/assets/img/icons/ses-img-06.svg"
                             alt="">
                         <h3 class="system-sec__list__title">スピード対応</h3>
                         <p class="system-sec__list__text">急募の急ぎ案件や大人数を必要とする募集であっても当サービスが提案と対応をさせて頂きます。
@@ -201,21 +178,21 @@
                     <ul class="flow__contents">
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail"
-                                src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow01.png"
+                                src="/assets/img/icons/Mobile-login-pana.svg"
                                 alt="">
                             <h4 class="flow__list__title">当サービスへの会員登録</h4>
                             <p class="flow__list__text">エンジニアスタイルのデータベースに人材登録させて頂き、先方のお客様へご提案を開始します。</p>
                         </li>
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail"
-                                src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow02.png"
+                                src="/assets/img/icons/Resume-bro.svg"
                                 alt="">
                             <h4 class="flow__list__title">書類選考</h4>
                             <p class="flow__list__text">登録頂いた情報を元にご提案を進めるためにスキルセットシートを作成し、書類選考の通過を目指します。</p>
                         </li>
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail"
-                                src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow03.png"
+                                src="/assets/img/icons/Consulting-rafiki.svg"
                                 alt="">
                             <h4 class="flow__list__title">面談・条件調整</h4>
                             <p class="flow__list__text">
@@ -223,7 +200,7 @@
                         </li>
                         <li class="flow__list">
                             <img class="flow__list__thumbnail"
-                                src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/flow04.png"
+                                src="/assets/img/icons/Inbox-cleanup-pana.svg"
                                 alt="">
                             <h4 class="flow__list__title">契約・勤務開始</h4>
                             <p class="flow__list__text">契約書類がしっかりと手続き完了しましたら、勤務開始です！
@@ -268,6 +245,31 @@
                     </li>
                 </ul>
             </section> -->
+            <section class="exp-menu-list">
+                    <div class="menu-box">
+                        <div class="item">
+                            <router-link to="/development/" class="text"><img src="/assets/img/icons/icons8-pc-on-desk-80.png">ウェブシステム開発
+                            </router-link>
+                        </div>
+                        <div class="item">
+                            <router-link to="/mobileapp/" class="text router-link-exact-active router-link-active"><img
+                                    src="/assets/img/icons/icons8-iphone-14-pro-80.png">スマホアプリ開発
+                            </router-link>
+                        </div>
+                        <div class="item">
+                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/icons8-illustrator-80.png">UIUXデザイン制作
+                            </router-link>
+                        </div>
+                        <div class="item">
+                            <router-link to="/webitconsulting/" class="text">
+                                <img src="/assets/img/icons/icons8-flight-trip-64.png">オフショア開発</router-link>
+                        </div>
+                        <div class="item">
+                            <router-link to="/engineerstyle/" class="text">
+                                <img src="/assets/img/icons/Color Icon Logo.png">SESエンジニアスタイル</router-link>
+                        </div>
+                    </div>
+                </section>
             <div class="branding--contact">
                 <h3 class="fade_y on">
                     IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>ご質問がありましたらお気軽にご相談ください。
@@ -324,6 +326,7 @@
                 </div>
             </div>
             </section> -->
+            
         </main>
         <Footer />
     </div>

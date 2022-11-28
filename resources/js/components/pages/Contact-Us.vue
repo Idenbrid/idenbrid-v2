@@ -336,8 +336,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <img src="/assets/img/contact-us.png">
+              <div class="col-md-12">
+                <img src="/assets/img/contact-us.png" width="100%">
               </div>
             </div>
           </div>

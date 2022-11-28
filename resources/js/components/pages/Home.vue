@@ -60,7 +60,7 @@
 
                         <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon">SDH：スタジオ開発ハブ
                         </h2>
-                        <p class="service-p">スタジオ開発ハブは、一般的に言われるオフショア開発におけるラボ型開発のようなサービスを指し当社ではパキスタン拠点人材を人月ベースでご提供致します。
+                        <p class="service-p">スタジオ開発ハブは、日本企業またグローバル企業とのIT受託開発。そして一般的なオフショア開発にあたるパキスタンエンジニア人材を人月ベースでご提供致します。
                         </p>
                         <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
@@ -75,10 +75,10 @@
                         <img alt="" src="/assets/img/ses.png" class="" width="100%">
                     </div>
                     <div class="service-col">
-                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon">SES：エンジニア採用営業支援
+                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon">SES：エンジニアスタイル
                         </h2>
                         <p class="service-p">
-                            SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
+                            当社のエンジニアスタイルというのは、エンジニア採用支援サービスを指し、SESサービスのように社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
                         </p>
                         <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>

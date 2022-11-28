@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                             <h4>
-                                <span class="department fade_y on">SES：エンジニア採用営業支援</span>
+                                <span class="department fade_y on">SES：エンジニアスタイル（エンジニア採用支援）</span>
                                 <strong
                                     class="phrase fade_y on">常駐やリモートで業務委託できる日本人エンジニアなどのリソースベースのサービスになります。<br>協業ご希望のBP様も常に募集しております。</strong>
                             </h4>
@@ -386,7 +386,7 @@
         z-index: 1;
         margin-top: 0px;
         background-color: #000;
-        background: url('/assets/img/all-member.png') no-repeat center;
+        background: url('/assets/img/business-background-cover.png') no-repeat center;
         background-blend-mode: overlay;
         background-color: rgba(0, 0, 0, 0.5);
     }

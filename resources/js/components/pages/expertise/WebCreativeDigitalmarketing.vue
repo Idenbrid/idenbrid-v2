@@ -11,7 +11,7 @@
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web01.svg"
+                            src="/assets/img/icons/Japanese.svg"
                             alt="">
                         <h3 class="system-sec__list__title">日本語コミュニケーション</h3>
                         <p class="system-sec__list__text">
@@ -20,7 +20,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web02.svg"
+                            src="/assets/img/icons/cost.svg"
                             alt="">
                         <h3 class="system-sec__list__title">コストパフォーマンス</h3>
                         <p class="system-sec__list__text">
@@ -29,7 +29,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web03.svg"
+                            src="/assets/img/icons/team-recruitment.svg"
                             alt="">
                         <h3 class="system-sec__list__title">チーム採用</h3>
                         <p class="system-sec__list__text">
@@ -118,7 +118,7 @@
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing01.svg"
+                            src="/assets/img/icons/frontend.svg"
                             alt="">
                         <h3 class="system-sec__list__title">フロントエンド</h3>
                         <p class="system-sec__list__text">
@@ -126,7 +126,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing02.svg"
+                            src="/assets/img/icons/back-end.svg"
                             alt="">
                         <h3 class="system-sec__list__title">バックエンド・API</h3>
                         <p class="system-sec__list__text">PHPのLaravelまたNode.jsなどをメインとして機能開発を行なっております。
@@ -134,7 +134,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing03.svg"
+                            src="/assets/img/icons/PM.svg"
                             alt="">
                         <h3 class="system-sec__list__title">PM</h3>
                         <p class="system-sec__list__text">オフショアを使うメリットの一つにチーム開発が可能ということがありますが、2-3名以上のチームにて開発の際にはパキスタン側のPMもプロジェクトに参画可能です。</p>
@@ -250,26 +250,26 @@
                         当社ではパキスタンエンジニアを用いたラボ型オフショア開発を行っており、コストパフォーマンスよく最新技術に対応し、開発作業を受けさせて頂いております。</p>
                 </div>
 
-                <div class="flow__scroll mycontents-wide">
+                <div class="flow__scroll mycontents-wide web-consulting">
                     <ul class="flow__contents">
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-1.jpg" alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/face-bro.svg" alt="">
                             <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
                             <p class="flow__list__text">どのような開発なのか、また現在どのようなことに課題を感じておりそれを当社のサービスでどのように改善できるのかなと打ち合わせお見積もりを作成いたします。</p>
                         </li>
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-2.jpg" alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/deal-amico.svg" alt="">
                             <h4 class="flow__list__title">契約・キックオフ</h4>
                             <p class="flow__list__text">打ち合わせさせて頂きました内容通りにリソースをアサインし、開発ができるように準備します。またキックオフミーティングにて仕事の進め方の最終確認をさせて頂きます。</p>
                         </li>
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-3.jpg" alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/source-amico.svg" alt="">
                             <h4 class="flow__list__title">開発</h4>
                             <p class="flow__list__text">
                                 実際にソフトウェアの開発を行なっていきます。決められた時間所定の稼働を指示書に基づき行い毎日稼働報告書を記載、提出させて頂きます。</p>
                         </li>
                         <li class="flow__list">
-                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-4.jpg" alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/management-amico.svg" alt="">
                             <h4 class="flow__list__title">マネジメント</h4>
                             <p class="flow__list__text">タイムスケジュールや仕様内容をきちんと確認し、どのようにより開発を改善することができるのか当社のPMまたクライアント企業のご担当者様と常にコミュニケーションを図ります。
                             </p>
@@ -278,32 +278,31 @@
                 </div>
 
             </section>
-            <section>
-                <section class="menu-list">
+            <section class="exp-menu-list">
                     <div class="menu-box">
                         <div class="item">
-                            <router-link to="/development/" class="text"><img
-                                    src="/assets/img/icons/Person-icon.svg">ウェブシステム開発
+                            <router-link to="/development/" class="text"><img src="/assets/img/icons/icons8-pc-on-desk-80.png">ウェブシステム開発
                             </router-link>
                         </div>
                         <div class="item">
                             <router-link to="/mobileapp/" class="text router-link-exact-active router-link-active"><img
-                                    src="/assets/img/icons/Message-icon.svg">スマホアプリ開発
+                                    src="/assets/img/icons/icons8-iphone-14-pro-80.png">スマホアプリ開発
                             </router-link>
                         </div>
                         <div class="item">
-                            <router-link to="/uiuxdesign/" class="text"><img
-                                    src="/assets/img/icons/Building-icon.svg">UIUXデザイン制作
+                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/icons8-illustrator-80.png">UIUXデザイン制作
                             </router-link>
                         </div>
                         <div class="item">
                             <router-link to="/webitconsulting/" class="text">
-                                <img src="/assets/img/icons/Digital-Assets.svg">オフショア開発
-                            </router-link>
+                                <img src="/assets/img/icons/icons8-flight-trip-64.png">オフショア開発</router-link>
+                        </div>
+                        <div class="item">
+                            <router-link to="/engineerstyle/" class="text">
+                                <img src="/assets/img/icons/Color Icon Logo.png">SESエンジニアスタイル</router-link>
                         </div>
                     </div>
                 </section>
-            </section>
             <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">運用支援・保守運用</h2>
                 <p class="system-sec__text">
@@ -493,5 +492,9 @@
 
 <style>
 
+
+.web-consulting .flow__list__thumbnail {
+    height: 120px;
+}
 
 </style>
