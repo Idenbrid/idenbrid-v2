@@ -3,7 +3,7 @@
         <Navbar />
         <div class="mv_textarea">
             <h2>
-                <strong class="en entxt">SOLUTIONS</strong>
+                <strong class="en entxt">OUR EXPERTISE / ソルーション</strong>
                 <span class="jptxt">このページでは当社が提供しているITソリューションを紹介しています。アイデンブリッド社は日本企業を相手とした受託開発メインの法人です</span>
             </h2>
         </div>
@@ -69,7 +69,8 @@
                                 </div>
                                 <p class="service-contents__list__subtitle">Web design / UIUX design</p>
                                 <h4 class="service-contents__list__title">UIUXデザイン制作</h4>
-                                <p class="service-contents__list__text service-contents__list_last__text">当社ではAdobe XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。
+                                <p class="service-contents__list__text service-contents__list_last__text">当社ではAdobe
+                                    XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。
                                 </p>
                             </div>
                         </router-link>
@@ -79,8 +80,9 @@
             </section>
             <div class="branding--contact">
                 <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
-                <div class="fade_y on"><router-link to="/contact/"
-                        class="contactbtn fade_y on">今すぐ相談してみる</router-link></div>
+                <div class="fade_y on">
+                    <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+                </div>
             </div>
         </main>
         <Footer />

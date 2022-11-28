@@ -10,17 +10,16 @@
             </div>
             <div class="works--content highlight_blk">
                 <ul class="works--content--link">
-                    <li><a href="https://tomorrowgate.co.jp/works/" class="en categoryitem current">全て</a>
+                    <li><a href="#" class="en categoryitem current">全て</a>
                     </li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/visionmap/"
-                            class="en categoryitem">UIUXデザイン</a></li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/web/" class="en categoryitem">ウェブ・システム</a>
+                    <li><a href="#" class="en categoryitem">UIUXデザイン</a></li>
+                    <li><a href="#" class="en categoryitem">ウェブ・システム</a>
                     </li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/graphic/" class="en categoryitem">スマホアプリ</a>
+                    <li><a href="#" class="en categoryitem">スマホアプリ</a>
                     </li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/movie/" class="en categoryitem">デスクトップアプリ</a>
+                    <li><a href="#" class="en categoryitem">デスクトップアプリ</a>
                     </li>
-                    <li><a href="https://tomorrowgate.co.jp/works/category/other/" class="en categoryitem">その他</a>
+                    <li><a href="#" class="en categoryitem">その他</a>
                     </li>
                 </ul>
                 <div class="works--content--mainarea">

@@ -51,6 +51,9 @@
 .system-sec__list__thumbnail {
     margin-top: 30px;
     margin-bottom: 20px;
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
 }
 
 .system-sec__list__title {

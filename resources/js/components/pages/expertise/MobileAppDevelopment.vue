@@ -15,7 +15,7 @@
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app01.svg"
+                            src="/assets/img/icons/One-stop development.svg"
                             alt="">
                         <h3 class="system-sec__list__title">ワンストップ開発</h3>
                         <p class="system-sec__list__text">
@@ -24,23 +24,23 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app02.svg"
+                            src="/assets/img/icons/Cross-platform-development.svg"
                             alt="">
                         <h3 class="system-sec__list__title">クロスプラットフォーム開発</h3>
                         <p class="system-sec__list__text">
-                            KotlinやJavaでのネイティブアプリ開発を行っております。<br>ネイティブ開発の利点を最大限生かしたプログラムを提供しております。</p>
+                            FlutterやReact Nativeなどフロント開発をiOSとAndroidのどちらのOSでも対応可能なハイブリッド開発をメインに行なっています。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app03.svg"
+                            src="/assets/img/icons/native-development.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">ハイブリットアプリ</h3>
+                        <h3 class="system-sec__list__title">ネイティブ開発にも強い</h3>
                         <p class="system-sec__list__text">
-                            IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。
+                            ハイブリッド開発のみではなく、ネイティブ機能の実装が必要な場合にはSwiftやJava Kotlinにて開発を行なっています。
                         </p>
                     </li>
                     <!-- *************** BY AZEEM ************ -->
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app01.svg"
                             alt="">
@@ -65,41 +65,40 @@
                         <p class="system-sec__list__text">
                             IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。
                         </p>
-                    </li>
+                    </li> -->
                     <!-- *************** BY AZEEM ************ -->
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
-                <h2 class="system-sec__tiile">サービスアプリケーション</h2>
-                <p class="system-sec__text">顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など<br>クライアントの課題に沿ったご提案をさせていただきます。</p>
+                <h2 class="system-sec__tiile">当社がご提供できる技術やソルーション</h2>
+                <p class="system-sec__text">アプリ開発ではどのようなテクノロジーで開発するのが良いのかなとエンジニアでないと正解も分かりづらいですので当社では分かりやすくご提案させて頂きます。</p>
 
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/service-app01.svg"
+                            src="/assets/img/icons/app-development.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">マッチングアプリ</h3>
+                        <h3 class="system-sec__list__title">アプリ開発言語</h3>
                         <p class="system-sec__list__text">
-                            BtoBマッチングのみならず、CtoCサービスのWEBサービス主にオークションサービスやフリマサービスなど開発いたします。<br>エスクロー決済の導入も可能です。</p>
+                            クロスプラット開発：Flutter / React Native ネイティブ開発：Swift / Java Kotlinを使用しています。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/service-app02.svg"
+                            src="/assets/img/icons/app-design.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">位置情報アプリ</h3>
-                        <p class="system-sec__list__text">位置情報システムを利用した店舗検索アプリやマッチングアプリ、GPSアプリなどを開発いたします。<br>Google
-                            APIを利用した開発も行うことができます。</p>
+                        <h3 class="system-sec__list__title">アプリデザイン</h3>
+                        <p class="system-sec__list__text">アプリは想像よりもデザインページ数が多く必要であり、その一枚一枚のコンポーネント（部品作り）が各OSによって再現性も異なるため、アプリ開発専門のデザイナーが担当させて頂きます。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/service-app03.svg"
+                            src="/assets/img/icons/strong-against-examination.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">SNSアプリ</h3>
+                        <h3 class="system-sec__list__title">審査にも強い</h3>
                         <p class="system-sec__list__text">
-                            TwitterやInstagramなどのソーシャルアプリケーションやビジネスSNSアプリを開発を行うことが可能です。<br>オリジナルの機能を組み込むことで差別化を図ることも可能です。
+                            決済実装方法やプライバシーの記載方法など様々な理由からアプリの審査が通らないことはございます。そのため当社ではこれまでの経験より実装前に少しでもリスクを避けられるようにお客様に事前説明を行なっています。
                         </p>
                     </li>
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/service-app04.svg"
                             alt="">
@@ -123,10 +122,10 @@
                         <h3 class="system-sec__list__title">チャットアプリ</h3>
                         <p class="system-sec__list__text">
                             社内チャットツールの開発やWEBサービスと連携したアプリの開発が可能です。業務効率化やWEBサービスのアプリ版の開発をお任せください。</p>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
-            <section class="system-sec mycontents-wide">
+            <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">ビジネスアプリケーション</h2>
                 <p class="system-sec__text">業務用アプリや社内アプリの開発を行っております。<br>アプリによる業務効率化やWEBシステムからの切り替えなどご相談ください。</p>
 
@@ -180,7 +179,7 @@
                             リモートワークが進んでいる現代で、どこからでも打刻ができるアプリを開発いたします。給与計算システムと連動することでより労務の負担を軽減することが可能です。</p>
                     </li>
                 </ul>
-            </section>
+            </section> -->
             <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">情報管理・データベース設計</h2>
                 <p class="system-sec__text">顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など<br>クライアントの課題に沿ったご提案をさせていただきます。</p>
@@ -369,9 +368,10 @@
             </section> -->
             <section class="flow">
                 <div class="mycontents-wide">
-                    <h3 class="content-title content-title_flow">PROCESS</h3>
+                    <h3 class="content-title content-title_flow">ウェブシステム開発におけるフロー</h3>
                     <p class="content-text content-subtitle_flow">
-                        契約と開発の流れ</p>
+                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで
+一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"</p>
                 </div>
 
                 <div class="flow__scroll mycontents-wide">
@@ -379,54 +379,54 @@
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-1.jpg" alt="">
                             <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
-                            <p class="flow__list__text">制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。</p>
+                            <p class="flow__list__text">お問い合わせを頂き、開発されたい内容の書類RFPや内容をもとにヒアリングそして予算に合わせてお見積もりを作成します。</p>
                         </li>
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-2.jpg" alt="">
-                            <h4 class="flow__list__title">仕様・要件定義</h4>
-                            <p class="flow__list__text">Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。</p>
+                            <h4 class="flow__list__title">要件定義・基本設計</h4>
+                            <p class="flow__list__text">当社のフォーマットに合わせて、仕様を整理しどのような開発を進めるのかを定義します。スケジュールの管理などもこちらで行います。</p>
                         </li>
                         <li class="flow__list flow__list_border">
                             <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-3.jpg" alt="">
-                            <h4 class="flow__list__title">デザイン制作・システム開発</h4>
+                            <h4 class="flow__list__title">UIUXデザイン・開発</h4>
                             <p class="flow__list__text">
-                                ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。<br>そして開発工程のコーディング、システム開発を行います。</p>
+                                画面遷移図からデザインを起こし、詳細設計書に基づきシステム・アプリ・インフラ開発を進めて参ります。</p>
                         </li>
                         <li class="flow__list">
                             <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-4.jpg" alt="">
-                            <h4 class="flow__list__title">リリース・保守・運営</h4>
-                            <p class="flow__list__text">テストをおえて修正完了後、本番環境へのリリースを行います。<br>リリース後のサイト分析、保守、運営までサポート致します。
+                            <h4 class="flow__list__title">テスト・納品</h4>
+                            <p class="flow__list__text">テストケースに基づき検収を行いお客様にもご確認頂き、アプリの審査やサーバーへのディプロイ作業を進めます。
                             </p>
                         </li>
                     </ul>
                 </div>
 
             </section>
-            <section>
-                <section class="menu-list">
+            <section class="exp-menu-list">
                     <div class="menu-box">
                         <div class="item">
-                            <router-link to="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">System
-                                application <br>development
+                            <router-link to="/development/" class="text"><img src="/assets/img/icons/icons8-pc-on-desk-80.png">ウェブシステム開発
                             </router-link>
                         </div>
                         <div class="item">
                             <router-link to="/mobileapp/" class="text router-link-exact-active router-link-active"><img
-                                    src="/assets/img/icons/Message-icon.svg">Mobile app development
+                                    src="/assets/img/icons/icons8-iphone-14-pro-80.png">スマホアプリ開発
                             </router-link>
                         </div>
                         <div class="item">
-                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">Web
-                                design・UIUX designing
+                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/icons8-illustrator-80.png">UIUXデザイン制作
                             </router-link>
                         </div>
                         <div class="item">
                             <router-link to="/webitconsulting/" class="text">
-                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing</router-link>
+                                <img src="/assets/img/icons/icons8-flight-trip-64.png">オフショア開発</router-link>
+                        </div>
+                        <div class="item">
+                            <router-link to="/engineerstyle/" class="text">
+                                <img src="/assets/img/icons/Color Icon Logo.png">SESエンジニアスタイル</router-link>
                         </div>
                     </div>
                 </section>
-            </section>
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">

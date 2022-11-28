@@ -49,7 +49,7 @@
       <!-- swiper carousel  -->
 
       <div class="policy-slider position-relative">
-        <h2 class="policy-h">MISSION / ミッション</h2>
+
         <div class="swiper-slider-title ">
 
           <div class="swiper-pagination custom-swiper-pagination"></div>
@@ -58,19 +58,18 @@
         </div>
         <div class="swiper policySlider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide flex-column">
+                  <h2 class="policy-h">MISSION / ミッション</h2>    
               <div class="d-flex w-100 policy-content">
                 <div class="mbl-col col-md-6">
                   <div class="swiper-content text-left">
                     <span class="num">01.</span>
                     <div class="slider-img-title">
                       <span>テクノロジーで未来をかっこよくアップデート</span>
-
                       <h2>Update the future in style</h2>
                     </div>
                     <div class="slider-img-about">
                       <h2>ITを通じて私たちが未来を変えるって本気で信じてます</h2>
-
                     </div>
                   </div>
                 </div>
@@ -81,7 +80,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide flex-column">          
+                  <h2 class="policy-h">VISION / ビジョン</h2>               
               <div class="d-flex w-100 policy-content">
                 <div class="mbl-col col-md-6">
                   <div class="swiper-content text-left">
@@ -104,7 +104,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide flex-column">          
+                  <h2 class="policy-h">VALUE / バリュー</h2>  
               <div class="d-flex w-100 policy-content">
                 <div class="mbl-col col-md-6">
                   <div class="swiper-content text-left">
@@ -151,10 +152,7 @@
           </div>
           <div data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6="" class="sd">
             <div data-s-8f6f55eb-3214-43e5-9e5d-2caab78e564a="" class="sd">
-              <!-- <img
-                data-s-68a07ee8-4455-4e1e-947d-b9a303e5940a="" alt=""
-                src="https://storage.googleapis.com/studio-cms-assets/projects/BRO3JE1jWD/s-592x160_webp_ffaec34c-4604-42b4-a20a-3b3e2cfecfc7.webp"
-                class="sd"> -->
+
               <p data-s-43881428-4fb8-49b3-a8b6-581f27d95706=""
                 data-r-1_0_1_0_1_2_43881428-4fb8-49b3-a8b6-581f27d95706="" class="text sd">
                 日本市場におけるリソース型の<br>エンジニア採用シェアをベトナム市場から奪取</p>
@@ -173,10 +171,7 @@
           </div>
           <div data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6="" class="sd">
             <div data-s-8f6f55eb-3214-43e5-9e5d-2caab78e564a="" class="sd">
-              <!-- <img
-                data-s-68a07ee8-4455-4e1e-947d-b9a303e5940a="" alt=""
-                src="https://storage.googleapis.com/studio-cms-assets/projects/BRO3JE1jWD/s-592x160_webp_ffaec34c-4604-42b4-a20a-3b3e2cfecfc7.webp"
-                class="sd appear"> -->
+
               <p data-s-43881428-4fb8-49b3-a8b6-581f27d95706=""
                 data-r-1_0_1_4_1_2_43881428-4fb8-49b3-a8b6-581f27d95706="" class="text sd appear">
                 2025年末までに国際市場と日本における売上高比率を<br>
@@ -197,10 +192,7 @@
           </div>
           <div data-s-65d7cf93-f18b-4086-bf36-33ccb8b2e9b6="" class="sd">
             <div data-s-8f6f55eb-3214-43e5-9e5d-2caab78e564a="" class="sd">
-              <!-- <img
-                data-s-68a07ee8-4455-4e1e-947d-b9a303e5940a="" alt=""
-                src="https://storage.googleapis.com/studio-cms-assets/projects/BRO3JE1jWD/s-374x160_webp_38898551-b784-41e0-8f7c-818894e460c7.webp"
-                class="sd appear"> -->
+
               <p data-s-43881428-4fb8-49b3-a8b6-581f27d95706=""
                 data-r-1_0_1_5_1_2_43881428-4fb8-49b3-a8b6-581f27d95706="" class="text sd appear">
                 パキスタンの「車ライフスタイル」を<br>

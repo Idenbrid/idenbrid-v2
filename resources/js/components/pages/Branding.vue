@@ -9,12 +9,11 @@
     </div>
         <main>
             <div id="contents">
-
                 <div class="branding--mv">
                     <div class="text_area">
                         <h3 class="fade_y on">プロジェクトを基本とした受託開発、<br class="pc">エンジニア要員：リソース型の２方式サービスを展開</h3>
                         <p class="fade_y on">
-                            IDENBRIDではワンストップにて、ウェブシステムとスマホアプリ開発を得意とするソフトウェア開発会社です。要件定義からシステム設計、UIUXデザインそして開発、またウェブからスマホそしてクラウドまで一社で完結開発致します<br
+                            IDENBRIDではワンストップにて、ウェブシステムとスマホアプリ開発を得意とするソフトウェア開発会社です。<br>要件定義からシステム設計、UIUXデザインそして開発、またウェブからスマホそしてクラウドまで一社で完結開発致します<br
                                 class="pc">
                         </p>
                         <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
@@ -81,7 +80,7 @@
                 <h3 class="content-title">OUR EXPERTISE</h3>
                 <ul class="service-contents">
                     <li class="service-contents__text">
-                        <p>アイデンブリッド社はシステム開発やそれに伴うデザイン業務、またモバイルアプリの開発やウェブ制作などITに関わるプラットフォームに広く精通しています。特にDXを求めるお客様のコンサルも含めたトータルサポートを行なっています。
+                        <p>アイデンブリッドはワンストップ開発を展開しており、要件定義そしてシステム設計からUIUXデザイン、ウェブ開発、モバイルアプリ開発またクラウドまで対応しています。そして実現されたい要件をシステムやアプリに落とし込むことを得意としています。
                         </p>
                     </li>
                     <li class="service-contents__list">
@@ -91,11 +90,10 @@
                                     <img class="service-contents__list__thumbnail"
                                         src="/public/assets/img/solution/Solution_Img_01.png" alt="" loading="lazy">
                                 </div>
-                                <p class="service-contents__list__subtitle">スマホアプリ開発</p>
-                                <h4 class="service-contents__list__title">Mobile app development</h4>
+                                <p class="service-contents__list__subtitle">Mobile app development</p>
+                                <h4 class="service-contents__list__title"> スマホiOS/Androidアプリ開発</h4>
                                 <p class="service-contents__list__text">
-                                    SNSアプリやマッチングアプリ・チャットアプリそしてライブ配信アプリや性格診断占いアプリや業務用の管理アプリなどカテゴリーを問わず、設計・開発・審査申請から保守まで丸っと一括で承っています。
-                                    また当社ではウェブシステムと連携したアプリ開発も得意としていますので出先から既存システムとのデータ共有されたアプリへのアクセスも可能とし、お客様の業務効率の改善に貢献します。
+                                    ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。
                                 </p>
                             </div>
                         </router-link>
@@ -107,10 +105,10 @@
                                     <img class="service-contents__list__thumbnail"
                                         src="/public/assets/img/solution/Solution_Img_02.png" alt="" loading="lazy">
                                 </div>
-                                <p class="service-contents__list__subtitle">システム開発</p>
-                                <h4 class="service-contents__list__title">System application development</h4>
+                                <p class="service-contents__list__subtitle">Software development</p>
+                                <h4 class="service-contents__list__title">ウェブシステム開発</h4>
                                 <p class="service-contents__list__text">
-                                    情報システム・顧客管理システム・在庫管理システム・業務用システムのウェブサービス構築や運用保守・セキュリティー対策など企業様向けの受託開発を行なっています。当社のエンジニアは多様な言語を取り扱えるほどAWSやAzureなどクラウドインラフサービスも専門領域です。
+                                    ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。
                                 </p>
                             </div>
                         </router-link>
@@ -122,10 +120,10 @@
                                     <img class="service-contents__list__thumbnail"
                                         src="/public/assets/img/solution/Solution_Img_03.png" alt="" loading="lazy">
                                 </div>
-                                <p class="service-contents__list__subtitle">ウェブ制作・デジタルマーケティング</p>
-                                <h4 class="service-contents__list__title">Web creative・Digital marketing</h4>
+                                <p class="service-contents__list__subtitle">Off-shore Labo Development</p>
+                                <h4 class="service-contents__list__title">ラボ型オフショア開発</h4>
                                 <p class="service-contents__list__text">
-                                    コーポレイトサイトの作成やポートフォリオサイトそしてLP構築などを手がけています。WordPressを使用したり、最新のJavaScript系言語をフロント開発に用いています。またデジタルマーケティングではSEO、SMOやSNS運用そして英語圏ならば運用から保守まで一括して行います。
+                                    当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。
                                 </p>
                             </div>
                         </router-link>
@@ -137,10 +135,10 @@
                                     <img class="service-contents__list__thumbnail"
                                         src="/public/assets/img/solution/Solution_Img_04.png" alt="" loading="lazy">
                                 </div>
-                                <p class="service-contents__list__subtitle">デザイン制作</p>
-                                <h4 class="service-contents__list__title">Web design・UIUX designing</h4>
+                                <p class="service-contents__list__subtitle">Web design / UIUX design</p>
+                                <h4 class="service-contents__list__title">UIUXデザイン制作</h4>
                                 <p class="service-contents__list__text service-contents__list_last__text">当社ではAdobe
-                                    XDを用いてウェブサイト・ウェブシステムやアプリケーションそしてスマホアプリのUIUXデザイン制作を行なっています。最初にワイヤーフレームを組みお客様の意図がきちんと反映されるようにコミュニケーションをしっかり取らせて頂いております。
+                                    XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。
                                 </p>
                             </div>
                         </router-link>
@@ -1126,8 +1124,9 @@
     }
 
     .branding--mv {
-        background: url(/assets/img/sdhbanner.png) no-repeat center;
+        background: url(/assets/img/sdh-bg-img.png) no-repeat center;
         background-size: cover;
+        background-position: top center;
         padding: 100px 10%;
         margin-top: 0px;
     }

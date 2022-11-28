@@ -1,42 +1,41 @@
 <template>
     <div>
         <Navbar />
+        <div class="mv_textarea"><h2><strong class="en entxt">Pakistan Development/ラボ型オフショア開発</strong></h2></div>
         <main>
-            <div class="hero_Heading">
-                <h2 class="hero">Web creative・Digital marketing</h2>
-            </div>
-            <section class="system-sec mycontents-wide">
-                <h2 class="system-sec__tiile">WEB制作</h2>
-                <p class="system-sec__text">企画、立案からデザイン、コーディング、運用まで一貫して対応を行っております。<br>クライアントの課題解決を最も重視しております。</p>
+          
+            <section class="system-sec mycontents-wide mt-5 ">
+                <h2 class="system-sec__tiile">パキスタンエンジニアリソース開発</h2>
+                <p class="system-sec__text">当社はパキスタンにも開発拠点を構えており、自社で多くのエンジニアを抱えております。チームでの採用やコストパフォーマンスにて大きく貢献できるサービスです。</p>
 
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web01.svg"
+                            src="/assets/img/icons/Japanese.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">ランディングページ</h3>
+                        <h3 class="system-sec__list__title">日本語コミュニケーション</h3>
                         <p class="system-sec__list__text">
-                            ランディングページとは、検索結果、広告などを経由して訪問者が最初にアクセスするページのことです。ネット販売における売り上げを向上させるために重要なページを企画、提案、制作致します。
+                            当社では日本人によるブリッジSEの担当者配置またはチャットツールを用いた非同期コミュニケーションをきちんと使いこなすことで全て日本語にて指示などの連絡を取り合っています。
                         </p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web02.svg"
+                            src="/assets/img/icons/cost.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">コーポレートサイト</h3>
+                        <h3 class="system-sec__list__title">コストパフォーマンス</h3>
                         <p class="system-sec__list__text">
-                            会社の顔となり、社員の紹介、実績紹介などのコンテンツを掲載することで顧客からの信用獲得、情報発信を日々行うことでブランディグに役立ちます。業種問わず現代に置いてWEBサイトは必須と言えるでしょう。
+                            日本の開発ベンダーの月額単価とは圧倒的な金額をお見積もりにてご提示可能です。ただコストが安いだけではなくお仕事にコミットし、お値段以上のお仕事を行います。
                         </p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web03.svg"
+                            src="/assets/img/icons/team-recruitment.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">リクルートサイト</h3>
+                        <h3 class="system-sec__list__title">チーム採用</h3>
                         <p class="system-sec__list__text">
-                            企業にとって適切な人材の採用には適切な情報の発信が必要です。<br>また、企業アピールを行うことで人材不足解消に一役買います。</p>
+                            オフショアを使うメリットはコストだけではありません。日本人エンジニアでチームを組むには採用コストもかかりますが、当社では既に出来上がっているチームを貸し出すことが可能です。</p>
                     </li>
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web04.svg"
                             alt="">
@@ -60,7 +59,7 @@
                         <h3 class="system-sec__list__title">オンラインショップ</h3>
                         <p class="system-sec__list__text">
                             場所や時間、実店舗の場所に問わず世界中に人々に商品を販売ができるようになります。インターネットの普及している現代では有効な販売手段となることは間違いありません。</p>
-                    </li>
+                    </li> -->
                     <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web07.svg"
@@ -113,34 +112,34 @@
                 </ul>
             </section>
             <section class="system-sec mycontents-wide">
-                <h2 class="system-sec__tiile">WEBマーケティング</h2>
-                <p class="system-sec__text">SEO内部施策、キーワード設計、KPI設定、分析環境の構築など、<br>費用対効果の高いマーケティング施策の企画から実行まで対応しております。</p>
+                <h2 class="system-sec__tiile">当社がご提供できる技術やソルーション</h2>
+                <p class="system-sec__text">当社ではウェブやモバイルアプリ開発においても常にマーケットにおける最新技術を用いて開発を行なっております。</p>
 
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing01.svg"
+                            src="/assets/img/icons/frontend.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">マーケティングコンサル</h3>
+                        <h3 class="system-sec__list__title">フロントエンド</h3>
                         <p class="system-sec__list__text">
-                            競合分析、ユーザビリティ調査、A/Bテスト、アクセス分析、などの手法で分析しWEBサイトの最適化や改善などの提案、改善、運用をポート致します。</p>
+                            React.js / Vue.js / Typescript / HTML / CSS / Bootstrap / JavaScript などからWordPressなどのCMSもエンジニアが在籍しており対応可能です。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing02.svg"
+                            src="/assets/img/icons/back-end.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">SEO対策</h3>
-                        <p class="system-sec__list__text">キーワード分析、設計を行い最適な設計また分析ツールの導入、ライティングのサポートまで行い、検索順位向上のサポートを致します。
+                        <h3 class="system-sec__list__title">バックエンド・API</h3>
+                        <p class="system-sec__list__text">PHPのLaravelまたNode.jsなどをメインとして機能開発を行なっております。
                         </p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing03.svg"
+                            src="/assets/img/icons/PM.svg"
                             alt="">
-                        <h3 class="system-sec__list__title">コンバージョン最適化</h3>
-                        <p class="system-sec__list__text">アクセス分析をもとに流入導線などを最適化しコンバージョン率の向上だけでなく無駄な広告費の削減にも繋がります。</p>
+                        <h3 class="system-sec__list__title">PM</h3>
+                        <p class="system-sec__list__text">オフショアを使うメリットの一つにチーム開発が可能ということがありますが、2-3名以上のチームにて開発の際にはパキスタン側のPMもプロジェクトに参画可能です。</p>
                     </li>
-                    <li class="system-sec__list">
+                    <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing04.svg"
                             alt="">
@@ -162,7 +161,7 @@
                         <h3 class="system-sec__list__title">キーワード設計</h3>
                         <p class="system-sec__list__text">
                             狙っている検索ワードの競合調査から適切なKPIを設定し、設定したKPIが正しく計測できているかを調査し、タグ設定などを行います。</p>
-                    </li>
+                    </li> -->
                     <!-- <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
                             src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing07.svg"
@@ -189,7 +188,7 @@
                     </li> -->
                 </ul>
             </section>
-            <section class="system-sec mycontents-wide">
+            <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">広告</h2>
                 <p class="system-sec__text">SEO内部施策、キーワード設計、KPI設定、分析環境の構築など、<br>費用対効果の高いマーケティング施策の企画から実行まで対応しております。</p>
 
@@ -243,70 +242,67 @@
                             リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。<br>改善立案から実行まで対応可能です。</p>
                     </li>
                 </ul>
-            </section>
+            </section> -->
             <section class="flow">
                 <div class="mycontents-wide">
-                    <h3 class="content-title content-title_flow">PROCESS</h3>
+                    <h3 class="content-title content-title_flow">ラボ型オフショア開発におけるフロー</h3>
                     <p class="content-text content-subtitle_flow">
-                        契約と開発の流れ</p>
+                        当社ではパキスタンエンジニアを用いたラボ型オフショア開発を行っており、コストパフォーマンスよく最新技術に対応し、開発作業を受けさせて頂いております。</p>
                 </div>
 
-                <div class="flow__scroll mycontents-wide">
+                <div class="flow__scroll mycontents-wide web-consulting">
                     <ul class="flow__contents">
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-1.jpg" alt="">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/face-bro.svg" alt="">
                             <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
-                            <p class="flow__list__text">制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。</p>
+                            <p class="flow__list__text">どのような開発なのか、また現在どのようなことに課題を感じておりそれを当社のサービスでどのように改善できるのかなと打ち合わせお見積もりを作成いたします。</p>
                         </li>
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-2.jpg" alt="">
-                            <h4 class="flow__list__title">仕様・要件定義</h4>
-                            <p class="flow__list__text">Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。</p>
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/deal-amico.svg" alt="">
+                            <h4 class="flow__list__title">契約・キックオフ</h4>
+                            <p class="flow__list__text">打ち合わせさせて頂きました内容通りにリソースをアサインし、開発ができるように準備します。またキックオフミーティングにて仕事の進め方の最終確認をさせて頂きます。</p>
                         </li>
                         <li class="flow__list flow__list_border">
-                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-3.jpg" alt="">
-                            <h4 class="flow__list__title">デザイン制作・システム開発</h4>
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/source-amico.svg" alt="">
+                            <h4 class="flow__list__title">開発</h4>
                             <p class="flow__list__text">
-                                ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。<br>そして開発工程のコーディング、システム開発を行います。</p>
+                                実際にソフトウェアの開発を行なっていきます。決められた時間所定の稼働を指示書に基づき行い毎日稼働報告書を記載、提出させて頂きます。</p>
                         </li>
                         <li class="flow__list">
-                            <img class="flow__list__thumbnail" src="/assets/img/solution/flow/No-4.jpg" alt="">
-                            <h4 class="flow__list__title">リリース・保守・運営</h4>
-                            <p class="flow__list__text">テストをおえて修正完了後、本番環境へのリリースを行います。<br>リリース後のサイト分析、保守、運営までサポート致します。
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/management-amico.svg" alt="">
+                            <h4 class="flow__list__title">マネジメント</h4>
+                            <p class="flow__list__text">タイムスケジュールや仕様内容をきちんと確認し、どのようにより開発を改善することができるのか当社のPMまたクライアント企業のご担当者様と常にコミュニケーションを図ります。
                             </p>
                         </li>
                     </ul>
                 </div>
 
             </section>
-            <section>
-                <section class="menu-list">
+            <section class="exp-menu-list">
                     <div class="menu-box">
                         <div class="item">
-                            <router-link to="/development/" class="text"><img
-                                    src="/assets/img/icons/Person-icon.svg">System
-                                application <br>development
+                            <router-link to="/development/" class="text"><img src="/assets/img/icons/icons8-pc-on-desk-80.png">ウェブシステム開発
                             </router-link>
                         </div>
                         <div class="item">
                             <router-link to="/mobileapp/" class="text router-link-exact-active router-link-active"><img
-                                    src="/assets/img/icons/Message-icon.svg">Mobile app development
+                                    src="/assets/img/icons/icons8-iphone-14-pro-80.png">スマホアプリ開発
                             </router-link>
                         </div>
                         <div class="item">
-                            <router-link to="/uiuxdesign/" class="text"><img
-                                    src="/assets/img/icons/Building-icon.svg">Web
-                                design・UIUX designing
+                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/icons8-illustrator-80.png">UIUXデザイン制作
                             </router-link>
                         </div>
                         <div class="item">
                             <router-link to="/webitconsulting/" class="text">
-                                <img src="/assets/img/icons/Digital-Assets.svg">Web creative・Digital marketing
-                            </router-link>
+                                <img src="/assets/img/icons/icons8-flight-trip-64.png">オフショア開発</router-link>
+                        </div>
+                        <div class="item">
+                            <router-link to="/engineerstyle/" class="text">
+                                <img src="/assets/img/icons/Color Icon Logo.png">SESエンジニアスタイル</router-link>
                         </div>
                     </div>
                 </section>
-            </section>
             <!-- <section class="system-sec mycontents-wide">
                 <h2 class="system-sec__tiile">運用支援・保守運用</h2>
                 <p class="system-sec__text">
@@ -496,5 +492,9 @@
 
 <style>
 
+
+.web-consulting .flow__list__thumbnail {
+    height: 120px;
+}
 
 </style>
