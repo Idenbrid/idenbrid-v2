@@ -67,12 +67,12 @@
                 <ul class="entryarea recruit--contactarea--bnr">
 
                     <li>
-                        <router-link to="/studiodevelopmenthub">STUDIO DEVELOPMENT HUB : SDH<br><span
-                                class="label pc">スタジオ開発ハブ（受託開発）</span></router-link>
+                        <router-link to="/studiodevelopmenthub" class="studio-dev-hieght" >STUDIO DEVELOPMENT HUB : SDH<br><span
+                                class="label pc ">スタジオ開発ハブ（受託開発）</span></router-link>
                     </li>
                     <li>
-                        <router-link to="/engineerstyle/" class="">SES<br><span
-                                class="label pc">エンジニア採用支援（常駐・フルリモート業務委託）</span><span class="label sp">気軽にメール登録</span>
+                        <router-link to="/engineerstyle/" class="studio-dev-hieght" >SES<br><span
+                                class="label pc ">エンジニア採用支援（常駐・フルリモート業務委託）</span><span class="label sp">気軽にメール登録</span>
                         </router-link>
                     </li>
                 </ul>
@@ -249,7 +249,23 @@
     .recruit--leadtxt h3 {
         font-size: 38px;
     }
-
+    .recruit--leadtxt {
+        /* padding: 40px 10% 100px; */
+        padding: 130px 10% 170px;
+        color: #dadada;
+        position: relative;
+        z-index: 1;
+        margin-top: 0px;
+        background-color: #000;
+        background: url('/assets/img/all-member.png') no-repeat center;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+@media screen and (max-width:1160px) and (min-width: 768px){
+    .recruit--leadtxt {
+padding: 80px 10% 50px;
+}
+}
     @media screen and (min-width: 897px) {
 
 
@@ -729,6 +745,12 @@
         font-family: "Noto Sans JP", sans-serif;
         color: #000;
     }
+    @media only screen and (max-width: 1024px) {
+        .studio-dev-hieght{
+            height: 100px;
+        }
+        }
+
 
     @media screen and (max-width: 425px) {
         .mv_textarea-recruit .jptxt {
