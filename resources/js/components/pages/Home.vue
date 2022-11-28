@@ -30,7 +30,7 @@
                     <div class="c-message__bgimg"
                         style="background-image: url('/assets/img/CEO-Message background.png'); visibility: visible; opacity: 1; transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0.5s;"
                         data-sr-id="2"></div>
-                    <div class="mycontents-wide">
+                    <div class="mycontents-wide p-0">
                         <div class="c-message__content">
                             <div class="c-message__box large-7 small-12">
                                 <h3 class="content-title c-message__title">CEO MESSAGE</h3>
@@ -1617,8 +1617,8 @@
     }
 
     .c-message__title-sub {
-        margin-top: 4rem;
-        font-size: 2.28571rem;
+        margin-top: 0rem;
+        font-size: 1.7rem;
         letter-spacing: 0.1em;
         line-height: 1.5625;
         color: #102855;
@@ -1842,8 +1842,8 @@
     }
 
     .c-message__title-sub {
-        margin-top: 4rem;
-        font-size: 2.28571rem;
+        margin-top: 0rem;
+        font-size: 1.7rem;
         letter-spacing: 0.1em;
         line-height: 1.5625;
         color: #102855;

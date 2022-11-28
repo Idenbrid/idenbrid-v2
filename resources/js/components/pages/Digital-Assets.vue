@@ -30,6 +30,30 @@
                                     <img src="/public/assets/img/main-banner-2.png" alt="" />
                                 </a>
                             </div>
+                            <div class="kit"><a href="/assets/img/key-visual-2.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-2.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-3.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-3.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-4.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-4.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-5.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-5.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-6.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-6.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-7.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-7.png" alt="" />
+                                </a>
+                            </div>
                         </div>
                         <div>
                         </div>
