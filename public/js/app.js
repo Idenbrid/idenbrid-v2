@@ -7276,7 +7276,7 @@ var render = function render() {
     staticClass: "foot-menu-group"
   }, [_c("h4", [_c("router-link", {
     attrs: {
-      to: "/solutions/"
+      to: "/business/"
     }
   }, [_vm._v("事業紹介")])], 1)]), _vm._v(" "), _c("div", {
     staticClass: "foot-menu-group"
@@ -10941,7 +10941,7 @@ var staticRenderFns = [function () {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
-  }, [_vm._v("開発されたソフトウェアの著作権は誰にありますか？")]), _vm._v(" "), _c("dd", [_vm._v("当社では契約ごとに定めていますが、基本的に著作権はクライアントへ帰属します。")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("開発されたソフトウェアの著作権は誰にありますか？")]), _vm._v(" "), _c("dd", [_vm._v("契約ごとに各クライアント様と取り決めをしています。")])]), _vm._v(" "), _c("div", {
     staticClass: "tab-main"
   }, [_c("dt", {
     staticClass: "f_bold"
@@ -11023,7 +11023,18 @@ var render = function render() {
     staticClass: "mycontents-wide p-0"
   }, [_c("div", {
     staticClass: "c-message__content"
-  }, [_vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _c("div", {
+  }, [_c("div", {
+    staticClass: "c-message__box large-7 small-12"
+  }, [_c("h3", {
+    staticClass: "content-title c-message__title"
+  }, [_vm._v("CEO MESSAGE")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("div", {
+    staticClass: "c-message__button u-hidden-sm"
+  }, [_c("router-link", {
+    staticClass: "viewmore-btn viewmore-btn_service mt-3",
+    attrs: {
+      to: "/message/"
+    }
+  }, [_vm._v("View\n                                    More")])], 1)]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c("div", {
     staticClass: "c-message__button u-hidden-lg"
   }, [_c("router-link", {
     staticClass: "c-button is-md",
@@ -11040,10 +11051,10 @@ var render = function render() {
     staticClass: "service-col"
   }, [_vm._m(6), _vm._v(" "), _c("p", {
     staticClass: "service-p"
-  }, [_vm._v("スタジオ開発ハブは、日本企業またグローバル企業とのIT受託開発。そして一般的なオフショア開発にあたるパキスタンエンジニア人材を人月ベースでご提供致します。\n                    ")]), _vm._v(" "), _c("router-link", {
+  }, [_vm._v("\n                        スタジオ開発ハブは、日本企業またグローバル企業とのIT受託開発。そして一般的なオフショア開発にあたるパキスタンエンジニア人材を人月ベースでご提供致します。\n                    ")]), _vm._v(" "), _c("router-link", {
     staticClass: "viewmore-btn viewmore-btn_service mt-5",
     attrs: {
-      to: "/solutions/"
+      to: "/studiodevelopmenthub/"
     }
   }, [_vm._v("View\n                        More")])], 1), _vm._v(" "), _vm._m(7)]), _vm._v(" "), _c("div", {
     staticClass: "service-row my-5"
@@ -11054,7 +11065,7 @@ var render = function render() {
   }, [_vm._v("\n                        当社のエンジニアスタイルというのは、エンジニア採用支援サービスを指し、SESサービスのように社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。\n                    ")]), _vm._v(" "), _c("router-link", {
     staticClass: "viewmore-btn viewmore-btn_service mt-5",
     attrs: {
-      to: "/solutions/"
+      to: "/engineerstyle/"
     }
   }, [_vm._v("View\n                        More")])], 1)])]), _vm._v(" "), _c("section", {
     staticClass: "news mycontents-wide"
@@ -11316,20 +11327,8 @@ var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "c-message__box large-7 small-12"
-  }, [_c("h3", {
-    staticClass: "content-title c-message__title"
-  }, [_vm._v("CEO MESSAGE")]), _vm._v(" "), _c("div", {
     staticClass: "c-message__title-sub"
-  }, [_vm._v("「パキスタンから世界一必要とされるIT企業になる」"), _c("br"), _vm._v("\n                                なぜ私たちはパキスタンでIT企業を設立したのか")]), _vm._v(" "), _c("div", {
-    staticClass: "c-message__button u-hidden-sm"
-  }, [_c("a", {
-    staticClass: "viewmore-btn viewmore-btn_service mt-3",
-    attrs: {
-      href: "/solutions/",
-      bis_skin_checked: "1"
-    }
-  }, [_vm._v("View\n                                    More")])])]);
+  }, [_vm._v("「パキスタンから世界一必要とされるIT企業になる」"), _c("br"), _vm._v("\n                                なぜ私たちはパキスタンでIT企業を設立したのか")]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -13247,49 +13246,49 @@ var staticRenderFns = [function () {
     staticClass: "swiper-slide"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg",
+      src: "/assets/img/officeand-access.png",
       alt: ""
     }
   }), _vm._v(" "), _c("p", [_vm._v("エントランス / アプローチ")])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg",
+      src: "/assets/img/officeand-access.png",
       alt: ""
     }
   }), _vm._v(" "), _c("p", [_vm._v("エントランス / アプローチ")])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg",
+      src: "/assets/img/officeand-access.png",
       alt: ""
     }
   }), _vm._v(" "), _c("p", [_vm._v("エントランス / アプローチ")])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg",
+      src: "/assets/img/officeand-access.png",
       alt: ""
     }
   }), _vm._v(" "), _c("p", [_vm._v("エントランス / アプローチ")])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg",
+      src: "/assets/img/officeand-access.png",
       alt: ""
     }
   }), _vm._v(" "), _c("p", [_vm._v("エントランス / アプローチ")])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg",
+      src: "/assets/img/officeand-access.png",
       alt: ""
     }
   }), _vm._v(" "), _c("p", [_vm._v("エントランス / アプローチ")])]), _vm._v(" "), _c("div", {
     staticClass: "swiper-slide"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg",
+      src: "/assets/img/officeand-access.png",
       alt: ""
     }
   }), _vm._v(" "), _c("p", [_vm._v("エントランス / アプローチ")])])])])]);
@@ -15988,34 +15987,7 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _c("div", {
-    staticClass: "works--content highlight_blk"
-  }, [_vm._m(1), _vm._v(" "), _c("div", {
-    staticClass: "works--content--mainarea"
-  }, _vm._l(_vm.works, function (work) {
-    return _c("router-link", {
-      key: work.id,
-      staticClass: "works--content--item hoverScale",
-      attrs: {
-        to: "/work/detail/" + work.id
-      }
-    }, [_c("div", {
-      staticClass: "thumb"
-    }, [_c("div", {
-      staticClass: "hvrtxt en"
-    }, [_c("span", {
-      staticClass: "more_txt"
-    }, [_c("span", {
-      staticClass: "underline"
-    }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-      staticClass: "scaleImg"
-    }, [_c("img", {
-      attrs: {
-        src: "https://admin-idenbrid.idenbrid.com/public/storage/work_images/" + work.image,
-        alt: ""
-      }
-    })])]), _vm._v(" "), _c("h3", [_vm._v(_vm._s(work.title))])]);
-  }), 1), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("section", {
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("section", {
     staticClass: "menu"
   }, [_c("ul", {
     staticClass: "menu-contents mycontents-wide"
@@ -16091,68 +16063,12 @@ var staticRenderFns = [function () {
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("ul", {
-    staticClass: "works--content--link"
-  }, [_c("li", [_c("a", {
-    staticClass: "en categoryitem current",
+  return _c("section", [_c("img", {
     attrs: {
-      href: "#"
+      src: "/assets/img/comingsoonwork.gif",
+      width: "100%"
     }
-  }, [_vm._v("全て")])]), _vm._v(" "), _c("li", [_c("a", {
-    staticClass: "en categoryitem",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("UIUXデザイン")])]), _vm._v(" "), _c("li", [_c("a", {
-    staticClass: "en categoryitem",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("ウェブ・システム")])]), _vm._v(" "), _c("li", [_c("a", {
-    staticClass: "en categoryitem",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("スマホアプリ")])]), _vm._v(" "), _c("li", [_c("a", {
-    staticClass: "en categoryitem",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("デスクトップアプリ")])]), _vm._v(" "), _c("li", [_c("a", {
-    staticClass: "en categoryitem",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("その他")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "wp-pagenavi",
-    attrs: {
-      role: "navigation"
-    }
-  }, [_c("span", {
-    staticClass: "current",
-    attrs: {
-      "aria-current": "page"
-    }
-  }, [_vm._v("1")]), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 2",
-      href: "https://tomorrowgate.co.jp/works/page/2/"
-    }
-  }, [_vm._v("2")]), _c("a", {
-    staticClass: "nextpostslink",
-    attrs: {
-      rel: "next",
-      "aria-label": "Next Page",
-      href: "https://tomorrowgate.co.jp/works/page/2/"
-    }
-  }, [_c("i", {
-    staticClass: "fas fa-angle-right"
-  })])]);
+  })]);
 }];
 render._withStripped = true;
 
@@ -24882,7 +24798,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.soft-development .flow__list__thumbnail{\r\n    height: 120px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.soft-development .flow__list__thumbnail{\n    height: 120px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24906,7 +24822,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.web-consulting .flow__list__thumbnail {\r\n    height: 120px;\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.web-consulting .flow__list__thumbnail {\n    height: 120px;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

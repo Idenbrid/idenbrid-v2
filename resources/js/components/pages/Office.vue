@@ -27,31 +27,31 @@
                 <div class="swiper mySwiper-main">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://tomorrowgate.co.jp/asset/img/company/office/office_photo04.jpg" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="">
                             <p>エントランス / アプローチ</p>
                         </div>
 

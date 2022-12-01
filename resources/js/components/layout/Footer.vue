@@ -92,7 +92,7 @@
             </div>
             <div class="foot-menu-group">
               <h4>
-                <router-link to="/solutions/" class="">事業紹介</router-link>
+                <router-link to="/business/" class="">事業紹介</router-link>
          
               </h4>
             </div>

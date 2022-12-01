@@ -8,7 +8,7 @@
                     <span class="jptxt">アイデンブリッドの開発・制作事例の実績一覧です。</span>
                 </h2>
             </div>
-            <div class="works--content highlight_blk">
+            <!-- <div class="works--content highlight_blk">
                 <ul class="works--content--link">
                     <li><a href="#" class="en categoryitem current">全て</a>
                     </li>
@@ -43,7 +43,10 @@
                         aria-label="Next Page" href="https://tomorrowgate.co.jp/works/page/2/"><i
                             class='fas fa-angle-right'></i></a>
                 </div>
-            </div>
+            </div> -->
+            <section>
+                <img src="/assets/img/comingsoonwork.gif" width="100%">
+            </section>
             <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
