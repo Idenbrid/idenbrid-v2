@@ -297,7 +297,7 @@ padding: 80px 10% 50px;
         position: relative;
         display: block;
         border: 1px solid #2b2b2b;
-        background-color: #000;
+        background-color: #12355D;
         letter-spacing: 0.12em;
         text-align: center;
         color: #dadada;
@@ -325,7 +325,8 @@ padding: 80px 10% 50px;
 
     .mv_textarea-recruit {
         /* color: #dadada; */
-        background-color: #000;
+        /* background-color: #000; */
+        background-color: #12355D;
 
     }
 

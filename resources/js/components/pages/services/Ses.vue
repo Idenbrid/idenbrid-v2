@@ -17,7 +17,7 @@
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="/assets/img/icons/ses-img-01.svg"
+                            src="/assets/img/icons/ses-image-01.png"
                             alt="">
                         <h3 class="system-sec__list__title">スタイルくん</h3>
                         <p class="system-sec__list__text">
@@ -25,7 +25,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="/assets/img/icons/ses-img-02.svg"
+                            src="/assets/img/icons/ses-image-02.svg"
                             alt="">
                         <h3 class="system-sec__list__title">希望条件交渉力</h3>
                         <p class="system-sec__list__text">
@@ -33,10 +33,34 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="/assets/img/icons/ses-img-03.svg"
+                            src="/assets/img/icons/ses-image-03.svg"
                             alt="">
                         <h3 class="system-sec__list__title">契約単価</h3>
                         <p class="system-sec__list__text">エンジニア・デザイナーの方々に少しでも大きく還元できるように単価交渉としっかりとした還元率を実現しています
+                        </p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="/assets/img/icons/ses-image-04.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">フルリモート案件</h3>
+                        <p class="system-sec__list__text">
+                            よりエンジニアの方が働きやすい環境を提供し、通勤の時間なども節約でき大人気の条件の一つです</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="/assets/img/icons/ses-image-05.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">スキルを伸ばす環境</h3>
+                        <p class="system-sec__list__text">
+                            単純にできる仕事をするだけでなく、挑戦できる環境下で自身のスキルアップにも繋がる案件を紹介しております</p>
+                    </li>
+                    <li class="system-sec__list">
+                        <img class="system-sec__list__thumbnail"
+                            src="/assets/img/icons/ses-image-06.svg"
+                            alt="">
+                        <h3 class="system-sec__list__title">頼れるカスタマーサクセス</h3>
+                        <p class="system-sec__list__text">万が一トラブルがあった場合にはエンジニアスタイルがしっかりと間に入り、状況把握からお客様の不安払拭に努めます
                         </p>
                     </li>
                   
@@ -52,7 +76,7 @@
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="/assets/img/icons/ses-img-04.svg"
+                            src="/assets/img/icons/ses-image-07.svg"
                             alt="">
                         <h3 class="system-sec__list__title">豊富な人材データベース</h3>
                         <p class="system-sec__list__text">
@@ -60,7 +84,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="/assets/img/icons/ses-img-05.svg"
+                            src="/assets/img/icons/ses-image-08.svg"
                             alt="">
                         <h3 class="system-sec__list__title">柔軟な提案力</h3>
                         <p class="system-sec__list__text">
@@ -68,7 +92,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="/assets/img/icons/ses-img-06.svg"
+                            src="/assets/img/icons/ses-image-09.svg"
                             alt="">
                         <h3 class="system-sec__list__title">スピード対応</h3>
                         <p class="system-sec__list__text">急募の急ぎ案件や大人数を必要とする募集であっても当サービスが提案と対応をさせて頂きます。

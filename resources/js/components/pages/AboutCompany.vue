@@ -332,6 +332,13 @@
     }
 
     /*end*/
+    @media screen and (max-width: 1800px) and (min-width: 1600px)
+{
+    .link-img img {
+    height: 250px;
+    width: 100%;
+}
+}
     @media screen and (min-width: 897px) {
 
         .company--item:nth-of-type(1),

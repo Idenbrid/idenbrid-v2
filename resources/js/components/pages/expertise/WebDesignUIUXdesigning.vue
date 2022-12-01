@@ -219,6 +219,42 @@
 一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"</p>
                 </div>
 
+                <div class="flow__scroll mycontents-wide soft-development">
+                    <ul class="flow__contents">
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/Team-rafiki.svg" alt="">
+                            <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
+                            <p class="flow__list__text">お問い合わせを頂き、開発されたい内容の書類RFPや内容をもとにヒアリングそして予算に合わせてお見積もりを作成します。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/New-team-members-rafiki.svg" alt="">
+                            <h4 class="flow__list__title">要件定義・基本設計</h4>
+                            <p class="flow__list__text">当社のフォーマットに合わせて、仕様を整理しどのような開発を進めるのかを定義します。スケジュールの管理などもこちらで行います。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/Open-source-bro.svg" alt="">
+                            <h4 class="flow__list__title">UIUXデザイン・開発</h4>
+                            <p class="flow__list__text">
+                                画面遷移図からデザインを起こし、詳細設計書に基づきシステム・アプリ・インフラ開発を進めて参ります。</p>
+                        </li>
+                        <li class="flow__list">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/test-amico.svg" alt="">
+                            <h4 class="flow__list__title">テスト・納品</h4>
+                            <p class="flow__list__text">テストケースに基づき検収を行いお客様にもご確認頂き、アプリの審査やサーバーへのディプロイ作業を進めます。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <!-- <section class="flow">
+                <div class="mycontents-wide">
+                    <h3 class="content-title content-title_flow">ウェブシステム開発におけるフロー</h3>
+                    <p class="content-text content-subtitle_flow">
+                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで
+一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"</p>
+                </div>
+
                 <div class="flow__scroll mycontents-wide">
                     <ul class="flow__contents">
                         <li class="flow__list flow__list_border">
@@ -246,7 +282,7 @@
                     </ul>
                 </div>
 
-            </section>
+            </section> -->
 
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">

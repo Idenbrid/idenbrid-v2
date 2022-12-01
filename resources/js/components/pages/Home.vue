@@ -84,7 +84,33 @@
                             More</router-link>
                     </div>
                 </div>
+            </section>   <!--Our experties-->
+            <section class="news mycontents-wide">
+                <h3 class="content-title content-title_blog">OUR EXPERTISE</h3>
+                <p class="content-text content-text_blog">IDENBRIDがご提供している開発サービスのご紹介です。</p>
+                <div class="new-box new">
+                    <div class="new-listing new" v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 5">
+                        <router-link :to="'/news/detail/'+detail.id+'/'" class="new-link new">
+                            <div class="img_box">
+                                <img :src="'https://admin.idenbrid.com/public/storage/news/'+detail.image" alt=""></div>
+                            <div class="new-item new">
+                                <div class="new-meta">
+                                    <p class="text new mr-2 mt-0 new-date">
+                                        {{detail.date}}</p>
+                                    <div class="new new-tag">
+                                        <p class="text new mt-0">NEWS</p>
+                                    </div>
+                                  </div>
+                                <p class="text new-content">
+                                    {{detail.title}}</p>
+                            </div>
+                        </router-link>
+                    </div>
+                    <router-link class="viewmore-btn viewmore-btn_center" to="/solutions">View More
+                    </router-link>
+                </div>
             </section>
+            <!--our experties-->
             <!--news-->
             <section class="news mycontents-wide">
                 <h3 class="content-title content-title_blog">NEWS</h3>
