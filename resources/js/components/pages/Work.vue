@@ -47,7 +47,7 @@
             <section>
                 <img src="/assets/img/comingsoonwork.gif" width="100%">
             </section>
-            <section class="menu">
+            <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
@@ -80,7 +80,14 @@
                         </router-link>
                     </li>
                 </ul>
-            </section>
+            </section> -->
+            <div class="branding--contact">
+      <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>
+        ご質問がありましたらお気軽にご相談ください。</h3>
+      <div class="fade_y on">
+        <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+      </div>
+    </div>
         </main>
         <Footer />
     </div>
