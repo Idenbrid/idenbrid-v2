@@ -16,7 +16,7 @@
                                 <p>&nbsp;</p>
                                 <p>&nbsp;</p>
                             </div>
-                            <h4 class="vission-text" style="text-align: center;">動画で楽しくアイデンブリッドを知ろう！</h4>
+                            <!-- <h4 class="vission-text" style="text-align: center;">動画で楽しくアイデンブリッドを知ろう！</h4> -->
                             <p>&nbsp;</p>
                             <h3 class="vision-sub-heading"><span
                                     style="color: #102855;"><strong>ビデオ一覧</strong></span></h3>
