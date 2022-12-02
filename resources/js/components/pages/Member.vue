@@ -1300,6 +1300,9 @@
     };
 </script>
 <style scoped>
+.scaleImg img{
+    width: 100%;
+}
 .img_box img{
     max-width: 100%;
     height: 350px;
