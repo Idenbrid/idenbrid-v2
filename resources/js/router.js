@@ -84,7 +84,7 @@ const routes = [
     //Movies
     {
         path: '/video/',
-        component: Movies
+        component: Videos
     },
     // work
     {

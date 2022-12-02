@@ -46,9 +46,9 @@
                                     <div class="good">
                                         <!-- <i @click="likeBlog(blog.id)" class="fa fa-heart mr-1"></i>11 -->
                                         <i v-if="blog.is_liked == false" @click.prevent="likeBlog(blog.id)"
-                                            class="fa-regular fa-heart">like</i>
+                                            class="fa fa-heart-o mr-2"></i>
                                         <i v-else @click.prevent="likeBlog(blog.id)"
-                                            class="fa-solid fa-heart">unlike</i>
+                                            class="fa fa-heart"></i>
                                     </div>
                                 </div>
                             </div>
@@ -74,10 +74,8 @@
                         </div>
                         <h4 class="sideheading fade_y pc on">カテゴリー</h4>
                         <div class="sp_cat">
-                            <a href="https://tomorrowgate.co.jp/blog/"
-                                class="categoryitem current fade_y on">全てのカテゴリー</a>
-                            <a href="https://tomorrowgate.co.jp/blog_category/pickup/"
-                                class="categoryitem fade_y pickup on">おすすめ（3）</a>
+                            <a @click="categorySearch('all')" class="categoryitem current fade_y on">全てのカテゴリー</a>
+                            <a @click="categorySearch(cate.id)" v-for="(cate, index) in categories" :key="index" class="categoryitem current fade_y on">{{cate.title}}</a>
                         </div>
                         <!-- <h4 class="sideheading fade_y pc on">おすすめの記事</h4>
                         <div class="recommend--list pc">
@@ -207,8 +205,8 @@
             return {
                 most_liked: [],
                 blogs: [],
-                search_word: ''
-                // is_liked:0
+                search_word: '',
+                categories: [],
             };
         },
         watch: {
@@ -221,15 +219,6 @@
             }
         },
         methods: {
-            // likeBlog(id) {
-            //   axios
-            //     .post("/api/like-blog/" + id)
-            //     .then((res) => {
-            //       this.getBlogs();
-            //     })
-            //     .catch((err) => {});
-            // },
-
             async likeBlog(id) {
                 try {
                     const {
@@ -279,14 +268,25 @@
                     this.blogs = data
                 })
             },
-            getBlogs() {
-                axios
-                    .get("/api/blogs")
-                    .then((res) => {
-                        this.blogs = res.data.blogs;
-                        this.most_liked = res.data.most_liked;
+            categorySearch(cate_id) {
+                if(cate_id == 'all'){
+                    this.getBlogs()
+                }else{
+                    axios.get('/api/blog-search-category/' + cate_id).then(({
+                        data
+                    }) => {
+                        this.blogs = data.map((res)=>res.blog)
                     })
-                    .catch((err) => {});
+                }
+            },
+            getBlogs() {
+                axios.get("/api/blogs")
+                .then((res) => {
+                    this.blogs = res.data.blogs;
+                    this.categories = res.data.categories;
+                    this.most_liked = res.data.most_liked;
+                })
+                .catch((err) => {});
             },
         },
         mounted() {
@@ -1299,7 +1299,8 @@
     .blog--content--sidearea .categoryitem.current {
         background-color: #dadada;
         color: #000;
-        pointer-events: none;
+        cursor: pointer;
+        /* pointer-events: none; */
     }
 
     .blog--content--sidearea .categoryitem.pickup {

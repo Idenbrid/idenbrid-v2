@@ -30,6 +30,7 @@ Route::get('blog-detail/{id}', [BlogController::class,'blogDetail']);
 Route::get('prev-blog-detail/{id}', [BlogController::class,'prevBlogDetail']);
 Route::get('latest-blog-detail/{id}', [BlogController::class,'latestBlogDetail']);
 Route::get('blog-search/{keyword}', [BlogController::class,'searchBlog']);
+Route::get('blog-search-category/{cate_id}', [BlogController::class,'searchBlogCategory']);
 
 Route::post('/like-blog/{id}',[BlogController::class,'likeBlog']);
 Route::post('/unlike-blog/{id}',[BlogController::class,'unlikeBlog']);

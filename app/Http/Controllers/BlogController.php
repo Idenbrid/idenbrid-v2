@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\BlogCategory;
 use App\Models\BlogLike;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class BlogController extends Controller
@@ -13,6 +15,7 @@ class BlogController extends Controller
     public function index(){
         $session_id = session()->get('session_id');
         $blogs = Blog::orderBy('created_at','desc')->get();
+        $categories = DB::table('categories')->orderBy('created_at','desc')->limit(5)->get();
         foreach($blogs as $key => $blog){
             $bl = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$blog->id])->first();
             if($bl){
@@ -26,6 +29,7 @@ class BlogController extends Controller
         $most_liked = Blog::orderBy('count', 'DESC')->limit(5)->get();
         return response()->json([
             'blogs' => $blogs,
+            'categories' => $categories,
             'most_liked' => $most_liked,
         ]);
     }
@@ -140,5 +144,20 @@ class BlogController extends Controller
         }
         return $blogs;
 
+    }
+    public function searchBlogCategory($cate_id){
+        $session_id = session()->get('session_id');
+        $blogs = BlogCategory::Where('category_id', $cate_id)->with('Blog')->get();
+        foreach($blogs as $key => $blog){
+            $bl = BlogLike::where(['user_id'=>$session_id,'blog_id'=>$blog->blog->id])->first();
+            if($bl){
+                $blog->blog['is_liked']=1;
+                $blog->blog['count'] = BlogLike::where('blog_id', '=', $bl->blog_id)->count();
+            }
+            else{
+                $blog->blog['is_liked']=0;
+            }       
+        }
+        return $blogs;
     }
 }

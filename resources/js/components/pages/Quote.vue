@@ -402,7 +402,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="submit" @click="saveRequest()" name="next" value="送信"
+                                    <input type="submit" @click.prevent="saveRequest()" name="next" value="送信"
                                         class="action-button">
                                 </fieldset>
                             </form>
@@ -484,7 +484,20 @@
                 axios.post("/api/submit-quotation", this.record)
                 .then((res) => {
                     if (res.data.success == true) {
-                        alert('We will contact you soon. Thanks')
+                        alert('We will contact you soon. Thanks');
+                        this.record = {
+                            step_1: '',
+                            step_2: '',
+                            step_3: '',
+                            step_4: [],
+                            step_5: '',
+                            step_6: '',
+                            step_7: '',
+                            project_name: '',
+                            name: '',
+                            email: '',
+                            phone: '',
+                        };
                     }
                 })
                 .catch((err) => {

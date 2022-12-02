@@ -5427,7 +5427,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "開発実績 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 会社情報",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -5461,7 +5461,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "開発実績 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 会社概要",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -5499,7 +5499,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | ブログ",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -5511,11 +5511,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return {
       most_liked: [],
       blogs: [],
-      search_word: ''
-      // is_liked:0
+      search_word: '',
+      categories: []
     };
   },
-
   watch: {
     search_word: function search_word(newChange, old) {
       if (newChange == '' || newChange == null) {
@@ -5526,14 +5525,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }
   },
   methods: {
-    // likeBlog(id) {
-    //   axios
-    //     .post("/api/like-blog/" + id)
-    //     .then((res) => {
-    //       this.getBlogs();
-    //     })
-    //     .catch((err) => {});
-    // },
     likeBlog: function likeBlog(id) {
       var _this = this;
       return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
@@ -5617,11 +5608,25 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         _this3.blogs = data;
       });
     },
-    getBlogs: function getBlogs() {
+    categorySearch: function categorySearch(cate_id) {
       var _this4 = this;
+      if (cate_id == 'all') {
+        this.getBlogs();
+      } else {
+        axios.get('/api/blog-search-category/' + cate_id).then(function (_ref4) {
+          var data = _ref4.data;
+          _this4.blogs = data.map(function (res) {
+            return res.blog;
+          });
+        });
+      }
+    },
+    getBlogs: function getBlogs() {
+      var _this5 = this;
       axios.get("/api/blogs").then(function (res) {
-        _this4.blogs = res.data.blogs;
-        _this4.most_liked = res.data.most_liked;
+        _this5.blogs = res.data.blogs;
+        _this5.categories = res.data.categories;
+        _this5.most_liked = res.data.most_liked;
       })["catch"](function (err) {});
     }
   },
@@ -5654,7 +5659,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | スタジオ開発ハブ",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -5740,6 +5745,40 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/Navbar.vue */ "./resources/js/components/layout/Navbar.vue");
+/* harmony import */ var _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/Footer.vue */ "./resources/js/components/layout/Footer.vue");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Footer: _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  metaInfo: function metaInfo() {
+    return {
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 事業紹介",
+      meta: [{
+        vmid: "description",
+        name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
+        content: "アイデンブリッドではお知らせやブログを定期的に更新しており、皆様が日々抱くサイト構築やアプリ開発の疑問やサイトをローンチした後の運用に関しての疑問に答えるブログ記事を公開しています。"
+      }]
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Contact-Us.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Contact-Us.vue?vue&type=script&lang=js& ***!
@@ -5765,7 +5804,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お問い合わせ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 問い合わせ",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -5870,7 +5909,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "デジタル著作物 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | デジタルアセットデータ",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -5932,7 +5971,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 資料ダウンロード",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -5966,7 +6005,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "よくある質問| システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | よくある質問",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -5988,132 +6027,6 @@ __webpack_require__.r(__webpack_exports__);
         });
       });
     })(jQuery);
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/Navbar.vue */ "./resources/js/components/layout/Navbar.vue");
-/* harmony import */ var vue_multiselect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-multiselect */ "./node_modules/vue-multiselect/dist/vue-multiselect.min.js");
-/* harmony import */ var vue_multiselect__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_multiselect__WEBPACK_IMPORTED_MODULE_1__);
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      record: {
-        step_1: '',
-        step_2: '',
-        step_3: '',
-        step_4: [],
-        step_5: '',
-        step_6: '',
-        step_7: '',
-        project_name: '',
-        name: '',
-        email: '',
-        phone: ''
-      },
-      options: ['ウェブアプリ・システム', 'モバイルアプリ', 'システム設計', 'UIUXデザイン', 'バックエンド・API', 'フロントエンド', 'DevOps', 'ブロックチェーン', 'データエンジニア', 'サイバーセキュリティー', 'ECサイト', 'API結合', 'AI（人工知能）', 'QA・テスト', 'その他', '']
-    };
-  },
-  components: {
-    Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Multiselect: (vue_multiselect__WEBPACK_IMPORTED_MODULE_1___default())
-  },
-  methods: {
-    saveRequest: function saveRequest(id) {
-      axios.post("/api/submit-quotation", this.record).then(function (res) {
-        if (res.data.success == true) {
-          alert('We will contact you soon. Thanks');
-        }
-      })["catch"](function (err) {
-        alert('please fill mandatory fileds. Thanks');
-      });
-    }
-  },
-  mounted: function mounted() {
-    window.setTimeout(function () {
-      jQuery(document).ready(function () {
-        var current_fs, next_fs, previous_fs; //fieldsets
-        var opacity;
-        var current = 1;
-        var steps = jQuery("fieldset").length;
-        jQuery(".next").click(function () {
-          current_fs = jQuery(this).parent();
-          next_fs = jQuery(this).parent().next();
-          //show the next fieldset
-          next_fs.show();
-          //hide the current fieldset with style
-          current_fs.animate({
-            opacity: 0
-          }, {
-            step: function step(now) {
-              // for making fielset appear animation
-              opacity = 1 - now;
-              current_fs.css({
-                'display': 'none',
-                'position': 'relative'
-              });
-              next_fs.css({
-                'opacity': opacity
-              });
-            },
-            duration: 500
-          });
-        });
-        jQuery(".previous").click(function () {
-          current_fs = jQuery(this).parent();
-          previous_fs = jQuery(this).parent().prev();
-
-          //show the previous fieldset
-          previous_fs.show();
-
-          //hide the current fieldset with style
-          current_fs.animate({
-            opacity: 0
-          }, {
-            step: function step(now) {
-              // for making fielset appear animation
-              opacity = 1 - now;
-              current_fs.css({
-                'display': 'none',
-                'position': 'relative'
-              });
-              previous_fs.css({
-                'opacity': opacity
-              });
-            },
-            duration: 500
-          });
-        });
-
-        // jQuery(".submit").click(function () {
-        //     return false;
-        // })
-      });
-    }, 1000);
-  },
-  metaInfo: function metaInfo() {
-    return {
-      title: "開発実績 | システム開発はアイデンブリッド社 | IDENBRID INC.",
-      meta: [{
-        vmid: "description",
-        name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
-        content: "アイデンブリッド社がこれまでに担当した案件の一部を紹介致します。フロントエンドの実装はReact JS、Vue JS、HTML、BootStrap、jQueryを主軸とし、バックエンド・API開発はLaravel(PHP)、Node JS、Pythonを基本に開発を行なっています。CMSではWordPress（ワードプレス）を用いて実装を行うこともあり、プラグインの開発に特化した案件もございます。スマホアプリではFultter(Dart)でフロント実装を行い、サーバー周りはGCPまたはAWSを用いています。"
-      }]
-    };
   }
 });
 
@@ -6148,7 +6061,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "システム・アプリ開発とウェブ制作はアイデンブリッド社 | IDENBRID INC..",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | ホーム",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6282,7 +6195,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "開発実績 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | メンバー",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6298,40 +6211,6 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Message.vue?vue&type=script&lang=js& ***!
   \********************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/Navbar.vue */ "./resources/js/components/layout/Navbar.vue");
-/* harmony import */ var _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/Footer.vue */ "./resources/js/components/layout/Footer.vue");
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  components: {
-    Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Footer: _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
-  },
-  metaInfo: function metaInfo() {
-    return {
-      title: "開発実績 | システム開発はアイデンブリッド社 | IDENBRID INC.",
-      meta: [{
-        vmid: "description",
-        name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
-        content: "アイデンブリッド社がこれまでに担当した案件の一部を紹介致します。フロントエンドの実装はReact JS、Vue JS、HTML、BootStrap、jQueryを主軸とし、バックエンド・API開発はLaravel(PHP)、Node JS、Pythonを基本に開発を行なっています。CMSではWordPress（ワードプレス）を用いて実装を行うこともあり、プラグインの開発に特化した案件もございます。スマホアプリではFultter(Dart)でフロント実装を行い、サーバー周りはGCPまたはAWSを用いています。"
-      }]
-    };
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6384,7 +6263,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | お知らせ",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6429,7 +6308,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "開発実績 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | オフィス・アクセス",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6585,7 +6464,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC. ",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 経営理念",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6645,10 +6524,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6657,21 +6536,127 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/Navbar.vue */ "./resources/js/components/layout/Navbar.vue");
-/* harmony import */ var _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/Footer.vue */ "./resources/js/components/layout/Footer.vue");
+/* harmony import */ var vue_multiselect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-multiselect */ "./node_modules/vue-multiselect/dist/vue-multiselect.min.js");
+/* harmony import */ var vue_multiselect__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_multiselect__WEBPACK_IMPORTED_MODULE_1__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      record: {
+        step_1: '',
+        step_2: '',
+        step_3: '',
+        step_4: [],
+        step_5: '',
+        step_6: '',
+        step_7: '',
+        project_name: '',
+        name: '',
+        email: '',
+        phone: ''
+      },
+      options: ['ウェブアプリ・システム', 'モバイルアプリ', 'システム設計', 'UIUXデザイン', 'バックエンド・API', 'フロントエンド', 'DevOps', 'ブロックチェーン', 'データエンジニア', 'サイバーセキュリティー', 'ECサイト', 'API結合', 'AI（人工知能）', 'QA・テスト', 'その他', '']
+    };
+  },
   components: {
     Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Footer: _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    Multiselect: (vue_multiselect__WEBPACK_IMPORTED_MODULE_1___default())
+  },
+  methods: {
+    saveRequest: function saveRequest(id) {
+      var _this = this;
+      axios.post("/api/submit-quotation", this.record).then(function (res) {
+        if (res.data.success == true) {
+          alert('We will contact you soon. Thanks');
+          _this.record = {
+            step_1: '',
+            step_2: '',
+            step_3: '',
+            step_4: [],
+            step_5: '',
+            step_6: '',
+            step_7: '',
+            project_name: '',
+            name: '',
+            email: '',
+            phone: ''
+          };
+        }
+      })["catch"](function (err) {
+        alert('please fill mandatory fileds. Thanks');
+      });
+    }
+  },
+  mounted: function mounted() {
+    window.setTimeout(function () {
+      jQuery(document).ready(function () {
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
+        var current = 1;
+        var steps = jQuery("fieldset").length;
+        jQuery(".next").click(function () {
+          current_fs = jQuery(this).parent();
+          next_fs = jQuery(this).parent().next();
+          //show the next fieldset
+          next_fs.show();
+          //hide the current fieldset with style
+          current_fs.animate({
+            opacity: 0
+          }, {
+            step: function step(now) {
+              // for making fielset appear animation
+              opacity = 1 - now;
+              current_fs.css({
+                'display': 'none',
+                'position': 'relative'
+              });
+              next_fs.css({
+                'opacity': opacity
+              });
+            },
+            duration: 500
+          });
+        });
+        jQuery(".previous").click(function () {
+          current_fs = jQuery(this).parent();
+          previous_fs = jQuery(this).parent().prev();
+
+          //show the previous fieldset
+          previous_fs.show();
+
+          //hide the current fieldset with style
+          current_fs.animate({
+            opacity: 0
+          }, {
+            step: function step(now) {
+              // for making fielset appear animation
+              opacity = 1 - now;
+              current_fs.css({
+                'display': 'none',
+                'position': 'relative'
+              });
+              previous_fs.css({
+                'opacity': opacity
+              });
+            },
+            duration: 500
+          });
+        });
+
+        // jQuery(".submit").click(function () {
+        //     return false;
+        // })
+      });
+    }, 1000);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | お見積もり",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
-        content: "アイデンブリッドではお知らせやブログを定期的に更新しており、皆様が日々抱くサイト構築やアプリ開発の疑問やサイトをローンチした後の運用に関しての疑問に答えるブログ記事を公開しています。"
+        content: "アイデンブリッド社がこれまでに担当した案件の一部を紹介致します。フロントエンドの実装はReact JS、Vue JS、HTML、BootStrap、jQueryを主軸とし、バックエンド・API開発はLaravel(PHP)、Node JS、Pythonを基本に開発を行なっています。CMSではWordPress（ワードプレス）を用いて実装を行うこともあり、プラグインの開発に特化した案件もございます。スマホアプリではFultter(Dart)でフロント実装を行い、サーバー周りはGCPまたはAWSを用いています。"
       }]
     };
   }
@@ -6717,7 +6702,41 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "開発実績 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | ソルーション",
+      meta: [{
+        vmid: "description",
+        name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
+        content: "アイデンブリッド社がこれまでに担当した案件の一部を紹介致します。フロントエンドの実装はReact JS、Vue JS、HTML、BootStrap、jQueryを主軸とし、バックエンド・API開発はLaravel(PHP)、Node JS、Pythonを基本に開発を行なっています。CMSではWordPress（ワードプレス）を用いて実装を行うこともあり、プラグインの開発に特化した案件もございます。スマホアプリではFultter(Dart)でフロント実装を行い、サーバー周りはGCPまたはAWSを用いています。"
+      }]
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/Navbar.vue */ "./resources/js/components/layout/Navbar.vue");
+/* harmony import */ var _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/Footer.vue */ "./resources/js/components/layout/Footer.vue");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Footer: _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  metaInfo: function metaInfo() {
+    return {
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | ビデオ",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6756,7 +6775,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "開発実績 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 仕事実績",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6858,7 +6877,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | スマホアプリ開発",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6893,7 +6912,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | ウェブシステム開発",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6928,7 +6947,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | オフショア開発",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6963,7 +6982,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | UIUXデザイン",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -6995,6 +7014,16 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Navbar: _layout_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     Footer: _layout_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  metaInfo: function metaInfo() {
+    return {
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | お知らせ",
+      meta: [{
+        vmid: "description",
+        name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
+        content: "アイデンブリッドではお知らせやブログを定期的に更新しており、皆様が日々抱くサイト構築やアプリ開発の疑問やサイトをローンチした後の運用に関しての疑問に答えるブログ記事を公開しています。"
+      }]
+    };
   },
   data: function data() {
     return {
@@ -7095,7 +7124,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   metaInfo: function metaInfo() {
     return {
-      title: "お知らせ・ブログ | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | エンジニアスタイル",
       meta: [{
         vmid: "description",
         name: "アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル",
@@ -7138,7 +7167,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {},
   metaInfo: function metaInfo() {
     return {
-      title: "クラウドソーシングシステム開発 | システム開発はアイデンブリッド社 | IDENBRID INC.",
+      title: "日本とパキスタンでIT受託開発・ラボ型開発 | IDENBRID / アイデンブリッド | 仕事実績詳細",
       meta: [{
         vmid: "description",
         name: "description",
@@ -7217,7 +7246,7 @@ var render = function render() {
     }
   }, [_c("h4", {
     staticClass: "request-contact-heading"
-  }, [_vm._v("\n                      資料ダウンロード "), _c("br"), _vm._v(" "), _c("span", {
+  }, [_vm._v("\n                    資料ダウンロード "), _c("br"), _vm._v(" "), _c("span", {
     staticClass: "contact-col-sub-heading"
   }, [_vm._v("ITコンサル・開発に関する資料はこちら")])])])], 1)])]), _vm._v(" "), _c("div", {
     staticClass: "mb-4 contents-box pl-4"
@@ -7231,7 +7260,7 @@ var render = function render() {
     }
   }, [_c("h4", {
     staticClass: "request-contact-heading"
-  }, [_vm._v("\n                      お問い合わせ"), _c("br"), _vm._v(" "), _c("span", {
+  }, [_vm._v("\n                    お問い合わせ"), _c("br"), _vm._v(" "), _c("span", {
     staticClass: "contact-col-sub-heading"
   }, [_vm._v("仕事や見積りの依頼・取材の相談はこちら")])])])], 1)])])])])]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("section", {
     staticClass: "section-footer-menu"
@@ -7318,7 +7347,7 @@ var staticRenderFns = [function () {
     staticClass: "contact-main"
   }, [_c("p", {
     staticClass: "content-text content-text_contact fonter-text"
-  }, [_vm._v("お問い合わせは企画時点からお受けしております。またこんなことが実現可能かなどITに関する相談事も受け付けています。\n                ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n        お問い合わせは企画時点からお受けしております。またこんなことが実現可能かなどITに関する相談事も受け付けています。\n      ")]), _vm._v(" "), _c("div", {
     staticClass: "contact__btns"
   }, [_c("a", {
     staticClass: "btn-wide btn-wide_call",
@@ -7368,7 +7397,7 @@ var staticRenderFns = [function () {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "btn-wide__text btn-wide__text_call"
-  }, [_vm._v("\n                            helloworld@idenbrid.com\n                        ")])]), _vm._v(" "), _c("a", {
+  }, [_vm._v("\n            helloworld@idenbrid.com\n          ")])]), _vm._v(" "), _c("a", {
     staticClass: "btn-wide",
     attrs: {
       href: "skype:live:.cid.3145b74a3504693c?chat",
@@ -8510,22 +8539,22 @@ var render = function render() {
     }, [_c("div", {
       staticClass: "good"
     }, [blog.is_liked == false ? _c("i", {
-      staticClass: "fa-regular fa-heart",
+      staticClass: "fa fa-heart-o mr-2",
       on: {
         click: function click($event) {
           $event.preventDefault();
           return _vm.likeBlog(blog.id);
         }
       }
-    }, [_vm._v("like")]) : _c("i", {
-      staticClass: "fa-solid fa-heart",
+    }) : _c("i", {
+      staticClass: "fa fa-heart",
       on: {
         click: function click($event) {
           $event.preventDefault();
           return _vm.likeBlog(blog.id);
         }
       }
-    }, [_vm._v("unlike")])])])], 1);
+    })])])], 1);
   }), 0) : _c("h1", [_vm._v("また記事の投稿がございません。")])]), _vm._v(" "), _c("div", {
     staticClass: "blog--content--sidearea"
   }, [_c("div", {
@@ -8573,7 +8602,26 @@ var render = function render() {
     }
   })])]), _vm._v(" "), _c("h4", {
     staticClass: "sideheading fade_y pc on"
-  }, [_vm._v("カテゴリー")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("h4", {
+  }, [_vm._v("カテゴリー")]), _vm._v(" "), _c("div", {
+    staticClass: "sp_cat"
+  }, [_c("a", {
+    staticClass: "categoryitem current fade_y on",
+    on: {
+      click: function click($event) {
+        return _vm.categorySearch("all");
+      }
+    }
+  }, [_vm._v("全てのカテゴリー")]), _vm._v(" "), _vm._l(_vm.categories, function (cate, index) {
+    return _c("a", {
+      key: index,
+      staticClass: "categoryitem current fade_y on",
+      on: {
+        click: function click($event) {
+          return _vm.categorySearch(cate.id);
+        }
+      }
+    }, [_vm._v(_vm._s(cate.title))]);
+  })], 2), _vm._v(" "), _c("h4", {
     staticClass: "sideheading pc"
   }, [_vm._v("人気記事ランキング")]), _vm._v(" "), _c("div", {
     staticClass: "recommend--list popular pc"
@@ -8621,7 +8669,7 @@ var render = function render() {
     }, [_vm._v("\n                                " + _vm._s(blog.title) + "\n                            ")])]);
   }), 1)])])]), _vm._v(" "), _c("div", {
     staticClass: "branding--contact"
-  }, [_vm._m(2), _vm._v(" "), _c("div", {
+  }, [_vm._m(1), _vm._v(" "), _c("div", {
     staticClass: "fade_y on"
   }, [_c("router-link", {
     staticClass: "contactbtn fade_y on",
@@ -8640,22 +8688,6 @@ var staticRenderFns = [function () {
   }, [_vm._v("BLOG / ブログ")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
   }, [_vm._v("このブログでは業務システム、ウェブやスマホアプリを開発する際に役立つ情報を発信しています。")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "sp_cat"
-  }, [_c("a", {
-    staticClass: "categoryitem current fade_y on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/blog/"
-    }
-  }, [_vm._v("全てのカテゴリー")]), _vm._v(" "), _c("a", {
-    staticClass: "categoryitem fade_y pickup on",
-    attrs: {
-      href: "https://tomorrowgate.co.jp/blog_category/pickup/"
-    }
-  }, [_vm._v("おすすめ（3）")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -8729,11 +8761,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__subtitle"
-  }, [_vm._v("スマホアプリ開発")]), _vm._v(" "), _c("h4", {
+  }, [_vm._v("Mobile app development")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("Mobile app development")]), _vm._v(" "), _c("p", {
+  }, [_vm._v(" スマホiOS/Androidアプリ開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                SNSアプリやマッチングアプリ・チャットアプリそしてライブ配信アプリや性格診断占いアプリや業務用の管理アプリなどカテゴリーを問わず、設計・開発・審査申請から保守まで丸っと一括で承っています。\n                                また当社ではウェブシステムと連携したアプリ開発も得意としていますので出先から既存システムとのデータ共有されたアプリへのアクセスも可能とし、お客様の業務効率の改善に貢献します。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -8752,11 +8784,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__subtitle"
-  }, [_vm._v("システム開発")]), _vm._v(" "), _c("h4", {
+  }, [_vm._v("Software development")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("System application development")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ウェブシステム開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                情報システム・顧客管理システム・在庫管理システム・業務用システムのウェブサービス構築や運用保守・セキュリティー対策など企業様向けの受託開発を行なっています。当社のエンジニアは多様な言語を取り扱えるほどAWSやAzureなどクラウドインラフサービスも専門領域です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -8775,11 +8807,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__subtitle"
-  }, [_vm._v("ウェブ制作・デジタルマーケティング")]), _vm._v(" "), _c("h4", {
+  }, [_vm._v("Off-shore Labo Development")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("Web creative・Digital marketing")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ラボ型オフショア開発")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text"
-  }, [_vm._v("\n                                コーポレイトサイトの作成やポートフォリオサイトそしてLP構築などを手がけています。WordPressを使用したり、最新のJavaScript系言語をフロント開発に用いています。またデジタルマーケティングではSEO、SMOやSNS運用そして英語圏ならば運用から保守まで一括して行います。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。\n                            ")])])])], 1), _vm._v(" "), _c("li", {
     staticClass: "service-contents__list"
   }, [_c("router-link", {
     attrs: {
@@ -8798,11 +8830,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__subtitle"
-  }, [_vm._v("デザイン制作")]), _vm._v(" "), _c("h4", {
+  }, [_vm._v("Web design / UIUX design")]), _vm._v(" "), _c("h4", {
     staticClass: "service-contents__list__title"
-  }, [_vm._v("Web design・UIUX designing")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("UIUXデザイン制作")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text service-contents__list_last__text"
-  }, [_vm._v("当社ではAdobe\n                                XDを用いてウェブサイト・ウェブシステムやアプリケーションそしてスマホアプリのUIUXデザイン制作を行なっています。最初にワイヤーフレームを組みお客様の意図がきちんと反映されるようにコミュニケーションをしっかり取らせて頂いております。\n                            ")])])])], 1)])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("当社ではAdobe\n                                XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。\n                            ")])])])], 1)])]), _vm._v(" "), _c("section", {
     staticClass: "quote-us"
   }, [_c("h2", {
     staticClass: "heading cont-h1"
@@ -8921,7 +8953,7 @@ var staticRenderFns = [function () {
     _c = _vm._self._c;
   return _c("li", {
     staticClass: "service-contents__text"
-  }, [_c("p", [_vm._v("アイデンブリッド社はシステム開発やそれに伴うデザイン業務、またモバイルアプリの開発やウェブ制作などITに関わるプラットフォームに広く精通しています。特にDXを求めるお客様のコンサルも含めたトータルサポートを行なっています。\n                    ")])]);
+  }, [_c("p", [_vm._v("アイデンブリッドはワンストップ開発を展開しており、要件定義そしてシステム設計からUIUXデザイン、ウェブ開発、モバイルアプリ開発またクラウドまで対応しています。そして実現されたい要件をシステムやアプリに落とし込むことを得意としています。\n                    ")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -9131,6 +9163,154 @@ var staticRenderFns = [function () {
       href: "https://tomorrowgate.co.jp/contact/"
     }
   }, [_vm._v("今すぐ相談してみる")])])]);
+}];
+render._withStripped = true;
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=template&id=bea03954&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=template&id=bea03954& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("div", {
+    staticClass: "recruit--person highlight_blk"
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "recruit--person--list"
+  }, [_c("div", {
+    staticClass: "recruit--person--item hoverScale"
+  }, [_c("router-link", {
+    attrs: {
+      to: "/studiodevelopmenthub/"
+    }
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txt"
+  }, [_c("span", {
+    staticClass: "underline"
+  }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg",
+      alt: ""
+    }
+  })])]), _vm._v(" "), _c("h4", [_c("span", {
+    staticClass: "department fade_y on"
+  }, [_vm._v("SDH：スタジオ開発ハブ")]), _vm._v(" "), _c("strong", {
+    staticClass: "phrase fade_y on"
+  }, [_vm._v("受託開発またはラボ型開発サービスになります。"), _c("br", {
+    staticClass: "pc"
+  }), _vm._v("設計・デザイン、ウェブ、スマホまでワンストップにて当社でお受けしております。")])]), _vm._v(" "), _c("p", {
+    staticClass: "fade_y on"
+  }, [_vm._v("\n                            STUDIO DEVELOPMENT\n                            HUB通称SDHでは、ITサービスを開発されたい企業様や自社にはITに詳しい人材やエンジニアがいないので外注したいお客様に向けた受託開発サービスです。\n                        ")])])], 1), _vm._v(" "), _c("div", {
+    staticClass: "recruit--person--item hoverScale"
+  }, [_c("router-link", {
+    attrs: {
+      to: "/engineerstyle/"
+    }
+  }, [_c("div", {
+    staticClass: "thumb"
+  }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txt"
+  }, [_c("span", {
+    staticClass: "underline"
+  }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
+    staticClass: "scaleImg"
+  }, [_c("img", {
+    attrs: {
+      src: "https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg",
+      alt: ""
+    }
+  })])]), _vm._v(" "), _c("h4", [_c("span", {
+    staticClass: "department fade_y on"
+  }, [_vm._v("SES：エンジニア採用営業支援")]), _vm._v(" "), _c("strong", {
+    staticClass: "phrase fade_y on"
+  }, [_vm._v("常駐やリモートで業務委託できる日本人エンジニアなどのリソースベースのサービスになります。"), _c("br"), _vm._v("協業ご希望のBP様も常に募集しております。")])]), _vm._v(" "), _c("p", {
+    staticClass: "fade_y on"
+  }, [_vm._v("\n                            SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。\n                        ")])])], 1)])]), _vm._v(" "), _c("div", {
+    staticClass: "recruit_fix visibility"
+  }, [_c("ul", {
+    staticClass: "entryarea recruit--contactarea--bnr"
+  }, [_c("li", [_c("router-link", {
+    attrs: {
+      to: "/studiodevelopmenthub"
+    }
+  }, [_vm._v("STUDIO DEVELOPMENT HUB : SDH"), _c("br"), _c("span", {
+    staticClass: "label pc"
+  }, [_vm._v("スタジオ開発ハブ（受託開発）")])])], 1), _vm._v(" "), _c("li", [_c("router-link", {
+    attrs: {
+      to: "/engineerstyle/"
+    }
+  }, [_vm._v("SES"), _c("br"), _c("span", {
+    staticClass: "label pc"
+  }, [_vm._v("エンジニア採用支援（常駐・フルリモート業務委託）")]), _c("span", {
+    staticClass: "label sp"
+  }, [_vm._v("気軽にメール登録")])])], 1)])]), _vm._v(" "), _c("div", {
+    staticClass: "branding--contact"
+  }, [_vm._m(3), _vm._v(" "), _c("div", {
+    staticClass: "fade_y on"
+  }, [_c("router-link", {
+    staticClass: "contactbtn fade_y on",
+    attrs: {
+      to: "/contact/"
+    }
+  }, [_vm._v("今すぐ相談してみる")])], 1)])]), _vm._v(" "), _c("Footer")], 1);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "mv_textarea-recruit"
+  }, [_c("h2", [_c("strong", {
+    staticClass: "en entxt"
+  }, [_vm._v("BUSINESS / 事業紹介")]), _vm._v(" "), _c("span", {
+    staticClass: "jptxt"
+  }, [_vm._v("IDENBRIDがお届けしているIT開発・営業支援のサービス内容")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "recruit--leadtxt"
+  }, [_c("h3", [_vm._v("私たちのITサービスはユーザーペインの解消"), _c("br", {
+    staticClass: "pc"
+  }), _vm._v("つまりお客様の課題をITで解決することです")]), _vm._v(" "), _c("p", [_vm._v("単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、\n                "), _c("br", {
+    staticClass: "pc"
+  }), _vm._v("お客様の困っていることを解決してこそ、その先のユーザーに届くITサービスが実現できるのです。\n            ")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "heading"
+  }, [_c("span", {
+    staticClass: "sub en fade_y on"
+  }, [_vm._v("SERVICES")]), _vm._v(" "), _c("h3", {
+    staticClass: "fade_y on"
+  }, [_vm._v("サービスのご紹介")])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("h3", {
+    staticClass: "fade_y on"
+  }, [_vm._v("ブランディングに関するご質問があれば"), _c("br", {
+    staticClass: "pc"
+  }), _vm._v("まずはお気軽にご相談ください")]);
 }];
 render._withStripped = true;
 
@@ -10725,1554 +10905,6 @@ render._withStripped = true;
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=template&id=f847ca3e&scoped=true&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=template&id=f847ca3e&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* binding */ render),
-/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
-/* harmony export */ });
-var render = function render() {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_c("div", {
-    staticClass: "eXkYNB"
-  }, [_c("div", {
-    staticClass: "container position-relative"
-  }, [_c("div", {}, [_c("div", {
-    staticClass: "step-form-card"
-  }, [_c("form", {
-    attrs: {
-      id: "msform"
-    }
-  }, [_c("fieldset", [_c("div", {
-    staticClass: "form-card"
-  }, [_vm._m(0), _vm._v(" "), _c("ul", {
-    staticClass: "my-4"
-  }, [_c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_1,
-      expression: "record.step_1"
-    }],
-    attrs: {
-      type: "radio",
-      id: "new-project",
-      value: "New project",
-      name: "selector2"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_1, "New project")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_1", "New project");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "new-project"
-    }
-  }, [_vm._v("新規開発プロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_1,
-      expression: "record.step_1"
-    }],
-    attrs: {
-      type: "radio",
-      id: "current-project",
-      value: "Current project that needs more developers",
-      name: "selector2"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_1, "Current project that needs more developers")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_1", "Current project that needs more developers");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "current-project"
-    }
-  }, [_vm._v("現在進行形プロジェクトの追加エンジニア人材\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_1,
-      expression: "record.step_1"
-    }],
-    attrs: {
-      type: "radio",
-      id: "consultancy",
-      value: "Consultancy, code review, or debugging",
-      name: "selector2"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_1, "Consultancy, code review, or debugging")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_1", "Consultancy, code review, or debugging");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "consultancy"
-    }
-  }, [_vm._v("コンサルティング・コードレビュー・バグ直し\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_1,
-      expression: "record.step_1"
-    }],
-    attrs: {
-      type: "radio",
-      id: "something-else",
-      value: "Something else",
-      name: "selector2"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_1, "Something else")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_1", "Something else");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "something-else"
-    }
-  }, [_vm._v("その他\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })])])]), _vm._v(" "), _c("input", {
-    staticClass: "next action-button",
-    attrs: {
-      disabled: _vm.record.step_1 == "",
-      type: "button",
-      name: "next",
-      value: "次へ"
-    }
-  })]), _vm._v(" "), _c("fieldset", [_c("div", {
-    staticClass: "form-card mb-4"
-  }, [_vm._m(1), _vm._v(" "), _c("textarea", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_2,
-      expression: "record.step_2"
-    }],
-    staticClass: "form-textfield",
-    attrs: {
-      placeholder: "例：現在社内にて新規ECサイトの構築を検討しており、クラウドをベースにしたサイト及びモバイルアプリをiOSのみ開発したいのですが、期間と費用を教えて欲しいです。",
-      name: "",
-      rows: "8",
-      cols: "90"
-    },
-    domProps: {
-      value: _vm.record.step_2
-    },
-    on: {
-      input: function input($event) {
-        if ($event.target.composing) return;
-        _vm.$set(_vm.record, "step_2", $event.target.value);
-      }
-    }
-  })]), _vm._v(" "), _c("input", {
-    staticClass: "previous action-button-previous",
-    attrs: {
-      type: "button",
-      name: "previous",
-      value: "戻る"
-    }
-  }), _vm._v(" "), _c("input", {
-    staticClass: "next action-button",
-    attrs: {
-      disabled: _vm.record.step_2 == "",
-      type: "button",
-      name: "next",
-      value: "次へ"
-    }
-  })]), _vm._v(" "), _c("fieldset", [_c("div", {
-    staticClass: "form-card"
-  }, [_vm._m(2), _vm._v(" "), _c("ul", {
-    staticClass: "my-4"
-  }, [_c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_3,
-      expression: "record.step_3"
-    }],
-    attrs: {
-      value: "As Soon As Possible",
-      type: "radio",
-      id: "as-soon",
-      name: "selector2"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_3, "As Soon As Possible")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_3", "As Soon As Possible");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "as-soon"
-    }
-  }, [_vm._v("なるべくすぐに\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_3,
-      expression: "record.step_3"
-    }],
-    attrs: {
-      value: "In 2-4 weeks",
-      type: "radio",
-      id: "in-weeks",
-      name: "selector2"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_3, "In 2-4 weeks")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_3", "In 2-4 weeks");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "in-weeks"
-    }
-  }, [_vm._v("2 - 4週間以内に着手\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_3,
-      expression: "record.step_3"
-    }],
-    attrs: {
-      value: "No rush",
-      type: "radio",
-      id: "no-rush",
-      name: "selector2"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_3, "No rush")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_3", "No rush");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "no-rush"
-    }
-  }, [_vm._v("時期は未定\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })])])]), _vm._v(" "), _c("input", {
-    staticClass: "previous action-button-previous",
-    attrs: {
-      type: "button",
-      name: "previous",
-      value: "戻る"
-    }
-  }), _vm._v(" "), _c("input", {
-    staticClass: "next action-button",
-    attrs: {
-      disabled: _vm.record.step_3 == "",
-      type: "button",
-      name: "next",
-      value: "次へ"
-    }
-  })]), _vm._v(" "), _c("fieldset", [_c("div", {
-    staticClass: "form-card mb-4"
-  }, [_vm._m(3), _vm._v(" "), _c("div", {
-    staticClass: "new-developer-form"
-  }, [_c("div", {
-    staticClass: "my-4"
-  }, [_c("div", {
-    staticClass: "checkbox-grid"
-  }, [_c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Mobile App",
-      id: "demo_opt_1",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Mobile App") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Mobile App",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_1"
-    }
-  }, [_vm._v("ウェブアプリ・システム")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "DevOps",
-      id: "demo_opt_2",
-      type: "checkbox",
-      checked: ""
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "DevOps") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "DevOps",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_2"
-    }
-  }, [_vm._v("フロントエンド")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Integration",
-      id: "demo_opt_3",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Integration") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Integration",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_3"
-    }
-  }, [_vm._v("ECサイト")])])]), _vm._v(" "), _c("div", {
-    staticClass: "checkbox-grid"
-  }, [_c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Web App",
-      id: "demo_opt_4",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Web App") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Web App",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_4"
-    }
-  }, [_vm._v("モバイルアプリ")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Blockchain",
-      id: "demo_opt_5",
-      type: "checkbox",
-      checked: ""
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Blockchain") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Blockchain",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_5"
-    }
-  }, [_vm._v("ブロックチェーン")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "UX/UI",
-      id: "demo_opt_6",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "UX/UI") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "UX/UI",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_6"
-    }
-  }, [_vm._v("API結合")])])]), _vm._v(" "), _c("div", {
-    staticClass: "checkbox-grid"
-  }, [_c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "DApp",
-      id: "demo_opt_7",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "DApp") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "DApp",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_7"
-    }
-  }, [_vm._v("システム設計")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Data Engineering",
-      id: "demo_opt_8",
-      type: "checkbox",
-      checked: ""
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Data Engineering") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Data Engineering",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_8"
-    }
-  }, [_vm._v("ブロックチェーン")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Code Review",
-      id: "demo_opt_9",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Code Review") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Code Review",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_9"
-    }
-  }, [_vm._v("AI（人工知能）")])])]), _vm._v(" "), _c("div", {
-    staticClass: "checkbox-grid"
-  }, [_c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Backend",
-      id: "demo_opt_10",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Backend") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Backend",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_10"
-    }
-  }, [_vm._v("UIUXデザイン")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "CyberSecurity",
-      id: "demo_opt_11",
-      type: "checkbox",
-      checked: ""
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "CyberSecurity") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "CyberSecurity",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_11"
-    }
-  }, [_vm._v("データエンジニア")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Other",
-      id: "demo_opt_12",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Other") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Other",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_12"
-    }
-  }, [_vm._v("QA・テスト")])])]), _vm._v(" "), _c("div", {
-    staticClass: "checkbox-grid"
-  }, [_c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Frontend",
-      id: "demo_opt_13",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Frontend") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Frontend",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_13"
-    }
-  }, [_vm._v("バックエンド・API")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "eCommerce",
-      id: "demo_opt_14",
-      type: "checkbox",
-      checked: ""
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "eCommerce") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "eCommerce",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_14"
-    }
-  }, [_vm._v("サイバーセキュリティー")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      id: "inputPreview"
-    }
-  }, [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_4,
-      expression: "record.step_4"
-    }],
-    staticClass: "css-checkbox",
-    attrs: {
-      name: "cssCheckbox",
-      value: "Artificial Intelligence",
-      id: "demo_opt_15",
-      type: "checkbox"
-    },
-    domProps: {
-      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Artificial Intelligence") > -1 : _vm.record.step_4
-    },
-    on: {
-      change: function change($event) {
-        var $$a = _vm.record.step_4,
-          $$el = $event.target,
-          $$c = $$el.checked ? true : false;
-        if (Array.isArray($$a)) {
-          var $$v = "Artificial Intelligence",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
-          } else {
-            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
-          }
-        } else {
-          _vm.$set(_vm.record, "step_4", $$c);
-        }
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "demo_opt_15"
-    }
-  }, [_vm._v("その他")])])]), _vm._v(" "), _c("div", {
-    staticClass: "d-flex flex-column my-4"
-  }, [_c("label", {
-    attrs: {
-      "for": "cars"
-    }
-  }, [_vm._v("技術指定（自由記載欄）")]), _vm._v(" "), _c("multiselect", {
-    attrs: {
-      options: _vm.options,
-      multiple: true
-    },
-    model: {
-      value: _vm.record.step_4,
-      callback: function callback($$v) {
-        _vm.$set(_vm.record, "step_4", $$v);
-      },
-      expression: "record.step_4"
-    }
-  })], 1)])])]), _vm._v(" "), _c("input", {
-    staticClass: "previous action-button-previous",
-    attrs: {
-      type: "button",
-      name: "previous",
-      value: "戻る"
-    }
-  }), _vm._v(" "), _c("input", {
-    staticClass: "next action-button",
-    attrs: {
-      disabled: _vm.record.step_4.length == 0,
-      type: "button",
-      name: "next",
-      value: "次へ"
-    }
-  })]), _vm._v(" "), _c("fieldset", [_c("div", {
-    staticClass: "form-card"
-  }, [_vm._m(4), _vm._v(" "), _c("ul", {
-    staticClass: "my-4"
-  }, [_c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_5,
-      expression: "record.step_5"
-    }],
-    attrs: {
-      type: "radio",
-      id: "short-term",
-      name: "selector2",
-      value: "I have a short-term project"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_5, "I have a short-term project")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_5", "I have a short-term project");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "short-term"
-    }
-  }, [_vm._v("短期で完了する小さなプロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_5,
-      expression: "record.step_5"
-    }],
-    attrs: {
-      type: "radio",
-      id: "long-term",
-      name: "selector2",
-      value: "I have a long-term project with the need for\n                                                ongoing support"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_5, "I have a long-term project with the need for\n                                                ongoing support")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_5", "I have a long-term project with the need for\n                                                ongoing support");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "long-term"
-    }
-  }, [_vm._v("大きな規模で長期間必要なプロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_5,
-      expression: "record.step_5"
-    }],
-    attrs: {
-      type: "radio",
-      id: "know-yet",
-      name: "selector2",
-      value: "I don’t know yet"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_5, "I don’t know yet")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_5", "I don’t know yet");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "know-yet"
-    }
-  }, [_vm._v("わからないので相談したい\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })])])]), _vm._v(" "), _c("input", {
-    staticClass: "previous action-button-previous",
-    attrs: {
-      type: "button",
-      name: "previous",
-      value: "戻る"
-    }
-  }), _vm._v(" "), _c("input", {
-    staticClass: "next action-button",
-    attrs: {
-      disabled: _vm.record.step_5 == "",
-      type: "button",
-      name: "next",
-      value: "次へ"
-    }
-  })]), _vm._v(" "), _c("fieldset", [_c("div", {
-    staticClass: "form-card"
-  }, [_vm._m(5), _vm._v(" "), _c("ul", {
-    staticClass: "my-4"
-  }, [_c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_6,
-      expression: "record.step_6"
-    }],
-    attrs: {
-      type: "radio",
-      id: "just-me",
-      name: "selector2",
-      value: "Just me"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_6, "Just me")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_6", "Just me");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "just-me"
-    }
-  }, [_vm._v("1人の個人事業主\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_6,
-      expression: "record.step_6"
-    }],
-    attrs: {
-      type: "radio",
-      id: "10—100",
-      name: "selector2",
-      value: "10—100"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_6, "10—100")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_6", "10—100");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "10—100"
-    }
-  }, [_vm._v("10 - 100人規模\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_6,
-      expression: "record.step_6"
-    }],
-    attrs: {
-      type: "radio",
-      id: "101—500",
-      name: "selector2",
-      value: "101—500"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_6, "101—500")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_6", "101—500");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "101—500"
-    }
-  }, [_vm._v("101 - 500人規模\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_6,
-      expression: "record.step_6"
-    }],
-    attrs: {
-      type: "radio",
-      id: "no-rush",
-      name: "selector2",
-      value: "501—1000"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_6, "501—1000")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_6", "501—1000");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "501—1000"
-    }
-  }, [_vm._v("501 - 1000人規模\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })]), _vm._v(" "), _c("li", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.step_6,
-      expression: "record.step_6"
-    }],
-    attrs: {
-      type: "radio",
-      id: "more-than-1000",
-      name: "selector2",
-      value: "More than 1000"
-    },
-    domProps: {
-      checked: _vm._q(_vm.record.step_6, "More than 1000")
-    },
-    on: {
-      change: function change($event) {
-        return _vm.$set(_vm.record, "step_6", "More than 1000");
-      }
-    }
-  }), _vm._v(" "), _c("label", {
-    attrs: {
-      "for": "more-than-1000"
-    }
-  }, [_vm._v("1000人以上規模\n                                            ")]), _vm._v(" "), _c("div", {
-    staticClass: "check"
-  })])])]), _vm._v(" "), _c("input", {
-    staticClass: "previous action-button-previous",
-    attrs: {
-      type: "button",
-      name: "previous",
-      value: "戻る"
-    }
-  }), _vm._v(" "), _c("input", {
-    staticClass: "next action-button",
-    attrs: {
-      disabled: _vm.record.step_6 == "",
-      type: "button",
-      name: "next",
-      value: "次へ"
-    }
-  })]), _vm._v(" "), _c("fieldset", [_c("div", {
-    staticClass: "form-card"
-  }, [_vm._m(6), _vm._v(" "), _c("div", {
-    staticClass: "my-4"
-  }, [_c("div", {
-    staticClass: "inputCase"
-  }, [_c("div", {
-    staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("会社名*")]), _c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.project_name,
-      expression: "record.project_name"
-    }],
-    staticClass: "text-field",
-    attrs: {
-      placeholder: "",
-      autocomplete: "off",
-      minlength: "3",
-      name: "title",
-      type: "text",
-      required: "",
-      value: ""
-    },
-    domProps: {
-      value: _vm.record.project_name
-    },
-    on: {
-      input: function input($event) {
-        if ($event.target.composing) return;
-        _vm.$set(_vm.record, "project_name", $event.target.value);
-      }
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("お名前*")]), _c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.name,
-      expression: "record.name"
-    }],
-    staticClass: "text-field",
-    attrs: {
-      placeholder: "",
-      autocomplete: "off",
-      minlength: "3",
-      name: "name",
-      type: "text",
-      required: "",
-      value: ""
-    },
-    domProps: {
-      value: _vm.record.name
-    },
-    on: {
-      input: function input($event) {
-        if ($event.target.composing) return;
-        _vm.$set(_vm.record, "name", $event.target.value);
-      }
-    }
-  })])]), _vm._v(" "), _c("div", {
-    staticClass: "inputCase"
-  }, [_c("div", {
-    staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("メールアドレス* ")]), _c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.email,
-      expression: "record.email"
-    }],
-    staticClass: "text-field",
-    attrs: {
-      placeholder: "",
-      autocomplete: "off",
-      minlength: "3",
-      name: "title",
-      type: "text",
-      required: "",
-      value: ""
-    },
-    domProps: {
-      value: _vm.record.email
-    },
-    on: {
-      input: function input($event) {
-        if ($event.target.composing) return;
-        _vm.$set(_vm.record, "email", $event.target.value);
-      }
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("電話番号*")]), _c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.record.phone,
-      expression: "record.phone"
-    }],
-    staticClass: "text-field",
-    attrs: {
-      placeholder: "",
-      autocomplete: "off",
-      minlength: "3",
-      name: "name",
-      type: "text",
-      required: "",
-      value: ""
-    },
-    domProps: {
-      value: _vm.record.phone
-    },
-    on: {
-      input: function input($event) {
-        if ($event.target.composing) return;
-        _vm.$set(_vm.record, "phone", $event.target.value);
-      }
-    }
-  })])])])]), _vm._v(" "), _c("input", {
-    staticClass: "action-button",
-    attrs: {
-      type: "submit",
-      name: "next",
-      value: "送信"
-    },
-    on: {
-      click: function click($event) {
-        return _vm.saveRequest();
-      }
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "sc-fzppAM vTcAG background"
-  }, [_vm._m(7), _c("svg", {
-    attrs: {
-      version: "1.1",
-      width: "100%",
-      height: "100px",
-      xmlns: "http://www.w3.org/2000/svg",
-      "xmlns:xlink": "http://www.w3.org/1999/xlink",
-      "xml:space": "preserve",
-      viewBox: "0 0 100 100",
-      preserveAspectRatio: "none"
-    }
-  }, [_c("polygon", {
-    attrs: {
-      fill: "#f7f7f7",
-      points: "0,100 100,0 100,100"
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "backgroundFill"
-  })])])])])], 1);
-};
-var staticRenderFns = [function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("どのような案件に対する見積もりでしょうか？")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("ステップ 1/7")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "row mb-4"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("仕様や要件について下記にご記入ください")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("ステップ 2/7")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("開始時期はいつからですか？")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("ステップ 3/7")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "row mb-4"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("どのような開発・エンジニアが必要ですか？\n                                            ")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("ステップ 4/7")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("どのようなプロジェクトですか？")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("ステップ 5/7")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("会社規模はどれくらいになりますか？")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("ステップ 6/7")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-12"
-  }, [_c("h2", {
-    attrs: {
-      id: "heading"
-    }
-  }, [_vm._v("お見積作成のためのオンラインヒアリングURL送付先\n                                            ")]), _vm._v(" "), _c("h2", {
-    staticClass: "steps"
-  }, [_vm._v("ステップ 7/7")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "vertical-wrapper"
-  }, [_c("div", {
-    staticClass: "wrapper"
-  }, [_c("h3", [_vm._v("私たちの開発チームは最高の信頼を得ています")]), _vm._v(" "), _c("div", {
-    staticClass: "logo-wrapper"
-  }, [_c("div", [_c("img", {
-    attrs: {
-      src: "https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", [_c("img", {
-    attrs: {
-      src: "https://dashboard.devteam.space/static/media/yandex.d9f9d084.svg",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", [_c("img", {
-    attrs: {
-      src: "https://dashboard.devteam.space/static/media/ubs.1f911510.svg",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "disney"
-  }, [_c("img", {
-    attrs: {
-      src: "https://dashboard.devteam.space/static/media/disney.cfa15be3.svg",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", [_c("img", {
-    attrs: {
-      src: "https://dashboard.devteam.space/static/media/samsung.31408c3f.svg",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", [_c("img", {
-    attrs: {
-      src: "https://dashboard.devteam.space/static/media/mi.a28a4be9.svg",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", [_c("img", {
-    attrs: {
-      src: "https://dashboard.devteam.space/static/media/y-combinator.3ed0d18e.svg",
-      alt: ""
-    }
-  })]), _vm._v(" "), _c("div", [_c("img", {
-    attrs: {
-      src: "https://dashboard.devteam.space/static/media/500startups.4312811c.svg",
-      alt: ""
-    }
-  })])])])]);
-}];
-render._withStripped = true;
-
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true&":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true& ***!
@@ -12383,6 +11015,13 @@ var render = function render() {
         to: "/news/detail/" + detail.id + "/"
       }
     }, [_c("div", {
+      staticClass: "img_box"
+    }, [_c("img", {
+      attrs: {
+        src: "https://admin.idenbrid.com/public/storage/news/" + detail.image,
+        alt: ""
+      }
+    })]), _vm._v(" "), _c("div", {
       staticClass: "new-item new"
     }, [_c("div", {
       staticClass: "new-meta"
@@ -12394,14 +11033,7 @@ var render = function render() {
       staticClass: "text new mt-0"
     }, [_vm._v("NEWS")])])]), _vm._v(" "), _c("p", {
       staticClass: "text new-content"
-    }, [_vm._v("\n                                " + _vm._s(detail.title))])]), _vm._v(" "), _c("div", {
-      staticClass: "img_box"
-    }, [_c("img", {
-      attrs: {
-        src: "https://admin.idenbrid.com/public/storage/news/" + detail.image,
-        alt: ""
-      }
-    })])])], 1) : _vm._e();
+    }, [_vm._v("\n                                " + _vm._s(detail.title))])])])], 1) : _vm._e();
   }), _vm._v(" "), _c("router-link", {
     staticClass: "viewmore-btn viewmore-btn_center",
     attrs: {
@@ -12489,7 +11121,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "c-recruit__bottom-item",
     attrs: {
-      to: "/movies/"
+      to: "/video/"
     }
   }, [_c("div", {
     staticClass: "c-recruit__bottom-bgimg"
@@ -14276,223 +12908,6 @@ render._withStripped = true;
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=template&id=288578d9&":
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=template&id=288578d9& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* binding */ render),
-/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
-/* harmony export */ });
-var render = function render() {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("Footer")], 1);
-};
-var staticRenderFns = [function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "mv_textarea"
-  }, [_c("h2", [_c("strong", {
-    staticClass: "en entxt"
-  }, [_vm._v("MOVIE")]), _vm._v(" "), _c("span", {
-    staticClass: "jptxt"
-  }, [_vm._v("ムービーギャラリー")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("main", [_c("section", {
-    staticClass: "l-main"
-  }, [_c("div", {
-    staticClass: "l-section"
-  }, [_c("div", {
-    staticClass: "mycontents-wide"
-  }, [_c("article", {
-    staticClass: "page post-4936 type-page status-publish hentry",
-    attrs: {
-      id: "post-4936"
-    }
-  }, [_c("div", {
-    staticClass: "l-post-content"
-  }, [_c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")])]), _vm._v(" "), _c("h4", {
-    staticClass: "vission-text",
-    staticStyle: {
-      "text-align": "center"
-    }
-  }, [_vm._v("動画で見る、ユニラボのVISIONとメンバー")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("span", {
-    staticStyle: {
-      color: "#102855"
-    }
-  }, [_c("strong", [_vm._v("#事業VISION")])])]), _vm._v(" "), _c("p", [_c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail795",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/795"
-    }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail791",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/791"
-    }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail789",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/789"
-    }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("strong", [_c("span", {
-    staticStyle: {
-      color: "#003366"
-    }
-  }, [_vm._v("#オフィスツアー")])])]), _vm._v(" "), _c("p", [_c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail800",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/800"
-    }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("strong", [_c("span", {
-    staticStyle: {
-      color: "#003366"
-    }
-  }, [_vm._v("#VALUE　「まっすぐ」")])])]), _vm._v(" "), _c("p", [_c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail797",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/797"
-    }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail798",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/798"
-    }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail799",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/799"
-    }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("strong", [_c("span", {
-    staticStyle: {
-      color: "#003366"
-    }
-  }, [_vm._v("#For\n                                    Students　～新卒学生へのメッセージ～")])])]), _vm._v(" "), _c("p", [_c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail796",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/796"
-    }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail793",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/793"
-    }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("span", {
-    staticStyle: {
-      color: "#102855"
-    }
-  }, [_vm._v("#For\n                                Engineer　エンジニア組織について")])]), _vm._v(" "), _c("p", [_c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail792",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/792"
-    }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail788",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/788"
-    }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")])])])])])]);
-}];
-render._withStripped = true;
-
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/News.vue?vue&type=template&id=1b491be9&":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/News.vue?vue&type=template&id=1b491be9& ***!
@@ -15609,10 +14024,10 @@ render._withStripped = true;
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=template&id=2ca60218&":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=template&id=2ca60218& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=template&id=33b85a54&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=template&id=33b85a54&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15624,133 +14039,1534 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("div", {
-    staticClass: "recruit--person highlight_blk"
-  }, [_vm._m(2), _vm._v(" "), _c("div", {
-    staticClass: "recruit--person--list"
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_c("div", {
+    staticClass: "eXkYNB"
   }, [_c("div", {
-    staticClass: "recruit--person--item hoverScale"
-  }, [_c("router-link", {
+    staticClass: "container position-relative"
+  }, [_c("div", {}, [_c("div", {
+    staticClass: "step-form-card"
+  }, [_c("form", {
     attrs: {
-      to: "/studiodevelopmenthub/"
+      id: "msform"
     }
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txt"
-  }, [_c("span", {
-    staticClass: "underline"
-  }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
+  }, [_c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_vm._m(0), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_1,
+      expression: "record.step_1"
+    }],
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg",
-      alt: ""
+      type: "radio",
+      id: "new-project",
+      value: "New project",
+      name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_1, "New project")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_1", "New project");
+      }
     }
-  })])]), _vm._v(" "), _c("h4", [_c("span", {
-    staticClass: "department fade_y on"
-  }, [_vm._v("SDH：スタジオ開発ハブ")]), _vm._v(" "), _c("strong", {
-    staticClass: "phrase fade_y on"
-  }, [_vm._v("受託開発またはラボ型開発サービスになります。"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("設計・デザイン、ウェブ、スマホまでワンストップにて当社でお受けしております。")])]), _vm._v(" "), _c("p", {
-    staticClass: "fade_y on"
-  }, [_vm._v("\n                            STUDIO DEVELOPMENT\n                            HUB通称SDHでは、ITサービスを開発されたい企業様や自社にはITに詳しい人材やエンジニアがいないので外注したいお客様に向けた受託開発サービスです。\n                        ")])])], 1), _vm._v(" "), _c("div", {
-    staticClass: "recruit--person--item hoverScale"
-  }, [_c("router-link", {
+  }), _vm._v(" "), _c("label", {
     attrs: {
-      to: "/engineerstyle/"
+      "for": "new-project"
     }
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txt"
-  }, [_c("span", {
-    staticClass: "underline"
-  }, [_vm._v("MORE")])])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
+  }, [_vm._v("新規開発プロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_1,
+      expression: "record.step_1"
+    }],
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg",
-      alt: ""
+      type: "radio",
+      id: "current-project",
+      value: "Current project that needs more developers",
+      name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_1, "Current project that needs more developers")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_1", "Current project that needs more developers");
+      }
     }
-  })])]), _vm._v(" "), _c("h4", [_c("span", {
-    staticClass: "department fade_y on"
-  }, [_vm._v("SES：エンジニア採用営業支援")]), _vm._v(" "), _c("strong", {
-    staticClass: "phrase fade_y on"
-  }, [_vm._v("常駐やリモートで業務委託できる日本人エンジニアなどのリソースベースのサービスになります。"), _c("br"), _vm._v("協業ご希望のBP様も常に募集しております。")])]), _vm._v(" "), _c("p", {
-    staticClass: "fade_y on"
-  }, [_vm._v("\n                            SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。\n                        ")])])], 1)])]), _vm._v(" "), _c("div", {
-    staticClass: "recruit_fix visibility"
-  }, [_c("ul", {
-    staticClass: "entryarea recruit--contactarea--bnr"
-  }, [_c("li", [_c("router-link", {
+  }), _vm._v(" "), _c("label", {
     attrs: {
-      to: "/studiodevelopmenthub"
+      "for": "current-project"
     }
-  }, [_vm._v("STUDIO DEVELOPMENT HUB : SDH"), _c("br"), _c("span", {
-    staticClass: "label pc"
-  }, [_vm._v("スタジオ開発ハブ（受託開発）")])])], 1), _vm._v(" "), _c("li", [_c("router-link", {
+  }, [_vm._v("現在進行形プロジェクトの追加エンジニア人材\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_1,
+      expression: "record.step_1"
+    }],
     attrs: {
-      to: "/engineerstyle/"
+      type: "radio",
+      id: "consultancy",
+      value: "Consultancy, code review, or debugging",
+      name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_1, "Consultancy, code review, or debugging")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_1", "Consultancy, code review, or debugging");
+      }
     }
-  }, [_vm._v("SES"), _c("br"), _c("span", {
-    staticClass: "label pc"
-  }, [_vm._v("エンジニア採用支援（常駐・フルリモート業務委託）")]), _c("span", {
-    staticClass: "label sp"
-  }, [_vm._v("気軽にメール登録")])])], 1)])]), _vm._v(" "), _c("div", {
-    staticClass: "branding--contact"
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "consultancy"
+    }
+  }, [_vm._v("コンサルティング・コードレビュー・バグ直し\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_1,
+      expression: "record.step_1"
+    }],
+    attrs: {
+      type: "radio",
+      id: "something-else",
+      value: "Something else",
+      name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_1, "Something else")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_1", "Something else");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "something-else"
+    }
+  }, [_vm._v("その他\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      disabled: _vm.record.step_1 == "",
+      type: "button",
+      name: "next",
+      value: "次へ"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card mb-4"
+  }, [_vm._m(1), _vm._v(" "), _c("textarea", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_2,
+      expression: "record.step_2"
+    }],
+    staticClass: "form-textfield",
+    attrs: {
+      placeholder: "例：現在社内にて新規ECサイトの構築を検討しており、クラウドをベースにしたサイト及びモバイルアプリをiOSのみ開発したいのですが、期間と費用を教えて欲しいです。",
+      name: "",
+      rows: "8",
+      cols: "90"
+    },
+    domProps: {
+      value: _vm.record.step_2
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "step_2", $event.target.value);
+      }
+    }
+  })]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "戻る"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      disabled: _vm.record.step_2 == "",
+      type: "button",
+      name: "next",
+      value: "次へ"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_vm._m(2), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_3,
+      expression: "record.step_3"
+    }],
+    attrs: {
+      value: "As Soon As Possible",
+      type: "radio",
+      id: "as-soon",
+      name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_3, "As Soon As Possible")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_3", "As Soon As Possible");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "as-soon"
+    }
+  }, [_vm._v("なるべくすぐに\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_3,
+      expression: "record.step_3"
+    }],
+    attrs: {
+      value: "In 2-4 weeks",
+      type: "radio",
+      id: "in-weeks",
+      name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_3, "In 2-4 weeks")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_3", "In 2-4 weeks");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "in-weeks"
+    }
+  }, [_vm._v("2 - 4週間以内に着手\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_3,
+      expression: "record.step_3"
+    }],
+    attrs: {
+      value: "No rush",
+      type: "radio",
+      id: "no-rush",
+      name: "selector2"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_3, "No rush")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_3", "No rush");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "no-rush"
+    }
+  }, [_vm._v("時期は未定\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "戻る"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      disabled: _vm.record.step_3 == "",
+      type: "button",
+      name: "next",
+      value: "次へ"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card mb-4"
   }, [_vm._m(3), _vm._v(" "), _c("div", {
-    staticClass: "fade_y on"
-  }, [_c("router-link", {
-    staticClass: "contactbtn fade_y on",
+    staticClass: "new-developer-form"
+  }, [_c("div", {
+    staticClass: "my-4"
+  }, [_c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
     attrs: {
-      to: "/contact/"
+      id: "inputPreview"
     }
-  }, [_vm._v("今すぐ相談してみる")])], 1)])]), _vm._v(" "), _c("Footer")], 1);
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Mobile App",
+      id: "demo_opt_1",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Mobile App") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Mobile App",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_1"
+    }
+  }, [_vm._v("ウェブアプリ・システム")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "DevOps",
+      id: "demo_opt_2",
+      type: "checkbox",
+      checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "DevOps") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "DevOps",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_2"
+    }
+  }, [_vm._v("フロントエンド")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Integration",
+      id: "demo_opt_3",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Integration") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Integration",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_3"
+    }
+  }, [_vm._v("ECサイト")])])]), _vm._v(" "), _c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Web App",
+      id: "demo_opt_4",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Web App") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Web App",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_4"
+    }
+  }, [_vm._v("モバイルアプリ")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Blockchain",
+      id: "demo_opt_5",
+      type: "checkbox",
+      checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Blockchain") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Blockchain",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_5"
+    }
+  }, [_vm._v("ブロックチェーン")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "UX/UI",
+      id: "demo_opt_6",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "UX/UI") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "UX/UI",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_6"
+    }
+  }, [_vm._v("API結合")])])]), _vm._v(" "), _c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "DApp",
+      id: "demo_opt_7",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "DApp") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "DApp",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_7"
+    }
+  }, [_vm._v("システム設計")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Data Engineering",
+      id: "demo_opt_8",
+      type: "checkbox",
+      checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Data Engineering") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Data Engineering",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_8"
+    }
+  }, [_vm._v("ブロックチェーン")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Code Review",
+      id: "demo_opt_9",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Code Review") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Code Review",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_9"
+    }
+  }, [_vm._v("AI（人工知能）")])])]), _vm._v(" "), _c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Backend",
+      id: "demo_opt_10",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Backend") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Backend",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_10"
+    }
+  }, [_vm._v("UIUXデザイン")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "CyberSecurity",
+      id: "demo_opt_11",
+      type: "checkbox",
+      checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "CyberSecurity") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "CyberSecurity",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_11"
+    }
+  }, [_vm._v("データエンジニア")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Other",
+      id: "demo_opt_12",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Other") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Other",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_12"
+    }
+  }, [_vm._v("QA・テスト")])])]), _vm._v(" "), _c("div", {
+    staticClass: "checkbox-grid"
+  }, [_c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Frontend",
+      id: "demo_opt_13",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Frontend") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Frontend",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_13"
+    }
+  }, [_vm._v("バックエンド・API")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "eCommerce",
+      id: "demo_opt_14",
+      type: "checkbox",
+      checked: ""
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "eCommerce") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "eCommerce",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_14"
+    }
+  }, [_vm._v("サイバーセキュリティー")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "inputPreview"
+    }
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_4,
+      expression: "record.step_4"
+    }],
+    staticClass: "css-checkbox",
+    attrs: {
+      name: "cssCheckbox",
+      value: "Artificial Intelligence",
+      id: "demo_opt_15",
+      type: "checkbox"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.record.step_4) ? _vm._i(_vm.record.step_4, "Artificial Intelligence") > -1 : _vm.record.step_4
+    },
+    on: {
+      change: function change($event) {
+        var $$a = _vm.record.step_4,
+          $$el = $event.target,
+          $$c = $$el.checked ? true : false;
+        if (Array.isArray($$a)) {
+          var $$v = "Artificial Intelligence",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.record, "step_4", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.record, "step_4", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.record, "step_4", $$c);
+        }
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "demo_opt_15"
+    }
+  }, [_vm._v("その他")])])]), _vm._v(" "), _c("div", {
+    staticClass: "d-flex flex-column my-4"
+  }, [_c("label", {
+    attrs: {
+      "for": "cars"
+    }
+  }, [_vm._v("技術指定（自由記載欄）")]), _vm._v(" "), _c("multiselect", {
+    attrs: {
+      options: _vm.options,
+      multiple: true
+    },
+    model: {
+      value: _vm.record.step_4,
+      callback: function callback($$v) {
+        _vm.$set(_vm.record, "step_4", $$v);
+      },
+      expression: "record.step_4"
+    }
+  })], 1)])])]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "戻る"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      disabled: _vm.record.step_4.length == 0,
+      type: "button",
+      name: "next",
+      value: "次へ"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_vm._m(4), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_5,
+      expression: "record.step_5"
+    }],
+    attrs: {
+      type: "radio",
+      id: "short-term",
+      name: "selector2",
+      value: "I have a short-term project"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_5, "I have a short-term project")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_5", "I have a short-term project");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "short-term"
+    }
+  }, [_vm._v("短期で完了する小さなプロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_5,
+      expression: "record.step_5"
+    }],
+    attrs: {
+      type: "radio",
+      id: "long-term",
+      name: "selector2",
+      value: "I have a long-term project with the need for\n                                                ongoing support"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_5, "I have a long-term project with the need for\n                                                ongoing support")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_5", "I have a long-term project with the need for\n                                                ongoing support");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "long-term"
+    }
+  }, [_vm._v("大きな規模で長期間必要なプロジェクト\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_5,
+      expression: "record.step_5"
+    }],
+    attrs: {
+      type: "radio",
+      id: "know-yet",
+      name: "selector2",
+      value: "I don’t know yet"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_5, "I don’t know yet")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_5", "I don’t know yet");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "know-yet"
+    }
+  }, [_vm._v("わからないので相談したい\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "戻る"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      disabled: _vm.record.step_5 == "",
+      type: "button",
+      name: "next",
+      value: "次へ"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_vm._m(5), _vm._v(" "), _c("ul", {
+    staticClass: "my-4"
+  }, [_c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "just-me",
+      name: "selector2",
+      value: "Just me"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "Just me")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "Just me");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "just-me"
+    }
+  }, [_vm._v("1人の個人事業主\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "10—100",
+      name: "selector2",
+      value: "10—100"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "10—100")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "10—100");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "10—100"
+    }
+  }, [_vm._v("10 - 100人規模\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "101—500",
+      name: "selector2",
+      value: "101—500"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "101—500")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "101—500");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "101—500"
+    }
+  }, [_vm._v("101 - 500人規模\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "no-rush",
+      name: "selector2",
+      value: "501—1000"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "501—1000")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "501—1000");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "501—1000"
+    }
+  }, [_vm._v("501 - 1000人規模\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })]), _vm._v(" "), _c("li", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.step_6,
+      expression: "record.step_6"
+    }],
+    attrs: {
+      type: "radio",
+      id: "more-than-1000",
+      name: "selector2",
+      value: "More than 1000"
+    },
+    domProps: {
+      checked: _vm._q(_vm.record.step_6, "More than 1000")
+    },
+    on: {
+      change: function change($event) {
+        return _vm.$set(_vm.record, "step_6", "More than 1000");
+      }
+    }
+  }), _vm._v(" "), _c("label", {
+    attrs: {
+      "for": "more-than-1000"
+    }
+  }, [_vm._v("1000人以上規模\n                                            ")]), _vm._v(" "), _c("div", {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c("input", {
+    staticClass: "previous action-button-previous",
+    attrs: {
+      type: "button",
+      name: "previous",
+      value: "戻る"
+    }
+  }), _vm._v(" "), _c("input", {
+    staticClass: "next action-button",
+    attrs: {
+      disabled: _vm.record.step_6 == "",
+      type: "button",
+      name: "next",
+      value: "次へ"
+    }
+  })]), _vm._v(" "), _c("fieldset", [_c("div", {
+    staticClass: "form-card"
+  }, [_vm._m(6), _vm._v(" "), _c("div", {
+    staticClass: "my-4"
+  }, [_c("div", {
+    staticClass: "inputCase"
+  }, [_c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("会社名*")]), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.project_name,
+      expression: "record.project_name"
+    }],
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "title",
+      type: "text",
+      required: "",
+      value: ""
+    },
+    domProps: {
+      value: _vm.record.project_name
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "project_name", $event.target.value);
+      }
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("お名前*")]), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.name,
+      expression: "record.name"
+    }],
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "name",
+      type: "text",
+      required: "",
+      value: ""
+    },
+    domProps: {
+      value: _vm.record.name
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "name", $event.target.value);
+      }
+    }
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "inputCase"
+  }, [_c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("メールアドレス* ")]), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.email,
+      expression: "record.email"
+    }],
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "title",
+      type: "text",
+      required: "",
+      value: ""
+    },
+    domProps: {
+      value: _vm.record.email
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "email", $event.target.value);
+      }
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzonjX hIMiPJ"
+  }, [_c("span", [_vm._v("電話番号*")]), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.record.phone,
+      expression: "record.phone"
+    }],
+    staticClass: "text-field",
+    attrs: {
+      placeholder: "",
+      autocomplete: "off",
+      minlength: "3",
+      name: "name",
+      type: "text",
+      required: "",
+      value: ""
+    },
+    domProps: {
+      value: _vm.record.phone
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.$set(_vm.record, "phone", $event.target.value);
+      }
+    }
+  })])])])]), _vm._v(" "), _c("input", {
+    staticClass: "action-button",
+    attrs: {
+      type: "submit",
+      name: "next",
+      value: "送信"
+    },
+    on: {
+      click: function click($event) {
+        $event.preventDefault();
+        return _vm.saveRequest();
+      }
+    }
+  })])])])]), _vm._v(" "), _c("div", {
+    staticClass: "sc-fzppAM vTcAG background"
+  }, [_vm._m(7), _c("svg", {
+    attrs: {
+      version: "1.1",
+      width: "100%",
+      height: "100px",
+      xmlns: "http://www.w3.org/2000/svg",
+      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+      "xml:space": "preserve",
+      viewBox: "0 0 100 100",
+      preserveAspectRatio: "none"
+    }
+  }, [_c("polygon", {
+    attrs: {
+      fill: "#f7f7f7",
+      points: "0,100 100,0 100,100"
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "backgroundFill"
+  })])])])])], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "mv_textarea-recruit"
-  }, [_c("h2", [_c("strong", {
-    staticClass: "en entxt"
-  }, [_vm._v("BUSINESS / 事業紹介")]), _vm._v(" "), _c("span", {
-    staticClass: "jptxt"
-  }, [_vm._v("IDENBRIDがお届けしているIT開発・営業支援のサービス内容")])])]);
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("どのような案件に対する見積もりでしょうか？")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("ステップ 1/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "recruit--leadtxt"
-  }, [_c("h3", [_vm._v("私たちのITサービスはユーザーペインの解消"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("つまりお客様の課題をITで解決することです")]), _vm._v(" "), _c("p", [_vm._v("単純にUIUXデザイン、ウェブシステム、モバイルアプリ、クラウドインフラ開発をするのではなく、\n                "), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("お客様の困っていることを解決してこそ、その先のユーザーに届くITサービスが実現できるのです。\n            ")])]);
+    staticClass: "row mb-4"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("仕様や要件について下記にご記入ください")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("ステップ 2/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "heading"
-  }, [_c("span", {
-    staticClass: "sub en fade_y on"
-  }, [_vm._v("SERVICES")]), _vm._v(" "), _c("h3", {
-    staticClass: "fade_y on"
-  }, [_vm._v("サービスのご紹介")])]);
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("開始時期はいつからですか？")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("ステップ 3/7")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("h3", {
-    staticClass: "fade_y on"
-  }, [_vm._v("ブランディングに関するご質問があれば"), _c("br", {
-    staticClass: "pc"
-  }), _vm._v("まずはお気軽にご相談ください")]);
+  return _c("div", {
+    staticClass: "row mb-4"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("どのような開発・エンジニアが必要ですか？\n                                            ")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("ステップ 4/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("どのようなプロジェクトですか？")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("ステップ 5/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("会社規模はどれくらいになりますか？")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("ステップ 6/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("h2", {
+    attrs: {
+      id: "heading"
+    }
+  }, [_vm._v("お見積作成のためのオンラインヒアリングURL送付先\n                                            ")]), _vm._v(" "), _c("h2", {
+    staticClass: "steps"
+  }, [_vm._v("ステップ 7/7")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "vertical-wrapper"
+  }, [_c("div", {
+    staticClass: "wrapper"
+  }, [_c("h3", [_vm._v("私たちの開発チームは最高の信頼を得ています")]), _vm._v(" "), _c("div", {
+    staticClass: "logo-wrapper"
+  }, [_c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/yandex.d9f9d084.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/ubs.1f911510.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "disney"
+  }, [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/disney.cfa15be3.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/samsung.31408c3f.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/mi.a28a4be9.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/y-combinator.3ed0d18e.svg",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", [_c("img", {
+    attrs: {
+      src: "https://dashboard.devteam.space/static/media/500startups.4312811c.svg",
+      alt: ""
+    }
+  })])])])]);
 }];
 render._withStripped = true;
 
@@ -15873,7 +15689,7 @@ var render = function render() {
     staticClass: "service-contents__list__title"
   }, [_vm._v("UIUXデザイン制作")]), _vm._v(" "), _c("p", {
     staticClass: "service-contents__list__text service-contents__list_last__text"
-  }, [_vm._v("当社ではAdobe XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。\n                            ")])])])], 1)])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("当社ではAdobe\n                                XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。\n                            ")])])])], 1)])]), _vm._v(" "), _c("div", {
     staticClass: "branding--contact"
   }, [_vm._m(2), _vm._v(" "), _c("div", {
     staticClass: "fade_y on"
@@ -15891,7 +15707,7 @@ var staticRenderFns = [function () {
     staticClass: "mv_textarea"
   }, [_c("h2", [_c("strong", {
     staticClass: "en entxt"
-  }, [_vm._v("SOLUTIONS")]), _vm._v(" "), _c("span", {
+  }, [_vm._v("OUR EXPERTISE / ソルーション")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
   }, [_vm._v("このページでは当社が提供しているITソリューションを紹介しています。アイデンブリッド社は日本企業を相手とした受託開発メインの法人です")])])]);
 }, function () {
@@ -15908,6 +15724,223 @@ var staticRenderFns = [function () {
   }, [_vm._v("ブランディングに関するご質問があれば"), _c("br", {
     staticClass: "pc"
   }), _vm._v("まずはお気軽にご相談ください")]);
+}];
+render._withStripped = true;
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("Footer")], 1);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "mv_textarea"
+  }, [_c("h2", [_c("strong", {
+    staticClass: "en entxt"
+  }, [_vm._v("MOVIE")]), _vm._v(" "), _c("span", {
+    staticClass: "jptxt"
+  }, [_vm._v("ムービーギャラリー")])])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("main", [_c("section", {
+    staticClass: "l-main"
+  }, [_c("div", {
+    staticClass: "l-section"
+  }, [_c("div", {
+    staticClass: "mycontents-wide"
+  }, [_c("article", {
+    staticClass: "page post-4936 type-page status-publish hentry",
+    attrs: {
+      id: "post-4936"
+    }
+  }, [_c("div", {
+    staticClass: "l-post-content"
+  }, [_c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")])]), _vm._v(" "), _c("h4", {
+    staticClass: "vission-text",
+    staticStyle: {
+      "text-align": "center"
+    }
+  }, [_vm._v("動画で見る、ユニラボのVISIONとメンバー")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
+    staticClass: "vision-sub-heading"
+  }, [_c("span", {
+    staticStyle: {
+      color: "#102855"
+    }
+  }, [_c("strong", [_vm._v("#事業VISION")])])]), _vm._v(" "), _c("p", [_c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail795",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/795"
+    }
+  }), _c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail791",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/791"
+    }
+  }), _c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail789",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/789"
+    }
+  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
+    staticClass: "vision-sub-heading"
+  }, [_c("strong", [_c("span", {
+    staticStyle: {
+      color: "#003366"
+    }
+  }, [_vm._v("#オフィスツアー")])])]), _vm._v(" "), _c("p", [_c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail800",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/800"
+    }
+  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
+    staticClass: "vision-sub-heading"
+  }, [_c("strong", [_c("span", {
+    staticStyle: {
+      color: "#003366"
+    }
+  }, [_vm._v("#VALUE　「まっすぐ」")])])]), _vm._v(" "), _c("p", [_c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail797",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/797"
+    }
+  }), _c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail798",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/798"
+    }
+  }), _c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail799",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/799"
+    }
+  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
+    staticClass: "vision-sub-heading"
+  }, [_c("strong", [_c("span", {
+    staticStyle: {
+      color: "#003366"
+    }
+  }, [_vm._v("#For\n                                    Students　～新卒学生へのメッセージ～")])])]), _vm._v(" "), _c("p", [_c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail796",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/796"
+    }
+  }), _c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail793",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/793"
+    }
+  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
+    staticClass: "vision-sub-heading"
+  }, [_c("span", {
+    staticStyle: {
+      color: "#102855"
+    }
+  }, [_vm._v("#For\n                                Engineer　エンジニア組織について")])]), _vm._v(" "), _c("p", [_c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail792",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/792"
+    }
+  }), _c("iframe", {
+    staticStyle: {
+      border: "none",
+      height: "280px",
+      width: "360px"
+    },
+    attrs: {
+      id: "moovy_iframe_thumbnail788",
+      frameborder: "0",
+      scrolling: "no",
+      src: "https://moovy.jp/api/embed/job/link/thumbnail/788"
+    }
+  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")])])])])])]);
 }];
 render._withStripped = true;
 
@@ -15956,7 +15989,7 @@ var render = function render() {
         alt: ""
       }
     })])]), _vm._v(" "), _c("h3", [_vm._v(_vm._s(work.title))])]);
-  }), 1), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("section", {
+  }), 1)]), _vm._v(" "), _c("section", {
     staticClass: "menu"
   }, [_c("ul", {
     staticClass: "menu-contents mycontents-wide"
@@ -16037,63 +16070,34 @@ var staticRenderFns = [function () {
   }, [_c("li", [_c("a", {
     staticClass: "en categoryitem current",
     attrs: {
-      href: "https://tomorrowgate.co.jp/works/"
+      href: "#"
     }
   }, [_vm._v("全て")])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "en categoryitem",
     attrs: {
-      href: "https://tomorrowgate.co.jp/works/category/visionmap/"
+      href: "#"
     }
   }, [_vm._v("UIUXデザイン")])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "en categoryitem",
     attrs: {
-      href: "https://tomorrowgate.co.jp/works/category/web/"
+      href: "#"
     }
   }, [_vm._v("ウェブ・システム")])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "en categoryitem",
     attrs: {
-      href: "https://tomorrowgate.co.jp/works/category/graphic/"
+      href: "#"
     }
   }, [_vm._v("スマホアプリ")])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "en categoryitem",
     attrs: {
-      href: "https://tomorrowgate.co.jp/works/category/movie/"
+      href: "#"
     }
   }, [_vm._v("デスクトップアプリ")])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "en categoryitem",
     attrs: {
-      href: "https://tomorrowgate.co.jp/works/category/other/"
+      href: "#"
     }
   }, [_vm._v("その他")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "wp-pagenavi",
-    attrs: {
-      role: "navigation"
-    }
-  }, [_c("span", {
-    staticClass: "current",
-    attrs: {
-      "aria-current": "page"
-    }
-  }, [_vm._v("1")]), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 2",
-      href: "https://tomorrowgate.co.jp/works/page/2/"
-    }
-  }, [_vm._v("2")]), _c("a", {
-    staticClass: "nextpostslink",
-    attrs: {
-      rel: "next",
-      "aria-label": "Next Page",
-      href: "https://tomorrowgate.co.jp/works/page/2/"
-    }
-  }, [_c("i", {
-    staticClass: "fas fa-angle-right"
-  })])]);
 }];
 render._withStripped = true;
 
@@ -16345,7 +16349,7 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", [_c("section", {
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("section", [_c("section", {
     staticClass: "menu-list"
   }, [_c("div", {
     staticClass: "menu-box"
@@ -16360,7 +16364,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Person-icon.svg"
     }
-  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("ウェブシステム開発\n                            ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text router-link-exact-active router-link-active",
@@ -16371,7 +16375,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Message-icon.svg"
     }
-  }), _vm._v("Mobile app development\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("スマホアプリ開発\n                            ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -16382,7 +16386,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("UIUXデザイン制作\n                            ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -16393,26 +16397,26 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("Web creative・Digital marketing")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("オフショア開発")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "hero_Heading"
-  }, [_c("h2", {
-    staticClass: "hero"
-  }, [_vm._v("Mobile app development")])]);
+    staticClass: "mv_textarea"
+  }, [_c("h2", [_c("strong", {
+    staticClass: "en entxt"
+  }, [_vm._v("iOS・Android mobile app / スマホアプリ開発")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("section", {
-    staticClass: "system-sec mycontents-wide"
+    staticClass: "system-sec mycontents-wide mt-5"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("IOS、Androidアプリ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("クライアント目線に立ったアプリ開発")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("\n                IOSアプリ、Androidアプリどちらも対応を行っております。"), _c("br"), _vm._v("お客様のニーズに合わせてコストを抑えられるハイブリットアプリののご提案も可能です。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("\n                    IDENBRIDではエンジニア目線ではなくクライアント企業様そしてエンドユーザーにとってどのようなアプリが必要なのかという観点により開発を進めています。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -16424,9 +16428,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("IOSアプリ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ワンストップ開発")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        SwiftやObjective-Cでのネイティブアプリ開発を行っております。iPhoneをはじめとしiPadアプリの開発も可能です。"), _c("br"), _vm._v("開発からAppleストアへの申請まで一貫して対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            アプリの設計、UIUXデザインそしてiOSまたAndroidの両OSにおける開発また審査からセキュリティ対応まで責任持って開発するフローにて対応させて頂きます。\n                        ")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -16436,9 +16440,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("Androidアプリ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("クロスプラットフォーム開発")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        KotlinやJavaでのネイティブアプリ開発を行っております。"), _c("br"), _vm._v("ネイティブ開発の利点を最大限生かしたプログラムを提供しております。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            FlutterやReact Nativeなどフロント開発をiOSとAndroidのどちらのOSでも対応可能なハイブリッド開発をメインに行なっています。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -16448,45 +16452,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("ハイブリットアプリ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ネイティブ開発にも強い")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("IOSアプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        SwiftやObjective-Cでのネイティブアプリ開発を行っております。iPhoneをはじめとしiPadアプリの開発も可能です。"), _c("br"), _vm._v("開発からAppleストアへの申請まで一貫して対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("Androidアプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        KotlinやJavaでのネイティブアプリ開発を行っております。"), _c("br"), _vm._v("ネイティブ開発の利点を最大限生かしたプログラムを提供しております。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/app03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("ハイブリットアプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        IOS、Androidアプリケーションを別々で作ることなくワンソースでの開発により、開発予算や開発期間の削減に向いている制作方法です。また、リリース後の更新作業も単に行える利点があります。\n                    ")])])])]);
+  }, [_vm._v("\n                            ハイブリッド開発のみではなく、ネイティブ機能の実装が必要な場合にはSwiftやJava Kotlinにて開発を行なっています。\n                        ")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -16494,9 +16462,9 @@ var staticRenderFns = [function () {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("サービスアプリケーション")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("当社がご提供できる技術やソルーション")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("顧客の情報管理や、従業員管理、業務効率化のためのシステム開発など"), _c("br"), _vm._v("クライアントの課題に沿ったご提案をさせていただきます。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("アプリ開発ではどのようなテクノロジーで開発するのが良いのかなとエンジニアでないと正解も分かりづらいですので当社では分かりやすくご提案させて頂きます。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -16508,9 +16476,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("マッチングアプリ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("アプリ開発言語")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        BtoBマッチングのみならず、CtoCサービスのWEBサービス主にオークションサービスやフリマサービスなど開発いたします。"), _c("br"), _vm._v("エスクロー決済の導入も可能です。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            クロスプラット開発：Flutter / React Native ネイティブ開発：Swift / Java Kotlinを使用しています。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -16520,9 +16488,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("位置情報アプリ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("アプリデザイン")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("位置情報システムを利用した店舗検索アプリやマッチングアプリ、GPSアプリなどを開発いたします。"), _c("br"), _vm._v("Google\n                        APIを利用した開発も行うことができます。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("アプリは想像よりもデザインページ数が多く必要であり、その一枚一枚のコンポーネント（部品作り）が各OSによって再現性も異なるため、アプリ開発専門のデザイナーが担当させて頂きます。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -16532,129 +16500,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("SNSアプリ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("審査にも強い")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        TwitterやInstagramなどのソーシャルアプリケーションやビジネスSNSアプリを開発を行うことが可能です。"), _c("br"), _vm._v("オリジナルの機能を組み込むことで差別化を図ることも可能です。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/service-app04.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("フリマアプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        売りたい人、買いたい人をつなげるフリマアプリをご提供しております。"), _c("br"), _vm._v("決済システムから売上出金申請、ポイントシステムなど多くの機能をご提供しております。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/service-app05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("LIVE配信アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リアルタイムのLIVE配信機能からスーパーチェット、スタンプ送信機能を搭載したシステムをご提供しております。"), _c("br"), _vm._v("SNSアプリと掛け合わせた開発など新規事業開発にご利用いただいております。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/service-app06.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("チャットアプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        社内チャットツールの開発やWEBサービスと連携したアプリの開発が可能です。業務効率化やWEBサービスのアプリ版の開発をお任せください。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "system-sec mycontents-wide"
-  }, [_c("h2", {
-    staticClass: "system-sec__tiile"
-  }, [_vm._v("ビジネスアプリケーション")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__text"
-  }, [_vm._v("業務用アプリや社内アプリの開発を行っております。"), _c("br"), _vm._v("アプリによる業務効率化やWEBシステムからの切り替えなどご相談ください。")]), _vm._v(" "), _c("ul", {
-    staticClass: "system-sec__contents"
-  }, [_c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("予約アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        飲食店や美容室、ホテルなどで使用されております。導入により電話やメール対応の人的ソースの削減、営業時間外でも対応できる為予約の取りこぼし防止対策になります。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("スケジュール管理アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        アルバイトのシフトや打刻管理など業務効率化向けアプリから一般ユーザー層使用を想定したスケジュール管理アプリを提供いたします。細かな時間管理や与管理機能まで開発可能です。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("画像解析アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        画像を分析して、様々なデータへの変換や、画像から肌の状態など分析し状態データの解析など幅広い画像解析系のアプリを開発いたします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app04.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("プロジェクト管理アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        建築現場などで利用されている施工管理や、プロジェクトの進捗管理ができるアプリを開発しております。ToDoやガントチャート機能などが搭載されております。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("日報アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモートワークで便利な日報アプリの開発をいたします。"), _c("br"), _vm._v("在宅ワークのコミュニケーション課題を解決するアプリをご提供いたします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/business-app06.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("打刻アプリ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リモートワークが進んでいる現代で、どこからでも打刻ができるアプリを開発いたします。給与計算システムと連動することでより労務の負担を軽減することが可能です。")])])])]);
+  }, [_vm._v("\n                            決済実装方法やプライバシーの記載方法など様々な理由からアプリの審査が通らないことはございます。そのため当社ではこれまでの経験より実装前に少しでもリスクを避けられるようにお客様に事前説明を行なっています。\n                        ")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -16664,9 +16512,9 @@ var staticRenderFns = [function () {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("PROCESS")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ウェブシステム開発におけるフロー")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    契約と開発の流れ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v('\n                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで\n一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"')])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -16682,7 +16530,7 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("ヒヤリング・お見積もり")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("お問い合わせを頂き、開発されたい内容の書類RFPや内容をもとにヒアリングそして予算に合わせてお見積もりを作成します。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -16692,9 +16540,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("仕様・要件定義")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("要件定義・基本設計")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("当社のフォーマットに合わせて、仕様を整理しどのような開発を進めるのかを定義します。スケジュールの管理などもこちらで行います。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -16704,9 +16552,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("デザイン制作・システム開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("UIUXデザイン・開発")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("\n                            ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。"), _c("br"), _vm._v("そして開発工程のコーディング、システム開発を行います。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                画面遷移図からデザインを起こし、詳細設計書に基づきシステム・アプリ・インフラ開発を進めて参ります。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -16716,9 +16564,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("テスト・納品")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
+  }, [_vm._v("テストケースに基づき検収を行いお客様にもご確認頂き、アプリの審査やサーバーへのディプロイ作業を進めます。\n                            ")])])])])]);
 }];
 render._withStripped = true;
 
@@ -16979,7 +16827,7 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", [_c("section", {
+  return _c("div", [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("main", [_vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("section", [_c("section", {
     staticClass: "menu-list"
   }, [_c("div", {
     staticClass: "menu-box"
@@ -16994,7 +16842,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Person-icon.svg"
     }
-  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("ウェブシステム開発\n                        ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text router-link-exact-active router-link-active",
@@ -17005,7 +16853,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Message-icon.svg"
     }
-  }), _vm._v("Mobile app development\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("スマホアプリ開発\n                        ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -17016,7 +16864,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("UIUXデザイン制作\n                        ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -17027,26 +16875,26 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("Web creative・Digital marketing\n                        ")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("オフショア開発\n                        ")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "hero_Heading"
-  }, [_c("h2", {
-    staticClass: "hero"
-  }, [_vm._v("Web creative・Digital marketing")])]);
+    staticClass: "mv_textarea"
+  }, [_c("h2", [_c("strong", {
+    staticClass: "en entxt"
+  }, [_vm._v("Pakistan Development/ラボ型オフショア開発")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("section", {
-    staticClass: "system-sec mycontents-wide"
+    staticClass: "system-sec mycontents-wide mt-5"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("WEB制作")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("パキスタンエンジニアリソース開発")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("企画、立案からデザイン、コーディング、運用まで一貫して対応を行っております。"), _c("br"), _vm._v("クライアントの課題解決を最も重視しております。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("当社はパキスタンにも開発拠点を構えており、自社で多くのエンジニアを抱えております。チームでの採用やコストパフォーマンスにて大きく貢献できるサービスです。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -17058,9 +16906,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("ランディングページ")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("日本語コミュニケーション")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        ランディングページとは、検索結果、広告などを経由して訪問者が最初にアクセスするページのことです。ネット販売における売り上げを向上させるために重要なページを企画、提案、制作致します。\n                    ")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        当社では日本人によるブリッジSEの担当者配置またはチャットツールを用いた非同期コミュニケーションをきちんと使いこなすことで全て日本語にて指示などの連絡を取り合っています。\n                    ")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -17070,9 +16918,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("コーポレートサイト")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("コストパフォーマンス")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        会社の顔となり、社員の紹介、実績紹介などのコンテンツを掲載することで顧客からの信用獲得、情報発信を日々行うことでブランディグに役立ちます。業種問わず現代に置いてWEBサイトは必須と言えるでしょう。\n                    ")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        日本の開発ベンダーの月額単価とは圧倒的な金額をお見積もりにてご提示可能です。ただコストが安いだけではなくお仕事にコミットし、お値段以上のお仕事を行います。\n                    ")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -17082,45 +16930,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("リクルートサイト")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("チーム採用")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        企業にとって適切な人材の採用には適切な情報の発信が必要です。"), _c("br"), _vm._v("また、企業アピールを行うことで人材不足解消に一役買います。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web04.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("サービスサイト")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        特定の事業分野、商品のターゲット、顧客にアプローチをし営業マンとして活躍します。ターゲット顧客に分かりやすく請求しホームページから商談、販売獲得が格段に向上します。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("オウンドメディア")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        自社でメディアを所有しユーザーに情報発信することで見込み客を作り、その先の売りにつなげるマーケティング手法を取ることができます。"), _c("br"), _vm._v("また費用対効果の少ない広告費の削減にも役立ちます。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/web06.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("オンラインショップ")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        場所や時間、実店舗の場所に問わず世界中に人々に商品を販売ができるようになります。インターネットの普及している現代では有効な販売手段となることは間違いありません。")])])])]);
+  }, [_vm._v("\n                        オフショアを使うメリットはコストだけではありません。日本人エンジニアでチームを組むには採用コストもかかりますが、当社では既に出来上がっているチームを貸し出すことが可能です。")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -17128,9 +16940,9 @@ var staticRenderFns = [function () {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("WEBマーケティング")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("当社がご提供できる技術やソルーション")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("SEO内部施策、キーワード設計、KPI設定、分析環境の構築など、"), _c("br"), _vm._v("費用対効果の高いマーケティング施策の企画から実行まで対応しております。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("当社ではウェブやモバイルアプリ開発においても常にマーケットにおける最新技術を用いて開発を行なっております。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -17142,9 +16954,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("マーケティングコンサル")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("フロントエンド")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        競合分析、ユーザビリティ調査、A/Bテスト、アクセス分析、などの手法で分析しWEBサイトの最適化や改善などの提案、改善、運用をポート致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                        React.js / Vue.js / Typescript / HTML / CSS / Bootstrap / JavaScript などからWordPressなどのCMSもエンジニアが在籍しており対応可能です。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -17154,9 +16966,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("SEO対策")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("バックエンド・API")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("キーワード分析、設計を行い最適な設計また分析ツールの導入、ライティングのサポートまで行い、検索順位向上のサポートを致します。\n                    ")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("PHPのLaravelまたNode.jsなどをメインとして機能開発を行なっております。\n                    ")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -17166,129 +16978,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("コンバージョン最適化")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("PM")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("アクセス分析をもとに流入導線などを最適化しコンバージョン率の向上だけでなく無駄な広告費の削減にも繋がります。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing04.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("競合調査")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("新たなサービスを展開する前に類似サービスの市場を調査致します。差別化を図りサービスの早期成長をお助け致します。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("A/Bテスト")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("WEBマーケティングを成功させるためにデータをもとにA/Bテストをおこない、CVRの向上や無駄な広告費を削減致します。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/marketing06.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("キーワード設計")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        狙っている検索ワードの競合調査から適切なKPIを設定し、設定したKPIが正しく計測できているかを調査し、タグ設定などを行います。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "system-sec mycontents-wide"
-  }, [_c("h2", {
-    staticClass: "system-sec__tiile"
-  }, [_vm._v("広告")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__text"
-  }, [_vm._v("SEO内部施策、キーワード設計、KPI設定、分析環境の構築など、"), _c("br"), _vm._v("費用対効果の高いマーケティング施策の企画から実行まで対応しております。")]), _vm._v(" "), _c("ul", {
-    staticClass: "system-sec__contents"
-  }, [_c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("リスディング広告")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        検索結果に連動した広告で見込み顧客の獲得が高い広告です。適切なワードと入礼ロジックで運営を代行し分析、改善しながら最適な広告運営を致します。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("SNS広告")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        Twitter、Facebook、Instagramの広告を運用致します。"), _c("br"), _vm._v("企業のサービス内容、商品から最適な広告を提案致します。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("広告分析")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。"), _c("br"), _vm._v("改善立案から実行まで対応可能です。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("リスディング広告")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        検索結果に連動した広告で見込み顧客の獲得が高い広告です。適切なワードと入礼ロジックで運営を代行し分析、改善しながら最適な広告運営を致します。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("SNS広告")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        Twitter、Facebook、Instagramの広告を運用致します。"), _c("br"), _vm._v("企業のサービス内容、商品から最適な広告を提案致します。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/ad03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("広告分析")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        リスティング広告や、SNS広告の運用実績を分析し、費用対効果を最大限高めるための施策を行います。"), _c("br"), _vm._v("改善立案から実行まで対応可能です。")])])])]);
+  }, [_vm._v("オフショアを使うメリットの一つにチーム開発が可能ということがありますが、2-3名以上のチームにて開発の際にはパキスタン側のPMもプロジェクトに参画可能です。")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -17298,9 +16990,9 @@ var staticRenderFns = [function () {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("PROCESS")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ラボ型オフショア開発におけるフロー")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    契約と開発の流れ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n                    当社ではパキスタンエンジニアを用いたラボ型オフショア開発を行っており、コストパフォーマンスよく最新技術に対応し、開発作業を受けさせて頂いております。")])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -17316,7 +17008,7 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("ヒヤリング・お見積もり")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("どのような開発なのか、また現在どのようなことに課題を感じておりそれを当社のサービスでどのように改善できるのかなと打ち合わせお見積もりを作成いたします。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17326,9 +17018,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("仕様・要件定義")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("契約・キックオフ")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("打ち合わせさせて頂きました内容通りにリソースをアサインし、開発ができるように準備します。またキックオフミーティングにて仕事の進め方の最終確認をさせて頂きます。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17338,9 +17030,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("デザイン制作・システム開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("開発")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("\n                            ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。"), _c("br"), _vm._v("そして開発工程のコーディング、システム開発を行います。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            実際にソフトウェアの開発を行なっていきます。決められた時間所定の稼働を指示書に基づき行い毎日稼働報告書を記載、提出させて頂きます。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17350,9 +17042,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("マネジメント")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
+  }, [_vm._v("タイムスケジュールや仕様内容をきちんと確認し、どのようにより開発を改善することができるのか当社のPMまたクライアント企業のご担当者様と常にコミュニケーションを図ります。\n                        ")])])])])]);
 }];
 render._withStripped = true;
 
@@ -17374,7 +17066,7 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("section", [_c("section", {
+  return _c("div", [_c("Navbar"), _vm._v(" "), _c("main", [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("section", [_c("section", {
     staticClass: "menu-list"
   }, [_c("div", {
     staticClass: "menu-box"
@@ -17389,7 +17081,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Person-icon.svg"
     }
-  }), _vm._v("System\n                            application "), _c("br"), _vm._v("development\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("ウェブシステム開発\n                            ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text router-link-exact-active router-link-active",
@@ -17400,7 +17092,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Message-icon.svg"
     }
-  }), _vm._v("Mobile app development\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("スマホアプリ開発\n                            ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -17411,7 +17103,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("Web\n                            design・UIUX designing\n                        ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("UIUXデザイン制作\n                            ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -17422,26 +17114,26 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Digital-Assets.svg"
     }
-  }), _vm._v("Web creative・Digital marketing")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
+  }), _vm._v("オフショア開発")])], 1)])])])]), _vm._v(" "), _c("Footer")], 1);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("div", {
-    staticClass: "hero_Heading"
-  }, [_c("h2", {
-    staticClass: "hero"
-  }, [_vm._v("Web design・UIUX designing")])]);
+    staticClass: "mv_textarea"
+  }, [_c("h2", [_c("strong", {
+    staticClass: "en entxt"
+  }, [_vm._v("UIUX design / UIUXフロント設計")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("section", {
-    staticClass: "system-sec mycontents-wide"
+    staticClass: "system-sec mycontents-wide mt-5"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("Webデザイン")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("フロントデザイン設計")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("\n                会社や事業の顔となるデザイン。ユーザー体験を徹底的に追求したUI／UXデザインとブランドイメージ"), _c("br"), _vm._v("やクライアントの課題を汲み取ったデザインをご提供したします。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("\n                    デザインはユーザーがウェブやアプリに触れる際に最も重要視される接点になりそのデザイン性や利便性はアプリ自体の評価を左右します。そのためIDENBRIDではそのデザイン開発の工程に力を入れております。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents system-sec__contents_design"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -17453,9 +17145,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("WEBデザイン")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("画面遷移図")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        ブランドイメージと汲み取り、目的に沿った最適なデザインをご提供いたします。"), _c("br"), _vm._v("企画から撮影など一貫して承ることができます。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            一般的にワイヤーフレームと呼ばれる図解を作成し、どのボタンやリンクを押すと次のページに移動するのかという挙動を確認する設計図を作成します。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -17465,9 +17157,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("アプリデザイン")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("UI設計")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("スマートフォンアプリケーションのデザイン制作を行っております。"), _c("br"), _vm._v("ユーザー体験を最適化したデザインをご提供いたします。\n                    ")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("こちらはユーザーインターフェースを指し、ウェブシステムやアプリの見た目部分を指します。また全体的な色味のみでなくフォントや色そして写真イメージまで一つ一つにこだわって制作いたします。\n                        ")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -17477,45 +17169,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("UI/UXデザイン")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("UX設計")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        ユーザー数を獲得できるプロダクトを開発するために、人々が日常で潜在的に感じている価値や欲求を、UXデザイン/人間中心設計のアローチで分析して最適なデザインを制作いたします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design04.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("ロゴデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("ロゴは企業の顔となります。"), _c("br"), _vm._v("コンセプトや企業のイメージをもとに考え、形にします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("レスポンシブデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design05.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("レスポンシブデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("どのデバイスで見てもレイアウトが崩れることなく美しく表示されるレスポンシブデザインを制作いたします。")])])])]);
+  }, [_vm._v("\n                            こちらはユーザーエクスペリエンスつまりは顧客体験をどのようにより改善できるのかがポイントとなります。ユーザービリティはデザインに大きく依存しており、当社ではトレンドと経験を掛け合わせてご提案させて頂きます。")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -17523,9 +17179,9 @@ var staticRenderFns = [function () {
     staticClass: "system-sec mycontents-wide"
   }, [_c("h2", {
     staticClass: "system-sec__tiile"
-  }, [_vm._v("グラフィック")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("どうして当社のデザインが選ばれるのか")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__text"
-  }, [_vm._v("\n                チラシ、ポスターなどのグラフィックデザイン制作も行っております。webサイトと一貫して承ることが"), _c("br"), _vm._v("できるためブランドイメージの統一を図ることができます。")]), _vm._v(" "), _c("ul", {
+  }, [_vm._v("\n                    IDENBRIDではデザインのみのプロジェクトに依頼を受けることもあります。それはUIUXデザインそしてグラフィックまで総合してビジュアル化できる能力を評価を発揮できるデザイナーが在籍していることにあります。")]), _vm._v(" "), _c("ul", {
     staticClass: "system-sec__contents system-sec__contents_last"
   }, [_c("li", {
     staticClass: "system-sec__list"
@@ -17537,9 +17193,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("名刺デザイン")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("使用ツール")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("主力としてFigmaまたはAdobe XDを使用してデザインまたワイヤーフレームを作成しています。デザインがプロトタイプと同じような効果を発揮するように画面ロジック含めて実装しています。")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -17549,9 +17205,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("パンフレットデザイン")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ヒアリング力")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                            デザインはお客様の理想やビジョンを形にする大切な作業です。そのためにはどのような好みなのか、どのようなデザインにされたいのかをしっかりと傾聴し、デザインとして具現化していきます。\n                        ")])]), _vm._v(" "), _c("li", {
     staticClass: "system-sec__list"
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
@@ -17561,129 +17217,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
-  }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("リビジョン")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("名刺デザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("パンフレットデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("section", {
-    staticClass: "system-sec mycontents-wide"
-  }, [_c("h2", {
-    staticClass: "system-sec__tiile"
-  }, [_vm._v("グラフィック")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__text"
-  }, [_vm._v("\n                チラシ、ポスターなどのグラフィックデザイン制作も行っております。webサイトと一貫して承ることが"), _c("br"), _vm._v("できるためブランドイメージの統一を図ることができます。")]), _vm._v(" "), _c("ul", {
-    staticClass: "system-sec__contents system-sec__contents_last"
-  }, [_c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("名刺デザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("パンフレットデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("名刺デザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("名刺は単なる挨拶ではなく企業ブランドイメージ、商品イメージを伝えるために重要なツールでございます。")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("パンフレットデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("\n                        体系的に分かりやすい説明が必要なサービス案内や商品を美しく見せるために写真に拘った商品パンフレット、現場の雰囲気を伝えるリクルーティングパンフレットなど用途に応じ幅広く対応しております。\n                    ")])]), _vm._v(" "), _c("li", {
-    staticClass: "system-sec__list"
-  }, [_c("img", {
-    staticClass: "system-sec__list__thumbnail",
-    attrs: {
-      src: "https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg",
-      alt: ""
-    }
-  }), _vm._v(" "), _c("h3", {
-    staticClass: "system-sec__list__title"
-  }, [_vm._v("パッケージデザイン")]), _vm._v(" "), _c("p", {
-    staticClass: "system-sec__list__text"
-  }, [_vm._v("ブランドイメージを視覚的にビジュアル化し、商品と企業のブランドイメージの統一化をはかります。")])])])]);
+  }, [_vm._v("当社ではデザインのキャッチボールは最大3回を想定しており、お客様のご要望とフィードバックより理想を現実にするためにきちんとした修正対応を徹底しております。")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -17693,9 +17229,9 @@ var staticRenderFns = [function () {
     staticClass: "mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_flow"
-  }, [_vm._v("PROCESS")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ウェブシステム開発におけるフロー")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
-  }, [_vm._v("\n                    契約と開発の流れ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v('\n                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで\n一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"')])]), _vm._v(" "), _c("div", {
     staticClass: "flow__scroll mycontents-wide"
   }, [_c("ul", {
     staticClass: "flow__contents"
@@ -17711,7 +17247,7 @@ var staticRenderFns = [function () {
     staticClass: "flow__list__title"
   }, [_vm._v("ヒヤリング・お見積もり")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("制作したい内容、予算、スケジュール、目的をもとに概算費用をお出し致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("お問い合わせを頂き、開発されたい内容の書類RFPや内容をもとにヒアリングそして予算に合わせてお見積もりを作成します。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17721,9 +17257,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("仕様・要件定義")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("要件定義・基本設計")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("Web戦略立案、サイトマップ、デザイン定義、機能要件などを定義致します。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("当社のフォーマットに合わせて、仕様を整理しどのような開発を進めるのかを定義します。スケジュールの管理などもこちらで行います。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list flow__list_border"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17733,9 +17269,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("デザイン制作・システム開発")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("UIUXデザイン・開発")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("\n                            ラフデザイン案提案、その後お客様の意見を取り入れた最終デザイン決定。"), _c("br"), _vm._v("そして開発工程のコーディング、システム開発を行います。")])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("\n                                画面遷移図からデザインを起こし、詳細設計書に基づきシステム・アプリ・インフラ開発を進めて参ります。")])]), _vm._v(" "), _c("li", {
     staticClass: "flow__list"
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
@@ -17745,9 +17281,9 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("h4", {
     staticClass: "flow__list__title"
-  }, [_vm._v("リリース・保守・運営")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("テスト・納品")]), _vm._v(" "), _c("p", {
     staticClass: "flow__list__text"
-  }, [_vm._v("テストをおえて修正完了後、本番環境へのリリースを行います。"), _c("br"), _vm._v("リリース後のサイト分析、保守、運営までサポート致します。\n                        ")])])])])]);
+  }, [_vm._v("テストケースに基づき検収を行いお客様にもご確認頂き、アプリの審査やサーバーへのディプロイ作業を進めます。\n                            ")])])])])]);
 }];
 render._withStripped = true;
 
@@ -19062,12 +18598,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_news_NewsDetail_vue__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/pages/news/NewsDetail.vue */ "./resources/js/components/pages/news/NewsDetail.vue");
 /* harmony import */ var _components_pages_DownloadForm_vue__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/pages/DownloadForm.vue */ "./resources/js/components/pages/DownloadForm.vue");
 /* harmony import */ var _components_pages_Branding_vue__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/pages/Branding.vue */ "./resources/js/components/pages/Branding.vue");
-/* harmony import */ var _components_pages_Recruit_vue__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/pages/Recruit.vue */ "./resources/js/components/pages/Recruit.vue");
+/* harmony import */ var _components_pages_Business_vue__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/pages/Business.vue */ "./resources/js/components/pages/Business.vue");
 /* harmony import */ var _components_pages_Message_vue__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/pages/Message.vue */ "./resources/js/components/pages/Message.vue");
-/* harmony import */ var _components_pages_Movies_vue__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/pages/Movies.vue */ "./resources/js/components/pages/Movies.vue");
+/* harmony import */ var _components_pages_Videos_vue__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/pages/Videos.vue */ "./resources/js/components/pages/Videos.vue");
 /* harmony import */ var _components_pages_Access_vue__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/pages/Access.vue */ "./resources/js/components/pages/Access.vue");
 /* harmony import */ var _components_pages_Office_vue__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/pages/Office.vue */ "./resources/js/components/pages/Office.vue");
-/* harmony import */ var _components_pages_GetStarted_vue__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/pages/GetStarted.vue */ "./resources/js/components/pages/GetStarted.vue");
+/* harmony import */ var _components_pages_Quote_vue__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/pages/Quote.vue */ "./resources/js/components/pages/Quote.vue");
 
 
 vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
@@ -19122,10 +18658,10 @@ var routes = [
   component: _components_pages_DownloadForm_vue__WEBPACK_IMPORTED_MODULE_26__["default"]
 }, {
   path: '/business/:string?/',
-  component: _components_pages_Recruit_vue__WEBPACK_IMPORTED_MODULE_28__["default"]
+  component: _components_pages_Business_vue__WEBPACK_IMPORTED_MODULE_28__["default"]
 }, {
   path: '/quote/',
-  component: _components_pages_GetStarted_vue__WEBPACK_IMPORTED_MODULE_33__["default"]
+  component: _components_pages_Quote_vue__WEBPACK_IMPORTED_MODULE_33__["default"]
 }, {
   path: '/engineerstyle/:string?/',
   component: _components_pages_services_Ses_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
@@ -19144,7 +18680,7 @@ var routes = [
 //Movies
 {
   path: '/video/',
-  component: _components_pages_Movies_vue__WEBPACK_IMPORTED_MODULE_30__["default"]
+  component: _components_pages_Videos_vue__WEBPACK_IMPORTED_MODULE_30__["default"]
 },
 // work
 {
@@ -24648,7 +24184,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\n    width: 100%;\n    overflow: hidden;\n    box-sizing: content-box;\n}\n.bg-color{\n    background-color: #1a202c;\n    padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn, .inView .isAnim.inView .anim-fadeIn, .inView .anim-fadeIn, .inView.anim-fadeIn {\n    animation-name: fadeIn;\n}\n.loopCopy .area {\n    white-space: nowrap;\n    width: 100%;\n    padding-right: 100%;\n    box-sizing: content-box;\n    animation-iteration-count: infinite;\n    animation-timing-function: linear;\n    animation-name: ticker;\n    animation-duration: 10s;\n    height: 60px;\n    background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\n    opacity: 1;\n    animation-duration: 0.5s;\n    animation-iteration-count: 1;\n    animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\n    animation-fill-mode: both;\n}\nfooter {\n  background: #1a202c;\n}\n.container-request {\n  padding: 0px 74px !important;\n}\n.fonter-text{\n  color: #DADADA;\n}\n.footer-logo {\n  width: 20%;\n  margin: auto;\n  display: flex;\n}\n.col-content {\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\n  width: 100%;\n  height: auto;\n}\n.section-request {\n  padding: 80px 0px 60px;\n}\n.contact-main{\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\n  color: #fff;\n  font-size: 40px;\n}\n.contact-request-col {\n  padding: 50px 0px;\n}\n.request-contact-heading {\n  font-size: 20px;\n  letter-spacing: 0.1em;\n  color: #DADADA;\n  text-align: center;\n  font-weight: 700;\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,.contact-request-col::before{\n  content: \"\";\n  background-color: #000;\n  height: 1px;\n  width: 40px;\n  position: absolute;\n  right: 6.5%;\n  top: 50%;\n  opacity: 0;\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,.contact-request-col:hover:before{\n    opacity: 1;\n    right: 5%;\n    transition-delay: 0.2s;\n}\n.contact-request-col::before{\n  transform: rotate(45deg);\n  width: 10px;\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\n  font-size: 12px;\n  letter-spacing: 0.06em;\n  color: #DADADA;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\n   font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\n  border: 1px solid #ffffff;\n  background: none !important;\n  transition: 0.6s ease;\n  cursor: pointer;\n  height: 149.25px;\n  border-radius: 0px;\n}\n.card:hover {\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\n.card:hover .request-contact-heading {\n  color: #000000;\n}\n.footer-menu-heading h2 {\n  text-align: center;\n  color: #ffff;\n}\n.foot-menu-group {\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\n  color: #DADADA;\n  font-size: 14px;\n  letter-spacing: 0.1em;\n  font-weight: bold;\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 30px;\n  margin: 25px 0px 0px;\n}\n.twitter {\n  color: #fff;\n  font-size: 27px;\n}\n.copyright {\n  margin-top: 40px;\n  font-size: 14px;\n  color: #777;\n  letter-spacing: 0.18em;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide{ \n   width: 100%; \n   height: 85px;\n   padding-top: 20px;\n   margin: 0px 40px;\n}\n.contact__btns{\n    padding: 0px 150px;\n}\n.content-text_contact{\n        padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 85%;\n    -moz-column-gap: 100px;\n         column-gap: 100px;\n    margin: 2px auto;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\n    font-size: 1.7rem;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.contact__btns {\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 90%;\n    -moz-column-gap: 180px;\n         column-gap: 180px;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\nh2 {\n    font-size: 1.5rem;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 80%;\n    -moz-column-gap: 230px;\n         column-gap: 230px;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.btn-wide {\n    margin: 0px 18px 30px;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\n    display: none;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.content-text_contact{\n    padding: 40px 30px;\n    margin: 0;\n    font-size: 14px;\n}\n.btn-wide{\n   margin: 0px 0px 30px;\n}\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.loopCopy {\n  width: 100%;\n  overflow: hidden;\n  box-sizing: content-box;\n}\n.bg-color {\n  background-color: #1a202c;\n  padding: 60px 0px 0px;\n}\n.inView .isAnim.inView.anim-fadeIn,\n.inView .isAnim.inView .anim-fadeIn,\n.inView .anim-fadeIn,\n.inView.anim-fadeIn {\n  animation-name: fadeIn;\n}\n.loopCopy .area {\n  white-space: nowrap;\n  width: 100%;\n  padding-right: 100%;\n  box-sizing: content-box;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n  animation-name: ticker;\n  animation-duration: 10s;\n  height: 60px;\n  background: url(/assets/img/footer-heading.svg) repeat-x left top/945px 65px;\n}\n@keyframes ticker {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-962px, 0);\n}\n}\n@keyframes ticker_sp {\n0% {\n    transform: translate(0, 0);\n    visibility: visible;\n}\n100% {\n    transform: translate(-603px, 0);\n}\n}\n.anim-fadeIn {\n  opacity: 1;\n  animation-duration: 0.5s;\n  animation-iteration-count: 1;\n  animation-timing-function: cubic-bezier(0.67, 0, 0.18, 1);\n  animation-fill-mode: both;\n}\nfooter {\n  background: #1a202c;\n}\n.container-request {\n  padding: 0px 74px !important;\n}\n.fonter-text {\n  color: #DADADA;\n}\n.footer-logo {\n  width: 20%;\n  margin: auto;\n  display: flex;\n}\n.col-content {\n  border: 1px solid #2B2B2B;\n}\n.bnr-img {\n  width: 100%;\n  height: auto;\n}\n.section-request {\n  padding: 80px 0px 60px;\n}\n.contact-main {\n  margin-bottom: 60px;\n}\n.col-main-heading h2 {\n  color: #fff;\n  font-size: 40px;\n}\n.contact-request-col {\n  padding: 50px 0px;\n}\n.request-contact-heading {\n  font-size: 20px;\n  letter-spacing: 0.1em;\n  color: #DADADA;\n  text-align: center;\n  font-weight: 700;\n  font-family: DIN-Bold;\n}\n.contact-request-col::after,\n.contact-request-col::before {\n  content: \"\";\n  background-color: #000;\n  height: 1px;\n  width: 40px;\n  position: absolute;\n  right: 6.5%;\n  top: 50%;\n  opacity: 0;\n  transition: 0.4s ease;\n}\n.contact-request-col:hover:after,\n.contact-request-col:hover:before {\n  opacity: 1;\n  right: 5%;\n  transition-delay: 0.2s;\n}\n.contact-request-col::before {\n  transform: rotate(45deg);\n  width: 10px;\n  top: calc(50% - 4px);\n}\n.contact-col-sub-heading {\n  font-size: 12px;\n  letter-spacing: 0.06em;\n  color: #DADADA;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.content-text_contact {\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.section-request .card {\n  border: 1px solid #ffffff;\n  background: none !important;\n  transition: 0.6s ease;\n  cursor: pointer;\n  height: 149.25px;\n  border-radius: 0px;\n}\n.card:hover {\n  background: #FFFFFF !important;\n}\n.card:hover .contact-col-sub-heading,\n.card:hover .request-contact-heading {\n  color: #000000;\n}\n.footer-menu-heading h2 {\n  text-align: center;\n  color: #ffff;\n}\n.foot-menu-group {\n  margin: 0px 30px 0px 0px;\n}\n.footer-menu {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 40px auto;\n}\n.foot-menu-group h4 a {\n  color: #DADADA;\n  font-size: 14px;\n  letter-spacing: 0.1em;\n  font-weight: bold;\n  font-family: NotoSansJP-Bold;\n}\n.social-links {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 30px;\n  margin: 25px 0px 0px;\n}\n.twitter {\n  color: #fff;\n  font-size: 27px;\n}\n.copyright {\n  margin-top: 40px;\n  font-size: 14px;\n  color: #777;\n  letter-spacing: 0.18em;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: 400;\n  font-family: NotoSansJP-Regular;\n}\n.btn-wide {\n  width: 100%;\n  height: 85px;\n  padding-top: 20px;\n  margin: 0px 40px;\n}\n.contact__btns {\n  padding: 0px 150px;\n}\n.content-text_contact {\n  padding: 0px 30px;\n}\n@media screen and (min-width: 897px) {\nfooter {\n    padding: 0 0 160px;\n}\n}\n@media only screen and (max-width: 425px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 85%;\n    -moz-column-gap: 100px;\n         column-gap: 100px;\n    margin: 2px auto;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.footer-menu-heading h2 {\n    font-size: 1.7rem;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.contact__btns {\n    padding: 0px 15px;\n}\n}\n@media screen and (min-width: 425px) and (max-width: 767px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 90%;\n    -moz-column-gap: 180px;\n         column-gap: 180px;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\nh2 {\n    font-size: 1.5rem;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media screen and (min-width: 768px) and (max-width: 999px) {\n.footer-menu {\n    flex-wrap: wrap;\n    justify-content: space-around;\n    width: 80%;\n    -moz-column-gap: 230px;\n         column-gap: 230px;\n}\n.foot-menu-group {\n    margin-right: 0px;\n}\n.btn-wide {\n    margin: 0px 18px 30px;\n}\n.contact__btns {\n    padding: 0px 100px;\n}\n}\n@media only screen and (max-width: 767px) {\n.section-request {\n    display: none;\n}\n.pad {\n    padding: 60px 0px !important;\n}\n.content-text_contact {\n    padding: 40px 30px;\n    margin: 0;\n    font-size: 14px;\n}\n.btn-wide {\n    margin: 0px 0px 30px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24672,7 +24208,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\n    position: relative;\n    display: inline-block;\n    height: 35px;\n    margin-top: 18px;\n    margin-right: 32px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa]{\n   \n    display: flex;\n    align-items: center;\n    border: 2px solid rgba(37, 115, 176, 1);\n    color: rgba(37, 115, 176, 1);\n    min-height: 42px;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-family: \"Barlow\", sans-serif;\n    font-size: 0.875rem;\n    line-height: 1.25;\n    padding: 9px 20px;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover{\n    background-color: rgba(37, 115, 176, 1);\n    color:#fff;\n}\n.side_fix[data-v-2c4263fa] {\n    position: fixed;\n    right: 0;\n    top: 50%;\n    transform: translate(100%, -50%);\n    z-index: 100001;\n    transition: 0.4s;\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    background-color: rgb(57, 108, 162);\n    display: flex;\n    border: solid 1px rgb(57, 108, 162);\n    cursor: pointer;\n    justify-content: center;\n    align-items: center;\n    padding: 25px 0;\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    display: block;\n    -o-writing-mode: vertical-rl;\n    writing-mode: vertical-rl;\n    font-size: 14px;\n    color: #dadada;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.18px;\n    transition: 0.4s;\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px){\n.side_fix[data-v-2c4263fa] {\n    width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    /* background: #000; */\n    padding: 15px 0;\n    /* border: 1px solid #474747; */\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    color: #dadada;\n    font-size: 12px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header-pc__nav__lists[data-v-2c4263fa] {\n    position: relative;\n    display: inline-block;\n    height: 35px;\n    margin-top: 18px;\n    margin-right: 32px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n.get-start-btn[data-v-2c4263fa] {\n\n    display: flex;\n    align-items: center;\n    border: 2px solid rgba(37, 115, 176, 1);\n    color: rgba(37, 115, 176, 1);\n    min-height: 42px;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-family: \"Barlow\", sans-serif;\n    font-size: 0.875rem;\n    line-height: 1.25;\n    padding: 9px 20px;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n}\n.get-start-btn[data-v-2c4263fa]:hover {\n    background-color: rgba(37, 115, 176, 1);\n    color: #fff;\n}\n.side_fix[data-v-2c4263fa] {\n    position: fixed;\n    right: 0;\n    top: 50%;\n    transform: translate(100%, -50%);\n    z-index: 100001;\n    transition: 0.4s;\n    width: 45px;\n}\n.side_fix.on[data-v-2c4263fa] {\n    transform: translate(0, -50%);\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n    background-color: rgb(57, 108, 162);\n    display: flex;\n    border: solid 1px rgb(57, 108, 162);\n    cursor: pointer;\n    justify-content: center;\n    align-items: center;\n    padding: 25px 0;\n    height: 22vh;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n    display: block;\n    -o-writing-mode: vertical-rl;\n    writing-mode: vertical-rl;\n    font-size: 14px;\n    color: #dadada;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.18px;\n    transition: 0.4s;\n    position: relative;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n.side_fix .fix_btn.pararel[data-v-2c4263fa] {\n    margin-top: 20px;\n}\n.side_fix .fix_btn[data-v-2c4263fa] {\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px) {\n.side_fix[data-v-2c4263fa] {\n        width: 35px;\n}\n.side_fix .fix_btn a[data-v-2c4263fa] {\n        padding: 15px 0;\n}\n.side_fix .fix_btn a .txt[data-v-2c4263fa] {\n        color: #dadada;\n        font-size: 12px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24768,7 +24304,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n/*blog-brns*/\n.blog-subcontents__text {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    padding: 0px 10px;\n    text-align: center;\n    margin: auto;\n}\n.blog__btns {\n    margin-bottom: 60px;\n    position: relative;\n    display: flex;\n}\n.blog__btns__list {\n    display: inline-block;\n    margin-right: 60px;\n}\n.blog__btns__list_hr {\n    position: absolute;\n    width: 0.7px;\n    height: 50px;\n    background-color: var(--textcolor);\n    left: 156px;\n    bottom: 0;\n}\n.blog__btns__list__label {\n    margin-bottom: 3px;\n    font-weight: bold;\n    font-size: 24px;\n    line-height: 36px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.blog__btns__list_select {\n    display: inline-block;\n    width: 124px;\n    height: 24px;\n    background: #ffffff;\n    border: 0.5px solid #727171;\n    box-sizing: border-box;\n    border-radius: 2px;\n    font-weight: 500;\n    font-size: 13px;\n    line-height: 20px;\n}\n.select-container {\n    overflow: hidden;\n    position: relative;\n}\n.select-container::before {\n    position: absolute;\n    top: 50%;\n    right: 8px;\n    transform: translateY(-50%);\n    content: \"▼\";\n    font-size: 6px;\n    color: var(--textcolor);\n}\n\n/*blog-contents*/\n.blog {\n    padding: 60px 10% 120px;\n}\n.blog-contents {\n    display: flex;\n    margin-bottom: 40px;\n    flex-wrap: wrap;\n}\n.blog-contents__list {\n    width: calc((100% - 65px * 2) / 3);\n    margin-right: 65px;\n    margin-bottom: 60px;\n}\n.blog-contents .blog-contents__list:nth-child(3n) {\n    margin-right: 0;\n}\n.blog--content--sidearea .searcharea .submit {\n    cursor: pointer;\n    background: url(\"/assets/img/icons/search-img.png\") center no-repeat;\n    background-size: 100%;\n    width: 15px;\n    height: 15px;\n}\n@media screen and (max-width: 900px) and (min-width: 500px) {\n.blog-contents__list__thumbnail {\n        height: 240px;\n}\n}\n@media screen and (max-width: 500px) and (min-width: 320px) {\n.blog-contents__list__thumbnail {\n        height: 180px;\n}\n}\n@media (max-width: 767px) {\n.blog-subcontents__text {\n        width: 100%;\n}\n.blog {\n        margin-bottom: 60px;\n}\n.blog-contents {\n        margin-bottom: 20px;\n        justify-content: space-between;\n}\n.blog-contents__list {\n        width: calc((100% - 35px) / 2);\n        margin-right: 0;\n        margin-bottom: 30px;\n}\n.blog-contents__list__tags {\n        width: 180px;\n        top: 71px;\n        left: -70px;\n}\n}\n@media (max-width: 500px) {\n.blog-contents {\n        display: block;\n        margin-bottom: 50px;\n}\n.blog-contents__list {\n        width: 100%;\n        margin-bottom: 30px;\n}\n}\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(1) .hoverScale,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(2) .hoverScale,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(3) .hoverScale,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(4) .hoverScale {\n    opacity: 1;\n    transform: translateY(0%);\n    transition: 0.8s;\n}\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(1) .hoverScale h3,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(2) .hoverScale h3,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(3) .hoverScale h3,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(4) .hoverScale h3 {\n    opacity: 1;\n    transform: translateY(0%);\n    transition: 1s;\n}\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(1) .writing,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(2) .writing,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(3) .writing,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(4) .writing {\n    opacity: 1;\n    transform: translateY(0%);\n    transition: 1.4s;\n}\n.blog.loaded .blog--content--sidearea .fade_y {\n    opacity: 1;\n    transform: translateY(0);\n    transition: 0.8s;\n}\n.blog.loaded .blog--header .blogtitle {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.blog.loaded .blog--header .bloginfo {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.blog.loaded .blog--header .personinfo {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.blog.loaded .blog--article .photo {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.blog.loaded .recruit_site_area {\n    opacity: 1;\n}\n.blog .success_txt {\n    position: fixed;\n    font-size: 1.2rem;\n    width: 240px;\n    font-weight: 500;\n    background-color: #dadada;\n    color: #4c4c4c;\n    top: 15px;\n    left: 50%;\n    transform: translate(-50%, -100px);\n    text-align: center;\n    transition: 0.4s;\n    z-index: 100004;\n    padding: 15px 0;\n}\n.blog .success_txt.on {\n    transform: translate(-50%, 0);\n}\n.blog .fix_share {\n    transition: 0.4s;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    width: 100vw;\n    background: #000;\n    border-top: solid #8d8d8d 1px;\n    padding: 18px 0;\n    z-index: 100;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share {\n        padding: 15px 0;\n}\n}\n.blog .fix_share:not(.visibility) {\n    opacity: 0;\n    transform: translateY(100px);\n}\n.blog .fix_share.visibility {\n    opacity: 1;\n    transform: cubic-bezier(0.1, 0.2, 0.3, 1);\n}\n.blog .fix_share .fix_inner {\n    width: 80%;\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner {\n        width: 90%;\n}\n}\n.blog .fix_share .fix_inner .share_list {\n    display: flex;\n    align-items: center;\n    justify-content: flex-start;\n}\n.blog .fix_share .fix_inner .share_list li {\n    transition: 0.3s;\n    width: 22px;\n    margin-right: 22px;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner .share_list li {\n        margin-right: 18px;\n}\n}\n.blog .fix_share .fix_inner .share_list li:nth-child(4) {\n    width: 18px;\n}\n.blog .fix_share .fix_inner .share_list li:nth-child(4) button {\n    cursor: pointer;\n}\n@media screen and (min-width: 897px) {\n.blog .fix_share .fix_inner .share_list li:hover {\n        transform: scale(1.15);\n}\n}\n.blog .fix_share .fix_inner .good__click {\n    margin-right: calc(280px + 7.14%);\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner .good__click {\n        margin-right: 0;\n}\n}\n.blog .recruit_site_area {\n    position: fixed;\n    left: 0;\n    right: 0;\n    bottom: -120px;\n    z-index: 10000;\n    width: 80%;\n    margin: 0 auto;\n    display: flex;\n    transition: 0.4s;\n    opacity: 0;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area {\n        width: 90%;\n        display: block;\n}\n}\n.blog .recruit_site_area.show {\n    bottom: 30px;\n}\n.blog .recruit_site_area .mainbnr_area {\n    flex: 1;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area .mainbnr_area {\n        flex: none;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn {\n    width: 65%;\n    max-width: 480px;\n    margin: 0 auto;\n    position: relative;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn {\n        width: 100%;\n        max-width: none;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn a {\n    display: block;\n    width: 100%;\n    transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn a:hover {\n        opacity: 0.7;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn .bnr_btn {\n    cursor: pointer;\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn .bnr_btn.close_bnr {\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    width: 28px;\n}\n.blog .recruit_site_area .blank {\n    width: 280px;\n    margin-left: 7.14%;\n}\n.blog .wpulike {\n    padding: 0;\n}\n.fade_y.on {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.fade_y {\n    transform: translateY(10%);\n    opacity: 0;\n    transition: 0.5s ease;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.blog .wp_ulike_general_class {\n    margin-right: 4%;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog .wp_ulike_general_class:hover .wp_ulike_btn {\n        transform: scale(0.8);\n}\n.blog .wp_ulike_general_class:hover .wp_ulike_btn.wp_ulike_btn_is_active {\n        transform: scale(1);\n}\n}\n.blog .wp_ulike_general_class.wp_ulike_is_liked .count-box {\n    color: #f5564c;\n}\n.blog .wp_ulike_counter_up {\n    font-family: \"DIN\";\n}\n.blog .wpulike-notification {\n    display: none;\n}\n.blog .wpulike-robeen .count-box {\n    padding: 5px 0 0 0;\n    font-size: 1.8rem;\n    color: #929292;\n}\n@media screen and (max-width: 896px) {\n.blog .wpulike-robeen .count-box {\n        font-size: 1.4rem;\n}\n}\n.blog .wpulike-robeen .wp_ulike_btn {\n    overflow: inherit;\n    width: 30px;\n    height: 30px;\n    transition: 0.4s;\n}\n.blog .wpulike-robeen .wp_ulike_btn img {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 2px;\n    transform: scale(1.6);\n    opacity: 0;\n}\n.blog .wpulike-robeen .wp_ulike_btn.wp_ulike_btn_is_active::after {\n    filter: grayscale(0);\n}\n.blog .wpulike-robeen .wp_ulike_btn.wp_ulike_btn_is_active img {\n    opacity: 1;\n}\n.blog .personinfo a {\n    display: flex;\n    align-items: center;\n    width: -moz-max-content;\n    width: max-content;\n}\n@media screen and (min-width: 897px) {\n.blog .personinfo a:hover .icon {\n        transform: scale(1.15);\n}\n}\n.blog .personinfo a .icon {\n    width: 40px;\n    margin-right: 10px;\n    border-radius: 50%;\n    transition: 0.4s;\n}\n.blog .personinfo a .name {\n    font-size: 1.3rem;\n    letter-spacing: 0.04em;\n    color: #dadada;\n    font-weight: bold;\n}\n.blog .bloginfo {\n    margin-top: 20px;\n}\n.blog .bloginfo .time {\n    font-weight: bold;\n    display: inline-block;\n    margin-right: 10px;\n    font-size: 14px;\n    color: #333;\n    transition: 0.4s;\n}\n.blog .bloginfo .cat {\n    transition: 0.4s;\n    font-weight: bold;\n    display: inline-block;\n    padding: 5px 12px;\n    margin-bottom: 10px;\n    margin-right: 5px;\n    border-radius: 2px;\n    background-color: #ececec;\n    font-size: 10px;\n    letter-spacing: 0;\n    color: #000;\n}\n.blog .bloginfo .cat.pickup {\n    display: none;\n}\n.blog .good {\n    padding-left: 44px;\n    height: 30px;\n    background-size: 30px;\n    font-size: 14px;\n    line-height: 30px;\n    font-family: NotoSansJP-Regular;\n    color: #f36e6e;\n}\n.hoverScale .thumb {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.8);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n    color: #dadada;\n    font-size: 14px;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n    position: relative;\n}\n.blog--content--mainarea .blog--content--item .hoverScale {\n    opacity: 1;\n    transform: translateY(0%);\n    transition: 0.8s;\n}\n.more_txt:before {\n    width: 10px;\n}\n.blog .good__click.btm_good {\n    margin-right: 0;\n    margin-left: auto;\n    width: 85px;\n}\n@media screen and (min-width: 897px) {\n.blog .good__click .wp_ulike_btn:hover {\n        transform: scale(0.9);\n}\n.hoverScale .thumb .hvrtxt .more_txt:hover::after,\n    .hoverScale .thumb .hvrtxt .more_txt:hover::before {\n        right: -5%;\n}\n.hoverScale:hover .thumb::after {\n        opacity: 1;\n}\n.hoverScale:hover .thumb .hvrtxt {\n        transform: translate(-34%, -50%);\n        opacity: 1;\n        transition-delay: 0.3s;\n}\n}\n.blog #toc_container {\n    width: 100% !important;\n    margin-top: 54px;\n    border: 1px solid #dadada;\n    background: none;\n}\n@media screen and (min-width: 897px) {\n.blog #toc_container {\n        padding: 20px 30px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog #toc_container {\n        padding: 20px 5%;\n}\n}\n.blog #toc_container.contracted .toc_title .toc_toggle a::before {\n    transform: rotate(90deg);\n}\n.blog #toc_container .toc_title {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.8rem;\n}\n.blog #toc_container .toc_title .toc_toggle {\n    color: #000;\n}\n.blog #toc_container .toc_title .toc_toggle a {\n    text-indent: -9999px;\n    overflow: hidden;\n    position: relative;\n    width: 30px;\n    height: 30px;\n    display: block;\n    color: #000;\n    border-bottom: 1px solid #000;\n}\n.blog #toc_container .toc_title .toc_toggle a::after,\n.blog #toc_container .toc_title .toc_toggle a::before {\n    content: \"\";\n    width: 15px;\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    top: 50%;\n    left: calc(50% - 7.5px);\n    transition: 0.4s;\n}\n.blog #toc_container .toc_list {\n    margin-top: 15px;\n    border: none;\n    list-style: none;\n}\n.blog #toc_container .toc_list li:before {\n    display: none;\n}\n.blog #toc_container .toc_list li a {\n    font-size: 1.4rem;\n    font-weight: 700;\n    text-decoration: none;\n    position: relative;\n    line-height: 1.5;\n}\n@media screen and (min-width: 897px) {\n.blog #toc_container .toc_list li a:hover::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n}\n}\n.blog #toc_container .toc_list li a::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.blog #toc_container .toc_list li ul {\n    border: none;\n}\n.blog #toc_container .toc_list li ul li:before {\n    display: none;\n}\n.blog #toc_container .toc_list li ul li a {\n    font-weight: 500;\n}\n.blog #toc_container li {\n    margin-top: 20px;\n}\n.blog .wp-pagenavi span,\n.blog .wp-pagenavi a {\n    border: 1px solid #bfbfbf7a;\n    color: #333;\n}\n.blog .wp-pagenavi span:hover,\n.blog .wp-pagenavi a:hover {\n    border-color: #12355d;\n    background-color: #12355d;\n    color: #fff;\n}\n.blog .wp-pagenavi span:hover::after,\n.blog .wp-pagenavi a:hover::after {\n    fill: #fff;\n}\n.blog .wp-pagenavi .extend {\n    display: none;\n}\n.blog .wp-pagenavi .nextpostslink,\n.blog .wp-pagenavi .previouspostslink,\n.blog .wp-pagenavi .first,\n.blog .wp-pagenavi .last {\n    overflow: hidden;\n    position: relative;\n}\n.blog .wp-pagenavi .nextpostslink::after,\n.blog .wp-pagenavi .previouspostslink::after,\n.blog .wp-pagenavi .first::after,\n.blog .wp-pagenavi .last::after {\n    content: \"\";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    transition: 0.4s;\n}\nimg {\n    max-width: 100%;\n    height: auto;\n    /* vertical-align: bottom; */\n}\n.scale-img img {\n    height: 235px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.thumb-img {\n    height: 235px;\n}\n.blog .wp-pagenavi .current {\n    border-color: #12355d;\n    background-color: #12355d;\n    color: #dadada;\n}\n@media screen and (min-width: 897px) {\n.blog--content {\n        padding: 80px 0 0;\n        margin: 100px auto 0;\n        max-width: 1200px;\n        width: 80%;\n}\n.blog--content.single_cont {\n        padding: 80px 0 0;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content {\n        padding: 130px 5% 0;\n        margin: 0;\n        width: 100%;\n        max-width: none;\n}\n}\n.blog--content h2 {\n    margin-bottom: 30px;\n    font-size: 2rem;\n    font-weight: 600;\n    letter-spacing: 0.08em;\n    color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--content h2 {\n        font-size: 1.8rem;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--content--inner {\n        display: flex;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--content--mainarea {\n        flex: 1;\n}\n}\n.blog--content--mainarea .error_txt {\n    font-size: 1.6rem;\n    color: #dadada;\n    margin-top: 60px;\n    line-height: 1.5;\n}\n.blog--content--list {\n    margin-bottom: 40px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--list {\n        display: flex;\n        justify-content: space-between;\n        flex-wrap: wrap;\n}\n}\n.blog--content--item {\n    margin-bottom: 20px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--item {\n        width: 47.5%;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--item {\n        display: block;\n}\n}\n.blog--content--item h3 {\n    font-weight: 700;\n    line-height: 1.56;\n    color: #000;\n}\n@media screen and (min-width: 897px) {\n.blog--content--item h3 {\n        font-size: 18px;\n        letter-spacing: 0.04em;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--item h3 {\n        font-size: 1.6rem;\n        letter-spacing: 0.08em;\n}\n}\n.blog--content--item .writing {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n    padding-top: 5px;\n    margin-top: 10px;\n    border-top: 1px solid #4d4d4d;\n}\n@media screen and (max-width: 896px) {\n.blog--content--item .writing {\n        padding-top: 15px;\n        margin-top: 15px;\n}\n}\n.blog--content--item .writing .person {\n    display: flex;\n    align-items: center;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea {\n        width: 280px;\n        margin-left: 7.14%;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea {\n        margin-top: 100px;\n}\n}\n.blog--content--sidearea .searcharea {\n    background-color: #ececec;\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .searcharea {\n        position: relative;\n}\n}\n.blog--content--sidearea .searcharea .search-text {\n    padding: 0 10px 0 19px;\n    line-height: 50px;\n    background-color: transparent;\n    width: calc(100% - 35px);\n}\n.blog--content--sidearea .sideheading {\n    padding-top: 35px;\n    margin-top: 35px;\n    margin-bottom: 28px;\n    border-top: 1px solid #4d4d4d;\n    font-size: 16px;\n    font-family: NotoSansJP-Bold;\n    color: #333;\n}\n\n/* @media screen and (max-width: 896px) {\n    .blog--content--sidearea .sp_cat {\n        position: fixed;\n        top: 68px;\n        background: #000;\n        display: flex;\n        overflow-x: scroll;\n        width: 100%;\n        padding: 7px 0;\n    }\n} */\n.blog--content--sidearea .categoryitem {\n    display: inline-block;\n    padding: 10px;\n    margin-bottom: 10px;\n    margin-right: 5px;\n    border: 1px solid #4d4d4d;\n    font-size: 13px;\n    font-family: NotoSansJP-Bold;\n    letter-spacing: 0;\n    color: #333;\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .categoryitem {\n        white-space: nowrap;\n}\n.blog--content--sidearea .categoryitem:last-of-type {\n        margin-right: 40px;\n}\n}\n.blog--content--sidearea .categoryitem.current {\n    background-color: #dadada;\n    color: #000;\n    pointer-events: none;\n}\n.blog--content--sidearea .categoryitem.pickup {\n    display: none;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .categoryitem:hover {\n        background-color: #dadada;\n        color: #000;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .recommend {\n        display: none;\n}\n}\n.blog--content--sidearea .recommend--item {\n    display: block;\n    margin-bottom: 15px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .recommend--item:hover .hvrunder {\n        background-position: left bottom;\n        background-size: 100% 1px;\n}\n}\n.blog--content--sidearea .recommend--item.popular {\n    position: relative;\n}\n.blog--content--sidearea .recommend--item.popular::after {\n    content: \"\";\n    width: 40px;\n    height: 50px;\n    position: absolute;\n    top: -1px;\n    right: 5px;\n}\n.blog--content--sidearea .recommend--item .bloginfo {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 11px 0 8px;\n}\n.blog--content--sidearea .recommend--item .bloginfo .time {\n    font-size: 13px;\n    color: #333;\n    font-family: DIN-Bold;\n}\n.blog--content--sidearea .recommend--item h3 {\n    font-family: NotoSansJP-Bold;\n    line-height: 1.42;\n    color: #000;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .recommend--item h3 {\n        font-size: 14px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .recommend--item h3 {\n        font-size: 1.6rem;\n        letter-spacing: 0.08em;\n}\n}\n.blog--content--sidearea .sharearea .item {\n    height: 70px;\n    margin-bottom: 10px;\n}\n.blog--content--sidearea .sharearea .item .txt {\n    margin-left: 16px;\n    font-size: 1.4rem;\n}\n.blog--content--sidearea .bnr_area {\n    margin-top: 30px;\n}\n.blog--header .blogtitle {\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    line-height: 1.4;\n    letter-spacing: 0.04em;\n    position: relative;\n    transition: 0.8s;\n    transform: translateY(5%);\n    opacity: 0;\n    border-bottom: 2px solid #dadada;\n}\n@media screen and (min-width: 897px) {\n.blog--header .blogtitle {\n        font-size: 3.6rem;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--header .blogtitle {\n        font-size: 2.4rem;\n}\n}\n.blog--header .bloginfo {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    margin-bottom: 8px;\n    transition: 1.4s;\n    transform: translateY(5%);\n    opacity: 0;\n}\n.blog--header .bloginfo .left .cat {\n    margin-bottom: 0;\n    font-size: 1.3rem;\n}\n@media screen and (max-width: 896px) {\n.blog--header .bloginfo .left .cat {\n        margin-top: 5px;\n}\n}\n.blog--header .bloginfo .left .cat.pickup {\n    display: none;\n}\n.blog--header .bloginfo .left .cat a {\n    color: #000;\n    display: block;\n}\n.blog--header .bloginfo .left .cat:hover {\n    background: #000;\n}\n.blog--header .bloginfo .left .cat:hover a {\n    color: #dadada;\n}\n.blog--header .personinfo {\n    transition: 1.4s;\n    transform: translateY(5%);\n    opacity: 0;\n}\n.blog--article .photo {\n    margin-top: 40px;\n    transition: 1.6s;\n    transform: translateY(5%);\n    opacity: 0;\n}\n.blog--article code {\n    background: #b4b4b4;\n    font-size: 12px;\n    padding: 25px;\n}\n.blog--article h2 {\n    padding-bottom: 15px;\n    margin-top: 120px;\n    border-bottom: 2px solid #dadada;\n    font-size: 3.4rem;\n    line-height: 1.4;\n    font-weight: 600;\n}\n@media screen and (max-width: 896px) {\n.blog--article h2 {\n        font-size: 2.2rem;\n}\n}\n.blog--article h3 {\n    margin-top: 80px;\n    font-size: 2.4rem;\n    letter-spacing: 0.05em;\n    line-height: 1.4;\n    color: #dadada;\n    position: relative;\n    padding-left: 25px;\n}\n.blog--article h3::before {\n    content: \"\";\n    width: 3px;\n    height: 100%;\n    background-color: #dadada;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n@media screen and (max-width: 896px) {\n.blog--article h3 {\n        font-size: 2rem;\n}\n}\n.blog--article h4 {\n    margin-top: 60px;\n    font-size: 2rem;\n    font-weight: 600;\n    color: #dadada;\n    margin-bottom: -13px;\n}\n@media screen and (max-width: 896px) {\n.blog--article h4 {\n        font-size: 1.8rem;\n}\n}\n.blog--article h5 {\n    margin-top: 60px;\n    font-size: 1.6rem;\n    color: #dadada;\n}\n.blog--article p {\n    margin-top: 30px;\n    font-size: 1.6rem;\n    line-height: 2;\n    letter-spacing: 0.04em;\n    color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--article p {\n        font-size: 1.4rem;\n}\n}\n.blog--article p em {\n    color: #000;\n    font-weight: 600;\n    background-color: #ffed2a;\n    font-style: normal;\n}\n.blog--article p a {\n    font-size: 1.6rem;\n    font-weight: 600;\n    color: #4babdd;\n    color: #4babdd;\n    border-bottom: 1px solid #4babdd;\n    padding-bottom: 4px;\n}\n@media screen and (max-width: 896px) {\n.blog--article p a {\n        font-size: 1.4rem;\n}\n}\n.blog--article p s a {\n    margin-top: 30px;\n    font-size: 1.6rem;\n    padding: 18px 60px;\n    display: inline-block;\n    text-align: center;\n    background-color: #efefef;\n    transition: 0.3s;\n    color: #000;\n    border-radius: 0%;\n    letter-spacing: 0.12em;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog--article p s a:hover {\n        background: #ffed2a;\n}\n}\n.blog--article .wp-block-image {\n    margin-top: 60px;\n    text-align: center;\n}\n.blog--article .wp-block-image figcaption {\n    margin-top: 20px;\n}\n.blog--article h2+.wp-block-image,\n.blog--article h3+.wp-block-image,\n.blog--article h4+.wp-block-image,\n.blog--article h5+.wp-block-image {\n    margin-top: 30px;\n}\n.blog--article ul,\n.blog--article ol {\n    margin-top: 80px;\n    padding: 50px;\n    border: 1px solid #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--article ul,\n    .blog--article ol {\n        padding: 30px 5%;\n}\n}\n.blog--article ul li,\n.blog--article ol li {\n    color: #dadada;\n    font-size: 1.6rem;\n    line-height: 1.7;\n    position: relative;\n    letter-spacing: 0.05em;\n}\n.blog--article ul li:not(:first-child),\n.blog--article ol li:not(:first-child) {\n    margin-top: 30px;\n}\n@media screen and (max-width: 896px) {\n.blog--article ul li,\n    .blog--article ol li {\n        margin-top: 14px;\n}\n}\n.blog--article ul li {\n    padding-left: 20px;\n}\n.blog--article ul li::before {\n    content: \"\";\n    background-color: #dadada;\n    width: 7px;\n    height: 7px;\n    border-radius: 50%;\n    position: absolute;\n    top: 0.7em;\n    left: 0;\n}\n.blog--article ol li {\n    margin-left: 25px;\n    list-style: auto;\n}\n.blog--article h2+.wp-block-quote,\n.blog--article h3+.wp-block-quote,\n.blog--article h4+.wp-block-quote,\n.blog--article h5+.wp-block-quote {\n    margin-top: 30px;\n}\n.blog--article .wp-block-quote {\n    position: relative;\n    padding: 40px 80px;\n    margin-top: 80px;\n    border: 1px solid #565656;\n    border-left: 4px solid #dadada;\n}\n.blog--article .wp-block-quote::after,\n.blog--article .wp-block-quote::before {\n    content: \"\";\n    position: absolute;\n    width: 25px;\n    height: 25px;\n    opacity: 1;\n}\n.blog--article .wp-block-quote p {\n    margin: 0;\n    font-size: 1.4rem;\n}\n.blog--article .wp-block-quote cite {\n    display: inline-block;\n    margin-top: 16px;\n    color: #dadada;\n    font-size: 1.3rem;\n}\n.blog--footer {\n    margin-top: 100px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer {\n        margin-top: 80px;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .sharearea ul {\n        display: flex;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .sharearea li {\n        width: 50%;\n}\n}\n.blog--footer .sharearea .item {\n    height: 95px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .sharearea .item {\n        height: 70px;\n}\n}\n.blog--footer .sharearea .item .txt {\n    margin-left: 16px;\n    font-size: 1.6rem;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .sharearea .item .txt {\n        font-size: 1.4rem;\n}\n}\n.blog--footer .authorinfo {\n    margin-top: 30px;\n    border: 1px solid #2b2b2b;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorinfo {\n        display: flex;\n        justify-content: center;\n        padding: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorinfo {\n        padding: 50px 5%;\n}\n}\n.blog--footer .authorinfo .icon {\n    width: 140px;\n    margin-right: 20px;\n}\n.blog--footer .authorinfo .textarea {\n    flex: 1;\n    margin-left: 20px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorinfo .textarea {\n        margin-top: 20px;\n}\n}\n.blog--footer .authorinfo .textarea .name {\n    font-size: 1.8rem;\n    font-weight: 700;\n    letter-spacing: 0.04em;\n    line-height: 1.5;\n    color: #dadada;\n}\n.blog--footer .authorinfo .textarea p {\n    margin-top: 18px;\n    font-size: 1.4rem;\n    line-height: 1.714;\n    color: #dadada;\n}\n.blog--footer .authorinfo .textarea .tw {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    border: 1px solid #2b2b2b;\n    padding: 15px;\n    margin-top: 30px;\n    width: 210px;\n    transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorinfo .textarea .tw:hover {\n        background: #dadada;\n}\n.blog--footer .authorinfo .textarea .tw:hover .icon {\n        filter: invert(0);\n}\n.blog--footer .authorinfo .textarea .tw:hover .txt {\n        color: #000;\n}\n}\n.blog--footer .authorinfo .textarea .tw .icon {\n    transition: 0.4s;\n    margin-right: 15px;\n    width: 20px;\n    filter: invert(1);\n}\n.blog--footer .authorinfo .textarea .tw .txt {\n    transition: 0.4s;\n    font-size: 1.4rem;\n    color: #dadada;\n    font-weight: 600;\n}\n.blog--footer .authorarticle {\n    margin-top: 30px;\n    border: 1px solid #2b2b2b;\n    position: relative;\n    padding: 62px 40px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle {\n        padding: 50px 5%;\n}\n}\n.blog--footer .authorarticle h4 {\n    font-size: 2rem;\n    letter-spacing: 0.04em;\n    margin-bottom: 40px;\n    color: #dadada;\n}\n.blog--footer .authorarticle--item {\n    padding-bottom: 20px;\n    margin-bottom: 20px;\n    border-bottom: 1px solid #2b2b2b;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item {\n        display: flex;\n        align-items: center;\n}\n.blog--footer .authorarticle--item:last-child {\n        border: none;\n        padding: 0;\n        margin: 0;\n}\n.blog--footer .authorarticle--item:hover .hvrunder {\n        background-position: left bottom;\n        background-size: 100% 1px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle--item {\n        display: block;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .thumb {\n        width: 43.75%;\n}\n.blog--footer .authorarticle--item .thumb .more_txt {\n        top: auto;\n        right: auto;\n        padding-bottom: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .textarea {\n        flex: 1;\n        margin-left: 30px;\n}\n}\n.blog--footer .authorarticle--item .textarea h5 {\n    font-size: 1.6rem;\n    font-weight: 700;\n    line-height: 1.625;\n    color: #000;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .textarea h5 {\n        margin: 14px 0 20px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle--item .textarea h5 {\n        margin: 0 0 16px;\n}\n}\n.blog--footer .authorarticle--item .textarea .cat {\n    padding: 2px 10px;\n    font-size: 1.2rem;\n}\n.blog--footer .authorarticle--item .textarea .cat.pickup {\n    display: none;\n}\n.blog--footer .authorarticle--item .writing {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-top: 20px;\n}\n.blog--footer .authorarticle--item .personinfo {\n    display: flex;\n    align-items: center;\n}\n.blog--footer .authorarticle--item .personinfo .icon {\n    width: 40px;\n    margin-right: 10px;\n    border-radius: 50%;\n}\n.blog--footer .authorarticle--item .personinfo .name {\n    font-size: 1.3rem;\n    letter-spacing: 0.04em;\n    font-weight: bold;\n}\n.blog--footer .authorarticle .more_txt {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    position: absolute;\n    top: 63px;\n    right: 40px;\n    padding-bottom: 5px;\n}\n.blog--footer .authorarticle .more_txt::after,\n.blog--footer .authorarticle .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.blog--footer .authorarticle .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.blog--footer .authorarticle .more_txt::before {\n    width: 10px;\n}\n.blog--footer .authorarticle .more_txt .underline {\n    position: relative;\n}\n.blog--footer .authorarticle .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle .more_txt:hover::after,\n    .blog--footer .authorarticle .more_txt:hover::before {\n        right: -5%;\n}\n.blog--footer .authorarticle .more_txt:hover .underline::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle .more_txt {\n        position: relative;\n        top: auto;\n        right: auto;\n        margin-top: 0;\n        display: inline-block;\n}\n.blog {\n        padding: 60px 5%;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n/*blog-brns*/\n.blog-subcontents__text {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    padding: 0px 10px;\n    text-align: center;\n    margin: auto;\n}\n.blog__btns {\n    margin-bottom: 60px;\n    position: relative;\n    display: flex;\n}\n.blog__btns__list {\n    display: inline-block;\n    margin-right: 60px;\n}\n.blog__btns__list_hr {\n    position: absolute;\n    width: 0.7px;\n    height: 50px;\n    background-color: var(--textcolor);\n    left: 156px;\n    bottom: 0;\n}\n.blog__btns__list__label {\n    margin-bottom: 3px;\n    font-weight: bold;\n    font-size: 24px;\n    line-height: 36px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.blog__btns__list_select {\n    display: inline-block;\n    width: 124px;\n    height: 24px;\n    background: #ffffff;\n    border: 0.5px solid #727171;\n    box-sizing: border-box;\n    border-radius: 2px;\n    font-weight: 500;\n    font-size: 13px;\n    line-height: 20px;\n}\n.select-container {\n    overflow: hidden;\n    position: relative;\n}\n.select-container::before {\n    position: absolute;\n    top: 50%;\n    right: 8px;\n    transform: translateY(-50%);\n    content: \"▼\";\n    font-size: 6px;\n    color: var(--textcolor);\n}\n\n/*blog-contents*/\n.blog {\n    padding: 60px 10% 120px;\n}\n.blog-contents {\n    display: flex;\n    margin-bottom: 40px;\n    flex-wrap: wrap;\n}\n.blog-contents__list {\n    width: calc((100% - 65px * 2) / 3);\n    margin-right: 65px;\n    margin-bottom: 60px;\n}\n.blog-contents .blog-contents__list:nth-child(3n) {\n    margin-right: 0;\n}\n.blog--content--sidearea .searcharea .submit {\n    cursor: pointer;\n    background: url(\"/assets/img/icons/search-img.png\") center no-repeat;\n    background-size: 100%;\n    width: 15px;\n    height: 15px;\n}\n@media screen and (max-width: 900px) and (min-width: 500px) {\n.blog-contents__list__thumbnail {\n        height: 240px;\n}\n}\n@media screen and (max-width: 500px) and (min-width: 320px) {\n.blog-contents__list__thumbnail {\n        height: 180px;\n}\n}\n@media (max-width: 767px) {\n.blog-subcontents__text {\n        width: 100%;\n}\n.blog {\n        margin-bottom: 60px;\n}\n.blog-contents {\n        margin-bottom: 20px;\n        justify-content: space-between;\n}\n.blog-contents__list {\n        width: calc((100% - 35px) / 2);\n        margin-right: 0;\n        margin-bottom: 30px;\n}\n.blog-contents__list__tags {\n        width: 180px;\n        top: 71px;\n        left: -70px;\n}\n}\n@media (max-width: 500px) {\n.blog-contents {\n        display: block;\n        margin-bottom: 50px;\n}\n.blog-contents__list {\n        width: 100%;\n        margin-bottom: 30px;\n}\n}\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(1) .hoverScale,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(2) .hoverScale,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(3) .hoverScale,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(4) .hoverScale {\n    opacity: 1;\n    transform: translateY(0%);\n    transition: 0.8s;\n}\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(1) .hoverScale h3,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(2) .hoverScale h3,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(3) .hoverScale h3,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(4) .hoverScale h3 {\n    opacity: 1;\n    transform: translateY(0%);\n    transition: 1s;\n}\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(1) .writing,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(2) .writing,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(3) .writing,\n.blog.loaded .blog--content--mainarea .blog--content--item:nth-of-type(4) .writing {\n    opacity: 1;\n    transform: translateY(0%);\n    transition: 1.4s;\n}\n.blog.loaded .blog--content--sidearea .fade_y {\n    opacity: 1;\n    transform: translateY(0);\n    transition: 0.8s;\n}\n.blog.loaded .blog--header .blogtitle {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.blog.loaded .blog--header .bloginfo {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.blog.loaded .blog--header .personinfo {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.blog.loaded .blog--article .photo {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.blog.loaded .recruit_site_area {\n    opacity: 1;\n}\n.blog .success_txt {\n    position: fixed;\n    font-size: 1.2rem;\n    width: 240px;\n    font-weight: 500;\n    background-color: #dadada;\n    color: #4c4c4c;\n    top: 15px;\n    left: 50%;\n    transform: translate(-50%, -100px);\n    text-align: center;\n    transition: 0.4s;\n    z-index: 100004;\n    padding: 15px 0;\n}\n.blog .success_txt.on {\n    transform: translate(-50%, 0);\n}\n.blog .fix_share {\n    transition: 0.4s;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    width: 100vw;\n    background: #000;\n    border-top: solid #8d8d8d 1px;\n    padding: 18px 0;\n    z-index: 100;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share {\n        padding: 15px 0;\n}\n}\n.blog .fix_share:not(.visibility) {\n    opacity: 0;\n    transform: translateY(100px);\n}\n.blog .fix_share.visibility {\n    opacity: 1;\n    transform: cubic-bezier(0.1, 0.2, 0.3, 1);\n}\n.blog .fix_share .fix_inner {\n    width: 80%;\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner {\n        width: 90%;\n}\n}\n.blog .fix_share .fix_inner .share_list {\n    display: flex;\n    align-items: center;\n    justify-content: flex-start;\n}\n.blog .fix_share .fix_inner .share_list li {\n    transition: 0.3s;\n    width: 22px;\n    margin-right: 22px;\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner .share_list li {\n        margin-right: 18px;\n}\n}\n.blog .fix_share .fix_inner .share_list li:nth-child(4) {\n    width: 18px;\n}\n.blog .fix_share .fix_inner .share_list li:nth-child(4) button {\n    cursor: pointer;\n}\n@media screen and (min-width: 897px) {\n.blog .fix_share .fix_inner .share_list li:hover {\n        transform: scale(1.15);\n}\n}\n.blog .fix_share .fix_inner .good__click {\n    margin-right: calc(280px + 7.14%);\n}\n@media screen and (max-width: 896px) {\n.blog .fix_share .fix_inner .good__click {\n        margin-right: 0;\n}\n}\n.blog .recruit_site_area {\n    position: fixed;\n    left: 0;\n    right: 0;\n    bottom: -120px;\n    z-index: 10000;\n    width: 80%;\n    margin: 0 auto;\n    display: flex;\n    transition: 0.4s;\n    opacity: 0;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area {\n        width: 90%;\n        display: block;\n}\n}\n.blog .recruit_site_area.show {\n    bottom: 30px;\n}\n.blog .recruit_site_area .mainbnr_area {\n    flex: 1;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area .mainbnr_area {\n        flex: none;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn {\n    width: 65%;\n    max-width: 480px;\n    margin: 0 auto;\n    position: relative;\n}\n@media screen and (max-width: 896px) {\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn {\n        width: 100%;\n        max-width: none;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn a {\n    display: block;\n    width: 100%;\n    transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn a:hover {\n        opacity: 0.7;\n}\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn .bnr_btn {\n    cursor: pointer;\n}\n.blog .recruit_site_area .mainbnr_area .recruit_site_btn .bnr_btn.close_bnr {\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    width: 28px;\n}\n.blog .recruit_site_area .blank {\n    width: 280px;\n    margin-left: 7.14%;\n}\n.blog .wpulike {\n    padding: 0;\n}\n.fade_y.on {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.fade_y {\n    transform: translateY(10%);\n    opacity: 0;\n    transition: 0.5s ease;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.blog .wp_ulike_general_class {\n    margin-right: 4%;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog .wp_ulike_general_class:hover .wp_ulike_btn {\n        transform: scale(0.8);\n}\n.blog .wp_ulike_general_class:hover .wp_ulike_btn.wp_ulike_btn_is_active {\n        transform: scale(1);\n}\n}\n.blog .wp_ulike_general_class.wp_ulike_is_liked .count-box {\n    color: #f5564c;\n}\n.blog .wp_ulike_counter_up {\n    font-family: \"DIN\";\n}\n.blog .wpulike-notification {\n    display: none;\n}\n.blog .wpulike-robeen .count-box {\n    padding: 5px 0 0 0;\n    font-size: 1.8rem;\n    color: #929292;\n}\n@media screen and (max-width: 896px) {\n.blog .wpulike-robeen .count-box {\n        font-size: 1.4rem;\n}\n}\n.blog .wpulike-robeen .wp_ulike_btn {\n    overflow: inherit;\n    width: 30px;\n    height: 30px;\n    transition: 0.4s;\n}\n.blog .wpulike-robeen .wp_ulike_btn img {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 2px;\n    transform: scale(1.6);\n    opacity: 0;\n}\n.blog .wpulike-robeen .wp_ulike_btn.wp_ulike_btn_is_active::after {\n    filter: grayscale(0);\n}\n.blog .wpulike-robeen .wp_ulike_btn.wp_ulike_btn_is_active img {\n    opacity: 1;\n}\n.blog .personinfo a {\n    display: flex;\n    align-items: center;\n    width: -moz-max-content;\n    width: max-content;\n}\n@media screen and (min-width: 897px) {\n.blog .personinfo a:hover .icon {\n        transform: scale(1.15);\n}\n}\n.blog .personinfo a .icon {\n    width: 40px;\n    margin-right: 10px;\n    border-radius: 50%;\n    transition: 0.4s;\n}\n.blog .personinfo a .name {\n    font-size: 1.3rem;\n    letter-spacing: 0.04em;\n    color: #dadada;\n    font-weight: bold;\n}\n.blog .bloginfo {\n    margin-top: 20px;\n}\n.blog .bloginfo .time {\n    font-weight: bold;\n    display: inline-block;\n    margin-right: 10px;\n    font-size: 14px;\n    color: #333;\n    transition: 0.4s;\n}\n.blog .bloginfo .cat {\n    transition: 0.4s;\n    font-weight: bold;\n    display: inline-block;\n    padding: 5px 12px;\n    margin-bottom: 10px;\n    margin-right: 5px;\n    border-radius: 2px;\n    background-color: #ececec;\n    font-size: 10px;\n    letter-spacing: 0;\n    color: #000;\n}\n.blog .bloginfo .cat.pickup {\n    display: none;\n}\n.blog .good {\n    padding-left: 44px;\n    height: 30px;\n    background-size: 30px;\n    font-size: 14px;\n    line-height: 30px;\n    font-family: NotoSansJP-Regular;\n    color: #f36e6e;\n}\n.hoverScale .thumb {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.8);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n    color: #dadada;\n    font-size: 14px;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n    position: relative;\n}\n.blog--content--mainarea .blog--content--item .hoverScale {\n    opacity: 1;\n    transform: translateY(0%);\n    transition: 0.8s;\n}\n.more_txt:before {\n    width: 10px;\n}\n.blog .good__click.btm_good {\n    margin-right: 0;\n    margin-left: auto;\n    width: 85px;\n}\n@media screen and (min-width: 897px) {\n.blog .good__click .wp_ulike_btn:hover {\n        transform: scale(0.9);\n}\n.hoverScale .thumb .hvrtxt .more_txt:hover::after,\n    .hoverScale .thumb .hvrtxt .more_txt:hover::before {\n        right: -5%;\n}\n.hoverScale:hover .thumb::after {\n        opacity: 1;\n}\n.hoverScale:hover .thumb .hvrtxt {\n        transform: translate(-34%, -50%);\n        opacity: 1;\n        transition-delay: 0.3s;\n}\n}\n.blog #toc_container {\n    width: 100% !important;\n    margin-top: 54px;\n    border: 1px solid #dadada;\n    background: none;\n}\n@media screen and (min-width: 897px) {\n.blog #toc_container {\n        padding: 20px 30px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog #toc_container {\n        padding: 20px 5%;\n}\n}\n.blog #toc_container.contracted .toc_title .toc_toggle a::before {\n    transform: rotate(90deg);\n}\n.blog #toc_container .toc_title {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 1.8rem;\n}\n.blog #toc_container .toc_title .toc_toggle {\n    color: #000;\n}\n.blog #toc_container .toc_title .toc_toggle a {\n    text-indent: -9999px;\n    overflow: hidden;\n    position: relative;\n    width: 30px;\n    height: 30px;\n    display: block;\n    color: #000;\n    border-bottom: 1px solid #000;\n}\n.blog #toc_container .toc_title .toc_toggle a::after,\n.blog #toc_container .toc_title .toc_toggle a::before {\n    content: \"\";\n    width: 15px;\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    top: 50%;\n    left: calc(50% - 7.5px);\n    transition: 0.4s;\n}\n.blog #toc_container .toc_list {\n    margin-top: 15px;\n    border: none;\n    list-style: none;\n}\n.blog #toc_container .toc_list li:before {\n    display: none;\n}\n.blog #toc_container .toc_list li a {\n    font-size: 1.4rem;\n    font-weight: 700;\n    text-decoration: none;\n    position: relative;\n    line-height: 1.5;\n}\n@media screen and (min-width: 897px) {\n.blog #toc_container .toc_list li a:hover::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n}\n}\n.blog #toc_container .toc_list li a::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.blog #toc_container .toc_list li ul {\n    border: none;\n}\n.blog #toc_container .toc_list li ul li:before {\n    display: none;\n}\n.blog #toc_container .toc_list li ul li a {\n    font-weight: 500;\n}\n.blog #toc_container li {\n    margin-top: 20px;\n}\n.blog .wp-pagenavi span,\n.blog .wp-pagenavi a {\n    border: 1px solid #bfbfbf7a;\n    color: #333;\n}\n.blog .wp-pagenavi span:hover,\n.blog .wp-pagenavi a:hover {\n    border-color: #12355d;\n    background-color: #12355d;\n    color: #fff;\n}\n.blog .wp-pagenavi span:hover::after,\n.blog .wp-pagenavi a:hover::after {\n    fill: #fff;\n}\n.blog .wp-pagenavi .extend {\n    display: none;\n}\n.blog .wp-pagenavi .nextpostslink,\n.blog .wp-pagenavi .previouspostslink,\n.blog .wp-pagenavi .first,\n.blog .wp-pagenavi .last {\n    overflow: hidden;\n    position: relative;\n}\n.blog .wp-pagenavi .nextpostslink::after,\n.blog .wp-pagenavi .previouspostslink::after,\n.blog .wp-pagenavi .first::after,\n.blog .wp-pagenavi .last::after {\n    content: \"\";\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    transition: 0.4s;\n}\nimg {\n    max-width: 100%;\n    height: auto;\n    /* vertical-align: bottom; */\n}\n.scale-img img {\n    height: 235px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.thumb-img {\n    height: 235px;\n}\n.blog .wp-pagenavi .current {\n    border-color: #12355d;\n    background-color: #12355d;\n    color: #dadada;\n}\n@media screen and (min-width: 897px) {\n.blog--content {\n        padding: 80px 0 0;\n        margin: 100px auto 0;\n        max-width: 1200px;\n        width: 80%;\n}\n.blog--content.single_cont {\n        padding: 80px 0 0;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content {\n        padding: 130px 5% 0;\n        margin: 0;\n        width: 100%;\n        max-width: none;\n}\n}\n.blog--content h2 {\n    margin-bottom: 30px;\n    font-size: 2rem;\n    font-weight: 600;\n    letter-spacing: 0.08em;\n    color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--content h2 {\n        font-size: 1.8rem;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--content--inner {\n        display: flex;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--content--mainarea {\n        flex: 1;\n}\n}\n.blog--content--mainarea .error_txt {\n    font-size: 1.6rem;\n    color: #dadada;\n    margin-top: 60px;\n    line-height: 1.5;\n}\n.blog--content--list {\n    margin-bottom: 40px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--list {\n        display: flex;\n        justify-content: space-between;\n        flex-wrap: wrap;\n}\n}\n.blog--content--item {\n    margin-bottom: 20px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--item {\n        width: 47.5%;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--item {\n        display: block;\n}\n}\n.blog--content--item h3 {\n    font-weight: 700;\n    line-height: 1.56;\n    color: #000;\n}\n@media screen and (min-width: 897px) {\n.blog--content--item h3 {\n        font-size: 18px;\n        letter-spacing: 0.04em;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--item h3 {\n        font-size: 1.6rem;\n        letter-spacing: 0.08em;\n}\n}\n.blog--content--item .writing {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n    padding-top: 5px;\n    margin-top: 10px;\n    border-top: 1px solid #4d4d4d;\n}\n@media screen and (max-width: 896px) {\n.blog--content--item .writing {\n        padding-top: 15px;\n        margin-top: 15px;\n}\n}\n.blog--content--item .writing .person {\n    display: flex;\n    align-items: center;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea {\n        width: 280px;\n        margin-left: 7.14%;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea {\n        margin-top: 100px;\n}\n}\n.blog--content--sidearea .searcharea {\n    background-color: #ececec;\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .searcharea {\n        position: relative;\n}\n}\n.blog--content--sidearea .searcharea .search-text {\n    padding: 0 10px 0 19px;\n    line-height: 50px;\n    background-color: transparent;\n    width: calc(100% - 35px);\n}\n.blog--content--sidearea .sideheading {\n    padding-top: 35px;\n    margin-top: 35px;\n    margin-bottom: 28px;\n    border-top: 1px solid #4d4d4d;\n    font-size: 16px;\n    font-family: NotoSansJP-Bold;\n    color: #333;\n}\n\n/* @media screen and (max-width: 896px) {\n    .blog--content--sidearea .sp_cat {\n        position: fixed;\n        top: 68px;\n        background: #000;\n        display: flex;\n        overflow-x: scroll;\n        width: 100%;\n        padding: 7px 0;\n    }\n} */\n.blog--content--sidearea .categoryitem {\n    display: inline-block;\n    padding: 10px;\n    margin-bottom: 10px;\n    margin-right: 5px;\n    border: 1px solid #4d4d4d;\n    font-size: 13px;\n    font-family: NotoSansJP-Bold;\n    letter-spacing: 0;\n    color: #333;\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .categoryitem {\n        white-space: nowrap;\n}\n.blog--content--sidearea .categoryitem:last-of-type {\n        margin-right: 40px;\n}\n}\n.blog--content--sidearea .categoryitem.current {\n    background-color: #dadada;\n    color: #000;\n    cursor: pointer;\n    /* pointer-events: none; */\n}\n.blog--content--sidearea .categoryitem.pickup {\n    display: none;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .categoryitem:hover {\n        background-color: #dadada;\n        color: #000;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .recommend {\n        display: none;\n}\n}\n.blog--content--sidearea .recommend--item {\n    display: block;\n    margin-bottom: 15px;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .recommend--item:hover .hvrunder {\n        background-position: left bottom;\n        background-size: 100% 1px;\n}\n}\n.blog--content--sidearea .recommend--item.popular {\n    position: relative;\n}\n.blog--content--sidearea .recommend--item.popular::after {\n    content: \"\";\n    width: 40px;\n    height: 50px;\n    position: absolute;\n    top: -1px;\n    right: 5px;\n}\n.blog--content--sidearea .recommend--item .bloginfo {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 11px 0 8px;\n}\n.blog--content--sidearea .recommend--item .bloginfo .time {\n    font-size: 13px;\n    color: #333;\n    font-family: DIN-Bold;\n}\n.blog--content--sidearea .recommend--item h3 {\n    font-family: NotoSansJP-Bold;\n    line-height: 1.42;\n    color: #000;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog--content--sidearea .recommend--item h3 {\n        font-size: 14px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--content--sidearea .recommend--item h3 {\n        font-size: 1.6rem;\n        letter-spacing: 0.08em;\n}\n}\n.blog--content--sidearea .sharearea .item {\n    height: 70px;\n    margin-bottom: 10px;\n}\n.blog--content--sidearea .sharearea .item .txt {\n    margin-left: 16px;\n    font-size: 1.4rem;\n}\n.blog--content--sidearea .bnr_area {\n    margin-top: 30px;\n}\n.blog--header .blogtitle {\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    line-height: 1.4;\n    letter-spacing: 0.04em;\n    position: relative;\n    transition: 0.8s;\n    transform: translateY(5%);\n    opacity: 0;\n    border-bottom: 2px solid #dadada;\n}\n@media screen and (min-width: 897px) {\n.blog--header .blogtitle {\n        font-size: 3.6rem;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--header .blogtitle {\n        font-size: 2.4rem;\n}\n}\n.blog--header .bloginfo {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    margin-bottom: 8px;\n    transition: 1.4s;\n    transform: translateY(5%);\n    opacity: 0;\n}\n.blog--header .bloginfo .left .cat {\n    margin-bottom: 0;\n    font-size: 1.3rem;\n}\n@media screen and (max-width: 896px) {\n.blog--header .bloginfo .left .cat {\n        margin-top: 5px;\n}\n}\n.blog--header .bloginfo .left .cat.pickup {\n    display: none;\n}\n.blog--header .bloginfo .left .cat a {\n    color: #000;\n    display: block;\n}\n.blog--header .bloginfo .left .cat:hover {\n    background: #000;\n}\n.blog--header .bloginfo .left .cat:hover a {\n    color: #dadada;\n}\n.blog--header .personinfo {\n    transition: 1.4s;\n    transform: translateY(5%);\n    opacity: 0;\n}\n.blog--article .photo {\n    margin-top: 40px;\n    transition: 1.6s;\n    transform: translateY(5%);\n    opacity: 0;\n}\n.blog--article code {\n    background: #b4b4b4;\n    font-size: 12px;\n    padding: 25px;\n}\n.blog--article h2 {\n    padding-bottom: 15px;\n    margin-top: 120px;\n    border-bottom: 2px solid #dadada;\n    font-size: 3.4rem;\n    line-height: 1.4;\n    font-weight: 600;\n}\n@media screen and (max-width: 896px) {\n.blog--article h2 {\n        font-size: 2.2rem;\n}\n}\n.blog--article h3 {\n    margin-top: 80px;\n    font-size: 2.4rem;\n    letter-spacing: 0.05em;\n    line-height: 1.4;\n    color: #dadada;\n    position: relative;\n    padding-left: 25px;\n}\n.blog--article h3::before {\n    content: \"\";\n    width: 3px;\n    height: 100%;\n    background-color: #dadada;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n@media screen and (max-width: 896px) {\n.blog--article h3 {\n        font-size: 2rem;\n}\n}\n.blog--article h4 {\n    margin-top: 60px;\n    font-size: 2rem;\n    font-weight: 600;\n    color: #dadada;\n    margin-bottom: -13px;\n}\n@media screen and (max-width: 896px) {\n.blog--article h4 {\n        font-size: 1.8rem;\n}\n}\n.blog--article h5 {\n    margin-top: 60px;\n    font-size: 1.6rem;\n    color: #dadada;\n}\n.blog--article p {\n    margin-top: 30px;\n    font-size: 1.6rem;\n    line-height: 2;\n    letter-spacing: 0.04em;\n    color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--article p {\n        font-size: 1.4rem;\n}\n}\n.blog--article p em {\n    color: #000;\n    font-weight: 600;\n    background-color: #ffed2a;\n    font-style: normal;\n}\n.blog--article p a {\n    font-size: 1.6rem;\n    font-weight: 600;\n    color: #4babdd;\n    color: #4babdd;\n    border-bottom: 1px solid #4babdd;\n    padding-bottom: 4px;\n}\n@media screen and (max-width: 896px) {\n.blog--article p a {\n        font-size: 1.4rem;\n}\n}\n.blog--article p s a {\n    margin-top: 30px;\n    font-size: 1.6rem;\n    padding: 18px 60px;\n    display: inline-block;\n    text-align: center;\n    background-color: #efefef;\n    transition: 0.3s;\n    color: #000;\n    border-radius: 0%;\n    letter-spacing: 0.12em;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.blog--article p s a:hover {\n        background: #ffed2a;\n}\n}\n.blog--article .wp-block-image {\n    margin-top: 60px;\n    text-align: center;\n}\n.blog--article .wp-block-image figcaption {\n    margin-top: 20px;\n}\n.blog--article h2+.wp-block-image,\n.blog--article h3+.wp-block-image,\n.blog--article h4+.wp-block-image,\n.blog--article h5+.wp-block-image {\n    margin-top: 30px;\n}\n.blog--article ul,\n.blog--article ol {\n    margin-top: 80px;\n    padding: 50px;\n    border: 1px solid #dadada;\n}\n@media screen and (max-width: 896px) {\n.blog--article ul,\n    .blog--article ol {\n        padding: 30px 5%;\n}\n}\n.blog--article ul li,\n.blog--article ol li {\n    color: #dadada;\n    font-size: 1.6rem;\n    line-height: 1.7;\n    position: relative;\n    letter-spacing: 0.05em;\n}\n.blog--article ul li:not(:first-child),\n.blog--article ol li:not(:first-child) {\n    margin-top: 30px;\n}\n@media screen and (max-width: 896px) {\n.blog--article ul li,\n    .blog--article ol li {\n        margin-top: 14px;\n}\n}\n.blog--article ul li {\n    padding-left: 20px;\n}\n.blog--article ul li::before {\n    content: \"\";\n    background-color: #dadada;\n    width: 7px;\n    height: 7px;\n    border-radius: 50%;\n    position: absolute;\n    top: 0.7em;\n    left: 0;\n}\n.blog--article ol li {\n    margin-left: 25px;\n    list-style: auto;\n}\n.blog--article h2+.wp-block-quote,\n.blog--article h3+.wp-block-quote,\n.blog--article h4+.wp-block-quote,\n.blog--article h5+.wp-block-quote {\n    margin-top: 30px;\n}\n.blog--article .wp-block-quote {\n    position: relative;\n    padding: 40px 80px;\n    margin-top: 80px;\n    border: 1px solid #565656;\n    border-left: 4px solid #dadada;\n}\n.blog--article .wp-block-quote::after,\n.blog--article .wp-block-quote::before {\n    content: \"\";\n    position: absolute;\n    width: 25px;\n    height: 25px;\n    opacity: 1;\n}\n.blog--article .wp-block-quote p {\n    margin: 0;\n    font-size: 1.4rem;\n}\n.blog--article .wp-block-quote cite {\n    display: inline-block;\n    margin-top: 16px;\n    color: #dadada;\n    font-size: 1.3rem;\n}\n.blog--footer {\n    margin-top: 100px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer {\n        margin-top: 80px;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .sharearea ul {\n        display: flex;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .sharearea li {\n        width: 50%;\n}\n}\n.blog--footer .sharearea .item {\n    height: 95px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .sharearea .item {\n        height: 70px;\n}\n}\n.blog--footer .sharearea .item .txt {\n    margin-left: 16px;\n    font-size: 1.6rem;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .sharearea .item .txt {\n        font-size: 1.4rem;\n}\n}\n.blog--footer .authorinfo {\n    margin-top: 30px;\n    border: 1px solid #2b2b2b;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorinfo {\n        display: flex;\n        justify-content: center;\n        padding: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorinfo {\n        padding: 50px 5%;\n}\n}\n.blog--footer .authorinfo .icon {\n    width: 140px;\n    margin-right: 20px;\n}\n.blog--footer .authorinfo .textarea {\n    flex: 1;\n    margin-left: 20px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorinfo .textarea {\n        margin-top: 20px;\n}\n}\n.blog--footer .authorinfo .textarea .name {\n    font-size: 1.8rem;\n    font-weight: 700;\n    letter-spacing: 0.04em;\n    line-height: 1.5;\n    color: #dadada;\n}\n.blog--footer .authorinfo .textarea p {\n    margin-top: 18px;\n    font-size: 1.4rem;\n    line-height: 1.714;\n    color: #dadada;\n}\n.blog--footer .authorinfo .textarea .tw {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    border: 1px solid #2b2b2b;\n    padding: 15px;\n    margin-top: 30px;\n    width: 210px;\n    transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorinfo .textarea .tw:hover {\n        background: #dadada;\n}\n.blog--footer .authorinfo .textarea .tw:hover .icon {\n        filter: invert(0);\n}\n.blog--footer .authorinfo .textarea .tw:hover .txt {\n        color: #000;\n}\n}\n.blog--footer .authorinfo .textarea .tw .icon {\n    transition: 0.4s;\n    margin-right: 15px;\n    width: 20px;\n    filter: invert(1);\n}\n.blog--footer .authorinfo .textarea .tw .txt {\n    transition: 0.4s;\n    font-size: 1.4rem;\n    color: #dadada;\n    font-weight: 600;\n}\n.blog--footer .authorarticle {\n    margin-top: 30px;\n    border: 1px solid #2b2b2b;\n    position: relative;\n    padding: 62px 40px;\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle {\n        padding: 50px 5%;\n}\n}\n.blog--footer .authorarticle h4 {\n    font-size: 2rem;\n    letter-spacing: 0.04em;\n    margin-bottom: 40px;\n    color: #dadada;\n}\n.blog--footer .authorarticle--item {\n    padding-bottom: 20px;\n    margin-bottom: 20px;\n    border-bottom: 1px solid #2b2b2b;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item {\n        display: flex;\n        align-items: center;\n}\n.blog--footer .authorarticle--item:last-child {\n        border: none;\n        padding: 0;\n        margin: 0;\n}\n.blog--footer .authorarticle--item:hover .hvrunder {\n        background-position: left bottom;\n        background-size: 100% 1px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle--item {\n        display: block;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .thumb {\n        width: 43.75%;\n}\n.blog--footer .authorarticle--item .thumb .more_txt {\n        top: auto;\n        right: auto;\n        padding-bottom: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .textarea {\n        flex: 1;\n        margin-left: 30px;\n}\n}\n.blog--footer .authorarticle--item .textarea h5 {\n    font-size: 1.6rem;\n    font-weight: 700;\n    line-height: 1.625;\n    color: #000;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle--item .textarea h5 {\n        margin: 14px 0 20px;\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle--item .textarea h5 {\n        margin: 0 0 16px;\n}\n}\n.blog--footer .authorarticle--item .textarea .cat {\n    padding: 2px 10px;\n    font-size: 1.2rem;\n}\n.blog--footer .authorarticle--item .textarea .cat.pickup {\n    display: none;\n}\n.blog--footer .authorarticle--item .writing {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-top: 20px;\n}\n.blog--footer .authorarticle--item .personinfo {\n    display: flex;\n    align-items: center;\n}\n.blog--footer .authorarticle--item .personinfo .icon {\n    width: 40px;\n    margin-right: 10px;\n    border-radius: 50%;\n}\n.blog--footer .authorarticle--item .personinfo .name {\n    font-size: 1.3rem;\n    letter-spacing: 0.04em;\n    font-weight: bold;\n}\n.blog--footer .authorarticle .more_txt {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    position: absolute;\n    top: 63px;\n    right: 40px;\n    padding-bottom: 5px;\n}\n.blog--footer .authorarticle .more_txt::after,\n.blog--footer .authorarticle .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.blog--footer .authorarticle .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.blog--footer .authorarticle .more_txt::before {\n    width: 10px;\n}\n.blog--footer .authorarticle .more_txt .underline {\n    position: relative;\n}\n.blog--footer .authorarticle .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.blog--footer .authorarticle .more_txt:hover::after,\n    .blog--footer .authorarticle .more_txt:hover::before {\n        right: -5%;\n}\n.blog--footer .authorarticle .more_txt:hover .underline::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n}\n}\n@media screen and (max-width: 896px) {\n.blog--footer .authorarticle .more_txt {\n        position: relative;\n        top: auto;\n        right: auto;\n        margin-top: 0;\n        display: inline-block;\n}\n.blog {\n        padding: 60px 5%;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24793,6 +24329,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\n.quote-us  .contactbtn {\n    border: 1px solid #fdfdfd;\n    color: #fdfdfd;\n    display: block;\n    font-size: 16px;\n    font-weight: 700;\n    letter-spacing: .1em;\n    padding: 22px 0;\n    text-align: center;\n    transition: .4s;\n    width: 260px;\n}\n.quote-us  .contactbtn:hover {\n    background-color: #fdfdfd;\n    color: #000;\n}\n.quote-us .heading {\n    margin: 0;\n    color: #ffffff;\n    font-size: 46px;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n    line-height: 1.2;\n    padding-bottom: 10px;\n    font-weight: 700;\n}\n.quote-us{\n        background-image: url('/assets/img/contact-us-background-widget-img.png');\n        height: 320px;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        text-align: center;\n}\n.quote-us span {\n    font-size: 22px;\n    color: #ffffff;\n    font-weight: 500;\n    word-spacing: 4px;\n}\n.qoute-button {\n    padding: 40px 0 0px;\n}\n.btn-views{\n    border: 2px solid #fff;\n    border-radius: 5px;\n    color: #fff;\n    cursor: pointer;\n    display: block;\n    font-size: 18px;\n    font-weight: 700;\n    letter-spacing: .1em;\n    margin-left: 8px;\n    margin-top: 50px;\n    opacity: 1;\n    padding: 19px 0;\n    position: relative;\n    text-align: center;\n    transition: .4s;\n    width: 250px;\n    z-index: 999;\n}\n.btn-views:hover {\n    background: #2573b0;\n    border: 2px solid #2573b0;\n    color: #fff;\n    transition: .4s;\n}\n.voiceSlider {\n        height: 100%;\n}\n.voiceSlider .swiper-slide {\n        text-align: center;\n        font-size: 18px;\n        background: #fff;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n        align-items: center;\n}\n.slick-list:focus {\n        outline: none !important;\n}\n.fade_y {\n        transform: translateY(10%);\n        opacity: 0;\n        transition: 0.5s ease;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.fade_y.on {\n        opacity: 1;\n        transform: translateY(0%);\n}\n.fade_y_min {\n        transform: translateY(3%);\n        opacity: 0;\n        transition: 0.5s ease;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.fade_y_min.on {\n        opacity: 1;\n        transform: translateY(0%);\n}\n.hoverScale .thumb {\n        overflow: hidden;\n        position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transition: 0.4s;\n        transform: translate(-34%, -20%);\n        opacity: 0;\n        z-index: 1;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n        color: #dadada;\n        font-size: 14px;\n        font-family: DIN-Bold;\n        letter-spacing: 0.06px;\n        text-transform: uppercase;\n        position: relative;\n        padding-right: 20px;\n        font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n    .hoverScale .thumb .hvrtxt .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #dadada;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n        width: 6px;\n        transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n        width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n        position: relative;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n        content: \"\";\n        background: #dadada;\n        width: 100%;\n        height: 1px;\n        position: absolute;\n        bottom: -4px;\n        left: 0;\n        transform: scale(0, 1);\n        transition: transform 0.3s;\n        transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.hoverScale .thumb .hvrtxt .more_txt:hover::after,\n        .hoverScale .thumb .hvrtxt .more_txt:hover::before {\n            right: -5%;\n}\n.hoverScale .thumb .hvrtxt .more_txt:hover .underline::after {\n            transform-origin: left top;\n            transform: scale(1, 1);\n}\n}\n.hoverScale .thumb::after {\n        content: \"\";\n        background-color: rgba(0, 0, 0, 0.8);\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        top: 0;\n        left: 0;\n        opacity: 0;\n        transition: 0.4s;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.hoverScale .thumb .scaleImg {\n        transition: 0.4s;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.sp {\n        display: none;\n}\n@media screen and (min-width: 897px) {\n.hoverScale:hover .thumb::after {\n            opacity: 1;\n}\n.hoverScale:hover .thumb .hvrtxt {\n            transform: translate(-34%, -50%);\n            opacity: 1;\n            transition-delay: 0.3s;\n}\n.hoverScale:hover .thumb .hvrtxt .more_txt::after,\n        .hoverScale:hover .thumb .hvrtxt .more_txt::before {\n            right: -5px;\n            transition-delay: 0.3s;\n}\n.hoverScale:hover .thumb .hvrtxt .more_txt .underline::after {\n            transform-origin: left top;\n            transform: scale(1, 1);\n            transition-delay: 0.3s;\n}\n.hoverScale:hover .thumb .scaleImg {\n            transform: scale(1.1);\n}\n}\n.hoverScaleIcon {\n        transition: 0.35s;\n        display: block;\n}\n.hoverScaleIcon img {\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.hoverScaleIcon:hover {\n            transform: scale(1.2);\n}\n}\n.slide_area {\n        position: relative;\n}\n.slide_area .slick-arrow {\n        cursor: pointer;\n        position: absolute;\n        z-index: 2;\n        background-color: #868686;\n        transition: background-color 0.45s;\n        color: #fff;\n}\n@media screen and (min-width: 897px) {\n.slide_area .slick-arrow {\n            top: -100px;\n            width: 70px;\n            height: 70px;\n            border-radius: 70px;\n}\n.slide_area .slick-arrow:hover {\n            background-color: #000;\n}\n}\n@media screen and (max-width: 896px) {\n.slide_area .slick-arrow {\n            bottom: -80px;\n            width: 50px;\n            height: 50px;\n            border-radius: 50px;\n}\n}\n.slide_area .slick-prev {\n        right: calc(10% + 85px);\n}\n@media screen and (max-width: 896px) {\n.slide_area .slick-prev {\n            right: calc(5% + 60px);\n}\n}\n.slide_area .slick-prev:before {\n        transform: translate(-50%, -50%) rotate(45deg);\n        margin-top: 3px;\n}\n.slide_area .slick-prev:after {\n        transform: translate(-50%, -50%) rotate(-45deg);\n        margin-top: -3px;\n}\n@media screen and (min-width: 897px) {\n.slide_area .slick-next {\n            right: 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.slide_area .slick-next {\n            right: 5%;\n}\n}\n.slide_area .slick-next:before {\n        transform: translate(-50%, -50%) rotate(-45deg);\n        margin-top: 3px;\n}\n.slide_area .slick-next:after {\n        transform: translate(-50%, -50%) rotate(45deg);\n        margin-top: -3px;\n}\n.slide_area .count {\n        position: absolute;\n        color: #000;\n        font-size: 1.6rem;\n        font-weight: 400;\n}\n.slide_area .count::after {\n        content: \"\";\n        width: 40px;\n        height: 1px;\n        background-color: #000;\n        transform: rotate(-30deg);\n        position: absolute;\n        top: 0;\n        left: -25px;\n}\n@media screen and (max-width: 896px) {\n.slide_area .count::after {\n            top: -2px;\n}\n}\n.company_nav {\n        position: relative;\n        background-color: #fff;\n        border-top: #d1d1d1 2px solid;\n        padding: 120px 10%;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n}\n@media screen and (max-width: 896px) {\n.company_nav {\n            display: block;\n            padding: 70px 7%;\n}\n}\n.company_nav.branding_nav .company_nav_list li a {\n        font-size: 1.4rem;\n        font-weight: 500;\n}\n.company_nav .head_area .entxt {\n        display: block;\n        margin-top: 16px;\n        font-size: 4.2rem;\n        letter-spacing: 0.06em;\n}\n@media screen and (max-width: 896px) {\n.company_nav .head_area .entxt {\n            font-size: 2.2rem;\n            margin-top: 10px;\n}\n}\n.company_nav .head_area .jptxt {\n        font-size: 1.3rem;\n        letter-spacing: 0.04em;\n        color: #cfcfcf;\n}\n@media screen and (max-width: 896px) {\n.company_nav .head_area .jptxt {\n            font-size: 1.2rem;\n}\n}\n@media screen and (max-width: 896px) {\n.company_nav .company_nav_list {\n            margin-top: 40px;\n}\n}\n.company_nav .company_nav_list li:not(:first-child) {\n        margin-top: 25px;\n}\n.company_nav .company_nav_list li a {\n        position: relative;\n        color: #d1d1d1;\n        font-size: 1.6rem;\n        letter-spacing: 0.05em;\n        position: relative;\n        transition: 0.4s;\n}\n.company_nav .company_nav_list li a::after {\n        content: \"\";\n        background: #d1d1d1;\n        width: 100%;\n        height: 1px;\n        position: absolute;\n        bottom: -4px;\n        left: 0;\n        transform: scale(0, 1);\n        transition: transform 0.3s;\n        transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.company_nav .company_nav_list li a:hover::after {\n            transform-origin: left top;\n            transform: scale(1, 1);\n}\n}\n.company_nav .company_nav_list li a.current {\n        pointer-events: none;\n        color: #000;\n}\n.company_nav .company_nav_list li a.current::after {\n        background: #000;\n        transform: scale(1, 1);\n}\n@media screen and (min-width: 897px) {\n.company_nav .company_nav_list li a:hover {\n            color: #000;\n}\n.company_nav .company_nav_list li a:hover::after {\n            background: #000;\n}\n}\n.service--content {\n        background-color: #fff;\n}\n@media screen and (min-width: 897px) {\n.service--content {\n            padding: 120px 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.service--content {\n            padding: 80px 5%;\n}\n}\n@media screen and (min-width: 897px) {\n.service--content {\n            display: flex;\n            justify-content: space-between;\n}\n}\n.service.loaded .service--item {\n        transform: translateY(0);\n        opacity: 1;\n}\n.service--item {\n        color: #000;\n        transform: translateY(5%);\n        transition: 0.6s;\n        opacity: 0;\n}\n@media screen and (min-width: 897px) {\n.service--item {\n            width: 48%;\n}\n}\n@media screen and (max-width: 896px) {\n.service--item {\n            display: block;\n            margin-bottom: 50px;\n}\n}\n@media screen and (min-width: 897px) {\n.service--item a:hover .viewmore::after {\n            transform-origin: right top;\n            transform: scale(0, 1);\n}\n}\n.service--item a .servicename {\n        margin-top: 24px;\n}\n.service--item a .servicename .jp {\n        display: block;\n        margin-bottom: 12px;\n        font-size: 2.2rem;\n        font-weight: 700;\n        color: #000;\n}\n.service--item a .servicename .en {\n        font-size: 1.4rem;\n        color: #c6c6c6;\n}\n.branding.loaded .branding--mv h3 {\n        transform: translateY(0);\n        opacity: 1;\n}\n.branding.loaded .branding--mv p {\n        transform: translateY(0);\n        opacity: 1;\n}\n.branding.loaded .branding--mv .download {\n        transform: translateY(0);\n        opacity: 1;\n}\n.branding--mv {\n        background: url(/assets/img/sdhbanner.png) no-repeat center;\n        background-size: cover;\n        padding: 100px 10%;\n        margin-top: 0px;\n}\n@media screen and (max-width: 896px) {\n.branding--mv {\n            padding: 80px 5%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--mv .text_area {\n            margin-top: 0;\n            padding: 0;\n}\n}\n.branding--mv .text_area h3 {\n        color: #fff;\n        font-size: 40px;\n        line-height: 1.35;\n        letter-spacing: 0.12em;\n        text-align: left;\n        margin-bottom: 45px;\n        font-weight: 600;\n        font-family: NotoSansJP-Bold;\n}\n@media screen and (max-width: 896px) {\n.branding--mv .text_area h3 {\n            font-size: 2.4rem;\n            margin-bottom: 30px;\n}\n}\n.branding--mv .text_area p {\n        font-size: 14px;\n        line-height: 2;\n        letter-spacing: 0.04px;\n        color: #fff;\n        text-align: left;\n        font-family: NotoSansJP-Regular;\n}\n.branding--mv .text_area .download {\n        text-align: center;\n        margin-top: 55px;\n        width: 280px;\n        display: block;\n        font-size: 16px;\n        color: #fff;\n        padding: 22px 0;\n        border: 1px solid #fdfdfd;\n        transition: 0.4s;\n        font-weight: 500;\n        font-family: NotoSansJP-Medium;\n}\n@media screen and (min-width: 897px) {\n.branding--mv .text_area .download:hover {\n            background: #fff;\n            color: #000;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--mv .text_area .download {\n            margin: 30px auto 0;\n            width: 100%;\n            font-size: 1.4rem;\n}\n}\n@media screen and (min-width: 897px) {\n.branding--service {\n            padding: 160px 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--service {\n            padding: 80px 7%;\n}\n}\n.branding--service--inner .head {\n        display: flex;\n        justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.branding--service--inner .head {\n            display: block;\n}\n}\n.branding--service--inner .head .heading {\n        padding-right: 70px;\n        width: 50%;\n}\n.branding--service--inner .head .heading .sub {\n        color: #333333;\n        font-size: 18px;\n        letter-spacing: 0.08px;\n        font-weight: 500;\n        font-family: DIN-Regular;\n}\n.branding--service--inner .head .heading h3 {\n        color: #333333;\n        font-size: 26px;\n        /* margin-top: 23px; */\n        letter-spacing: 0.08px;\n        font-family: NotoSansJP-Bold;\n}\n@media screen and (max-width: 896px) {\n.branding--service--inner .head .heading {\n            line-height: 1.5;\n            width: 100%;\n            padding-right: 0;\n}\n.branding--service--inner .head .heading .sub {\n            color: #333333;\n            font-size: 1.4rem;\n            letter-spacing: 0.08em;\n}\n.branding--service--inner .head .heading h3 {\n            color: #cfcfcf;\n            font-size: 2rem;\n            margin-top: 23px;\n            letter-spacing: 0.08em;\n}\n}\n.branding--service--inner .head .lead {\n        width: 50%;\n        font-size: 14px;\n        font-weight: 500;\n        color: #333;\n        line-height: 2.1;\n        letter-spacing: 0.04px;\n}\n@media screen and (max-width: 896px) {\n.branding--service--inner .head .lead {\n            width: 100%;\n            margin-top: 30px;\n}\n}\n.branding--service--wrap {\n        display: flex;\n        justify-content: space-between;\n        flex-wrap: wrap;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap {\n            display: block;\n}\n}\n.branding--service--wrap--box {\n        margin-top: 100px;\n        width: 48%;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap--box {\n            width: 100%;\n            margin-top: 80px;\n}\n}\n.branding--service--wrap--box:nth-of-type(1) {\n        width: 100%;\n}\n.branding--service--wrap--box:nth-of-type(1) .text_area {\n        display: flex;\n        justify-content: flex-start;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap--box:nth-of-type(1) .text_area {\n            display: block;\n}\n}\n.branding--service--wrap--box:nth-of-type(1) .text_area .heading {\n        margin-bottom: 0;\n        margin-right: 80px;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap--box:nth-of-type(1) .text_area .heading {\n            margin-right: 0;\n}\n}\n.branding--service--wrap--box .text_area {\n        margin-top: 45px;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap--box .text_area {\n            margin-top: 30px;\n}\n}\n.branding--service--wrap--box .text_area .heading {\n        display: flex;\n        align-items: center;\n        justify-content: flex-start;\n        margin-bottom: 25px;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap--box .text_area .heading {\n            display: block;\n}\n}\n.branding--service--wrap--box .text_area .heading h4 {\n        margin-right: 15px;\n        color: #333333;\n        letter-spacing: 0.04px;\n        font-size: 20px;\n        font-family: NotoSansJP-Medium;\n        font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap--box .text_area .heading h4 {\n            margin-right: 0;\n}\n}\n.branding--service--wrap--box .text_area .heading .label {\n        color: #cfcfcf;\n        padding: 7px 11px;\n        font-size: 13px;\n        letter-spacing: 0.04px;\n        background-color: #222;\n        font-family: NotoSansJP-Regular;\n        font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap--box .text_area .heading .label {\n            font-size: 12px;\n            padding: 5px 10px;\n            display: inline-block;\n            margin-top: 15px;\n}\n}\n.branding--service--wrap--box .text_area .lead {\n        color: #333333;\n        font-size: 14px;\n        line-height: 1.8;\n        font-family: NotoSansJP-Regular;\n        font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.branding--service--wrap--box .text_area .lead {\n            margin-top: 25px;\n}\n}\n.branding--service--wrap--box .more_txt {\n        color: #333333;\n        font-size: 16px;\n        letter-spacing: 0.06em;\n        text-transform: uppercase;\n        font-family: DIN-Regular;\n        font-weight: 400;\n        position: relative;\n        padding-right: 20px;\n        margin-top: 30px;\n        display: inline-block;\n}\n.branding--service--wrap--box .more_txt::after,\n    .branding--service--wrap--box .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #333333;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.branding--service--wrap--box .more_txt::after {\n        width: 6px;\n        transform: rotate(45deg) translateY(-3px);\n}\n.branding--service--wrap--box .more_txt::before {\n        width: 10px;\n}\n.branding--service--wrap--box .more_txt .underline {\n        position: relative;\n}\n.branding--service--wrap--box .more_txt .underline::after {\n        content: \"\";\n        background: #333;\n        width: 100%;\n        height: 1px;\n        position: absolute;\n        bottom: -4px;\n        left: 0;\n        transform: scale(0, 1);\n        transition: transform 0.3s;\n        transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.branding--service--wrap--box .more_txt:hover::after,\n        .branding--service--wrap--box .more_txt:hover::before {\n            right: -5%;\n}\n.branding--service--wrap--box .more_txt:hover .underline::after {\n            transform-origin: left top;\n            transform: scale(1, 1);\n}\n}\n.branding--strength {\n        background-color: #f6f6f6;\n}\n@media screen and (min-width: 897px) {\n.branding--strength {\n            padding: 150px 10%;\n}\n}\n.branding--strength .heading .sub {\n        color: #000;\n        font-size: 1.6rem;\n        letter-spacing: 0.08em;\n}\n.branding--strength .heading h3 {\n        color: #000;\n        font-size: 2rem;\n        margin-top: 23px;\n        letter-spacing: 0.08em;\n}\n.branding--strengths {\n        background-color: #f6f6f6;\n}\n@media screen and (min-width: 897px) {\n.branding--strengths {\n            padding: 160px 20% 160px 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--strengths {\n            padding: 80px 5% 120px;\n}\n}\n.branding--strengths .heading .sub {\n        color: #000;\n        font-size: 16px;\n        letter-spacing: 0.08px;\n        font-family: DIN-Regular;\n        font-weight: 400;\n}\n.branding--strengths .heading h3 {\n        color: #000;\n        font-size: 20px;\n        font-family: NotoSansJP-Bold;\n        /* margin-top: 23px; */\n        letter-spacing: 0.08em;\n        font-weight: 700;\n}\n.branding--strengths--content .num{\n    color:#333333;\n}\n@media screen and (min-width: 897px) {\n.branding--strengths--content .item {\n            display: flex;\n            justify-content: space-between;\n            margin-top: 100px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--strengths--content .item {\n            margin-top: 60px;\n}\n}\n@media screen and (min-width: 897px) {\n.branding--strengths--content .num {\n            font-size: 100px;\n            font-family: DIN-Regular;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--strengths--content .num {\n            font-size: 42px;\n            margin-bottom: 10px;\n}\n}\n@media screen and (min-width: 897px) {\n.branding--strengths--content .textarea {\n            width: 83.5%;\n}\n}\n.branding--strengths--content .textarea h4 {\n        margin-bottom: 34px;\n        letter-spacing: 0.12px;\n        line-height: 1.5;\n}\n@media screen and (min-width: 897px) {\n.branding--strengths--content .textarea h4 {\n            font-size: 24px;\n            font-family: NotoSansJP-Bold;\n            font-weight: 700;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--strengths--content .textarea h4 {\n            margin-bottom: 25px;\n            font-size: 21px;\n}\n}\n.branding--strengths--content .textarea p {\n        font-size: 14px;\n        line-height: 2;\n        letter-spacing: 0.04px;\n        font-family: NotoSansJP-Regular;\n        font-weight: 500;\n        color: #868686;\n}\n.branding--result {\n        background-color: #000;\n}\n@media screen and (min-width: 897px) {\n.branding--result {\n            padding: 140px 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--result {\n            padding: 80px 7% 120px;\n}\n}\n.branding--result .heading .sub {\n        color: #cfcfcf;\n        font-size: 1.6rem;\n        letter-spacing: 0.08em;\n}\n.branding--result .heading h3 {\n        color: #cfcfcf;\n        font-size: 2rem;\n        margin-top: 23px;\n        letter-spacing: 0.08em;\n}\n@media screen and (min-width: 897px) {\n.branding--result--list {\n            margin-top: 80px;\n            display: flex;\n            flex-wrap: wrap;\n            justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--result--list {\n            margin-top: 45px;\n}\n}\n.branding--result--item {\n        background-color: #fff;\n        margin-top: 20px;\n        padding: 40px 15px;\n}\n@media screen and (min-width: 897px) {\n.branding--result--item {\n            width: 24%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--result--item {\n            margin-top: 30px;\n            padding: 20px 15px;\n}\n}\n.branding--result--item .icon {\n        position: relative;\n        width: 25px;\n        margin: 0 auto 20px;\n        filter: invert(1);\n}\n.branding--result--item h4 {\n        position: relative;\n        font-size: 1.8rem;\n        font-weight: 500;\n        letter-spacing: 0.06em;\n        text-align: center;\n        color: #000;\n}\n.branding--result--item p {\n        position: relative;\n        margin-top: 25px;\n        font-size: 12px;\n        line-height: 1.85;\n        color: #000;\n}\n@media screen and (max-width: 896px) {\n.branding--result--item p {\n            margin-top: 20px;\n}\n}\n.branding--compare {\n        background-color: #fff;\n}\n@media screen and (min-width: 897px) {\n.branding--compare {\n            padding: 140px 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--compare {\n            padding: 80px 7%;\n}\n}\n.branding--compare .heading .sub {\n        color: #000;\n        font-size: 1.6rem;\n        letter-spacing: 0.08em;\n}\n.branding--compare .heading h3 {\n        color: #000;\n        font-size: 2rem;\n        margin-top: 23px;\n        letter-spacing: 0.08em;\n}\n@media screen and (max-width: 896px) {\n.branding--compare .heading {\n            line-height: 1.5;\n}\n}\n@media screen and (min-width: 897px) {\n.branding--compare .scroll {\n            display: none;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--compare .scroll {\n            display: flex;\n            align-items: center;\n            margin-top: 50px;\n            margin-left: 1em;\n}\n}\n.branding--compare .scroll .bdr {\n        width: 40px;\n        height: 1px;\n        background-color: #fff;\n        overflow: hidden;\n        position: relative;\n}\n.branding--compare .scroll .bdr::before {\n        content: \"\";\n        background-color: #000;\n        width: 0%;\n        height: 3px;\n        position: absolute;\n        top: 0;\n        left: 0;\n        animation: scranim 3s infinite;\n}\n.branding--compare .scroll p {\n        color: #000;\n        font-size: 1.4rem;\n        margin-right: 15px;\n        letter-spacing: 0.04em;\n}\n.branding--compare--table {\n        margin-top: 100px;\n}\n@media screen and (max-width: 896px) {\n.branding--compare--table {\n            overflow-x: scroll;\n            margin-top: 60px;\n}\n}\n.branding--compare--table table {\n        border-collapse: collapse;\n}\n@media screen and (max-width: 896px) {\n.branding--compare--table table {\n            width: 800px;\n}\n}\n.branding--compare--table table tr th,\n    .branding--compare--table table tr td {\n        border: 1px solid #1c1c1c;\n        font-size: 17.6px;\n        letter-spacing: 0.04em;\n        color: #000;\n        padding: 25px 20px;\n        line-height: 1.6;\n        text-align: center;\n        vertical-align: baseline;\n}\n@media screen and (max-width: 896px) {\n.branding--compare--table table tr th,\n        .branding--compare--table table tr td {\n            font-size: 1.2rem;\n            padding: 18px 1em;\n}\n}\n.branding--compare--table table tr th.tg,\n    .branding--compare--table table tr td.tg {\n        background-color: #000;\n        color: #dadada;\n}\n.branding--compare--table table tr th {\n        color: #000;\n        font-weight: 600;\n        background-color: #e2e2e2;\n        vertical-align: middle;\n}\n.branding--compare--table table tr td {\n        font-size: 11px;\n        border: 1px solid #1c1c1c;\n}\n.branding--compare--table table tr td .marks {\n        display: block;\n        font-size: 4rem;\n        font-weight: 600;\n}\n.branding--flow {\n        background-color: #000;\n}\n@media screen and (min-width: 897px) {\n.branding--flow {\n            padding: 140px 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--flow {\n            padding: 80px 7%;\n}\n}\n.branding--flow .heading .sub {\n        color: #cfcfcf;\n        font-size: 1.6rem;\n        letter-spacing: 0.08em;\n}\n.branding--flow .heading h3 {\n        color: #cfcfcf;\n        font-size: 2rem;\n        margin-top: 23px;\n        letter-spacing: 0.08em;\n}\n.branding--flow .flow_box {\n        margin-top: 100px;\n        display: flex;\n}\n@media screen and (max-width: 896px) {\n.branding--flow .flow_box {\n            margin-top: 60px;\n            display: block;\n}\n}\n.branding--flow .flow_box .flow_item {\n        opacity: 0;\n        transition: 0.4s;\n}\n@media screen and (max-width: 896px) {\n.branding--flow .flow_box .flow_item {\n            width: 100%;\n            transform: translateY(-3%);\n}\n}\n.branding--flow .flow_box .flow_item.on {\n        opacity: 1;\n        transform: translate(0);\n}\n@media screen and (min-width: 897px) {\n.branding--flow .flow_box .flow_item {\n            transform: translateX(-3%);\n}\n.branding--flow .flow_box .flow_item.flow02 {\n            transition-delay: 0.2s;\n}\n.branding--flow .flow_box .flow_item.flow03 {\n            transition-delay: 0.4s;\n}\n.branding--flow .flow_box .flow_item.flow04 {\n            transition-delay: 0.6s;\n}\n}\n.branding--voice {\n        background-color: #fff;\n}\n@media screen and (min-width: 897px) {\n.branding--voice {\n            padding: 140px 0;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--voice {\n            padding: 80px 0 50px;\n}\n}\n.branding--voice .heading {\n        margin-left: 10%;\n}\n.branding--voice .heading .sub {\n        color: #000;\n        font-size: 16px;\n        letter-spacing: 0.08em;\n}\n.branding--voice .heading h3 {\n        color: #000;\n        font-size: 20px;\n        margin-top: 23px;\n        letter-spacing: 0.08em;\n}\n.branding--voice--content .slide_area {\n        margin-top: 40px;\n}\n.branding--voice--content .slide_area .swiper-button-prev:after,\n    .branding--voice--content .slide_area .swiper-button-next:after {\n        font-size: 18px;\n}\n@media screen and (max-width: 896px) {\n.branding--voice--content .slide_area {\n            margin-top: 40px;\n            padding: 0 7%;\n}\n.branding--voice--content .slide_area .slick-arrow {\n            top: -80px;\n}\n}\n.branding--voice--content .slide_area .swiper-button-prev {\n        right: calc(10% + 40px);\n        left: auto;\n}\n@media screen and (max-width: 896px) {\n.branding--voice--content .slide_area .swiper-button-prev {\n            right: 60px;\n}\n}\n.branding--voice--content .slide_area .swiper-button-next {\n        right: calc(10% - 45px);\n}\n@media screen and (max-width: 896px) {\n.branding--voice--content .slide_area .swiper-button-next {\n            right: 0;\n}\n}\n.branding--voice--content .slide_area h3 {\n        font-size: 1.6rem;\n        color: #000;\n        letter-spacing: 0.05em;\n        margin-bottom: 80px;\n}\n@media screen and (max-width: 896px) {\n.branding--voice--content .slide_area h3 {\n            margin-bottom: 45px;\n}\n}\n.branding--voice--content .slide_area .voice_slide {\n        position: relative;\n}\n.branding--voice--content .slide_area .voice_slide .slide_item {\n        margin-right: 70px;\n}\n@media screen and (max-width: 896px) {\n.branding--voice--content .slide_area .voice_slide .slide_item {\n            margin: 0;\n}\n}\n.branding--voice--content .slide_area .slide_item .img_box {\n        margin-bottom: 30px;\n}\n.branding--voice--content .slide_area .slide_item .text_area h4 {\n        letter-spacing: 0.1em;\n        font-size: 20px;\n        text-align: left;\n        margin-bottom: 20px;\n        line-height: 1.5;\n        font-weight: 600;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo {\n        margin-top: 30px;\n        margin-right: 0;\n        margin-left: auto;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo.logo01 {\n        width: 68px;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo.logo02 {\n        width: 110px;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo.logo03 {\n        width: 140px;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo.logo04 {\n        width: 100px;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo.logo05 {\n        width: 120px;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo.logo06 {\n        width: 120px;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo.logo07 {\n        width: 80px;\n}\n.branding--voice--content .slide_area .slide_item .text_area .logo.logo08 {\n        width: 170px;\n}\n.branding--voice--content .slide_area .slide_item .text_area p {\n        font-size: 14px;\n        line-height: 2;\n        text-align: left;\n        letter-spacing: 0.04em;\n        color: #000;\n}\n.branding--voice--content .slide_area .slide_item .text_area .who {\n        color: #868686;\n        text-align: right;\n        line-height: 1.8;\n        margin-top: 15px;\n}\n.branding--contact {\n        background-image: url(/assets/img/bottom-banner-background-image.png);\n        background-size: cover;\n        background-repeat: no-repeat;\n        background-position: 0 0;\n}\n@media screen and (min-width: 897px) {\n.branding--contact {\n            padding: 180px 0;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--contact {\n            padding: 100px 5%;\n}\n}\n.branding--contact h3 {\n        letter-spacing: 0.1em;\n        line-height: 1.85;\n        color: #dadada;\n        font-weight: 600;\n}\n@media screen and (min-width: 897px) {\n.branding--contact h3 {\n            text-align: center;\n            font-size: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--contact h3 {\n            font-size: 20px;\n}\n}\n.branding--contact p {\n        font-size: 1.4rem;\n        line-height: 2;\n        letter-spacing: 0.04em;\n        color: #dadada;\n}\n@media screen and (min-width: 897px) {\n.branding--contact p {\n            text-align: center;\n            margin-top: 42px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--contact p {\n            margin-top: 32px;\n}\n}\n.branding--contact .contactbtn {\n        display: block;\n        width: 260px;\n        padding: 22px 0;\n        margin: 50px auto 0;\n        border: 1px solid #fdfdfd;\n        font-size: 16px;\n        font-weight: 700;\n        letter-spacing: 0.1em;\n        color: #fdfdfd;\n        text-align: center;\n        transition: 0.4s;\n}\n@media screen and (min-width: 897px) {\n.branding--contact .contactbtn:hover {\n            background-color: #fdfdfd;\n            color: #000;\n}\n}\n.branding.loaded .branding--intro .textarea .label {\n        transform: translateY(0);\n        opacity: 1;\n}\n.branding.loaded .branding--intro .textarea h3 {\n        transform: translateY(0);\n        opacity: 1;\n}\n.branding.loaded .branding--intro .textarea p {\n        transform: translateY(0);\n        opacity: 1;\n}\n.branding.loaded .branding--intro .photo .base {\n        transform: translateY(0);\n        opacity: 1;\n}\n.branding.loaded .branding--intro .photo .parts.parts01 {\n        transform: translateY(0);\n        opacity: 1;\n        transition-delay: 0.2s;\n}\n.branding.loaded .branding--intro .photo .parts.parts02 {\n        transform: translateY(0);\n        opacity: 1;\n        transition-delay: 0.4s;\n}\n.branding--intro {\n        z-index: 1;\n        padding: 40px 0 180px 10%;\n        position: relative;\n}\n@media screen and (max-width: 896px) {\n.branding--intro {\n            display: block;\n            padding: 30px 0 80px;\n}\n}\n@media screen and (max-width: 896px) {\n}\n.branding--intro.policy .textarea .photo {\n        left: 94%;\n        width: 80%;\n        max-width: 700px;\n}\n@media screen and (max-width: 896px) {\n.branding--intro.policy .textarea .photo {\n            left: auto;\n            bottom: auto;\n            width: 100%;\n}\n}\n.branding--intro.policy .textarea .photo .parts01 {\n        width: 43%;\n        bottom: 4%;\n        left: -10%;\n        z-index: 2;\n}\n@media screen and (max-width: 896px) {\n.branding--intro.policy .textarea .photo .parts01 {\n            width: 45%;\n            bottom: 9%;\n            left: -15%;\n}\n}\n.branding--intro.policy .textarea .photo .parts02 {\n        width: 55%;\n        right: 0;\n        top: -9%;\n        z-index: 2;\n}\n@media screen and (max-width: 896px) {\n.branding--intro.policy .textarea .photo .parts02 {\n            width: 50%;\n            right: -5%;\n            top: -17%;\n}\n}\n.branding--intro.policy .textarea .photo .base {\n        position: relative;\n        z-index: 1;\n}\n.branding--intro.recbranding .textarea .photo {\n        left: 114%;\n        width: 67%;\n        max-width: 700px;\n}\n@media screen and (max-width: 896px) {\n.branding--intro.recbranding .textarea .photo {\n            left: auto;\n            bottom: auto;\n            width: 80%;\n            margin-right: 0;\n            margin-left: auto;\n}\n}\n.branding--intro.recbranding .textarea .photo .parts01 {\n        width: 64%;\n        bottom: -5%;\n        left: -29%;\n        z-index: 2;\n}\n.branding--intro.recbranding .textarea .photo .parts02 {\n        width: 108%;\n        left: -49%;\n        top: -36%;\n}\n.branding--intro.recbranding .textarea .photo .base {\n        position: relative;\n        z-index: 1;\n}\n.branding--intro.outer .textarea .photo {\n        left: 108%;\n        max-width: 680px;\n        width: 72%;\n}\n@media screen and (max-width: 896px) {\n.branding--intro.outer .textarea .photo {\n            left: auto;\n            bottom: auto;\n            width: 80%;\n            margin-right: 0;\n            margin-left: auto;\n}\n}\n.branding--intro.outer .textarea .photo .parts01 {\n        width: 46%;\n        bottom: 0;\n        left: -38%;\n        z-index: 2;\n}\n.branding--intro.outer .textarea .photo .parts02 {\n        width: 70%;\n        left: -54%;\n        top: -13%;\n}\n.branding--intro.outer .textarea .photo .base {\n        position: relative;\n        z-index: 1;\n}\n.branding--intro.inner .textarea .photo {\n        left: 110%;\n        width: 71%;\n        max-width: 530px;\n}\n@media screen and (max-width: 896px) {\n.branding--intro.inner .textarea .photo {\n            left: auto;\n            bottom: auto;\n            width: 80%;\n            margin-right: 0;\n            margin-left: auto;\n}\n}\n.branding--intro.inner .textarea .photo .parts01 {\n        width: 89%;\n        bottom: -23%;\n        left: -39%;\n        z-index: 2;\n}\n@media screen and (max-width: 896px) {\n.branding--intro.inner .textarea .photo .parts01 {\n            width: 82%;\n            bottom: -16%;\n            left: -39%;\n}\n}\n.branding--intro.inner .textarea .photo .parts02 {\n        width: 59%;\n        left: -45%;\n        top: -13%;\n}\n.branding--intro.inner .textarea .photo .base {\n        position: relative;\n        z-index: 1;\n}\n.branding--intro.snsbranding::before {\n        opacity: 0.4;\n}\n.branding--intro.snsbranding .textarea .photo {\n        left: 92%;\n        width: 57%;\n        max-width: 460px;\n        z-index: 1;\n}\n@media screen and (max-width: 896px) {\n.branding--intro.snsbranding .textarea .photo {\n            left: auto;\n            bottom: auto;\n            width: 70%;\n            margin: 60px auto 0;\n}\n}\n.branding--intro.snsbranding .textarea .photo .parts01 {\n        width: 86%;\n        bottom: -1%;\n        left: 3%;\n        z-index: 2;\n}\n.branding--intro.snsbranding .textarea .photo .parts02 {\n        width: 102%;\n        left: -9%;\n        top: 23%;\n        z-index: 2;\n}\n.branding--intro.snsbranding .textarea .photo .base {\n        position: relative;\n        z-index: 1;\n}\n.branding--intro .textarea {\n        width: 60%;\n        color: #dadada;\n        position: relative;\n}\n@media screen and (max-width: 896px) {\n.branding--intro .textarea {\n            width: 100%;\n            padding: 0 5%;\n}\n}\n.branding--intro .textarea h3 {\n        line-height: 1.54;\n        letter-spacing: 0.14em;\n        transform: translateY(10%);\n        transition: 1s;\n        opacity: 0;\n}\n@media screen and (min-width: 897px) {\n.branding--intro .textarea h3 {\n            font-size: 3.2rem;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--intro .textarea h3 {\n            font-size: 2.4rem;\n            letter-spacing: 0.1em;\n}\n}\n.branding--intro .textarea p {\n        margin-top: 50px;\n        transform: translateY(10%);\n        transition: 1.4s;\n        opacity: 0;\n        font-size: 1.4rem;\n        line-height: 2.5;\n        letter-spacing: 0.04em;\n        color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.branding--intro .textarea p {\n            margin-top: 30px;\n}\n}\n.branding--intro .textarea .photo {\n        position: absolute;\n        z-index: -1;\n        bottom: 50%;\n        transform: translateY(50%);\n}\n@media screen and (max-width: 896px) {\n.branding--intro .textarea .photo {\n            position: relative;\n            transform: translateY(0);\n            margin-top: 80px;\n}\n}\n.branding--intro .textarea .photo .base {\n        transform: translateY(2%);\n        transition: 1s;\n        opacity: 0;\n}\n.branding--intro .textarea .photo .parts {\n        position: absolute;\n}\n.branding--intro .textarea .photo .parts.parts01 {\n        transform: translateY(4%);\n        transition: 1.4s;\n        opacity: 0;\n}\n.branding--intro .textarea .photo .parts.parts02 {\n        transform: translateY(4%);\n        transition: 1.8s;\n        opacity: 0;\n}\n.branding--anchor {\n        background-color: #fff;\n}\n@media screen and (min-width: 897px) {\n.branding--anchor {\n            padding: 150px 10% 120px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--anchor {\n            padding: 100px 5% 30px;\n}\n}\n.branding--anchor h3 {\n        font-size: 2rem;\n        letter-spacing: 0.06em;\n}\n.branding--anchor h3.space {\n        margin-top: 180px;\n}\n@media screen and (max-width: 896px) {\n.branding--anchor h3 {\n            font-size: 1.8rem;\n}\n}\n.branding--anchor ul {\n        display: flex;\n        flex-wrap: wrap;\n        justify-content: space-between;\n}\n@media screen and (min-width: 897px) {\n.branding--anchor ul {\n            margin-top: 70px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--anchor ul {\n            margin-top: 45px;\n}\n}\n.branding--anchor ul.x3 li {\n        width: 32%;\n}\n@media screen and (max-width: 896px) {\n.branding--anchor ul.x3 li {\n            width: 100%;\n}\n}\n.branding--anchor ul.x3 li .logo {\n        width: 122px;\n        margin: 20px auto;\n}\n.branding--anchor ul.x4 li {\n        width: 24%;\n        margin-bottom: 50px;\n}\n@media screen and (max-width: 896px) {\n.branding--anchor ul.x4 li {\n            width: 48%;\n            margin-bottom: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--anchor ul li {\n            width: 47.5%;\n            margin-bottom: 30px;\n}\n}\n.branding--anchor p {\n        margin-top: 10px;\n        font-size: 1.4rem;\n        line-height: 1.8;\n        font-weight: 700;\n        letter-spacing: 0.06em;\n        color: #000;\n        text-align: center;\n}\n.branding--anchor p.tl {\n        text-align: left;\n}\n.branding--area {\n        background-color: #000;\n}\n@media screen and (min-width: 897px) {\n.branding--area {\n            padding: 120px 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--area {\n            padding: 80px 5%;\n}\n}\n@media screen and (min-width: 897px) {\n.branding--baselayout {\n            margin-bottom: 120px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--baselayout {\n            margin-bottom: 80px;\n}\n.branding--baselayout:last-of-type {\n            margin-bottom: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.branding--baselayout .textarea {\n            display: flex;\n            justify-content: space-between;\n            margin-top: 60px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--baselayout .textarea {\n            margin-top: 30px;\n}\n}\n.branding--baselayout .eventname {\n        font-size: 1.8rem;\n        letter-spacing: 0.06em;\n        color: #dadada;\n        text-transform: uppercase;\n}\n@media screen and (max-width: 896px) {\n.branding--baselayout .eventname {\n            font-size: 1.4rem;\n            margin-bottom: 20px;\n}\n}\n@media screen and (min-width: 897px) {\n.branding--baselayout .explain {\n            width: 72.5%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--baselayout .explain {\n            margin-top: 10px;\n}\n}\n.branding--baselayout .phrase {\n        font-size: 2.4rem;\n        font-weight: 600;\n        line-height: 1.58;\n        color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.branding--baselayout .phrase {\n            font-size: 2.2rem;\n}\n}\n.branding--baselayout p {\n        font-size: 1.4rem;\n        line-height: 2;\n        letter-spacing: 0.04em;\n        color: #dadada;\n}\n@media screen and (min-width: 897px) {\n.branding--baselayout p {\n            margin-top: 28px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding--baselayout p {\n            margin-top: 18px;\n}\n}\n.branding--baselayout .more_txt {\n        color: #dadada;\n        font-size: 1.4rem;\n        font-family: \"DIN\";\n        letter-spacing: 0.06em;\n        text-transform: uppercase;\n        position: relative;\n        padding-right: 20px;\n        display: inline-block;\n        margin-top: 30px;\n}\n.branding--baselayout .more_txt::after,\n    .branding--baselayout .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #dadada;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.branding--baselayout .more_txt::after {\n        width: 6px;\n        transform: rotate(45deg) translateY(-3px);\n}\n.branding--baselayout .more_txt::before {\n        width: 10px;\n}\n.branding--baselayout .more_txt .underline {\n        position: relative;\n}\n.branding--baselayout .more_txt .underline::after {\n        content: \"\";\n        background: #dadada;\n        width: 100%;\n        height: 1px;\n        position: absolute;\n        bottom: -4px;\n        left: 0;\n        transform: scale(0, 1);\n        transition: transform 0.3s;\n        transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.branding--baselayout .more_txt:hover::after,\n        .branding--baselayout .more_txt:hover::before {\n            right: -5%;\n}\n.branding--baselayout .more_txt:hover .underline::after {\n            transform-origin: left top;\n            transform: scale(1, 1);\n}\n}\n@media screen and (min-width: 897px) {\n.branding .branding_flow {\n            padding: 178px 20% 150px 10%;\n}\n}\n@media screen and (max-width: 896px) {\n.branding .branding_flow {\n            padding: 90px 5%;\n}\n}\n.branding .branding_flow .heading .label {\n        font-size: 1.4rem;\n        font-family: \"DIN\";\n        color: #cfcfcf;\n        letter-spacing: 0.08em;\n        text-transform: uppercase;\n}\n.branding .branding_flow .heading h3 {\n        margin-top: 20px;\n        font-size: 2rem;\n        letter-spacing: 0.08em;\n        color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.branding .branding_flow .heading h3 {\n            line-height: 1.5;\n            font-size: 1.8rem;\n}\n}\n.branding .branding_flow--content {\n        margin-top: 100px;\n}\n@media screen and (max-width: 896px) {\n.branding .branding_flow--content {\n            margin-top: 60px;\n}\n}\n.branding .branding_flow--content .item {\n        margin-bottom: 80px;\n}\n@media screen and (min-width: 897px) {\n.branding .branding_flow--content .item {\n            display: flex;\n}\n}\n.branding .branding_flow--content .num {\n        letter-spacing: 0.06em;\n        color: #dadada;\n}\n@media screen and (min-width: 897px) {\n.branding .branding_flow--content .num {\n            font-size: 10rem;\n}\n}\n@media screen and (max-width: 896px) {\n.branding .branding_flow--content .num {\n            font-size: 4.4rem;\n}\n}\n@media screen and (min-width: 897px) {\n.branding .branding_flow--content .textarea {\n            margin-left: 60px;\n}\n}\n@media screen and (max-width: 896px) {\n.branding .branding_flow--content .textarea {\n            margin-top: 10px;\n}\n}\n.branding .branding_flow--content .textarea h4 {\n        font-size: 2.4rem;\n        line-height: 1.35;\n        letter-spacing: 0.1em;\n        color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.branding .branding_flow--content .textarea h4 {\n            font-size: 2rem;\n            line-height: 1.5;\n}\n}\n.branding .branding_flow--content .textarea p {\n        margin-top: 28px;\n        font-size: 1.4rem;\n        line-height: 2;\n        letter-spacing: 0.04em;\n        color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.branding .branding_flow--content .textarea p {\n            margin-top: 20px;\n}\n}\n.solution-page {\n        padding: 60px 10% 120px;\n}\n.service-section {\n        padding: 60px 10% 120px;\n}\n\n    /*servive*/\n.service {\n        padding-bottom: 160px;\n        padding-top: 0px;\n        /*影の調整 160 - 20*/\n}\n\n\n    /*.service-contents {\n    columns: 2;\n    column-fill: auto;\n    column-gap: 60px;\n}\n\n.service-contents__text, .service-contents__list {\n    margin-bottom: 60px;\n    break-inside: avoid;\n    transform: translateZ(0);\n}*/\n.service-subcontents__text {\n        font-weight: bold;\n        font-size: 16px;\n        line-height: 24px;\n        width: calc((100% - 415px) / 1);\n        text-align: center;\n        margin: auto;\n}\n.service-contents {\n        position: relative;\n        display: flex;\n        justify-content: space-between;\n        flex-wrap: wrap;\n        flex-direction: row-reverse;\n}\n.service-contents__text {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: calc((100% - 60px) / 2);\n}\n.service-contents__list {\n        width: calc((100% - 60px) / 2);\n        margin-bottom: 60px;\n}\n.service-contents .service-contents__list:nth-child(2n+1) {\n        position: relative;\n        top: 132px;\n}\n.service-contents__text {\n        font-weight: bold;\n        font-size: 16px;\n        line-height: 24px;\n}\n.service-contents__list {\n        background: #FFFFFF;\n        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n        border-radius: 15px;\n        min-height: 360px;\n}\n.service-contents__list a {\n        position: relative;\n        display: inline-block;\n        width: 100%;\n        height: 100%;\n}\n.service-contents__list a:hover .service-contents__list__thumbnail {\n        transform: translateY(-6%) scale(1.15);\n}\n.service-contents__list__thumbnail-frame {\n        position: absolute;\n        border-radius: 15px 15px 0 0;\n        top: 0;\n        left: 0;\n        height: 300px;\n        width: 100%;\n        overflow: hidden;\n}\n.service-contents__list__thumbnail {\n        height: 300px;\n        width: 100%;\n        -o-object-fit: cover;\n           object-fit: cover;\n        transition: 0.5s;\n        position: relative;\n        z-index: 1;\n}\n.service-contents__list__subtitle {\n        margin-top: 285px;\n        margin-left: 30px;\n        font-weight: bold;\n        font-size: 14px;\n        line-height: 21px;\n        letter-spacing: 0.05em;\n        position: relative;\n        z-index: 2;\n}\n.service-contents__list__title {\n        margin: 0 30px 10px 30px;\n        font-weight: bold;\n        font-size: 24px;\n        line-height: 36px;\n        letter-spacing: 0.05em;\n        position: relative;\n        z-index: 2;\n}\n.service-contents__list__text {\n        margin: 0 30px;\n        padding-bottom: 20px;\n        font-weight: 500;\n        font-size: 14px;\n        line-height: 21px;\n}\n.viewmore-btn_service {\n        margin-top: 15px;\n}\n.service-contents__list .service-items {\n        position: relative;\n        display: inline-block;\n        width: 100%;\n        height: 100%;\n}\n.service-contents__list .service-items:hover .service-contents__list__thumbnail {\n        transform: translateY(-6%) scale(1.15);\n}\n@media (max-width: 767px) {\n.service {\n            padding-bottom: 60px;\n}\n.service-contents {\n            display: block;\n}\n.service-contents__text {\n            position: relative;\n            width: 100%;\n}\n.service-contents__list {\n            width: 100%;\n            min-height: 270px;\n}\n.service-contents__list a {\n            height: auto;\n}\n.service-contents .service-contents__list:nth-child(2n+1) {\n            top: inherit;\n}\n.service-contents__text,\n        .service-contents__list {\n            margin-bottom: 30px !important;\n}\n.service-contents .service-contents__list:nth-child(5) {\n            margin-bottom: 0 !important;\n}\n.service-contents__list__thumbnail-frame {\n            height: 150px;\n}\n.service-contents__list__thumbnail {\n            height: 120px;\n            -o-object-position: bottom;\n               object-position: bottom;\n}\n.service-contents__list__subtitle {\n            margin-top: 112px;\n            margin-bottom: 0;\n            margin-left: 10px;\n            font-size: 10px;\n            line-height: 15px;\n}\n.service-contents__list__title {\n            margin: 0 30px 10px 10px;\n            font-size: 14px;\n            line-height: 21px;\n}\n.service-contents__list__text {\n            margin: 0 10px 12px 10px;\n            font-size: 13px;\n            line-height: 19px;\n}\n.viewmore-btn_service {\n            margin: 50px auto 0 auto;\n}\n}\n\n    /*product section*/\n.product {\n        padding-bottom: 60px;\n        /*蠖ｱ縺ｮ隱ｿ謨ｴ 160 - 20*/\n}\n.product-contents {\n        -moz-columns: 2;\n             columns: 2;\n        -moz-column-fill: auto;\n             column-fill: auto;\n        -moz-column-gap: 60px;\n             column-gap: 60px;\n}\n.product-contents__text,\n    .product-contents__list {\n        margin-bottom: 60px;\n        -moz-column-break-inside: avoid;\n             break-inside: avoid;\n        transform: translateZ(0);\n}\nul .product-contents__list:nth-child(3) {\n        margin-bottom: 0;\n}\n.product-contents__text {\n        font-weight: bold;\n        font-size: 16px;\n        line-height: 24px;\n}\n.product-contents__list {\n        background: #FFFFFF;\n        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n        border-radius: 15px;\n}\n.product-contents__list__thumbnail {\n        width: 100%;\n        border-radius: 15px 15px 0 0;\n}\n.product-contents__list__sorrytext {\n        /*issue: 繝�じ繧､繝ｳ蟠ｩ繧後ｋ*/\n        position: absolute;\n        width: 100%;\n        top: 80px;\n        text-align: center;\n        color: #FFFFFF;\n        font-weight: bold;\n        font-size: 14px;\n        line-height: 21px;\n        letter-spacing: 0.05em;\n}\n.product-contents__list__sorrytext_last {\n        top: 60px;\n}\n.product-contents__list__subtitle {\n        margin-top: -23px;\n        margin-left: 30px;\n        font-weight: bold;\n        font-size: 14px;\n        line-height: 21px;\n        letter-spacing: 0.05em;\n}\n.product-contents__list__title {\n        margin: 0 30px 10px 30px;\n        font-weight: bold;\n        font-size: 24px;\n        line-height: 36px;\n        letter-spacing: 0.05em;\n}\n.product-contents__list__text {\n        margin: 0 30px;\n        padding-bottom: 20px;\n        font-weight: 500;\n        font-size: 14px;\n        line-height: 21px;\n}\n.viewmore-btn_product {\n        margin-top: -58px;\n}\n@media (max-width: 767px) {\n.solution-page {\n            padding: 60px 5%;\n}\n.profileGallery {\n            grid-gap: 10px;\n}\n.button-fit {\n            width: 100%;\n}\n.product {\n            padding-bottom: 0px;\n            /*蠖ｱ縺ｮ隱ｿ謨ｴ 160 - 20*/\n}\n.product-contents {\n            -moz-columns: 1;\n                 columns: 1;\n}\n.product-contents__text,\n        .product-contents__list {\n            margin-bottom: 30px !important;\n}\n.product-contents .product-contents__list:nth-child(5) {\n            margin-bottom: 0 !important;\n}\n.product-contents__list_last {\n            margin-bottom: 0 !important;\n}\n.product-contents__list__thumbnail {\n            width: 100%;\n}\n.product-contents__list__sorrytext {\n            top: 40px;\n            font-size: 13px;\n            line-height: 19px;\n}\n.product-contents__list__sorrytext_last {\n            top: 30px;\n}\n.product-contents__list__subtitle {\n            margin-top: -8px;\n            margin-bottom: 0;\n            margin-left: 10px;\n            font-size: 10px;\n            line-height: 15px;\n}\n.product-contents__list__title {\n            margin: 0 30px 10px 10px;\n            font-size: 14px;\n            line-height: 21px;\n}\n.product-contents__list__text {\n            margin: 0 10px 12px 10px;\n            font-size: 13px;\n            line-height: 19px;\n}\n.viewmore-btn_product {\n            margin: 50px auto 0 auto;\n}\n.service-subcontents__text {\n            width: 95%;\n}\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.hoverScale .thumb {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: DIN-Bold;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n    position: relative;\n    font-family: DIN-Bold;\n    font-size: 14px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .scaleImg {\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.6);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n}\n.recruit_fix {\n    position: sticky;\n    left: 0;\n    right: 0;\n    bottom: -50%;\n    /* left: 50%; */\n    opacity: 0;\n    /* transform: translateX(-50%); */\n    z-index: 20;\n    padding: 10px 0;\n    width: 80%;\n    transition: 0.4s;\n}\n.recruit_fix.visibility {\n    bottom: 12px;\n    opacity: 1;\n}\n.recruit_fix {\n    margin: auto;\n    z-index: 20;\n    width: 82%;\n}\n.recruit_fix ul {\n    justify-content: space-between;\n}\n.recruit_fix ul li {\n    margin: auto;\n    width: 40%;\n}\n.recruit_fix ul li a {\n    width: 100%;\n    padding: 16px 0;\n    margin-top: 0;\n    font-size: 1.6rem;\n    line-height: 1.7;\n}\n.recruit--leadtxt h3 {\n    font-size: 38px;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr.entryarea li a {\n        padding: 25px 0;\n        margin-top: 20px;\n        font-size: 16px;\n}\n.recruit--contactarea--bnr.entryarea li a:hover {\n        background-color: #fff;\n        color: #000;\n}\n}\n.recruit .recruit_fix ul li a .label {\n    font-size: 12px;\n    font-weight: 500;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n    font-size: 12px;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.05em;\n    text-align: center;\n}\n.recruit--contactarea--bnr.entryarea li a {\n    position: relative;\n    display: block;\n    border: 1px solid #2b2b2b;\n    background-color: #000;\n    letter-spacing: 0.12em;\n    text-align: center;\n    color: #dadada;\n    font-size: 16px;\n    transition: 0.6s ease;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr {\n        display: flex;\n        justify-content: center;\n}\n}\n.recruit_fix ul {\n    justify-content: space-between;\n}\n.recruit-fix {\n    bottom: 12px;\n    opacity: 1;\n}\n.mv_textarea-recruit {\n    /* color: #dadada; */\n    background-color: #000;\n}\n@media screen and (max-width: 896px) {\n.recruit_fix ul {\n        display: flex;\n        padding: 0;\n}\n.recruit_fix ul li a {\n        font-size: 14px;\n        padding: 13px 0;\n}\n.recruit_fix ul li a .label {\n        font-size: 10px;\n}\n.recruit_fix {\n        width: 100%;\n}\n}\n.mv_textarea-recruit .entxt {\n    display: block;\n    font-size: 40px;\n    letter-spacing: 0.1em;\n    text-transform: uppercase;\n    transform: translateY(15%);\n    transition: 0.6s;\n    opacity: 1;\n    color: #fff;\n    font-weight: bold;\n    text-align: left;\n    margin-bottom: 20px;\n}\n@media screen and (max-width: 896px) {\n.mv_textarea-recruit {\n        padding: 30px 5% 0px;\n        font-size: 2.8rem;\n}\n}\n.mv_textarea-recruit .jptxt {\n    transform: translateY(15%);\n    transition: 0.6s;\n    opacity: 1;\n    font-size: 13px;\n    letter-spacing: 0.08em;\n    color: #fff;\n}\n.sp {\n    display: none;\n}\n@media screen and (max-width: 896px) {\n.sp {\n        display: block;\n}\n}\n.recruit--leadtxt {\n    /* padding: 40px 10% 100px; */\n    padding: 130px 10% 170px;\n    color: #dadada;\n    position: relative;\n    z-index: 1;\n    margin-top: 0px;\n    background-color: #000;\n    background: url('/assets/img/all-member.png') no-repeat center;\n    background-blend-mode: overlay;\n    background-color: rgba(0, 0, 0, 0.5);\n}\n\n/* .recruit--leadtxt::after {\n    content: \"\";\n    background: url('/assets/img/all_member.jpg') no-repeat center;\n    background-size: 100%;\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    opacity: 0.3;\n    z-index: -1;\n} */\n@media screen and (max-width: 896px) {\n.recruit--leadtxt::after {\n        background: url('/assets/img/all_member.jpg') no-repeat center;\n        background-size: 300%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt {\n        padding: 30px 5% 60px;\n}\n}\n.recruit--leadtxt h3 {\n    line-height: 1.63;\n    transform: translateY(10%);\n    transition: 0.6s;\n    opacity: 1;\n    color: #dadada;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--leadtxt h3 {\n        font-size: 38px;\n        letter-spacing: 0.2em;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt h3 {\n        font-size: 20px;\n        letter-spacing: 0.12em;\n}\n}\n.recruit--leadtxt p {\n    transform: translateY(10%);\n    transition: 0.9s;\n    opacity: 1;\n    margin-top: 30px;\n    letter-spacing: 0.12em;\n    line-height: 2;\n    font-size: 16px;\n    font-family: NotoSansJP-Regular;\n    font-weight: 400;\n    color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt p {\n        font-size: 14px;\n}\n}\n@media screen and (max-width: 500px) {\n.recruit--contactarea--bnr.entryarea li a {\n        font-size: 10px;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n        font-size: 8px;\n}\n.recruit_fix.visibility {\n        bottom: -10px;\n}\n.recruit_fix ul li {\n        width: 49%;\n        margin: 0px auto 0px 0px;\n}\n.recruit--leadtxt {\n        margin-top: 0px;\n}\n}\n.recruit.loaded .recruit--leadtxt h3 {\n    transform: translateY(0);\n    opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt p {\n    transform: translateY(0);\n    opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt .photo {\n    transform: translateY(0);\n    opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .pararel {\n        bottom: 90px;\n}\n}\n.recruit .mv_textarea-recruit {\n    position: relative;\n    z-index: 2;\n}\n.recruit .recruit_fix {\n    position: fixed;\n    bottom: -50px;\n    left: 50%;\n    opacity: 0;\n    transform: translateX(-50%);\n    z-index: 20;\n    padding: 10px 2%;\n    width: 60%;\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix {\n        left: 0;\n        width: 100%;\n        transform: translateX(0);\n}\n}\n.recruit .recruit_fix.visibility {\n    bottom: 12px;\n    opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix.visibility {\n        bottom: 8px;\n}\n}\n.recruit .recruit_fix ul {\n    justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul {\n        display: flex;\n        padding: 0;\n}\n}\n.recruit .recruit_fix ul li {\n    margin: 0;\n    width: 49%;\n}\n.recruit .recruit_fix ul li a {\n    width: 100%;\n    padding: 16px 0;\n    margin-top: 0;\n    font-size: 1.6rem;\n    line-height: 1.7;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a {\n        font-size: 1.4rem;\n        padding: 13px 0;\n}\n}\n.recruit .recruit_fix ul li a::before,\n.recruit .recruit_fix ul li a::after {\n    content: none;\n}\n.recruit .recruit_fix ul li a .label {\n    font-size: 1.2rem;\n    font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a .label {\n        font-size: 1rem;\n}\n}\n.recruit--person {\n    background-color: #fff;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.recruit_fix.visibility {\n        margin-bottom: 80px;\n}\n.recruit--person {\n        padding: 180px 10% 100px;\n}\n.mv_textarea-recruit {\n        padding: 40px 10% 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person {\n        padding: 40px 5%;\n}\n}\n.recruit--person .heading .sub {\n\n    font-size: 16px;\n    letter-spacing: 0.08em;\n    line-height: 16px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    font-weight: 400;\n}\n.recruit--person .heading h3 {\n    font-size: 20px;\n    margin-top: 23px;\n    letter-spacing: 0.08em;\n    line-height: 20px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    font-weight: 700;\n}\n.recruit--person--list {\n    margin-top: 80px;\n}\n@media screen and (min-width: 897px) {\n.recruit--person--list {\n        display: flex;\n        flex-wrap: wrap;\n        justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--list {\n        margin-top: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item {\n        width: 48.5%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item {\n        margin-top: 40px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item:nth-child(4) {\n        margin-top: 140px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item h4 {\n        margin-top: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 {\n        margin-top: 24px;\n}\n}\n.recruit--person--item h4 .department {\n    display: block;\n    font-size: 16px;\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    margin-bottom: 0px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    line-height: 16px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .department {\n        font-size: 14px;\n}\n}\n.recruit--person--item h4 .phrase {\n    display: block;\n    margin-top: 15px;\n    font-size: 16px;\n    line-height: 24px;\n    letter-spacing: 0.1em;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    background-color: #dadada;\n    padding: 15px 5px;\n    min-height: 105px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .phrase {\n        font-size: 20px;\n}\n}\n.recruit--person--item p {\n    margin-top: 20px;\n    font-size: 14px;\n    line-height: 2;\n    letter-spacing: 0.1em;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n}\n@media screen and (max-width: 425px) {\n.mv_textarea-recruit .jptxt {\n        font-size: 12px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24871,30 +24431,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.top-item .top-title[data-v-5aab4af0
 
 /***/ }),
 
-/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.vTcAG img[data-v-f847ca3e] {\n    height: 52px;\n}\n.vTcAG h3[data-v-f847ca3e] {\n    margin-bottom: 28px;\n    margin-right: 30px;\n}\n.text-field[data-v-f847ca3e] {\n    width: 100%;\n    height: 59px;\n    padding-left: 10px;\n    font-size: 16px;\n    border-radius: 3px;\n    border: solid 1px #d7d7d7;\n    background-color: #ffffff;\n}\n.hIMiPJ span[data-v-f847ca3e] {\n    display: block;\n    margin-bottom: 10px;\n    font-size: 16px;\n    color: #35353B;\n}\n.inputCase[data-v-f847ca3e] {\n    display: flex;\n    margin-bottom: 34px;\n}\n.inputCase>div[data-v-f847ca3e] {\n    margin-right: 44px;\n    min-width: 310px;\n}\n.form-textfield[data-v-f847ca3e] {\n    width: 100%;\n}\n.form-card[data-v-f847ca3e] {\n    padding: 34px 0 65px;\n    min-height: 430px;\n}\n.eXkYNB .container[data-v-f847ca3e] {\n    background: white;\n    max-width: 1280px;\n    margin: 0 auto;\n    padding: 0 15px;\n    padding-bottom: 60px;\n    padding-top: 60px;\n    position: relative;\n}\n.step-form-card[data-v-f847ca3e] {\n    padding: 34px 0 0;\n    margin-bottom: 68px;\n    min-height: 430px;\n    height: 430px;\n    max-height: 430px;\n    width: 664px;\n    max-width: 690px;\n    position: relative;\n    display: flex;\n    flex-direction: column;\n}\n.vTcAG .backgroundFill[data-v-f847ca3e] {\n    background: #f7f7f7;\n    position: fixed;\n    height: 100%;\n    width: 20px;\n    width: calc((100% - 1280px) / 2 + 407px);\n    top: 0;\n    right: 0;\n}\n.eXkYNB[data-v-f847ca3e] {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    background: white;\n    padding-bottom: 70px;\n    min-height: calc(100% - 70px);\n    padding-top: 56px;\n}\n.vTcAG svg[data-v-f847ca3e] {\n    position: fixed;\n    right: calc((100% - 1280px) / 2 + 407px);\n    bottom: 0;\n    height: 100%;\n    width: 10vh;\n}\n.vTcAG[data-v-f847ca3e] {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: -15px;\n}\n.vTcAG .vertical-wrapper[data-v-f847ca3e] {\n    position: relative;\n    z-index: 1;\n    height: 100%;\n    display: flex;\n    align-items: center;\n}\n.vTcAG .wrapper[data-v-f847ca3e] {\n    display: flex;\n    z-index: 1;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: flex-end;\n}\n.vTcAG h3[data-v-f847ca3e],\n.vTcAG p[data-v-f847ca3e],\n.vTcAG span[data-v-f847ca3e] {\n    font-size: 16px;\n    font-weight: bold;\n    text-align: right;\n    color: #b9b9b9;\n}\n.vTcAG h3[data-v-f847ca3e] {\n    margin-bottom: 28px;\n    margin-right: 30px;\n}\n.vTcAG .logo-wrapper[data-v-f847ca3e] {\n    width: 422px;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: flex-end;\n}\n.vTcAG .logo-wrapper>div[data-v-f847ca3e] {\n    margin-right: 30px;\n    margin-bottom: 30px;\n}\n.select-control[data-v-f847ca3e] {\n    padding: 10px;\n    border: solid 1px #d7d7d7;\n    border-radius: 3px;\n    cursor: pointer;\n    min-height: 59px;\n}\n.checkbox-grid[data-v-f847ca3e] {\n    max-width: unset;\n    position: relative;\n    z-index: 5;\n    display: grid;\n    grid-auto-flow: row;\n    grid-template-columns: repeat(auto-fit, 220px);\n    grid-template-rows: repeat(5, auto);\n    margin: 10px 0px;\n}\n.form-textfield[data-v-f847ca3e] {\n    font-size: 16px;\n    border-radius: 3px;\n    border: solid 1px #d7d7d7;\n    background-color: #ffffff;\n    color: #35353B;\n    padding: 10px;\n}\nli[data-v-f847ca3e] {\n\n    position: relative;\n}\nli input[type=radio][data-v-f847ca3e] {\n    position: absolute;\n    visibility: hidden;\n}\nli label[data-v-f847ca3e] {\n    position: relative;\n    font-size: 18px;\n    padding: 0px 25px 0px 35px;\n    z-index: 9;\n    cursor: pointer;\n    -webkit-transition: all 0.25s linear;\n}\nli .check[data-v-f847ca3e] {\n    display: block;\n    position: absolute;\n    border: 3px solid #AAAAAA;\n    border-radius: 100%;\n    height: 21px;\n    width: 22px;\n    top: 2px;\n    left: 0px;\n    z-index: 5;\n    transition: border .25s linear;\n    -webkit-transition: border .25s linear;\n}\nli .check[data-v-f847ca3e]::before {\n    display: block;\nposition: absolute;\ncontent: '';\nborder-radius: 100%;\nheight: 0.7rem;\nwidth: 0.7rem;\ntop: 2px;\nleft: 3px;\nmargin: auto;\ntransition: background 0.25s linear;\n-webkit-transition: background 0.25s linear;\n}\ninput[type=radio]:checked~.check[data-v-f847ca3e] {\n    border: 3px solid rgb(57, 108, 162);\n}\ninput[type=radio]:checked~.check[data-v-f847ca3e]::before {\n    background: rgb(57, 108, 162);\n}\n#heading[data-v-f847ca3e] {\n\n    font-size: 26px;\n    font-weight: bold;\n    color: #282828;\n    text-align: left;\n}\n#msform[data-v-f847ca3e] {\n    position: relative;\n}\n.form-card[data-v-f847ca3e] {\n    text-align: left\n}\n#msform fieldset[data-v-f847ca3e]:not(:first-of-type) {\n    display: none\n}\n#msform .action-button[data-v-f847ca3e] {\n    width: 170px;\n    height: 67px;\n    background: rgb(57, 108, 162);\n    font-weight: bold;\n    color: white;\n    border: 0 none;\n    border-radius: 0px;\n    cursor: pointer;\n    padding: 10px 5px;\n    margin: 10px 0px 10px 5px;\n    float: left;\n    text-align: center;\n}\n#msform .action-button[data-v-f847ca3e]:hover,\n#msform .action-button[data-v-f847ca3e]:focus {\n    background-color: var(--textcolor);\n}\n#msform .action-button-previous[data-v-f847ca3e] {\n    width: 100px;\n    height: 67px;\n    font-size: 20px;\n    font-weight: bold;\n    color: rgb(57, 108, 162);\n    border: 0 none;\n    border-radius: 0px;\n    cursor: pointer;\n    padding: 10px 5px;\n    margin: 10px 5px 10px 0px;\n    float: left;\n    text-align: center;\n}\n.card[data-v-f847ca3e] {\n    z-index: 0;\n    border: none;\n    position: relative\n}\n.fs-title[data-v-f847ca3e] {\n    font-size: 25px;\n    color: #673AB7;\n    margin-bottom: 15px;\n    font-weight: normal;\n    text-align: left\n}\n.purple-text[data-v-f847ca3e] {\n    color: #673AB7;\n    font-weight: normal\n}\n.steps[data-v-f847ca3e] {\n    font-size: 18px;\n    color: #b9b9b9;\n    font-weight: normal;\n}\n.fieldlabels[data-v-f847ca3e] {\n    color: gray;\n    text-align: left\n}\n.fit-image[data-v-f847ca3e] {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover\n}\n.css-checkbox[data-v-f847ca3e] {\n    position: absolute;\n    overflow: hidden;\n    clip: rect(0 0 0 0);\n    height: 1px;\n    width: 1px;\n    margin: -1px;\n    padding: 0;\n    border: 0;\n}\n#inputPreview[data-v-f847ca3e] {\n    display: flex;\n    gap: 20px;\n}\n.css-checkbox+label[data-v-f847ca3e] {\n    position: relative;\n    font-size: 16px;\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    height: 19px;\n    color: #282828;\n}\n.css-checkbox+label[data-v-f847ca3e]::before {\n    content: \" \";\n    display: inline-block;\n    vertical-align: middle;\n    margin-right: 10px;\n    width: 20px;\n    height: 20px;\n    background-color: white;\n    border-width: 1px;\n    border-style: solid;\n    border-color: rgb(57, 108, 162);\n    border-radius: 2px;\n    box-shadow: none;\n}\n.css-checkbox:checked+label[data-v-f847ca3e]::after {\n    content: \" \";\n    background-image: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMDM5NWNhIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+\");\n    background-repeat: no-repeat;\n    background-size: 10px 10px;\n    background-position: center center;\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-left: 0px;\n    left: 0px;\n    top: 0px;\n    text-align: center;\n    background-color: transparent;\n    font-size: 10px;\n    height: 19px;\n    width: 19px;\n}\n@media screen and (max-width: 1149px) and (min-width: 769px) {\n.step-form-card[data-v-f847ca3e] {\n        margin: auto;\n        padding-top: 0px;\n}\n.eXkYNB[data-v-f847ca3e] {\n        padding-top: 20px;\n}\n}\n@media (max-width: 1150px) {\n.vTcAG[data-v-f847ca3e] {\n        display: none;\n}\n}\n@media (max-width: 1300px) {\n.inEYMP .container[data-v-f847ca3e] {\n        padding-left: 32px;\n        padding-right: 32px;\n}\n}\n@media (max-width: 768px) {\n.step-form-card[data-v-f847ca3e] {\n        width: 100%;\n        margin: auto;\n}\n.vTcAG img[data-v-f847ca3e] {\n        height: 35px;\n}\n.inputCase[data-v-f847ca3e] {\n        flex-direction: column;\n}\n.eXkYNB .container[data-v-f847ca3e] {\n        padding-top: 0px;\n        padding-bottom: 0px;\n}\n.vTcAG .vertical-wrapper[data-v-f847ca3e] {\n        background: #f7f7f7;\n        width: calc(100% + 30px);\n        margin-left: -15px;\n        padding-top: 40px;\n        display: flex;\n        justify-content: center;\n}\n.inEYMP .background[data-v-f847ca3e] {\n        flex-grow: 1;\n}\n.vTcAG[data-v-f847ca3e] {\n        position: unset;\n        width: 100%;\n        display: flex;\n        flex-direction: column-reverse;\n        margin-top: 16px;\n}\n.vTcAG svg[data-v-f847ca3e] {\n        position: unset;\n        width: calc(100% + 30px);\n        margin-left: -15px;\n        height: 7vw;\n}\n.eXkYNB[data-v-f847ca3e] {\n        padding-bottom: 0;\n}\n.step-form-card[data-v-f847ca3e] {\n        height: 100%;\n        max-height: 100%;\n}\n.vTcAG .backgroundFill[data-v-f847ca3e] {\n        position: unset;\n}\n.vTcAG .logo-wrapper[data-v-f847ca3e] {\n        width: 100%;\n        justify-content: center;\n        padding-bottom: 16px;\n}\n.vTcAG .wrapper h3[data-v-f847ca3e] {\n        font-size: 14px;\n        margin-right: 0;\n        margin-bottom: 19px;\n        width: 100%;\n        text-align: center;\n}\n.inputCase>div[data-v-f847ca3e] {\n        max-width: 100%;\n}\n#msform .action-button-previous[data-v-f847ca3e],\n    #msform .action-button[data-v-f847ca3e] {\n        width: 100%;\n}\n}\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=style&index=0&id=a9aac016&scoped=true&lang=css&":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=style&index=0&id=a9aac016&scoped=true&lang=css& ***!
@@ -24912,7 +24448,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.image-icon[data-v-a9aac016] {\n    width: 60px;\n    height: 60px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    margin-right: 10px;\n}\n.service_h2[data-v-a9aac016] {\n    font-weight: bold;\n    font-size: 30px;\n    line-height: 72px;\n    letter-spacing: 0.05em;\n    display: flex;\n    align-items: center;\n}\n.c-recruit__bottom-item:hover .c-recruit__bottom-bgimg[data-v-a9aac016] {\n    transform: scale(1.1);\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n}\nf .recruit-title[data-v-a9aac016]::after {\n    background-color: #fff;\n}\n.blog-home[data-v-a9aac016] {\n    margin-bottom: 120px;\n    margin-top: 120px;\n}\n.is-color-white[data-v-a9aac016] {\n    color: #fff;\n}\n.otherservice[data-v-a9aac016] {\n    margin-top: 60px;\n    margin-bottom: 60px;\n}\n.col-content[data-v-a9aac016] {\n    border: 1px solid #2B2B2B;\n}\n.bnr_area[data-v-a9aac016] {\n    z-index: 1;\n    display: flex;\n    position: relative;\n    background: #000;\n}\n.bnr_area a[data-v-a9aac016] {\n    width: 50%;\n    border: 1px solid #2b2b2b;\n}\n.hoverScale .thumb[data-v-a9aac016] {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt[data-v-a9aac016] {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016] {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016]::before {\n    width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016]::after,\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016]::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline[data-v-a9aac016] {\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline[data-v-a9aac016]::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016]::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.bnr-img[data-v-a9aac016] {\n    width: 100%;\n    height: auto;\n}\n@media screen and (max-width: 896px) {\n.bnr_area[data-v-a9aac016] {\n        display: block;\n}\n.bnr_area a[data-v-a9aac016] {\n        width: 100%;\n        display: block;\n}\n}\n.btn-views[data-v-a9aac016] {\n    border: 2px solid rgba(37, 115, 176, 1);\n    border-radius: 5px;\n    color: rgba(37, 115, 176, 1);\n    cursor: pointer;\n    display: block;\n    font-size: 18px;\n    font-weight: 700;\n    letter-spacing: .1em;\n    margin-left: 8px;\n    margin-top: 90px;\n    opacity: 1;\n    padding: 19px 0;\n    position: relative;\n    text-align: center;\n    transition: .4s;\n    width: 250px;\n    /* z-index: 999; */\n    z-index: 99;\n}\n.btn-views[data-v-a9aac016]:hover {\n    color: #fff;\n    border: 1px solid rgba(37, 115, 176, 1);\n    transition: 0.4s;\n    background: rgba(37, 115, 176, 1);\n}\n.btn-view[data-v-a9aac016]:hover {\n    background: var(--textcolor);\n}\n.footer-section[data-v-a9aac016] {\n    background-color: #000;\n}\n.service-content-img[data-v-a9aac016] {\n    height: auto;\n    width: 300px;\n    max-width: 100%;\n}\n.service-p[data-v-a9aac016] {\n    color: #333;\n    flex: none;\n    font-family: 'Noto Sans JP';\n    font-size: 14px;\n    font-style: normal;\n    font-weight: 400;\n    height: auto;\n    letter-spacing: 0.15em;\n    line-height: 1.8;\n    margin: 10px 0px 0px 0px;\n    text-align: left;\n    width: 100%;\n    max-width: 100%;\n    justify-content: flex-start;\n}\n.service-col[data-v-a9aac016] {\n    display: flex;\n    align-content: flex-start;\n    align-items: flex-start;\n    flex: none;\n    flex-direction: column;\n    flex-wrap: nowrap;\n    justify-content: center;\n    padding: 0px;\n    width: 49%;\n    max-width: 49%;\n    padding: 0px 15px;\n}\n.service-row[data-v-a9aac016] {\n    display: flex;\n}\n.new[data-v-a9aac016] {\n    z-index: 0;\n    pointer-events: all;\n    flex-wrap: nowrap;\n    flex: none;\n    display: flex;\n    position: relative;\n    flex-direction: column;\n}\n.new-content[data-v-a9aac016] {\n    color: #333;\n    font-family: 'Noto Sans JP';\n    font-size: 14px;\n    font-weight: 700;\n    letter-spacing: 0.05em;\n    line-height: 1.7;\n    margin: 12px 0px 0px 0px;\n    text-align: left;\n    justify-content: flex-start;\n}\n.new-listing .img_box[data-v-a9aac016] {\n    margin-right: 25px;\n    width: 160px;\n}\n.new-listing[data-v-a9aac016]:nth-child(1) {\n    border-top: 0px solid #bbbbbb;\n}\n.new-link[data-v-a9aac016]:hover {\n    opacity: 0.6;\n}\n.new-link[data-v-a9aac016] {\n    background: rgba(0, 0, 0, 0.0);\n    flex: none;\n    flex-direction: row;\n    height: auto;\n    justify-content: flex-start;\n    margin: 0px 0px 0px 0px;\n    padding: 16px 0px 16px 0px;\n    width: 100%;\n    max-width: 100%;\n}\n.new-date[data-v-a9aac016] {\n    color: #666666;\n    font-size: 14px;\n    font-weight: 400;\n}\n.new-tag[data-v-a9aac016] {\n    align-content: center;\n    align-items: center;\n    background: #FFFFFF;\n    flex-wrap: nowrap;\n    justify-content: center;\n    padding: 4px 8px 4px 8px;\n    font-size: 10px;\n}\n.new-box[data-v-a9aac016] {\n    align-content: center;\n    align-items: center;\n    background: #ffff;\n    flex-wrap: nowrap;\n    flex: none;\n    justify-content: center;\n    padding: 30px 0px 40px 0px;\n}\n.new-listing[data-v-a9aac016] {\n    align-content: flex-start;\n    align-items: flex-start;\n    background: rgba(0, 0, 0, 0.0);\n    justify-content: flex-start;\n    width: 960px;\n    max-width: 100%;\n    border-bottom: 0px solid #bbbbbb;\n    border-left: 0px solid #bbbbbb;\n    border-right: 0px solid #bbbbbb;\n    border-top: 1px solid #bbbbbb;\n}\n.new-item[data-v-a9aac016] {\n    align-content: flex-start;\n    align-items: flex-start;\n    flex: 1;\n    margin: 0px 0px 0px 0px;\n    max-width: 100%;\n}\n.news[data-v-a9aac016] {\n    padding-bottom: 80px;\n}\n.news-contents[data-v-a9aac016] {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 0px;\n}\n.new.icon[data-v-a9aac016],\n.new.text[data-v-a9aac016] {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    align-content: center;\n    justify-content: center;\n    overflow: visible;\n    word-break: break-word;\n    word-wrap: anywhere;\n}\n.new-meta[data-v-a9aac016] {\n    align-content: center;\n    align-items: center;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: center;\n    padding: 0px;\n    display: flex;\n}\n.WorkSlider[data-v-a9aac016] {\n    overflow: inherit;\n}\n.WorkSlider .swiper-button-next[data-v-a9aac016] {\n    top: -50px;\n    width: 35px;\n    height: 35px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: #333333;\n    border-radius: 50px;\n    color: #fff;\n}\n.WorkSlider .swiper-button-next[data-v-a9aac016]:after {\n    font-size: 14px;\n}\n\n/*hero*/\n.top-hero[data-v-a9aac016] {\n    position: relative;\n    margin-top: 60px;\n    height: 500px;\n}\n.top-hero[data-v-a9aac016]::before {\n    content: \"\";\n    position: absolute;\n    top: 49px;\n    display: inline-block;\n    width: calc(100vw - 80px + (100% - 100vw) / 2);\n    height: 450px;\n    background-color: rgba(255, 255, 255, 0.6);\n    border-radius: 30px 0px 0px 30px;\n    z-index: 1;\n}\n.top-hero__title__br-sp[data-v-a9aac016] {\n    display: none;\n}\n.top-hero__video[data-v-a9aac016] {\n    position: absolute;\n    top: 49px;\n    display: inline-block;\n    width: calc(100vw - 80px + (100% - 100vw) / 2);\n    height: 450px;\n    border-radius: 30px 0px 0px 30px;\n    z-index: 0;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.top-hero__title[data-v-a9aac016] {\n    position: relative;\n    margin-left: 0px;\n    font-weight: bold;\n    font-size: 40px;\n    line-height: 96px;\n    letter-spacing: 0.05em;\n    z-index: 2;\n}\n.top-hero__title .horo-text-b[data-v-a9aac016] {\n    transition: all 800ms;\n}\n.top-hero__title span[data-v-a9aac016] {\n    filter: blur(10px);\n    opacity: 0;\n}\n.devlop-content-text[data-v-a9aac016] {\n    max-width: 675px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: #333333;\n}\n.ceo-mbl[data-v-a9aac016] {\n    display: none;\n}\n.ceo-desktop[data-v-a9aac016] {\n    display: block;\n}\n@media (max-width: 1200px) {\n.WorkSlider[data-v-a9aac016] {\n        overflow: hidden;\n}\n}\n@media (max-width: 767px) {\n.ceo-mbl[data-v-a9aac016] {\n        display: block;\n        height: auto;\n        -o-object-fit: contain;\n           object-fit: contain;\n}\n.ceo-desktop[data-v-a9aac016] {\n        display: none;\n}\n.new-box[data-v-a9aac016] {\n        padding: 32px 15px;\n        max-width: 100%;\n}\n.new-date[data-v-a9aac016] {\n        font-size: 10px;\n}\n.new-listing .img_box[data-v-a9aac016] {\n        margin-right: 10px;\n        width: 116px;\n}\n.service-col[data-v-a9aac016] {\n        max-width: 100%;\n        width: 100%;\n        margin: 25px 0px;\n}\n.otherservice .service-row[data-v-a9aac016] {\n        flex-direction: column;\n}\n.WorkSlider[data-v-a9aac016] {\n        overflow: hidden;\n}\n.WorkSlider .swiper-button-next[data-v-a9aac016] {\n        top: -15px;\n}\n.devlop-content-text[data-v-a9aac016] {\n        max-width: inherit;\n        font-weight: 500;\n        font-size: 13px;\n        line-height: 20px;\n}\n.movie-inner iframe[data-v-a9aac016] {\n        height: 200px;\n}\n.about-iden-container[data-v-a9aac016] {\n        padding: 0px;\n}\n.about-iden-container .text[data-v-a9aac016] {\n        padding: 0px !important;\n}\n.txt-rotate[data-v-a9aac016] {\n        font-size: 32px;\n}\n.top-hero[data-v-a9aac016] {\n        margin-top: 53px;\n        height: 330px;\n}\n.top-hero__title__br-sp[data-v-a9aac016] {\n        display: block;\n}\n.top-hero__title__br-pc[data-v-a9aac016] {\n        display: none;\n}\n.top-hero[data-v-a9aac016]::before {\n        width: 97%;\n        top: 0;\n        background-color: rgba(255, 255, 255, 0.6);\n        border-radius: 10px 0 0 10px;\n}\n.top-hero__video[data-v-a9aac016] {\n        width: 97%;\n        top: 0;\n        border-radius: 10px 0 0 10px;\n        height: 340px;\n}\n.top-hero__title[data-v-a9aac016] {\n        padding-top: 12px;\n        margin-left: 0px;\n        font-size: 24px;\n        line-height: 150%;\n        letter-spacing: 0.05em;\n}\n}\n\n/*scroll*/\n.scroll_top[data-v-a9aac016] {\n    margin-top: 8px;\n    margin-bottom: 40px;\n    font-weight: bold;\n    font-size: 12px;\n    line-height: 18px;\n    letter-spacing: 0.15em;\n}\n@media (max-width: 767px) {\n.scroll_top[data-v-a9aac016] {\n        margin-top: 30px;\n        margin-bottom: 30px;\n}\n}\n\n/*about*/\n.about[data-v-a9aac016] {\n    margin-bottom: 102px;\n}\n\n/*work*/\n.work[data-v-a9aac016] {\n    margin-bottom: 120px;\n    position: relative;\n    margin-top: 120px;\n}\n.content-title_work[data-v-a9aac016] {\n    margin-bottom: 20px;\n}\n.content-text_work[data-v-a9aac016] {\n    margin-top: 0px;\n    margin-bottom: 60px;\n}\n.work-contents[data-v-a9aac016] {\n    display: none;\n    justify-content: space-between;\n}\n.work__right[data-v-a9aac016] {\n    top: 190px;\n    right: 0;\n    display: block;\n    width: 30px;\n    height: 30px;\n    margin: 2px 0 20px auto;\n    transform: rotate(180deg);\n}\n.work-contents__pc-frame[data-v-a9aac016] {\n    position: relative;\n    width: 100vw;\n    margin-left: calc((100% - 100vw) / 2);\n    overflow: hidden;\n    margin-top: -20px;\n    padding-top: 20px;\n}\n.work-contents__pc-frame[data-v-a9aac016]::before {\n    height: 430px;\n    display: block;\n    content: \"\";\n}\n.work-contents__pc[data-v-a9aac016] {\n    position: absolute;\n    left: 0;\n    top: 20px;\n    display: flex;\n    width: calc(330px * 8 + 65px * 7);\n    height: 400px;\n}\n.work-contents__pc .work-contents__list[data-v-a9aac016] {\n    position: absolute;\n    width: 350px;\n    min-height: 350px;\n}\n@media (max-width: 767px) {\n.recruit__spacer-sp[data-v-a9aac016] {\n        height: auto;\n}\n.blog[data-v-a9aac016] {\n        margin-top: 0px !important;\n}\n.work[data-v-a9aac016] {\n        margin-bottom: 60px;\n        margin-top: 0px;\n}\n.content-text_work[data-v-a9aac016] {\n        margin-bottom: 30px;\n        font-weight: bold;\n        font-size: 14px;\n        line-height: 22px;\n}\n.work__right[data-v-a9aac016] {\n        display: none;\n}\n.work-contents[data-v-a9aac016] {\n        display: flex;\n        padding-top: 20px;\n        margin-top: -20px;\n        margin-bottom: 0;\n        padding-bottom: 30px;\n        margin-bottom: 50px;\n        overflow-x: scroll;\n        overflow-y: visible;\n        width: 100vw;\n        margin-left: calc(var(--content-padding-side-sp) * -1);\n}\n.work-contents__pc-frame[data-v-a9aac016] {\n        display: none;\n}\n.work-contents__pc[data-v-a9aac016] {\n        display: none;\n}\n.work-contents__list[data-v-a9aac016] {\n        width: 100%;\n}\n.work-contents .work-contents__list[data-v-a9aac016]:last-child {\n        margin-right: 30px;\n}\n}\n\n/*blog*/\n.blog[data-v-a9aac016] {\n    margin-bottom: 120px;\n    margin-top: 120px;\n}\n.content-title_blog[data-v-a9aac016] {\n    margin-bottom: 20px;\n}\n.content-text_blog[data-v-a9aac016] {\n    margin-top: 0px;\n    margin-bottom: 60px;\n}\n.blog-contents[data-v-a9aac016] {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 60px;\n}\n.blog-contents__list[data-v-a9aac016] {\n    width: calc((100% - 65px * 2) / 3);\n}\n@media (max-width: 767px) {\n.blog-home[data-v-a9aac016] {\n        margin: 50px auto 60px;\n}\n.blog[data-v-a9aac016] {\n        margin: 50px auto 60px;\n}\n.content-text_blog[data-v-a9aac016] {\n        margin-bottom: 30px;\n        font-weight: bold;\n        font-size: 14px;\n        line-height: 22px;\n}\n.blog-contents[data-v-a9aac016] {\n        margin-top: -20px;\n        padding-top: 20px;\n        margin-bottom: 0;\n        padding-bottom: 30px;\n        margin-bottom: 50px;\n        overflow-x: scroll;\n        overflow-y: visible;\n        /* width: 100vw; */\n        margin-left: calc(var(--content-padding-side-sp) * -1);\n}\n.blog-contents .blog-contents__list[data-v-a9aac016]:last-child {\n        margin-right: 0px;\n}\n.blog-contents__list__tags[data-v-a9aac016] {\n        top: 78px !important;\n}\n.blog-contents__list[data-v-a9aac016] {\n        width: 100%;\n        /* margin-left: 30px; */\n}\n}\n\n/*recruit*/\n.recruit[data-v-a9aac016] {\n    margin-bottom: 60px;\n}\n\n/* about idenbrid */\n.about_iden[data-v-a9aac016] {\n    display: flex;\n    max-width: 1500px;\n    margin: 0 auto;\n}\n.about_iden .text[data-v-a9aac016] {\n    letter-spacing: 2px;\n    font-weight: 600;\n    font-size: 16px;\n}\n.about-iden-container .text[data-v-a9aac016] {\n    background-color: #fff;\n    max-width: 700px;\n    padding: 0px 20px;\n}\n.about-iden-container[data-v-a9aac016] {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    width: 100%;\n    padding: 0px;\n}\n@media screen and (min-width: 767px) {\n.about-iden-container[data-v-a9aac016] {\n        flex-direction: row;\n}\n}\n\n/* service section */\n.service[data-v-a9aac016] {\n    padding-bottom: 80px;\n    padding-top: 160px;\n    /*影の調整 160 - 20*/\n}\n.text[data-v-a9aac016] {\n    margin-top: 10px;\n}\n.about[data-v-a9aac016] {\n    margin-bottom: 0px;\n}\n#MOVIE .container[data-v-a9aac016] {\n    padding: 0px;\n}\n.service-subcontents__text[data-v-a9aac016] {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    width: calc((100% - 415px) / 1);\n    text-align: center;\n    margin: auto;\n}\n.service-contents[data-v-a9aac016] {\n    position: relative;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n    flex-direction: row-reverse;\n}\n.service-contents__text[data-v-a9aac016] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: calc((100% - 60px) / 2);\n}\n.service-contents__list[data-v-a9aac016] {\n    width: calc((100% - 60px) / 2);\n    margin-bottom: 60px;\n}\n.service-contents .service-contents__list[data-v-a9aac016]:nth-child(2n+1) {\n    position: relative;\n    top: 132px;\n}\n.service-contents__text[data-v-a9aac016] {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.service-contents__list[data-v-a9aac016] {\n    background: #FFFFFF;\n    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n    border-radius: 15px;\n    min-height: 360px;\n}\n.service-contents__list .service-items[data-v-a9aac016] {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n}\n.service-contents__list .service-items:hover .service-contents__list__thumbnail[data-v-a9aac016] {\n    transform: translateY(-6%) scale(1.15);\n}\n.service-contents__list__thumbnail-frame[data-v-a9aac016] {\n    position: absolute;\n    border-radius: 15px 15px 0 0;\n    top: 0;\n    left: 0;\n    height: 221px;\n    width: 100%;\n    overflow: hidden;\n}\n.service-contents__list__thumbnail[data-v-a9aac016] {\n    height: 221px;\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    transition: 0.5s;\n    position: relative;\n    z-index: 1;\n}\n.service-contents__list__subtitle[data-v-a9aac016] {\n    margin-top: 189px;\n    margin-left: 30px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    position: relative;\n    z-index: 2;\n}\n.service-contents__list__title[data-v-a9aac016] {\n    margin: 0 30px 10px 30px;\n    font-weight: bold;\n    font-size: 24px;\n    line-height: 36px;\n    letter-spacing: 0.05em;\n    position: relative;\n    z-index: 2;\n}\n.service-contents__list__text[data-v-a9aac016] {\n    margin: 0 30px;\n    padding-bottom: 20px;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n}\n.viewmore-btn_service[data-v-a9aac016] {\n    margin-top: 15px;\n}\n.idenbrid-background[data-v-a9aac016] {\n    border-radius: 15px;\n}\n@media (max-width: 767px) {\n.idenbrid-background[data-v-a9aac016] {\n        width: 100%;\n}\n.service[data-v-a9aac016] {\n        padding-bottom: 60px;\n        padding-top: 20px;\n}\n.service-contents[data-v-a9aac016] {\n        display: block;\n}\n.service-contents__text[data-v-a9aac016] {\n        position: relative;\n        width: 100%;\n}\n.service-contents__list[data-v-a9aac016] {\n        width: 100%;\n        min-height: 270px;\n}\n.service-contents__list .service-item[data-v-a9aac016] {\n        height: auto;\n}\n.service-contents .service-contents__list[data-v-a9aac016]:nth-child(2n+1) {\n        top: inherit;\n}\n.service-contents__text[data-v-a9aac016],\n    .service-contents__list[data-v-a9aac016] {\n        margin-bottom: 30px !important;\n}\n.service-contents .service-contents__list[data-v-a9aac016]:nth-child(5) {\n        margin-bottom: 0 !important;\n}\n.service-contents__list__thumbnail-frame[data-v-a9aac016] {\n        height: 120px;\n}\n.service-contents__list__thumbnail[data-v-a9aac016] {\n        height: 120px;\n        -o-object-position: bottom;\n           object-position: bottom;\n}\n.service-contents__list__subtitle[data-v-a9aac016] {\n        margin-top: 112px;\n        margin-bottom: 0;\n        margin-left: 10px;\n        font-size: 10px;\n        line-height: 15px;\n}\n.service-contents__list__title[data-v-a9aac016] {\n        margin: 0 30px 10px 10px;\n        font-size: 14px;\n        line-height: 21px;\n}\n.service-contents__list__text[data-v-a9aac016] {\n        margin: 0 10px 12px 10px;\n        font-size: 13px;\n        line-height: 19px;\n}\n.viewmore-btn_service[data-v-a9aac016] {\n        margin: 50px auto 0 auto;\n}\n}\n\n/* work section */\n.work-contents__list[data-v-a9aac016] {\n    background: #FFFFFF;\n    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);\n    border-radius: 10px;\n    transition: 1s;\n    transition-property: transform;\n    min-height: 320px;\n}\n.work-contents__list[data-v-a9aac016]:hover {\n    transform: scale(1.05);\n}\n.work-contents__list__thumbnail[data-v-a9aac016] {\n    width: 100%;\n}\n.work-contents__list__company[data-v-a9aac016] {\n    margin: 20px auto 5px 20px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n.work-contents__list__title[data-v-a9aac016] {\n    margin-bottom: 5px;\n    margin-left: 20px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.work-contents__list__tags[data-v-a9aac016] {\n    margin-left: 20px;\n    padding-bottom: 1px;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n    color: #727171;\n}\n@media (max-width: 767px) {\n.new-listing .img_box[data-v-a9aac016] {\n        width: 115px;\n}\n.work-contents__list__thumbnail[data-v-a9aac016] {\n        margin-bottom: 12px;\n}\n.work-contents__list__company[data-v-a9aac016] {\n        margin: 0 12px 5px 12px;\n        font-size: 14px;\n        line-height: 21px;\n}\n.work-contents__list__title[data-v-a9aac016] {\n        margin: 0 12px 12px 12px;\n        font-size: 15px;\n        line-height: 22px;\n}\n.work-contents__list__tags[data-v-a9aac016] {\n        margin: 0 12px;\n        padding-bottom: 12px;\n        font-size: 13px;\n        line-height: 19px;\n}\n}\n.c-recruit__bottom[data-v-a9aac016] {\n    background: #fff;\n    padding-bottom: 0.71429rem;\n}\n.c-recruit__bottom-block[data-v-a9aac016] {\n    background: #fff;\n    position: relative;\n    margin-top: -6.78571rem;\n    padding-top: 1.07143rem;\n}\n.large-6[data-v-a9aac016] {\n    width: 50%;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.c-recruit__bottom-item[data-v-a9aac016] {\n    position: relative;\n    display: block;\n    text-decoration: none;\n}\n.c-recruit__bottom-bgimg[data-v-a9aac016] {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    height: 100%;\n    width: 100%;\n    z-index: 0;\n}\n.c-recruit__bottom-content[data-v-a9aac016] {\n    margin-top: 20px;\n}\n.c-recruit__bottom-title[data-v-a9aac016] {\n    padding-top: 4.64286rem;\n    color: #fff;\n    text-align: center;\n    padding-bottom: 0 !important;\n}\n.c-recruit__bottom-text[data-v-a9aac016] {\n    color: #fff;\n    margin-top: 50px;\n    padding-bottom: 3.64286rem;\n    text-align: center;\n    font-size: 1.28571rem;\n}\n.c-recruit__bottom-button[data-v-a9aac016] {\n    position: relative;\n    display: block;\n    width: 240px;\n    height: 58px;\n    text-align: center;\n    line-height: 58px;\n    font-weight: bold;\n    font-size: 16px;\n    letter-spacing: 0.1em;\n    color: #FFFFFF;\n    background: var(--textcolor);\n    box-shadow: 0px 4px 7px rgb(0 0 0 / 15%);\n    border-radius: 5px;\n    transition: 1s;\n    margin: auto;\n}\n.c-recruit__bottom-title span[data-v-a9aac016] {\n    font-size: 2.85714rem;\n}\n.u-hidden-lg[data-v-a9aac016] {\n    display: none !important;\n}\n.c-recruit__bottom-item[data-v-a9aac016]:hover {\n    opacity: 0.8;\n}\n.c-recruit__bottom-title small[data-v-a9aac016] {\n    display: block;\n    font-size: 14px;\n}\n.c-message[data-v-a9aac016] {\n    height: 35.42857rem;\n    margin-top: 5rem;\n    position: relative;\n    overflow: hidden;\n}\n.c-message__bgimg[data-v-a9aac016] {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center bottom;\n    width: 100%;\n    height: calc(100% - 90px);\n    position: absolute;\n    z-index: -1;\n    right: 0;\n    bottom: 0;\n    left: 0;\n}\n.c-message__bgimg[data-v-a9aac016]::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    margin: auto;\n    width: 100%;\n    height: 100%;\n}\n.c-message__content[data-v-a9aac016] {\n    display: flex;\n}\n.large-7[data-v-a9aac016] {\n    width: 58.33333%;\n    padding: 50px 0px 0px;\n}\n.large-5[data-v-a9aac016] {\n    width: 41.66667%;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.c-message__title[data-v-a9aac016] {\n    text-align: left;\n    margin-top: 5rem;\n}\n.c-message__title small[data-v-a9aac016] {\n    font-size: 1rem;\n    line-height: 2.14286;\n    font-weight: normal;\n}\n.c-message__title-sub[data-v-a9aac016] {\n    margin-top: 4rem;\n    font-size: 2.28571rem;\n    letter-spacing: 0.1em;\n    line-height: 1.5625;\n    color: #102855;\n    font-weight: bold;\n}\n.c-button[data-v-a9aac016],\n.c-button-social>a[data-v-a9aac016] {\n    outline: none;\n    display: inline-block;\n    width: 100%;\n    max-width: 14.5rem;\n    text-align: center;\n    background-color: #102855;\n    color: #fff;\n    border: 1px solid #102855;\n    text-decoration: none;\n    padding: 0.92857rem 1.71429rem;\n    position: relative;\n    transition: all .3s;\n    font-weight: 700;\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n}\n.c-button.is-md[data-v-a9aac016],\n.c-button-social>a.is-md[data-v-a9aac016] {\n    max-width: 15rem;\n    height: 58px;\n    font-size: 16px;\n    font-weight: bold;\n    transition: .3s all;\n    margin: 0;\n    position: relative;\n    border-radius: 5px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.c-button.is-white[data-v-a9aac016],\n.c-button-social>a.is-white[data-v-a9aac016] {\n    background: #fff;\n    color: #102855;\n}\n.c-button.is-white[data-v-a9aac016]:hover,\n.c-button-social>a.is-white[data-v-a9aac016]:hover {\n    background: #102855;\n    color: #fff;\n    transition: .3s all;\n}\n.c-button[data-v-a9aac016]:hover,\n.c-button-social>a[data-v-a9aac016]:hover {\n    opacity: 1;\n    background-color: #fff;\n    color: #102855;\n}\n.c-button.is-md[data-v-a9aac016]:hover::before,\n.c-button-social>a.is-md[data-v-a9aac016]:hover::before {\n    background: #333;\n}\n.c-button.is-md[data-v-a9aac016]:hover,\n.c-button-social>a.is-md[data-v-a9aac016]:hover {\n    transition: .3s all;\n}\n.c-recruit[data-v-a9aac016] {\n    position: relative;\n    padding-bottom: 30px;\n    margin-bottom: 5.71429rem;\n}\n.c-recruit__head[data-v-a9aac016] {\n    position: relative;\n    background: #102855;\n}\n.c-recruit__bgimg[data-v-a9aac016] {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    opacity: .3;\n}\n.c-recruit__head-title[data-v-a9aac016]::after {\n    content: \"\";\n    position: absolute;\n    bottom: 0;\n    left: 5px;\n    margin: auto;\n    width: 65px;\n    height: 1px;\n    background: #fff;\n}\n.c-recruit__head-inner[data-v-a9aac016] {\n    width: 50%;\n    padding: 4.2rem 0 9.42857rem;\n}\n.c-recruit__head-title[data-v-a9aac016] {\n    color: #fff;\n    display: flex;\n    align-items: center;\n    margin: 0;\n    position: relative;\n    padding-bottom: 3rem;\n}\n.c-recruit__head-title span[data-v-a9aac016] {\n    font-size: 85px;\n    line-height: 1.03529;\n    letter-spacing: 0.1em;\n}\n.c-recruit__head-title small[data-v-a9aac016] {\n    font-size: 14px;\n    line-height: 2.14286;\n    margin-left: 2.14286rem;\n}\n.c-recruit__head-text[data-v-a9aac016] {\n    color: #fff;\n    margin-top: 1.85714rem;\n    font-size: 26px;\n    font-weight: bold;\n}\n.c-recruit__head-button[data-v-a9aac016] {\n    margin-top: 2.35714rem;\n}\n.c-button[data-v-a9aac016],\n.c-button-social>a[data-v-a9aac016] {\n    outline: none;\n    display: inline-block;\n    width: 100%;\n    max-width: 14.5rem;\n    text-align: center;\n    background-color: #102855;\n    color: #fff;\n    border: 1px solid #102855;\n    text-decoration: none;\n    padding: 0.92857rem 1.71429rem;\n    position: relative;\n    transition: all .3s;\n    font-weight: 700;\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n}\n.c-button.is-white[data-v-a9aac016]::before,\n.c-button-social>a.is-white[data-v-a9aac016]::before {\n    background: #102855;\n}\n.c-button.is-white[data-v-a9aac016]::after,\n.c-button-social>a.is-white[data-v-a9aac016]::after {\n    background: #102855;\n}\n.c-message__bgimg[data-v-a9aac016] {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center bottom;\n    width: 100%;\n    height: calc(100% - 90px);\n    position: absolute;\n    z-index: -1;\n    right: 0;\n    bottom: 0;\n    left: 0;\n}\n.c-message__bgimg[data-v-a9aac016]::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    margin: auto;\n    width: 100%;\n    height: 100%;\n}\n.large-5[data-v-a9aac016] {\n    width: 41.66667%;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.c-message__title span[data-v-a9aac016] {\n    font-size: 65px;\n    letter-spacing: 0.1em;\n    font-weight: bold;\n    line-height: 1.03896;\n    color: #102855;\n    display: block;\n}\n.c-message__title small[data-v-a9aac016] {\n    font-size: 1rem;\n    line-height: 2.14286;\n    font-weight: normal;\n}\n.c-message__title-sub[data-v-a9aac016] {\n    margin-top: 4rem;\n    font-size: 2.28571rem;\n    letter-spacing: 0.1em;\n    line-height: 1.5625;\n    color: #102855;\n    font-weight: bold;\n}\n.c-message__button[data-v-a9aac016] {\n    margin-top: 3.85714rem;\n}\n@media (max-width:1200px) {\n.c-message__title-sub[data-v-a9aac016] {\n        font-size: 1.8rem;\n}\n.large-5[data-v-a9aac016] {\n        align-items: center;\n        display: flex;\n}\n.c-message__button[data-v-a9aac016] {\n        margin-top: 0.85714rem;\n}\n.c-message[data-v-a9aac016] {\n        padding: 30px 0px;\n        height: auto;\n}\n}\n@media (max-width: 945px) {\n.c-message__button[data-v-a9aac016] {\n        margin-bottom: 3.85714rem;\n}\n.c-message__title-sub[data-v-a9aac016] {\n        font-size: 24px;\n        margin-top: 2rem;\n}\n.c-message__button[data-v-a9aac016] {\n        margin-top: 1.85714rem;\n}\n.c-message__title span[data-v-a9aac016] {\n        font-size: 30px;\n}\n.c-message[data-v-a9aac016] {\n        height: 100%;\n}\n.c-recruit__head-title[data-v-a9aac016] {\n        text-align: center;\n        display: block;\n        padding-bottom: 2.42857rem;\n}\n.c-recruit__bottom[data-v-a9aac016] {\n        background: #102855;\n        padding-bottom: 0.71429rem;\n}\n.c-message__content[data-v-a9aac016] {\n        align-items: center;\n}\n.c-message__title[data-v-a9aac016] {\n        text-align: left;\n        margin-top: 10rem;\n}\n.content-title[data-v-a9aac016] {\n        font-size: 36px;\n}\n.small-12[data-v-a9aac016] {\n        width: 100%;\n        padding-left: 8px;\n        padding-right: 8px;\n}\n.c-recruit[data-v-a9aac016] {\n        padding-bottom: 0;\n        margin-bottom: 0;\n}\n.c-recruit__head[data-v-a9aac016]::after {\n        background-position: center right;\n        width: 100%;\n}\n.c-recruit__head-title[data-v-a9aac016] {\n        text-align: center;\n        display: block;\n        padding-bottom: 2.42857rem;\n}\n.c-recruit__head-title span[data-v-a9aac016] {\n        font-size: 40px;\n        display: block;\n}\n.c-recruit__head-title[data-v-a9aac016]::after {\n        right: 0;\n        left: 0;\n}\n.c-recruit__head-title small[data-v-a9aac016] {\n        margin-left: 0;\n}\n.c-recruit__bottom-item[data-v-a9aac016] {\n        padding-bottom: 2rem;\n        margin-bottom: 1.21429rem;\n}\n.c-recruit__head-title[data-v-a9aac016]::after {\n        right: 0;\n        left: 0;\n}\n.c-recruit__head-text[data-v-a9aac016] {\n        font-size: 1.07143rem;\n        padding: 0 1.14286rem;\n}\n.c-recruit__head-inner[data-v-a9aac016] {\n        width: 100%;\n}\n.c-recruit__head-button[data-v-a9aac016] {\n        text-align: center;\n        position: relative;\n        z-index: 9;\n}\n.c-recruit__bottom-block[data-v-a9aac016] {\n        background: #102855;\n}\n.c-recruit__bottom-text[data-v-a9aac016] {\n        margin-top: 25px;\n}\n.c-recruit__bottom-button[data-v-a9aac016] {\n        bottom: 0px;\n}\n.c-recruit__bottom-title[data-v-a9aac016] {\n        padding-top: 50px;\n}\n}\n@media (max-width: 945px) {\n.c-message__content[data-v-a9aac016] {\n        flex-direction: column;\n}\n}\n@media (max-width: 475px) {\n.content-title[data-v-a9aac016] {\n        font-size: 24px;\n}\n.c-message__title-sub[data-v-a9aac016] {\n        font-size: 16px;\n}\n.c-message__content[data-v-a9aac016] {\n        flex-direction: column;\n}\n.content-title[data-v-a9aac016] {\n        font-size: 28px;\n}\n.service_h2[data-v-a9aac016] {\n        flex-direction: row;\n        font-size: 20px;\n}\n.otherservice .service-row[data-v-a9aac016] {\n        margin-top: 0px !important;\n}\n.service_h2 .otherservice[data-v-a9aac016] {\n        margin-bottom: 0px;\n}\n.news[data-v-a9aac016] {\n        margin-bottom: 0px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.image-icon[data-v-a9aac016] {\n    width: 60px;\n    height: 60px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    margin-right: 10px;\n}\n.service_h2[data-v-a9aac016] {\n    font-weight: bold;\n    font-size: 30px;\n    line-height: 72px;\n    letter-spacing: 0.05em;\n    display: flex;\n    align-items: center;\n}\n.c-recruit__bottom-item:hover .c-recruit__bottom-bgimg[data-v-a9aac016] {\n    transform: scale(1.1);\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n}\nf .recruit-title[data-v-a9aac016]::after {\n    background-color: #fff;\n}\n.blog-home[data-v-a9aac016] {\n    margin-bottom: 120px;\n    margin-top: 120px;\n}\n.is-color-white[data-v-a9aac016] {\n    color: #fff;\n}\n.otherservice[data-v-a9aac016] {\n    margin-top: 60px;\n    margin-bottom: 60px;\n}\n.col-content[data-v-a9aac016] {\n    border: 1px solid #2B2B2B;\n}\n.bnr_area[data-v-a9aac016] {\n    z-index: 1;\n    display: flex;\n    position: relative;\n    background: #000;\n}\n.bnr_area a[data-v-a9aac016] {\n    width: 50%;\n    border: 1px solid #2b2b2b;\n}\n.hoverScale .thumb[data-v-a9aac016] {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt[data-v-a9aac016] {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016] {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016]::before {\n    width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016]::after,\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016]::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline[data-v-a9aac016] {\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline[data-v-a9aac016]::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt[data-v-a9aac016]::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.bnr-img[data-v-a9aac016] {\n    width: 100%;\n    height: auto;\n}\n@media screen and (max-width: 896px) {\n.bnr_area[data-v-a9aac016] {\n        display: block;\n}\n.bnr_area a[data-v-a9aac016] {\n        width: 100%;\n        display: block;\n}\n}\n.btn-views[data-v-a9aac016] {\n    border: 2px solid rgba(37, 115, 176, 1);\n    border-radius: 5px;\n    color: rgba(37, 115, 176, 1);\n    cursor: pointer;\n    display: block;\n    font-size: 18px;\n    font-weight: 700;\n    letter-spacing: .1em;\n    margin-left: 8px;\n    margin-top: 90px;\n    opacity: 1;\n    padding: 19px 0;\n    position: relative;\n    text-align: center;\n    transition: .4s;\n    width: 250px;\n    /* z-index: 999; */\n    z-index: 99;\n}\n.btn-views[data-v-a9aac016]:hover {\n    color: #fff;\n    border: 1px solid rgba(37, 115, 176, 1);\n    transition: 0.4s;\n    background: rgba(37, 115, 176, 1);\n}\n.btn-view[data-v-a9aac016]:hover {\n    background: var(--textcolor);\n}\n.footer-section[data-v-a9aac016] {\n    background-color: #000;\n}\n.service-content-img[data-v-a9aac016] {\n    height: auto;\n    width: 300px;\n    max-width: 100%;\n}\n.service-p[data-v-a9aac016] {\n    color: #333;\n    flex: none;\n    font-family: 'Noto Sans JP';\n    font-size: 14px;\n    font-style: normal;\n    font-weight: 400;\n    height: auto;\n    letter-spacing: 0.15em;\n    line-height: 1.8;\n    margin: 10px 0px 0px 0px;\n    text-align: left;\n    width: 100%;\n    max-width: 100%;\n    justify-content: flex-start;\n}\n.service-col[data-v-a9aac016] {\n    display: flex;\n    align-content: flex-start;\n    align-items: flex-start;\n    flex: none;\n    flex-direction: column;\n    flex-wrap: nowrap;\n    justify-content: center;\n    padding: 0px;\n    width: 49%;\n    max-width: 49%;\n    padding: 0px 15px;\n}\n.service-row[data-v-a9aac016] {\n    display: flex;\n}\n.new[data-v-a9aac016] {\n    z-index: 0;\n    pointer-events: all;\n    flex-wrap: nowrap;\n    flex: none;\n    display: flex;\n    position: relative;\n    flex-direction: column;\n}\n.new-content[data-v-a9aac016] {\n    color: #333;\n    font-family: 'Noto Sans JP';\n    font-size: 14px;\n    font-weight: 700;\n    letter-spacing: 0.05em;\n    line-height: 1.7;\n    margin: 12px 0px 0px 0px;\n    text-align: left;\n    justify-content: flex-start;\n}\n.new-listing .img_box[data-v-a9aac016] {\n    margin-right: 25px;\n    width: 160px;\n}\n.new-listing[data-v-a9aac016]:nth-child(1) {\n    border-top: 0px solid #bbbbbb;\n}\n.new-link[data-v-a9aac016]:hover {\n    opacity: 0.6;\n}\n.new-link[data-v-a9aac016] {\n    background: rgba(0, 0, 0, 0.0);\n    flex: none;\n    flex-direction: row;\n    height: auto;\n    justify-content: flex-start;\n    margin: 0px 0px 0px 0px;\n    padding: 16px 0px 16px 0px;\n    width: 100%;\n    max-width: 100%;\n}\n.new-date[data-v-a9aac016] {\n    color: #666666;\n    font-size: 14px;\n    font-weight: 400;\n}\n.new-tag[data-v-a9aac016] {\n    align-content: center;\n    align-items: center;\n    background: #FFFFFF;\n    flex-wrap: nowrap;\n    justify-content: center;\n    padding: 4px 8px 4px 8px;\n    font-size: 10px;\n}\n.new-box[data-v-a9aac016] {\n    align-content: center;\n    align-items: center;\n    background: #f7f7f7;\n    flex-wrap: nowrap;\n    flex: none;\n    justify-content: center;\n    padding: 30px 0px 40px 0px;\n}\n.new-listing[data-v-a9aac016] {\n    align-content: flex-start;\n    align-items: flex-start;\n    background: rgba(0, 0, 0, 0.0);\n    justify-content: flex-start;\n    width: 960px;\n    max-width: 100%;\n    border-bottom: 0px solid #bbbbbb;\n    border-left: 0px solid #bbbbbb;\n    border-right: 0px solid #bbbbbb;\n    border-top: 1px solid #bbbbbb;\n}\n.new-item[data-v-a9aac016] {\n    align-content: flex-start;\n    align-items: flex-start;\n    flex: 1;\n    margin: 0px 0px 0px 0px;\n    max-width: 100%;\n}\n.news[data-v-a9aac016] {\n    padding-bottom: 80px;\n}\n.news-contents[data-v-a9aac016] {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 0px;\n}\n.new.icon[data-v-a9aac016],\n.new.text[data-v-a9aac016] {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    align-content: center;\n    justify-content: center;\n    overflow: visible;\n    word-break: break-word;\n    word-wrap: anywhere;\n}\n.new-meta[data-v-a9aac016] {\n    align-content: center;\n    align-items: center;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: center;\n    padding: 0px;\n    display: flex;\n}\n.WorkSlider[data-v-a9aac016] {\n    overflow: inherit;\n}\n.WorkSlider .swiper-button-next[data-v-a9aac016] {\n    top: -50px;\n    width: 35px;\n    height: 35px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: #333333;\n    border-radius: 50px;\n    color: #fff;\n}\n.WorkSlider .swiper-button-next[data-v-a9aac016]:after {\n    font-size: 14px;\n}\n\n/*hero*/\n.top-hero[data-v-a9aac016] {\n    position: relative;\n    margin-top: 60px;\n    height: 500px;\n}\n.top-hero[data-v-a9aac016]::before {\n    content: \"\";\n    position: absolute;\n    top: 49px;\n    display: inline-block;\n    width: calc(100vw - 80px + (100% - 100vw) / 2);\n    height: 450px;\n    background-color: rgba(255, 255, 255, 0.6);\n    border-radius: 30px 0px 0px 30px;\n    z-index: 1;\n}\n.top-hero__title__br-sp[data-v-a9aac016] {\n    display: none;\n}\n.top-hero__video[data-v-a9aac016] {\n    position: absolute;\n    top: 49px;\n    display: inline-block;\n    width: calc(100vw - 80px + (100% - 100vw) / 2);\n    height: 450px;\n    border-radius: 30px 0px 0px 30px;\n    z-index: 0;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.top-hero__title[data-v-a9aac016] {\n    position: relative;\n    margin-left: 0px;\n    font-weight: bold;\n    font-size: 40px;\n    line-height: 96px;\n    letter-spacing: 0.05em;\n    z-index: 2;\n}\n.top-hero__title .horo-text-b[data-v-a9aac016] {\n    transition: all 800ms;\n}\n.top-hero__title span[data-v-a9aac016] {\n    filter: blur(10px);\n    opacity: 0;\n}\n.devlop-content-text[data-v-a9aac016] {\n    max-width: 675px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: #333333;\n}\n.ceo-mbl[data-v-a9aac016] {\n    display: none;\n}\n.ceo-desktop[data-v-a9aac016] {\n    display: block;\n}\n@media (max-width: 1200px) {\n.WorkSlider[data-v-a9aac016] {\n        overflow: hidden;\n}\n}\n@media (max-width: 767px) {\n.ceo-mbl[data-v-a9aac016] {\n        display: block;\n        height: auto;\n        -o-object-fit: contain;\n           object-fit: contain;\n}\n.ceo-desktop[data-v-a9aac016] {\n        display: none;\n}\n.new-box[data-v-a9aac016] {\n        padding: 32px 15px;\n        max-width: 100%;\n}\n.new-date[data-v-a9aac016] {\n        font-size: 10px;\n}\n.new-listing .img_box[data-v-a9aac016] {\n        margin-right: 10px;\n        width: 116px;\n}\n.service-col[data-v-a9aac016] {\n        max-width: 100%;\n        width: 100%;\n        margin: 25px 0px;\n}\n.otherservice .service-row[data-v-a9aac016] {\n        flex-direction: column;\n}\n.WorkSlider[data-v-a9aac016] {\n        overflow: hidden;\n}\n.WorkSlider .swiper-button-next[data-v-a9aac016] {\n        top: -15px;\n}\n.devlop-content-text[data-v-a9aac016] {\n        max-width: inherit;\n        font-weight: 500;\n        font-size: 13px;\n        line-height: 20px;\n}\n.movie-inner iframe[data-v-a9aac016] {\n        height: 200px;\n}\n.about-iden-container[data-v-a9aac016] {\n        padding: 0px;\n}\n.about-iden-container .text[data-v-a9aac016] {\n        padding: 0px !important;\n}\n.txt-rotate[data-v-a9aac016] {\n        font-size: 32px;\n}\n.top-hero[data-v-a9aac016] {\n        margin-top: 53px;\n        height: 330px;\n}\n.top-hero__title__br-sp[data-v-a9aac016] {\n        display: block;\n}\n.top-hero__title__br-pc[data-v-a9aac016] {\n        display: none;\n}\n.top-hero[data-v-a9aac016]::before {\n        width: 97%;\n        top: 0;\n        background-color: rgba(255, 255, 255, 0.6);\n        border-radius: 10px 0 0 10px;\n}\n.top-hero__video[data-v-a9aac016] {\n        width: 97%;\n        top: 0;\n        border-radius: 10px 0 0 10px;\n        height: 340px;\n}\n.top-hero__title[data-v-a9aac016] {\n        padding-top: 12px;\n        margin-left: 0px;\n        font-size: 24px;\n        line-height: 150%;\n        letter-spacing: 0.05em;\n}\n}\n\n/*scroll*/\n.scroll_top[data-v-a9aac016] {\n    margin-top: 8px;\n    margin-bottom: 40px;\n    font-weight: bold;\n    font-size: 12px;\n    line-height: 18px;\n    letter-spacing: 0.15em;\n}\n@media (max-width: 767px) {\n.scroll_top[data-v-a9aac016] {\n        margin-top: 30px;\n        margin-bottom: 30px;\n}\n}\n\n/*about*/\n.about[data-v-a9aac016] {\n    margin-bottom: 102px;\n}\n\n/*work*/\n.work[data-v-a9aac016] {\n    margin-bottom: 120px;\n    position: relative;\n    margin-top: 120px;\n}\n.content-title_work[data-v-a9aac016] {\n    margin-bottom: 20px;\n}\n.content-text_work[data-v-a9aac016] {\n    margin-top: 0px;\n    margin-bottom: 60px;\n}\n.work-contents[data-v-a9aac016] {\n    display: none;\n    justify-content: space-between;\n}\n.work__right[data-v-a9aac016] {\n    top: 190px;\n    right: 0;\n    display: block;\n    width: 30px;\n    height: 30px;\n    margin: 2px 0 20px auto;\n    transform: rotate(180deg);\n}\n.work-contents__pc-frame[data-v-a9aac016] {\n    position: relative;\n    width: 100vw;\n    margin-left: calc((100% - 100vw) / 2);\n    overflow: hidden;\n    margin-top: -20px;\n    padding-top: 20px;\n}\n.work-contents__pc-frame[data-v-a9aac016]::before {\n    height: 430px;\n    display: block;\n    content: \"\";\n}\n.work-contents__pc[data-v-a9aac016] {\n    position: absolute;\n    left: 0;\n    top: 20px;\n    display: flex;\n    width: calc(330px * 8 + 65px * 7);\n    height: 400px;\n}\n.work-contents__pc .work-contents__list[data-v-a9aac016] {\n    position: absolute;\n    width: 350px;\n    min-height: 350px;\n}\n@media (max-width: 767px) {\n.recruit__spacer-sp[data-v-a9aac016] {\n        height: auto;\n}\n.blog[data-v-a9aac016] {\n        margin-top: 0px !important;\n}\n.work[data-v-a9aac016] {\n        margin-bottom: 60px;\n        margin-top: 0px;\n}\n.content-text_work[data-v-a9aac016] {\n        margin-bottom: 30px;\n        font-weight: bold;\n        font-size: 14px;\n        line-height: 22px;\n}\n.work__right[data-v-a9aac016] {\n        display: none;\n}\n.work-contents[data-v-a9aac016] {\n        display: flex;\n        padding-top: 20px;\n        margin-top: -20px;\n        margin-bottom: 0;\n        padding-bottom: 30px;\n        margin-bottom: 50px;\n        overflow-x: scroll;\n        overflow-y: visible;\n        width: 100vw;\n        margin-left: calc(var(--content-padding-side-sp) * -1);\n}\n.work-contents__pc-frame[data-v-a9aac016] {\n        display: none;\n}\n.work-contents__pc[data-v-a9aac016] {\n        display: none;\n}\n.work-contents__list[data-v-a9aac016] {\n        width: 100%;\n}\n.work-contents .work-contents__list[data-v-a9aac016]:last-child {\n        margin-right: 30px;\n}\n}\n\n/*blog*/\n.blog[data-v-a9aac016] {\n    margin-bottom: 120px;\n    margin-top: 120px;\n}\n.content-title_blog[data-v-a9aac016] {\n    margin-bottom: 20px;\n}\n.content-text_blog[data-v-a9aac016] {\n    margin-top: 0px;\n    margin-bottom: 60px;\n}\n.blog-contents[data-v-a9aac016] {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 60px;\n}\n.blog-contents__list[data-v-a9aac016] {\n    width: calc((100% - 65px * 2) / 3);\n}\n@media (max-width: 767px) {\n.blog-home[data-v-a9aac016] {\n        margin: 50px auto 60px;\n}\n.blog[data-v-a9aac016] {\n        margin: 50px auto 60px;\n}\n.content-text_blog[data-v-a9aac016] {\n        margin-bottom: 30px;\n        font-weight: bold;\n        font-size: 14px;\n        line-height: 22px;\n}\n.blog-contents[data-v-a9aac016] {\n        margin-top: -20px;\n        padding-top: 20px;\n        margin-bottom: 0;\n        padding-bottom: 30px;\n        margin-bottom: 50px;\n        overflow-x: scroll;\n        overflow-y: visible;\n        /* width: 100vw; */\n        margin-left: calc(var(--content-padding-side-sp) * -1);\n}\n.blog-contents .blog-contents__list[data-v-a9aac016]:last-child {\n        margin-right: 0px;\n}\n.blog-contents__list__tags[data-v-a9aac016] {\n        top: 78px !important;\n}\n.blog-contents__list[data-v-a9aac016] {\n        width: 100%;\n        /* margin-left: 30px; */\n}\n}\n\n/*recruit*/\n.recruit[data-v-a9aac016] {\n    margin-bottom: 60px;\n}\n\n/* about idenbrid */\n.about_iden[data-v-a9aac016] {\n    display: flex;\n    max-width: 1500px;\n    margin: 0 auto;\n}\n.about_iden .text[data-v-a9aac016] {\n    letter-spacing: 2px;\n    font-weight: 600;\n    font-size: 16px;\n}\n.about-iden-container .text[data-v-a9aac016] {\n    background-color: #fff;\n    max-width: 700px;\n    padding: 0px 20px;\n}\n.about-iden-container[data-v-a9aac016] {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    width: 100%;\n    padding: 0px;\n}\n@media screen and (min-width: 767px) {\n.about-iden-container[data-v-a9aac016] {\n        flex-direction: row;\n}\n}\n\n/* service section */\n.service[data-v-a9aac016] {\n    padding-bottom: 80px;\n    padding-top: 160px;\n    /*影の調整 160 - 20*/\n}\n.text[data-v-a9aac016] {\n    margin-top: 10px;\n}\n.about[data-v-a9aac016] {\n    margin-bottom: 0px;\n}\n#MOVIE .container[data-v-a9aac016] {\n    padding: 0px;\n}\n.service-subcontents__text[data-v-a9aac016] {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    width: calc((100% - 415px) / 1);\n    text-align: center;\n    margin: auto;\n}\n.service-contents[data-v-a9aac016] {\n    position: relative;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n    flex-direction: row-reverse;\n}\n.service-contents__text[data-v-a9aac016] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: calc((100% - 60px) / 2);\n}\n.service-contents__list[data-v-a9aac016] {\n    width: calc((100% - 60px) / 2);\n    margin-bottom: 60px;\n}\n.service-contents .service-contents__list[data-v-a9aac016]:nth-child(2n+1) {\n    position: relative;\n    top: 132px;\n}\n.service-contents__text[data-v-a9aac016] {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.service-contents__list[data-v-a9aac016] {\n    background: #FFFFFF;\n    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n    border-radius: 15px;\n    min-height: 360px;\n}\n.service-contents__list .service-items[data-v-a9aac016] {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n}\n.service-contents__list .service-items:hover .service-contents__list__thumbnail[data-v-a9aac016] {\n    transform: translateY(-6%) scale(1.15);\n}\n.service-contents__list__thumbnail-frame[data-v-a9aac016] {\n    position: absolute;\n    border-radius: 15px 15px 0 0;\n    top: 0;\n    left: 0;\n    height: 221px;\n    width: 100%;\n    overflow: hidden;\n}\n.service-contents__list__thumbnail[data-v-a9aac016] {\n    height: 221px;\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    transition: 0.5s;\n    position: relative;\n    z-index: 1;\n}\n.service-contents__list__subtitle[data-v-a9aac016] {\n    margin-top: 189px;\n    margin-left: 30px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    position: relative;\n    z-index: 2;\n}\n.service-contents__list__title[data-v-a9aac016] {\n    margin: 0 30px 10px 30px;\n    font-weight: bold;\n    font-size: 24px;\n    line-height: 36px;\n    letter-spacing: 0.05em;\n    position: relative;\n    z-index: 2;\n}\n.service-contents__list__text[data-v-a9aac016] {\n    margin: 0 30px;\n    padding-bottom: 20px;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n}\n.viewmore-btn_service[data-v-a9aac016] {\n    margin-top: 15px;\n}\n.idenbrid-background[data-v-a9aac016] {\n    border-radius: 15px;\n}\n@media (max-width: 767px) {\n.idenbrid-background[data-v-a9aac016] {\n        width: 100%;\n}\n.service[data-v-a9aac016] {\n        padding-bottom: 60px;\n        padding-top: 20px;\n}\n.service-contents[data-v-a9aac016] {\n        display: block;\n}\n.service-contents__text[data-v-a9aac016] {\n        position: relative;\n        width: 100%;\n}\n.service-contents__list[data-v-a9aac016] {\n        width: 100%;\n        min-height: 270px;\n}\n.service-contents__list .service-item[data-v-a9aac016] {\n        height: auto;\n}\n.service-contents .service-contents__list[data-v-a9aac016]:nth-child(2n+1) {\n        top: inherit;\n}\n.service-contents__text[data-v-a9aac016],\n    .service-contents__list[data-v-a9aac016] {\n        margin-bottom: 30px !important;\n}\n.service-contents .service-contents__list[data-v-a9aac016]:nth-child(5) {\n        margin-bottom: 0 !important;\n}\n.service-contents__list__thumbnail-frame[data-v-a9aac016] {\n        height: 120px;\n}\n.service-contents__list__thumbnail[data-v-a9aac016] {\n        height: 120px;\n        -o-object-position: bottom;\n           object-position: bottom;\n}\n.service-contents__list__subtitle[data-v-a9aac016] {\n        margin-top: 112px;\n        margin-bottom: 0;\n        margin-left: 10px;\n        font-size: 10px;\n        line-height: 15px;\n}\n.service-contents__list__title[data-v-a9aac016] {\n        margin: 0 30px 10px 10px;\n        font-size: 14px;\n        line-height: 21px;\n}\n.service-contents__list__text[data-v-a9aac016] {\n        margin: 0 10px 12px 10px;\n        font-size: 13px;\n        line-height: 19px;\n}\n.viewmore-btn_service[data-v-a9aac016] {\n        margin: 50px auto 0 auto;\n}\n}\n\n/* work section */\n.work-contents__list[data-v-a9aac016] {\n    background: #FFFFFF;\n    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);\n    border-radius: 10px;\n    transition: 1s;\n    transition-property: transform;\n    min-height: 320px;\n}\n.work-contents__list[data-v-a9aac016]:hover {\n    transform: scale(1.05);\n}\n.work-contents__list__thumbnail[data-v-a9aac016] {\n    width: 100%;\n}\n.work-contents__list__company[data-v-a9aac016] {\n    margin: 20px auto 5px 20px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n}\n.work-contents__list__title[data-v-a9aac016] {\n    margin-bottom: 5px;\n    margin-left: 20px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.work-contents__list__tags[data-v-a9aac016] {\n    margin-left: 20px;\n    padding-bottom: 1px;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n    color: #727171;\n}\n@media (max-width: 767px) {\n.new-listing .img_box[data-v-a9aac016] {\n        width: 115px;\n}\n.work-contents__list__thumbnail[data-v-a9aac016] {\n        margin-bottom: 12px;\n}\n.work-contents__list__company[data-v-a9aac016] {\n        margin: 0 12px 5px 12px;\n        font-size: 14px;\n        line-height: 21px;\n}\n.work-contents__list__title[data-v-a9aac016] {\n        margin: 0 12px 12px 12px;\n        font-size: 15px;\n        line-height: 22px;\n}\n.work-contents__list__tags[data-v-a9aac016] {\n        margin: 0 12px;\n        padding-bottom: 12px;\n        font-size: 13px;\n        line-height: 19px;\n}\n}\n.c-recruit__bottom[data-v-a9aac016] {\n    background: #fff;\n    padding-bottom: 0.71429rem;\n}\n.c-recruit__bottom-block[data-v-a9aac016] {\n    background: #fff;\n    position: relative;\n    margin-top: -6.78571rem;\n    padding-top: 1.07143rem;\n}\n.large-6[data-v-a9aac016] {\n    width: 50%;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.c-recruit__bottom-item[data-v-a9aac016] {\n    position: relative;\n    display: block;\n    text-decoration: none;\n}\n.c-recruit__bottom-bgimg[data-v-a9aac016] {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    height: 100%;\n    width: 100%;\n    z-index: 0;\n}\n.c-recruit__bottom-content[data-v-a9aac016] {\n    margin-top: 20px;\n}\n.c-recruit__bottom-title[data-v-a9aac016] {\n    padding-top: 4.64286rem;\n    color: #fff;\n    text-align: center;\n    padding-bottom: 0 !important;\n}\n.c-recruit__bottom-text[data-v-a9aac016] {\n    color: #fff;\n    margin-top: 50px;\n    padding-bottom: 3.64286rem;\n    text-align: center;\n    font-size: 1.28571rem;\n}\n.c-recruit__bottom-button[data-v-a9aac016] {\n    position: relative;\n    display: block;\n    width: 240px;\n    height: 58px;\n    text-align: center;\n    line-height: 58px;\n    font-weight: bold;\n    font-size: 16px;\n    letter-spacing: 0.1em;\n    color: #FFFFFF;\n    background: var(--textcolor);\n    box-shadow: 0px 4px 7px rgb(0 0 0 / 15%);\n    border-radius: 5px;\n    transition: 1s;\n    margin: auto;\n}\n.c-recruit__bottom-title span[data-v-a9aac016] {\n    font-size: 2.85714rem;\n}\n.u-hidden-lg[data-v-a9aac016] {\n    display: none !important;\n}\n.c-recruit__bottom-item[data-v-a9aac016]:hover {\n    opacity: 0.8;\n}\n.c-recruit__bottom-title small[data-v-a9aac016] {\n    display: block;\n    font-size: 14px;\n}\n.c-message[data-v-a9aac016] {\n    height: 35.42857rem;\n    margin-top: 5rem;\n    position: relative;\n    overflow: hidden;\n}\n.c-message__bgimg[data-v-a9aac016] {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center bottom;\n    width: 100%;\n    height: calc(100% - 90px);\n    position: absolute;\n    z-index: -1;\n    right: 0;\n    bottom: 0;\n    left: 0;\n}\n.c-message__bgimg[data-v-a9aac016]::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    margin: auto;\n    width: 100%;\n    height: 100%;\n}\n.c-message__content[data-v-a9aac016] {\n    display: flex;\n}\n.large-7[data-v-a9aac016] {\n    width: 58.33333%;\n    padding: 50px 0px 0px;\n}\n.large-5[data-v-a9aac016] {\n    width: 41.66667%;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.c-message__title[data-v-a9aac016] {\n    text-align: left;\n    margin-top: 5rem;\n}\n.c-message__title small[data-v-a9aac016] {\n    font-size: 1rem;\n    line-height: 2.14286;\n    font-weight: normal;\n}\n.c-message__title-sub[data-v-a9aac016] {\n    margin-top: 4rem;\n    font-size: 2.28571rem;\n    letter-spacing: 0.1em;\n    line-height: 1.5625;\n    color: #102855;\n    font-weight: bold;\n}\n.c-button[data-v-a9aac016],\n.c-button-social>a[data-v-a9aac016] {\n    outline: none;\n    display: inline-block;\n    width: 100%;\n    max-width: 14.5rem;\n    text-align: center;\n    background-color: #102855;\n    color: #fff;\n    border: 1px solid #102855;\n    text-decoration: none;\n    padding: 0.92857rem 1.71429rem;\n    position: relative;\n    transition: all .3s;\n    font-weight: 700;\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n}\n.c-button.is-md[data-v-a9aac016],\n.c-button-social>a.is-md[data-v-a9aac016] {\n    max-width: 15rem;\n    height: 58px;\n    font-size: 16px;\n    font-weight: bold;\n    transition: .3s all;\n    margin: 0;\n    position: relative;\n    border-radius: 5px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.c-button.is-white[data-v-a9aac016],\n.c-button-social>a.is-white[data-v-a9aac016] {\n    background: #fff;\n    color: #102855;\n}\n.c-button.is-white[data-v-a9aac016]:hover,\n.c-button-social>a.is-white[data-v-a9aac016]:hover {\n    background: #102855;\n    color: #fff;\n    transition: .3s all;\n}\n.c-button[data-v-a9aac016]:hover,\n.c-button-social>a[data-v-a9aac016]:hover {\n    opacity: 1;\n    background-color: #fff;\n    color: #102855;\n}\n.c-button.is-md[data-v-a9aac016]:hover::before,\n.c-button-social>a.is-md[data-v-a9aac016]:hover::before {\n    background: #333;\n}\n.c-button.is-md[data-v-a9aac016]:hover,\n.c-button-social>a.is-md[data-v-a9aac016]:hover {\n    transition: .3s all;\n}\n.c-recruit[data-v-a9aac016] {\n    position: relative;\n    padding-bottom: 30px;\n    margin-bottom: 5.71429rem;\n}\n.c-recruit__head[data-v-a9aac016] {\n    position: relative;\n    background: #102855;\n}\n.c-recruit__bgimg[data-v-a9aac016] {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    height: 100%;\n    width: 100%;\n    position: absolute;\n    opacity: .3;\n}\n.c-recruit__head-title[data-v-a9aac016]::after {\n    content: \"\";\n    position: absolute;\n    bottom: 0;\n    left: 5px;\n    margin: auto;\n    width: 65px;\n    height: 1px;\n    background: #fff;\n}\n.c-recruit__head-inner[data-v-a9aac016] {\n    width: 50%;\n    padding: 4.2rem 0 9.42857rem;\n}\n.c-recruit__head-title[data-v-a9aac016] {\n    color: #fff;\n    display: flex;\n    align-items: center;\n    margin: 0;\n    position: relative;\n    padding-bottom: 3rem;\n}\n.c-recruit__head-title span[data-v-a9aac016] {\n    font-size: 85px;\n    line-height: 1.03529;\n    letter-spacing: 0.1em;\n}\n.c-recruit__head-title small[data-v-a9aac016] {\n    font-size: 14px;\n    line-height: 2.14286;\n    margin-left: 2.14286rem;\n}\n.c-recruit__head-text[data-v-a9aac016] {\n    color: #fff;\n    margin-top: 1.85714rem;\n    font-size: 26px;\n    font-weight: bold;\n}\n.c-recruit__head-button[data-v-a9aac016] {\n    margin-top: 2.35714rem;\n}\n.c-button[data-v-a9aac016],\n.c-button-social>a[data-v-a9aac016] {\n    outline: none;\n    display: inline-block;\n    width: 100%;\n    max-width: 14.5rem;\n    text-align: center;\n    background-color: #102855;\n    color: #fff;\n    border: 1px solid #102855;\n    text-decoration: none;\n    padding: 0.92857rem 1.71429rem;\n    position: relative;\n    transition: all .3s;\n    font-weight: 700;\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n}\n.c-button.is-white[data-v-a9aac016]::before,\n.c-button-social>a.is-white[data-v-a9aac016]::before {\n    background: #102855;\n}\n.c-button.is-white[data-v-a9aac016]::after,\n.c-button-social>a.is-white[data-v-a9aac016]::after {\n    background: #102855;\n}\n.c-message__bgimg[data-v-a9aac016] {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center bottom;\n    width: 100%;\n    height: calc(100% - 90px);\n    position: absolute;\n    z-index: -1;\n    right: 0;\n    bottom: 0;\n    left: 0;\n}\n.c-message__bgimg[data-v-a9aac016]::after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    margin: auto;\n    width: 100%;\n    height: 100%;\n}\n.large-5[data-v-a9aac016] {\n    width: 41.66667%;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.c-message__title span[data-v-a9aac016] {\n    font-size: 65px;\n    letter-spacing: 0.1em;\n    font-weight: bold;\n    line-height: 1.03896;\n    color: #102855;\n    display: block;\n}\n.c-message__title small[data-v-a9aac016] {\n    font-size: 1rem;\n    line-height: 2.14286;\n    font-weight: normal;\n}\n.c-message__title-sub[data-v-a9aac016] {\n    margin-top: 4rem;\n    font-size: 2.28571rem;\n    letter-spacing: 0.1em;\n    line-height: 1.5625;\n    color: #102855;\n    font-weight: bold;\n}\n.c-message__button[data-v-a9aac016] {\n    margin-top: 3.85714rem;\n}\n@media (max-width:1200px) {\n.c-message__title-sub[data-v-a9aac016] {\n        font-size: 1.8rem;\n}\n.large-5[data-v-a9aac016] {\n        align-items: center;\n        display: flex;\n}\n.c-message__button[data-v-a9aac016] {\n        margin-top: 0.85714rem;\n}\n.c-message[data-v-a9aac016] {\n        padding: 30px 0px;\n        height: auto;\n}\n}\n@media (max-width: 945px) {\n.c-message__button[data-v-a9aac016] {\n        margin-bottom: 3.85714rem;\n}\n.c-message__title-sub[data-v-a9aac016] {\n        font-size: 24px;\n        margin-top: 2rem;\n}\n.c-message__button[data-v-a9aac016] {\n        margin-top: 1.85714rem;\n}\n.c-message__title span[data-v-a9aac016] {\n        font-size: 30px;\n}\n.c-message[data-v-a9aac016] {\n        height: 100%;\n}\n.c-recruit__head-title[data-v-a9aac016] {\n        text-align: center;\n        display: block;\n        padding-bottom: 2.42857rem;\n}\n.c-recruit__bottom[data-v-a9aac016] {\n        background: #102855;\n        padding-bottom: 0.71429rem;\n}\n.c-message__content[data-v-a9aac016] {\n        align-items: center;\n}\n.c-message__title[data-v-a9aac016] {\n        text-align: left;\n        margin-top: 10rem;\n}\n.content-title[data-v-a9aac016] {\n        font-size: 36px;\n}\n.small-12[data-v-a9aac016] {\n        width: 100%;\n        padding-left: 8px;\n        padding-right: 8px;\n}\n.c-recruit[data-v-a9aac016] {\n        padding-bottom: 0;\n        margin-bottom: 0;\n}\n.c-recruit__head[data-v-a9aac016]::after {\n        background-position: center right;\n        width: 100%;\n}\n.c-recruit__head-title[data-v-a9aac016] {\n        text-align: center;\n        display: block;\n        padding-bottom: 2.42857rem;\n}\n.c-recruit__head-title span[data-v-a9aac016] {\n        font-size: 40px;\n        display: block;\n}\n.c-recruit__head-title[data-v-a9aac016]::after {\n        right: 0;\n        left: 0;\n}\n.c-recruit__head-title small[data-v-a9aac016] {\n        margin-left: 0;\n}\n.c-recruit__bottom-item[data-v-a9aac016] {\n        padding-bottom: 2rem;\n        margin-bottom: 1.21429rem;\n}\n.c-recruit__head-title[data-v-a9aac016]::after {\n        right: 0;\n        left: 0;\n}\n.c-recruit__head-text[data-v-a9aac016] {\n        font-size: 1.07143rem;\n        padding: 0 1.14286rem;\n}\n.c-recruit__head-inner[data-v-a9aac016] {\n        width: 100%;\n}\n.c-recruit__head-button[data-v-a9aac016] {\n        text-align: center;\n        position: relative;\n        z-index: 9;\n}\n.c-recruit__bottom-block[data-v-a9aac016] {\n        background: #102855;\n}\n.c-recruit__bottom-text[data-v-a9aac016] {\n        margin-top: 25px;\n}\n.c-recruit__bottom-button[data-v-a9aac016] {\n        bottom: 0px;\n}\n.c-recruit__bottom-title[data-v-a9aac016] {\n        padding-top: 50px;\n}\n}\n@media (max-width: 945px) {\n.c-message__content[data-v-a9aac016] {\n        flex-direction: column;\n}\n}\n@media (max-width: 475px) {\n.content-title[data-v-a9aac016] {\n        font-size: 24px;\n}\n.c-message__title-sub[data-v-a9aac016] {\n        font-size: 16px;\n}\n.c-message__content[data-v-a9aac016] {\n        flex-direction: column;\n}\n.content-title[data-v-a9aac016] {\n        font-size: 28px;\n}\n.service_h2[data-v-a9aac016] {\n        flex-direction: row;\n        font-size: 20px;\n}\n.otherservice .service-row[data-v-a9aac016] {\n        margin-top: 0px !important;\n}\n.service_h2 .otherservice[data-v-a9aac016] {\n        margin-bottom: 0px;\n}\n.news[data-v-a9aac016] {\n        margin-bottom: 0px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24961,30 +24497,6 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\n.message--index[data-v-6bc6233e] {\n    padding: 140px 10%;\n    background-color: #fff;\n}\n.message--index .message_inner[data-v-6bc6233e] {\n    transform: translateY(2%);\n    transition: .6s;\n}\n.message--index .message_inner .message_box[data-v-6bc6233e] {\n    position: relative;\n}\n.message--index .message_inner .message_box[data-v-6bc6233e]::after {\n    content: \"\";\n    background: url(/assets/img/ceo.jpg) no-repeat center;\n    background-size: cover;\n    width: 42%;\n    height: 100%;\n    max-height: 680px;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transform: translateY(-50%);\n}\n.message--index .message_inner .message_box .box .text_area[data-v-6bc6233e] {\n    width: 52%;\n}\n.message--index .message_inner .message_box .box .text_area .ttl span[data-v-6bc6233e] {\n    font-size: 14px;\n    font-family: DIN-Regular;\n    font-weight: 500;\n    color: #000;\n}\n.message--index .message_inner .message_box .box .text_area .ttl h3[data-v-6bc6233e] {\n    font-size: 28.8px;\n    line-height: 1.9;\n    font-weight: 600;\n    font-family: NotoSansJP-Bold;\n    margin-bottom: 25px;\n}\n.message--index .message_inner .message_box .box .text_area .lead[data-v-6bc6233e] {\n    margin-bottom: 15px;\n    font-size: 14px;\n    font-weight: 500;\n    line-height: 2.2;\n    font-family: NotoSansJP-Regular;\n    letter-spacing: 0.04em;\n    color: #000;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt[data-v-6bc6233e] {\n    color: gray;\n    font-size: 12px;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 500;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt .underline[data-v-6bc6233e] {\n    font-size: 12px;\n    font-weight: 500;\n    position: relative;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt .underline[data-v-6bc6233e]::after {\n    content: \"\";\n    background: gray;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt:hover .underline[data-v-6bc6233e]::after {\n    transform-origin: left top;\n    transform: scale(1, 1);\n}\n.message--index .message_inner .message_box .box .text_area .lead.name[data-v-6bc6233e] {\n    margin-top: 35px;\n    margin-bottom: 0;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt[data-v-6bc6233e]::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.message--index .message_inner .message_box .box .text_area .more_txt[data-v-6bc6233e]:hover::after,\n.message--index .message_inner .message_box .box .text_area .more_txt[data-v-6bc6233e]:hover::before {\n    right: -5%;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt[data-v-6bc6233e]::after,\n.message--index .message_inner .message_box .box .text_area .more_txt[data-v-6bc6233e]::before {\n    content: \"\";\n    height: 1px;\n    background-color: gray;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt[data-v-6bc6233e]::before {\n    width: 10px;\n}\n@media screen and (max-width: 767px) {\n.message--index[data-v-6bc6233e] {\n        padding: 80px 5%;\n}\n.message--index .message_inner[data-v-6bc6233e] {\n        padding-top: 0;\n}\n.message--index .message_inner .message_box[data-v-6bc6233e]::after {\n        width: 100%;\n        height: 400px;\n        max-height: none;\n        position: relative;\n        right: auto;\n        top: auto;\n        transform: translateY(0);\n        display: block;\n        margin-top: 40px;\n}\n.message--index .message_inner .message_box .box .text_area[data-v-6bc6233e] {\n        width: 100%;\n}\n.message--index .message_inner .message_box .box .text_area .ttl h3[data-v-6bc6233e] {\n        font-size: 20px;\n        margin-top: 10px;\n        margin-bottom: 30px;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt[data-v-6bc6233e] {\n        border-bottom: 1px solid #000;\n        padding-right: 0;\n        padding-bottom: 0px;\n}\n.message--index .message_inner .message_box .box .text_area .more_txt .underline[data-v-6bc6233e] {\n        line-height: 2;\n}\n}\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css&":
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.l-page-header {\n    margin-top: 5.71429rem;\n    width: 100%;\n    height: 25rem;\n    position: relative;\n    overflow: hidden;\n    visibility: hidden;\n}\n.l-page-header:after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.2);\n    top: 0;\n    left: 0;\n}\n.l-page-header__image img {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    width: 100%;\n    height: auto;\n    min-height: 23.57143rem;\n    min-width: 100rem;\n}\n.l-page-header__inner {\n    text-align: center;\n    color: #fff;\n    position: absolute;\n    width: 100%;\n    left: 0;\n    top: 50%;\n    transform: translateY(-50%);\n    z-index: 99;\n    padding: 0 1.14286rem;\n}\n.l-page-header__title {\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n    font-size: 58px;\n    line-height: 1.03448;\n    letter-spacing: 0.1em;\n    margin: 0;\n    font-weight: bold;\n    color: #fff;\n}\n.l-page-header__subtitle {\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    font-size: 14px;\n    margin-top: 0.57143rem;\n}\n.l-main {\n    width: 100%;\n    max-width: 137.14286rem;\n    margin: 0 auto;\n}\n.l-section {\n    padding-top: 4rem;\n    padding-bottom: 4rem;\n}\n.l-post-content h4,\n#tinymce.post-type-post h4,\n#tinymce.post-type-page h4,\n#tinymce.mce-content-body.acf_content h4 {\n    margin-top: 0;\n    margin-bottom: 1.71429rem;\n    color: #102855;\n}\n.l-post-content h3,\n#tinymce.post-type-post h3,\n#tinymce.post-type-page h3,\n#tinymce.mce-content-body.acf_content h3 {\n    margin-bottom: 3.42857rem;\n    margin-top: 0;\n}\n.c-heading span,\n.l-post-content h2 span,\n#tinymce.post-type-post h2 span,\n#tinymce.post-type-page h2 span,\n#tinymce.mce-content-body.acf_content h2 span,\n.l-post-content h3 span,\n#tinymce.post-type-post h3 span,\n#tinymce.post-type-page h3 span,\n#tinymce.mce-content-body.acf_content h3 span,\n.l-post-content h4 span,\n#tinymce.post-type-post h4 span,\n#tinymce.post-type-page h4 span,\n#tinymce.mce-content-body.acf_content h4 span,\n.l-post-content h5 span,\n#tinymce.post-type-post h5 span,\n#tinymce.post-type-page h5 span,\n#tinymce.mce-content-body.acf_content h5 span,\n.l-post-content h6 span,\n#tinymce.post-type-post h6 span,\n#tinymce.post-type-page h6 span,\n#tinymce.mce-content-body.acf_content h6 span {\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n    font-weight: bold;\n}\n.vission-text {\n    background-color: #EDEDED;\n    padding: 1.14286rem 2rem;\n    border-left: 4px solid #102855;\n    text-align: left;\n    margin-bottom: 1.71429rem;\n}\n.vision-sub-heading {\n    border-bottom: 3px solid #E2E2E2;\n    padding-bottom: 1.42857rem;\n    margin-bottom: 3.42857rem;\n    position: relative;\n    text-align: left;\n    font-size: 31px;\n    font-family: 'Lato', sans-serif;\n    font-weight: bold;\n    letter-spacing: 0.1em;\n}\n.vision-sub-heading span::after {\n    content: \"\";\n    display: block;\n    width: 7.14286rem;\n    height: 0.21429rem;\n    background-color: #102855;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    transform: translateY(100%);\n}\n@media (max-width: 945px) {\n.l-page-header__image img {\n        min-width: 53rem;\n        min-height: inherit;\n}\n.vision-sub-heading {\n        font-size: 19px;\n}\n.l-page-header__title {\n        font-size: 40px;\n}\n.l-page-header__subtitle {\n        font-size: 13px;\n}\n.l-section {\n        padding-top: 2rem;\n        padding-bottom: 2rem;\n}\n.l-post-content h4,\n    #tinymce.post-type-post h4,\n    #tinymce.post-type-page h4,\n    #tinymce.mce-content-body.acf_content h4 {\n        margin-bottom: 1.14286rem\n}\n.l-post-content h3,\n    #tinymce.post-type-post h3,\n    #tinymce.post-type-page h3,\n    #tinymce.mce-content-body.acf_content h3 {\n        margin-bottom: 1.71429rem;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25111,10 +24623,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.top-item .top-title[data-v-28334234
 
 /***/ }),
 
-/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css&":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25128,7 +24640,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.hoverScale .thumb {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: DIN-Bold;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n    position: relative;\n    font-family: DIN-Bold;\n    font-size: 14px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .scaleImg {\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.6);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n}\n.recruit_fix {\n    position: sticky;\n    left: 0;\n    right: 0;\n    bottom: -50%;\n    /* left: 50%; */\n    opacity: 0;\n    /* transform: translateX(-50%); */\n    z-index: 20;\n    padding: 10px 0;\n    width: 80%;\n    transition: 0.4s;\n}\n.recruit_fix.visibility {\n    bottom: 12px;\n    opacity: 1;\n}\n.recruit_fix {\n    margin: auto;\n    z-index: 20;\n    width: 82%;\n}\n.recruit_fix ul {\n    justify-content: space-between;\n}\n.recruit_fix ul li {\n    margin: auto;\n    width: 40%;\n}\n.recruit_fix ul li a {\n    width: 100%;\n    padding: 16px 0;\n    margin-top: 0;\n    font-size: 1.6rem;\n    line-height: 1.7;\n}\n.recruit--leadtxt h3 {\n    font-size: 38px;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr.entryarea li a {\n        padding: 25px 0;\n        margin-top: 20px;\n        font-size: 16px;\n}\n.recruit--contactarea--bnr.entryarea li a:hover {\n        background-color: #fff;\n        color: #000;\n}\n}\n.recruit .recruit_fix ul li a .label {\n    font-size: 12px;\n    font-weight: 500;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n    font-size: 12px;\n    font-family: NotoSansJP-Medium;\n    letter-spacing: 0.05em;\n    text-align: center;\n}\n.recruit--contactarea--bnr.entryarea li a {\n    position: relative;\n    display: block;\n    border: 1px solid #2b2b2b;\n    background-color: #000;\n    letter-spacing: 0.12em;\n    text-align: center;\n    color: #dadada;\n    font-size: 16px;\n    transition: 0.6s ease;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr {\n        display: flex;\n        justify-content: center;\n}\n}\n.recruit_fix ul {\n    justify-content: space-between;\n}\n.recruit-fix {\n    bottom: 12px;\n    opacity: 1;\n}\n.mv_textarea-recruit {\n    /* color: #dadada; */\n    background-color: #000;\n}\n@media screen and (max-width: 896px) {\n.recruit_fix ul {\n        display: flex;\n        padding: 0;\n}\n.recruit_fix ul li a {\n        font-size: 14px;\n        padding: 13px 0;\n}\n.recruit_fix ul li a .label {\n        font-size: 10px;\n}\n.recruit_fix {\n        width: 100%;\n}\n}\n.mv_textarea-recruit .entxt {\n    display: block;\n    font-size: 40px;\n    letter-spacing: 0.1em;\n    text-transform: uppercase;\n    transform: translateY(15%);\n    transition: 0.6s;\n    opacity: 1;\n    color: #fff;\n    font-weight: bold;\n    text-align: left;\n    margin-bottom: 20px;\n}\n@media screen and (max-width: 896px) {\n.mv_textarea-recruit {\n        padding: 30px 5% 0px;\n        font-size: 2.8rem;\n}\n}\n.mv_textarea-recruit .jptxt {\n    transform: translateY(15%);\n    transition: 0.6s;\n    opacity: 1;\n    font-size: 13px;\n    letter-spacing: 0.08em;\n    color: #fff;\n}\n.sp {\n    display: none;\n}\n@media screen and (max-width: 896px) {\n.sp {\n        display: block;\n}\n}\n.recruit--leadtxt {\n    /* padding: 40px 10% 100px; */\n    padding: 130px 10% 170px;\n    color: #dadada;\n    position: relative;\n    z-index: 1;\n    margin-top: 0px;\n    background-color: #000;\n    background: url('/assets/img/all-member.png') no-repeat center;\n    background-blend-mode: overlay;\n    background-color: rgba(0, 0, 0, 0.5);\n}\n\n/* .recruit--leadtxt::after {\n    content: \"\";\n    background: url('/assets/img/all_member.jpg') no-repeat center;\n    background-size: 100%;\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    opacity: 0.3;\n    z-index: -1;\n} */\n@media screen and (max-width: 896px) {\n.recruit--leadtxt::after {\n        background: url('/assets/img/all_member.jpg') no-repeat center;\n        background-size: 300%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt {\n        padding: 30px 5% 60px;\n}\n}\n.recruit--leadtxt h3 {\n    line-height: 1.63;\n    transform: translateY(10%);\n    transition: 0.6s;\n    opacity: 1;\n    color: #dadada;\n    font-weight: bold;\n    font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--leadtxt h3 {\n        font-size: 38px;\n        letter-spacing: 0.2em;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt h3 {\n        font-size: 20px;\n        letter-spacing: 0.12em;\n}\n}\n.recruit--leadtxt p {\n    transform: translateY(10%);\n    transition: 0.9s;\n    opacity: 1;\n    margin-top: 30px;\n    letter-spacing: 0.12em;\n    line-height: 2;\n    font-size: 16px;\n    font-family: NotoSansJP-Regular;\n    font-weight: 400;\n    color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt p {\n        font-size: 14px;\n}\n}\n@media screen and (max-width: 500px) {\n.recruit--contactarea--bnr.entryarea li a {\n        font-size: 10px;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n        font-size: 8px;\n}\n.recruit_fix.visibility {\n        bottom: -10px;\n}\n.recruit_fix ul li {\n        width: 49%;\n        margin: 0px auto 0px 0px;\n}\n.recruit--leadtxt {\n        margin-top: 0px;\n}\n}\n.recruit.loaded .recruit--leadtxt h3 {\n    transform: translateY(0);\n    opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt p {\n    transform: translateY(0);\n    opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt .photo {\n    transform: translateY(0);\n    opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .pararel {\n        bottom: 90px;\n}\n}\n.recruit .mv_textarea-recruit {\n    position: relative;\n    z-index: 2;\n}\n.recruit .recruit_fix {\n    position: fixed;\n    bottom: -50px;\n    left: 50%;\n    opacity: 0;\n    transform: translateX(-50%);\n    z-index: 20;\n    padding: 10px 2%;\n    width: 60%;\n    transition: 0.4s;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix {\n        left: 0;\n        width: 100%;\n        transform: translateX(0);\n}\n}\n.recruit .recruit_fix.visibility {\n    bottom: 12px;\n    opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix.visibility {\n        bottom: 8px;\n}\n}\n.recruit .recruit_fix ul {\n    justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul {\n        display: flex;\n        padding: 0;\n}\n}\n.recruit .recruit_fix ul li {\n    margin: 0;\n    width: 49%;\n}\n.recruit .recruit_fix ul li a {\n    width: 100%;\n    padding: 16px 0;\n    margin-top: 0;\n    font-size: 1.6rem;\n    line-height: 1.7;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a {\n        font-size: 1.4rem;\n        padding: 13px 0;\n}\n}\n.recruit .recruit_fix ul li a::before,\n.recruit .recruit_fix ul li a::after {\n    content: none;\n}\n.recruit .recruit_fix ul li a .label {\n    font-size: 1.2rem;\n    font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a .label {\n        font-size: 1rem;\n}\n}\n.recruit--person {\n    background-color: #fff;\n    position: relative;\n}\n@media screen and (min-width: 897px) {\n.recruit_fix.visibility {\n        margin-bottom: 80px;\n}\n.recruit--person {\n        padding: 180px 10% 100px;\n}\n.mv_textarea-recruit {\n        padding: 40px 10% 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person {\n        padding: 40px 5%;\n}\n}\n.recruit--person .heading .sub {\n\n    font-size: 16px;\n    letter-spacing: 0.08em;\n    line-height: 16px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    font-weight: 400;\n}\n.recruit--person .heading h3 {\n    font-size: 20px;\n    margin-top: 23px;\n    letter-spacing: 0.08em;\n    line-height: 20px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    font-weight: 700;\n}\n.recruit--person--list {\n    margin-top: 80px;\n}\n@media screen and (min-width: 897px) {\n.recruit--person--list {\n        display: flex;\n        flex-wrap: wrap;\n        justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--list {\n        margin-top: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item {\n        width: 48.5%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item {\n        margin-top: 40px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item:nth-child(4) {\n        margin-top: 140px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item h4 {\n        margin-top: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 {\n        margin-top: 24px;\n}\n}\n.recruit--person--item h4 .department {\n    display: block;\n    font-size: 16px;\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    margin-bottom: 0px;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    line-height: 16px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .department {\n        font-size: 14px;\n}\n}\n.recruit--person--item h4 .phrase {\n    display: block;\n    margin-top: 15px;\n    font-size: 16px;\n    line-height: 24px;\n    letter-spacing: 0.1em;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n    background-color: #dadada;\n    padding: 15px 5px;\n    min-height: 105px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .phrase {\n        font-size: 20px;\n}\n}\n.recruit--person--item p {\n    margin-top: 20px;\n    font-size: 14px;\n    line-height: 2;\n    letter-spacing: 0.1em;\n    font-family: \"Noto Sans JP\", sans-serif;\n    color: #000;\n}\n@media screen and (max-width: 425px) {\n.mv_textarea-recruit .jptxt {\n        font-size: 12px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.vTcAG img[data-v-33b85a54] {\n    height: 52px;\n}\n.vTcAG h3[data-v-33b85a54] {\n    margin-bottom: 28px;\n    margin-right: 30px;\n}\n.text-field[data-v-33b85a54] {\n    width: 100%;\n    height: 59px;\n    padding-left: 10px;\n    font-size: 16px;\n    border-radius: 3px;\n    border: solid 1px #d7d7d7;\n    background-color: #ffffff;\n}\n.hIMiPJ span[data-v-33b85a54] {\n    display: block;\n    margin-bottom: 10px;\n    font-size: 16px;\n    color: #35353B;\n}\n.inputCase[data-v-33b85a54] {\n    display: flex;\n    margin-bottom: 34px;\n}\n.inputCase>div[data-v-33b85a54] {\n    margin-right: 44px;\n    min-width: 310px;\n}\n.form-textfield[data-v-33b85a54] {\n    width: 100%;\n}\n.form-card[data-v-33b85a54] {\n    padding: 34px 0 65px;\n    min-height: 430px;\n}\n.eXkYNB .container[data-v-33b85a54] {\n    background: white;\n    max-width: 1280px;\n    margin: 0 auto;\n    padding: 0 15px;\n    padding-bottom: 60px;\n    padding-top: 60px;\n    position: relative;\n}\n.step-form-card[data-v-33b85a54] {\n    padding: 34px 0 0;\n    margin-bottom: 68px;\n    min-height: 430px;\n    height: 430px;\n    max-height: 430px;\n    width: 664px;\n    max-width: 690px;\n    position: relative;\n    display: flex;\n    flex-direction: column;\n}\n.vTcAG .backgroundFill[data-v-33b85a54] {\n    background: #f7f7f7;\n    position: fixed;\n    height: 100%;\n    width: 20px;\n    width: calc((100% - 1280px) / 2 + 407px);\n    top: 0;\n    right: 0;\n}\n.eXkYNB[data-v-33b85a54] {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    background: white;\n    padding-bottom: 70px;\n    min-height: calc(100% - 70px);\n    padding-top: 56px;\n}\n.vTcAG svg[data-v-33b85a54] {\n    position: fixed;\n    right: calc((100% - 1280px) / 2 + 407px);\n    bottom: 0;\n    height: 100%;\n    width: 10vh;\n}\n.vTcAG[data-v-33b85a54] {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: -15px;\n}\n.vTcAG .vertical-wrapper[data-v-33b85a54] {\n    position: relative;\n    z-index: 1;\n    height: 100%;\n    display: flex;\n    align-items: center;\n}\n.vTcAG .wrapper[data-v-33b85a54] {\n    display: flex;\n    z-index: 1;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: flex-end;\n}\n.vTcAG h3[data-v-33b85a54],\n.vTcAG p[data-v-33b85a54],\n.vTcAG span[data-v-33b85a54] {\n    font-size: 16px;\n    font-weight: bold;\n    text-align: right;\n    color: #b9b9b9;\n}\n.vTcAG h3[data-v-33b85a54] {\n    margin-bottom: 28px;\n    margin-right: 30px;\n}\n.vTcAG .logo-wrapper[data-v-33b85a54] {\n    width: 422px;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: flex-end;\n}\n.vTcAG .logo-wrapper>div[data-v-33b85a54] {\n    margin-right: 30px;\n    margin-bottom: 30px;\n}\n.select-control[data-v-33b85a54] {\n    padding: 10px;\n    border: solid 1px #d7d7d7;\n    border-radius: 3px;\n    cursor: pointer;\n    min-height: 59px;\n}\n.checkbox-grid[data-v-33b85a54] {\n    max-width: unset;\n    position: relative;\n    z-index: 5;\n    display: grid;\n    grid-auto-flow: row;\n    grid-template-columns: repeat(auto-fit, 220px);\n    grid-template-rows: repeat(5, auto);\n    margin: 10px 0px;\n}\n.form-textfield[data-v-33b85a54] {\n    font-size: 16px;\n    border-radius: 3px;\n    border: solid 1px #d7d7d7;\n    background-color: #ffffff;\n    color: #35353B;\n    padding: 10px;\n}\nli[data-v-33b85a54] {\n\n    position: relative;\n}\nli input[type=radio][data-v-33b85a54] {\n    position: absolute;\n    visibility: hidden;\n}\nli label[data-v-33b85a54] {\n    position: relative;\n    font-size: 18px;\n    padding: 0px 25px 0px 35px;\n    z-index: 9;\n    cursor: pointer;\n    -webkit-transition: all 0.25s linear;\n}\nli .check[data-v-33b85a54] {\n    display: block;\n    position: absolute;\n    border: 3px solid #AAAAAA;\n    border-radius: 100%;\n    height: 21px;\n    width: 22px;\n    top: 2px;\n    left: 0px;\n    z-index: 5;\n    transition: border .25s linear;\n    -webkit-transition: border .25s linear;\n}\nli .check[data-v-33b85a54]::before {\n    display: block;\nposition: absolute;\ncontent: '';\nborder-radius: 100%;\nheight: 0.7rem;\nwidth: 0.7rem;\ntop: 2px;\nleft: 3px;\nmargin: auto;\ntransition: background 0.25s linear;\n-webkit-transition: background 0.25s linear;\n}\ninput[type=radio]:checked~.check[data-v-33b85a54] {\n    border: 3px solid rgb(57, 108, 162);\n}\ninput[type=radio]:checked~.check[data-v-33b85a54]::before {\n    background: rgb(57, 108, 162);\n}\n#heading[data-v-33b85a54] {\n\n    font-size: 26px;\n    font-weight: bold;\n    color: #282828;\n    text-align: left;\n}\n#msform[data-v-33b85a54] {\n    position: relative;\n}\n.form-card[data-v-33b85a54] {\n    text-align: left\n}\n#msform fieldset[data-v-33b85a54]:not(:first-of-type) {\n    display: none\n}\n#msform .action-button[data-v-33b85a54] {\n    width: 170px;\n    height: 67px;\n    background: rgb(57, 108, 162);\n    font-weight: bold;\n    color: white;\n    border: 0 none;\n    border-radius: 0px;\n    cursor: pointer;\n    padding: 10px 5px;\n    margin: 10px 0px 10px 5px;\n    float: left;\n    text-align: center;\n}\n#msform .action-button[data-v-33b85a54]:hover,\n#msform .action-button[data-v-33b85a54]:focus {\n    background-color: var(--textcolor);\n}\n#msform .action-button-previous[data-v-33b85a54] {\n    width: 100px;\n    height: 67px;\n    font-size: 20px;\n    font-weight: bold;\n    color: rgb(57, 108, 162);\n    border: 0 none;\n    border-radius: 0px;\n    cursor: pointer;\n    padding: 10px 5px;\n    margin: 10px 5px 10px 0px;\n    float: left;\n    text-align: center;\n}\n.card[data-v-33b85a54] {\n    z-index: 0;\n    border: none;\n    position: relative\n}\n.fs-title[data-v-33b85a54] {\n    font-size: 25px;\n    color: #673AB7;\n    margin-bottom: 15px;\n    font-weight: normal;\n    text-align: left\n}\n.purple-text[data-v-33b85a54] {\n    color: #673AB7;\n    font-weight: normal\n}\n.steps[data-v-33b85a54] {\n    font-size: 18px;\n    color: #b9b9b9;\n    font-weight: normal;\n}\n.fieldlabels[data-v-33b85a54] {\n    color: gray;\n    text-align: left\n}\n.fit-image[data-v-33b85a54] {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover\n}\n.css-checkbox[data-v-33b85a54] {\n    position: absolute;\n    overflow: hidden;\n    clip: rect(0 0 0 0);\n    height: 1px;\n    width: 1px;\n    margin: -1px;\n    padding: 0;\n    border: 0;\n}\n#inputPreview[data-v-33b85a54] {\n    display: flex;\n    gap: 20px;\n}\n.css-checkbox+label[data-v-33b85a54] {\n    position: relative;\n    font-size: 16px;\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    height: 19px;\n    color: #282828;\n}\n.css-checkbox+label[data-v-33b85a54]::before {\n    content: \" \";\n    display: inline-block;\n    vertical-align: middle;\n    margin-right: 10px;\n    width: 20px;\n    height: 20px;\n    background-color: white;\n    border-width: 1px;\n    border-style: solid;\n    border-color: rgb(57, 108, 162);\n    border-radius: 2px;\n    box-shadow: none;\n}\n.css-checkbox:checked+label[data-v-33b85a54]::after {\n    content: \" \";\n    background-image: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMDM5NWNhIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+\");\n    background-repeat: no-repeat;\n    background-size: 10px 10px;\n    background-position: center center;\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-left: 0px;\n    left: 0px;\n    top: 0px;\n    text-align: center;\n    background-color: transparent;\n    font-size: 10px;\n    height: 19px;\n    width: 19px;\n}\n@media screen and (max-width: 1149px) and (min-width: 769px) {\n.step-form-card[data-v-33b85a54] {\n        margin: auto;\n        padding-top: 0px;\n}\n.eXkYNB[data-v-33b85a54] {\n        padding-top: 20px;\n}\n}\n@media (max-width: 1150px) {\n.vTcAG[data-v-33b85a54] {\n        display: none;\n}\n}\n@media (max-width: 1300px) {\n.inEYMP .container[data-v-33b85a54] {\n        padding-left: 32px;\n        padding-right: 32px;\n}\n}\n@media (max-width: 768px) {\n.step-form-card[data-v-33b85a54] {\n        width: 100%;\n        margin: auto;\n}\n.vTcAG img[data-v-33b85a54] {\n        height: 35px;\n}\n.inputCase[data-v-33b85a54] {\n        flex-direction: column;\n}\n.eXkYNB .container[data-v-33b85a54] {\n        padding-top: 0px;\n        padding-bottom: 0px;\n}\n.vTcAG .vertical-wrapper[data-v-33b85a54] {\n        background: #f7f7f7;\n        width: calc(100% + 30px);\n        margin-left: -15px;\n        padding-top: 40px;\n        display: flex;\n        justify-content: center;\n}\n.inEYMP .background[data-v-33b85a54] {\n        flex-grow: 1;\n}\n.vTcAG[data-v-33b85a54] {\n        position: unset;\n        width: 100%;\n        display: flex;\n        flex-direction: column-reverse;\n        margin-top: 16px;\n}\n.vTcAG svg[data-v-33b85a54] {\n        position: unset;\n        width: calc(100% + 30px);\n        margin-left: -15px;\n        height: 7vw;\n}\n.eXkYNB[data-v-33b85a54] {\n        padding-bottom: 0;\n}\n.step-form-card[data-v-33b85a54] {\n        height: 100%;\n        max-height: 100%;\n}\n.vTcAG .backgroundFill[data-v-33b85a54] {\n        position: unset;\n}\n.vTcAG .logo-wrapper[data-v-33b85a54] {\n        width: 100%;\n        justify-content: center;\n        padding-bottom: 16px;\n}\n.vTcAG .wrapper h3[data-v-33b85a54] {\n        font-size: 14px;\n        margin-right: 0;\n        margin-bottom: 19px;\n        width: 100%;\n        text-align: center;\n}\n.inputCase>div[data-v-33b85a54] {\n        max-width: 100%;\n}\n#msform .action-button-previous[data-v-33b85a54],\n    #msform .action-button[data-v-33b85a54] {\n        width: 100%;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25153,6 +24665,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\n.solution-page[data-v-e992a3e2] {\n    padding: 60px 10% 120px;\n}\n.service-section[data-v-e992a3e2] {\n    padding: 60px 10% 120px;\n}\n\n/*servive*/\n.service[data-v-e992a3e2] {\n    padding-bottom: 160px;\n    padding-top: 0px;\n}\n.service-subcontents__text[data-v-e992a3e2] {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    width: calc((100% - 415px) / 1);\n    text-align: center;\n    margin: auto;\n}\n.service-contents[data-v-e992a3e2] {\n    position: relative;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n    flex-direction: row-reverse;\n}\n.service-contents__text[data-v-e992a3e2] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: calc((100% - 60px) / 2);\n}\n.service-contents__list[data-v-e992a3e2] {\n    width: calc((100% - 60px) / 2);\n    margin-bottom: 60px;\n}\n.service-contents .service-contents__list[data-v-e992a3e2]:nth-child(2n+1) {\n    position: relative;\n    top: 132px;\n}\n.service-contents__text[data-v-e992a3e2] {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.service-contents__list[data-v-e992a3e2] {\n    background: #FFFFFF;\n    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n    border-radius: 15px;\n    min-height: 360px;\n}\n.service-contents__list a[data-v-e992a3e2] {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n}\n.service-contents__list a:hover .service-contents__list__thumbnail[data-v-e992a3e2] {\n    transform: translateY(-6%) scale(1.15);\n}\n.service-contents__list__thumbnail-frame[data-v-e992a3e2] {\n    position: absolute;\n    border-radius: 15px 15px 0 0;\n    top: 0;\n    left: 0;\n    height: 300px;\n    width: 100%;\n    overflow: hidden;\n}\n.service-contents__list__thumbnail[data-v-e992a3e2] {\n    height: 300px;\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    transition: 0.5s;\n    position: relative;\n    z-index: 1;\n}\n.service-contents__list__subtitle[data-v-e992a3e2] {\n    margin-top: 285px;\n    margin-left: 30px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    position: relative;\n    z-index: 2;\n}\n.service-contents__list__title[data-v-e992a3e2] {\n    margin: 0 30px 10px 30px;\n    font-weight: bold;\n    font-size: 24px;\n    line-height: 36px;\n    letter-spacing: 0.05em;\n    position: relative;\n    z-index: 2;\n}\n.service-contents__list__text[data-v-e992a3e2] {\n    margin: 0 30px;\n    padding-bottom: 20px;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n}\n.viewmore-btn_service[data-v-e992a3e2] {\n    margin-top: 15px;\n}\n.service-contents__list .service-items[data-v-e992a3e2] {\n    position: relative;\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n}\n.service-contents__list .service-items:hover .service-contents__list__thumbnail[data-v-e992a3e2] {\n    transform: translateY(-6%) scale(1.15);\n}\n@media (max-width: 767px) {\n.service[data-v-e992a3e2] {\n        padding-bottom: 60px;\n}\n.service-contents[data-v-e992a3e2] {\n        display: block;\n}\n.service-contents__text[data-v-e992a3e2] {\n        position: relative;\n        width: 100%;\n}\n.service-contents__list[data-v-e992a3e2] {\n        width: 100%;\n        min-height: 270px;\n}\n.service-contents__list a[data-v-e992a3e2] {\n        height: auto;\n}\n.service-contents .service-contents__list[data-v-e992a3e2]:nth-child(2n+1) {\n        top: inherit;\n}\n.service-contents__text[data-v-e992a3e2],\n    .service-contents__list[data-v-e992a3e2] {\n        margin-bottom: 30px !important;\n}\n.service-contents .service-contents__list[data-v-e992a3e2]:nth-child(5) {\n        margin-bottom: 0 !important;\n}\n.service-contents__list__thumbnail-frame[data-v-e992a3e2] {\n        height: 150px;\n}\n.service-contents__list__thumbnail[data-v-e992a3e2] {\n        height: 120px;\n        -o-object-position: bottom;\n           object-position: bottom;\n}\n.service-contents__list__subtitle[data-v-e992a3e2] {\n        margin-top: 112px;\n        margin-bottom: 0;\n        margin-left: 10px;\n        font-size: 10px;\n        line-height: 15px;\n}\n.service-contents__list__title[data-v-e992a3e2] {\n        margin: 0 30px 10px 10px;\n        font-size: 14px;\n        line-height: 21px;\n}\n.service-contents__list__text[data-v-e992a3e2] {\n        margin: 0 10px 12px 10px;\n        font-size: 13px;\n        line-height: 19px;\n}\n.viewmore-btn_service[data-v-e992a3e2] {\n        margin: 50px auto 0 auto;\n}\n}\n\n/*product section*/\n.product[data-v-e992a3e2] {\n    padding-bottom: 60px;\n    /*蠖ｱ縺ｮ隱ｿ謨ｴ 160 - 20*/\n}\n.product-contents[data-v-e992a3e2] {\n    -moz-columns: 2;\n         columns: 2;\n    -moz-column-fill: auto;\n         column-fill: auto;\n    -moz-column-gap: 60px;\n         column-gap: 60px;\n}\n.product-contents__text[data-v-e992a3e2],\n.product-contents__list[data-v-e992a3e2] {\n    margin-bottom: 60px;\n    -moz-column-break-inside: avoid;\n         break-inside: avoid;\n    transform: translateZ(0);\n}\nul .product-contents__list[data-v-e992a3e2]:nth-child(3) {\n    margin-bottom: 0;\n}\n.product-contents__text[data-v-e992a3e2] {\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.product-contents__list[data-v-e992a3e2] {\n    background: #FFFFFF;\n    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);\n    border-radius: 15px;\n}\n.product-contents__list__thumbnail[data-v-e992a3e2] {\n    width: 100%;\n    border-radius: 15px 15px 0 0;\n}\n.product-contents__list__sorrytext[data-v-e992a3e2] {\n    /*issue: 繝�じ繧､繝ｳ蟠ｩ繧後ｋ*/\n    position: absolute;\n    width: 100%;\n    top: 80px;\n    text-align: center;\n    color: #FFFFFF;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n}\n.product-contents__list__sorrytext_last[data-v-e992a3e2] {\n    top: 60px;\n}\n.product-contents__list__subtitle[data-v-e992a3e2] {\n    margin-top: -23px;\n    margin-left: 30px;\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n}\n.product-contents__list__title[data-v-e992a3e2] {\n    margin: 0 30px 10px 30px;\n    font-weight: bold;\n    font-size: 24px;\n    line-height: 36px;\n    letter-spacing: 0.05em;\n}\n.product-contents__list__text[data-v-e992a3e2] {\n    margin: 0 30px;\n    padding-bottom: 20px;\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n}\n.viewmore-btn_product[data-v-e992a3e2] {\n    margin-top: -58px;\n}\n@media (max-width: 767px) {\n.solution-page[data-v-e992a3e2] {\n        padding: 60px 5%;\n}\n.profileGallery[data-v-e992a3e2] {\n        grid-gap: 10px;\n}\n.button-fit[data-v-e992a3e2] {\n        width: 100%;\n}\n.product[data-v-e992a3e2] {\n        padding-bottom: 0px;\n        /*蠖ｱ縺ｮ隱ｿ謨ｴ 160 - 20*/\n}\n.product-contents[data-v-e992a3e2] {\n        -moz-columns: 1;\n             columns: 1;\n}\n.product-contents__text[data-v-e992a3e2],\n    .product-contents__list[data-v-e992a3e2] {\n        margin-bottom: 30px !important;\n}\n.product-contents .product-contents__list[data-v-e992a3e2]:nth-child(5) {\n        margin-bottom: 0 !important;\n}\n.product-contents__list_last[data-v-e992a3e2] {\n        margin-bottom: 0 !important;\n}\n.product-contents__list__thumbnail[data-v-e992a3e2] {\n        width: 100%;\n}\n.product-contents__list__sorrytext[data-v-e992a3e2] {\n        top: 40px;\n        font-size: 13px;\n        line-height: 19px;\n}\n.product-contents__list__sorrytext_last[data-v-e992a3e2] {\n        top: 30px;\n}\n.product-contents__list__subtitle[data-v-e992a3e2] {\n        margin-top: -8px;\n        margin-bottom: 0;\n        margin-left: 10px;\n        font-size: 10px;\n        line-height: 15px;\n}\n.product-contents__list__title[data-v-e992a3e2] {\n        margin: 0 30px 10px 10px;\n        font-size: 14px;\n        line-height: 21px;\n}\n.product-contents__list__text[data-v-e992a3e2] {\n        margin: 0 10px 12px 10px;\n        font-size: 13px;\n        line-height: 19px;\n}\n.viewmore-btn_product[data-v-e992a3e2] {\n        margin: 50px auto 0 auto;\n}\n.service-subcontents__text[data-v-e992a3e2] {\n        width: 95%;\n}\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.l-page-header {\n    margin-top: 5.71429rem;\n    width: 100%;\n    height: 25rem;\n    position: relative;\n    overflow: hidden;\n    visibility: hidden;\n}\n.l-page-header:after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.2);\n    top: 0;\n    left: 0;\n}\n.l-page-header__image img {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    width: 100%;\n    height: auto;\n    min-height: 23.57143rem;\n    min-width: 100rem;\n}\n.l-page-header__inner {\n    text-align: center;\n    color: #fff;\n    position: absolute;\n    width: 100%;\n    left: 0;\n    top: 50%;\n    transform: translateY(-50%);\n    z-index: 99;\n    padding: 0 1.14286rem;\n}\n.l-page-header__title {\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n    font-size: 58px;\n    line-height: 1.03448;\n    letter-spacing: 0.1em;\n    margin: 0;\n    font-weight: bold;\n    color: #fff;\n}\n.l-page-header__subtitle {\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    font-size: 14px;\n    margin-top: 0.57143rem;\n}\n.l-main {\n    width: 100%;\n    max-width: 137.14286rem;\n    margin: 0 auto;\n}\n.l-section {\n    padding-top: 4rem;\n    padding-bottom: 4rem;\n}\n.l-post-content h4,\n#tinymce.post-type-post h4,\n#tinymce.post-type-page h4,\n#tinymce.mce-content-body.acf_content h4 {\n    margin-top: 0;\n    margin-bottom: 1.71429rem;\n    color: #102855;\n}\n.l-post-content h3,\n#tinymce.post-type-post h3,\n#tinymce.post-type-page h3,\n#tinymce.mce-content-body.acf_content h3 {\n    margin-bottom: 3.42857rem;\n    margin-top: 0;\n}\n.c-heading span,\n.l-post-content h2 span,\n#tinymce.post-type-post h2 span,\n#tinymce.post-type-page h2 span,\n#tinymce.mce-content-body.acf_content h2 span,\n.l-post-content h3 span,\n#tinymce.post-type-post h3 span,\n#tinymce.post-type-page h3 span,\n#tinymce.mce-content-body.acf_content h3 span,\n.l-post-content h4 span,\n#tinymce.post-type-post h4 span,\n#tinymce.post-type-page h4 span,\n#tinymce.mce-content-body.acf_content h4 span,\n.l-post-content h5 span,\n#tinymce.post-type-post h5 span,\n#tinymce.post-type-page h5 span,\n#tinymce.mce-content-body.acf_content h5 span,\n.l-post-content h6 span,\n#tinymce.post-type-post h6 span,\n#tinymce.post-type-page h6 span,\n#tinymce.mce-content-body.acf_content h6 span {\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n    font-weight: bold;\n}\n.vission-text {\n    background-color: #EDEDED;\n    padding: 1.14286rem 2rem;\n    border-left: 4px solid #102855;\n    text-align: left;\n    margin-bottom: 1.71429rem;\n}\n.vision-sub-heading {\n    border-bottom: 3px solid #E2E2E2;\n    padding-bottom: 1.42857rem;\n    margin-bottom: 3.42857rem;\n    position: relative;\n    text-align: left;\n    font-size: 31px;\n    font-family: 'Lato', sans-serif;\n    font-weight: bold;\n    letter-spacing: 0.1em;\n}\n.vision-sub-heading span::after {\n    content: \"\";\n    display: block;\n    width: 7.14286rem;\n    height: 0.21429rem;\n    background-color: #102855;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    transform: translateY(100%);\n}\n@media (max-width: 945px) {\n.l-page-header__image img {\n        min-width: 53rem;\n        min-height: inherit;\n}\n.vision-sub-heading {\n        font-size: 19px;\n}\n.l-page-header__title {\n        font-size: 40px;\n}\n.l-page-header__subtitle {\n        font-size: 13px;\n}\n.l-section {\n        padding-top: 2rem;\n        padding-bottom: 2rem;\n}\n.l-post-content h4,\n    #tinymce.post-type-post h4,\n    #tinymce.post-type-page h4,\n    #tinymce.mce-content-body.acf_content h4 {\n        margin-bottom: 1.14286rem\n}\n.l-post-content h3,\n    #tinymce.post-type-post h3,\n    #tinymce.post-type-page h3,\n    #tinymce.mce-content-body.acf_content h3 {\n        margin-bottom: 1.71429rem;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -25200,7 +24736,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\n    margin-top: 100px;\n    margin-bottom: 100px;\n    display: flex;\n    justify-content: space-between;\n}\n.single {\n    width: calc(100% - 440px);\n}\n.single__head {\n    margin-bottom: 60px;\n    padding: 30px 30px 20px 30px;\n    background: #FFFFFF;\n    border: none !important;;\n    box-sizing: border-box;\n    border-radius: 10px;\n}\n.single__head__title {\n    font-size: 35px;\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    line-height: 1.4;\n    letter-spacing: 0.04em;\n    position: relative;\n    transition: 0.8s;\n    transform: translateY(5%);\n    /* opacity: 0; */\n    border-bottom: 2px solid #333;\n    color: #333;\n}\n.single__head__flex {\n    display: flex;\n}\n.single__head__tags {\n    margin-left: auto!important;\n    text-align: right;\n    width: 50%;\n    font-weight: bold;\n    font-size: 12px;\n    line-height: 18px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__head__date {\n    width: 50%;\n    margin-left:0px!important;\n    display: inline-block;\n    text-align: left!important;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__thumbnail {\n    margin-bottom: 60px;\n    width: 100%;\n    height: 425px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 10px;\n}\n\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\n    padding: 20px 30px;\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\n    margin-bottom: 28px;\n    display: inline-block;\n    padding-left: 35px;\n    position: relative;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\n    position: absolute;\n    left: 0;\n    top: 4px;\n    display: inline-block;\n    width: 20px;\n    height: 16px;\n    content: \"\";\n   /* background-image: url(../img/icon/single-mokuji.svg);*/\n}\n.rtoc_open_close {\n    display: none;\n}\n.mokuji_ol {\n    counter-reset: item;\n}\n.rtoc-item {\n    margin-bottom: 10px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.rtoc-item::before {\n    counter-increment: item;\n    content: counter(item)'.';\n}\n\n/*å…±é€š*/\n.alignleft {\n    float: left;\n    margin-left: 0;\n    margin-right: 1em;\n}\n.alignright {\n    float: right;\n    margin-left: 1em;\n    margin-right: 0;\n}\n.aligncenter {\n    margin-left: auto;\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter, .wp-block-latest-posts.aligncenter, .wp-block-archives.aligncenter, .wp-block-tag-cloud.aligncenter, .wp-block-latest-comments.aligncenter, .wp-block-rss.aligncenter {\n    text-align: center;\n}\nfigure {\n    margin-left: 0;\n    margin-right: 0;\n}\nbody {\n    box-sizing: border-box;\n}\nbody *, body *::before, body *::after {\n    box-sizing: inherit;\n}\n.single__contents h2 {\n    position: relative;\n    margin-bottom: 30px;\n    margin-top: 30px;\n    padding-left: 20px;\n    font-weight: bold;\n    font-size: 22px;\n    line-height: 32px;\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    top: 3px;\n    height: 26px;\n    width: 5px;\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\n    counter-reset: item;\n}\n/*\n.single__contents h2::before {\n    counter-increment: item;\n    content: counter(item)'.';\n    color: #1363AB;\n}*/\n.single__contents p {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor)\n}\n.alignfull {\n    margin-left: -20px;\n    margin-right: -20px;\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\n        max-width: none;\n        margin-left: calc( ( 100vw - var(--myw)) / 2) !important;\n        margin-right: calc( ( 100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\n        margin-left: calc( ( 100vw - 100%) / 2 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\n        margin-left: calc( ( 100vw - 100%) / 4 * -1) !important;\n        margin-right: calc( ( 100vw - 100%) / 4 * -1) !important;\n        max-width: calc(var(--myw) + 300px) !important;\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\n        margin-left: -150px !important;\n        margin-right: -150px !important;\n}\n}\n.contents img {\n    max-width: 100%;\n    height: auto;\n}\n.contents p {\n    margin-bottom: 30px;\n}\n\n/*aside*/\n.aside {\n    width: 360px;\n}\n.aside__new {\n    margin-bottom: 60px;\n}\n.aside__title {\n    position: relative;\n    margin-left: 160px;\n    margin-bottom: 20px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    text-align: left;\n}\n.aside__title__new img {\n    position: absolute;\n    left: -32px;\n    top: 1px;\n}\n.aside__title__tags {\n    padding-left: 180px;\n}\n.aside__new__list {\n    margin-bottom: 10px;\n    position: relative;\n    height: 90px;\n    background: #FFFFFF;\n    border: 0.5px solid #C4C4C4;\n    box-sizing: border-box;\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\n    position: absolute;\n    top: 15px;\n    left: 20px;\n    height: 60px;\n    width: 60px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.aside__new__list__title {\n    padding-left: 95px;\n    padding-top: 21px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n.aside__tags__list {\n    position: relative;\n    margin-left: 60px;\n    padding-left: 35px;\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    display: flex;\n    align-items: center;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\n    position: absolute;\n    content: \"\";\n    display: inline-block;\n    top: 0;\n    left: 0;\n    width: 20px;\n    height: 20px;\n    background: #FFFFFF;\n    border: 1px solid #333333;\n    box-sizing: border-box;\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\n        margin-bottom: 60px;\n        margin-top: 73px;\n        display: block;\n}\n.single {\n        width: 100%;\n}\n.single__head {\n        margin-bottom: 30px;\n}\n.aside {\n        display: none;\n}\n.single__head__title {\n        margin-bottom: 15px;\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__head__title::before {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__head__tags, .single__head__date {\n        font-size: 13px;\n        line-height: 19px;\n}\n.single__thumbnail {\n        height: 150px;\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\n        padding: 20px 20px 5px 20px;\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\n        padding-left: 30px;\n        margin-bottom: 20px;\n        font-size: 15px;\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\n        top: 4px;\n        width: 17px;\n        height: 13px;\n        background-size: cover;\n}\n.rtoc-item {\n        font-size: 13px;\n        line-height: 19px;\n        margin-bottom: 15px;\n}\n.single__contents h2 {\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__contents h2::after {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__contents p {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents__foot {\n        margin-top: 50px;\n        margin-bottom: 60px;\n}\n}\n\n/*btns*/\n.btns {\n    padding-bottom: 120px;\n    width: 100%;\n    max-width: 370px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n}\n.btns a {\n    text-align: center;\n    display: inline-block;\n    width: 70px;\n}\n.btns__prev__img {\n    width: 40px;\n    height: 40px;\n    margin-bottom: 20px;\n    cursor: pointer;\n}\n.btns__next__img {\n    transform: rotate(180deg);\n}\n.btns__prev__text {\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\n        padding-bottom: 60px;\n}\n.btns a {\n        width: 65px;\n}\n.btns__prev__img {\n        width: 60px;\n        height: 60px;\n        margin-bottom: 15px;\n}\n.btns__prev__text {\n        font-size: 13px;\n        line-height: 19px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main-contents {\n    margin-top: 100px;\n    margin-bottom: 100px;\n    display: flex;\n    justify-content: space-between;\n}\n.single {\n    width: calc(100% - 440px);\n}\n.single__head {\n    margin-bottom: 60px;\n    padding: 30px 30px 20px 30px;\n    background: #FFFFFF;\n    border: none !important;\n    ;\n    box-sizing: border-box;\n    border-radius: 10px;\n}\n.single__head__title {\n    font-size: 35px;\n    padding-bottom: 30px;\n    margin-bottom: 30px;\n    line-height: 1.4;\n    letter-spacing: 0.04em;\n    position: relative;\n    transition: 0.8s;\n    transform: translateY(5%);\n    /* opacity: 0; */\n    border-bottom: 2px solid #333;\n    color: #333;\n}\n.single__head__flex {\n    display: flex;\n}\n.single__head__tags {\n    margin-left: auto !important;\n    text-align: right;\n    width: 50%;\n    font-weight: bold;\n    font-size: 12px;\n    line-height: 18px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__head__date {\n    width: 50%;\n    margin-left: 0px !important;\n    display: inline-block;\n    text-align: left !important;\n    font-size: 14px;\n    line-height: 21px;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.single__thumbnail {\n    margin-bottom: 60px;\n    width: 100%;\n    height: 425px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-radius: 10px;\n}\n\n/*mokuzi*/\n#rtoc-mokuji-wrapper {\n    padding: 20px 30px;\n    border-radius: 10px;\n}\n#rtoc-mokuji-title span {\n    margin-bottom: 28px;\n    display: inline-block;\n    padding-left: 35px;\n    position: relative;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n#rtoc-mokuji-title span::before {\n    position: absolute;\n    left: 0;\n    top: 4px;\n    display: inline-block;\n    width: 20px;\n    height: 16px;\n    content: \"\";\n}\n.rtoc_open_close {\n    display: none;\n}\n.mokuji_ol {\n    counter-reset: item;\n}\n.rtoc-item {\n    margin-bottom: 10px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n}\n.rtoc-item::before {\n    counter-increment: item;\n    content: counter(item)'.';\n}\n\n/*å…±é€š*/\n.alignleft {\n    float: left;\n    margin-left: 0;\n    margin-right: 1em;\n}\n.alignright {\n    float: right;\n    margin-left: 1em;\n    margin-right: 0;\n}\n.aligncenter {\n    margin-left: auto;\n    margin-right: auto;\n}\n.wp-block-categories.aligncenter,\n.wp-block-latest-posts.aligncenter,\n.wp-block-archives.aligncenter,\n.wp-block-tag-cloud.aligncenter,\n.wp-block-latest-comments.aligncenter,\n.wp-block-rss.aligncenter {\n    text-align: center;\n}\nfigure {\n    margin-left: 0;\n    margin-right: 0;\n}\nbody {\n    box-sizing: border-box;\n}\nbody *,\nbody *::before,\nbody *::after {\n    box-sizing: inherit;\n}\n.single__contents h2 {\n    position: relative;\n    margin-bottom: 30px;\n    margin-top: 30px;\n    padding-left: 20px;\n    font-weight: bold;\n    font-size: 22px;\n    line-height: 32px;\n    letter-spacing: 0.05em;\n}\n.single__contents h2::after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    top: 3px;\n    height: 26px;\n    width: 5px;\n    background-color: var(--basecolor);\n}\n#rtoc-1 {\n    counter-reset: item;\n}\n.single__contents p {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor)\n}\n.alignfull {\n    margin-left: -20px;\n    margin-right: -20px;\n    width: 100vw;\n}\n@media (min-width: 768px) {\n.mycontainer {\n        max-width: none;\n        margin-left: calc((100vw - var(--myw)) / 2) !important;\n        margin-right: calc((100vw - var(--myw)) / 2) !important;\n}\n.alignfull {\n        margin-left: calc((100vw - 100%) / 2 * -1) !important;\n        margin-right: calc((100vw - 100%) / 2 * -1) !important;\n}\n.alignwide {\n        margin-left: calc((100vw - 100%) / 4 * -1) !important;\n        margin-right: calc((100vw - 100%) / 4 * -1) !important;\n        max-width: calc(var(--myw) + 300px) !important;\n        width: auto;\n}\n}\n@media (min-width: 1320px) {\n.alignwide {\n        margin-left: -150px !important;\n        margin-right: -150px !important;\n}\n}\n.contents img {\n    max-width: 100%;\n    height: auto;\n}\n.contents p {\n    margin-bottom: 30px;\n}\n\n/*aside*/\n.aside {\n    width: 360px;\n}\n.aside__new {\n    margin-bottom: 60px;\n}\n.aside__title {\n    position: relative;\n    margin-left: 160px;\n    margin-bottom: 20px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    text-align: left;\n}\n.aside__title__new img {\n    position: absolute;\n    left: -32px;\n    top: 1px;\n}\n.aside__title__tags {\n    padding-left: 180px;\n}\n.aside__new__list {\n    margin-bottom: 10px;\n    position: relative;\n    height: 90px;\n    background: #FFFFFF;\n    border: 0.5px solid #C4C4C4;\n    box-sizing: border-box;\n    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);\n    border-radius: 3px;\n}\n.aside__new__list__thumbnail {\n    position: absolute;\n    top: 15px;\n    left: 20px;\n    height: 60px;\n    width: 60px;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.aside__new__list__title {\n    padding-left: 95px;\n    padding-top: 21px;\n    font-weight: bold;\n    font-size: 16px;\n    line-height: 24px;\n    color: var(--textcolor);\n}\n.aside__tags__list {\n    position: relative;\n    margin-left: 60px;\n    padding-left: 35px;\n    margin-bottom: 10px;\n}\n.aside__tags__list a {\n    font-weight: bold;\n    font-size: 14px;\n    line-height: 21px;\n    display: flex;\n    align-items: center;\n    letter-spacing: 0.05em;\n    color: var(--textcolor);\n}\n.aside__tags__list a::before {\n    position: absolute;\n    content: \"\";\n    display: inline-block;\n    top: 0;\n    left: 0;\n    width: 20px;\n    height: 20px;\n    background: #FFFFFF;\n    border: 1px solid #333333;\n    box-sizing: border-box;\n    border-radius: 2px;\n}\n@media (max-width: 1000px) {\n.main-contents {\n        margin-bottom: 60px;\n        margin-top: 73px;\n        display: block;\n}\n.single {\n        width: 100%;\n}\n.single__head {\n        margin-bottom: 30px;\n}\n.aside {\n        display: none;\n}\n.single__head__title {\n        margin-bottom: 15px;\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__head__title::before {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__head__tags,\n    .single__head__date {\n        font-size: 13px;\n        line-height: 19px;\n}\n.single__thumbnail {\n        height: 150px;\n        margin-bottom: 30px;\n}\n#rtoc-mokuji-wrapper {\n        padding: 20px 20px 5px 20px;\n        border-radius: 5px;\n}\n#rtoc-mokuji-title span {\n        padding-left: 30px;\n        margin-bottom: 20px;\n        font-size: 15px;\n        line-height: 22px;\n}\n#rtoc-mokuji-title span::before {\n        top: 4px;\n        width: 17px;\n        height: 13px;\n        background-size: cover;\n}\n.rtoc-item {\n        font-size: 13px;\n        line-height: 19px;\n        margin-bottom: 15px;\n}\n.single__contents h2 {\n        font-size: 24px;\n        line-height: 36px;\n}\n.single__contents h2::after {\n        height: 30px;\n        width: 5px;\n        top: 3px;\n}\n.single__contents p {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents .single__contents__foot__title {\n        font-size: 14px;\n        line-height: 21px;\n}\n.single__contents__foot {\n        margin-top: 50px;\n        margin-bottom: 60px;\n}\n}\n\n/*btns*/\n.btns {\n    padding-bottom: 120px;\n    width: 100%;\n    max-width: 370px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: space-between;\n}\n.btns a {\n    text-align: center;\n    display: inline-block;\n    width: 70px;\n}\n.btns__prev__img {\n    width: 40px;\n    height: 40px;\n    margin-bottom: 20px;\n    cursor: pointer;\n}\n.btns__next__img {\n    transform: rotate(180deg);\n}\n.btns__prev__text {\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 21px;\n    color: var(--textcolor);\n}\n@media (max-width: 767px) {\n.btns {\n        padding-bottom: 60px;\n}\n.btns a {\n        width: 65px;\n}\n.btns__prev__img {\n        width: 60px;\n        height: 60px;\n        margin-bottom: 15px;\n}\n.btns__prev__text {\n        font-size: 13px;\n        line-height: 19px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -42984,6 +42520,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_style_index_0_id_bea03954_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Business.vue?vue&type=style&index=0&id=bea03954&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_style_index_0_id_bea03954_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_style_index_0_id_bea03954_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Contact-Us.vue?vue&type=style&index=0&id=61579a21&lang=css&":
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Contact-Us.vue?vue&type=style&index=0&id=61579a21&lang=css& ***!
@@ -43074,36 +42640,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css&":
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_style_index_1_id_f847ca3e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css&");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_style_index_1_id_f847ca3e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_style_index_1_id_f847ca3e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=style&index=0&id=a9aac016&scoped=true&lang=css&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Home.vue?vue&type=style&index=0&id=a9aac016&scoped=true&lang=css& ***!
@@ -43191,36 +42727,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Message_vue_vue_type_style_index_0_id_6bc6233e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_style_index_0_id_288578d9_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Movies.vue?vue&type=style&index=0&id=288578d9&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css&");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_style_index_0_id_288578d9_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_style_index_0_id_288578d9_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -43374,10 +42880,10 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -43387,7 +42893,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_style_index_0_id_2ca60218_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css&");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_style_index_1_id_33b85a54_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css&");
 
             
 
@@ -43396,11 +42902,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_style_index_0_id_2ca60218_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_style_index_1_id_33b85a54_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_style_index_0_id_2ca60218_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_style_index_1_id_33b85a54_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -43431,6 +42937,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Service_vue_vue_type_style_index_0_id_e992a3e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -44187,6 +43723,47 @@ component.options.__file = "resources/js/components/pages/Branding.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/Business.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/pages/Business.vue ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Business_vue_vue_type_template_id_bea03954___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Business.vue?vue&type=template&id=bea03954& */ "./resources/js/components/pages/Business.vue?vue&type=template&id=bea03954&");
+/* harmony import */ var _Business_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Business.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Business.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Business_vue_vue_type_style_index_0_id_bea03954_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Business.vue?vue&type=style&index=0&id=bea03954&lang=css& */ "./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _Business_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Business_vue_vue_type_template_id_bea03954___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Business_vue_vue_type_template_id_bea03954___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/pages/Business.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/Contact-Us.vue":
 /*!******************************************************!*\
   !*** ./resources/js/components/pages/Contact-Us.vue ***!
@@ -44349,49 +43926,6 @@ component.options.__file = "resources/js/components/pages/Faq.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/GetStarted.vue":
-/*!******************************************************!*\
-  !*** ./resources/js/components/pages/GetStarted.vue ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _GetStarted_vue_vue_type_template_id_f847ca3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GetStarted.vue?vue&type=template&id=f847ca3e&scoped=true& */ "./resources/js/components/pages/GetStarted.vue?vue&type=template&id=f847ca3e&scoped=true&");
-/* harmony import */ var _GetStarted_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GetStarted.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/GetStarted.vue?vue&type=script&lang=js&");
-/* harmony import */ var vue_multiselect_dist_vue_multiselect_min_css_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-multiselect/dist/vue-multiselect.min.css?vue&type=style&index=0&lang=css& */ "./node_modules/vue-multiselect/dist/vue-multiselect.min.css?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _GetStarted_vue_vue_type_style_index_1_id_f847ca3e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css& */ "./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-;
-
-
-
-/* normalize component */
-
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
-  _GetStarted_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _GetStarted_vue_vue_type_template_id_f847ca3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
-  _GetStarted_vue_vue_type_template_id_f847ca3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  "f847ca3e",
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/pages/GetStarted.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
 /***/ "./resources/js/components/pages/Home.vue":
 /*!************************************************!*\
   !*** ./resources/js/components/pages/Home.vue ***!
@@ -44511,47 +44045,6 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 /* hot reload */
 if (false) { var api; }
 component.options.__file = "resources/js/components/pages/Message.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/pages/Movies.vue":
-/*!**************************************************!*\
-  !*** ./resources/js/components/pages/Movies.vue ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Movies_vue_vue_type_template_id_288578d9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Movies.vue?vue&type=template&id=288578d9& */ "./resources/js/components/pages/Movies.vue?vue&type=template&id=288578d9&");
-/* harmony import */ var _Movies_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Movies.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Movies.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Movies_vue_vue_type_style_index_0_id_288578d9_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Movies.vue?vue&type=style&index=0&id=288578d9&lang=css& */ "./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-;
-
-
-/* normalize component */
-
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _Movies_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Movies_vue_vue_type_template_id_288578d9___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Movies_vue_vue_type_template_id_288578d9___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/pages/Movies.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -44761,10 +44254,10 @@ component.options.__file = "resources/js/components/pages/PrivacyPolicy.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Recruit.vue":
-/*!***************************************************!*\
-  !*** ./resources/js/components/pages/Recruit.vue ***!
-  \***************************************************/
+/***/ "./resources/js/components/pages/Quote.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/pages/Quote.vue ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -44772,32 +44265,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Recruit_vue_vue_type_template_id_2ca60218___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Recruit.vue?vue&type=template&id=2ca60218& */ "./resources/js/components/pages/Recruit.vue?vue&type=template&id=2ca60218&");
-/* harmony import */ var _Recruit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Recruit.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Recruit.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Recruit_vue_vue_type_style_index_0_id_2ca60218_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css& */ "./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Quote_vue_vue_type_template_id_33b85a54_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Quote.vue?vue&type=template&id=33b85a54&scoped=true& */ "./resources/js/components/pages/Quote.vue?vue&type=template&id=33b85a54&scoped=true&");
+/* harmony import */ var _Quote_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Quote.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Quote.vue?vue&type=script&lang=js&");
+/* harmony import */ var vue_multiselect_dist_vue_multiselect_min_css_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-multiselect/dist/vue-multiselect.min.css?vue&type=style&index=0&lang=css& */ "./node_modules/vue-multiselect/dist/vue-multiselect.min.css?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _Quote_vue_vue_type_style_index_1_id_33b85a54_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css& */ "./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
 ;
 
 
+
 /* normalize component */
 
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _Recruit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Recruit_vue_vue_type_template_id_2ca60218___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Recruit_vue_vue_type_template_id_2ca60218___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
+  _Quote_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Quote_vue_vue_type_template_id_33b85a54_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Quote_vue_vue_type_template_id_33b85a54_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
-  null,
+  "33b85a54",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/pages/Recruit.vue"
+component.options.__file = "resources/js/components/pages/Quote.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -44839,6 +44334,47 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 /* hot reload */
 if (false) { var api; }
 component.options.__file = "resources/js/components/pages/Service.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/Videos.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/pages/Videos.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Videos.vue?vue&type=template&id=35223a6e& */ "./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&");
+/* harmony import */ var _Videos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Videos.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Videos.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& */ "./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _Videos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/pages/Videos.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -45353,6 +44889,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/Business.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/pages/Business.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Business.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/Contact-Us.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/pages/Contact-Us.vue?vue&type=script&lang=js& ***!
@@ -45417,22 +44969,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/GetStarted.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/components/pages/GetStarted.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./GetStarted.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
 /***/ "./resources/js/components/pages/Home.vue?vue&type=script&lang=js&":
 /*!*************************************************************************!*\
   !*** ./resources/js/components/pages/Home.vue?vue&type=script&lang=js& ***!
@@ -45478,22 +45014,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Message_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Message.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Message.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Message_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/pages/Movies.vue?vue&type=script&lang=js&":
-/*!***************************************************************************!*\
-  !*** ./resources/js/components/pages/Movies.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Movies.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -45577,10 +45097,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Recruit.vue?vue&type=script&lang=js&":
-/*!****************************************************************************!*\
-  !*** ./resources/js/components/pages/Recruit.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************/
+/***/ "./resources/js/components/pages/Quote.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/pages/Quote.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -45588,8 +45108,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Recruit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Quote.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -45606,6 +45126,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Service_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Service.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Service.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Service_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/Videos.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/pages/Videos.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -45905,6 +45441,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/Business.vue?vue&type=template&id=bea03954&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/pages/Business.vue?vue&type=template&id=bea03954& ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_template_id_bea03954___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_template_id_bea03954___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_template_id_bea03954___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Business.vue?vue&type=template&id=bea03954& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=template&id=bea03954&");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/Contact-Us.vue?vue&type=template&id=61579a21&":
 /*!*************************************************************************************!*\
   !*** ./resources/js/components/pages/Contact-Us.vue?vue&type=template&id=61579a21& ***!
@@ -45973,23 +45526,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/GetStarted.vue?vue&type=template&id=f847ca3e&scoped=true&":
-/*!*************************************************************************************************!*\
-  !*** ./resources/js/components/pages/GetStarted.vue?vue&type=template&id=f847ca3e&scoped=true& ***!
-  \*************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_template_id_f847ca3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_template_id_f847ca3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_template_id_f847ca3e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./GetStarted.vue?vue&type=template&id=f847ca3e&scoped=true& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=template&id=f847ca3e&scoped=true&");
-
-
-/***/ }),
-
 /***/ "./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true&":
 /*!*******************************************************************************************!*\
   !*** ./resources/js/components/pages/Home.vue?vue&type=template&id=a9aac016&scoped=true& ***!
@@ -46037,23 +45573,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Message_vue_vue_type_template_id_6bc6233e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Message_vue_vue_type_template_id_6bc6233e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Message.vue?vue&type=template&id=6bc6233e&scoped=true& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Message.vue?vue&type=template&id=6bc6233e&scoped=true&");
-
-
-/***/ }),
-
-/***/ "./resources/js/components/pages/Movies.vue?vue&type=template&id=288578d9&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/pages/Movies.vue?vue&type=template&id=288578d9& ***!
-  \*********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_template_id_288578d9___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_template_id_288578d9___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_template_id_288578d9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Movies.vue?vue&type=template&id=288578d9& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=template&id=288578d9&");
 
 
 /***/ }),
@@ -46143,19 +45662,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Recruit.vue?vue&type=template&id=2ca60218&":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/components/pages/Recruit.vue?vue&type=template&id=2ca60218& ***!
-  \**********************************************************************************/
+/***/ "./resources/js/components/pages/Quote.vue?vue&type=template&id=33b85a54&scoped=true&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/pages/Quote.vue?vue&type=template&id=33b85a54&scoped=true& ***!
+  \********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_template_id_2ca60218___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_template_id_2ca60218___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_template_id_33b85a54_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_template_id_33b85a54_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_template_id_2ca60218___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Recruit.vue?vue&type=template&id=2ca60218& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=template&id=2ca60218&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_template_id_33b85a54_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Quote.vue?vue&type=template&id=33b85a54&scoped=true& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=template&id=33b85a54&scoped=true&");
 
 
 /***/ }),
@@ -46173,6 +45692,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Service_vue_vue_type_template_id_e992a3e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Service_vue_vue_type_template_id_e992a3e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Service.vue?vue&type=template&id=e992a3e2&scoped=true& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Service.vue?vue&type=template&id=e992a3e2&scoped=true&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e& ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=template&id=35223a6e& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&");
 
 
 /***/ }),
@@ -46451,6 +45987,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css& ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Business_vue_vue_type_style_index_0_id_bea03954_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Business.vue?vue&type=style&index=0&id=bea03954&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Business.vue?vue&type=style&index=0&id=bea03954&lang=css&");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/Contact-Us.vue?vue&type=style&index=0&id=61579a21&lang=css&":
 /*!***************************************************************************************************!*\
   !*** ./resources/js/components/pages/Contact-Us.vue?vue&type=style&index=0&id=61579a21&lang=css& ***!
@@ -46490,19 +46039,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css&":
-/*!***************************************************************************************************************!*\
-  !*** ./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css& ***!
-  \***************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStarted_vue_vue_type_style_index_1_id_f847ca3e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/GetStarted.vue?vue&type=style&index=1&id=f847ca3e&scoped=true&lang=css&");
-
-
-/***/ }),
-
 /***/ "./resources/js/components/pages/Home.vue?vue&type=style&index=0&id=a9aac016&scoped=true&lang=css&":
 /*!*********************************************************************************************************!*\
   !*** ./resources/js/components/pages/Home.vue?vue&type=style&index=0&id=a9aac016&scoped=true&lang=css& ***!
@@ -46538,19 +46074,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Message_vue_vue_type_style_index_0_id_6bc6233e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Message.vue?vue&type=style&index=0&id=6bc6233e&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Message.vue?vue&type=style&index=0&id=6bc6233e&scoped=true&lang=css&");
-
-
-/***/ }),
-
-/***/ "./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css&":
-/*!***********************************************************************************************!*\
-  !*** ./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css& ***!
-  \***********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Movies_vue_vue_type_style_index_0_id_288578d9_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Movies.vue?vue&type=style&index=0&id=288578d9&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Movies.vue?vue&type=style&index=0&id=288578d9&lang=css&");
 
 
 /***/ }),
@@ -46620,15 +46143,15 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css&":
-/*!************************************************************************************************!*\
-  !*** ./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css& ***!
-  \************************************************************************************************/
+/***/ "./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css& ***!
+  \**********************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Recruit_vue_vue_type_style_index_0_id_2ca60218_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Recruit.vue?vue&type=style&index=0&id=2ca60218&lang=css&");
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Quote_vue_vue_type_style_index_1_id_33b85a54_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Quote.vue?vue&type=style&index=1&id=33b85a54&scoped=true&lang=css&");
 
 
 /***/ }),
@@ -46642,6 +46165,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Service_vue_vue_type_style_index_0_id_e992a3e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Service.vue?vue&type=style&index=0&id=e992a3e2&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Service.vue?vue&type=style&index=0&id=e992a3e2&scoped=true&lang=css&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&");
 
 
 /***/ }),
