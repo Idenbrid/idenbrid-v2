@@ -281,7 +281,6 @@
             },
             getBlogs() {
                 axios.get("/api/blogs")
-                .then((res) => {
                     this.blogs = res.data.blogs;
                     this.categories = res.data.categories;
                     this.most_liked = res.data.most_liked;
@@ -290,12 +289,6 @@
             },
         },
         mounted() {
-            this.getBlogs();
-        },
-    };
-</script>
-<style>
-    /*blog-brns*/
     .blog-subcontents__text {
         font-weight: bold;
         font-size: 16px;

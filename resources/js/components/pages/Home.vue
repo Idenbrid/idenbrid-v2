@@ -19,7 +19,6 @@
                 <video class="top-hero__video" src="/public/assets/videos/Banner_video.mp4" autoplay muted loop
                     playsinline></video>
             </section>
-
             <div class="scroll scroll_top">
                 <p class="scroll__text">SCROLL</p>
                 <span class="scroll__arrow"><span class="scroll__arrow__box"></span></span>
@@ -30,15 +29,16 @@
                     <div class="c-message__bgimg"
                         style="background-image: url('/assets/img/CEO-Message background.png'); visibility: visible; opacity: 1; transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0.5s;"
                         data-sr-id="2"></div>
-                    <div class="mycontents-wide">
+                    <div class="mycontents-wide p-0">
                         <div class="c-message__content">
                             <div class="c-message__box large-7 small-12">
                                 <h3 class="content-title c-message__title">CEO MESSAGE</h3>
                                 <div class="c-message__title-sub">「パキスタンから世界一必要とされるIT企業になる」<br>
                                     なぜ私たちはパキスタンでIT企業を設立したのか</div>
-                                <div class="c-message__button u-hidden-sm"><a href="/solutions/"
-                                        class="viewmore-btn  viewmore-btn_service mt-3" bis_skin_checked="1">View
-                                        More</a></div>
+                                <div class="c-message__button u-hidden-sm">
+                                    <router-link to="/message/" class="viewmore-btn  viewmore-btn_service mt-3">View
+                                        More</router-link>
+                                </div>
                             </div>
                             <div class="large-5 small-12">
                                 <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="">
@@ -60,14 +60,14 @@
 
                         <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon">SDH：スタジオ開発ハブ
                         </h2>
-                        <p class="service-p">スタジオ開発ハブは、一般的に言われるオフショア開発におけるラボ型開発のようなサービスを指し当社ではパキスタン拠点人材を人月ベースでご提供致します。
+                        <p class="service-p">
+                            スタジオ開発ハブは、日本企業またグローバル企業とのIT受託開発。そして一般的なオフショア開発にあたるパキスタンエンジニア人材を人月ベースでご提供致します。
                         </p>
-                        <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
+                        <router-link to="/studiodevelopmenthub/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
                     </div>
                     <div class="service-col">
                         <img alt="" src="/assets/img/sdh.png" class="" width="100%">
-
                     </div>
                 </div>
                 <div class="service-row my-5">
@@ -75,16 +75,24 @@
                         <img alt="" src="/assets/img/ses.png" class="" width="100%">
                     </div>
                     <div class="service-col">
-                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon">SES：エンジニア採用営業支援
+                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon">SES：エンジニアスタイル
                         </h2>
                         <p class="service-p">
-                            SESサービスでは当社は社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
+                            当社のエンジニアスタイルというのは、エンジニア採用支援サービスを指し、SESサービスのように社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
                         </p>
-                        <router-link to="/solutions/" class="viewmore-btn  viewmore-btn_service mt-5">View
+                        <router-link to="/engineerstyle/" class="viewmore-btn  viewmore-btn_service mt-5">View
                             More</router-link>
                     </div>
                 </div>
             </section>
+            <!--Our experties-->
+            <section class="news mycontents-wide">
+                <h3 class="content-title content-title_blog">OUR EXPERTISE</h3>
+                <p class="content-text content-text_blog">IDENBRIDがご提供している開発サービスのご紹介です。</p>
+                <router-link class="viewmore-btn viewmore-btn_center" to="/solutions">View More
+                </router-link>
+            </section>
+            <!--our experties-->
             <!--news-->
             <section class="news mycontents-wide">
                 <h3 class="content-title content-title_blog">NEWS</h3>
@@ -105,7 +113,6 @@
                                 <p class="text new-content">
                                     {{detail.title}}</p>
                             </div>
-
                         </router-link>
                     </div>
                     <router-link class="viewmore-btn viewmore-btn_center" to="/news/">View More
@@ -172,15 +179,12 @@
                             <div class="c-recruit__bottom-block row">
                                 <div class="large-6 small-12">
                                     <router-link class="c-recruit__bottom-item" to="/video/">
-
                                         <div class="c-recruit__bottom-bgimg">
                                             <video width="100%" autoplay loop muted>
                                                 <source src="/assets/videos/Video.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                         <div class="c-recruit__bottom-content">
-
-
                                             <div class="c-recruit__bottom-button">VIDEOを見る</div>
                                         </div>
                                     </router-link>
@@ -1617,8 +1621,8 @@
     }
 
     .c-message__title-sub {
-        margin-top: 4rem;
-        font-size: 2.28571rem;
+        margin-top: 0rem;
+        font-size: 1.7rem;
         letter-spacing: 0.1em;
         line-height: 1.5625;
         color: #102855;
@@ -1842,8 +1846,8 @@
     }
 
     .c-message__title-sub {
-        margin-top: 4rem;
-        font-size: 2.28571rem;
+        margin-top: 0rem;
+        font-size: 1.7rem;
         letter-spacing: 0.1em;
         line-height: 1.5625;
         color: #102855;

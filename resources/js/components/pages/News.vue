@@ -30,7 +30,7 @@
                             </router-link>
                         </div>
 
-
+<!-- 
                         <div class="wp-pagenavi" role="navigation">
                             <span aria-current="page" class="current">1</span><a class="page larger" title="ページ 2"
                                 href="https://tomorrowgate.co.jp/topic/page/2/">2</a><a class="page larger"
@@ -40,7 +40,7 @@
                                 title="ページ 5" href="https://tomorrowgate.co.jp/topic/page/5/">5</a><a
                                 class="nextpostslink" rel="next" aria-label="Next Page"
                                 href="https://tomorrowgate.co.jp/topic/page/2/"><i class='fas fa-angle-right'></i></a>
-                        </div>
+                        </div> -->
                     </div>
 
                     <ul class="topic--content--sidearea">

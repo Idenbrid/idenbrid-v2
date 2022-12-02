@@ -306,7 +306,7 @@
 
     .link-img img {
         transition: transform .5s ease;
-        height: auto;
+        height: 319px;
         object-fit: cover;
         width: 100%;
     }
@@ -332,6 +332,13 @@
     }
 
     /*end*/
+    @media screen and (max-width: 1800px) and (min-width: 1600px)
+{
+    .link-img img {
+    height: 250px;
+    width: 100%;
+}
+}
     @media screen and (min-width: 897px) {
 
         .company--item:nth-of-type(1),
@@ -341,7 +348,9 @@
     }
 
     @media screen and (max-width: 767px) {
-
+        .link-img img {
+          height:auto;
+        }
         .company--index {
             padding: 20px 6% 60px;
         }

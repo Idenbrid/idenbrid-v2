@@ -15,7 +15,7 @@
                 <ul class="system-sec__contents system-sec__contents_design">
                     <li class="system-sec__list">
                          <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design01.svg"
+                            src="/assets/img/icons/screen-transition diagram.svg"
                             alt="">
                         <h3 class="system-sec__list__title">画面遷移図</h3>
                         <p class="system-sec__list__text">
@@ -23,7 +23,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design02.svg"
+                            src="/assets/img/icons/ui-design.svg"
                             alt="">
                         <h3 class="system-sec__list__title">UI設計</h3>
                         <p class="system-sec__list__text">こちらはユーザーインターフェースを指し、ウェブシステムやアプリの見た目部分を指します。また全体的な色味のみでなくフォントや色そして写真イメージまで一つ一つにこだわって制作いたします。
@@ -31,7 +31,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/design03.svg"
+                            src="/assets/img/icons/ux-design.svg"
                             alt="">
                         <h3 class="system-sec__list__title">UX設計</h3>
                         <p class="system-sec__list__text">
@@ -68,14 +68,14 @@
                 <ul class="system-sec__contents system-sec__contents_last">
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic01.svg"
+                            src="/assets/img/icons/tool-used.svg"
                             alt="">
                         <h3 class="system-sec__list__title">使用ツール</h3>
                         <p class="system-sec__list__text">主力としてFigmaまたはAdobe XDを使用してデザインまたワイヤーフレームを作成しています。デザインがプロトタイプと同じような効果を発揮するように画面ロジック含めて実装しています。</p>
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic02.svg"
+                            src="/assets/img/icons/hearing-ability.svg"
                             alt="">
                         <h3 class="system-sec__list__title">ヒアリング力</h3>
                         <p class="system-sec__list__text">
@@ -84,7 +84,7 @@
                     </li>
                     <li class="system-sec__list">
                         <img class="system-sec__list__thumbnail"
-                            src="https://whitecanvas.jp/wp-content/themes/whitecanvas_fix_thema-main/img/icon/system/graphic03.svg"
+                            src="/assets/img/icons/revision.svg"
                             alt="">
                         <h3 class="system-sec__list__title">リビジョン</h3>
                         <p class="system-sec__list__text">当社ではデザインのキャッチボールは最大3回を想定しており、お客様のご要望とフィードバックより理想を現実にするためにきちんとした修正対応を徹底しております。</p>
@@ -219,6 +219,42 @@
 一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"</p>
                 </div>
 
+                <div class="flow__scroll mycontents-wide soft-development">
+                    <ul class="flow__contents">
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/Team-rafiki.svg" alt="">
+                            <h4 class="flow__list__title">ヒヤリング・お見積もり</h4>
+                            <p class="flow__list__text">お問い合わせを頂き、開発されたい内容の書類RFPや内容をもとにヒアリングそして予算に合わせてお見積もりを作成します。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/New-team-members-rafiki.svg" alt="">
+                            <h4 class="flow__list__title">要件定義・基本設計</h4>
+                            <p class="flow__list__text">当社のフォーマットに合わせて、仕様を整理しどのような開発を進めるのかを定義します。スケジュールの管理などもこちらで行います。</p>
+                        </li>
+                        <li class="flow__list flow__list_border">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/Open-source-bro.svg" alt="">
+                            <h4 class="flow__list__title">UIUXデザイン・開発</h4>
+                            <p class="flow__list__text">
+                                画面遷移図からデザインを起こし、詳細設計書に基づきシステム・アプリ・インフラ開発を進めて参ります。</p>
+                        </li>
+                        <li class="flow__list">
+                            <img class="flow__list__thumbnail" src="/assets/img/icons/test-amico.svg" alt="">
+                            <h4 class="flow__list__title">テスト・納品</h4>
+                            <p class="flow__list__text">テストケースに基づき検収を行いお客様にもご確認頂き、アプリの審査やサーバーへのディプロイ作業を進めます。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <!-- <section class="flow">
+                <div class="mycontents-wide">
+                    <h3 class="content-title content-title_flow">ウェブシステム開発におけるフロー</h3>
+                    <p class="content-text content-subtitle_flow">
+                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで
+一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"</p>
+                </div>
+
                 <div class="flow__scroll mycontents-wide">
                     <ul class="flow__contents">
                         <li class="flow__list flow__list_border">
@@ -246,7 +282,7 @@
                     </ul>
                 </div>
 
-            </section>
+            </section> -->
 
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
@@ -330,29 +366,31 @@
                     </div>
                 </div>
             </section> -->
-            <section>
-                <section class="menu-list">
+            <section class="exp-menu-list">
                     <div class="menu-box">
                         <div class="item">
-                            <router-link to="/development/" class="text"><img src="/assets/img/icons/Person-icon.svg">ウェブシステム開発
+                            <router-link to="/development/" class="text"><img src="/assets/img/icons/icons8-pc-on-desk-80.png">ウェブシステム開発
                             </router-link>
                         </div>
                         <div class="item">
                             <router-link to="/mobileapp/" class="text router-link-exact-active router-link-active"><img
-                                    src="/assets/img/icons/Message-icon.svg">スマホアプリ開発
+                                    src="/assets/img/icons/icons8-iphone-14-pro-80.png">スマホアプリ開発
                             </router-link>
                         </div>
                         <div class="item">
-                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/Building-icon.svg">UIUXデザイン制作
+                            <router-link to="/uiuxdesign/" class="text"><img src="/assets/img/icons/icons8-illustrator-80.png">UIUXデザイン制作
                             </router-link>
                         </div>
                         <div class="item">
                             <router-link to="/webitconsulting/" class="text">
-                                <img src="/assets/img/icons/Digital-Assets.svg">オフショア開発</router-link>
+                                <img src="/assets/img/icons/icons8-flight-trip-64.png">オフショア開発</router-link>
+                        </div>
+                        <div class="item">
+                            <router-link to="/engineerstyle/" class="text">
+                                <img src="/assets/img/icons/Color Icon Logo.png">SESエンジニアスタイル</router-link>
                         </div>
                     </div>
                 </section>
-            </section>
         </main>
         <Footer />
     </div>

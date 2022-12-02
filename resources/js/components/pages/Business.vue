@@ -28,7 +28,7 @@
                                 <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
                                 </div>
                                 <div class="scaleImg"><img
-                                        src="https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg" alt="">
+                                        src="/assets/img/business-sdh.png" alt="">
                                 </div>
                             </div>
                             <h4>
@@ -48,11 +48,11 @@
                                 <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
                                 </div>
                                 <div class="scaleImg"><img
-                                        src="https://tomorrowgate.co.jp/asset/img/recruit/design_photo.jpg" alt="">
+                                        src="/assets/img/business-ses.png" alt="">
                                 </div>
                             </div>
                             <h4>
-                                <span class="department fade_y on">SES：エンジニア採用営業支援</span>
+                                <span class="department fade_y on">SES：エンジニアスタイル（エンジニア採用支援）</span>
                                 <strong
                                     class="phrase fade_y on">常駐やリモートで業務委託できる日本人エンジニアなどのリソースベースのサービスになります。<br>協業ご希望のBP様も常に募集しております。</strong>
                             </h4>
@@ -67,12 +67,12 @@
                 <ul class="entryarea recruit--contactarea--bnr">
 
                     <li>
-                        <router-link to="/studiodevelopmenthub">STUDIO DEVELOPMENT HUB : SDH<br><span
-                                class="label pc">スタジオ開発ハブ（受託開発）</span></router-link>
+                        <router-link to="/studiodevelopmenthub" class="studio-dev-hieght" >STUDIO DEVELOPMENT HUB : SDH<br><span
+                                class="label pc ">スタジオ開発ハブ（受託開発）</span></router-link>
                     </li>
                     <li>
-                        <router-link to="/engineerstyle/" class="">SES<br><span
-                                class="label pc">エンジニア採用支援（常駐・フルリモート業務委託）</span><span class="label sp">気軽にメール登録</span>
+                        <router-link to="/engineerstyle/" class="studio-dev-hieght" >SES<br><span
+                                class="label pc ">エンジニア採用支援（常駐・フルリモート業務委託）</span><span class="label sp">気軽にメール登録</span>
                         </router-link>
                     </li>
                 </ul>
@@ -249,7 +249,23 @@
     .recruit--leadtxt h3 {
         font-size: 38px;
     }
-
+    .recruit--leadtxt {
+        /* padding: 40px 10% 100px; */
+        padding: 130px 10% 170px;
+        color: #dadada;
+        position: relative;
+        z-index: 1;
+        margin-top: 0px;
+        background-color: #000;
+        background: url('/assets/img/all-member.png') no-repeat center;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+@media screen and (max-width:1160px) and (min-width: 768px){
+    .recruit--leadtxt {
+padding: 80px 10% 50px;
+}
+}
     @media screen and (min-width: 897px) {
 
 
@@ -281,7 +297,7 @@
         position: relative;
         display: block;
         border: 1px solid #2b2b2b;
-        background-color: #000;
+        background-color: #12355D;
         letter-spacing: 0.12em;
         text-align: center;
         color: #dadada;
@@ -309,7 +325,8 @@
 
     .mv_textarea-recruit {
         /* color: #dadada; */
-        background-color: #000;
+        /* background-color: #000; */
+        background-color: #12355D;
 
     }
 
@@ -386,7 +403,7 @@
         z-index: 1;
         margin-top: 0px;
         background-color: #000;
-        background: url('/assets/img/all-member.png') no-repeat center;
+        background: url('/assets/img/business-background-cover.png') no-repeat center;
         background-blend-mode: overlay;
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -729,6 +746,12 @@
         font-family: "Noto Sans JP", sans-serif;
         color: #000;
     }
+    @media only screen and (max-width: 1024px) {
+        .studio-dev-hieght{
+            height: 100px;
+        }
+        }
+
 
     @media screen and (max-width: 425px) {
         .mv_textarea-recruit .jptxt {

@@ -13,13 +13,13 @@
                     <div class="container-slim">
                         <div class="mb-50">
                             <h5>Logo / ロゴ</h5>
-                            <div class="kit kit-slim"><a href="/assets/img/logo/logo.svg" download="image"
+                            <div class="kit kit-slim"><a href="/assets/img/logo/4.png" download="image"
                                     target="_blank" rel="noopener">
-                                    <img src="/public/assets/img/logo/logo.svg" alt="" />
+                                    <img src="/public/assets/img/logo/4.png" alt="" />
                                 </a>
                             </div>
-                            <div class="kit kit-slim"><a href="/assets/img/idenbrid-favicon-digital-assets.jpg">
-                                    <img src="/public/assets/img/idenbrid-favicon-digital-assets.jpg" alt="" />
+                            <div class="kit kit-slim"><a href="/assets/img/1.png">
+                                    <img src="/public/assets/img/1.png" alt="" />
                                 </a>
                             </div>
                         </div>
@@ -28,6 +28,30 @@
                             <p> 当社のブランド・サービスを表現しているアセットになります。</p>
                             <div class="kit"><a href="/assets/img/main-banner-2.png" download="image" rel="noopener">
                                     <img src="/public/assets/img/main-banner-2.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-2.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-2.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-3.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-3.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-4.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-4.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-5.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-5.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-6.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-6.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="kit"><a href="/assets/img/key-visual-7.png" download="image" rel="noopener">
+                                    <img src="/public/assets/img/key-visual-7.png" alt="" />
                                 </a>
                             </div>
                         </div>

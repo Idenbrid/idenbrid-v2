@@ -8,7 +8,7 @@
                     <span class="jptxt">アイデンブリッドの開発・制作事例の実績一覧です。</span>
                 </h2>
             </div>
-            <div class="works--content highlight_blk">
+            <!-- <div class="works--content highlight_blk">
                 <ul class="works--content--link">
                     <li><a href="#" class="en categoryitem current">全て</a>
                     </li>
@@ -37,14 +37,17 @@
                     </router-link>
 
                 </div>
-                <!-- <div class="wp-pagenavi" role="navigation">
+                <div class="wp-pagenavi" role="navigation">
                     <span aria-current="page" class="current">1</span><a class="page larger" title="ページ 2"
                         href="https://tomorrowgate.co.jp/works/page/2/">2</a><a class="nextpostslink" rel="next"
                         aria-label="Next Page" href="https://tomorrowgate.co.jp/works/page/2/"><i
                             class='fas fa-angle-right'></i></a>
-                </div> -->
-            </div>
-            <section class="menu">
+                </div>
+            </div> -->
+            <section>
+                <img src="/assets/img/comingsoonwork.gif" width="100%">
+            </section>
+            <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
                         <router-link to="/about/">
@@ -77,7 +80,14 @@
                         </router-link>
                     </li>
                 </ul>
-            </section>
+            </section> -->
+            <div class="branding--contact">
+      <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>
+        ご質問がありましたらお気軽にご相談ください。</h3>
+      <div class="fade_y on">
+        <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+      </div>
+    </div>
         </main>
         <Footer />
     </div>

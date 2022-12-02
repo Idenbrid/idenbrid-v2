@@ -243,7 +243,8 @@
                                                 </div>
                                                 <div class="d-flex flex-column my-4">
                                                     <label for="cars">技術指定（自由記載欄）</label>
-                                                    <multiselect v-model="record.step_4" :options="options" :multiple="true" ></multiselect>
+                                                    <multiselect v-model="record.step_4" :options="options"
+                                                        :multiple="true"></multiselect>
                                                 </div>
                                             </div>
                                         </div>
@@ -333,10 +334,10 @@
                                                 <label for="101—500">101 - 500人規模
                                                 </label>
 
-                                                <div class="check"></div> 
+                                                <div class="check"></div>
                                             </li>
                                             <li>
-                                                <input type="radio" v-model="record.step_6" id="no-rush"
+                                                <input type="radio" v-model="record.step_6" id="501—1000"
                                                     name="selector2" value="501—1000">
                                                 <label for="501—1000">501 - 1000人規模
                                                 </label>
@@ -387,15 +388,17 @@
                                                 </div>
                                             </div>
                                             <div class="inputCase">
-                                                <div class="sc-fzonjX hIMiPJ"><span>メールアドレス* </span><input placeholder=""
-                                                        v-model="record.email" autocomplete="off" minlength="3"
-                                                        name="title" type="text" required="" value=""
+                                                <div class="sc-fzonjX hIMiPJ">
+                                                    <span>メールアドレス* </span>
+                                                    <input
+                                                        placeholder="" v-model="record.email" autocomplete="off"
+                                                        minlength="3" name="title" type="email" required="" value=""
                                                         class="text-field">
 
                                                 </div>
                                                 <div class="sc-fzonjX hIMiPJ"><span>電話番号*</span><input
                                                         v-model="record.phone" placeholder="" autocomplete="off"
-                                                        minlength="3" name="name" type="text" required value=""
+                                                        minlength="3" name="name" type="number" required value=""
                                                         class="text-field">
 
                                                 </div>
@@ -411,31 +414,17 @@
                     <div class="sc-fzppAM vTcAG background">
                         <div class="vertical-wrapper">
                             <div class="wrapper">
-                                <h3>私たちの開発チームは最高の信頼を得ています</h3>
+                                <!-- <h3>私たちの開発チームは最高の信頼を得ています</h3> -->
                                 <div class="logo-wrapper">
-                                    <div><img src="https://dashboard.devteam.space/static/media/airbus.5f8fdfa5.svg"
-                                            alt=""></div>
-                                    <div><img src="https://dashboard.devteam.space/static/media/yandex.d9f9d084.svg"
-                                            alt=""></div>
-                                    <div><img src="https://dashboard.devteam.space/static/media/ubs.1f911510.svg"
-                                            alt=""></div>
-                                    <div class="disney"><img
-                                            src="https://dashboard.devteam.space/static/media/disney.cfa15be3.svg"
-                                            alt=""></div>
-                                    <div><img src="https://dashboard.devteam.space/static/media/samsung.31408c3f.svg"
-                                            alt="">
-                                    </div>
-                                    <div><img src="https://dashboard.devteam.space/static/media/mi.a28a4be9.svg" alt="">
-                                    </div>
+                                    <div><img src="/assets/img/quoteimage.png" alt="" width="100%"></div>
 
-                                    <div><img
-                                            src="https://dashboard.devteam.space/static/media/y-combinator.3ed0d18e.svg"
-                                            alt="">
-                                    </div>
-                                    <div><img
-                                            src="https://dashboard.devteam.space/static/media/500startups.4312811c.svg"
-                                            alt="">
-                                    </div>
+
+
+
+
+
+
+
                                 </div>
                             </div>
                         </div><svg version="1.1" width="100%" height="100px" xmlns="http://www.w3.org/2000/svg"
@@ -472,7 +461,9 @@
                     email: '',
                     phone: '',
                 },
-                options: ['ウェブアプリ・システム', 'モバイルアプリ', 'システム設計', 'UIUXデザイン', 'バックエンド・API','フロントエンド','DevOps','ブロックチェーン','データエンジニア','サイバーセキュリティー','ECサイト','API結合','AI（人工知能）','QA・テスト','その他',''],
+                options: ['ウェブアプリ・システム', 'モバイルアプリ', 'システム設計', 'UIUXデザイン', 'バックエンド・API', 'フロントエンド', 'DevOps', 'ブロックチェーン',
+                    'データエンジニア', 'サイバーセキュリティー', 'ECサイト', 'API結合', 'AI（人工知能）', 'QA・テスト', 'その他', ''
+                ],
             }
         },
         components: {
@@ -595,10 +586,6 @@
     };
 </script>
 <style scoped>
-    .vTcAG img {
-        height: 52px;
-    }
-
     .vTcAG h3 {
         margin-bottom: 28px;
         margin-right: 30px;
@@ -761,7 +748,7 @@
     }
 
     .vTcAG .logo-wrapper {
-        width: 422px;
+        width: 460px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -776,7 +763,7 @@
     }
 
     .vTcAG .logo-wrapper>div {
-        margin-right: 30px;
+        margin:0px 30px;
         margin-bottom: 30px;
     }
 
@@ -848,16 +835,16 @@
 
     li .check::before {
         display: block;
-    position: absolute;
-    content: '';
-    border-radius: 100%;
-    height: 0.7rem;
-    width: 0.7rem;
-    top: 2px;
-    left: 3px;
-    margin: auto;
-    transition: background 0.25s linear;
-    -webkit-transition: background 0.25s linear;
+        position: absolute;
+        content: '';
+        border-radius: 100%;
+        height: 0.7rem;
+        width: 0.7rem;
+        top: 2px;
+        left: 3px;
+        margin: auto;
+        transition: background 0.25s linear;
+        -webkit-transition: background 0.25s linear;
 
     }
 
@@ -1030,6 +1017,22 @@
         font-size: 10px;
         height: 19px;
         width: 19px;
+    }
+
+    @media screen and (max-width: 1300px) and (min-width: 1150px) {
+        .vTcAG .logo-wrapper    {
+            width: 347px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .vTcAG {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 45px;
+        }
     }
 
     @media screen and (max-width: 1149px) and (min-width: 769px) {

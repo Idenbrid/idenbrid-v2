@@ -49,7 +49,7 @@
       <!-- swiper carousel  -->
 
       <div class="policy-slider position-relative">
-        <h2 class="policy-h">MISSION / ミッション</h2>
+
         <div class="swiper-slider-title ">
 
           <div class="swiper-pagination custom-swiper-pagination"></div>
@@ -58,30 +58,30 @@
         </div>
         <div class="swiper policySlider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide flex-column">
+                  <h2 class="policy-h">MISSION / ミッション</h2>    
               <div class="d-flex w-100 policy-content">
                 <div class="mbl-col col-md-6">
                   <div class="swiper-content text-left">
                     <span class="num">01.</span>
                     <div class="slider-img-title">
                       <span>テクノロジーで未来をかっこよくアップデート</span>
-
                       <h2>Update the future in style</h2>
                     </div>
                     <div class="slider-img-about">
                       <h2>ITを通じて私たちが未来を変えるって本気で信じてます</h2>
-
                     </div>
                   </div>
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/1.png" alt="" />
+                    <img src="/assets/img/update.png" alt="img" />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide flex-column">          
+                  <h2 class="policy-h">VISION / ビジョン</h2>               
               <div class="d-flex w-100 policy-content">
                 <div class="mbl-col col-md-6">
                   <div class="swiper-content text-left">
@@ -104,7 +104,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide flex-column">          
+                  <h2 class="policy-h">VALUE / バリュー</h2>  
               <div class="d-flex w-100 policy-content">
                 <div class="mbl-col col-md-6">
                   <div class="swiper-content text-left">

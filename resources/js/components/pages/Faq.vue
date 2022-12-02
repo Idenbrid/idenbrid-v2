@@ -179,7 +179,7 @@
                                 aria-labelledby="pills-profile-tab">
                                 <div class="tab-main">
                                     <dt class="f_bold">開発されたソフトウェアの著作権は誰にありますか？</dt>
-                                    <dd>当社では契約ごとに定めていますが、基本的に著作権はクライアントへ帰属します。</dd>
+                                    <dd>契約ごとに各クライアント様と取り決めをしています。</dd>
                                 </div>
                                 <div class="tab-main">
                                     <dt class="f_bold">成果物の定義はどのように決まりますか？</dt>
