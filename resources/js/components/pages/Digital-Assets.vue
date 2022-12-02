@@ -13,13 +13,13 @@
                     <div class="container-slim">
                         <div class="mb-50">
                             <h5>Logo / ロゴ</h5>
-                            <div class="kit kit-slim"><a href="/assets/img/logo/logo.svg" download="image"
+                            <div class="kit kit-slim"><a href="/assets/img/logo/4.png" download="image"
                                     target="_blank" rel="noopener">
-                                    <img src="/public/assets/img/logo/logo.svg" alt="" />
+                                    <img src="/public/assets/img/logo/4.png" alt="" />
                                 </a>
                             </div>
-                            <div class="kit kit-slim"><a href="/assets/img/idenbrid-favicon-digital-assets.jpg">
-                                    <img src="/public/assets/img/idenbrid-favicon-digital-assets.jpg" alt="" />
+                            <div class="kit kit-slim"><a href="/assets/img/1.png">
+                                    <img src="/public/assets/img/1.png" alt="" />
                                 </a>
                             </div>
                         </div>

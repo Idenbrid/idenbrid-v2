@@ -337,7 +337,7 @@
                                                 <div class="check"></div>
                                             </li>
                                             <li>
-                                                <input type="radio" v-model="record.step_6" id="no-rush"
+                                                <input type="radio" v-model="record.step_6" id="501—1000"
                                                     name="selector2" value="501—1000">
                                                 <label for="501—1000">501 - 1000人規模
                                                 </label>
@@ -388,15 +388,17 @@
                                                 </div>
                                             </div>
                                             <div class="inputCase">
-                                                <div class="sc-fzonjX hIMiPJ"><span>メールアドレス* </span><input
+                                                <div class="sc-fzonjX hIMiPJ">
+                                                    <span>メールアドレス* </span>
+                                                    <input
                                                         placeholder="" v-model="record.email" autocomplete="off"
-                                                        minlength="3" name="title" type="text" required="" value=""
+                                                        minlength="3" name="title" type="email" required="" value=""
                                                         class="text-field">
 
                                                 </div>
                                                 <div class="sc-fzonjX hIMiPJ"><span>電話番号*</span><input
                                                         v-model="record.phone" placeholder="" autocomplete="off"
-                                                        minlength="3" name="name" type="text" required value=""
+                                                        minlength="3" name="name" type="number" required value=""
                                                         class="text-field">
 
                                                 </div>

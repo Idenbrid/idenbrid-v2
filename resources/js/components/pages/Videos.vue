@@ -3,8 +3,8 @@
         <Navbar />
         <div class="mv_textarea">
             <h2>
-                <strong class="en entxt">MOVIE</strong>
-                <span class="jptxt">ムービーギャラリー</span>
+                <strong class="en entxt">VIDEO / ビデオ</strong>
+                <span class="jptxt">アイデンブリッドで発信しているYouTube動画をご覧いただけます。</span>
             </h2>
         </div>
         <main>
@@ -16,64 +16,44 @@
                                 <p>&nbsp;</p>
                                 <p>&nbsp;</p>
                             </div>
-                            <h4 class="vission-text" style="text-align: center;">動画で見る、ユニラボのVISIONとメンバー</h4>
+                            <h4 class="vission-text" style="text-align: center;">動画で楽しくアイデンブリッドを知ろう！</h4>
                             <p>&nbsp;</p>
                             <h3 class="vision-sub-heading"><span
-                                    style="color: #102855;"><strong>#事業VISION</strong></span></h3>
-                            <p><iframe style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail795"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/795"></iframe><iframe
-                                    style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail791"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/791"></iframe><iframe
-                                    style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail789"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/789"></iframe></p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <h3 class="vision-sub-heading"><strong><span
-                                        style="color: #003366;">#オフィスツアー</span></strong></h3>
-                            <p><iframe style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail800"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/800"></iframe></p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <h3 class="vision-sub-heading"><strong><span
-                                        style="color: #003366;">#VALUE　「まっすぐ」</span></strong></h3>
-                            <p><iframe style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail797"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/797"></iframe><iframe
-                                    style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail798"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/798"></iframe><iframe
-                                    style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail799"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/799"></iframe></p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <h3 class="vision-sub-heading"><strong><span style="color: #003366;">#For
-                                        Students　～新卒学生へのメッセージ～</span></strong>
-                            </h3>
-                            <p><iframe style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail796"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/796"></iframe><iframe
-                                    style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail793"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/793"></iframe></p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <h3 class="vision-sub-heading"><span style="color: #102855;">#For
-                                    Engineer　エンジニア組織について</span></h3>
-                            <p><iframe style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail792"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/792"></iframe><iframe
-                                    style="border: none; height: 280px; width: 360px;" id="moovy_iframe_thumbnail788"
-                                    frameborder="0" scrolling="no"
-                                    src="https://moovy.jp/api/embed/job/link/thumbnail/788"></iframe></p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
+                                    style="color: #102855;"><strong>ビデオ一覧</strong></span></h3>
+                                    <div class="row">
+                                        <div class="col-4 p-3 border-rounded">
+                                            <iframe style="border: none; height: 200px; width: 360px;" id="moovy_iframe_thumbnail795"
+                                            frameborder="0" scrolling="no" src="https://www.youtube.com/embed/zMGiD8g_ipE"></iframe>
+                                            <h3>アイデントーク / IDENBRID TALK 後編</h3>
+                                            
+                                        </div>
+                                        <div class="col-4 p-3"> 
+                                            <iframe style="border: none; height: 200px; width: 360px;" id="moovy_iframe_thumbnail795"
+                                            frameborder="0" scrolling="no" src="https://www.youtube.com/embed/m_e3HDdowqM"></iframe>
+                                            <h3>必須インフラ】#5 : アイデントーク/ IDENTALK Zoom 後編</h3>
+                                        </div>
+                                        <div class="col-4 p-3"> 
+                                            <iframe style="border: none; height: 200px; width: 360px;" id="moovy_iframe_thumbnail795"
+                                            frameborder="0" scrolling="no" src="https://www.youtube.com/embed/MjWJ2deIOkg"></iframe>
+                                            <h3>IDENBRID 会社紹介 短編</h3>
+                                        </div>
+                                        <div class="col-4 p-3"> 
+                                            <iframe style="border: none; height: 200px; width: 360px;" id="moovy_iframe_thumbnail795"
+                                            frameborder="0" scrolling="no" src="https://www.youtube.com/embed/bUvQQxvoiLU"></iframe>
+                                            <h3>アイデントーク/IDENBRID TALK 前編</h3>
+                                        </div>
+                                        <div class="col-4 p-3"> 
+                                            <iframe style="border: none; height: 200px; width: 360px;" id="moovy_iframe_thumbnail795"
+                                            frameborder="0" scrolling="no" src="https://www.youtube.com/embed/tpY6birwBRY"></iframe>
+                                            <h3>アイデントーク/ IDENTALK Zoom 前編</h3>
+                                        </div>
+                                        
+                                        <div class="col-4 p-3"> 
+                                            <iframe style="border: none; height: 200px; width: 360px;" id="moovy_iframe_thumbnail795"
+                                                frameborder="0" scrolling="no" src="https://www.youtube.com/embed/knt5vVLJbX0"></iframe>
+                                            <h3>アイデントーク/ IDENTALK</h3>
+                                        </div>
+                                    </div>
                         </article>
                     </div>
                 </div>
@@ -102,7 +82,17 @@
         },
     };
 </script>
+<style scoped>
+
+iframe {
+    border-radius: 15px;
+}
+h3{
+    font-weight: 700;
+}
+</style>
 <style>
+
     .l-page-header {
         margin-top: 5.71429rem;
         width: 100%;

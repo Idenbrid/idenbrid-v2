@@ -10099,25 +10099,25 @@ var staticRenderFns = [function () {
     staticClass: "kit kit-slim"
   }, [_c("a", {
     attrs: {
-      href: "/assets/img/logo/logo.svg",
+      href: "/assets/img/logo/4.png",
       download: "image",
       target: "_blank",
       rel: "noopener"
     }
   }, [_c("img", {
     attrs: {
-      src: "/public/assets/img/logo/logo.svg",
+      src: "/public/assets/img/logo/4.png",
       alt: ""
     }
   })])]), _vm._v(" "), _c("div", {
     staticClass: "kit kit-slim"
   }, [_c("a", {
     attrs: {
-      href: "/assets/img/idenbrid-favicon-digital-assets.jpg"
+      href: "/assets/img/1.png"
     }
   }, [_c("img", {
     attrs: {
-      src: "/public/assets/img/idenbrid-favicon-digital-assets.jpg",
+      src: "/public/assets/img/1.png",
       alt: ""
     }
   })])])]), _vm._v(" "), _c("div", [_c("h5", [_vm._v("Key Visual / キュービジュアル")]), _vm._v(" "), _c("p", [_vm._v(" 当社のブランド・サービスを表現しているアセットになります。")]), _vm._v(" "), _c("div", {
@@ -11071,6 +11071,17 @@ var render = function render() {
     staticClass: "news mycontents-wide"
   }, [_c("h3", {
     staticClass: "content-title content-title_blog"
+  }, [_vm._v("OUR EXPERTISE")]), _vm._v(" "), _c("p", {
+    staticClass: "content-text content-text_blog"
+  }, [_vm._v("IDENBRIDがご提供している開発サービスのご紹介です。")]), _vm._v(" "), _c("router-link", {
+    staticClass: "viewmore-btn viewmore-btn_center",
+    attrs: {
+      to: "/solutions"
+    }
+  }, [_vm._v("View More\n            ")])], 1), _vm._v(" "), _c("section", {
+    staticClass: "news mycontents-wide"
+  }, [_c("h3", {
+    staticClass: "content-title content-title_blog"
   }, [_vm._v("NEWS")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-text_blog"
   }, [_vm._v("アイデンブリッドからのお知らせやイベント、そしてプレスリリースを発信致します。")]), _vm._v(" "), _c("div", {
@@ -11496,7 +11507,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Person-icon.svg"
     }
-  }), _vm._v("会社概要\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("会社概要\n                        ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -11507,7 +11518,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Message-icon.svg"
     }
-  }), _vm._v("代表メッセージ\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("代表メッセージ\n                        ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -11518,7 +11529,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Building-icon.svg"
     }
-  }), _vm._v("オフィス＆アクセス\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("オフィス＆アクセス\n                        ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -11529,7 +11540,7 @@ var render = function render() {
     attrs: {
       src: "/assets/img/icons/Members-icon.svg"
     }
-  }), _vm._v("メンバー\n                    ")])], 1), _vm._v(" "), _c("div", {
+  }), _vm._v("メンバー\n                        ")])], 1), _vm._v(" "), _c("div", {
     staticClass: "item"
   }, [_c("router-link", {
     staticClass: "text",
@@ -11643,20 +11654,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("セールスエグゼクティブとしてお客様のIT開発コンサルタントとして活躍しており、経営マネジメント及びグローバル事業の責任者も担当しております。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member01.jpg",
+      src: "/assets/img/member/souga.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("KOHEI NISHIZAKI")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("SOUGA NAKAMURA")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("代表取締役")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("創業者兼CEO / 経営陣")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11668,20 +11679,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("当社技術部門の最高責任者です。プロジェクトのマネジメントからシステム設計まで多岐に渡りお客様のプロジェクトを推進していく責任者です。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member02.jpg",
+      src: "/assets/img/member/aska.png",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("RYO IKEDA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ASKA IKEDA")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("取締役")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("創業者兼CDO / 経営陣")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li jinji kouhou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11693,20 +11704,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("カスタマーサクセスとして事業成長するためのヒアリングをしっかり行いお客様のビジネスに寄り添い、またPMOとしてプロジェクトマネジメントを行っています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member10.jpg",
+      src: "/assets/img/member/koji.png",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("MIHO OSAKABE")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("KOJI ENDO")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("広報担当")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("CS・PMO / マネジメント部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11718,20 +11729,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("エンジニアとしてのキャリアバックグランドを活かして、基本・詳細設計を担当するととともにプロジェクトオーナー様と一緒にプロジェクトマネジメントを行っています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member11.jpg",
+      src: "/assets/img/member/dai.png",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("HIROKI NISHIKAWA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("DAI KATSUMURA")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("フロントエンドエンジニア")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("PM / 開発部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li jinji on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11743,20 +11754,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("クライアントファーストを徹底したサービスを基本としつつ、要件・スケジュール通りに開発を進めるためのプロフェッショナルなマネジメントを得意としています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member12.jpg",
+      src: "/assets/img/member/yuta.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("AYUMI URASHITA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("YUTA SHIBATA")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("採用担当")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("PM / 開発部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11768,20 +11779,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n技術部門のマネージャーを務めています。Superior Universityコンピュータサイエンス学部を卒業後、React.jsやNode.jsなどが専門のフルスタックエンジニアとしてキャリアを積み現在はPM業務に従事しています。\n")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member13.jpg",
+      src: "/assets/img/member/ahmed.png",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("YUJI KUMEGAWA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("MUHAMMAD AHMAD")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("アートディレクター")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("PM兼テックリード / マネジメント部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11793,20 +11804,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("パキスタン、イスラマバード出身。教育大学にて動物学を専攻。ベンチャードライブの人事担当を経て、現在は当社の人事担当。採用のみでなく、人事戦略を立てるなど活躍しています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member15.jpg",
+      src: "/assets/img/member/iqra.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("WEI YEH")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("IQRA SALEEM")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("HRマネージャー / 管理部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou none on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11815,19 +11826,23 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "thumb"
   }, [_c("div", {
+    staticClass: "hvrtxt en"
+  }, [_c("span", {
+    staticClass: "more_txts"
+  }, [_vm._v("ラホール出身。GCUFでコンピュータサイエンスを専攻し、バックエンドエンジニアとしてキャリアを積みました。現在、バックエンドリードとして多くの日本顧客プロジェクトの開発に携わっています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member16.jpg",
+      src: "/assets/img/member/samad.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("KANAKO OSAKA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("ABDUL SAMAD")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("エンジニア / 開発部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11839,22 +11854,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("PASのコンピュータサイエンスを卒業後、前職ではWordpress/フロントエンドエンジニアとして勤務していました。現在はプラグイン開発、Vue.js開発プロジェクトを担当しています")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member17.jpg",
+      src: "/assets/img/member/kashif.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("YOSHIYASU YAMASHITA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("KASHIF ZIA")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("クリエイティブ"), _c("br", {
-    staticClass: "sp"
-  }), _vm._v("ディレクター")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("エンジニア / 開発部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li senki on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11866,22 +11879,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ラホール出身で、Virtual Universityにて理学士号を取得し、現在当社においてはNode.js、React.jsをメインとしフルスタックエンジニとして主に日本企業案件で活躍しています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member18.jpg",
+      src: "/assets/img/member/hamza.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("RISA TACHIBANA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("HAMZA ASHFAQ")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("ブランディング"), _c("br", {
-    staticClass: "sp"
-  }), _vm._v("プロデューサー")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("エンジニア / 開発部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11893,20 +11904,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("サルゴダ出身、ラホール大学コンピューターサイエンス学部卒。PHPのLaravelエンジニアとしてキャリアアップをし、当社でもバックエンドエンジニアとして主にグローバル顧客の開発に従事しています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member19.jpg",
+      src: "/assets/img/member/izmah.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("MIYU KOHARA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("IZMAH KHAN")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("クリエイティブディレクター")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("エンジニア / 開発部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11918,20 +11929,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ラホール出身で、サルゴダ大学にてBSCSを取得後、当社ではフロントエンドエンジニアとしてVue.jsを専門に勤務しています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member20.jpg",
+      src: "/assets/img/member/azeem.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("MARIKA NAKAHATA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("AZEEM UL HASSAN")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("エンジニア / 開発部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11943,20 +11954,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("パンジャブ大学にて植物学の博士号を取得後、前職ではビジネス・オペレーターとして活躍していました。現在、グローバルビジネスディベロップメントの統括として活躍しています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member21.jpg",
+      src: "/assets/img/member/bushra.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("HSU YU CHENG")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("BUSHRA RIAZ")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("セールス / ビジネス部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou kouhou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11968,20 +11979,20 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ラホール生まれ、パンジャブ大学でBBAを取得しました。現在、当社ではリード獲得の責任者としてグローバル企業の担当者として従事しています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member22.jpg",
+      src: "/assets/img/member/faizan.jpg",
       alt: ""
     }
   })])])])]), _vm._v(" "), _c("div", {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("SYUHEI MAKIGI")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("FAIZAN HAIDER")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("コピーライター")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("セールス / ビジネス部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li ishou on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -11993,7 +12004,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("代表のアシスタントとして創業時よりCEOのサポートに従事しており、パキスタン事業のオペレーションにおける調整役として活躍しています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12004,9 +12015,9 @@ var staticRenderFns = [function () {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("YUKI MINE")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("SHAHNAWAZ")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("クリエイティブデザイナー")])])]), _vm._v(" "), _c("li", {
+  }, [_vm._v("CEOアシスタント / 管理部門")])])]), _vm._v(" "), _c("li", {
     staticClass: "parent_li senki on"
   }, [_c("div", {
     staticClass: "img_box"
@@ -12018,7 +12029,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ラホール本社オフィスのメンテナンス業務に従事しています。")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12029,63 +12040,9 @@ var staticRenderFns = [function () {
     staticClass: "text_area"
   }, [_c("p", {
     staticClass: "name en"
-  }, [_vm._v("RYO FUMIOKA")]), _vm._v(" "), _c("p", {
+  }, [_vm._v("SHAN")]), _vm._v(" "), _c("p", {
     staticClass: "part"
-  }, [_vm._v("ブランディング"), _c("br", {
-    staticClass: "sp"
-  }), _vm._v("プロデューサー")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li ishou on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member25.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("LEE SOHEE")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("映像クリエイター")])])]), _vm._v(" "), _c("li", {
-    staticClass: "parent_li senki on"
-  }, [_c("div", {
-    staticClass: "img_box"
-  }, [_c("div", {
-    staticClass: "hoverScale"
-  }, [_c("div", {
-    staticClass: "thumb"
-  }, [_c("div", {
-    staticClass: "hvrtxt en"
-  }, [_c("span", {
-    staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
-    staticClass: "scaleImg"
-  }, [_c("img", {
-    attrs: {
-      src: "https://tomorrowgate.co.jp/asset/img/member/member26.jpg",
-      alt: ""
-    }
-  })])])])]), _vm._v(" "), _c("div", {
-    staticClass: "text_area"
-  }, [_c("p", {
-    staticClass: "name en"
-  }, [_vm._v("REMI ONISHI")]), _vm._v(" "), _c("p", {
-    staticClass: "part"
-  }, [_vm._v("ブランディング"), _c("br", {
-    staticClass: "sp"
-  }), _vm._v("プロデューサー")])])])])])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("オフィス管理 / 管理部門")])])])])])])]), _vm._v(" "), _c("div", {
     staticClass: "tab-pane fade",
     attrs: {
       id: "pills-profile",
@@ -12137,7 +12094,7 @@ var staticRenderFns = [function () {
     attrs: {
       "data-v-4494d8b0": ""
     }
-  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                            business advice from uber successful CEO’s. Bookmark it now\n                                                            to keep\n                                                            the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg",
     attrs: {
       "data-v-4494d8b0": ""
@@ -12193,7 +12150,7 @@ var staticRenderFns = [function () {
     attrs: {
       "data-v-4494d8b0": ""
     }
-  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                            business advice from uber successful CEO’s. Bookmark it now\n                                                            to keep\n                                                            the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg",
     attrs: {
       "data-v-4494d8b0": ""
@@ -12249,7 +12206,7 @@ var staticRenderFns = [function () {
     attrs: {
       "data-v-4494d8b0": ""
     }
-  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                            business advice from uber successful CEO’s. Bookmark it now\n                                                            to keep\n                                                            the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg",
     attrs: {
       "data-v-4494d8b0": ""
@@ -12310,7 +12267,7 @@ var staticRenderFns = [function () {
     attrs: {
       "data-v-4494d8b0": ""
     }
-  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                            business advice from uber successful CEO’s. Bookmark it now\n                                                            to keep\n                                                            the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg",
     attrs: {
       "data-v-4494d8b0": ""
@@ -12371,7 +12328,7 @@ var staticRenderFns = [function () {
     attrs: {
       "data-v-4494d8b0": ""
     }
-  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                            business advice from uber successful CEO’s. Bookmark it now\n                                                            to keep\n                                                            the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg",
     attrs: {
       "data-v-4494d8b0": ""
@@ -12432,7 +12389,7 @@ var staticRenderFns = [function () {
     attrs: {
       "data-v-4494d8b0": ""
     }
-  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                            business advice from uber successful CEO’s. Bookmark it now\n                                                            to keep\n                                                            the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg",
     attrs: {
       "data-v-4494d8b0": ""
@@ -12493,7 +12450,7 @@ var staticRenderFns = [function () {
     attrs: {
       "data-v-4494d8b0": ""
     }
-  }, [_vm._v("nspirational quotes and\n                                                        business advice from uber successful CEO’s. Bookmark it now\n                                                        to keep\n                                                        the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                            business advice from uber successful CEO’s. Bookmark it now\n                                                            to keep\n                                                            the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg",
     attrs: {
       "data-v-4494d8b0": ""
@@ -12549,7 +12506,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12574,7 +12531,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12599,7 +12556,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12624,7 +12581,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12670,7 +12627,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12697,7 +12654,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12722,7 +12679,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12747,7 +12704,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12772,7 +12729,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12797,7 +12754,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12822,7 +12779,7 @@ var staticRenderFns = [function () {
     staticClass: "hvrtxt en"
   }, [_c("span", {
     staticClass: "more_txts"
-  }, [_vm._v("nspirational quotes and\n                                                business advice from uber successful CEO’s. Bookmark it now to keep\n                                                the inspiration flowing!")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("nspirational quotes and\n                                                    business advice from uber successful CEO’s. Bookmark it now to keep\n                                                    the inspiration flowing!")])]), _vm._v(" "), _c("div", {
     staticClass: "scaleImg"
   }, [_c("img", {
     attrs: {
@@ -12987,7 +12944,7 @@ var render = function render() {
     staticClass: "topic--content highlight_blk"
   }, [_c("div", {
     staticClass: "topic--content--mainarea"
-  }, [_vm._l(_vm.news, function (detail) {
+  }, _vm._l(_vm.news, function (detail) {
     return _c("div", {
       key: detail.id
     }, [_c("router-link", {
@@ -13015,9 +12972,9 @@ var render = function render() {
     }, [_vm._v("NEWS")])])]), _vm._v(" "), _c("h3", {
       staticClass: "hvrunder"
     }, [_vm._v(_vm._s(detail.title))])])])], 1);
-  }), _vm._v(" "), _vm._m(1)], 2), _vm._v(" "), _vm._m(2)])]), _vm._v(" "), _c("div", {
+  }), 0), _vm._v(" "), _vm._m(1)])]), _vm._v(" "), _c("div", {
     staticClass: "branding--contact"
-  }, [_vm._m(3), _vm._v(" "), _c("div", {
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
     staticClass: "fade_y on"
   }, [_c("router-link", {
     staticClass: "contactbtn fade_y on",
@@ -13036,53 +12993,6 @@ var staticRenderFns = [function () {
   }, [_vm._v("NEWS / お知らせ")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
   }, [_vm._v("アイデンブリッドからのお知らせやプレスリリースを配信します。")])])]);
-}, function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c("div", {
-    staticClass: "wp-pagenavi",
-    attrs: {
-      role: "navigation"
-    }
-  }, [_c("span", {
-    staticClass: "current",
-    attrs: {
-      "aria-current": "page"
-    }
-  }, [_vm._v("1")]), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 2",
-      href: "https://tomorrowgate.co.jp/topic/page/2/"
-    }
-  }, [_vm._v("2")]), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 3",
-      href: "https://tomorrowgate.co.jp/topic/page/3/"
-    }
-  }, [_vm._v("3")]), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 4",
-      href: "https://tomorrowgate.co.jp/topic/page/4/"
-    }
-  }, [_vm._v("4")]), _c("a", {
-    staticClass: "page larger",
-    attrs: {
-      title: "ページ 5",
-      href: "https://tomorrowgate.co.jp/topic/page/5/"
-    }
-  }, [_vm._v("5")]), _c("a", {
-    staticClass: "nextpostslink",
-    attrs: {
-      rel: "next",
-      "aria-label": "Next Page",
-      href: "https://tomorrowgate.co.jp/topic/page/2/"
-    }
-  }, [_c("i", {
-    staticClass: "fas fa-angle-right"
-  })])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -15264,7 +15174,7 @@ var render = function render() {
     }],
     attrs: {
       type: "radio",
-      id: "no-rush",
+      id: "501—1000",
       name: "selector2",
       value: "501—1000"
     },
@@ -15390,7 +15300,7 @@ var render = function render() {
     staticClass: "inputCase"
   }, [_c("div", {
     staticClass: "sc-fzonjX hIMiPJ"
-  }, [_c("span", [_vm._v("メールアドレス* ")]), _c("input", {
+  }, [_c("span", [_vm._v("メールアドレス* ")]), _vm._v(" "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -15403,7 +15313,7 @@ var render = function render() {
       autocomplete: "off",
       minlength: "3",
       name: "title",
-      type: "text",
+      type: "email",
       required: "",
       value: ""
     },
@@ -15431,7 +15341,7 @@ var render = function render() {
       autocomplete: "off",
       minlength: "3",
       name: "name",
-      type: "text",
+      type: "number",
       required: "",
       value: ""
     },
@@ -15755,10 +15665,10 @@ render._withStripped = true;
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&":
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15779,9 +15689,9 @@ var staticRenderFns = [function () {
     staticClass: "mv_textarea"
   }, [_c("h2", [_c("strong", {
     staticClass: "en entxt"
-  }, [_vm._v("MOVIE")]), _vm._v(" "), _c("span", {
+  }, [_vm._v("VIDEO / ビデオ")]), _vm._v(" "), _c("span", {
     staticClass: "jptxt"
-  }, [_vm._v("ムービーギャラリー")])])]);
+  }, [_vm._v("アイデンブリッドで発信しているYouTube動画をご覧いただけます。")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -15803,169 +15713,99 @@ var staticRenderFns = [function () {
     staticStyle: {
       "text-align": "center"
     }
-  }, [_vm._v("動画で見る、ユニラボのVISIONとメンバー")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
+  }, [_vm._v("動画で楽しくアイデンブリッドを知ろう！")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
     staticClass: "vision-sub-heading"
   }, [_c("span", {
     staticStyle: {
       color: "#102855"
     }
-  }, [_c("strong", [_vm._v("#事業VISION")])])]), _vm._v(" "), _c("p", [_c("iframe", {
+  }, [_c("strong", [_vm._v("ビデオ一覧")])])]), _vm._v(" "), _c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-4 p-3 border-rounded"
+  }, [_c("iframe", {
     staticStyle: {
       border: "none",
-      height: "280px",
+      height: "200px",
       width: "360px"
     },
     attrs: {
       id: "moovy_iframe_thumbnail795",
       frameborder: "0",
       scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/795"
+      src: "https://www.youtube.com/embed/zMGiD8g_ipE"
     }
-  }), _c("iframe", {
+  }), _vm._v(" "), _c("h3", [_vm._v("アイデントーク / IDENBRID TALK 後編")])]), _vm._v(" "), _c("div", {
+    staticClass: "col-4 p-3"
+  }, [_c("iframe", {
     staticStyle: {
       border: "none",
-      height: "280px",
+      height: "200px",
       width: "360px"
     },
     attrs: {
-      id: "moovy_iframe_thumbnail791",
+      id: "moovy_iframe_thumbnail795",
       frameborder: "0",
       scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/791"
+      src: "https://www.youtube.com/embed/m_e3HDdowqM"
     }
-  }), _c("iframe", {
+  }), _vm._v(" "), _c("h3", [_vm._v("必須インフラ】#5 : アイデントーク/ IDENTALK Zoom 後編")])]), _vm._v(" "), _c("div", {
+    staticClass: "col-4 p-3"
+  }, [_c("iframe", {
     staticStyle: {
       border: "none",
-      height: "280px",
+      height: "200px",
       width: "360px"
     },
     attrs: {
-      id: "moovy_iframe_thumbnail789",
+      id: "moovy_iframe_thumbnail795",
       frameborder: "0",
       scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/789"
+      src: "https://www.youtube.com/embed/MjWJ2deIOkg"
     }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("strong", [_c("span", {
-    staticStyle: {
-      color: "#003366"
-    }
-  }, [_vm._v("#オフィスツアー")])])]), _vm._v(" "), _c("p", [_c("iframe", {
+  }), _vm._v(" "), _c("h3", [_vm._v("IDENBRID 会社紹介 短編")])]), _vm._v(" "), _c("div", {
+    staticClass: "col-4 p-3"
+  }, [_c("iframe", {
     staticStyle: {
       border: "none",
-      height: "280px",
+      height: "200px",
       width: "360px"
     },
     attrs: {
-      id: "moovy_iframe_thumbnail800",
+      id: "moovy_iframe_thumbnail795",
       frameborder: "0",
       scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/800"
+      src: "https://www.youtube.com/embed/bUvQQxvoiLU"
     }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("strong", [_c("span", {
-    staticStyle: {
-      color: "#003366"
-    }
-  }, [_vm._v("#VALUE　「まっすぐ」")])])]), _vm._v(" "), _c("p", [_c("iframe", {
+  }), _vm._v(" "), _c("h3", [_vm._v("アイデントーク/IDENBRID TALK 前編")])]), _vm._v(" "), _c("div", {
+    staticClass: "col-4 p-3"
+  }, [_c("iframe", {
     staticStyle: {
       border: "none",
-      height: "280px",
+      height: "200px",
       width: "360px"
     },
     attrs: {
-      id: "moovy_iframe_thumbnail797",
+      id: "moovy_iframe_thumbnail795",
       frameborder: "0",
       scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/797"
+      src: "https://www.youtube.com/embed/tpY6birwBRY"
     }
-  }), _c("iframe", {
+  }), _vm._v(" "), _c("h3", [_vm._v("アイデントーク/ IDENTALK Zoom 前編")])]), _vm._v(" "), _c("div", {
+    staticClass: "col-4 p-3"
+  }, [_c("iframe", {
     staticStyle: {
       border: "none",
-      height: "280px",
+      height: "200px",
       width: "360px"
     },
     attrs: {
-      id: "moovy_iframe_thumbnail798",
+      id: "moovy_iframe_thumbnail795",
       frameborder: "0",
       scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/798"
+      src: "https://www.youtube.com/embed/knt5vVLJbX0"
     }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail799",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/799"
-    }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("strong", [_c("span", {
-    staticStyle: {
-      color: "#003366"
-    }
-  }, [_vm._v("#For\n                                    Students　～新卒学生へのメッセージ～")])])]), _vm._v(" "), _c("p", [_c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail796",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/796"
-    }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail793",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/793"
-    }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("h3", {
-    staticClass: "vision-sub-heading"
-  }, [_c("span", {
-    staticStyle: {
-      color: "#102855"
-    }
-  }, [_vm._v("#For\n                                Engineer　エンジニア組織について")])]), _vm._v(" "), _c("p", [_c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail792",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/792"
-    }
-  }), _c("iframe", {
-    staticStyle: {
-      border: "none",
-      height: "280px",
-      width: "360px"
-    },
-    attrs: {
-      id: "moovy_iframe_thumbnail788",
-      frameborder: "0",
-      scrolling: "no",
-      src: "https://moovy.jp/api/embed/job/link/thumbnail/788"
-    }
-  })]), _vm._v(" "), _c("p", [_vm._v(" ")]), _vm._v(" "), _c("p", [_vm._v(" ")])])])])])]);
+  }), _vm._v(" "), _c("h3", [_vm._v("アイデントーク/ IDENTALK")])])])])])])])]);
 }];
 render._withStripped = true;
 
@@ -16497,7 +16337,7 @@ var staticRenderFns = [function () {
   }, [_vm._v("ウェブシステム開発におけるフロー")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
   }, [_vm._v('\n                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで\n一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"')])]), _vm._v(" "), _c("div", {
-    staticClass: "flow__scroll mycontents-wide"
+    staticClass: "flow__scroll mycontents-wide soft-development"
   }, [_c("ul", {
     staticClass: "flow__contents"
   }, [_c("li", {
@@ -16505,7 +16345,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "/assets/img/solution/flow/No-1.jpg",
+      src: "/assets/img/icons/Team-rafiki.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -16517,7 +16357,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "/assets/img/solution/flow/No-2.jpg",
+      src: "/assets/img/icons/New-team-members-rafiki.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -16529,7 +16369,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "/assets/img/solution/flow/No-3.jpg",
+      src: "/assets/img/icons/Open-source-bro.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -16541,7 +16381,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "/assets/img/solution/flow/No-4.jpg",
+      src: "/assets/img/icons/test-amico.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17247,7 +17087,7 @@ var staticRenderFns = [function () {
   }, [_vm._v("ウェブシステム開発におけるフロー")]), _vm._v(" "), _c("p", {
     staticClass: "content-text content-subtitle_flow"
   }, [_vm._v('\n                        "当社はワンストップ開発を進めており、お問い合わせ頂いてからウェブやアプリのローンチまで\n一貫してシームレスにお手伝いさせて頂きます。一社完結なので様々な方とお話する必要もなくお客様の負担軽減が見込めます。"')])]), _vm._v(" "), _c("div", {
-    staticClass: "flow__scroll mycontents-wide"
+    staticClass: "flow__scroll mycontents-wide soft-development"
   }, [_c("ul", {
     staticClass: "flow__contents"
   }, [_c("li", {
@@ -17255,7 +17095,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "/assets/img/solution/flow/No-1.jpg",
+      src: "/assets/img/icons/Team-rafiki.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17267,7 +17107,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "/assets/img/solution/flow/No-2.jpg",
+      src: "/assets/img/icons/New-team-members-rafiki.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17279,7 +17119,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "/assets/img/solution/flow/No-3.jpg",
+      src: "/assets/img/icons/Open-source-bro.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -17291,7 +17131,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "flow__list__thumbnail",
     attrs: {
-      src: "/assets/img/solution/flow/No-4.jpg",
+      src: "/assets/img/icons/test-amico.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h4", {
@@ -18194,7 +18034,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "/assets/img/icons/ses-img-01.svg",
+      src: "/assets/img/icons/ses-image-01.png",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
@@ -18206,7 +18046,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "/assets/img/icons/ses-img-02.svg",
+      src: "/assets/img/icons/ses-image-02.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
@@ -18218,14 +18058,50 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "/assets/img/icons/ses-img-03.svg",
+      src: "/assets/img/icons/ses-image-03.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
     staticClass: "system-sec__list__title"
   }, [_vm._v("契約単価")]), _vm._v(" "), _c("p", {
     staticClass: "system-sec__list__text"
-  }, [_vm._v("エンジニア・デザイナーの方々に少しでも大きく還元できるように単価交渉としっかりとした還元率を実現しています\n                    ")])])])]);
+  }, [_vm._v("エンジニア・デザイナーの方々に少しでも大きく還元できるように単価交渉としっかりとした還元率を実現しています\n                    ")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "/assets/img/icons/ses-image-04.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("フルリモート案件")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        よりエンジニアの方が働きやすい環境を提供し、通勤の時間なども節約でき大人気の条件の一つです")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "/assets/img/icons/ses-image-05.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("スキルを伸ばす環境")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("\n                        単純にできる仕事をするだけでなく、挑戦できる環境下で自身のスキルアップにも繋がる案件を紹介しております")])]), _vm._v(" "), _c("li", {
+    staticClass: "system-sec__list"
+  }, [_c("img", {
+    staticClass: "system-sec__list__thumbnail",
+    attrs: {
+      src: "/assets/img/icons/ses-image-06.svg",
+      alt: ""
+    }
+  }), _vm._v(" "), _c("h3", {
+    staticClass: "system-sec__list__title"
+  }, [_vm._v("頼れるカスタマーサクセス")]), _vm._v(" "), _c("p", {
+    staticClass: "system-sec__list__text"
+  }, [_vm._v("万が一トラブルがあった場合にはエンジニアスタイルがしっかりと間に入り、状況把握からお客様の不安払拭に努めます\n                    ")])])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -18242,7 +18118,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "/assets/img/icons/ses-img-04.svg",
+      src: "/assets/img/icons/ses-image-07.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
@@ -18254,7 +18130,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "/assets/img/icons/ses-img-05.svg",
+      src: "/assets/img/icons/ses-image-08.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
@@ -18266,7 +18142,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "system-sec__list__thumbnail",
     attrs: {
-      src: "/assets/img/icons/ses-img-06.svg",
+      src: "/assets/img/icons/ses-image-09.svg",
       alt: ""
     }
   }), _vm._v(" "), _c("h3", {
@@ -24294,7 +24170,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.more-arrow .in:before {\n    width: 27px;\n    right: 8px;\n    top: 50%;\n}\n.more-arrow .in:after {\n    width: 6px;\n    transform: rotate(45deg);\n    right: 7px;\n    top: 50%;\n    margin-top: -2px;\n}\n.more-arrow {\n    margin-top: 10px;\n    line-height: 1;\n}\n.more-arrow .in {\n    display: inline-block;\n    background: #fff100;\n    font-size: 11px;\n    font-weight: bold;\n    font-family: \"Ropa Sans\", sans-serif;\n    padding: 3px 45px 2px 10px;\n    letter-spacing: 0.02em;\n    position: relative;\n}\n.more-arrow .in:before,\n.more-arrow .in:after {\n    content: \"\";\n    background: #231815;\n    position: absolute;\n    height: 1px;\n}\n.company--index {\n    padding: 60px 10% 120px;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap;\n}\n.company--item {\n    width: 32.4%;\n    transform: translateY(5%);\n    transition: .6s;\n}\n.company.loaded .company--item {\n    transform: translateY(0);\n    opacity: 1;\n}\n.company--item:nth-of-type(1),\n.company--item:nth-of-type(2) {\n    width: 49.4%;\n}\n.hoverScale .thumb {\n    overflow: hidden;\n    position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n    color: #dadada;\n    font-size: 1.4rem;\n    font-family: DIN-Bold;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n    position: relative;\n    font-family: DIN-Bold;\n    font-size: 14px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n    content: \"\";\n    background: #dadada;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n    width: 6px;\n    transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n.hoverScale .thumb .hvrtxt .more_txt::before {\n    content: \"\";\n    height: 1px;\n    background-color: #dadada;\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transition: 0.3s;\n}\n.hoverScale .thumb .scaleImg {\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.hoverScale .thumb::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.6);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\nimg {\n    max-width: 100%;\n    height: auto;\n    vertical-align: bottom;\n}\n.company--item .company_ttl {\n    margin-top: 20px;\n}\n.company--item .company_ttl strong {\n    color: #000;\n    font-size: 18px;\n    letter-spacing: 0.12px;\n    font-family: NotoSansJP-Bold;\n    font-weight: bold;\n}\n.company--item .company_ttl span {\n    font-size: 14px;\n    font-family: \"DIN\";\n    color: #929191;\n    letter-spacing: 0.08em;\n    text-transform: uppercase;\n    display: block;\n    margin-top: 15px;\n    font-weight: bold;\n}\n\n/*new-design*/\n.about-section {\n    padding: 60px 10% 120px;\n}\n.link-set {\n    display: grid;\n    grid-gap: 20px;\n    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));\n    margin-top: 30px;\n}\n.link-card {\n    background: #fff;\n    width: 100%;\n}\n.link-img {\n    position: relative;\n    overflow: hidden;\n}\n.link-img img {\n    transition: transform .5s ease;\n    height: 319px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    width: 100%;\n}\n.link-img img:hover {\n    transform: scale(1.5);\n}\n.link-haeding {\n    padding: 20px 10px;\n}\n.link-haeding h3 {\n    font-size: 17px;\n    font-weight: bold;\n}\n.link-haeding h6 {\n    font-size: 17px;\n    color: #231815;\n    font-weight: 700;\n    margin-bottom: 20px;\n}\n\n/*end*/\n@media screen and (min-width: 897px) {\n.company--item:nth-of-type(1),\n    .company--item:nth-of-type(2) {\n        margin-bottom: 75px;\n}\n}\n@media screen and (max-width: 767px) {\n.link-img img {\n      height:auto;\n}\n.company--index {\n        padding: 20px 6% 60px;\n}\n.hero {\n        padding-top: 60px;\n        padding-bottom: 10px;\n}\n}\n@media screen and (max-width: 500px) {\n.company--item {\n        width: 100%;\n}\n.company--item:nth-of-type(1),\n    .company--item:nth-of-type(2) {\n        width: 100%;\n}\n.link-set{\n        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr))\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.more-arrow .in:before {\n        width: 27px;\n        right: 8px;\n        top: 50%;\n}\n.more-arrow .in:after {\n        width: 6px;\n        transform: rotate(45deg);\n        right: 7px;\n        top: 50%;\n        margin-top: -2px;\n}\n.more-arrow {\n        margin-top: 10px;\n        line-height: 1;\n}\n.more-arrow .in {\n        display: inline-block;\n        background: #fff100;\n        font-size: 11px;\n        font-weight: bold;\n        font-family: \"Ropa Sans\", sans-serif;\n        padding: 3px 45px 2px 10px;\n        letter-spacing: 0.02em;\n        position: relative;\n}\n.more-arrow .in:before,\n    .more-arrow .in:after {\n        content: \"\";\n        background: #231815;\n        position: absolute;\n        height: 1px;\n}\n.company--index {\n        padding: 60px 10% 120px;\n        display: flex;\n        justify-content: space-between;\n        flex-wrap: wrap;\n}\n.company--item {\n        width: 32.4%;\n        transform: translateY(5%);\n        transition: .6s;\n}\n.company.loaded .company--item {\n        transform: translateY(0);\n        opacity: 1;\n}\n.company--item:nth-of-type(1),\n    .company--item:nth-of-type(2) {\n        width: 49.4%;\n}\n.hoverScale .thumb {\n        overflow: hidden;\n        position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transition: 0.4s;\n        transform: translate(-34%, -20%);\n        opacity: 0;\n        z-index: 1;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n        color: #dadada;\n        font-size: 1.4rem;\n        font-family: DIN-Bold;\n        letter-spacing: 0.06em;\n        text-transform: uppercase;\n        position: relative;\n        padding-right: 20px;\n        font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n        width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n    .hoverScale .thumb .hvrtxt .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #dadada;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n        position: relative;\n        font-family: DIN-Bold;\n        font-size: 14px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n        content: \"\";\n        background: #dadada;\n        width: 100%;\n        height: 1px;\n        position: absolute;\n        bottom: -4px;\n        left: 0;\n        transform: scale(0, 1);\n        transition: transform 0.3s;\n        transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n        width: 6px;\n        transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n    .hoverScale .thumb .hvrtxt .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #dadada;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.hoverScale .thumb .scaleImg {\n        transition: 0.4s;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.hoverScale .thumb::after {\n        content: \"\";\n        background-color: rgba(0, 0, 0, 0.6);\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        top: 0;\n        left: 0;\n        opacity: 0;\n        transition: 0.4s;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\nimg {\n        max-width: 100%;\n        height: auto;\n        vertical-align: bottom;\n}\n.company--item .company_ttl {\n        margin-top: 20px;\n}\n.company--item .company_ttl strong {\n        color: #000;\n        font-size: 18px;\n        letter-spacing: 0.12px;\n        font-family: NotoSansJP-Bold;\n        font-weight: bold;\n}\n.company--item .company_ttl span {\n        font-size: 14px;\n        font-family: \"DIN\";\n        color: #929191;\n        letter-spacing: 0.08em;\n        text-transform: uppercase;\n        display: block;\n        margin-top: 15px;\n        font-weight: bold;\n}\n\n    /*new-design*/\n.about-section {\n        padding: 60px 10% 120px;\n}\n.link-set {\n        display: grid;\n        grid-gap: 20px;\n        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));\n        margin-top: 30px;\n}\n.link-card {\n        background: #fff;\n        width: 100%;\n}\n.link-img {\n        position: relative;\n        overflow: hidden;\n}\n.link-img img {\n        transition: transform .5s ease;\n        height: 319px;\n        -o-object-fit: cover;\n           object-fit: cover;\n        width: 100%;\n}\n.link-img img:hover {\n        transform: scale(1.5);\n}\n.link-haeding {\n        padding: 20px 10px;\n}\n.link-haeding h3 {\n        font-size: 17px;\n        font-weight: bold;\n}\n.link-haeding h6 {\n        font-size: 17px;\n        color: #231815;\n        font-weight: 700;\n        margin-bottom: 20px;\n}\n\n    /*end*/\n@media screen and (max-width: 1800px) and (min-width: 1600px)\n{\n.link-img img {\n    height: 250px;\n    width: 100%;\n}\n}\n@media screen and (min-width: 897px) {\n.company--item:nth-of-type(1),\n        .company--item:nth-of-type(2) {\n            margin-bottom: 75px;\n}\n}\n@media screen and (max-width: 767px) {\n.link-img img {\n          height:auto;\n}\n.company--index {\n            padding: 20px 6% 60px;\n}\n.hero {\n            padding-top: 60px;\n            padding-bottom: 10px;\n}\n}\n@media screen and (max-width: 500px) {\n.company--item {\n            width: 100%;\n}\n.company--item:nth-of-type(1),\n        .company--item:nth-of-type(2) {\n            width: 100%;\n}\n.link-set{\n            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr))\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24390,7 +24266,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.hoverScale .thumb {\n        overflow: hidden;\n        position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transition: 0.4s;\n        transform: translate(-34%, -20%);\n        opacity: 0;\n        z-index: 1;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n        color: #dadada;\n        font-size: 1.4rem;\n        font-family: DIN-Bold;\n        letter-spacing: 0.06em;\n        text-transform: uppercase;\n        position: relative;\n        padding-right: 20px;\n        font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n        width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n    .hoverScale .thumb .hvrtxt .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #dadada;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n        position: relative;\n        font-family: DIN-Bold;\n        font-size: 14px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n        content: \"\";\n        background: #dadada;\n        width: 100%;\n        height: 1px;\n        position: absolute;\n        bottom: -4px;\n        left: 0;\n        transform: scale(0, 1);\n        transition: transform 0.3s;\n        transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n        width: 6px;\n        transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n    .hoverScale .thumb .hvrtxt .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #dadada;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.hoverScale .thumb .scaleImg {\n        transition: 0.4s;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.hoverScale .thumb::after {\n        content: \"\";\n        background-color: rgba(0, 0, 0, 0.6);\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        top: 0;\n        left: 0;\n        opacity: 0;\n        transition: 0.4s;\n}\n.recruit_fix {\n        position: sticky;\n        left: 0;\n        right: 0;\n        bottom: -50%;\n        /* left: 50%; */\n        opacity: 0;\n        /* transform: translateX(-50%); */\n        z-index: 20;\n        padding: 10px 0;\n        width: 80%;\n        transition: 0.4s;\n}\n.recruit_fix.visibility {\n        bottom: 12px;\n        opacity: 1;\n}\n.recruit_fix {\n        margin: auto;\n        z-index: 20;\n        width: 82%;\n}\n.recruit_fix ul {\n        justify-content: space-between;\n}\n.recruit_fix ul li {\n        margin: auto;\n        width: 40%;\n}\n.recruit_fix ul li a {\n        width: 100%;\n        padding: 16px 0;\n        margin-top: 0;\n        font-size: 1.6rem;\n        line-height: 1.7;\n}\n.recruit--leadtxt h3 {\n        font-size: 38px;\n}\n.recruit--leadtxt {\n        /* padding: 40px 10% 100px; */\n        padding: 130px 10% 170px;\n        color: #dadada;\n        position: relative;\n        z-index: 1;\n        margin-top: 0px;\n        background-color: #000;\n        background: url('/assets/img/all-member.png') no-repeat center;\n        background-blend-mode: overlay;\n        background-color: rgba(0, 0, 0, 0.5);\n}\n@media screen and (max-width:1160px) and (min-width: 768px){\n.recruit--leadtxt {\npadding: 80px 10% 50px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr.entryarea li a {\n            padding: 25px 0;\n            margin-top: 20px;\n            font-size: 16px;\n}\n.recruit--contactarea--bnr.entryarea li a:hover {\n            background-color: #fff;\n            color: #000;\n}\n}\n.recruit .recruit_fix ul li a .label {\n        font-size: 12px;\n        font-weight: 500;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n        font-size: 12px;\n        font-family: NotoSansJP-Medium;\n        letter-spacing: 0.05em;\n        text-align: center;\n}\n.recruit--contactarea--bnr.entryarea li a {\n        position: relative;\n        display: block;\n        border: 1px solid #2b2b2b;\n        background-color: #000;\n        letter-spacing: 0.12em;\n        text-align: center;\n        color: #dadada;\n        font-size: 16px;\n        transition: 0.6s ease;\n        font-weight: bold;\n        font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr {\n            display: flex;\n            justify-content: center;\n}\n}\n.recruit_fix ul {\n        justify-content: space-between;\n}\n.recruit-fix {\n        bottom: 12px;\n        opacity: 1;\n}\n.mv_textarea-recruit {\n        /* color: #dadada; */\n        background-color: #000;\n}\n@media screen and (max-width: 896px) {\n.recruit_fix ul {\n            display: flex;\n            padding: 0;\n}\n.recruit_fix ul li a {\n            font-size: 14px;\n            padding: 13px 0;\n}\n.recruit_fix ul li a .label {\n            font-size: 10px;\n}\n.recruit_fix {\n            width: 100%;\n}\n}\n.mv_textarea-recruit .entxt {\n        display: block;\n        font-size: 40px;\n        letter-spacing: 0.1em;\n        text-transform: uppercase;\n        transform: translateY(15%);\n        transition: 0.6s;\n        opacity: 1;\n        color: #fff;\n        font-weight: bold;\n        text-align: left;\n        margin-bottom: 20px;\n}\n@media screen and (max-width: 896px) {\n.mv_textarea-recruit {\n            padding: 30px 5% 0px;\n            font-size: 2.8rem;\n}\n}\n.mv_textarea-recruit .jptxt {\n        transform: translateY(15%);\n        transition: 0.6s;\n        opacity: 1;\n        font-size: 13px;\n        letter-spacing: 0.08em;\n        color: #fff;\n}\n.sp {\n        display: none;\n}\n@media screen and (max-width: 896px) {\n.sp {\n            display: block;\n}\n}\n.recruit--leadtxt {\n        /* padding: 40px 10% 100px; */\n        padding: 130px 10% 170px;\n        color: #dadada;\n        position: relative;\n        z-index: 1;\n        margin-top: 0px;\n        background-color: #000;\n        background: url('/assets/img/business-background-cover.png') no-repeat center;\n        background-blend-mode: overlay;\n        background-color: rgba(0, 0, 0, 0.5);\n}\n\n    /* .recruit--leadtxt::after {\n        content: \"\";\n        background: url('/assets/img/all_member.jpg') no-repeat center;\n        background-size: 100%;\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        opacity: 0.3;\n        z-index: -1;\n    } */\n@media screen and (max-width: 896px) {\n.recruit--leadtxt::after {\n            background: url('/assets/img/all_member.jpg') no-repeat center;\n            background-size: 300%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt {\n            padding: 30px 5% 60px;\n}\n}\n.recruit--leadtxt h3 {\n        line-height: 1.63;\n        transform: translateY(10%);\n        transition: 0.6s;\n        opacity: 1;\n        color: #dadada;\n        font-weight: bold;\n        font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--leadtxt h3 {\n            font-size: 38px;\n            letter-spacing: 0.2em;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt h3 {\n            font-size: 20px;\n            letter-spacing: 0.12em;\n}\n}\n.recruit--leadtxt p {\n        transform: translateY(10%);\n        transition: 0.9s;\n        opacity: 1;\n        margin-top: 30px;\n        letter-spacing: 0.12em;\n        line-height: 2;\n        font-size: 16px;\n        font-family: NotoSansJP-Regular;\n        font-weight: 400;\n        color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt p {\n            font-size: 14px;\n}\n}\n@media screen and (max-width: 500px) {\n.recruit--contactarea--bnr.entryarea li a {\n            font-size: 10px;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n            font-size: 8px;\n}\n.recruit_fix.visibility {\n            bottom: -10px;\n}\n.recruit_fix ul li {\n            width: 49%;\n            margin: 0px auto 0px 0px;\n}\n.recruit--leadtxt {\n            margin-top: 0px;\n}\n}\n.recruit.loaded .recruit--leadtxt h3 {\n        transform: translateY(0);\n        opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt p {\n        transform: translateY(0);\n        opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt .photo {\n        transform: translateY(0);\n        opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .pararel {\n            bottom: 90px;\n}\n}\n.recruit .mv_textarea-recruit {\n        position: relative;\n        z-index: 2;\n}\n.recruit .recruit_fix {\n        position: fixed;\n        bottom: -50px;\n        left: 50%;\n        opacity: 0;\n        transform: translateX(-50%);\n        z-index: 20;\n        padding: 10px 2%;\n        width: 60%;\n        transition: 0.4s;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix {\n            left: 0;\n            width: 100%;\n            transform: translateX(0);\n}\n}\n.recruit .recruit_fix.visibility {\n        bottom: 12px;\n        opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix.visibility {\n            bottom: 8px;\n}\n}\n.recruit .recruit_fix ul {\n        justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul {\n            display: flex;\n            padding: 0;\n}\n}\n.recruit .recruit_fix ul li {\n        margin: 0;\n        width: 49%;\n}\n.recruit .recruit_fix ul li a {\n        width: 100%;\n        padding: 16px 0;\n        margin-top: 0;\n        font-size: 1.6rem;\n        line-height: 1.7;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a {\n            font-size: 1.4rem;\n            padding: 13px 0;\n}\n}\n.recruit .recruit_fix ul li a::before,\n    .recruit .recruit_fix ul li a::after {\n        content: none;\n}\n.recruit .recruit_fix ul li a .label {\n        font-size: 1.2rem;\n        font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a .label {\n            font-size: 1rem;\n}\n}\n.recruit--person {\n        background-color: #fff;\n        position: relative;\n}\n@media screen and (min-width: 897px) {\n.recruit_fix.visibility {\n            margin-bottom: 80px;\n}\n.recruit--person {\n            padding: 180px 10% 100px;\n}\n.mv_textarea-recruit {\n            padding: 40px 10% 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person {\n            padding: 40px 5%;\n}\n}\n.recruit--person .heading .sub {\n\n        font-size: 16px;\n        letter-spacing: 0.08em;\n        line-height: 16px;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n        font-weight: 400;\n}\n.recruit--person .heading h3 {\n        font-size: 20px;\n        margin-top: 23px;\n        letter-spacing: 0.08em;\n        line-height: 20px;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n        font-weight: 700;\n}\n.recruit--person--list {\n        margin-top: 80px;\n}\n@media screen and (min-width: 897px) {\n.recruit--person--list {\n            display: flex;\n            flex-wrap: wrap;\n            justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--list {\n            margin-top: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item {\n            width: 48.5%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item {\n            margin-top: 40px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item:nth-child(4) {\n            margin-top: 140px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item h4 {\n            margin-top: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 {\n            margin-top: 24px;\n}\n}\n.recruit--person--item h4 .department {\n        display: block;\n        font-size: 16px;\n        font-weight: 700;\n        letter-spacing: 0.1em;\n        margin-bottom: 0px;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n        line-height: 16px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .department {\n            font-size: 14px;\n}\n}\n.recruit--person--item h4 .phrase {\n        display: block;\n        margin-top: 15px;\n        font-size: 16px;\n        line-height: 24px;\n        letter-spacing: 0.1em;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n        background-color: #dadada;\n        padding: 15px 5px;\n        min-height: 105px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .phrase {\n            font-size: 20px;\n}\n}\n.recruit--person--item p {\n        margin-top: 20px;\n        font-size: 14px;\n        line-height: 2;\n        letter-spacing: 0.1em;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n}\n@media only screen and (max-width: 1024px) {\n.studio-dev-hieght{\n            height: 100px;\n}\n}\n@media screen and (max-width: 425px) {\n.mv_textarea-recruit .jptxt {\n            font-size: 12px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.hoverScale .thumb {\n        overflow: hidden;\n        position: relative;\n}\n.hoverScale .thumb .hvrtxt {\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transition: 0.4s;\n        transform: translate(-34%, -20%);\n        opacity: 0;\n        z-index: 1;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.hoverScale .thumb .hvrtxt .more_txt {\n        color: #dadada;\n        font-size: 1.4rem;\n        font-family: DIN-Bold;\n        letter-spacing: 0.06em;\n        text-transform: uppercase;\n        position: relative;\n        padding-right: 20px;\n        font-weight: 700;\n}\n.hoverScale .thumb .hvrtxt .more_txt::before {\n        width: 10px;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n    .hoverScale .thumb .hvrtxt .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #dadada;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline {\n        position: relative;\n        font-family: DIN-Bold;\n        font-size: 14px;\n}\n.hoverScale .thumb .hvrtxt .more_txt .underline::after {\n        content: \"\";\n        background: #dadada;\n        width: 100%;\n        height: 1px;\n        position: absolute;\n        bottom: -4px;\n        left: 0;\n        transform: scale(0, 1);\n        transition: transform 0.3s;\n        transform-origin: right top;\n}\n.hoverScale .thumb .hvrtxt .more_txt::after {\n        width: 6px;\n        transform: rotate(45deg) translateY(-3px);\n}\n.hoverScale .thumb .hvrtxt .more_txt::after,\n    .hoverScale .thumb .hvrtxt .more_txt::before {\n        content: \"\";\n        height: 1px;\n        background-color: #dadada;\n        position: absolute;\n        right: 0;\n        top: 50%;\n        transition: 0.3s;\n}\n.hoverScale .thumb .scaleImg {\n        transition: 0.4s;\n        -webkit-backface-visibility: hidden;\n                backface-visibility: hidden;\n}\n.hoverScale .thumb::after {\n        content: \"\";\n        background-color: rgba(0, 0, 0, 0.6);\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        top: 0;\n        left: 0;\n        opacity: 0;\n        transition: 0.4s;\n}\n.recruit_fix {\n        position: sticky;\n        left: 0;\n        right: 0;\n        bottom: -50%;\n        /* left: 50%; */\n        opacity: 0;\n        /* transform: translateX(-50%); */\n        z-index: 20;\n        padding: 10px 0;\n        width: 80%;\n        transition: 0.4s;\n}\n.recruit_fix.visibility {\n        bottom: 12px;\n        opacity: 1;\n}\n.recruit_fix {\n        margin: auto;\n        z-index: 20;\n        width: 82%;\n}\n.recruit_fix ul {\n        justify-content: space-between;\n}\n.recruit_fix ul li {\n        margin: auto;\n        width: 40%;\n}\n.recruit_fix ul li a {\n        width: 100%;\n        padding: 16px 0;\n        margin-top: 0;\n        font-size: 1.6rem;\n        line-height: 1.7;\n}\n.recruit--leadtxt h3 {\n        font-size: 38px;\n}\n.recruit--leadtxt {\n        /* padding: 40px 10% 100px; */\n        padding: 130px 10% 170px;\n        color: #dadada;\n        position: relative;\n        z-index: 1;\n        margin-top: 0px;\n        background-color: #000;\n        background: url('/assets/img/all-member.png') no-repeat center;\n        background-blend-mode: overlay;\n        background-color: rgba(0, 0, 0, 0.5);\n}\n@media screen and (max-width:1160px) and (min-width: 768px){\n.recruit--leadtxt {\npadding: 80px 10% 50px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr.entryarea li a {\n            padding: 25px 0;\n            margin-top: 20px;\n            font-size: 16px;\n}\n.recruit--contactarea--bnr.entryarea li a:hover {\n            background-color: #fff;\n            color: #000;\n}\n}\n.recruit .recruit_fix ul li a .label {\n        font-size: 12px;\n        font-weight: 500;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n        font-size: 12px;\n        font-family: NotoSansJP-Medium;\n        letter-spacing: 0.05em;\n        text-align: center;\n}\n.recruit--contactarea--bnr.entryarea li a {\n        position: relative;\n        display: block;\n        border: 1px solid #2b2b2b;\n        background-color: #12355D;\n        letter-spacing: 0.12em;\n        text-align: center;\n        color: #dadada;\n        font-size: 16px;\n        transition: 0.6s ease;\n        font-weight: bold;\n        font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--contactarea--bnr {\n            display: flex;\n            justify-content: center;\n}\n}\n.recruit_fix ul {\n        justify-content: space-between;\n}\n.recruit-fix {\n        bottom: 12px;\n        opacity: 1;\n}\n.mv_textarea-recruit {\n        /* color: #dadada; */\n        /* background-color: #000; */\n        background-color: #12355D;\n}\n@media screen and (max-width: 896px) {\n.recruit_fix ul {\n            display: flex;\n            padding: 0;\n}\n.recruit_fix ul li a {\n            font-size: 14px;\n            padding: 13px 0;\n}\n.recruit_fix ul li a .label {\n            font-size: 10px;\n}\n.recruit_fix {\n            width: 100%;\n}\n}\n.mv_textarea-recruit .entxt {\n        display: block;\n        font-size: 40px;\n        letter-spacing: 0.1em;\n        text-transform: uppercase;\n        transform: translateY(15%);\n        transition: 0.6s;\n        opacity: 1;\n        color: #fff;\n        font-weight: bold;\n        text-align: left;\n        margin-bottom: 20px;\n}\n@media screen and (max-width: 896px) {\n.mv_textarea-recruit {\n            padding: 30px 5% 0px;\n            font-size: 2.8rem;\n}\n}\n.mv_textarea-recruit .jptxt {\n        transform: translateY(15%);\n        transition: 0.6s;\n        opacity: 1;\n        font-size: 13px;\n        letter-spacing: 0.08em;\n        color: #fff;\n}\n.sp {\n        display: none;\n}\n@media screen and (max-width: 896px) {\n.sp {\n            display: block;\n}\n}\n.recruit--leadtxt {\n        /* padding: 40px 10% 100px; */\n        padding: 130px 10% 170px;\n        color: #dadada;\n        position: relative;\n        z-index: 1;\n        margin-top: 0px;\n        background-color: #000;\n        background: url('/assets/img/business-background-cover.png') no-repeat center;\n        background-blend-mode: overlay;\n        background-color: rgba(0, 0, 0, 0.5);\n}\n\n    /* .recruit--leadtxt::after {\n        content: \"\";\n        background: url('/assets/img/all_member.jpg') no-repeat center;\n        background-size: 100%;\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%);\n        opacity: 0.3;\n        z-index: -1;\n    } */\n@media screen and (max-width: 896px) {\n.recruit--leadtxt::after {\n            background: url('/assets/img/all_member.jpg') no-repeat center;\n            background-size: 300%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt {\n            padding: 30px 5% 60px;\n}\n}\n.recruit--leadtxt h3 {\n        line-height: 1.63;\n        transform: translateY(10%);\n        transition: 0.6s;\n        opacity: 1;\n        color: #dadada;\n        font-weight: bold;\n        font-family: NotoSansJP-Bold;\n}\n@media screen and (min-width: 897px) {\n.recruit--leadtxt h3 {\n            font-size: 38px;\n            letter-spacing: 0.2em;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt h3 {\n            font-size: 20px;\n            letter-spacing: 0.12em;\n}\n}\n.recruit--leadtxt p {\n        transform: translateY(10%);\n        transition: 0.9s;\n        opacity: 1;\n        margin-top: 30px;\n        letter-spacing: 0.12em;\n        line-height: 2;\n        font-size: 16px;\n        font-family: NotoSansJP-Regular;\n        font-weight: 400;\n        color: #dadada;\n}\n@media screen and (max-width: 896px) {\n.recruit--leadtxt p {\n            font-size: 14px;\n}\n}\n@media screen and (max-width: 500px) {\n.recruit--contactarea--bnr.entryarea li a {\n            font-size: 10px;\n}\n.recruit--contactarea--bnr.entryarea li .label {\n            font-size: 8px;\n}\n.recruit_fix.visibility {\n            bottom: -10px;\n}\n.recruit_fix ul li {\n            width: 49%;\n            margin: 0px auto 0px 0px;\n}\n.recruit--leadtxt {\n            margin-top: 0px;\n}\n}\n.recruit.loaded .recruit--leadtxt h3 {\n        transform: translateY(0);\n        opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt p {\n        transform: translateY(0);\n        opacity: 1;\n}\n.recruit.loaded .recruit--leadtxt .photo {\n        transform: translateY(0);\n        opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .pararel {\n            bottom: 90px;\n}\n}\n.recruit .mv_textarea-recruit {\n        position: relative;\n        z-index: 2;\n}\n.recruit .recruit_fix {\n        position: fixed;\n        bottom: -50px;\n        left: 50%;\n        opacity: 0;\n        transform: translateX(-50%);\n        z-index: 20;\n        padding: 10px 2%;\n        width: 60%;\n        transition: 0.4s;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix {\n            left: 0;\n            width: 100%;\n            transform: translateX(0);\n}\n}\n.recruit .recruit_fix.visibility {\n        bottom: 12px;\n        opacity: 1;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix.visibility {\n            bottom: 8px;\n}\n}\n.recruit .recruit_fix ul {\n        justify-content: space-between;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul {\n            display: flex;\n            padding: 0;\n}\n}\n.recruit .recruit_fix ul li {\n        margin: 0;\n        width: 49%;\n}\n.recruit .recruit_fix ul li a {\n        width: 100%;\n        padding: 16px 0;\n        margin-top: 0;\n        font-size: 1.6rem;\n        line-height: 1.7;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a {\n            font-size: 1.4rem;\n            padding: 13px 0;\n}\n}\n.recruit .recruit_fix ul li a::before,\n    .recruit .recruit_fix ul li a::after {\n        content: none;\n}\n.recruit .recruit_fix ul li a .label {\n        font-size: 1.2rem;\n        font-weight: 500;\n}\n@media screen and (max-width: 896px) {\n.recruit .recruit_fix ul li a .label {\n            font-size: 1rem;\n}\n}\n.recruit--person {\n        background-color: #fff;\n        position: relative;\n}\n@media screen and (min-width: 897px) {\n.recruit_fix.visibility {\n            margin-bottom: 80px;\n}\n.recruit--person {\n            padding: 180px 10% 100px;\n}\n.mv_textarea-recruit {\n            padding: 40px 10% 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person {\n            padding: 40px 5%;\n}\n}\n.recruit--person .heading .sub {\n\n        font-size: 16px;\n        letter-spacing: 0.08em;\n        line-height: 16px;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n        font-weight: 400;\n}\n.recruit--person .heading h3 {\n        font-size: 20px;\n        margin-top: 23px;\n        letter-spacing: 0.08em;\n        line-height: 20px;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n        font-weight: 700;\n}\n.recruit--person--list {\n        margin-top: 80px;\n}\n@media screen and (min-width: 897px) {\n.recruit--person--list {\n            display: flex;\n            flex-wrap: wrap;\n            justify-content: space-between;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--list {\n            margin-top: 0;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item {\n            width: 48.5%;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item {\n            margin-top: 40px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item:nth-child(4) {\n            margin-top: 140px;\n}\n}\n@media screen and (min-width: 897px) {\n.recruit--person--item h4 {\n            margin-top: 40px;\n}\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 {\n            margin-top: 24px;\n}\n}\n.recruit--person--item h4 .department {\n        display: block;\n        font-size: 16px;\n        font-weight: 700;\n        letter-spacing: 0.1em;\n        margin-bottom: 0px;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n        line-height: 16px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .department {\n            font-size: 14px;\n}\n}\n.recruit--person--item h4 .phrase {\n        display: block;\n        margin-top: 15px;\n        font-size: 16px;\n        line-height: 24px;\n        letter-spacing: 0.1em;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n        background-color: #dadada;\n        padding: 15px 5px;\n        min-height: 105px;\n}\n@media screen and (max-width: 896px) {\n.recruit--person--item h4 .phrase {\n            font-size: 20px;\n}\n}\n.recruit--person--item p {\n        margin-top: 20px;\n        font-size: 14px;\n        line-height: 2;\n        letter-spacing: 0.1em;\n        font-family: \"Noto Sans JP\", sans-serif;\n        color: #000;\n}\n@media only screen and (max-width: 1024px) {\n.studio-dev-hieght{\n            height: 100px;\n}\n}\n@media screen and (max-width: 425px) {\n.mv_textarea-recruit .jptxt {\n            font-size: 12px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24510,7 +24386,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.member--index[data-v-4494d8b0] {\n    padding: 60px 10% 140px;\n}\n.member--index .member_inner .member_tab[data-v-4494d8b0] {\n    display: flex;\n}\nul[data-v-4494d8b0],\nli[data-v-4494d8b0] {\n    list-style: none;\n}\n.member--index .member_inner .member_tab_block .member_list[data-v-4494d8b0] {\n    display: flex;\n    justify-content: flex-start;\n    flex-wrap: wrap;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li.on[data-v-4494d8b0] {\n    opacity: 1;\n    transform: translateY(0%);\n}\n.member_list .hoverScale[data-v-4494d8b0] {\n    cursor: pointer;\n}\n.member_list .hoverScale .thumb[data-v-4494d8b0] {\n    overflow: hidden;\n    position: relative;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt[data-v-4494d8b0] {\n    opacity: 1;\n    transform: scale(1.1);\n}\n.member_list .hoverScale .thumb .hvrtxt[data-v-4494d8b0] {\n    position: absolute;\n    top: 50%;\n    left: 40%;\n    transition: 0.4s;\n    transform: translate(-34%, -20%);\n    opacity: 0;\n    z-index: 1;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.member_list .hoverScale .thumb .hvrtxt .more_txts[data-v-4494d8b0] {\n    color: #dadada;\n    font-size: 14px;\n    font-family: \"DIN\";\n    letter-spacing: 0.06em;\n    text-transform: capitalize;\n    position: relative;\n    padding-right: 20px;\n    font-weight: 700;\n}\n.member_list .hoverScale .thumb .scaleImg[data-v-4494d8b0] {\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n.member_list .hoverScale .thumb[data-v-4494d8b0]::after {\n    content: \"\";\n    background-color: rgba(0, 0, 0, 0.6);\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0;\n    transition: 0.4s;\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.member_list .hoverScale:hover .thumb[data-v-4494d8b0]::after {\n        opacity: 1;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt[data-v-4494d8b0] {\n        transform: translate(-34%, -50%);\n        opacity: 1;\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt .more_txtss[data-v-4494d8b0]::after,\n    .member_list .hoverScale:hover .thumb .hvrtxt .more_txtss[data-v-4494d8b0]::before {\n        right: -5px;\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt .more_txtss .underline[data-v-4494d8b0]::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n        transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .scaleImg[data-v-4494d8b0] {\n        transform: scale(1.1);\n}\n}\n.hoverScaleIcon[data-v-4494d8b0] {\n    transition: 0.35s;\n    display: block;\n}\n.hoverScaleIcon img[data-v-4494d8b0] {\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.hoverScaleIcon[data-v-4494d8b0]:hover {\n        transform: scale(1.2);\n}\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area[data-v-4494d8b0] {\n    margin-top: 20px;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .name[data-v-4494d8b0] {\n    font-size: 18px;\n    font-weight: bold;\n    letter-spacing: 0.05px;\n    font-family: DIN-Bold;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part[data-v-4494d8b0] {\n    letter-spacing: 0.04px;\n    font-size: 13px;\n    font-family: NotoSansJP-Regular;\n    margin-top: 8px;\n    font-weight: 400;\n    color: black;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0] {\n    position: relative;\n    color: #000;\n    font-size: 14px;\n    letter-spacing: .04em;\n    cursor: pointer;\n    font-family: NotoSansJP-Medium;\n    line-height: 1.4;\n    font-weight: 500;\n}\n.member--index .member_inner .member_tab li.active[data-v-4494d8b0]::after {\n    transform-origin: left top;\n    transform: scale(1, 1);\n}\n*[data-v-4494d8b0]:before,\n*[data-v-4494d8b0]:after {\n    box-sizing: inherit;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0]::after {\n    content: \"\";\n    background: #000;\n    width: 100%;\n    height: 1px;\n    position: absolute;\n    bottom: -4px;\n    left: 0;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.member--index .member_inner .member_tab li[data-v-4494d8b0]:hover::after {\n        transform-origin: left top;\n        transform: scale(1, 1);\n}\n}\n.hoverScaleIcon[data-v-4494d8b0] {\n    transition: 0.35s;\n    display: block;\n}\n.hoverScaleIcon img[data-v-4494d8b0] {\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n}\nimg[data-v-4494d8b0] {\n    max-width: 100%;\n    height: auto;\n    vertical-align: bottom;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li[data-v-4494d8b0] {\n    transition: 0.3s;\n    transform: translateY(2%);\n    opacity: 0;\n    margin-top: 60px;\n    width: 19%;\n    margin-right: 1%;\n}\n.nav-pills .nav-link.active[data-v-4494d8b0]{\n    background: transparent;\n    color: #000;\n}\n@media screen and (min-width: 897px) {\n.member--index .member_inner .member_tab li[data-v-4494d8b0]:not(:last-child) {\n        margin-right: 30px;\n}\n}\n@media screen and (max-width: 896px) {\n.member--index[data-v-4494d8b0] {\n        padding: 40px 5% 80px;\n}\n.member--index .member_inner .member_tab[data-v-4494d8b0] {\n        justify-content: space-between;\n        flex-wrap: wrap;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0] {\n        width: 48%;\n        padding-left: 10px;\n        margin-bottom: 20px;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0]::before {\n        content: \"\";\n        width: 100%;\n        height: 1px;\n        background: #dadada;\n        position: absolute;\n        bottom: -5px;\n        left: 0;\n}\n.member--index .member_inner .member_tab_block .member_list[data-v-4494d8b0] {\n        justify-content: space-between;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li[data-v-4494d8b0] {\n        margin-top: 50px;\n        width: 48%;\n        margin-right: 0%;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .name[data-v-4494d8b0] {\n        font-size: 14px;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part[data-v-4494d8b0] {\n        font-size: 12px;\n        margin-top: 10px;\n        line-height: 1.5;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.img_box img[data-v-4494d8b0]{\r\n    max-width: 100%;\r\n    height: 350px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    vertical-align: bottom;\n}\n.member--index[data-v-4494d8b0] {\r\n        padding: 60px 10% 140px;\n}\n.member--index .member_inner .member_tab[data-v-4494d8b0] {\r\n        display: flex;\n}\nul[data-v-4494d8b0],\r\n    li[data-v-4494d8b0] {\r\n        list-style: none;\n}\n.member--index .member_inner .member_tab_block .member_list[data-v-4494d8b0] {\r\n        display: flex;\r\n        justify-content: flex-start;\r\n        flex-wrap: wrap;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li.on[data-v-4494d8b0] {\r\n        opacity: 1;\r\n        transform: translateY(0%);\n}\n.member_list .hoverScale[data-v-4494d8b0] {\r\n        cursor: pointer;\n}\n.member_list .hoverScale .thumb[data-v-4494d8b0] {\r\n        overflow: hidden;\r\n        position: relative;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt[data-v-4494d8b0] {\r\n        opacity: 1;\r\n        transform: scale(1.1);\n}\n.member_list .hoverScale .thumb .hvrtxt[data-v-4494d8b0] {\r\n        position: absolute;\r\n        top: 50%;\r\n        left: 40%;\r\n        transition: 0.4s;\r\n        transform: translate(-34%, -20%);\r\n        opacity: 0;\r\n        z-index: 1;\r\n        -webkit-backface-visibility: hidden;\r\n                backface-visibility: hidden;\n}\n.member_list .hoverScale .thumb .hvrtxt .more_txts[data-v-4494d8b0] {\r\n        color: #dadada;\r\n        font-size: 14px;\r\n        font-family: \"DIN\";\r\n        letter-spacing: 0.06em;\r\n        text-transform: capitalize;\r\n        position: relative;\r\n        padding-right: 20px;\r\n        font-weight: 700;\n}\n.member_list .hoverScale .thumb .scaleImg[data-v-4494d8b0] {\r\n        transition: 0.4s;\r\n        -webkit-backface-visibility: hidden;\r\n                backface-visibility: hidden;\n}\n.member_list .hoverScale .thumb[data-v-4494d8b0]::after {\r\n        content: \"\";\r\n        background-color: rgba(0, 0, 0, 0.6);\r\n        width: 100%;\r\n        height: 100%;\r\n        position: absolute;\r\n        top: 0;\r\n        left: 0;\r\n        opacity: 0;\r\n        transition: 0.4s;\r\n        -webkit-backface-visibility: hidden;\r\n                backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.member_list .hoverScale:hover .thumb[data-v-4494d8b0]::after {\r\n            opacity: 1;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt[data-v-4494d8b0] {\r\n            transform: translate(-34%, -50%);\r\n            opacity: 1;\r\n            transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt .more_txtss[data-v-4494d8b0]::after,\r\n        .member_list .hoverScale:hover .thumb .hvrtxt .more_txtss[data-v-4494d8b0]::before {\r\n            right: -5px;\r\n            transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .hvrtxt .more_txtss .underline[data-v-4494d8b0]::after {\r\n            transform-origin: left top;\r\n            transform: scale(1, 1);\r\n            transition-delay: 0.3s;\n}\n.member_list .hoverScale:hover .thumb .scaleImg[data-v-4494d8b0] {\r\n            transform: scale(1.1);\n}\n}\n.hoverScaleIcon[data-v-4494d8b0] {\r\n        transition: 0.35s;\r\n        display: block;\n}\n.hoverScaleIcon img[data-v-4494d8b0] {\r\n        -webkit-backface-visibility: hidden;\r\n                backface-visibility: hidden;\n}\n@media screen and (min-width: 897px) {\n.hoverScaleIcon[data-v-4494d8b0]:hover {\r\n            transform: scale(1.2);\n}\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area[data-v-4494d8b0] {\r\n        margin-top: 20px;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .name[data-v-4494d8b0] {\r\n        font-size: 18px;\r\n        font-weight: bold;\r\n        letter-spacing: 0.05px;\r\n        font-family: DIN-Bold;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part[data-v-4494d8b0] {\r\n        letter-spacing: 0.04px;\r\n        font-size: 13px;\r\n        font-family: NotoSansJP-Regular;\r\n        margin-top: 8px;\r\n        font-weight: 400;\r\n        color: black;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0] {\r\n        position: relative;\r\n        color: #000;\r\n        font-size: 14px;\r\n        letter-spacing: .04em;\r\n        cursor: pointer;\r\n        font-family: NotoSansJP-Medium;\r\n        line-height: 1.4;\r\n        font-weight: 500;\n}\n.member--index .member_inner .member_tab li.active[data-v-4494d8b0]::after {\r\n        transform-origin: left top;\r\n        transform: scale(1, 1);\n}\n*[data-v-4494d8b0]:before,\r\n    *[data-v-4494d8b0]:after {\r\n        box-sizing: inherit;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0]::after {\r\n        content: \"\";\r\n        background: #000;\r\n        width: 100%;\r\n        height: 1px;\r\n        position: absolute;\r\n        bottom: -4px;\r\n        left: 0;\r\n        transform: scale(0, 1);\r\n        transition: transform 0.3s;\r\n        transform-origin: right top;\n}\n@media screen and (min-width: 897px) {\n.member--index .member_inner .member_tab li[data-v-4494d8b0]:hover::after {\r\n            transform-origin: left top;\r\n            transform: scale(1, 1);\n}\n}\n.hoverScaleIcon[data-v-4494d8b0] {\r\n        transition: 0.35s;\r\n        display: block;\n}\n.hoverScaleIcon img[data-v-4494d8b0] {\r\n        -webkit-backface-visibility: hidden;\r\n                backface-visibility: hidden;\n}\nimg[data-v-4494d8b0] {\r\n        max-width: 100%;\r\n        height: auto;\r\n        vertical-align: bottom;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li[data-v-4494d8b0] {\r\n        transition: 0.3s;\r\n        transform: translateY(2%);\r\n        opacity: 0;\r\n        margin-top: 60px;\r\n        width: 19%;\r\n        margin-right: 1%;\n}\n.nav-pills .nav-link.active[data-v-4494d8b0]{\r\n        background: transparent;\r\n        color: #000;\n}\n@media screen and (min-width: 897px) {\n.member--index .member_inner .member_tab li[data-v-4494d8b0]:not(:last-child) {\r\n            margin-right: 30px;\n}\n}\n@media screen and (max-width: 896px) {\n.member--index[data-v-4494d8b0] {\r\n            padding: 40px 5% 80px;\n}\n.member--index .member_inner .member_tab[data-v-4494d8b0] {\r\n            justify-content: space-between;\r\n            flex-wrap: wrap;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0] {\r\n            width: 48%;\r\n            padding-left: 10px;\r\n            margin-bottom: 20px;\n}\n.member--index .member_inner .member_tab li[data-v-4494d8b0]::before {\r\n            content: \"\";\r\n            width: 100%;\r\n            height: 1px;\r\n            background: #dadada;\r\n            position: absolute;\r\n            bottom: -5px;\r\n            left: 0;\n}\n.member--index .member_inner .member_tab_block .member_list[data-v-4494d8b0] {\r\n            justify-content: space-between;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li[data-v-4494d8b0] {\r\n            margin-top: 50px;\r\n            width: 48%;\r\n            margin-right: 0%;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .name[data-v-4494d8b0] {\r\n            font-size: 14px;\n}\n.member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part[data-v-4494d8b0] {\r\n            font-size: 12px;\r\n            margin-top: 10px;\r\n            line-height: 1.5;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24709,9 +24585,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.solution-page[data-v-e992a3e2] {\n 
 
 /***/ }),
 
-/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&":
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\niframe[data-v-35223a6e] {\r\n    border-radius: 15px;\n}\nh3[data-v-35223a6e]{\r\n    font-weight: 700;\n}\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css&":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& ***!
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css& ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -24798,7 +24698,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.soft-development .flow__list__thumbnail{\n    height: 120px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.soft-development .flow__list__thumbnail{\r\n    height: 120px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24822,7 +24722,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.web-consulting .flow__list__thumbnail {\n    height: 120px;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.web-consulting .flow__list__thumbnail {\r\n    height: 120px;\n}\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -43026,9 +42926,39 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&":
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css&":
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& ***!
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css& ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -43039,7 +42969,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_1_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css&");
 
             
 
@@ -43048,11 +42978,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_1_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_1_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -44495,25 +44425,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Videos.vue?vue&type=template&id=35223a6e& */ "./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&");
+/* harmony import */ var _Videos_vue_vue_type_template_id_35223a6e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Videos.vue?vue&type=template&id=35223a6e&scoped=true& */ "./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&scoped=true&");
 /* harmony import */ var _Videos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Videos.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Videos.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& */ "./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Videos_vue_vue_type_style_index_0_id_35223a6e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css& */ "./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css&");
+/* harmony import */ var _Videos_vue_vue_type_style_index_1_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css& */ "./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
 ;
 
 
+
 /* normalize component */
 
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
   _Videos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _Videos_vue_vue_type_template_id_35223a6e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Videos_vue_vue_type_template_id_35223a6e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
-  null,
+  "35223a6e",
   null
   
 )
@@ -45846,19 +45778,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e& ***!
-  \*********************************************************************************/
+/***/ "./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&scoped=true&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&scoped=true& ***!
+  \*********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=template&id=35223a6e& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_template_id_35223a6e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=template&id=35223a6e&scoped=true& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=template&id=35223a6e&scoped=true&");
 
 
 /***/ }),
@@ -46319,15 +46251,28 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&":
+/***/ "./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css&":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css& ***!
+  \***********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&scoped=true&lang=css&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css&":
 /*!***********************************************************************************************!*\
-  !*** ./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& ***!
+  !*** ./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css& ***!
   \***********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_0_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=0&id=35223a6e&lang=css&");
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Videos_vue_vue_type_style_index_1_id_35223a6e_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Videos.vue?vue&type=style&index=1&id=35223a6e&lang=css&");
 
 
 /***/ }),
