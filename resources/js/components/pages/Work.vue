@@ -45,7 +45,7 @@
                 </div>
             </div> -->
             <section>
-                <img src="/assets/img/comingsoonwork.gif" width="100%">
+                <img src="/assets/img/comingsoonwork.gif" width="100%" class="coming-img">
             </section>
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
@@ -124,6 +124,10 @@
     };
 </script>
 <style scoped>
+.coming-img{
+    height: 800px;
+    object-fit: contain;
+}
     .work-subcontents__text {
         font-weight: bold;
         font-size: 16px;
