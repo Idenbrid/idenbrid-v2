@@ -75,7 +75,7 @@
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/1.png" alt="" />
+                    <img src="/assets/img/update.png" alt="img" />
                   </div>
                 </div>
               </div>

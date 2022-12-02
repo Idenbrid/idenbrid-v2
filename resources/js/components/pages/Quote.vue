@@ -405,7 +405,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="submit" @click="saveRequest()" name="next" value="送信"
+                                    <input type="submit" @click.prevent="saveRequest()" name="next" value="送信"
                                         class="action-button">
                                 </fieldset>
                             </form>
