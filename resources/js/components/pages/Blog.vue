@@ -46,9 +46,9 @@
                                     <div class="good">
                                         <!-- <i @click="likeBlog(blog.id)" class="fa fa-heart mr-1"></i>11 -->
                                         <i v-if="blog.is_liked == false" @click.prevent="likeBlog(blog.id)"
-                                            class="fa-regular fa-heart">like</i>
+                                            class="fa fa-heart like-icon"> <span> like</span></i>
                                         <i v-else @click.prevent="likeBlog(blog.id)"
-                                            class="fa-solid fa-heart">unlike</i>
+                                            class="fa fa-heart-o like-icon"> <span> unlike</span> </i>
                                     </div>
                                 </div>
                             </div>
@@ -295,6 +295,9 @@
     };
 </script>
 <style>
+.like-icon{
+    cursor: pointer;
+}
     /*blog-brns*/
     .blog-subcontents__text {
         font-weight: bold;
