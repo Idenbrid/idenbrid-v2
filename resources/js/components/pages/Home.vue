@@ -135,7 +135,7 @@
                 </p>
                 <ul class="about-contents">
                     <li class="about-contents__list">
-                        <router-link to="/about/">
+                        <router-link to="/policy/">
                             <img class="about-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
                                 alt="" loading="lazy">
                             <div class="about-contents__list__text">
@@ -145,7 +145,7 @@
                         </router-link>
                     </li>
                     <li class="about-contents__list">
-                        <router-link to="/blog/">
+                        <router-link to="/business/">
                             <img class="about-contents__list__thumbnail about-contents__list__thumbnail_news"
                                 src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
                             <div class="about-contents__list__text">
@@ -155,7 +155,7 @@
                         </router-link>
                     </li>
                     <li class="about-contents__list">
-                        <router-link to="/onlinedevelopmenthub/">
+                        <router-link to="/about/">
                             <img class="about-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
                                 alt="" loading="lazy">
                             <div class="about-contents__list__text">

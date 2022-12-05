@@ -190,12 +190,12 @@
                             company_name: '',
                             email: '',
                         };
-                        alert('we will contact as soon. Thanks');
+                        alert('すぐにご連絡いたします。 ありがとう');
                     }else{
-                        alert('please fill all fileds. Thanks')
+                        alert('全ての項目をご記入ください。')
                     }
                 }).catch((err) => {
-                    alert('please fill all fileds. Thanks');
+                    alert('全ての項目をご記入ください。');
                 });
             },
         },

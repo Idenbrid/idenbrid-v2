@@ -336,7 +336,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-7 mx-auto">
+              <div class="col-md-6 mx-auto">
                 <img src="/assets/img/contact-us.png" width="100%">
               </div>
             </div>
@@ -419,7 +419,7 @@
             jQuery('#confirmationmodel').modal('hide');
           });
         } else {
-          alert("Please Check Agree")
+          alert("全ての項目をご記入ください。")
         }
       },
       successMessage() {
