@@ -336,7 +336,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-7 mx-auto">
                 <img src="/assets/img/contact-us.png" width="100%">
               </div>
             </div>
@@ -1176,7 +1176,7 @@
   input[type=text].form-control,
   select.form-control,
   textarea.form-control {
-    padding: 10px 14px;
+    padding: 7px 14px;
     border: none;
     border-radius: 0;
     background-color: #f5f5f5;

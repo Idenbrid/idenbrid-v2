@@ -50,6 +50,7 @@
                                         <i v-if="blog.is_liked == false" @click.prevent="likeBlog(blog.id)"
                                             class="fa fa-heart-o like-icon"></i>
                                         <i v-else @click.prevent="likeBlog(blog.id)" class="fa fa-heart like-icon"></i>
+                                        {{blog.count}}
                                     </div>
                                 </div>
                             </div>

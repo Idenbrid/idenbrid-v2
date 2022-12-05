@@ -42,7 +42,8 @@
                             </div>
                             <div class="large-5 small-12">
                                 <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="">
-                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO-Person-mbl.png" alt="">
+                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO Person.png" alt="">
+                                <!-- <img class="c-message__img ceo-mbl" src="/assets/img/CEO-Person-mbl.png" alt=""> -->
                             </div>
                             <div class="c-message__button u-hidden-lg">
                                 <router-link class="c-button is-md" to="/about-company/">View More</router-link>
@@ -87,10 +88,16 @@
             </section>
             <!--Our experties-->
             <section class="news mycontents-wide">
+              <div class="row">
+                <div class="service-col">
                 <h3 class="content-title content-title_blog">OUR EXPERTISE</h3>
-                <p class="content-text content-text_blog">IDENBRIDがご提供している開発サービスのご紹介です。</p>
-                <router-link class="viewmore-btn viewmore-btn_center" to="/solutions">View More
+                <p class="content-text">IDENBRIDがご提供している開発サービスのご紹介です。</p>
+               </div>
+               <div class="service-col">
+                <router-link class="viewmore-btn" to="/solutions">View More
                 </router-link>
+               </div>
+              </div>
             </section>
             <!--our experties-->
             <!--news-->
@@ -704,7 +711,7 @@
     }
 
     .news {
-        padding-bottom: 80px;
+        padding-bottom: 50px;
     }
 
     .news-contents {
@@ -2013,7 +2020,9 @@
         .content-title {
             font-size: 24px;
         }
-
+        .c-message {
+        margin-top: 0px;
+    }
         .c-message__title-sub {
             font-size: 16px;
         }
@@ -2042,6 +2051,11 @@
 
         .news {
             margin-bottom: 0px;
+        }
+    }
+    @media (max-width: 320px) {
+        .service_h2{
+            font-size: 15px;
         }
     }
 </style>
