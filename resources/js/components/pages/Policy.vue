@@ -1281,4 +1281,11 @@
       object-fit: cover;
     }
   }
+  
+  @media only screen and (max-width:425px) {
+    .policy-title h3 {
+      font-size: 18px;
+    }
+  }
+
 </style>

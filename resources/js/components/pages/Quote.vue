@@ -126,7 +126,7 @@
                                             <div class="my-4">
                                                 <div class="checkbox-grid">
                                                     <div id="inputPreview">
-                                                        <input name="cssCheckbox" value="Mobile App"
+                                                        <input name="cssCheckbox" value="ウェブアプリ・システム"
                                                             v-model="record.step_4" id="demo_opt_1" type="checkbox"
                                                             class="css-checkbox">
                                                         <label for="demo_opt_1">ウェブアプリ・システム</label>
@@ -134,7 +134,7 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="DevOps" v-model="record.step_4"
+                                                        <input name="cssCheckbox" value="フロントエンド" v-model="record.step_4"
                                                             id="demo_opt_2" type="checkbox" class="css-checkbox"
                                                             checked="">
                                                         <label for="demo_opt_2">フロントエンド</label>
@@ -142,7 +142,7 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="Integration"
+                                                        <input name="cssCheckbox" value="ECサイト"
                                                             v-model="record.step_4" id="demo_opt_3" type="checkbox"
                                                             class="css-checkbox">
                                                         <label for="demo_opt_3">ECサイト</label>
@@ -150,7 +150,7 @@
                                                 </div>
                                                 <div class="checkbox-grid">
                                                     <div id="inputPreview">
-                                                        <input name="cssCheckbox" value="Web App"
+                                                        <input name="cssCheckbox" value="モバイルアプリ"
                                                             v-model="record.step_4" id="demo_opt_4" type="checkbox"
                                                             class="css-checkbox">
                                                         <label for="demo_opt_4">モバイルアプリ</label>
@@ -158,7 +158,7 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="Blockchain"
+                                                        <input name="cssCheckbox" value="ブロックチェーン"
                                                             v-model="record.step_4" id="demo_opt_5" type="checkbox"
                                                             class="css-checkbox" checked="">
                                                         <label for="demo_opt_5">ブロックチェーン</label>
@@ -166,21 +166,21 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="UX/UI" v-model="record.step_4"
+                                                        <input name="cssCheckbox" value="API結合" v-model="record.step_4"
                                                             id="demo_opt_6" type="checkbox" class="css-checkbox">
                                                         <label for="demo_opt_6">API結合</label>
                                                     </div>
                                                 </div>
                                                 <div class="checkbox-grid">
                                                     <div id="inputPreview">
-                                                        <input name="cssCheckbox" value="DApp" v-model="record.step_4"
+                                                        <input name="cssCheckbox" value="システム設計" v-model="record.step_4"
                                                             id="demo_opt_7" type="checkbox" class="css-checkbox">
                                                         <label for="demo_opt_7">システム設計</label>
 
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="Data Engineering"
+                                                        <input name="cssCheckbox" value="ブロックチェーン"
                                                             v-model="record.step_4" id="demo_opt_8" type="checkbox"
                                                             class="css-checkbox" checked="">
                                                         <label for="demo_opt_8">ブロックチェーン</label>
@@ -188,7 +188,7 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="Code Review"
+                                                        <input name="cssCheckbox" value="AI（人工知能）"
                                                             v-model="record.step_4" id="demo_opt_9" type="checkbox"
                                                             class="css-checkbox">
                                                         <label for="demo_opt_9">AI（人工知能）</label>
@@ -196,7 +196,7 @@
                                                 </div>
                                                 <div class="checkbox-grid">
                                                     <div id="inputPreview">
-                                                        <input name="cssCheckbox" value="Backend"
+                                                        <input name="cssCheckbox" value="UIUXデザイン"
                                                             v-model="record.step_4" id="demo_opt_10" type="checkbox"
                                                             class="css-checkbox">
                                                         <label for="demo_opt_10">UIUXデザイン</label>
@@ -204,7 +204,7 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="CyberSecurity"
+                                                        <input name="cssCheckbox" value="データエンジニア"
                                                             v-model="record.step_4" id="demo_opt_11" type="checkbox"
                                                             class="css-checkbox" checked="">
                                                         <label for="demo_opt_11">データエンジニア</label>
@@ -212,14 +212,14 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="Other" v-model="record.step_4"
+                                                        <input name="cssCheckbox" value="QA・テスト" v-model="record.step_4"
                                                             id="demo_opt_12" type="checkbox" class="css-checkbox">
                                                         <label for="demo_opt_12">QA・テスト</label>
                                                     </div>
                                                 </div>
                                                 <div class="checkbox-grid">
                                                     <div id="inputPreview">
-                                                        <input name="cssCheckbox" value="Frontend"
+                                                        <input name="cssCheckbox" value="バックエンド・API"
                                                             v-model="record.step_4" id="demo_opt_13" type="checkbox"
                                                             class="css-checkbox">
                                                         <label for="demo_opt_13">バックエンド・API</label>
@@ -227,7 +227,7 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="eCommerce"
+                                                        <input name="cssCheckbox" value="サイバーセキュリティー"
                                                             v-model="record.step_4" id="demo_opt_14" type="checkbox"
                                                             class="css-checkbox" checked="">
                                                         <label for="demo_opt_14">サイバーセキュリティー</label>
@@ -235,7 +235,7 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="Artificial Intelligence"
+                                                        <input name="cssCheckbox" value="その他"
                                                             v-model="record.step_4" id="demo_opt_15" type="checkbox"
                                                             class="css-checkbox">
                                                         <label for="demo_opt_15">その他</label>
@@ -492,7 +492,7 @@
                     }
                 })
                 .catch((err) => {
-                    alert('please fill mandatory fileds. Thanks')
+                    alert('全ての項目をご記入ください。')
                 })
             }
         },

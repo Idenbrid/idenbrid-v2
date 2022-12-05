@@ -125,7 +125,7 @@
 </script>
 <style scoped>
 .coming-img{
-    height: 800px;
+    height: 650px;
     object-fit: contain;
 }
     .work-subcontents__text {
