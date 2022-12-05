@@ -637,7 +637,8 @@
                                 <div class="img_box">
                                     <div class="hoverScale">
                                         <div class="thumb">
-                                            <div class="hvrtxt en"><span class="more_txts">
+                                            <div class="hvrtxt en">
+                                                <span class="more_txts">
 技術部門のマネージャーを務めています。Superior Universityコンピュータサイエンス学部を卒業後、React.jsやNode.jsなどが専門のフルスタックエンジニアとしてキャリアを積み現在はPM業務に従事しています。
 </span>
                                             </div>
@@ -653,22 +654,23 @@
                                     <p class="part">PM兼テックリード / マネジメント部門</p>
                                 </div>
                             </li>
+                           
                             <li class="parent_li ishou on">
                                 <div class="img_box">
                                     <div class="hoverScale">
                                         <div class="thumb">
-                                            <div class="hvrtxt en"><span class="more_txts">パキスタン、イスラマバード出身。教育大学にて動物学を専攻。ベンチャードライブの人事担当を経て、現在は当社の人事担当。採用のみでなく、人事戦略を立てるなど活躍しています。</span>
+                                            <div class="hvrtxt en"><span class="more_txts">パンジャブ大学にて植物学の博士号を取得後、前職ではビジネス・オペレーターとして活躍していました。現在、グローバルビジネスディベロップメントの統括として活躍しています。</span>
                                             </div>
                                             <div class="scaleImg">
-                                                <img src="/assets/img/member/iqra.jpg"
+                                                <img src="/assets/img/member/bushra.jpg"
                                                     alt="">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="text_area">
-                                    <p class="name en">IQRA SALEEM</p>
-                                    <p class="part">HRマネージャー / 管理部門</p>
+                                    <p class="name en">BUSHRA RIAZ</p>
+                                    <p class="part">セールス / ビジネス部門</p>
                                 </div>
                             </li>
                             <li class="parent_li ishou none on">
@@ -705,6 +707,24 @@
                                 <div class="text_area">
                                     <p class="name en">KASHIF ZIA</p>
                                     <p class="part">エンジニア / 開発部門</p>
+                                </div>
+                            </li>
+                            <li class="parent_li ishou on">
+                                <div class="img_box">
+                                    <div class="hoverScale">
+                                        <div class="thumb">
+                                            <div class="hvrtxt en"><span class="more_txts">パキスタン、イスラマバード出身。教育大学にて動物学を専攻。ベンチャードライブの人事担当を経て、現在は当社の人事担当。採用のみでなく、人事戦略を立てるなど活躍しています。</span>
+                                            </div>
+                                            <div class="scaleImg">
+                                                <img src="/assets/img/member/iqra.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_area">
+                                    <p class="name en">IQRA SALEEM</p>
+                                    <p class="part">HRマネージャー / 管理部門</p>
                                 </div>
                             </li>
                             <li class="parent_li senki on">
@@ -761,24 +781,7 @@
                                     <p class="part">エンジニア / 開発部門</p>
                                 </div>
                             </li>
-                            <li class="parent_li ishou on">
-                                <div class="img_box">
-                                    <div class="hoverScale">
-                                        <div class="thumb">
-                                            <div class="hvrtxt en"><span class="more_txts">パンジャブ大学にて植物学の博士号を取得後、前職ではビジネス・オペレーターとして活躍していました。現在、グローバルビジネスディベロップメントの統括として活躍しています。</span>
-                                            </div>
-                                            <div class="scaleImg">
-                                                <img src="/assets/img/member/bushra.jpg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text_area">
-                                    <p class="name en">BUSHRA RIAZ</p>
-                                    <p class="part">セールス / ビジネス部門</p>
-                                </div>
-                            </li>
+                            
                             <li class="parent_li ishou kouhou on">
                                 <div class="img_box">
                                     <div class="hoverScale">

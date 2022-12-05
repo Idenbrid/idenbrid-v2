@@ -24,15 +24,15 @@ class ComposerAutoloaderInitfd7568919200fc275e9c0eec8febb7b2
 
         require __DIR__ . '/platform_check.php';
 
-        spl_autoload_register(array('ComposerAutoloaderInit3f8d76b73dd0a040434ab5f5e2c86e94', 'loadClassLoader'), true, true);
+        spl_autoload_register(array('ComposerAutoloaderInitfd7568919200fc275e9c0eec8febb7b2', 'loadClassLoader'), true, true);
         self::$loader = $loader = new \Composer\Autoload\ClassLoader(\dirname(\dirname(__FILE__)));
-        spl_autoload_unregister(array('ComposerAutoloaderInit3f8d76b73dd0a040434ab5f5e2c86e94', 'loadClassLoader'));
+        spl_autoload_unregister(array('ComposerAutoloaderInitfd7568919200fc275e9c0eec8febb7b2', 'loadClassLoader'));
 
         $useStaticLoader = PHP_VERSION_ID >= 50600 && !defined('HHVM_VERSION') && (!function_exists('zend_loader_file_encoded') || !zend_loader_file_encoded());
         if ($useStaticLoader) {
             require __DIR__ . '/autoload_static.php';
 
-            call_user_func(\Composer\Autoload\ComposerStaticInit3f8d76b73dd0a040434ab5f5e2c86e94::getInitializer($loader));
+            call_user_func(\Composer\Autoload\ComposerStaticInitfd7568919200fc275e9c0eec8febb7b2::getInitializer($loader));
         } else {
             $map = require __DIR__ . '/autoload_namespaces.php';
             foreach ($map as $namespace => $path) {
@@ -53,7 +53,7 @@ class ComposerAutoloaderInitfd7568919200fc275e9c0eec8febb7b2
         $loader->register(true);
 
         if ($useStaticLoader) {
-            $includeFiles = Composer\Autoload\ComposerStaticInit3f8d76b73dd0a040434ab5f5e2c86e94::$files;
+            $includeFiles = Composer\Autoload\ComposerStaticInitfd7568919200fc275e9c0eec8febb7b2::$files;
         } else {
             $includeFiles = require __DIR__ . '/autoload_files.php';
         }
@@ -65,7 +65,7 @@ class ComposerAutoloaderInitfd7568919200fc275e9c0eec8febb7b2
     }
 }
 
-function composerRequire3f8d76b73dd0a040434ab5f5e2c86e94($fileIdentifier, $file)
+function composerRequirefd7568919200fc275e9c0eec8febb7b2($fileIdentifier, $file)
 {
     if (empty($GLOBALS['__composer_autoload_files'][$fileIdentifier])) {
         require $file;

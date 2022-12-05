@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '771629317e6d52665a7b175cf7b3c7bb80e11118',
+        'reference' => 'a37cd405928fb987a53174facb0450cd06d53ef2',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -27,6 +27,18 @@
             'aliases' => array(),
             'reference' => '459f2781e1a08d52ee56b0b1444086e038561e3f',
             'dev_requirement' => false,
+        ),
+        'cordoval/hamcrest-php' => array(
+            'dev_requirement' => true,
+            'replaced' => array(
+                0 => '*',
+            ),
+        ),
+        'davedevelopment/hamcrest-php' => array(
+            'dev_requirement' => true,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'dflydev/dot-access-data' => array(
             'pretty_version' => 'v3.0.2',
@@ -367,6 +379,12 @@
                 0 => 'v8.83.26',
             ),
         ),
+        'kodova/hamcrest-php' => array(
+            'dev_requirement' => true,
+            'replaced' => array(
+                0 => '*',
+            ),
+        ),
         'laravel/framework' => array(
             'pretty_version' => 'v8.83.26',
             'version' => '8.83.26.0',
@@ -382,7 +400,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '771629317e6d52665a7b175cf7b3c7bb80e11118',
+            'reference' => 'a37cd405928fb987a53174facb0450cd06d53ef2',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -500,12 +518,12 @@
             'dev_requirement' => true,
         ),
         'nesbot/carbon' => array(
-            'pretty_version' => '2.63.0',
-            'version' => '2.63.0.0',
+            'pretty_version' => '2.64.0',
+            'version' => '2.64.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nesbot/carbon',
             'aliases' => array(),
-            'reference' => 'ad35dd71a6a212b98e4b87e97389b6fa85f0e347',
+            'reference' => '889546413c97de2d05063b8cb7b193c2531ea211',
             'dev_requirement' => false,
         ),
         'nette/schema' => array(
@@ -936,12 +954,12 @@
             'dev_requirement' => false,
         ),
         'symfony/console' => array(
-            'pretty_version' => 'v5.4.15',
-            'version' => '5.4.15.0',
+            'pretty_version' => 'v5.4.16',
+            'version' => '5.4.16.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/console',
             'aliases' => array(),
-            'reference' => 'ea59bb0edfaf9f28d18d8791410ee0355f317669',
+            'reference' => '8e9b9c8dfb33af6057c94e1b44846bee700dc5ef',
             'dev_requirement' => false,
         ),
         'symfony/css-selector' => array(
@@ -1005,30 +1023,30 @@
             'dev_requirement' => false,
         ),
         'symfony/http-foundation' => array(
-            'pretty_version' => 'v5.4.15',
-            'version' => '5.4.15.0',
+            'pretty_version' => 'v5.4.16',
+            'version' => '5.4.16.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/http-foundation',
             'aliases' => array(),
-            'reference' => '75bd663ff2db90141bfb733682459d5bbe9e29c3',
+            'reference' => '5032c5849aef24741e1970cb03511b0dd131d838',
             'dev_requirement' => false,
         ),
         'symfony/http-kernel' => array(
-            'pretty_version' => 'v5.4.15',
-            'version' => '5.4.15.0',
+            'pretty_version' => 'v5.4.16',
+            'version' => '5.4.16.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/http-kernel',
             'aliases' => array(),
-            'reference' => 'fc63c8c3e1036d424820cc993a4ea163778dc5c7',
+            'reference' => 'b432c57c5de73634b1859093c1f58e3cd84455a1',
             'dev_requirement' => false,
         ),
         'symfony/mime' => array(
-            'pretty_version' => 'v5.4.14',
-            'version' => '5.4.14.0',
+            'pretty_version' => 'v5.4.16',
+            'version' => '5.4.16.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/mime',
             'aliases' => array(),
-            'reference' => '1c118b253bb3495d81e95a6e3ec6c2766a98a0c4',
+            'reference' => '46eeedb08f0832b1b61a84c612d945fc85ee4734',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(
