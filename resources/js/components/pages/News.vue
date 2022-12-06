@@ -44,13 +44,13 @@
                     </div>
 
                     <ul class="topic--content--sidearea">
-                        <li><a href="https://tomorrowgate.co.jp/topic/" class="en categoryitem current">全て</a></li>
-                        <li><a href="https://tomorrowgate.co.jp/topic/category/news/" class="en categoryitem">ニュース</a>
+                        <li><router-link to="/news/" class="en categoryitem current">全て</router-link></li>
+                        <!-- <li><a href="https://tomorrowgate.co.jp/topic/category/news/" class="en categoryitem">ニュース</a>
                         </li>
                         <li><a href="https://tomorrowgate.co.jp/topic/category/media/" class="en categoryitem">メディア</a>
                         </li>
                         <li><a href="https://tomorrowgate.co.jp/topic/category/event/" class="en categoryitem">イベント</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </section>
