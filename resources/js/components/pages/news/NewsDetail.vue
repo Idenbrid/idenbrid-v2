@@ -16,7 +16,6 @@
                     <div class="loader-inner box-11"></div>
                     <div class="loader-inner box-12"></div>
                 </div>
-
             </div>
         </div>
         <Navbar />
@@ -30,10 +29,9 @@
                             <p class="single__head__date">{{news.date}}</p>
                         </div>
                     </div>
-                    <img width="1200" height="630"
-                        src="https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1.jpg"
+                    <img width="1200" height="630" :src="'http://admin.idenbrid.jp/public/storage/news/'+news.image"
                         class="attachment-full size-full wp-post-image" alt="" loading="lazy"
-                        srcset="https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1.jpg 1200w, https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-300x158.jpg 300w, https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-1024x538.jpg 1024w, https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-768x403.jpg 768w"
+                        :srcset="'http://admin.idenbrid.jp/public/storage/news/'+news.image"
                         sizes="(max-width: 1200px) 100vw, 1200px">
                     <div class="single__contents" v-html="news.description">
 
@@ -76,12 +74,12 @@
                 </a>
             </section>
             <div class="branding--contact">
-      <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>
-        ご質問がありましたらお気軽にご相談ください。</h3>
-      <div class="fade_y on">
-        <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
-      </div>
-    </div>
+                <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>
+                    ご質問がありましたらお気軽にご相談ください。</h3>
+                <div class="fade_y on">
+                    <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+                </div>
+            </div>
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">

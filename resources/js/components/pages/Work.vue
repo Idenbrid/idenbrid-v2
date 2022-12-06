@@ -22,22 +22,25 @@
                     <li><a href="#" class="en categoryitem">その他</a>
                     </li>
                 </ul>
-                <div class="works--content--mainarea">
+                 <div class="works--content--mainarea">
                     <router-link :to="'/work/detail/'+work.id" v-for="work in works" :key="work.id"
                         class="works--content--item hoverScale">
                         <div class="thumb">
-                            <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
+                            <div class="hvrtxt en">
+                                <span class="more_txt">
+                                    <span class="underline">MORE</span>
+                                </span>
                             </div>
                             <div class="scaleImg">
-                                <img :src="'https://admin-idenbrid.idenbrid.com/public/storage/work_images/'+work.image"
-                                    alt="">
+                                <img :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt="">
+                                <img :src="'http://admin-idenbrid.idenbrid.com/public/storage/work_images/'+work.image" alt="">
                             </div>
                         </div>
                         <h3>{{work.title}}</h3>
                     </router-link>
 
-                </div>
-                <div class="wp-pagenavi" role="navigation">
+                </div> 
+                 <div class="wp-pagenavi" role="navigation">
                     <span aria-current="page" class="current">1</span><a class="page larger" title="ページ 2"
                         href="https://tomorrowgate.co.jp/works/page/2/">2</a><a class="nextpostslink" rel="next"
                         aria-label="Next Page" href="https://tomorrowgate.co.jp/works/page/2/"><i
@@ -45,8 +48,41 @@
                 </div>
             </div> -->
             <section>
-                <img src="/assets/img/comingsoonwork.gif" width="100%" class="coming-img">
+                <video src="/assets/img/workpage.mp4" width="100%" class="coming-img" autoplay muted loop
+                    playsinline></video>
             </section>
+            <!-- <section class="section-portfolio my-5">
+                <div class="container">
+                    <div class="row">
+                        <div v-for="work in works" :key="work.id" class="col-lg-4 col-md-6">
+                            <router-link :to="'/work/detail/'+work.id">
+                                <div class="single-services">
+                                    <div class="services-image">
+                                        <a class="">
+                                            <img :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image"
+                                                alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a class="">
+                                               
+                                                <i class="flaticon-chair"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="services-content">
+                                        <h3>
+                                            <a class="">{{work.title}}</a>
+                                        </h3>
+                                        <p v-html="work.description" class="work-detail-prgh"></p>
+                                    </div>
+                                </div>
+                            </router-link>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section> -->
+
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
                     <li class="menu-contents__list">
@@ -82,12 +118,12 @@
                 </ul>
             </section> -->
             <div class="branding--contact">
-      <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>
-        ご質問がありましたらお気軽にご相談ください。</h3>
-      <div class="fade_y on">
-        <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
-      </div>
-    </div>
+                <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>
+                    ご質問がありましたらお気軽にご相談ください。</h3>
+                <div class="fade_y on">
+                    <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+                </div>
+            </div>
         </main>
         <Footer />
     </div>
@@ -124,10 +160,22 @@
     };
 </script>
 <style scoped>
-.coming-img{
-    height: 650px;
-    object-fit: contain;
+.work-detail-prgh{
+    
+  width: 100%;
+  line-height: 1.2em;
+  height: 3.6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
 }
+    .coming-img {
+        height: 650px;
+        object-fit: contain;
+    }
+
     .work-subcontents__text {
         font-weight: bold;
         font-size: 16px;
@@ -178,6 +226,10 @@
     }
 
     @media (max-width: 767px) {
+        .coming-img {
+            height: auto;
+        }
+
         .work-subcontents__text {
             width: 100%;
         }
@@ -487,4 +539,624 @@
             width: 100%;
         }
     }
+
+
+
+
+
+
+
+    /* portfolio css start  */
+
+
+
+    .single-services {
+        margin-bottom: 30px;
+        transition: .6s
+    }
+
+    .single-services .services-image {
+        position: relative;
+        overflow: hidden
+    }
+
+    .single-services .services-image img {
+        border-radius: 10px 10px 0 0;
+        transition: .6s;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+
+    }
+
+    .single-services .services-image .icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        transition: .6s
+    }
+
+    .single-services .services-image .icon a i {
+        display: inline-block;
+        height: 75px;
+        width: 75px;
+        line-height: 75px;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+        color: #06a3da;
+        font-size: 45px;
+        text-align: center;
+        border-radius: 50px;
+        transition: .6s
+    }
+
+    .single-services .services-content {
+        background-color: #fff;
+        box-shadow: 0 0 1.25rem rgba(108, 118, 134, .1);
+        padding: 30px;
+        border-bottom: 1px solid #06a3da;
+        border-radius: 0 0 10px 10px;
+        transition: .6s
+    }
+
+    .single-services .services-content h3 {
+        font-size: 25px;
+        margin-bottom: 12px;
+        font-weight: 500
+    }
+
+    .single-services .services-content h3 a {
+        color: #222
+    }
+
+    .single-services .services-content p {
+        font-size: 15px;
+        transition: .6s
+    }
+
+    .single-services:hover {
+        transform: translateY(-10px)
+    }
+
+    .single-services:hover .services-image img {
+        transform: rotate(2deg) scale(1.2)
+    }
+
+    .single-services:hover .services-image .icon i {
+        background-color: #06a3da;
+        color: #fff
+    }
+
+    .single-services:hover .services-content {
+        background-color: #06a3da
+    }
+
+    .single-services:hover .services-content h3 a,
+    .single-services:hover .services-content p {
+        color: #fff
+    }
+
+    .single-services-box {
+        margin-bottom: 30px;
+        background-color: #fff;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, .1);
+        padding: 30px;
+        border-radius: 10px;
+        transition: .6s
+    }
+
+    .single-services-box .icon {
+        margin-bottom: 25px
+    }
+
+    .single-services-box .icon i {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        font-size: 45px;
+        background-color: #06a3da;
+        color: #fff;
+        text-align: center;
+        border-radius: 15px
+    }
+
+    .single-services-box h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 15px
+    }
+
+    .single-services-box h3 a {
+        color: #222
+    }
+
+    .single-services-box h3 a:hover {
+        color: #06a3da
+    }
+
+    .single-services-box p {
+        font-size: 15px;
+        margin-bottom: 20px
+    }
+
+    .single-services-box .services-btn {
+        display: inline-block;
+        background-color: transparent;
+        border: 1px solid #06a3da;
+        color: #06a3da;
+        padding: 15px 35px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: .6s;
+        border-radius: 5px
+    }
+
+    .single-services-box .services-btn:hover {
+        background-color: #06a3da;
+        color: #fff
+    }
+
+    .single-services-box:hover {
+        transform: translateY(-10px)
+    }
+
+    .single-services-box:hover .icon i {
+        -webkit-animation: bounce 1s;
+        animation: bounce 1s
+    }
+
+    .single-services-item {
+        margin-bottom: 30px;
+        transition: .6s;
+        background-color: #fff;
+        box-shadow: 0 0 1.25rem rgba(108, 118, 134, .1);
+        padding: 10px;
+        padding-bottom: 0;
+        border-radius: 10px
+    }
+
+    .single-services-item .services-image {
+        position: relative;
+        overflow: hidden
+    }
+
+    .single-services-item .services-image img {
+        border-radius: 10px;
+        transition: .6s
+    }
+
+    .single-services-item .services-image .icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        transition: .6s
+    }
+
+    .single-services-item .services-image .icon a i {
+        display: inline-block;
+        height: 75px;
+        width: 75px;
+        line-height: 75px;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+        color: #06a3da;
+        font-size: 45px;
+        text-align: center;
+        border-radius: 50px;
+        transition: .6s
+    }
+
+    .single-services-item .services-content {
+        padding: 35px 20px
+    }
+
+    .single-services-item .services-content h3 {
+        font-size: 25px;
+        margin-bottom: 12px;
+        font-weight: 500
+    }
+
+    .single-services-item .services-content h3 a {
+        color: #222
+    }
+
+    .single-services-item .services-content p {
+        font-size: 15px;
+        margin-bottom: 20px
+    }
+
+    .single-services-item .services-content .default-btn {
+        width: 100%;
+        border-radius: 50px;
+        text-align: center
+    }
+
+    .single-services-item:hover {
+        transform: translateY(-10px)
+    }
+
+    .single-services-item:hover .services-image img {
+        transform: rotate(2deg) scale(1.2)
+    }
+
+    .single-services-item:hover .services-image .icon i {
+        background-color: #06a3da;
+        color: #fff
+    }
+
+    .container {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    .single-services .services-image {
+        position: relative;
+        overflow: hidden
+    }
+
+    .single-services .services-image img {
+        border-radius: 10px 10px 0 0;
+        transition: .6s
+    }
+
+    .single-services .services-image .icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        transition: .6s
+    }
+
+    .single-services .services-image .icon a i {
+        display: inline-block;
+        height: 75px;
+        width: 75px;
+        line-height: 75px;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+        color: #06a3da;
+        font-size: 45px;
+        text-align: center;
+        border-radius: 50px;
+        transition: .6s
+    }
+
+    .single-services:hover .services-image img {
+        transform: rotate(2deg) scale(1.2)
+    }
+
+    .single-services:hover .services-image .icon i {
+        background-color: #06a3da;
+        color: #fff
+    }
+
+    .single-services-item .services-image {
+        position: relative;
+        overflow: hidden
+    }
+
+    .single-services-item .services-image img {
+        border-radius: 10px;
+        transition: .6s
+    }
+
+    .single-services-item .services-image .icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        transition: .6s
+    }
+
+    .single-services-item .services-image .icon a i {
+        display: inline-block;
+        height: 75px;
+        width: 75px;
+        line-height: 75px;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+        color: #06a3da;
+        font-size: 45px;
+        text-align: center;
+        border-radius: 50px;
+        transition: .6s
+    }
+
+    .single-services-item:hover .services-image img {
+        transform: rotate(2deg) scale(1.2)
+    }
+
+    .single-services-item:hover .services-image .icon i {
+        background-color: #06a3da;
+        color: #fff
+    }
+
+    .single-services .services-content {
+        background-color: #fff;
+        box-shadow: 0 0 1.25rem rgba(108, 118, 134, .1);
+        padding: 30px;
+        border-bottom: 1px solid #06a3da;
+        border-radius: 0 0 10px 10px;
+        transition: .6s
+    }
+
+    .single-services .services-content h3 {
+        font-size: 25px;
+        margin-bottom: 12px;
+        font-weight: 500
+    }
+
+    .single-services .services-content h3 a {
+        color: #222
+    }
+
+    .single-services .services-content p {
+        font-size: 15px;
+        transition: .6s
+    }
+
+    .single-services:hover .services-content {
+        background-color: #06a3da
+    }
+
+    .single-services:hover .services-content h3 a,
+    .single-services:hover .services-content p {
+        color: #fff
+    }
+
+    .single-services-item .services-content {
+        padding: 35px 20px
+    }
+
+    .single-services-item .services-content h3 {
+        font-size: 25px;
+        margin-bottom: 12px;
+        font-weight: 500
+    }
+
+    .single-services-item .services-content h3 a {
+        color: #222
+    }
+
+    .single-services-item .services-content p {
+        font-size: 15px;
+        margin-bottom: 20px
+    }
+
+    .single-services-item .services-content .default-btn {
+        width: 100%;
+        border-radius: 50px;
+        text-align: center
+    }
+
+    .services-details-image img {
+        border-radius: 30px;
+    }
+
+    .services-details-content {
+        margin-top: 30px;
+    }
+
+    .detail-prgh {
+
+        margin-bottom: 15px;
+        line-height: 1.8;
+        color: #6a6c72;
+        font-weight: 400;
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+
+    }
+
+    .services-details-list {
+        padding-left: 0;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .services-details-list li {
+        list-style-type: none;
+        position: relative;
+        padding-left: 45px;
+        margin-bottom: 30px;
+    }
+
+    .services-details-list li i {
+        display: inline-block;
+        position: absolute;
+        top: -8px;
+        left: 0;
+        height: 35px;
+        width: 35px;
+        line-height: 38px;
+        background-color: #06a3da;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    .single-gallery {
+        position: relative;
+        margin-bottom: 30px;
+        transition: .6s;
+    }
+
+    .single-gallery .content,
+    .single-gallery:before {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        transition: .6s;
+    }
+
+    .single-gallery:before {
+        content: "";
+        background: linear-gradient(180deg, transparent, #000);
+        height: 95%;
+        z-index: 1;
+        border-radius: 10px;
+    }
+
+    .single-gallery img {
+        border-radius: 10px;
+    }
+
+    .single-gallery .content {
+        right: 0;
+        padding: 30px;
+        z-index: 5;
+    }
+
+    .single-gallery .content,
+    .single-gallery:before {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        transition: .6s;
+    }
+
+    .single-gallery .content h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+    .single-gallery .content span {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .single-gallery .content .icon {
+        margin-top: 15px;
+    }
+
+    .single-gallery:hover {
+        transform: translateY(-10px);
+    }
+
+    .single-gallery:hover .content {
+        bottom: 5px;
+    }
+
+    .single-gallery .content h3 a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .single-gallery .content .icon a i {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        background-color: #fff;
+        color: #06a3da;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 50px;
+        transition: .6s;
+    }
+
+    .single-gallery .content .icon a i:hover {
+        background-color: #06a3da;
+        color: #fff;
+    }
+
+    @media(min-width:576px) {
+
+        .container {
+            max-width: 540px
+        }
+    }
+
+    @media only screen and (max-width:767px) {
+        .single-services .services-content {
+            padding: 30px 25px
+        }
+
+        .single-services .services-content h3 {
+            font-size: 22px
+        }
+
+        .single-services .services-content p {
+            font-size: 14px
+        }
+
+        .single-services .services-content {
+            padding: 35px 25px
+        }
+
+        .single-services .services-content p {
+            font-size: 14px
+        }
+
+        .single-services-item .services-content {
+            padding: 35px 15px
+        }
+
+        .single-services-item .services-content {
+            padding: 35px 15px
+        }
+
+        .single-services-item .services-content h3 {
+            font-size: 22px
+        }
+    }
+
+    @media(min-width:768px) {
+
+        .container {
+            max-width: 720px
+        }
+    }
+
+    @media(min-width:992px) {
+
+        .container {
+            max-width: 960px
+        }
+    }
+
+    @media(min-width:1200px) {
+
+        .container {
+            max-width: 1140px
+        }
+    }
+
+    @media(min-width:1400px) {
+
+        .container {
+            max-width: 1320px
+        }
+    }
+
+    @media only screen and (min-width:992px)and (max-width:1199px) {
+
+        .single-services .services-content {
+            padding: 35px 25px
+        }
+
+        .single-services .services-content p {
+            font-size: 14px
+        }
+
+
+
+        .single-services-box {
+            padding: 25px
+        }
+
+
+
+        .single-services-item .services-content {
+            padding: 35px 15px
+        }
+    }
+
+    /* portfolio css start  */
 </style>

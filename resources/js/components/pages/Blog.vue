@@ -33,7 +33,7 @@
                                         </div>
                                         <div class="scaleImg">
                                             <img :src="
-                          'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +
+                          'http://admin.idenbrid.jp/public/storage/blog_images/' +
                           blog.image
                         " alt="" loading="lazy" />
                                         </div>
@@ -115,10 +115,10 @@
                                     </div>
                                     <div class="scaleImg scale-img">
                                         <img width="1200" height="630" :src="
-                        'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +
+                        'http://admin.idenbrid.jp/public/storage/blog_images/' +
                         blog.image
                       " class="attachment-full size-full wp-post-image" alt="" loading="lazy" :srcset="
-                        'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/' +
+                        'http://admin.idenbrid.jp/public/storage/blog_images/' +
                         blog.image
                       " sizes="(max-width: 1200px) 100vw, 1200px" />
                                     </div>
@@ -299,6 +299,9 @@
     };
 </script>
 <style>
+
+
+
 .like-icon{
     cursor: pointer;
 }

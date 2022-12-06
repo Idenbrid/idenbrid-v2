@@ -16,13 +16,28 @@
                 </h2>
                 <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i>
                 </router-link>
-                <video class="top-hero__video" src="/public/assets/videos/Banner_video.mp4" autoplay muted loop
+                <video class="top-hero__video" src="/public/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop
                     playsinline></video>
             </section>
             <div class="scroll scroll_top">
                 <p class="scroll__text">SCROLL</p>
                 <span class="scroll__arrow"><span class="scroll__arrow__box"></span></span>
             </div>
+             <!-- About company work-->
+             <section class="mycontents-wide">
+                <h3 class="content-title">IDENBRIDとは</h3>
+                <div class="service-row">
+                    <div class="mycontents-wide p-0">
+
+                        <h2 class="service_h2">日本とパキスタンにおいてIT受託開発を行う企業です。
+                        </h2>
+                        <p class="service-p">
+                            IDENRBIDは開発チームを日本及びパキスタンにて組んでいるIT受託開発会社です。スタートアップ企業様から東証プライム上場企業までお客様の幅は広く、要件定義からシステム設計、UIUXデザイン、ウェブからスマホアプリ開発そしてクラウドまでワンストップで開発しております。高度な大規模開発は日本チームで、そしてラボ型開発はパキスタンにてとグローバル企業だからできる対応力でクライアント様にご好評頂いています。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- About company work-->
             <!-- Who is Idenbrid-->
             <section>
                 <div class="c-message">
@@ -108,7 +123,7 @@
                     <div class="new-listing new" v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 5">
                         <router-link :to="'/news/detail/'+detail.id+'/'" class="new-link new">
                             <div class="img_box">
-                                <img :src="'https://admin.idenbrid.com/public/storage/news/'+detail.image" alt=""></div>
+                                <img :src="'http://admin.idenbrid.jp/public/storage/news/'+detail.image" alt=""></div>
                             <div class="new-item new">
                                 <div class="new-meta">
                                     <p class="text new mr-2 mt-0 new-date">
@@ -225,7 +240,7 @@
                         <router-link :to="'/blog/detail/'+blog.id+'/'">
                             <p class="blog-contents__list__tags"><span>BLOG</span></p>
                             <img class="blog-contents__list__thumbnail"
-                                :src="'https://admin-idenbrid.idenbrid.com/public/storage/blog_images/'+blog.image"
+                                :src="'http://admin.idenbrid.jp/public/storage/blog_images/'+blog.image"
                                 alt="" loading="lazy">
                             <p class="blog-contents__list__title">{{blog.title}}</p>
                             <p class="blog-contents__list__date">{{blog.date}}</p>
@@ -237,7 +252,7 @@
                 </router-link>
             </section>
             <div class="bnr_area">
-                <a href="https://twitter.com/koheinishizaki" target="_blank" class="hoverScale">
+                <a href="https://twitter.com/idenbridinc" target="_blank" class="hoverScale">
                     <div class="thumb">
                         <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
                         <div class="scaleImg">
@@ -245,7 +260,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://www.youtube.com/channel/UChN700y3HeGE_gLnUy_9yug" target="_blank" class="hoverScale">
+                <a href="https://www.youtube.com/channel/UC5ENsxgAQIqVfBIMy-Fp-0w" target="_blank" class="hoverScale">
                     <div class="thumb">
                         <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
                         <div class="scaleImg">
@@ -844,8 +859,9 @@
             display: block;
             height: auto;
             object-fit: contain;
+            width: 100%;
         }
-
+``
         .ceo-desktop {
             display: none;
         }
@@ -1566,7 +1582,7 @@
 
     .c-message {
         height: 35.42857rem;
-        margin-top: 5rem;
+        margin-top: 0rem;
         position: relative;
         overflow: hidden;
     }
@@ -2020,6 +2036,9 @@
         .content-title {
             font-size: 24px;
         }
+        .otherservice {
+        margin-bottom: 0px;
+    }
         .c-message {
         margin-top: 0px;
     }

@@ -15,8 +15,9 @@
                     <div class="topic--content--mainarea">
                         <div v-for="detail in news" :key="detail.id">
                             <router-link :to="'/news/detail/'+detail.id+'/'" class="topic--content--item">
+                                
                                 <div class="img_box">
-                                    <img :src="'https://admin.idenbrid.com/public/storage/news/'+detail.image" alt="">
+                                    <img :src="'http://admin.idenbrid.jp/public/storage/news/'+detail.image" alt="">
                                 </div>
                                 <div class="text_area">
                                     <div class="topicinfo">
@@ -27,6 +28,7 @@
                                     </div>
                                     <h3 class="hvrunder">{{detail.title}}</h3>
                                 </div>
+                  
                             </router-link>
                         </div>
 
@@ -849,5 +851,18 @@
             font-size: 1.4rem;
             letter-spacing: 0.05em
         }
+    }
+    @media screen and (max-width: 767px) {
+        .topic--content--item .text_area {
+        width:100%;
+    }
+    .topic--content--item .img_box{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .topic--content--item{
+        flex-direction: column;
+    }
     }
 </style>

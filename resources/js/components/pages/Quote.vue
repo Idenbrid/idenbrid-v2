@@ -134,17 +134,16 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="フロントエンド" v-model="record.step_4"
-                                                            id="demo_opt_2" type="checkbox" class="css-checkbox"
-                                                            checked="">
+                                                        <input name="cssCheckbox" value="フロントエンド"
+                                                            v-model="record.step_4" id="demo_opt_2" type="checkbox"
+                                                            class="css-checkbox" checked="">
                                                         <label for="demo_opt_2">フロントエンド</label>
 
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="ECサイト"
-                                                            v-model="record.step_4" id="demo_opt_3" type="checkbox"
-                                                            class="css-checkbox">
+                                                        <input name="cssCheckbox" value="ECサイト" v-model="record.step_4"
+                                                            id="demo_opt_3" type="checkbox" class="css-checkbox">
                                                         <label for="demo_opt_3">ECサイト</label>
                                                     </div>
                                                 </div>
@@ -235,9 +234,8 @@
                                                     </div>
                                                     <div id="inputPreview">
 
-                                                        <input name="cssCheckbox" value="その他"
-                                                            v-model="record.step_4" id="demo_opt_15" type="checkbox"
-                                                            class="css-checkbox">
+                                                        <input name="cssCheckbox" value="その他" v-model="record.step_4"
+                                                            id="demo_opt_15" type="checkbox" class="css-checkbox">
                                                         <label for="demo_opt_15">その他</label>
                                                     </div>
                                                 </div>
@@ -390,8 +388,7 @@
                                             <div class="inputCase">
                                                 <div class="sc-fzonjX hIMiPJ">
                                                     <span>メールアドレス* </span>
-                                                    <input
-                                                        placeholder="" v-model="record.email" autocomplete="off"
+                                                    <input placeholder="" v-model="record.email" autocomplete="off"
                                                         minlength="3" name="title" type="email" required="" value=""
                                                         class="text-field">
 
@@ -417,14 +414,6 @@
                                 <!-- <h3>私たちの開発チームは最高の信頼を得ています</h3> -->
                                 <div class="logo-wrapper">
                                     <div><img src="/assets/img/quoteimage.png" alt="" width="100%"></div>
-
-
-
-
-
-
-
-
                                 </div>
                             </div>
                         </div><svg version="1.1" width="100%" height="100px" xmlns="http://www.w3.org/2000/svg"
@@ -473,27 +462,27 @@
         methods: {
             saveRequest(id) {
                 axios.post("/api/submit-quotation", this.record)
-                .then((res) => {
-                    if (res.data.success == true) {
-                        alert('We will contact you soon. Thanks');
-                        this.record = {
-                            step_1: '',
-                            step_2: '',
-                            step_3: '',
-                            step_4: [],
-                            step_5: '',
-                            step_6: '',
-                            step_7: '',
-                            project_name: '',
-                            name: '',
-                            email: '',
-                            phone: '',
-                        };
-                    }
-                })
-                .catch((err) => {
-                    alert('全ての項目をご記入ください。')
-                })
+                    .then((res) => {
+                        if (res.data.success == true) {
+                            alert('近日中にご連絡いたします。ありがとうございました。');
+                            this.record = {
+                                step_1: '',
+                                step_2: '',
+                                step_3: '',
+                                step_4: [],
+                                step_5: '',
+                                step_6: '',
+                                step_7: '',
+                                project_name: '',
+                                name: '',
+                                email: '',
+                                phone: '',
+                            };
+                        }
+                    })
+                    .catch((err) => {
+                        alert('全ての項目をご記入ください。')
+                    })
             }
         },
         mounted: function () {
@@ -763,7 +752,7 @@
     }
 
     .vTcAG .logo-wrapper>div {
-        margin:0px 30px;
+        margin: 0px 30px;
         margin-bottom: 30px;
     }
 
@@ -1020,7 +1009,7 @@
     }
 
     @media screen and (max-width: 1300px) and (min-width: 1150px) {
-        .vTcAG .logo-wrapper    {
+        .vTcAG .logo-wrapper {
             width: 347px;
             display: flex;
             flex-wrap: wrap;

@@ -3,7 +3,8 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter)
 import Meta from "vue-meta";
 Vue.use(Meta)
-import Home from './components/pages/Home.vue'
+
+import Home from'./components/pages/Home.vue'
 import Member from './components/pages/Member.vue'
 import Service from './components/pages/Service.vue'
 import Idenspire from './components/pages/services/Idenspire.vue'
@@ -34,6 +35,7 @@ import Videos from './components/pages/Videos.vue'
 import Access from './components/pages/Access.vue'
 import Office from './components/pages/Office.vue'
 import Quote from './components/pages/Quote.vue'
+import PageNotFound from './components/pages/PageNotFound.vue'
 
 
 const routes = [
@@ -64,6 +66,12 @@ const routes = [
         path: '/quote/',
         component: Quote
     },
+    // page not found 
+    {
+        path: '/pagenotfound/',
+        component: PageNotFound
+    },
+    // page not found 
     {
         path: '/engineerstyle/:string?/',
         component: Ses

@@ -252,8 +252,36 @@
   };
 </script>
 <style>
+.branding--contact h3 {
+    color: #dadada;
+    font-weight: 600;
+    letter-spacing: .1em;
+    line-height: 1.85;
+}
+.fade_y.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+.branding--contact .contactbtn {
+    border: 1px solid #fdfdfd;
+    color: #fdfdfd;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    margin: 50px auto 0;
+    padding: 22px 0;
+    text-align: center;
+    transition: .4s;
+    width: 260px;
+}
   /* new vision */
-
+  .branding--contact {
+    background-image: url(/assets/img/bottom-banner-background-image.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   .sd {
     max-width: 100%;
     z-index: 0;
@@ -1071,6 +1099,13 @@
   }
 
   @media screen and (max-width: 1300px) and (min-width: 897px) {
+    .branding--contact h3 {
+    font-size: 40px;
+    text-align: center;
+}
+    .branding--contact {
+    padding: 180px 0;
+}
     .custom-swiper-pagination {
       left: 30%;
     }
@@ -1096,6 +1131,15 @@
   }
 
   @media screen and (max-width: 896px) {
+    .branding--contact {
+    padding: 100px 5%;
+}
+    .branding--contact h3 {
+    font-size: 20px;
+}
+    .branding--contact {
+    padding: 100px 5%;
+    }
     .swiper-slide img {
       width: 100%;
     }

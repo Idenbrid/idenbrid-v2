@@ -623,7 +623,7 @@
     font-size: 18px;
     font-weight: 700;
     letter-spacing: .1em;
-    margin-left: 8px;
+    margin-left: 8px; 
     margin-top: 50px;
     opacity: 1;
     padding: 19px 0;
