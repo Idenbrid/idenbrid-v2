@@ -226,10 +226,7 @@
     }
 
     @media (max-width: 767px) {
-        .coming-img {
-            height: auto;
-        }
-
+        
         .work-subcontents__text {
             width: 100%;
         }
@@ -282,6 +279,9 @@
     }
 
     @media (max-width: 767px) {
+        .coming-img{
+            height: auto;
+        }
         .work {
             margin-bottom: 60px;
         }
