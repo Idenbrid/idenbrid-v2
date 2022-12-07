@@ -47,11 +47,11 @@
                             class='fas fa-angle-right'></i></a>
                 </div>
             </div> -->
-            <section>
-                <video src="/assets/img/workpage.mp4" width="100%" class="coming-img" autoplay muted loop
+            <!-- <section>
+                <video src="/assets/img/workpage.mp4" width="100%" class="coming-img mt-2" autoplay muted loop
                     playsinline></video>
-            </section>
-            <!-- <section class="section-portfolio my-5">
+            </section>  -->
+        <section class="section-portfolio my-5">
                 <div class="container">
                     <div class="row">
                         <div v-for="work in works" :key="work.id" class="col-lg-4 col-md-6">
@@ -64,8 +64,9 @@
                                         </a>
                                         <div class="icon">
                                             <a class="">
-                                               
-                                                <i class="flaticon-chair"></i>
+                                                
+                                                <i class="flaticon-chair d-flex justify-content-center align-items-center"><img class="work-detail-icon " src="http://development.idenbrid.jp/assets/img/logo/idenbrid-fav-icon.png" alt=""></img></i>
+
                                             </a>
                                         </div>
                                     </div>
@@ -81,7 +82,7 @@
                         
                     </div>
                 </div>
-            </section> -->
+            </section>  
 
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
@@ -160,6 +161,11 @@
     };
 </script>
 <style scoped>
+
+.work-detail-icon{
+    height: 30px !important;
+    width: 30px !important;
+}
 .work-detail-prgh{
     
   width: 100%;

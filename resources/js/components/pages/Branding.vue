@@ -1588,7 +1588,7 @@
     }
 
     .branding--result {
-        background-color: #000;
+        background-color: rgb(57, 108, 162);
     }
 
     @media screen and (min-width: 897px) {
@@ -1800,7 +1800,7 @@
 
     .branding--compare--table table tr th.tg,
     .branding--compare--table table tr td.tg {
-        background-color: #000;
+        background-color: rgb(57, 108, 162);
         color: #dadada;
     }
 
