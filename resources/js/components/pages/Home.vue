@@ -16,8 +16,7 @@
                 </h2>
                 <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i>
                 </router-link>
-                <video class="top-hero__video" src="/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop
-                    playsinline></video>
+                <video class="top-hero__video" src="/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop playsinline></video>
             </section>
             <div class="scroll scroll_top">
                 <p class="scroll__text">SCROLL</p>
