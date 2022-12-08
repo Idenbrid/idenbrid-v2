@@ -1618,7 +1618,8 @@
 
     .large-7 {
         width: 58.33333%;
-        padding: 50px 0px 0px;
+        /* padding: 50px 0px 0px; */
+        padding: 50px 0px 0px 80px;
     }
 
     .large-5 {
@@ -1641,7 +1642,7 @@
         line-height: 2.14286;
         font-weight: normal;
     }
-
+/* 
     .c-message__title-sub {
         margin-top: 0rem;
         font-size: 1.7rem;
@@ -1649,7 +1650,7 @@
         line-height: 1.5625;
         color: #102855;
         font-weight: bold;
-    }
+    } */
 
 
     .c-button,
@@ -1869,7 +1870,7 @@
 
     .c-message__title-sub {
         margin-top: 0rem;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         letter-spacing: 0.1em;
         line-height: 1.5625;
         color: #102855;
@@ -1895,7 +1896,7 @@
         }
 
         .c-message {
-            padding: 30px 0px;
+            padding: 30px 0px 0px;
             height: auto;
         }
     }
@@ -2032,6 +2033,9 @@
     }
 
     @media (max-width: 475px) {
+        .c-message__title {
+        margin-top: 3rem;
+    }
         .content-title {
             font-size: 24px;
         }

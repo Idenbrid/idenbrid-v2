@@ -1,6 +1,6 @@
 <template>
     <div>
-         <div v-if="loading" class="preloader">
+        <div v-if="loading" class="preloader">
             <div class="ddback">
                 <div class="loader">
                     <div class="loader-inner box-1"></div>
@@ -21,10 +21,111 @@
         </div>
         <Navbar />
         <main>
-            <div class="mycontents-wide">
-                <img class="thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt="" loading="lazy"/>
+            <section class="detail-section mt-5">
+                <div class="container">
+                    <div class="col-lg-8 col-md-12 mx-auto">
+                        <div class="services-details-image"><img :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" :alt="work.image"
+                                width="100%"></div>
+                        <div class="services-details-content">
+                            <h3>Dental Filling</h3>
+                            <p class="detail-prgh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <ul class="services-details-list">
+                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
+                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
+                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <ul class="services-details-list">
+                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
+                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
+                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="detail-prgh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                            in
+                            culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="services-details-overview">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="single-gallery"><img src="/images/gallery-1.b9cd3d45.jpg" alt="image"
+                                            width="100%">
+                                        <div class="content">
+                                            <h3><a aria-current="page" href="/services-details"
+                                                    class="router-link-active active"> Aesthetic Dentistry </a></h3>
+                                            <span>Prosthodontics Dentist</span>
+                                            <div class="icon"><a aria-current="page" href="/services-details"
+                                                    class="router-link-active active"><i
+                                                        class="flaticon-right-arrow"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="single-gallery"><img src="/images/gallery-2.7c6f51b8.jpg" alt="image"
+                                            width="100%">
+                                        <div class="content">
+                                            <h3><a aria-current="page" href="/services-details"
+                                                    class="router-link-active active"> Periodontists Dentistry </a></h3>
+                                            <span>Prosthodontics Dentist</span>
+                                            <div class="icon"><a aria-current="page" href="/services-details"
+                                                    class="router-link-active active"><i
+                                                        class="flaticon-right-arrow"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="detail-section">
+    <div class="container">
+        <div class="col-lg-8 col-md-12 mx-auto">
+            <div class="services-details-image">
+                <img class="thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt=""
+                    loading="lazy" />
             </div>
-            <section class="work-text mycontents-wide">
+            <div class="services-details-content">
+                <h3>{{work.company}}</h3>
+                <p class="detail-prgh"><a  rel="tag">{{work.title}}</a></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <ul class="services-details-list"  v-html="work.description">
+                        <li><i class="flaticon-check"></i></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <p > <a  rel="tag">{{work.title}}</a></p>
+            </div>
+        </div>
+</section> -->
+            <!-- <div class="mycontents-wide">
+                <img class="thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt=""
+                    loading="lazy" />
+            </div> -->
+            <!-- <section class="work-text mycontents-wide">
                 <h2 class="subcontent-title subcontent-title_about">{{work.company}}</h2>
                 <p class="work-text__category">
                     <a  rel="tag">{{work.title}}</a>
@@ -35,8 +136,8 @@
                 <div class="work-text__about" v-html="work.description">
 
                 </div>
-            </section>
-                 <section class="work mycontents-wide">
+            </section> -->
+            <!-- <section class="work mycontents-wide">
                      <h2 data-v-f008eaba="" class="subcontent-title subcontent-title_about">その他のプロジェクト </h2>
         <ul class="work-contents">
             <li  v-for="work in latest_works" :key="work.id" class="work-contents__list">
@@ -51,38 +152,47 @@
              
             <router-link to="/works/" class="viewmore-btn viewmore-btn_center">View More
                         </router-link>
-</section>
-              <section class="menu">
-    <ul class="menu-contents mycontents-wide">
-          <li class="menu-contents__list">
-            <router-link to="/about/">
-                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg" alt="" loading="lazy">
-                <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">経営理念</p>
-                    <h4 class="menu-contents__list__title">Policy</h4>
-                </div>
-            </router-link>
-        </li>
-        <li class="menu-contents__list">
-            <router-link to="/blog/">
-                <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news" src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
-                <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">事業紹介</p>
-                    <h4 class="menu-contents__list__title">Business</h4>
-                </div>
-            </router-link>
-        </li>
-        <li class="menu-contents__list">
-            <router-link to="/onlinedevelopmenthub/">
-                <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg" alt="" loading="lazy">
-                <div class="menu-contents__list__text">
-                    <p class="menu-contents__list__subtitle">会社概要</p>
-                    <h4 class="menu-contents__list__title">Company</h4>
-                </div>
-            </router-link>
-        </li>
-    </ul>
-</section>
+                    </section>  -->
+
+
+
+
+
+
+            <!-- <section class="menu">
+                <ul class="menu-contents mycontents-wide">
+                    <li class="menu-contents__list">
+                        <router-link to="/about/">
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
+                                alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <p class="menu-contents__list__subtitle">経営理念</p>
+                                <h4 class="menu-contents__list__title">Policy</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="menu-contents__list">
+                        <router-link to="/blog/">
+                            <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
+                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <p class="menu-contents__list__subtitle">事業紹介</p>
+                                <h4 class="menu-contents__list__title">Business</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="menu-contents__list">
+                        <router-link to="/onlinedevelopmenthub/">
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
+                                alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <p class="menu-contents__list__subtitle">会社概要</p>
+                                <h4 class="menu-contents__list__title">Company</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                </ul>
+            </section> -->
         </main>
         <Footer />
     </div>
@@ -95,14 +205,14 @@
             Navbar,
             Footer,
         },
-         data(){
-            return{
+        data() {
+            return {
                 loading: false,
-                work:'',
-                latest_works:[]
+                work: '',
+                latest_works: []
             }
         },
-        mounted(){
+        mounted() {
 
         },
         metaInfo() {
@@ -115,20 +225,21 @@
                 }, ],
             };
         },
-         created() {
+        created() {
             this.loading = true;
-             axios.get('/api/work-detail/'+this.$route.params.id).then((res)=>{
-                this.work = res.data.work;
-                this.latest_works = res.data.latest_works;
-            })
-            .catch((err)=>{})
-             setTimeout(() => {
+            axios.get('/api/work-detail/' + this.$route.params.id).then((res) => {
+                    this.work = res.data.work;
+                    this.latest_works = res.data.latest_works;
+                })
+                .catch((err) => {})
+            setTimeout(() => {
                 this.loading = false;
             }, 1000);
         },
     };
 </script>
 <style scoped>
+
     /*works*/
 
     .thumbnail {
@@ -249,6 +360,7 @@
         .subcontent-title_about {
             margin-bottom: 20px;
         }
+
         .work-text__category a {
             margin-right: 20px;
             height: 34px;
@@ -256,29 +368,36 @@
             font-size: 13px;
             line-height: 34px;
         }
+
         .work-text__tags {
             font-size: 13px;
             line-height: 19px;
         }
+
         .work-text__url {
             margin-bottom: 30px;
         }
+
         .work-text__about {
             font-size: 13px;
             line-height: 19px;
             margin-bottom: 30px;
         }
+
         .works-pc__img1,
         .works-pc__right {
             width: calc((100% - 8px) / 2);
         }
+
         .works-pc {
             margin-bottom: 30px;
         }
+
         .works-sp {
             padding-top: 30px;
             padding-bottom: 30px;
         }
+
         .works-sp__list {
             width: calc((100% - 6px * 2) / 3);
         }
@@ -309,9 +428,11 @@
         .work {
             margin-bottom: 60px;
         }
+
         .subcontent-title_works {
             margin-bottom: 30px;
         }
+
         .work-contents {
             margin-bottom: 0;
             padding-bottom: 30px;
@@ -321,123 +442,133 @@
             width: 100vw;
             margin-left: calc(var(--content-padding-side-sp) * -1);
         }
+
         .work-contents__list {
             margin-top: 20px;
             min-width: 230px;
             margin-left: 30px;
         }
     }
+
     .work-contents__list {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    transition: 1s;
-    transition-property: transform;
-}
-
-.work-contents__list:hover {
-    transform: scale(1.05);
-}
-
-.work-contents__list__thumbnail {
-    width: 100%;
-}
-
-.work-contents__list__company {
-    margin: 20px auto 5px 20px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-}
-
-.work-contents__list__title {
-    margin-bottom: 5px;
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.work-contents__list__tags {
-    margin-left: 20px;
-    padding-bottom: 14px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #727171;
-}
-
-@media (max-width: 767px) {
-    .work-contents__list__thumbnail {
-        margin-bottom: 12px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        transition: 1s;
+        transition-property: transform;
     }
+
+    .work-contents__list:hover {
+        transform: scale(1.05);
+    }
+
+    .work-contents__list__thumbnail {
+        width: 100%;
+    }
+
     .work-contents__list__company {
-        margin: 0 12px 5px 12px;
+        margin: 20px auto 5px 20px;
+        font-weight: bold;
         font-size: 14px;
         line-height: 21px;
     }
+
     .work-contents__list__title {
-        margin: 0 12px 12px 12px;
-        font-size: 15px;
-        line-height: 22px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
     }
+
     .work-contents__list__tags {
-        margin: 0 12px;
-        padding-bottom: 12px;
-        font-size: 13px;
-        line-height: 19px;
+        margin-left: 20px;
+        padding-bottom: 14px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #727171;
     }
-}
 
-/*work*/
+    @media (max-width: 767px) {
+        .work-contents__list__thumbnail {
+            margin-bottom: 12px;
+        }
 
-.work {
-    margin-bottom: 120px;
-}
+        .work-contents__list__company {
+            margin: 0 12px 5px 12px;
+            font-size: 14px;
+            line-height: 21px;
+        }
 
-.work-contents {
-    display: flex;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-}
+        .work-contents__list__title {
+            margin: 0 12px 12px 12px;
+            font-size: 15px;
+            line-height: 22px;
+        }
 
-.work-contents__list {
-    width: calc((100% - 65px * 2) / 3);
-    margin-bottom: 60px;
-    margin-left: 65px;
-}
+        .work-contents__list__tags {
+            margin: 0 12px;
+            padding-bottom: 12px;
+            font-size: 13px;
+            line-height: 19px;
+        }
+    }
 
-.work-contents .work-contents__list:nth-child(3n + 1){
-    margin-left: 0;
-}
+    /*work*/
 
-@media (max-width: 767px) {
     .work {
+        margin-bottom: 120px;
+    }
+
+    .work-contents {
+        display: flex;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .work-contents__list {
+        width: calc((100% - 65px * 2) / 3);
         margin-bottom: 60px;
+        margin-left: 65px;
     }
-    .work-contents{
-        margin-bottom: 20px;
-    }
-    .work-contents .work-contents__list:nth-child(2n){
-        margin-left: 35px;
-    }
-    .work-contents .work-contents__list:nth-child(2n + 1){
+
+    .work-contents .work-contents__list:nth-child(3n + 1) {
         margin-left: 0;
     }
-    .work-contents__list {
-        width: calc((100% - 35px) / 2);
-        margin-bottom: 30px;
-    }
-}
 
-@media (max-width: 500px) {
-    .work-contents {
-        display: block;
+    @media (max-width: 767px) {
+        .work {
+            margin-bottom: 60px;
+        }
+
+        .work-contents {
+            margin-bottom: 20px;
+        }
+
+        .work-contents .work-contents__list:nth-child(2n) {
+            margin-left: 35px;
+        }
+
+        .work-contents .work-contents__list:nth-child(2n + 1) {
+            margin-left: 0;
+        }
+
+        .work-contents__list {
+            width: calc((100% - 35px) / 2);
+            margin-bottom: 30px;
+        }
     }
-    .work-contents__list {
-        width: 100%;
-        margin-bottom: 30px;
-        margin-left: 0 !important;
+
+    @media (max-width: 500px) {
+        .work-contents {
+            display: block;
+        }
+
+        .work-contents__list {
+            width: 100%;
+            margin-bottom: 30px;
+            margin-left: 0 !important;
+        }
     }
-}
 </style>
