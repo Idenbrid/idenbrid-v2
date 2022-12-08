@@ -12,7 +12,7 @@
                 <router-link to="/company/">
                     <div class="link-card">
                         <div class="link-img">
-                            <img src="/assets/img/Company.png" alt="">
+                            <img src="/assets/img/Company.png" alt="" loading="lazy">
                         </div>
                         <div class="link-haeding">
                             <h6>COMPANY / 会社概要</h6>
@@ -24,7 +24,7 @@
                 <router-link to="/message/">
                     <div class="link-card">
                         <div class="link-img">
-                            <img src="/assets/img/CEO-Mesasge.png" alt="">
+                            <img src="/assets/img/CEO-Mesasge.png" alt="" loading="lazy">
                         </div>
                         <div class="link-haeding">
                             <h6>CEO MESSAGE / 代表メッセージ</h6>
@@ -36,7 +36,7 @@
                 <router-link to="/member/">
                     <div class="link-card">
                         <div class="link-img">
-                            <img src="/assets/img/team.png" alt="">
+                            <img src="/assets/img/team.png" alt="" loading="lazy">
                         </div>
                         <div class="link-haeding">
                             <h6>TEAM / チーム</h6>
@@ -48,7 +48,7 @@
                 <router-link to="/office/">
                     <div class="link-card">
                         <div class="link-img">
-                            <img src="/assets/img/officeandaccess.png" alt="">
+                            <img src="/assets/img/officeandaccess.png" alt="" loading="lazy">
                         </div>
                         <div class="link-haeding">
                             <h6>OFFICE & ACCESS / オフィス&アクセス</h6>
@@ -61,7 +61,7 @@
                 <router-link to="/digitalasset/">
                     <div class="link-card">
                         <div class="link-img">
-                            <img src="/assets/img/digitalasset.png" alt="">
+                            <img src="/assets/img/digitalasset.png" alt="" loading="lazy">
                         </div>
                         <div class="link-haeding">
                             <h6>DIGITAL ASSETS / デジタルアセット</h6>

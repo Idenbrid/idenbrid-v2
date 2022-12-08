@@ -35,7 +35,7 @@
                                             <img :src="
                           'http://admin.idenbrid.jp/public/storage/blog_images/' +
                           blog.image
-                        " alt="" loading="lazy" />
+                        " alt="" loading="lazy"/>
                                         </div>
                                     </div>
                                     <div class="bloginfo">

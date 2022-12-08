@@ -16,7 +16,7 @@
                 </h2>
                 <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i>
                 </router-link>
-                <video class="top-hero__video" src="/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop playsinline></video>
+                <video class="top-hero__video" src="/public/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop playsinline></video>
             </section>
             <div class="scroll scroll_top">
                 <p class="scroll__text">SCROLL</p>
@@ -55,8 +55,8 @@
                                 </div>
                             </div>
                             <div class="large-5 small-12">
-                                <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="">
-                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO Person.png" alt="">
+                                <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="" loading="lazy">
+                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO Person.png" alt="" loading="lazy">
                                 <!-- <img class="c-message__img ceo-mbl" src="/assets/img/CEO-Person-mbl.png" alt=""> -->
                             </div>
                             <div class="c-message__button u-hidden-lg">
@@ -73,7 +73,7 @@
                 <div class="service-row  my-5">
                     <div class="service-col">
 
-                        <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon">SDH：スタジオ開発ハブ
+                        <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon" >SDH：スタジオ開発ハブ
                         </h2>
                         <p class="service-p">
                             スタジオ開発ハブは、日本企業またグローバル企業とのIT受託開発。そして一般的なオフショア開発にあたるパキスタンエンジニア人材を人月ベースでご提供致します。
@@ -255,7 +255,7 @@
                     <div class="thumb">
                         <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
                         <div class="scaleImg">
-                            <img src="https://tomorrowgate.co.jp/asset/img/top/tw-bnr.jpg" alt="">
+                            <img src="/assets/img/tw-bnr.jpg" alt="" loading="lazy">
                         </div>
                     </div>
                 </a>
@@ -263,7 +263,7 @@
                     <div class="thumb">
                         <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span></div>
                         <div class="scaleImg">
-                            <img src="https://tomorrowgate.co.jp/asset/img/top/yt-bnr.jpg" alt="">
+                            <img src="/assets/img/yt-bnr.jpeg" alt="" loading="lazy">
                         </div>
                     </div>
                 </a>
