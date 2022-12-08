@@ -16,15 +16,15 @@
                 </h2>
                 <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i>
                 </router-link>
-                <video class="top-hero__video" src="/public/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop
+                <video class="top-hero__video" src="/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop
                     playsinline></video>
             </section>
             <div class="scroll scroll_top">
                 <p class="scroll__text">SCROLL</p>
                 <span class="scroll__arrow"><span class="scroll__arrow__box"></span></span>
             </div>
-             <!-- About company work-->
-             <section class="mycontents-wide">
+            <!-- About company work-->
+            <section class="mycontents-wide">
                 <h3 class="content-title">IDENBRIDとは</h3>
                 <div class="service-row">
                     <div class="mycontents-wide p-0">
@@ -103,16 +103,16 @@
             </section>
             <!--Our experties-->
             <section class="news mycontents-wide">
-              <div class="row">
-                <div class="service-col">
-                <h3 class="content-title content-title_blog">OUR EXPERTISE</h3>
-                <p class="content-text">IDENBRIDがご提供している開発サービスのご紹介です。</p>
-               </div>
-               <div class="service-col">
-                <router-link class="viewmore-btn" to="/solutions">View More
-                </router-link>
-               </div>
-              </div>
+                <div class="row">
+                    <div class="service-col">
+                        <h3 class="content-title content-title_blog">OUR EXPERTISE</h3>
+                        <p class="content-text">IDENBRIDがご提供している開発サービスのご紹介です。</p>
+                    </div>
+                    <div class="service-col">
+                        <router-link class="viewmore-btn" to="/solutions">View More
+                        </router-link>
+                    </div>
+                </div>
             </section>
             <!--our experties-->
             <!--news-->
@@ -240,8 +240,8 @@
                         <router-link :to="'/blog/detail/'+blog.id+'/'">
                             <p class="blog-contents__list__tags"><span>BLOG</span></p>
                             <img class="blog-contents__list__thumbnail"
-                                :src="'http://admin.idenbrid.jp/public/storage/blog_images/'+blog.image"
-                                alt="" loading="lazy">
+                                :src="'http://admin.idenbrid.jp/public/storage/blog_images/'+blog.image" alt=""
+                                loading="lazy">
                             <p class="blog-contents__list__title">{{blog.title}}</p>
                             <p class="blog-contents__list__date">{{blog.date}}</p>
                         </router-link>
@@ -861,8 +861,8 @@
             object-fit: contain;
             width: 100%;
         }
-``
-        .ceo-desktop {
+
+        `` .ceo-desktop {
             display: none;
         }
 
@@ -2036,12 +2036,15 @@
         .content-title {
             font-size: 24px;
         }
+
         .otherservice {
-        margin-bottom: 0px;
-    }
+            margin-bottom: 0px;
+        }
+
         .c-message {
-        margin-top: 0px;
-    }
+            margin-top: 0px;
+        }
+
         .c-message__title-sub {
             font-size: 16px;
         }
@@ -2072,8 +2075,9 @@
             margin-bottom: 0px;
         }
     }
+
     @media (max-width: 320px) {
-        .service_h2{
+        .service_h2 {
             font-size: 15px;
         }
     }
