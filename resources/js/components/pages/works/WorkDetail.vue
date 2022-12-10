@@ -21,7 +21,7 @@
         </div>
         <Navbar />
         <main>
-            <section class="detail-section mt-5">
+            <!-- <section class="detail-section mt-5">
                 <div class="container">
                     <div class="col-lg-8 col-md-12 mx-auto">
                         <div class="services-details-image"><img :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" :alt="work.image"
@@ -97,8 +97,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- <section class="detail-section">
+            </section> -->
+       <section class="detail-section">
     <div class="container">
         <div class="col-lg-8 col-md-12 mx-auto">
             <div class="services-details-image">
@@ -120,12 +120,12 @@
             <p > <a  rel="tag">{{work.title}}</a></p>
             </div>
         </div>
-</section> -->
+</section> 
             <!-- <div class="mycontents-wide">
                 <img class="thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt=""
                     loading="lazy" />
-            </div> -->
-            <!-- <section class="work-text mycontents-wide">
+            </div>  -->
+             <!-- <section class="work-text mycontents-wide">
                 <h2 class="subcontent-title subcontent-title_about">{{work.company}}</h2>
                 <p class="work-text__category">
                     <a  rel="tag">{{work.title}}</a>
@@ -137,7 +137,7 @@
 
                 </div>
             </section> -->
-            <!-- <section class="work mycontents-wide">
+          <section class="work mycontents-wide">
                      <h2 data-v-f008eaba="" class="subcontent-title subcontent-title_about">その他のプロジェクト </h2>
         <ul class="work-contents">
             <li  v-for="work in latest_works" :key="work.id" class="work-contents__list">
@@ -152,7 +152,7 @@
              
             <router-link to="/works/" class="viewmore-btn viewmore-btn_center">View More
                         </router-link>
-                    </section>  -->
+                    </section> 
 
 
 

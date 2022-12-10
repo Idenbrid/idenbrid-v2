@@ -47,11 +47,11 @@
                             class='fas fa-angle-right'></i></a>
                 </div>
             </div> -->
-            <!-- <section>
+             <section>
                 <video src="/assets/img/workpage.mp4" width="100%" class="coming-img mt-2" autoplay muted loop
                     playsinline></video>
-            </section>  -->
-        <section class="section-portfolio my-5">
+            </section>
+        <!-- <section class="section-portfolio my-5">
                 <div class="container">
                     <div class="row">
                         <div v-for="work in works" :key="work.id" class="col-lg-4 col-md-6">
@@ -82,7 +82,7 @@
                         
                     </div>
                 </div>
-            </section>  
+            </section>   -->
 
             <!-- <section class="menu">
                 <ul class="menu-contents mycontents-wide">
