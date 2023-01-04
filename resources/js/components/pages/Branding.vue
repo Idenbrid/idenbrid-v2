@@ -573,6 +573,7 @@
     color: #fdfdfd;
     display: block;
     font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     letter-spacing: .1em;
     padding: 22px 0;
@@ -592,6 +593,7 @@
     letter-spacing: 0.5px;
     line-height: 1.2;
     padding-bottom: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
 }
     .quote-us{
@@ -607,6 +609,7 @@
     .quote-us span {
     font-size: 22px;
     color: #ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     word-spacing: 4px;
 }
@@ -621,6 +624,7 @@
     cursor: pointer;
     display: block;
     font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     letter-spacing: .1em;
     margin-left: 8px; 
@@ -909,6 +913,7 @@
         position: absolute;
         color: #000;
         font-size: 1.6rem;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
     }
 
@@ -948,6 +953,7 @@
 
     .company_nav.branding_nav .company_nav_list li a {
         font-size: 1.4rem;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
     }
 
@@ -1099,6 +1105,7 @@
         display: block;
         margin-bottom: 12px;
         font-size: 2.2rem;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         color: #000;
     }
@@ -1151,8 +1158,8 @@
         letter-spacing: 0.12em;
         text-align: left;
         margin-bottom: 45px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 600;
-        font-family: NotoSansJP-Bold;
     }
 
     @media screen and (max-width: 896px) {
@@ -1168,7 +1175,7 @@
         letter-spacing: 0.04px;
         color: #fff;
         text-align: left;
-        font-family: NotoSansJP-Regular;
+        font-family: 'Noto Sans JP', sans-serif;
     }
 
     .branding--mv .text_area .download {
@@ -1181,8 +1188,8 @@
         padding: 22px 0;
         border: 1px solid #fdfdfd;
         transition: 0.4s;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
-        font-family: NotoSansJP-Medium;
     }
 
     @media screen and (min-width: 897px) {
@@ -1241,7 +1248,7 @@
         font-size: 26px;
         /* margin-top: 23px; */
         letter-spacing: 0.08px;
-        font-family: NotoSansJP-Bold;
+        font-family: 'Noto Sans JP', sans-serif;
     }
 
     @media screen and (max-width: 896px) {
@@ -1268,6 +1275,7 @@
     .branding--service--inner .head .lead {
         width: 50%;
         font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         color: #333;
         line-height: 2.1;
@@ -1359,7 +1367,7 @@
         color: #333333;
         letter-spacing: 0.04px;
         font-size: 20px;
-        font-family: NotoSansJP-Medium;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
     }
 
@@ -1375,7 +1383,7 @@
         font-size: 13px;
         letter-spacing: 0.04px;
         background-color: #222;
-        font-family: NotoSansJP-Regular;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
 
     }
@@ -1393,7 +1401,7 @@
         color: #333333;
         font-size: 14px;
         line-height: 1.8;
-        font-family: NotoSansJP-Regular;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
     }
 
@@ -1516,7 +1524,7 @@
     .branding--strengths .heading h3 {
         color: #000;
         font-size: 20px;
-        font-family: NotoSansJP-Bold;
+        font-family: 'Noto Sans JP', sans-serif;
         /* margin-top: 23px; */
         letter-spacing: 0.08em;
         font-weight: 700;
@@ -1567,7 +1575,7 @@
     @media screen and (min-width: 897px) {
         .branding--strengths--content .textarea h4 {
             font-size: 24px;
-            font-family: NotoSansJP-Bold;
+            font-family: 'Noto Sans JP', sans-serif;
             font-weight: 700; }
     }
 
@@ -1582,7 +1590,7 @@
         font-size: 14px;
         line-height: 2;
         letter-spacing: 0.04px;
-        font-family: NotoSansJP-Regular;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         color: #868686;
     }
@@ -1660,6 +1668,7 @@
     .branding--result--item h4 {
         position: relative;
         font-size: 1.8rem;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         letter-spacing: 0.06em;
         text-align: center;
@@ -1806,6 +1815,7 @@
 
     .branding--compare--table table tr th {
         color: #000;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 600;
         background-color: #e2e2e2;
         vertical-align: middle;
@@ -1819,6 +1829,7 @@
     .branding--compare--table table tr td .marks {
         display: block;
         font-size: 4rem;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 600;
     }
 
@@ -2009,6 +2020,7 @@
         text-align: left;
         margin-bottom: 20px;
         line-height: 1.5;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 600;
     }
 
@@ -2088,6 +2100,7 @@
         letter-spacing: 0.1em;
         line-height: 1.85;
         color: #dadada;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 600;
     }
 
@@ -2131,6 +2144,7 @@
         margin: 50px auto 0;
         border: 1px solid #fdfdfd;
         font-size: 16px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         letter-spacing: 0.1em;
         color: #fdfdfd;
@@ -2570,6 +2584,7 @@
         margin-top: 10px;
         font-size: 1.4rem;
         line-height: 1.8;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         letter-spacing: 0.06em;
         color: #000;
@@ -2654,6 +2669,7 @@
 
     .branding--baselayout .phrase {
         font-size: 2.4rem;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 600;
         line-height: 1.58;
         color: #dadada;
@@ -2986,6 +3002,7 @@
     .service-contents__list__text {
         margin: 0 30px;
         padding-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
@@ -3153,6 +3170,7 @@
     .product-contents__list__text {
         margin: 0 30px;
         padding-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;

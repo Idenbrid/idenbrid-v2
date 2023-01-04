@@ -267,8 +267,8 @@
         color: #000;
         font-size: 18px;
         letter-spacing: 0.12px;
-        font-family: NotoSansJP-Bold;
-        font-weight: bold;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
     }
 
     .company--item .company_ttl span {
@@ -327,6 +327,7 @@
     .link-haeding h6 {
         font-size: 17px;
         color: #231815;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         margin-bottom: 20px;
     }

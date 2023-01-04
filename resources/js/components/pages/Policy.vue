@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="col-md-6 policy-img">
-          <img src="/assets/img/policy.png" alt="" loading="lazy">
+          <img src="/assets/img/policy.png" alt="Policy image" loading="lazy">
         </div>
       </div>
     </section>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/update.png" alt="img" loading="lazy"/>
+                    <img src="/assets/img/update.png" alt="Update image" loading="lazy"/>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/2.png" alt="" loading="lazy"/>
+                    <img src="/assets/img/2.png" alt="About image" loading="lazy"/>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/3.png" alt="" loading="lazy"/>
+                    <img src="/assets/img/3.png" alt="About image" loading="lazy"/>
                   </div>
                 </div>
               </div>
@@ -254,6 +254,7 @@
 <style>
 .branding--contact h3 {
     color: #dadada;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 600;
     letter-spacing: .1em;
     line-height: 1.85;
@@ -921,7 +922,6 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     font-size: 20px;
-    font-weight: 700;
     font-style: normal;
     Color: #fff;
     line-height: 20px;
@@ -999,7 +999,7 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     margin-top: 22px;
-    font-weight: 700;
+  
   }
 
   .slider-img-about h2 {
@@ -1067,6 +1067,7 @@
     width: 100%;
     top: 0%;
     font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 600;
     color: #fff;
   }

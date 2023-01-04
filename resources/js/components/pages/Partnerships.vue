@@ -24,7 +24,7 @@
                         <div class="value__contets__list__head">
                             <p class="value__contets__list__head__title">関係構築</p>
                             <img class="value__contets__list__head__img"
-                                src="/public/assets/img/icons/recruit-value-arrow.svg" alt="" loading="lazy">
+                                src="/public/assets/img/icons/recruit-value-arrow.svg" loading="lazy" alt="img" />
                         </div>
                         どの業界でもお客様とベンダーのリレーション構築は大変重要です。私たちがお受けする仕事は業界やお仕事を理解していないとできないこともありますので、まずはお客様を知るという基本をきちんと徹底させて頂き必要とされていることに最適なソルーション提供をできる関係構築に力を入れています。
                     </li>
@@ -32,7 +32,7 @@
                         <div class="value__contets__list__head">
                             <p class="value__contets__list__head__title">事業成長</p>
                             <img class="value__contets__list__head__img"
-                                src="/public/assets/img/icons/recruit-value-up.svg" alt="" loading="lazy">
+                                src="/public/assets/img/icons/recruit-value-up.svg" loading="lazy" alt="img" />
                         </div>
                         システムの開発は短期で開発して終わりではなく、お客様と長きに渡りご一緒する必要のある各事業のコアな部分に携わっていることが多くあります。そのため継続してご一緒するお客様のビジネスグロースの力になれるようアイデンブリッド社はITを通じた成長戦略への貢献を確認します。
                     </li>
@@ -40,7 +40,7 @@
                         <div class="value__contets__list__head">
                             <p class="value__contets__list__head__title">情報共有</p>
                             <img class="value__contets__list__head__img"
-                                src="/public/assets/img/icons/recruit-value-message.svg" alt="" loading="lazy">
+                                src="/public/assets/img/icons/recruit-value-message.svg" loading="lazy" alt="img" />
                         </div>
                         お客様に正しい判断をして頂くためには、それに必要なデータや話し合う環境が重要です。そのため当社ではお客様を大切な事業における戦略パートナーと認識し、意思決定するために必要なテーマを数値などの客観的データに基づいてきちんと情報共有して参ります。
                     </li>
@@ -56,25 +56,25 @@
                 <div class="swiper office_view_slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide__list"> <img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-01.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-01.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list"><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-02.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-02.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list"><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-03.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-03.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list"><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-04.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-04.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list "><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-05.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-05.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list"><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-06.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-06.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list"><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-07.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-07.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list"><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-08.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-08.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list"><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-09.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-09.jpg" alt="Office image" loading="lazy"></div>
                         <div class="swiper-slide slide__list"><img class="value__contets__list__head__img"
-                                src="/public/assets/img/office-img/Image-10.jpg" alt="" loading="lazy"></div>
+                                src="/public/assets/img/office-img/Image-10.jpg" alt="Office image" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -89,48 +89,48 @@
 
                 <ul class="system-sec__contents ">
                     <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where01.svg" alt=""
-                            loading="lazy">
+                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where01.svg"
+                           loading="lazy" alt="img" />
                         <h3 class="system-sec__list__title">低価格高品質</h3>
                         <p class="system-sec__list__text">
                             当社では案件によっては新規人材をその場で確保することもできるほど、人材獲得に強みを持っており、かつ社内のエンジニア育成環境も整っています。また日本に在籍する上場企業出身技術集団がそこのサポートに入っており、安心してお任せ頂けます。。
                         </p>
                     </li>
                     <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where02.svg" alt=""
-                            loading="lazy">
+                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where02.svg"
+                           loading="lazy" alt="img" />
                         <h3 class="system-sec__list__title">顧客サービスの徹底</h3>
                         <p class="system-sec__list__text">
                             オフショア開発でもっと難題となるのは言語の壁です。当社では英語圏クライアントは直接開発拠点Hubのスタッフとのやりとりをしておりますが、日本の企業様相手では当社の日本人担当者しかフロントに立ちませんので顧客サービスは他社と徹底的に差別化を図っています。
                         </p>
                     </li>
                     <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where03.svg" alt=""
-                            loading="lazy">
+                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where03.svg"
+                           loading="lazy" alt="img" />
                         <h3 class="system-sec__list__title">IT人材拡大</h3>
                         <p class="system-sec__list__text">
                             当社ではお客様によって急に大きな人月工数を増やさざるを得ないほど大規模プロジェクトになってもその人材拡大に対応させて頂きます。まずはスモールスタートをさせ、小さく成功したら拡大したいというビジネスモデルへの理解はございます。お客様のニーズに合わせてリソースをマネジメントさせて頂きます。
                         </p>
                     </li>
                     <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where04.svg" alt=""
-                            loading="lazy">
+                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where04.svg"
+                           loading="lazy" alt="img" />
                         <h3 class="system-sec__list__title">最新技術探求</h3>
                         <p class="system-sec__list__text">
                             当社では日本において常に世界の最新技術に目を向けて仕事をしています。どうしても受託開発のみをしているとお客様の求められることのみをこなすことになりがちですが、当社ではきちんとITに強くないお客様にも必要な提案ができるよう日々最新技術やトレンドを会社としてアップデートしています。
                         </p>
                     </li>
                     <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where05.svg" alt=""
-                            loading="lazy">
+                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where05.svg"
+                           loading="lazy" alt="img" />
                         <h3 class="system-sec__list__title">契約体系</h3>
                         <p class="system-sec__list__text">
                             各お客様によってどのように契約をされたいか、また予算の上限など様々な条件があります。当社では受託開発型契約以外にラボ型契約をご用意しております。また予算上限が決まっているプロジェクトではその予算内で最大何ができるのかをしっかり提案させて頂きます
                         </p>
                     </li>
                     <li class="system-sec__list">
-                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where06.svg" alt=""
-                            loading="lazy">
+                        <img class="system-sec__list__thumbnail" src="/public/assets/img/icons/where06.svg"
+                           loading="lazy" alt="img" />
                         <h3 class="system-sec__list__title">ビジネス理解</h3>
                         <p class="system-sec__list__text">
                             当社ではシステムの設計をITという観点のみで行うのではなく、このシステムが完成したらどのようにお客様が運用されるのか、日々オペレーションに落とされるのかなどビジネス理解を徹底することにより、より使い勝手の良いサービス構築を目指しています。
@@ -407,6 +407,7 @@
         padding: 100px 20px 20px 20px;
         background: #F6F6F6;
         border-radius: 10px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
@@ -745,6 +746,7 @@
         position: relative;
         width: 300px;
         height: 60px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 60px;
@@ -813,6 +815,7 @@
 
     .entry__text {
         padding: 60px 100px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;

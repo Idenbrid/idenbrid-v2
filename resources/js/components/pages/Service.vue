@@ -20,7 +20,7 @@
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_01.png" alt="" loading="lazy">
+                                        src="/public/assets/img/solution/Solution_Img_01.png" alt="Service content image" loading="lazy">
                                 </div>
                                 <p class="service-contents__list__subtitle">Mobile app development</p>
                                 <h4 class="service-contents__list__title"> スマホiOS/Androidアプリ開発</h4>
@@ -35,7 +35,7 @@
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_02.png" alt="" loading="lazy">
+                                        src="/public/assets/img/solution/Solution_Img_02.png" alt="Service content image" loading="lazy">
                                 </div>
                                 <p class="service-contents__list__subtitle">Software development</p>
                                 <h4 class="service-contents__list__title">ウェブシステム開発</h4>
@@ -50,7 +50,7 @@
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_03.png" alt="" loading="lazy">
+                                        src="/public/assets/img/solution/Solution_Img_03.png" alt="Service content image" loading="lazy">
                                 </div>
                                 <p class="service-contents__list__subtitle">Off-shore Labo Development</p>
                                 <h4 class="service-contents__list__title">ラボ型オフショア開発</h4>
@@ -65,7 +65,7 @@
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_04.png" alt="" loading="lazy">
+                                        src="/public/assets/img/solution/Solution_Img_04.png" alt="Service content image" loading="lazy">
                                 </div>
                                 <p class="service-contents__list__subtitle">Web design / UIUX design</p>
                                 <h4 class="service-contents__list__title">UIUXデザイン制作</h4>
@@ -241,6 +241,7 @@
     .service-contents__list__text {
         margin: 0 30px;
         padding-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
@@ -408,6 +409,7 @@
     .product-contents__list__text {
         margin: 0 30px;
         padding-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;

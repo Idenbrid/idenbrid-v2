@@ -283,12 +283,14 @@ padding: 80px 10% 50px;
 
     .recruit .recruit_fix ul li a .label {
         font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
     }
 
     .recruit--contactarea--bnr.entryarea li .label {
         font-size: 12px;
-        font-family: NotoSansJP-Medium;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
         letter-spacing: 0.05em;
         text-align: center;
     }
@@ -304,7 +306,8 @@ padding: 80px 10% 50px;
         font-size: 16px;
         transition: 0.6s ease;
         font-weight: bold;
-        font-family: NotoSansJP-Bold;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
     }
 
     @media screen and (min-width: 897px) {
@@ -441,8 +444,8 @@ padding: 80px 10% 50px;
         transition: 0.6s;
         opacity: 1;
         color: #dadada;
-        font-weight: bold;
-        font-family: NotoSansJP-Bold;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
     }
 
     @media screen and (min-width: 897px) {
@@ -467,7 +470,7 @@ padding: 80px 10% 50px;
         letter-spacing: 0.12em;
         line-height: 2;
         font-size: 16px;
-        font-family: NotoSansJP-Regular;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
         color: #dadada;
     }
@@ -597,6 +600,7 @@ padding: 80px 10% 50px;
 
     .recruit .recruit_fix ul li a .label {
         font-size: 1.2rem;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
     }
 
@@ -705,10 +709,10 @@ padding: 80px 10% 50px;
     .recruit--person--item h4 .department {
         display: block;
         font-size: 16px;
+        font-family: "Noto Sans JP", sans-serif;
         font-weight: 700;
         letter-spacing: 0.1em;
         margin-bottom: 0px;
-        font-family: "Noto Sans JP", sans-serif;
         color: #000;
         line-height: 16px;
     }

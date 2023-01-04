@@ -17,7 +17,7 @@
                             <router-link :to="'/news/detail/'+detail.id+'/'" class="topic--content--item">
                                 
                                 <div class="img_box">
-                                    <img :src="'http://admin.idenbrid.jp/public/storage/news/'+detail.image" alt="">
+                                    <img :src="'http://admin.idenbrid.jp/public/storage/news/'+detail.image" alt="News image">
                                 </div>
                                 <div class="text_area">
                                     <div class="topicinfo">
@@ -502,6 +502,7 @@
     }
 
     .topic--content--item .text_area .topicinfo .time {
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         margin-right: 10px;
 
@@ -526,6 +527,7 @@
     @media screen and (min-width: 897px) {
         .topic--content--item .text_area h3 {
             font-size: 18px;
+            font-family: 'Noto Sans JP', sans-serif;
             font-weight: 700;
         }
     }
@@ -654,6 +656,7 @@
         transition: .8s;
         opacity: 1;
         margin-top: 30px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         line-height: 1.3;
         letter-spacing: 0.08em

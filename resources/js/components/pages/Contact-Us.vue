@@ -638,6 +638,7 @@
     left: -76px;
     background: #333333;
     border-radius: 3px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 28px;
@@ -655,6 +656,7 @@
 
   .privacy-check {
     text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -919,6 +921,7 @@
   .year p {
     display: inline-block;
     line-height: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
@@ -1157,6 +1160,7 @@
   }
 
   .formHeading label {
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     margin-bottom: 0;
     font-size: 12px;

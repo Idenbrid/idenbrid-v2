@@ -27,31 +27,31 @@
                 <div class="swiper mySwiper-main">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/img/officeand-access.png" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="Office access image">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/img/officeand-access.png" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="Office access image">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/img/officeand-access.png" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="Office access image">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/img/officeand-access.png" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="Office access image">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/img/officeand-access.png" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="Office access image">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/img/officeand-access.png" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="Office access image">
                             <p>エントランス / アプローチ</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/img/officeand-access.png" alt="">
+                            <img src="/assets/img/officeand-access.png" alt="Office access image">
                             <p>エントランス / アプローチ</p>
                         </div>
 
@@ -91,28 +91,28 @@
                 <div class="menu-box">
                     <div class="item">
 
-                        <router-link to="/company/" class="text"><img src="/assets/img/icons/Person-icon.svg">会社概要
+                        <router-link to="/company/" class="text"><img src="/assets/img/icons/Person-icon.svg" alt="img" />会社概要
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">代表メッセージ
+                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg" alt="img" />代表メッセージ
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス＆アクセス
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg" alt="img" />オフィス＆アクセス
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">メンバー
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg" alt="img" />メンバー
                         </router-link>
                     </div>
                     <div class="item">
 
                         <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>
+                                src="/assets/img/icons/Digital-Assets.svg" alt="img" />デジタルアセット</router-link>
                     </div>
                 </div>
 
@@ -205,8 +205,8 @@
         font-size: 26px;
         letter-spacing: 0.16px;
         line-height: 1.4;
-        font-weight: bold;
-        font-family: NotoSansJP-Bold;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
     }
 
     .lead_area .lead_inner .lead_ttl span {
@@ -222,10 +222,10 @@
         width: 50%;
         color: #000;
         font-size: 16px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         letter-spacing: 0.06em;
         line-height: 32.2px;
-        font-family: NotoSansJP-Regular;
     }
 
 
@@ -259,12 +259,14 @@
     .office-button-prev:after {
 
         font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
     }
 
     .office-button-next:after {
 
         font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
     }
 
