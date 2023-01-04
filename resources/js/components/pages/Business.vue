@@ -28,7 +28,7 @@
                                 <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
                                 </div>
                                 <div class="scaleImg"><img
-                                        src="/assets/img/business-sdh.png" alt="">
+                                        src="/assets/img/business-sdh.png" alt="Business image">
                                 </div>
                             </div>
                             <h4>
@@ -48,7 +48,7 @@
                                 <div class="hvrtxt en"><span class="more_txt"><span class="underline">MORE</span></span>
                                 </div>
                                 <div class="scaleImg"><img
-                                        src="/assets/img/business-ses.png" alt="">
+                                        src="/assets/img/business-ses.png" alt="Business image">
                                 </div>
                             </div>
                             <h4>

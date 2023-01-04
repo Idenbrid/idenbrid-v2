@@ -48,7 +48,7 @@
                                 東京都町田市出身。青山学院大学法学部卒業。菓子製造販売会社を起業し、企業経営戦略、販売・ロジスティック、マーケティング事業を経てIDENBRID社を創業。社内では自社事業プロデュース及び日本を含む海外企業営業統括、エンジニアの現場管理を担当
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Souga Nakamura.png" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Souga Nakamura.png" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle mt-4">Souga Nakamura</p>
                         <h4 class="member__list__title">中村奏画</h4>
@@ -61,7 +61,7 @@
                                 静岡県沼津市出身。東京都市大学卒。マッチング事業サービス売却後、日立製作所でエンタープライズシステムの構築に携わり、ソフトバンクにてデータを用いた事業企画/戦略/エンジニアリングを経験。その後、IDENBRID社を共同創業し、技術の最高責任者を務める。。
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/ASKA.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/ASKA.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Aska Ikeda</p>
                         <h4 class="member__list__title">池田飛鳥</h4>
@@ -74,7 +74,7 @@
                                 愛知県名古屋市出身。情報系の大学を卒業後、SIerを渡り歩きながら経験を積む。WEBシステム開発を中心に、大規模ECサイト、官庁系システム、基礎研究開発など大小さまざまなプロジェクトにリーダおよびテックリードエンジニアとして参画。その後、ソフトバンク株式会社にてDataLake基盤のクラウドアーキテクト責任者として従事。当社ではフルスタックシニアエンジニアとして活躍。
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Jpnes-2.png" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Jpnes-2.png" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Ken Suzuki</p>
                         <h4 class="member__list__title">鈴木健二朗</h4>
@@ -89,7 +89,7 @@
                                 茨城県取手市出身。インターネットがあれば大学は要らないと医学部進学を蹴り、某大手通信企業にて法人営業全国トップの成績を納め、移動体通信会社を創業。ビジネスモデル図解の研究・社会貢献活動の推進・デザイン経営及びスクラム開発領域などを担当するエクゼクティブITビジネスディベロッパーとして活躍。
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Untitled-1.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Untitled-1.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Yuko Ebihara</p>
                         <h4 class="member__list__title">蛯原侑子</h4>
@@ -103,7 +103,7 @@
                             </p>
 
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/japnese.png" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/japnese.png" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Takahiro Nishimura</p>
                         <h4 class="member__list__title">西村 崇宏</h4>
@@ -116,7 +116,7 @@
                                 パンジャブ州ラホール出身。Garrison大学コンピューターサイエンス学部卒業。Python及びPHPを用いたバックエンドのシステム開発を経て、当社に入社。現在は工程管理マネジメントや本社人材管理そしてビジネスグロース責任者を務める。
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Mujtaba.png" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Mujtaba.png" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Mujtaba Tariq</p>
                         <h4 class="member__list__title">ムチュタバ タリック</h4>
@@ -132,7 +132,7 @@
                                 Technologyにてフルスタックエンジニアとしてインストラクターとして勤務。当社ではフロントエンドエンジニアのリードとして、そして技術部門の責任者としてオペレーショナルマネージャーとして活躍。
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Ahamed.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Ahamed.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Muhammad Ahmad</p>
                         <h4 class="member__list__title">ムハンマド アハマッド</h4>
@@ -146,7 +146,7 @@
                                 World社にてHR部門の管理者としてチームをまとめあげていました。2022年当社入社後は主にIT人材採用のプロフェッショナルとして活躍しています。
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Syeda-Rija-Hasnain.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Syeda-Rija-Hasnain.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Syeda Rijah Husnain</p>
                         <h4 class="member__list__title">セイダ リジャ ハスネン</h4>
@@ -160,7 +160,7 @@
                                 パンジャブ州ハルーンアバード出身。パンジャブ大学の植物学の修士課程を卒業。前職では英語及び植物学の助教授として働き、当社のIdenSpireにSNS管理及びビジネスオペレーターとして入社。現在は主に英語圏企業を相手にビジネスエグゼクティブとして活躍。
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/bushra.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/bushra.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Bushra Riaz</p>
                         <h4 class="member__list__title">ブシュラ リアーズ</h4>
@@ -176,7 +176,7 @@
                                 その後、彼はCorePHPのフロントエンドエンジニアおよびフルスタックエンジニアとして私たちに加わりました。
                                 彼は現在、プラグイン開発とVueJS開発プロジェクトを担当しています。</p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/kashif.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/kashif.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Kashif Zia</p>
                         <h4 class="member__list__title">カシフ ジア</h4>
@@ -189,7 +189,7 @@
                                 IDENBRIDINC。に参加。Laravel+Vuejs開発者としてクライアントおよび社内プロジェクトに取り組んでいます。
                                 また、開発スキルを通じて海外のクライアントに付加価値を提供します。</p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/hamza.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/hamza.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Hamza Malik</p>
                         <h4 class="member__list__title">ハムザ　マリック</h4>
@@ -202,7 +202,7 @@
                                 Soft社にてバックエンドエンジニアとして勤務。その後当社にLaravel及びVue
                                 JSのフルスタックエンジニアして入社。現在バックエンドリード職として多くの顧客案件にて開発を担当。</p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Abdul-Samad.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/Abdul-Samad.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Abdul Samad</p>
                         <h4 class="member__list__title">アブドォル サマッド</h4>
@@ -217,7 +217,7 @@
                                 パンジャブ州ラホール出身。当社入社前までフリーランスとして多くの企業のコンテンツライティング・ライティングコンサルタントとして活動。当社ではコンテンツ生成のみでなく、内容調査や論理展開の設定なども行うコンテンツライターとして活躍。
                             </p>
                         </div>
-                        <img class="member__list__thumbnail" src="/public/assets/img/Team/faizan-haider.jpg" alt=""
+                        <img class="member__list__thumbnail" src="/public/assets/img/Team/faizan-haider.jpg" alt="Team member image"
                             loading="lazy">
                         <p class="member__list__subtitle">Faizan Haider</p>
                         <h4 class="member__list__title">フェザン ヘイダ</h4>

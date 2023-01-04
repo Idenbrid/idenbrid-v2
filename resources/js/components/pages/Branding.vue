@@ -88,7 +88,7 @@
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_01.png" alt="" loading="lazy">
+                                        src="/public/assets/img/solution/Solution_Img_01.png" alt="Service contents image" loading="lazy">
                                 </div>
                                 <p class="service-contents__list__subtitle">Mobile app development</p>
                                 <h4 class="service-contents__list__title"> スマホiOS/Androidアプリ開発</h4>
@@ -103,7 +103,7 @@
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_02.png" alt="" loading="lazy">
+                                        src="/public/assets/img/solution/Solution_Img_02.png" alt="Service contents image" loading="lazy">
                                 </div>
                                 <p class="service-contents__list__subtitle">Software development</p>
                                 <h4 class="service-contents__list__title">ウェブシステム開発</h4>
@@ -118,7 +118,7 @@
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_03.png" alt="" loading="lazy">
+                                        src="/public/assets/img/solution/Solution_Img_03.png" alt="Service contents image" loading="lazy">
                                 </div>
                                 <p class="service-contents__list__subtitle">Off-shore Labo Development</p>
                                 <h4 class="service-contents__list__title">ラボ型オフショア開発</h4>
@@ -133,7 +133,7 @@
                             <div class="service-items">
                                 <div class="service-contents__list__thumbnail-frame">
                                     <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_04.png" alt="" loading="lazy">
+                                        src="/public/assets/img/solution/Solution_Img_04.png" alt="Service contents image" loading="lazy">
                                 </div>
                                 <p class="service-contents__list__subtitle">Web design / UIUX design</p>
                                 <h4 class="service-contents__list__title">UIUXデザイン制作</h4>
@@ -163,56 +163,56 @@
                     <div class="branding--result--list">
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result01.svg" alt="">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result01.svg" alt="Branding image">
                             </div>
                             <h4 class="fade_y on">お客様のご希望を実現</h4>
                             <p class="fade_y on">クライアントが作りたいもの、困っていることにフォーカスし、ご要望をITにて叶えます</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result02.svg" alt="">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result02.svg" alt="Branding image">
                             </div>
                             <h4 class="fade_y on">コストパフォーマンスの高い開発</h4>
                             <p class="fade_y on">お客さまが価格以上の価値を実感していただくとともに、他社との比較においても費用対効果の高い仕事をします</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result03.svg" alt="">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result03.svg" alt="Branding image">
                             </div>
                             <h4 class="fade_y on">ビジネスのグロースに並走</h4>
                             <p class="fade_y on">お客様の成長をITという側面よりともに支える存在としてご一緒に走ります</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result04.svg" alt="">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result04.svg" alt="Branding image">
                             </div>
                             <h4 class="fade_y on">カスタマーサクセス</h4>
                             <p class="fade_y on">クライアントのアラートをすぐに察知できるよう常にお客様担当が寄り添って開発を進めます</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result05.svg" alt="">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result05.svg" alt="Branding image">
                             </div>
                             <h4 class="fade_y on">タイムマネジメントの徹底</h4>
                             <p class="fade_y on">各タスクごと、チームごとの時間管理をツールを使って徹底しています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result06.svg" alt="">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result06.svg" alt="Branding image">
                             </div>
                             <h4 class="fade_y on">作業効率の改善</h4>
                             <p class="fade_y on">コミュニケーションプラットフォームや自社システムにおいて仕事の効率化を図っています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result07.svg" alt="">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result07.svg" alt="Branding image">
                             </div>
                             <h4 class="fade_y on">クライアントとのリレーションの構築</h4>
                             <p class="fade_y on">プロダクトファーストではなく、あくまでお客様ファーストの精神でお客様との関係構築を大切にしています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result08.svg" alt="">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result08.svg" alt="Branding image">
                             </div>
                             <h4 class="fade_y on">マーケットへのインパクトをともに</h4>
                             <p class="fade_y on">一つひとつのプロジェクトがマーケットにインパクトを与えられるよう真剣に向き合って仕事します</p>

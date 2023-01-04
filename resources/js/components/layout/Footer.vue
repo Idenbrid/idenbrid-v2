@@ -80,38 +80,38 @@
           <div class="footer-menu">
             <div class="foot-menu-group">
               <h4>
-          
+
                 <router-link to="/blog/">ブログ</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-          
+
                 <router-link to="/policy/">経営理念</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
                 <router-link to="/business/" class="">事業紹介</router-link>
-         
+
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-          
+
                 <router-link to="/works/">仕事実績</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-          
+
                 <router-link to="/about/">会社情報</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
                 <router-link to="/news/" class="">お知らせ</router-link>
-            
+
               </h4>
             </div>
           </div>

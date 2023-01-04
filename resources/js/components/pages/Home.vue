@@ -55,8 +55,8 @@
                                 </div>
                             </div>
                             <div class="large-5 small-12">
-                                <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="" loading="lazy">
-                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO Person.png" alt="" loading="lazy">
+                                <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="CEO-image" loading="lazy">
+                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO Person.png" alt="CEO-image" loading="lazy">
                                 <!-- <img class="c-message__img ceo-mbl" src="/assets/img/CEO-Person-mbl.png" alt=""> -->
                             </div>
                             <div class="c-message__button u-hidden-lg">
@@ -73,7 +73,8 @@
                 <div class="service-row  my-5">
                     <div class="service-col">
 
-                        <h2 class="service_h2"><img src="/assets/img/icons/SHD.png" class="image-icon" >SDH：スタジオ開発ハブ
+                        <h2 class="service_h2">
+                            <img src="/assets/img/icons/SHD.png" class="image-icon" alt="Service-image" >SDH：スタジオ開発ハブ
                         </h2>
                         <p class="service-p">
                             スタジオ開発ハブは、日本企業またグローバル企業とのIT受託開発。そして一般的なオフショア開発にあたるパキスタンエンジニア人材を人月ベースでご提供致します。
@@ -82,7 +83,7 @@
                             More</router-link>
                     </div>
                     <div class="service-col">
-                        <img alt="" src="/assets/img/sdh.png" class="" width="100%">
+                        <img alt="Service-image" src="/assets/img/sdh.png" class="" width="100%" >
                     </div>
                 </div>
                 <div class="service-row my-5">
@@ -90,7 +91,7 @@
                         <img alt="" src="/assets/img/ses.png" class="" width="100%">
                     </div>
                     <div class="service-col">
-                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon">SES：エンジニアスタイル
+                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon" alt="Service-image">SES：エンジニアスタイル
                         </h2>
                         <p class="service-p">
                             当社のエンジニアスタイルというのは、エンジニア採用支援サービスを指し、SESサービスのように社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
@@ -122,7 +123,7 @@
                     <div class="new-listing new" v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 5">
                         <router-link :to="'/news/detail/'+detail.id+'/'" class="new-link new">
                             <div class="img_box">
-                                <img :src="'http://admin.idenbrid.jp/public/storage/news/'+detail.image" alt=""></div>
+                                <img :src="'http://admin.idenbrid.jp/public/storage/news/'+detail.image" alt="News-image"></div>
                             <div class="new-item new">
                                 <div class="new-meta">
                                     <p class="text new mr-2 mt-0 new-date">
@@ -239,7 +240,7 @@
                         <router-link :to="'/blog/detail/'+blog.id+'/'">
                             <p class="blog-contents__list__tags"><span>BLOG</span></p>
                             <img class="blog-contents__list__thumbnail"
-                                :src="'http://admin.idenbrid.jp/public/storage/blog_images/'+blog.image" alt=""
+                                :src="'http://admin.idenbrid.jp/public/storage/blog_images/'+blog.image" alt="Blog-image"
                                 loading="lazy">
                             <p class="blog-contents__list__title">{{blog.title}}</p>
                             <p class="blog-contents__list__date">{{blog.date}}</p>

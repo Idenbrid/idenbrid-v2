@@ -27,31 +27,31 @@
                             <h5>Key Visual / キュービジュアル</h5>
                             <p> 当社のブランド・サービスを表現しているアセットになります。</p>
                             <div class="kit"><a href="/assets/img/main-banner-2.png" download="image" rel="noopener">
-                                    <img src="/public/assets/img/main-banner-2.png" alt="" />
+                                    <img src="/public/assets/img/main-banner-2.png" alt="Digital assets Banner image" />
                                 </a>
                             </div>
                             <div class="kit"><a href="/assets/img/key-visual-2.png" download="image" rel="noopener">
-                                    <img src="/public/assets/img/key-visual-2.png" alt="" />
+                                    <img src="/public/assets/img/key-visual-2.png" alt="Digital assets key visual image" />
                                 </a>
                             </div>
                             <div class="kit"><a href="/assets/img/key-visual-3.png" download="image" rel="noopener">
-                                    <img src="/public/assets/img/key-visual-3.png" alt="" />
+                                    <img src="/public/assets/img/key-visual-3.png" alt="Digital assets key visual image" />
                                 </a>
                             </div>
                             <div class="kit"><a href="/assets/img/key-visual-4.png" download="image" rel="noopener">
-                                    <img src="/public/assets/img/key-visual-4.png" alt="" />
+                                    <img src="/public/assets/img/key-visual-4.png" alt="Digital assets key visual image" />
                                 </a>
                             </div>
                             <div class="kit"><a href="/assets/img/key-visual-5.png" download="image" rel="noopener">
-                                    <img src="/public/assets/img/key-visual-5.png" alt="" />
+                                    <img src="/public/assets/img/key-visual-5.png" alt="Digital assets key visual image" />
                                 </a>
                             </div>
                             <div class="kit"><a href="/assets/img/key-visual-6.png" download="image" rel="noopener">
-                                    <img src="/public/assets/img/key-visual-6.png" alt="" />
+                                    <img src="/public/assets/img/key-visual-6.png" alt="Digital assets key visual image" />
                                 </a>
                             </div>
                             <div class="kit"><a href="/assets/img/key-visual-7.png" download="image" rel="noopener">
-                                    <img src="/public/assets/img/key-visual-7.png" alt="" />
+                                    <img src="/public/assets/img/key-visual-7.png" alt="Digital assets key visual image" />
                                 </a>
                             </div>
                         </div>
@@ -84,8 +84,8 @@
                     </div>
                     <div class="item">
 
-                        <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>
+                        <router-link to="/digitalasset/" class="text">
+                            <img  src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>  
                     </div>
                 </div>
 

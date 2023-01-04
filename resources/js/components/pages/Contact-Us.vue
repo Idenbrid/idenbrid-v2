@@ -337,7 +337,7 @@
                 </div>
               </div>
               <div class="col-md-6 mx-auto">
-                <img src="/assets/img/contact-us.png" width="100%">
+                <img src="/assets/img/contact-us.png" width="100%" alt="Contact us image">
               </div>
             </div>
           </div>

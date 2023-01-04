@@ -35,7 +35,7 @@
                                             <img :src="
                           'http://admin.idenbrid.jp/public/storage/blog_images/' +
                           blog.image
-                        " alt="" loading="lazy"/>
+                        " alt="Blog image" loading="lazy"/>
                                         </div>
                                     </div>
                                     <div class="bloginfo">
@@ -117,7 +117,7 @@
                                         <img width="1200" height="630" :src="
                         'http://admin.idenbrid.jp/public/storage/blog_images/' +
                         blog.image
-                      " class="attachment-full size-full wp-post-image" alt="" loading="lazy" :srcset="
+                      " class="attachment-full size-full wp-post-image" alt="Blog detail image" loading="lazy" :srcset="
                         'http://admin.idenbrid.jp/public/storage/blog_images/' +
                         blog.image
                       " sizes="(max-width: 1200px) 100vw, 1200px" />
