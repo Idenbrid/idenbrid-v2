@@ -338,6 +338,7 @@
 }*/
 
     .single__contents p {
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
@@ -595,6 +596,7 @@
     }
 
     .btns__prev__text {
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;

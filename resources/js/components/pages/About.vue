@@ -382,6 +382,7 @@
         font-size: 1.12rem;
         line-height: 1.7em;
         padding: 1.56rem 0 2.5rem 0;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
     }
 
@@ -390,6 +391,7 @@
         padding-left: 20px;
         font-size: 1.12rem;
         color: var(--basecolor);
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         font-style: normal;
     }

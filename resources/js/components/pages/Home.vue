@@ -559,6 +559,7 @@
         cursor: pointer;
         display: block;
         font-size: 18px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         letter-spacing: .1em;
         margin-left: 8px;
@@ -597,7 +598,7 @@
     .service-p {
         color: #333;
         flex: none;
-        font-family: 'Noto Sans JP';
+        font-family: 'Noto Sans JP', sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -641,8 +642,8 @@
 
     .new-content {
         color: #333;
-        font-family: 'Noto Sans JP';
         font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         letter-spacing: 0.05em;
         line-height: 1.7;
@@ -679,6 +680,7 @@
     .new-date {
         color: #666666;
         font-size: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
     }
 
@@ -862,7 +864,7 @@
             width: 100%;
         }
 
-        `` .ceo-desktop {
+         .ceo-desktop {
             display: none;
         }
 
@@ -900,6 +902,7 @@
 
         .devlop-content-text {
             max-width: inherit;
+            font-family: 'Noto Sans JP', sans-serif;
             font-weight: 500;
             font-size: 13px;
             line-height: 20px;
@@ -1185,6 +1188,7 @@
 
     .about_iden .text {
         letter-spacing: 2px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 600;
         font-size: 16px;
     }
@@ -1333,6 +1337,7 @@
     .service-contents__list__text {
         margin: 0 30px;
         padding-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
@@ -1457,6 +1462,7 @@
     .work-contents__list__tags {
         margin-left: 20px;
         padding-bottom: 1px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
@@ -1668,7 +1674,6 @@
         padding: 0.92857rem 1.71429rem;
         position: relative;
         transition: all .3s;
-        font-weight: 700;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
     }
@@ -1803,7 +1808,6 @@
         padding: 0.92857rem 1.71429rem;
         position: relative;
         transition: all .3s;
-        font-weight: 700;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
     }

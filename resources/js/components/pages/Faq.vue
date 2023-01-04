@@ -242,6 +242,7 @@
 
 <style scoped>
     .top-item .top-title {
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         font-size: 25px;
         line-height: 45px;
@@ -321,6 +322,7 @@
     }
 
     .faq-content .faqs-group .faq-item .faq-title {
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 30px;
@@ -332,6 +334,7 @@
 
     .faq-content .faqs-group .faq-item .faq-title.active {
         color: #1363AB;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 30px;

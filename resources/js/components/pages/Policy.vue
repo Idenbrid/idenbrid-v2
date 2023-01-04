@@ -254,6 +254,7 @@
 <style>
 .branding--contact h3 {
     color: #dadada;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 600;
     letter-spacing: .1em;
     line-height: 1.85;
@@ -921,7 +922,6 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     font-size: 20px;
-    font-weight: 700;
     font-style: normal;
     Color: #fff;
     line-height: 20px;
@@ -999,7 +999,7 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     margin-top: 22px;
-    font-weight: 700;
+  
   }
 
   .slider-img-about h2 {
@@ -1067,6 +1067,7 @@
     width: 100%;
     top: 0%;
     font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 600;
     color: #fff;
   }

@@ -1492,7 +1492,7 @@
     .member--index .member_inner .member_tab_block .member_list .parent_li .text_area .part {
         letter-spacing: 0.04px;
         font-size: 13px;
-        font-family: NotoSansJP-Regular;
+        font-family: 'Noto Sans JP', sans-serif;
         margin-top: 8px;
         font-weight: 400;
         color: black;
@@ -1504,7 +1504,7 @@
         font-size: 14px;
         letter-spacing: .04em;
         cursor: pointer;
-        font-family: NotoSansJP-Medium;
+        font-family: 'Noto Sans JP', sans-serif;
         line-height: 1.4;
         font-weight: 500;
     }

@@ -133,17 +133,17 @@
     .message--index .message_inner .message_box .box .text_area .ttl h3 {
         font-size: 28.8px;
         line-height: 1.9;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 600;
-        font-family: NotoSansJP-Bold;
         margin-bottom: 25px;
     }
 
     .message--index .message_inner .message_box .box .text_area .lead {
         margin-bottom: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-size: 14px;
         font-weight: 500;
         line-height: 2.2;
-        font-family: NotoSansJP-Regular;
         letter-spacing: 0.04em;
         color: #000;
     }
@@ -161,6 +161,7 @@
 
     .message--index .message_inner .message_box .box .text_area .more_txt .underline {
         font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         position: relative;
     }

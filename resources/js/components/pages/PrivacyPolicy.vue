@@ -130,6 +130,7 @@
 
 <style scoped>
     .top-item .top-title {
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         font-size: 25px;
         line-height: 45px;
@@ -163,6 +164,7 @@
 
     .privacy__text {
         margin-bottom: 30px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 25px;

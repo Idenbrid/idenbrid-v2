@@ -241,6 +241,7 @@
     .service-contents__list__text {
         margin: 0 30px;
         padding-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
@@ -408,6 +409,7 @@
     .product-contents__list__text {
         margin: 0 30px;
         padding-bottom: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;

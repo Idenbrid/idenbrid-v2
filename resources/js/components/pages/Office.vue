@@ -205,8 +205,8 @@
         font-size: 26px;
         letter-spacing: 0.16px;
         line-height: 1.4;
-        font-weight: bold;
-        font-family: NotoSansJP-Bold;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
     }
 
     .lead_area .lead_inner .lead_ttl span {
@@ -222,10 +222,10 @@
         width: 50%;
         color: #000;
         font-size: 16px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         letter-spacing: 0.06em;
         line-height: 32.2px;
-        font-family: NotoSansJP-Regular;
     }
 
 
@@ -259,12 +259,14 @@
     .office-button-prev:after {
 
         font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
     }
 
     .office-button-next:after {
 
         font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
     }
 

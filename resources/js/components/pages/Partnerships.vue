@@ -407,6 +407,7 @@
         padding: 100px 20px 20px 20px;
         background: #F6F6F6;
         border-radius: 10px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
@@ -745,6 +746,7 @@
         position: relative;
         width: 300px;
         height: 60px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 60px;
@@ -813,6 +815,7 @@
 
     .entry__text {
         padding: 60px 100px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;

@@ -116,6 +116,7 @@
     .work-contents__list__tags {
         margin-left: 20px;
         padding-bottom: 14px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
@@ -387,11 +388,11 @@
         margin: 20px 0 10px;
         font-size: 16px;
         font-weight: 700;
+        font-family: 'Noto Sans JP', sans-serif;
         letter-spacing: 0.06px;
         color: #000;
         display: inline-block;
         padding-bottom: 3px;
-        font-family: NotoSansJP-Bold;
     }
 
     @media screen and (max-width: 556px) {
@@ -560,6 +561,7 @@
 
     .single-services-box h3 {
         font-size: 25px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         margin-bottom: 15px
     }
@@ -584,6 +586,7 @@
         color: #06a3da;
         padding: 15px 35px;
         font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         transition: .6s;
         border-radius: 5px
@@ -919,6 +922,7 @@
 
     .single-gallery .content h3 {
         font-size: 25px;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
         margin-bottom: 12px;
     }

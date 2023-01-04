@@ -168,7 +168,7 @@
         line-height: 1.7;
         position: relative;
         margin: 0;
-        font-family: NotoSansJP-Regular;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
     }
 
@@ -205,8 +205,8 @@
         font-size: 16px;
         letter-spacing: 0.15em;
         line-height: 1.875;
-        font-weight: bold;
-        font-family: NotoSansJP-Bold;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
     }
 
 
@@ -309,7 +309,7 @@
     .access--index .box .text_area p {
         font-size: 14px;
         line-height: 1.85;
-        font-family: NotoSansJP-Medium;
+        font-family: 'Noto Sans JP', sans-serif;
         letter-spacing: 0.04em;
         color: #000;
         font-weight: 500;
@@ -356,7 +356,6 @@
         text-transform: uppercase;
         position: relative;
         padding-right: 20px;
-        font-family: NotoSansJP-Regular;
     }
 
     .access--index .box .text_area .more_txt::after,

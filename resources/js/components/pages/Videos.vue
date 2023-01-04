@@ -88,6 +88,7 @@ iframe {
     border-radius: 15px;
 }
 h3{
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
 }
 </style>
@@ -148,6 +149,7 @@ h3{
     }
 
     .l-page-header__subtitle {
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         letter-spacing: 0.1em;
         font-size: 14px;
