@@ -17,7 +17,7 @@
                             <router-link :to="'/news/detail/'+detail.id+'/'" class="topic--content--item">
                                 
                                 <div class="img_box">
-                                    <img :src="'http://admin.idenbrid.jp/public/storage/news/'+detail.image" alt="News image">
+                                    <img :src="'https://admin.idenbrid.jp/public/storage/news/'+detail.image" alt="News image">
                                 </div>
                                 <div class="text_area">
                                     <div class="topicinfo">

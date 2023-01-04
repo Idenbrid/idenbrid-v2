@@ -9,7 +9,6 @@
         </div>
       </section>
       <section class="mycontents-wide section-request">
-
         <div class="">
           <div class="contents-section">
             <div class="mb-4 contents-box pr-4">
@@ -46,15 +45,15 @@
         <div class="contact__btns">
           <a class="btn-wide btn-wide_call" href="https://line.me/ti/p/x16bH4B8yd" target="_blank">
             <div class="btn-wide__imgs">
-              <img class="btn-wide__img" src="/public/assets/img/icons/Line-Black.png" alt="" loading="lazy">
-              <img class="btn-wide__img" src="/public/assets/img/icons/Line-white.png" alt="" loading="lazy">
+              <img class="btn-wide__img" src="/public/assets/img/icons/Line-Black.png" alt="img" loading="lazy">
+              <img class="btn-wide__img" src="/public/assets/img/icons/Line-white.png" alt="img" loading="lazy">
             </div>
             <p class="btn-wide__text btn-wide__text_call">会社LINE ID</p>
           </a>
           <a class="btn-wide btn-wide_call" href="mailto:helloworld@idenbrid.com" target="_blank">
             <div class="btn-wide__imgs">
-              <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png " alt="" loading="lazy">
-              <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt="" loading="lazy">
+              <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png " alt="img" loading="lazy">
+              <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt="img" loading="lazy">
             </div>
             <p class="btn-wide__text btn-wide__text_call">
               helloworld@idenbrid.com
@@ -62,8 +61,8 @@
           </a>
           <a class="btn-wide" href="skype:live:.cid.3145b74a3504693c?chat" target="_blank">
             <div class="btn-wide__imgs">
-              <img class="btn-wide__img" src="/public/assets/img/icons/Skype-Black.png" alt="" loading="lazy">
-              <img class="btn-wide__img" src="/public/assets/img/icons/Skype-White.png" alt="" loading="lazy">
+              <img class="btn-wide__img" src="/public/assets/img/icons/Skype-Black.png" alt="img" loading="lazy">
+              <img class="btn-wide__img" src="/public/assets/img/icons/Skype-White.png" alt="img" loading="lazy">
             </div>
             <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
           </a>
