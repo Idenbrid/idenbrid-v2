@@ -718,7 +718,8 @@
   .policy-h {
     display: inline-flex;
     padding: 0px 24px;
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     margin-bottom: 50px;
     color: #fff;
@@ -774,9 +775,9 @@
   }
 
   .policy-title h3 {
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 54px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.4;
     /* color: #000000; */
     color: #000;
@@ -788,8 +789,8 @@
     line-height: 2;
     /* color: #000; */
     color: #000;
-    font-weight: 500;
-    font-family: NotoSansJP-Regular;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
     /* letter-spacing: 0.4px; */
     display: inline-flex;
   }
@@ -822,9 +823,9 @@
   .mission-title span {
     text-align: center;
     color: #000;
-    font-weight: 400;
     font-size: 14px;
-    font-family: NotoSansJP-Regular;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
   }
 
   .policy-title-text {
@@ -853,10 +854,10 @@
   }
 
   .vision-title span {
-    font-family: NotoSansJP-Regular;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
     text-align: center;
     font-size: 14px;
-    font-weight: 400;
     font-style: normal;
     color: #000;
     line-height: 30px;
@@ -879,7 +880,8 @@
   }
 
   .medium-tern-title h2 {
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
     font-size: 22px;
     margin-bottom: 16px;
     font-style: normal;
@@ -889,7 +891,8 @@
 
   .medium-tern-title span {
     font-size: 14px;
-    font-family: NotoSansJP-Regular;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
     font-style: normal;
     Color: #fff;
     line-height: 14px;
@@ -903,7 +906,8 @@
   }
 
   .most-intersting h2 {
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
     font-size: 50px;
     font-style: normal;
     Color: #fff;
@@ -913,7 +917,8 @@
   }
 
   .most-intersting span {
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
     letter-spacing: 0.1em;
     font-size: 20px;
     font-weight: 700;
@@ -966,7 +971,8 @@
 
 
   .swiper-heading h2 {
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans JP', sans-serif;
+
     font-size: 1.4rem;
     margin-bottom: 50px;
     font-weight: 700;
@@ -983,13 +989,15 @@
   .slider-img-title span {
     font-size: 16px;
     color: #fff;
-    font-family: NotoSansJP-Medium;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
   }
 
   .slider-img-title h2 {
     font-size: 30px;
     color: #fff;
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
     margin-top: 22px;
     font-weight: 700;
   }
@@ -997,7 +1005,8 @@
   .slider-img-about h2 {
     font-size: 20px;
     color: #fff;
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
     margin: 67px 0px 30px;
   }
 
@@ -1006,7 +1015,8 @@
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
-    font-family: NotoSansJP-Regular;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
   }
 
   /* swiper next previous buttons  */
@@ -1086,9 +1096,9 @@
   }
 
   .sitemap-title span {
-    font-family: NotoSansJP-Bold;
-    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
+    color: #fff;
     font-size: 14px;
   }
 

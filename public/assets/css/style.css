@@ -18,7 +18,7 @@
     --break-point: 767px
 }
 
-@font-face {
+/* @font-face {
     font-family: NotoSansJP-Regular;
     src: url(../css/fonts/woff/NotoSansJP-Regular.woff)  format('woff');
 }
@@ -27,26 +27,26 @@
     font-family: NotoSansJP-Medium;
     src: url(../css/fonts/woff/NotoSansJP-Medium.woff) format('woff');
 }
-
 @font-face {
     font-family: NotoSansJP-Bold;
     src: url(../css/fonts/woff/NotoSansJP-Bold.woff) format('woff');
 }
 
+
 @font-face {
     font-family: DIN-Regular;
-    src: url(../css/fonts/DIN-Regular.ttf) format('woff');
+    src: url(../css/fonts/DIN-Regular.ttf) format('ttf');
 } 
 
 @font-face {
     font-family: DIN-Medium;
-    src: url(../css/fonts/DIN-Medium.ttf) format('woff');
+    src: url(../css/fonts/DIN-Medium.ttf) format('ttf');
 }
 
 @font-face {
     font-family: DIN-Bold;
-    src: url(../css/fonts/DIN-Bold.ttf) format('woff');
-}
+    src: url(../css/fonts/DIN-Bold.ttf) format('ttf');
+} */
 
 * {
     font-family: var(--myfont);
@@ -290,9 +290,11 @@ p {
 }
 
 .mv_textarea .jptxt {
-    font-family: NotoSansJP-Bold;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 13px;
-    letter-spacing: .08em
+    letter-spacing: .08em;
+    font-weight: 700;
+
 }
 
 .mv_textarea .entxt {
