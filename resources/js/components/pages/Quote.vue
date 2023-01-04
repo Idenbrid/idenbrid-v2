@@ -413,7 +413,7 @@
                             <div class="wrapper">
                                 <!-- <h3>私たちの開発チームは最高の信頼を得ています</h3> -->
                                 <div class="logo-wrapper">
-                                    <div><img src="/assets/img/quoteimage.png" alt="" width="100%"></div>
+                                    <div><img src="/assets/img/quoteimage.png" alt="Quote image" width="100%"></div>
                                 </div>
                             </div>
                         </div><svg version="1.1" width="100%" height="100px" xmlns="http://www.w3.org/2000/svg"

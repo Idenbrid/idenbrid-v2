@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="col-md-6 policy-img">
-          <img src="/assets/img/policy.png" alt="" loading="lazy">
+          <img src="/assets/img/policy.png" alt="Policy image" loading="lazy">
         </div>
       </div>
     </section>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/update.png" alt="img" loading="lazy"/>
+                    <img src="/assets/img/update.png" alt="Update image" loading="lazy"/>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/2.png" alt="" loading="lazy"/>
+                    <img src="/assets/img/2.png" alt="About image" loading="lazy"/>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="mbl-col col-md-6">
                   <div class="slider-img">
-                    <img src="/assets/img/3.png" alt="" loading="lazy"/>
+                    <img src="/assets/img/3.png" alt="About image" loading="lazy"/>
                   </div>
                 </div>
               </div>

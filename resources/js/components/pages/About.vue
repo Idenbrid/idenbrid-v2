@@ -33,7 +33,7 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <img src="/public/assets/img/ceo.jpg" width="100%" />
+                        <img src="/public/assets/img/ceo.jpg" width="100%" alt="CEO image" />
                     </div>
                 </div>
             </section>

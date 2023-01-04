@@ -551,7 +551,7 @@
                                                                 class="more_txts">セールスエグゼクティブとしてお客様のIT開発コンサルタントとして活躍しており、経営マネジメント及びグローバル事業の責任者も担当しております。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/souga.jpg" alt="">
+                                                            <img src="/assets/img/member/souga.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -569,7 +569,7 @@
                                                                 上流コンサルティングからプログラムマネジメントまで多岐に渡りお客様のイノベーションを推進します。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/aska.png" alt="">
+                                                            <img src="/assets/img/member/aska.png" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -588,7 +588,7 @@
                                                                 class="more_txts">カスタマーサクセスとして事業成長するためのヒアリングをしっかり行いお客様のビジネスに寄り添い、またPMOとしてプロジェクトマネジメントを行っています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/koji.png" alt="">
+                                                            <img src="/assets/img/member/koji.png" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -606,7 +606,7 @@
                                                                 class="more_txts">エンジニアとしてのキャリアバックグランドを活かして、基本・詳細設計を担当するととともにプロジェクトオーナー様と一緒にプロジェクトマネジメントを行っています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/dai.png" alt="">
+                                                            <img src="/assets/img/member/dai.png" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -624,7 +624,7 @@
                                                                 class="more_txts">クライアントファーストを徹底したサービスを基本としつつ、要件・スケジュール通りに開発を進めるためのプロフェッショナルなマネジメントを得意としています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/yuta.jpg" alt="">
+                                                            <img src="/assets/img/member/yuta.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -645,7 +645,7 @@
                                                             </span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/ahmed.png" alt="">
+                                                            <img src="/assets/img/member/ahmed.png" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -664,7 +664,7 @@
                                                                 class="more_txts">パンジャブ大学にて植物学の博士号を取得後、前職ではビジネス・オペレーターとして活躍していました。現在、グローバルビジネスディベロップメントの統括として活躍しています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/bushra.jpg" alt="">
+                                                            <img src="/assets/img/member/bushra.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -682,7 +682,7 @@
                                                                 class="more_txts">ラホール出身。GCUFでコンピュータサイエンスを専攻し、バックエンドエンジニアとしてキャリアを積みました。現在、バックエンドリードとして多くの日本顧客プロジェクトの開発に携わっています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/samad.jpg" alt="">
+                                                            <img src="/assets/img/member/samad.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -700,7 +700,7 @@
                                                                 class="more_txts">PASのコンピュータサイエンスを卒業後、前職ではWordpress/フロントエンドエンジニアとして勤務していました。現在はプラグイン開発、Vue.js開発プロジェクトを担当しています</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/kashif.jpg" alt="">
+                                                            <img src="/assets/img/member/kashif.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -718,7 +718,7 @@
                                                                 class="more_txts">パキスタン、イスラマバード出身。教育大学にて動物学を専攻。ベンチャードライブの人事担当を経て、現在は当社の人事担当。採用のみでなく、人事戦略を立てるなど活躍しています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/iqra.jpg" alt="">
+                                                            <img src="/assets/img/member/iqra.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -736,7 +736,7 @@
                                                                 Universityにて理学士号を取得し、現在当社においてはNode.js、React.jsをメインとしフルスタックエンジニとして主に日本企業案件で活躍しています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/hamza.jpg" alt="">
+                                                            <img src="/assets/img/member/hamza.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -754,7 +754,7 @@
                                                                 class="more_txts">サルゴダ出身、ラホール大学コンピューターサイエンス学部卒。PHPのLaravelエンジニアとしてキャリアアップをし、当社でもバックエンドエンジニアとして主にグローバル顧客の開発に従事しています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/izmah.jpg" alt="">
+                                                            <img src="/assets/img/member/izmah.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -772,7 +772,7 @@
                                                                 class="more_txts">ラホール出身で、サルゴダ大学にてBSCSを取得後、当社ではフロントエンドエンジニアとしてVue.jsを専門に勤務しています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/azeem.jpg" alt="">
+                                                            <img src="/assets/img/member/azeem.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -791,7 +791,7 @@
                                                                 class="more_txts">ラホール生まれ、パンジャブ大学でBBAを取得しました。現在、当社ではリード獲得の責任者としてグローバル企業の担当者として従事しています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/faizan.jpg" alt="">
+                                                            <img src="/assets/img/member/faizan.jpg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -809,7 +809,7 @@
                                                                 class="more_txts">代表のアシスタントとして創業時よりCEOのサポートに従事しており、パキスタン事業のオペレーションにおける調整役として活躍しています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/shahnawaz.jpeg" alt="">
+                                                            <img src="/assets/img/member/shahnawaz.jpeg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -827,7 +827,7 @@
                                                                 class="more_txts">ラホール本社オフィスのメンテナンス業務に従事しています。</span>
                                                         </div>
                                                         <div class="scaleImg">
-                                                            <img src="/assets/img/member/demo.jpeg" alt="">
+                                                            <img src="/assets/img/member/demo.jpeg" alt="Team member image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1291,28 +1291,28 @@
                 <div class="menu-box">
                     <div class="item">
 
-                        <router-link to="/company/" class="text"><img src="/assets/img/icons/Person-icon.svg">会社概要
+                        <router-link to="/company/" class="text"><img src="/assets/img/icons/Person-icon.svg" alt="img" />会社概要
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg">代表メッセージ
+                        <router-link to="/message/" class="text"><img src="/assets/img/icons/Message-icon.svg" alt="img" />代表メッセージ
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg">オフィス＆アクセス
+                        <router-link to="/office/" class="text"><img src="/assets/img/icons/Building-icon.svg" alt="img" />オフィス＆アクセス
                         </router-link>
                     </div>
                     <div class="item">
 
-                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg">メンバー
+                        <router-link to="/member/" class="text"><img src="/assets/img/icons/Members-icon.svg" alt="img" />メンバー
                         </router-link>
                     </div>
                     <div class="item">
 
                         <router-link to="/digitalasset/" class="text"><img
-                                src="/assets/img/icons/Digital-Assets.svg">デジタルアセット</router-link>
+                                src="/assets/img/icons/Digital-Assets.svg" alt="img" />デジタルアセット</router-link>
                     </div>
                 </div>
 

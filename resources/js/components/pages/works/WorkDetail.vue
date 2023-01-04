@@ -21,88 +21,11 @@
         </div>
         <Navbar />
         <main>
-            <!-- <section class="detail-section mt-5">
-                <div class="container">
-                    <div class="col-lg-8 col-md-12 mx-auto">
-                        <div class="services-details-image"><img :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" :alt="work.image"
-                                width="100%"></div>
-                        <div class="services-details-content">
-                            <h3>Dental Filling</h3>
-                            <p class="detail-prgh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat
-                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <ul class="services-details-list">
-                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
-                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
-                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <ul class="services-details-list">
-                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
-                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
-                                    <li><i class="flaticon-check"></i> Aenean Posuere Sem Imperdiet </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p class="detail-prgh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div class="services-details-overview">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-gallery"><img src="/images/gallery-1.b9cd3d45.jpg" alt="image"
-                                            width="100%">
-                                        <div class="content">
-                                            <h3><a aria-current="page" href="/services-details"
-                                                    class="router-link-active active"> Aesthetic Dentistry </a></h3>
-                                            <span>Prosthodontics Dentist</span>
-                                            <div class="icon"><a aria-current="page" href="/services-details"
-                                                    class="router-link-active active"><i
-                                                        class="flaticon-right-arrow"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-gallery"><img src="/images/gallery-2.7c6f51b8.jpg" alt="image"
-                                            width="100%">
-                                        <div class="content">
-                                            <h3><a aria-current="page" href="/services-details"
-                                                    class="router-link-active active"> Periodontists Dentistry </a></h3>
-                                            <span>Prosthodontics Dentist</span>
-                                            <div class="icon"><a aria-current="page" href="/services-details"
-                                                    class="router-link-active active"><i
-                                                        class="flaticon-right-arrow"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
        <section class="detail-section">
     <div class="container">
         <div class="col-lg-8 col-md-12 mx-auto">
             <div class="services-details-image">
-                <img class="thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt=""
+                <img class="thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt="img"
                     loading="lazy" />
             </div>
             <div class="services-details-content">
@@ -115,84 +38,25 @@
                         <li><i class="flaticon-check"></i></li>
                     </ul>
                 </div>
-               
             </div>
             <p > <a  rel="tag">{{work.title}}</a></p>
             </div>
         </div>
 </section> 
-            <!-- <div class="mycontents-wide">
-                <img class="thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt=""
-                    loading="lazy" />
-            </div>  -->
-             <!-- <section class="work-text mycontents-wide">
-                <h2 class="subcontent-title subcontent-title_about">{{work.company}}</h2>
-                <p class="work-text__category">
-                    <a  rel="tag">{{work.title}}</a>
-                </p>
-                <p class="work-text__tags">
-                    {{work.content}}
-                </p>
-                <div class="work-text__about" v-html="work.description">
-
-                </div>
-            </section> -->
           <section class="work mycontents-wide">
                      <h2 data-v-f008eaba="" class="subcontent-title subcontent-title_about">その他のプロジェクト </h2>
         <ul class="work-contents">
             <li  v-for="work in latest_works" :key="work.id" class="work-contents__list">
                 <router-link :to="'/work/detail/'+work.id+'/'">
-                    <img class="work-contents__list__thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt="" loading="lazy">
+                    <img class="work-contents__list__thumbnail" :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt="img" loading="lazy">
                     <p class="work-contents__list__company">{{work.company}}</p>
                     <p class="work-contents__list__title">{{work.title}}</p>
                     <p class="work-contents__list__tags">{{work.content}}</p>
                 </router-link>
             </li>
-        </ul>
-             
-            <router-link to="/works/" class="viewmore-btn viewmore-btn_center">View More
-                        </router-link>
-                    </section> 
-
-
-
-
-
-
-            <!-- <section class="menu">
-                <ul class="menu-contents mycontents-wide">
-                    <li class="menu-contents__list">
-                        <router-link to="/about/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
-                                alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">経営理念</p>
-                                <h4 class="menu-contents__list__title">Policy</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="menu-contents__list">
-                        <router-link to="/blog/">
-                            <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
-                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">事業紹介</p>
-                                <h4 class="menu-contents__list__title">Business</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="menu-contents__list">
-                        <router-link to="/onlinedevelopmenthub/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
-                                alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">会社概要</p>
-                                <h4 class="menu-contents__list__title">Company</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                </ul>
-            </section> -->
+        </ul>   
+        <router-link to="/works/" class="viewmore-btn viewmore-btn_center">View More</router-link>
+        </section>      
         </main>
         <Footer />
     </div>

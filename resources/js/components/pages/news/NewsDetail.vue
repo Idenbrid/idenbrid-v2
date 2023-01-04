@@ -30,9 +30,9 @@
                         </div>
                     </div>
                     <img width="1200" height="630" :src="'http://admin.idenbrid.jp/public/storage/news/'+news.image"
-                        class="attachment-full size-full wp-post-image" alt="" loading="lazy"
+                        class="attachment-full size-full wp-post-image" alt="News image" loading="lazy"
                         :srcset="'http://admin.idenbrid.jp/public/storage/news/'+news.image"
-                        sizes="(max-width: 1200px) 100vw, 1200px">
+                        sizes="(max-width: 1200px) 100vw, 1200px" />
                     <div class="single__contents" v-html="news.description">
 
                     </div>
@@ -41,7 +41,7 @@
                 <aside class="aside">
                     <div class="aside__new">
                         <p class="aside__title aside__title__new"><img
-                                src="/public/assets/img/icons/single-aside-new.png" alt="" loading="lazy"> 関連するニュース</p>
+                                src="/public/assets/img/icons/single-aside-new.png" alt="img" loading="lazy"> 関連するニュース</p>
 
                         <ul class="aside__new__contents">
                             <li v-for="latest in latest_news" :key="latest.id" class="aside__news__list">
@@ -64,7 +64,7 @@
                     <p class="btns__prev__text">前の記事へ</p>
                 </a>
                 <router-link to="/news/">
-                    <img class="btns__prev__img" src="/public/assets/img/icons/single-blog.svg">
+                    <img class="btns__prev__img" src="/public/assets/img/icons/single-blog.svg" alt="img"/>
                     <p class="btns__prev__text">一覧に戻る</p>
                 </router-link>
                 <a @click="latests(news.id)" v-if="latest == true" rel="next">
@@ -80,88 +80,6 @@
                     <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
                 </div>
             </div>
-            <!-- <section class="menu">
-                <ul class="menu-contents mycontents-wide">
-                    <li class="menu-contents__list">
-                        <router-link to="/about/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
-                                alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">経営理念</p>
-                                <h4 class="menu-contents__list__title">Policy</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="menu-contents__list">
-                        <router-link to="/blog/">
-                            <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
-                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">事業紹介</p>
-                                <h4 class="menu-contents__list__title">Business</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="menu-contents__list">
-                        <router-link to="/onlinedevelopmenthub/">
-                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
-                                alt="" loading="lazy">
-                            <div class="menu-contents__list__text">
-                                <p class="menu-contents__list__subtitle">会社概要</p>
-                                <h4 class="menu-contents__list__title">Company</h4>
-                            </div>
-                        </router-link>
-                    </li>
-                </ul>
-            </section> -->
-            <!-- <section class="contact mycontents-wide mt-5">
-                <h3 class="content-title content-title_contact">お問い合わせ</h3>
-                <img class="contact__img" src="/public/assets/img/icons/Operator.png" alt="" width="80px">
-                <p class="content-text content-text_contact">お問い合わせは企画時点からお受けしております。またこんなことできるなどITに関する相談事も無料で受け付けています。
-                </p>
-                <div class="contact__btns">
-                    <button class="btn-wide btn-wide_call" data-toggle="modal" data-target="#linescancode">
-                        <div class="btn-wide__imgs">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Line-white.png" alt="">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Line-Black.png" alt="">
-                        </div>
-                        <p class="btn-wide__text btn-wide__text_call">会社LINE ID</p>
-                    </button>
-                    <a class="btn-wide btn-wide_call" href="mailto:helloworld@idenbrid.com">
-                        <div class="btn-wide__imgs">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt="">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png" alt="">
-                        </div>
-                        <p class="btn-wide__text btn-wide__text_call">
-                            helloworld@idenbrid.com
-                        </p>
-                    </a>
-                    <a class="btn-wide" href="skype:live:.cid.3145b74a3504693c?chat">
-                        <div class="btn-wide__imgs">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Skype-White.png" alt="">
-                            <img class="btn-wide__img" src="/public/assets/img/icons/Skype-Black.png" alt="">
-                        </div>
-                        <p class="btn-wide__text btn-wide__text_contact">会社Skype ID</p>
-                    </a>
-                </div>
-                 (Modal) 
-                <div class="modal fade" id="linescancode" tabindex="-1" role="dialog" aria-labelledby="linescancode"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">ID検索はこちらから、LINE ID: idenbrid</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="/public/assets/img/line-code.jpg" width="100%" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
         </main>
         <Footer />
     </div>
