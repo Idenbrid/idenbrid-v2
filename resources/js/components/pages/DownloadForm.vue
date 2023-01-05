@@ -125,41 +125,7 @@
         <router-link to="/contact/" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
       </div>
     </div>
-             <!-- <section class="menu">
-                 <ul class="menu-contents mycontents-wide">
-                     <li class="menu-contents__list">
-                         <router-link to="/about/">
-                             <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
-                                 alt="">
-                             <div class="menu-contents__list__text">
-                                 <p class="menu-contents__list__subtitle">経営理念 </p>
-                                 <h4 class="menu-contents__list__title">Policy</h4>
-                             </div>
-                         </router-link>
-                     </li>
-                     <li class="menu-contents__list">
-                         <router-link to="/blog/">
-                             <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
-                                 src="/public/assets/img/icons/Bussines-icon.svg" alt="">
-                             <div class="menu-contents__list__text">
-                                 <p class="menu-contents__list__subtitle">事業紹介</p>
-                                 <h4 class="menu-contents__list__title">Business</h4>
-                             </div>
-                         </router-link>
-                     </li>
-                     <li class="menu-contents__list">
-                         <router-link to="/onlinedevelopmenthub/">
-                             <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
-                                 alt="">
-                             <div class="menu-contents__list__text">
-                                 <p class="menu-contents__list__subtitle">会社概要</p>
-                                 <h4 class="menu-contents__list__title">Company</h4>
-                             </div>
-                         </router-link>
-                     </li>
-                 </ul>
-             </section> -->
-
+            
          </main>
          <Footer />
      </div>

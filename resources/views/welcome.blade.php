@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="システム・アプリ開発とウェブ制作はアイデンブリッド社 | IDENBRID INC." />
-    <meta property="og:description"
-        content="ウェブデザインからシステム・モバイルアプリ開発まで一括で受けているアイデンブリッド社はIT業界の中でもトップクラスのコミュニケーション能力でお客様のプロジェクトに対してご提案します。案件の対して要件定義、設計、開発実装そしてテストまで包括的にお受けします。無料でのお見積りのご相談はこちらからです。技術的な内容やご予算などわからないことがありましたらお問合せください。" />
-    <meta name="Keywords"
-        content="アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル" />
+    <meta property="og:description" content="ウェブデザインからシステム・モバイルアプリ開発まで一括で受けているアイデンブリッド社はIT業界の中でもトップクラスのコミュニケーション能力でお客様のプロジェクトに対してご提案します。案件の対して要件定義、設計、開発実装そしてテストまで包括的にお受けします。無料でのお見積りのご相談はこちらからです。技術的な内容やご予算などわからないことがありましたらお問合せください。" />
+    <meta name="description" content="ウェブデザインからシステム・モバイルアプリ開発まで一括で受けているアイデンブリッド社はIT業界の中でもトップクラスのコミュニケーション能力でお客様のプロジェクトに対してご提案します。案件の対して要件定義、設計、開発実装そしてテストまで包括的にお受けします。無料でのお見積りのご相談はこちらからです。技術的な内容やご予算などわからないことがありましたらお問合せください。">
+    <meta name="Keywords" content="アイデンブリッド, アイデンブリッド社, アイデン, ウェブ, ウェブ開発, ウェブサイト, デザイン, ウェブデザイン, スマホアプリ, モバイルアプリ, LINE開発, RPA, Python, スクレイピング, IT開発, オンラインディベロップメントハブ, オンライン開発ハブ, パキスタン, オフショア開発, IDENBRID, Idenbrid, idenbrid, クラウド, ITコンサル" />
     <meta property="og:url" content="https://idenbrid.jp/" />
     <meta property="og:site_name" content="IDENBRID INC. アイデンブリッド社公式HP" />
     <meta property="article:publisher" content="https://www.facebook.com/idenbridinc" />
@@ -21,7 +20,9 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <!-- Fav-icon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets')}}/img/logo/idenbrid-fav-icon.png" />
     <link rel="stylesheet" href="{{asset('assets')}}/css/swiper-bundle.min.css" />
@@ -49,9 +50,9 @@
         media='all' />
     <link rel='stylesheet' id='template-parts_contact-sec-css-css' href="{{asset('assets')}}/css/contact-sec.css"
         media='all' />
-    <script type="text/javascript" src="{{asset('assets')}}/js/jquery.js" id='jquery-core-js' defer></script>
-    <script type="text/javascript" src="{{asset('assets')}}/js/particles.min.js" id='particle-js-js' defer></script>
-    <script type="text/javascript" src="{{asset('assets')}}/js/swiper_slider/swiper-bundle.min.js" defer></script>
+    <script rel="preload" as="script" type="text/javascript" src="{{asset('assets')}}/js/jquery.js" id='jquery-core-js' defer></script>
+    <script rel="preload" as="script" type="text/javascript" src="{{asset('assets')}}/js/particles.min.js" id='particle-js-js' defer></script>
+    <script rel="preload" as="script" type="text/javascript" src="{{asset('assets')}}/js/swiper_slider/swiper-bundle.min.js" defer></script>
     <!-- <link rel="stylesheet" href="{{ mix('/css/app.css') }}">-->
     <!-- Styles -->
     <style>
@@ -71,12 +72,12 @@
         <div id="particles-js"></div>
         <app />
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    <script src="{{asset('js/app.js')}}" defer></script>
+    <script rel="preload" as="script" src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script rel="preload" as="script" src="{{asset('js/app.js')}}" defer></script>
 
 
     <!-- Initialize Swiper -->
-    <script>
+    <script rel="preload" as="script">
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 30,
@@ -92,19 +93,15 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-     
-       
-        
-
-        
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer>
+    <script rel="preload" as="script" src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+        defer>
     </script>
-    <script src="{{asset('assets')}}/js/jquery.form.min.js" id='jquery-form-js' defer></script>
-    <script src="{{asset('assets')}}/js/js-particle-bg.js" id='particle-bg-js-js' defer></script>
-    <script src="{{asset('assets')}}/js/fontawesome.js" crossorigin="anonymous" defer></script>
-    <script src="{{asset('assets')}}/js/school.js" id='school-js-js' defer></script>
+    <script rel="preload" as="script" src="{{asset('assets')}}/js/jquery.form.min.js" id='jquery-form-js' defer></script>
+    <script rel="preload" as="script" src="{{asset('assets')}}/js/js-particle-bg.js" id='particle-bg-js-js' defer></script>
+    <script rel="preload" as="script" src="{{asset('assets')}}/js/fontawesome.js" crossorigin="anonymous" defer></script>
+    <script rel="preload" as="script" src="{{asset('assets')}}/js/school.js" id='school-js-js' defer></script>
 
 
 

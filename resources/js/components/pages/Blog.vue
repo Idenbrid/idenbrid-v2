@@ -9,19 +9,6 @@
                 </h2>
             </div>
             <section class="blog">
-                <!-- <ul class="blog-contents">
-              
-                    <li v-for="blog in blogs" :key="blog.id" class="blog-contents__list">
-                        <router-link :to="'/blog/detail/'+blog.id+'/'">
-                            <p class="blog-contents__list__tags"><span>BLOG</span></p>
-                            <img class="blog-contents__list__thumbnail"
-                                :src="'https://admin-idenbrid.idenbrid.jp/public/storage/blog_images/'+blog.image"
-                                alt="" loading="lazy" />
-                            <p class="blog-contents__list__title">{{blog.title}}</p>
-                            <p class="blog-contents__list__date">{{blog.date}}</p>
-                        </router-link>
-                    </li>
-                </ul> -->
                 <div class="blog--content--inner">
                     <div class="blog--content--mainarea">
                         <div v-if="this.blogs.length > 0" class="blog--content--list">
@@ -55,14 +42,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div v-if="blogs.length>0" role="navigation" class="wp-pagenavi">
-              <span aria-current="page" class="current">1</span>
-              <a title="ページ 2" href="#" class="page larger">2</a>
-              <a title="ページ 3" href="#" class="page larger">3</a>
-              <a title="ページ 4" href="#" class="page larger">4</a>
-              <a title="ページ 5" href="#" class="page larger">5</a>
-              <a rel="next" aria-label="Next Page" href="#" class="nextpostslink"><i class="fas fa-angle-right"></i></a>
-            </div> -->
                         <h1 v-else>また記事の投稿がございません。</h1>
                     </div>
                     <div class="blog--content--sidearea">
@@ -80,31 +59,6 @@
                             <a @click="categorySearch(cate.id)" v-for="(cate, index) in categories" :key="index"
                                 class="categoryitem current fade_y on">{{ cate.title }}</a>
                         </div>
-                        <!-- <h4 class="sideheading fade_y pc on">おすすめの記事</h4>
-                        <div class="recommend--list pc">
-                            <router-link :to="'/blog/detail/' + item.id + '/'" v-for="(item, index) in blogs"
-                                :key="index">
-                                <div class="thumb photo thumb-img">
-                                    <div class="hvrtxt en">
-                                        <span class="more_txt"><span class="underline">MORE</span></span>
-                                    </div>
-                                    <div class="scaleImg scale-img">
-                                        <img width="1200" height="630" :src="
-                        'https://admin-idenbrid.idenbrid.jp/public/storage/blog_images/' +
-                        item.image
-                      " class="attachment-full size-full wp-post-image" alt="" loading="lazy"
-                                            sizes="(max-width: 1200px) 100vw, 1200px" />
-                                    </div>
-                                </div>
-                                <div class="bloginfo">
-                                    <time class="time en">{{ item.date }}</time>
-                                    <div class="good">
-                                        <i class="fa fa-heart mr-1" aria-hidden="true"></i> 61
-                                    </div>
-                                </div>
-                                <h3 class="hvrunder">{{ item.title }}</h3>
-                            </router-link>
-                        </div> -->
                         <h4 class="sideheading pc">人気記事ランキング</h4>
                         <div class="recommend--list popular pc">
                             <router-link :to="'/blog/detail/' + blog.id + '/'" v-for="blog in most_liked" :key="blog.id"
@@ -133,46 +87,7 @@
                                     {{ blog.title }}
                                 </h3>
                             </router-link>
-                            <!-- <a href="https://tomorrowgate.co.jp/blog/2954/" class="hoverScale recommend--item popular">
-                                <div class="thumb photo thumb-img">
-                                    <div class="hvrtxt en">
-                                        <span class="more_txt"><span class="underline">MORE</span></span>
-                                    </div>
-                                    <div class="scaleImg scale-img">
-                                        <img width="1200" height="630"
-                                            src="https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1.jpg"
-                                            class="attachment-full size-full wp-post-image" alt="" loading="lazy"
-                                            srcset="
-                        https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1.jpg          1200w,
-                        https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-300x158.jpg   300w,
-                        https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-1024x538.jpg 1024w,
-                        https://tomorrowgate.co.jp/wp-content/uploads/2021/10/blog_thumb-1-768x403.jpg   768w
-                      " sizes="(max-width: 1200px) 100vw, 1200px" />
-                                    </div>
-                                </div>
-                                <div class="bloginfo">
-                                    <time class="time en">2021.10.19</time>
-                                    <div class="good">
-                                        <i class="fa fa-heart mr-1" aria-hidden="true"></i>61
-                                    </div>
-                                </div>
-                                <h3 class="hvrunder">私、会社辞めます。</h3>
-                            </a> -->
                         </div>
-                        <!-- <div class="bnr_area">
-                            <div class="wrap">
-                                <a href="https://tomorrowgate.co.jp/special/" class="hoverScale" target="_blank">
-                                    <div class="thumb thumb-img">
-                                        <div class="hvrtxt en">
-                                            <span class="more_txt"><span class="underline">MORE</span></span>
-                                        </div>
-                                        <div class="scaleImg scale-img">
-                                            <img src="https://tomorrowgate.co.jp/asset/img/blog/bnr01.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>

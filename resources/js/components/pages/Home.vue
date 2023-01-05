@@ -16,7 +16,8 @@
                 </h2>
                 <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i>
                 </router-link>
-                <video class="top-hero__video" src="/public/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop playsinline></video>
+                <video class="top-hero__video" src="/public/assets/videos/idenbridopeningvideo.mp4" autoplay muted loop
+                    playsinline></video>
             </section>
             <div class="scroll scroll_top">
                 <p class="scroll__text">SCROLL</p>
@@ -41,7 +42,7 @@
             <section>
                 <div class="c-message">
                     <div class="c-message__bgimg"
-                        style="background-image: url('/assets/img/CEO-Message background.png'); visibility: visible; opacity: 1; transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0.5s;"
+                        style="background-image: url('/assets/img/CEO-Message background.webp'); visibility: visible; opacity: 1; transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0.5s;"
                         data-sr-id="2"></div>
                     <div class="mycontents-wide p-0">
                         <div class="c-message__content">
@@ -55,8 +56,10 @@
                                 </div>
                             </div>
                             <div class="large-5 small-12">
-                                <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="CEO-image" loading="lazy">
-                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO Person.png" alt="CEO-image" loading="lazy">
+                                <img class="c-message__img ceo-desktop" src="/assets/img/CEO Person.png" alt="CEO-image"
+                                    loading="lazy">
+                                <img class="c-message__img ceo-mbl" src="/assets/img/CEO Person.png" alt="CEO-image"
+                                    loading="lazy">
                                 <!-- <img class="c-message__img ceo-mbl" src="/assets/img/CEO-Person-mbl.png" alt=""> -->
                             </div>
                             <div class="c-message__button u-hidden-lg">
@@ -74,7 +77,7 @@
                     <div class="service-col">
 
                         <h2 class="service_h2">
-                            <img src="/assets/img/icons/SHD.png" class="image-icon" alt="Service-image" >SDH：スタジオ開発ハブ
+                            <img src="/assets/img/icons/SHD.png" class="image-icon" alt="Service-image">SDH：スタジオ開発ハブ
                         </h2>
                         <p class="service-p">
                             スタジオ開発ハブは、日本企業またグローバル企業とのIT受託開発。そして一般的なオフショア開発にあたるパキスタンエンジニア人材を人月ベースでご提供致します。
@@ -83,15 +86,16 @@
                             More</router-link>
                     </div>
                     <div class="service-col">
-                        <img alt="Service-image" src="/assets/img/sdh.png" class="" width="100%" >
+                        <img alt="Service-image" src="/assets/img/sdh.webp" class="" width="100%">
                     </div>
                 </div>
                 <div class="service-row my-5">
                     <div class="service-col">
-                        <img alt="" src="/assets/img/ses.png" class="" width="100%">
+                        <img alt="" src="/assets/img/ses.webp" class="" width="100%">
                     </div>
                     <div class="service-col">
-                        <h2 class="service_h2"><img src="/assets/img/icons/SES.png" class="image-icon" alt="Service-image">SES：エンジニアスタイル
+                        <h2 class="service_h2">
+                            <img src="/assets/img/icons/ses.webp" class="image-icon" alt="Service-image">SES：エンジニアスタイル
                         </h2>
                         <p class="service-p">
                             当社のエンジニアスタイルというのは、エンジニア採用支援サービスを指し、SESサービスのように社内外の優秀なエンジニアやデザイナー人材を必要とされている会社様に対して人材の発掘、ご紹介、人材との面談設定、そして採用までのオンボーディング過程を支援いたします。
@@ -123,7 +127,8 @@
                     <div class="new-listing new" v-for="(detail,Detail) in news" :key="Detail" v-if="Detail < 5">
                         <router-link :to="'/news/detail/'+detail.id+'/'" class="new-link new">
                             <div class="img_box">
-                                <img :src="'http://admin.idenbrid.jp/public/storage/news/'+detail.image" alt="News-image"></div>
+                                <img :src="'https://admin.idenbrid.jp/public/storage/news/'+detail.image"
+                                    alt="News-image" loading="lazy"></div>
                             <div class="new-item new">
                                 <div class="new-meta">
                                     <p class="text new mr-2 mt-0 new-date">
@@ -152,7 +157,7 @@
                     <li class="about-contents__list">
                         <router-link to="/policy/">
                             <img class="about-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
-                                alt="" loading="lazy">
+                                alt="policy icon" loading="lazy">
                             <div class="about-contents__list__text">
                                 <p class="about-contents__list__subtitle">経営理念</p>
                                 <h4 class="about-contents__list__title">Policy</h4>
@@ -162,7 +167,7 @@
                     <li class="about-contents__list">
                         <router-link to="/business/">
                             <img class="about-contents__list__thumbnail about-contents__list__thumbnail_news"
-                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
+                                src="/public/assets/img/icons/Bussines-icon.svg" alt="Business icon" loading="lazy">
                             <div class="about-contents__list__text">
                                 <p class="about-contents__list__subtitle">事業紹介</p>
                                 <h4 class="about-contents__list__title">Business</h4>
@@ -172,7 +177,7 @@
                     <li class="about-contents__list">
                         <router-link to="/about/">
                             <img class="about-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
-                                alt="" loading="lazy">
+                                alt="Company icon" loading="lazy">
                             <div class="about-contents__list__text">
                                 <p class="about-contents__list__subtitle">会社概要</p>
                                 <h4 class="about-contents__list__title">Company</h4>
@@ -185,7 +190,7 @@
                 <div class="c-recruit">
                     <div class="c-recruit__head">
                         <div class="c-recruit__bgimg"
-                            style="background-image: url('/assets/img/Culture-background.png');">
+                            style="background-image: url('/assets/img/Culture-background.webp');">
                         </div>
                         <div class="mycontents-wide">
                             <div class="c-recruit__head-inner">
@@ -240,8 +245,8 @@
                         <router-link :to="'/blog/detail/'+blog.id+'/'">
                             <p class="blog-contents__list__tags"><span>BLOG</span></p>
                             <img class="blog-contents__list__thumbnail"
-                                :src="'http://admin.idenbrid.jp/public/storage/blog_images/'+blog.image" alt="Blog-image"
-                                loading="lazy">
+                                :src="'https://admin.idenbrid.jp/public/storage/blog_images/'+blog.image"
+                                alt="Blog-image" loading="lazy">
                             <p class="blog-contents__list__title">{{blog.title}}</p>
                             <p class="blog-contents__list__date">{{blog.date}}</p>
                         </router-link>
@@ -438,7 +443,7 @@
         backface-visibility: hidden;
     }
 
-    f .recruit-title::after {
+    .recruit-title::after {
         background-color: #fff;
     }
 
@@ -864,7 +869,7 @@
             width: 100%;
         }
 
-         .ceo-desktop {
+        .ceo-desktop {
             display: none;
         }
 
@@ -1649,7 +1654,8 @@
         line-height: 2.14286;
         font-weight: normal;
     }
-/* 
+
+    /* 
     .c-message__title-sub {
         margin-top: 0rem;
         font-size: 1.7rem;
@@ -2039,8 +2045,9 @@
 
     @media (max-width: 475px) {
         .c-message__title {
-        margin-top: 3rem;
-    }
+            margin-top: 3rem;
+        }
+
         .content-title {
             font-size: 24px;
         }

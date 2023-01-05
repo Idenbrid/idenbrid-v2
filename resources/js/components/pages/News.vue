@@ -32,27 +32,12 @@
                             </router-link>
                         </div>
 
-<!-- 
-                        <div class="wp-pagenavi" role="navigation">
-                            <span aria-current="page" class="current">1</span><a class="page larger" title="ページ 2"
-                                href="https://tomorrowgate.co.jp/topic/page/2/">2</a><a class="page larger"
-                                title="ページ 3" href="https://tomorrowgate.co.jp/topic/page/3/">3</a><a
-                                class="page larger" title="ページ 4"
-                                href="https://tomorrowgate.co.jp/topic/page/4/">4</a><a class="page larger"
-                                title="ページ 5" href="https://tomorrowgate.co.jp/topic/page/5/">5</a><a
-                                class="nextpostslink" rel="next" aria-label="Next Page"
-                                href="https://tomorrowgate.co.jp/topic/page/2/"><i class='fas fa-angle-right'></i></a>
-                        </div> -->
+
                     </div>
 
                     <ul class="topic--content--sidearea">
                         <li><router-link to="/news/" class="en categoryitem current">全て</router-link></li>
-                        <!-- <li><a href="https://tomorrowgate.co.jp/topic/category/news/" class="en categoryitem">ニュース</a>
-                        </li>
-                        <li><a href="https://tomorrowgate.co.jp/topic/category/media/" class="en categoryitem">メディア</a>
-                        </li>
-                        <li><a href="https://tomorrowgate.co.jp/topic/category/event/" class="en categoryitem">イベント</a>
-                        </li> -->
+                        
                     </ul>
                 </div>
             </section>

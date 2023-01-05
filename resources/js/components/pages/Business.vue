@@ -410,21 +410,6 @@ padding: 80px 10% 50px;
         background-blend-mode: overlay;
         background-color: rgba(0, 0, 0, 0.5);
     }
-
-    /* .recruit--leadtxt::after {
-        content: "";
-        background: url('/assets/img/all_member.jpg') no-repeat center;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.3;
-        z-index: -1;
-    } */
-
     @media screen and (max-width: 896px) {
         .recruit--leadtxt::after {
             background: url('/assets/img/all_member.jpg') no-repeat center;

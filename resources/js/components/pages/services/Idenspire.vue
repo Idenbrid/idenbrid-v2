@@ -359,13 +359,13 @@
                         </div>
                         <p class="btn-wide__text btn-wide__text_call">会社LINE ID</p>
                     </button>
-                    <a class="btn-wide btn-wide_call" href="mailto:helloworld@idenbrid.com">
+                    <a class="btn-wide btn-wide_call" href="mailto:contactusjp@idenbrid.com">
                         <div class="btn-wide__imgs">
                             <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt="">
                             <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png" alt="">
                         </div>
                         <p class="btn-wide__text btn-wide__text_call">
-                            helloworld@idenbrid.com
+                            contactusjp@idenbrid.com
                         </p>
                     </a>
                     <a class="btn-wide" href="skype:live:.cid.3145b74a3504693c?chat">

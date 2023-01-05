@@ -29,9 +29,9 @@
                             <p class="single__head__date">{{news.date}}</p>
                         </div>
                     </div>
-                    <img width="1200" height="630" :src="'http://admin.idenbrid.jp/public/storage/news/'+news.image"
+                    <img width="1200" height="630" :src="'https://admin.idenbrid.jp/public/storage/news/'+news.image"
                         class="attachment-full size-full wp-post-image" alt="News image" loading="lazy"
-                        :srcset="'http://admin.idenbrid.jp/public/storage/news/'+news.image"
+                        :srcset="'https//admin.idenbrid.jp/public/storage/news/'+news.image"
                         sizes="(max-width: 1200px) 100vw, 1200px" />
                     <div class="single__contents" v-html="news.description">
 

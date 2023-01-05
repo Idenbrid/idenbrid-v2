@@ -4,7 +4,7 @@
             <div class="header-pc">
                 <div class="header-pc__fixed">
                     <h1 class="header-pc__img">
-                        <router-link to="/" id="logo">
+                        <router-link to="/" id="logo" aria-label="Idenbrid logo">
                             <img class="header-pc__img__img" src="/public/assets/img/logo/idenbrid-logo.png" alt="">
                             <img class="header-pc__img__img_white" src="/public/assets/img/logo/idenbrid-logo.png"
                                 alt="">
@@ -227,7 +227,7 @@
         -o-writing-mode: vertical-rl;
         writing-mode: vertical-rl;
         font-size: 14px;
-        color: #dadada;
+        color: #FFFFFF;
         font-family: NotoSansJP-Medium;
         letter-spacing: 0.18px;
         transition: 0.4s;
@@ -256,7 +256,7 @@
         }
 
         .side_fix .fix_btn a .txt {
-            color: #dadada;
+            color: #FFFFFF;
             font-size: 12px;
         }
     }

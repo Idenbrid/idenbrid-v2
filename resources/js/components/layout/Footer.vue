@@ -50,13 +50,13 @@
             </div>
             <p class="btn-wide__text btn-wide__text_call">会社LINE ID</p>
           </a>
-          <a class="btn-wide btn-wide_call" href="mailto:helloworld@idenbrid.com" target="_blank">
+          <a class="btn-wide btn-wide_call" href="mailto:contactusjp@idenbrid.com" target="_blank">
             <div class="btn-wide__imgs">
               <img class="btn-wide__img" src="/public/assets/img/icons/Mail-Black.png " alt="img" loading="lazy">
               <img class="btn-wide__img" src="/public/assets/img/icons/Mail-White.png" alt="img" loading="lazy">
             </div>
             <p class="btn-wide__text btn-wide__text_call">
-              helloworld@idenbrid.com
+              contactusjp@idenbrid.com
             </p>
           </a>
           <a class="btn-wide" href="skype:live:.cid.3145b74a3504693c?chat" target="_blank">
@@ -68,74 +68,71 @@
           </a>
         </div>
       </section>
-
       <section class="section-footer-menu">
         <div class="container pad">
           <div class="footer-menu-heading mb-4">
-            <router-link to="/">
-              <img src="/assets/img/logo/footer-idenbrid-logo.png" class="footer-logo" />
+            <router-link to="/" aria-label="idenbrid-logo">
+              <img src="/assets/img/logo/footer-idenbrid-logo.png" alt="Footer logo"  class="footer-logo" />
             </router-link>
           </div>
           <div class="footer-menu">
             <div class="foot-menu-group">
               <h4>
 
-                <router-link to="/blog/">ブログ</router-link>
+                <router-link to="/blog/"  aria-label="idenbrid Blog">ブログ</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
 
-                <router-link to="/policy/">経営理念</router-link>
+                <router-link to="/policy/"  aria-label="idenbrid Privacy">経営理念</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-                <router-link to="/business/" class="">事業紹介</router-link>
+                <router-link to="/business/"  aria-label="idenbrid Business">事業紹介</router-link>
 
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
 
-                <router-link to="/works/">仕事実績</router-link>
+                <router-link to="/works/"  aria-label="idenbrid Works">仕事実績</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-
-                <router-link to="/about/">会社情報</router-link>
+                <router-link to="/about/"  aria-label="idenbrid About">会社情報</router-link>
               </h4>
             </div>
             <div class="foot-menu-group">
               <h4>
-                <router-link to="/news/" class="">お知らせ</router-link>
+                <router-link to="/news/"  aria-label="idenbrid News">お知らせ</router-link>
 
               </h4>
             </div>
           </div>
           <div class="social-links">
             <div>
-              <a href="https://twitter.com/idenbridinc" target="_blank"><i class="fa fa-twitter twitter"></i></a>
+              <a href="https://twitter.com/idenbridinc" aria-label="Twitter idenbridinc" target="_blank">
+                <i class="fa fa-twitter twitter"></i></a>
             </div>
             <div>
-              <a href="https://www.youtube.com/channel/UC5ENsxgAQIqVfBIMy-Fp-0w" target="_blank"><i
+              <a href="https://www.youtube.com/channel/UC5ENsxgAQIqVfBIMy-Fp-0w" aria-label="youtube idenbridinc" target="_blank"><i
                   class="fa fa-youtube twitter"></i></a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/company/idenbrid" target="_blank"><i
+              <a href="https://www.linkedin.com/company/idenbrid" aria-label="linkedin idenbridinc" target="_blank"><i
                   class="fa fa-linkedin twitter"></i></a>
             </div>
             <div>
-              <a href="https://www.facebook.com/idenbrid/" target="_blank"><i class="fa fa-facebook-f twitter"></i></a>
+              <a href="https://www.facebook.com/idenbrid/" aria-label="facebook idenbridinc" target="_blank"><i class="fa fa-facebook-f twitter"></i></a>
             </div>
             <div>
-              <router-link to="/blog/"><i class="fa fa-file-text twitter" target="_blank"></i></router-link>
+              <router-link to="/blog/" aria-label="blogs idenbridinc"><i class="fa fa-file-text twitter" target="_blank"></i></router-link>
             </div>
           </div>
-          <p class="copyright">
-            <small>©IDENBRID INC.™, 2021. All rights reserved.</small>
-          </p>
+          <p class="copyright"> ©IDENBRID INC.™, 2021. All rights reserved.</p>
         </div>
       </section>
     </footer>
@@ -328,12 +325,12 @@
     letter-spacing: 0.06em;
     color: #DADADA;
     font-weight: 400;
-    font-family: NotoSansJP-Regular;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
   .content-text_contact {
     font-weight: 400;
-    font-family: NotoSansJP-Regular;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
   .section-request .card {
@@ -374,8 +371,8 @@
     color: #DADADA;
     font-size: 14px;
     letter-spacing: 0.1em;
-    font-weight: bold;
-    font-family: NotoSansJP-Bold;
+    font-weight: 700;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
   .social-links {
@@ -393,13 +390,13 @@
 
   .copyright {
     margin-top: 40px;
-    font-size: 14px;
-    color: #777;
+    font-size: 11px;
+    color: #FFFFFF;
     letter-spacing: 0.18em;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: NotoSansJP-Regular;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
   .btn-wide {

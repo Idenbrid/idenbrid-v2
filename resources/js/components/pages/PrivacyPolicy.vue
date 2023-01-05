@@ -59,7 +59,7 @@
                     <p class="privacy__about__title">個人情報お問い合わせ窓口</p>
                     <p class="privacy__about__about">
                         IDENBRID INC.
-                        <br>Email：helloworld@idenbrid.com
+                        <br>Email：contactusjp@idenbrid.com
                         <br>受付時間：平日14:00〜22:00
                     </p>
                 </div>

@@ -2,11 +2,11 @@
     <div>
         <Navbar />
         <div class="mv_textarea">
-        <h2>
-            <strong class="en entxt">STUDIO DEVELOPMENT HUB / スタジオ開発ハブ</strong>
-            <span class="jptxt">ITシステム設計、UIUXデザイン、ウェブシステム、モバイルアプリ構築、クラウドサーバー、ウェブ制作</span>
-        </h2>
-    </div>
+            <h2>
+                <strong class="en entxt">STUDIO DEVELOPMENT HUB / スタジオ開発ハブ</strong>
+                <span class="jptxt">ITシステム設計、UIUXデザイン、ウェブシステム、モバイルアプリ構築、クラウドサーバー、ウェブ制作</span>
+            </h2>
+        </div>
         <main>
             <div id="contents">
                 <div class="branding--mv">
@@ -16,9 +16,10 @@
                             IDENBRIDではワンストップにて、ウェブシステムとスマホアプリ開発を得意とするソフトウェア開発会社です。<br>要件定義からシステム設計、UIUXデザインそして開発、またウェブからスマホそしてクラウドまで一社で完結開発致します<br
                                 class="pc">
                         </p>
-                        <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2" aria-hidden="true"></i></router-link>
+                        <router-link class="btn-views" to="/doc/">資料ダウンロード<i class="fa fa-download ml-2"
+                                aria-hidden="true"></i></router-link>
                     </div>
-    
+
                 </div>
                 <div class="branding--service">
                     <div class="branding--service--inner">
@@ -47,8 +48,7 @@
                             <div class="textarea">
                                 <h4 class="fade_y on">ワンストップ開発フロー<br class="pc">【システム・アプリの開発は当社のみで完結】</h4>
                                 <p class="fade_y on">
-                                    私たちは上流工程、要件定義・基本設計、システム設計<br
-                                        class="pc">UIUXデザイン、ウェブからアプリそしてクラウドまで一社にて構築を可能としております。
+                                    私たちは上流工程、要件定義・基本設計、システム設計<br class="pc">UIUXデザイン、ウェブからアプリそしてクラウドまで一社にて構築を可能としております。
                                 </p>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                                 <h4 class="fade_y on">ITに詳しくないお客様の開発を得意<br class="pc">【ユーザーペイン解消の最優先】</h4>
                                 <p class="fade_y on">
                                     当社はほとんどIT会社の下請けとして仕事をしておらず、エンド様と直接契約して開発を行なっています。
-                                      <br class="pc">その中でたくさんのITに詳しくない企業様の要件をシステムやアプリに落とし込むことにご好評頂いております。
+                                    <br class="pc">その中でたくさんのITに詳しくない企業様の要件をシステムやアプリに落とし込むことにご好評頂いております。
                                 </p>
                             </div>
                         </div>
@@ -77,84 +77,89 @@
                     </div>
                 </div>
                 <section class="solution-page my-5" id="expertise">
-                <h3 class="content-title">OUR EXPERTISE</h3>
-                <ul class="service-contents">
-                    <li class="service-contents__text">
-                        <p>アイデンブリッドはワンストップ開発を展開しており、要件定義そしてシステム設計からUIUXデザイン、ウェブ開発、モバイルアプリ開発またクラウドまで対応しています。そして実現されたい要件をシステムやアプリに落とし込むことを得意としています。
-                        </p>
-                    </li>
-                    <li class="service-contents__list">
-                        <router-link to="/mobileapp/">
-                            <div class="service-items">
-                                <div class="service-contents__list__thumbnail-frame">
-                                    <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_01.png" alt="Service contents image" loading="lazy">
+                    <h3 class="content-title">OUR EXPERTISE</h3>
+                    <ul class="service-contents">
+                        <li class="service-contents__text">
+                            <p>アイデンブリッドはワンストップ開発を展開しており、要件定義そしてシステム設計からUIUXデザイン、ウェブ開発、モバイルアプリ開発またクラウドまで対応しています。そして実現されたい要件をシステムやアプリに落とし込むことを得意としています。
+                            </p>
+                        </li>
+                        <li class="service-contents__list">
+                            <router-link to="/mobileapp/">
+                                <div class="service-items">
+                                    <div class="service-contents__list__thumbnail-frame">
+                                        <img class="service-contents__list__thumbnail"
+                                            src="/public/assets/img/solution/Solution_Img_01.png"
+                                            alt="Service contents image" loading="lazy">
+                                    </div>
+                                    <p class="service-contents__list__subtitle">Mobile app development</p>
+                                    <h4 class="service-contents__list__title"> スマホiOS/Androidアプリ開発</h4>
+                                    <p class="service-contents__list__text">
+                                        ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。
+                                    </p>
                                 </div>
-                                <p class="service-contents__list__subtitle">Mobile app development</p>
-                                <h4 class="service-contents__list__title"> スマホiOS/Androidアプリ開発</h4>
-                                <p class="service-contents__list__text">
-                                    ライブ配信アプリ・SNSアプリ・チャットアプリ・マッチングアプリ・業務管理アプリなどカテゴリーを問わずに設計・デザイン・開発そして審査申請から保守までワンストップでお受けしております。またウェブとの連携を前提としたマイクロサービスアーキテクチャでの開発も得意としており、お客様のユーザービリティ向上を目指した開発を進めています。
-                                </p>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="service-contents__list">
-                        <router-link to="/development/">
-                            <div class="service-items">
-                                <div class="service-contents__list__thumbnail-frame">
-                                    <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_02.png" alt="Service contents image" loading="lazy">
+                            </router-link>
+                        </li>
+                        <li class="service-contents__list">
+                            <router-link to="/development/">
+                                <div class="service-items">
+                                    <div class="service-contents__list__thumbnail-frame">
+                                        <img class="service-contents__list__thumbnail"
+                                            src="/public/assets/img/solution/Solution_Img_02.png"
+                                            alt="Service contents image" loading="lazy">
+                                    </div>
+                                    <p class="service-contents__list__subtitle">Software development</p>
+                                    <h4 class="service-contents__list__title">ウェブシステム開発</h4>
+                                    <p class="service-contents__list__text">
+                                        ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。
+                                    </p>
                                 </div>
-                                <p class="service-contents__list__subtitle">Software development</p>
-                                <h4 class="service-contents__list__title">ウェブシステム開発</h4>
-                                <p class="service-contents__list__text">
-                                    ユーザー管理システム・在庫管理システム・マッチングシステム・管理者ダッシュボード・分析BIツール・EC販売システム・決済システムなどのウェブサービスのスクラッチ開発やメンテナンス保守・セキュリティ対策など企業様向けの受託開発を行っています。またクラウドにも精通しているエンジニアを抱えており、AWS・GCP・Azureまで幅広く対応可能です。
-                                </p>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="service-contents__list">
-                        <router-link to="/webitconsulting/">
-                            <div class="service-items">
-                                <div class="service-contents__list__thumbnail-frame">
-                                    <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_03.png" alt="Service contents image" loading="lazy">
+                            </router-link>
+                        </li>
+                        <li class="service-contents__list">
+                            <router-link to="/webitconsulting/">
+                                <div class="service-items">
+                                    <div class="service-contents__list__thumbnail-frame">
+                                        <img class="service-contents__list__thumbnail"
+                                            src="/public/assets/img/solution/Solution_Img_03.png"
+                                            alt="Service contents image" loading="lazy">
+                                    </div>
+                                    <p class="service-contents__list__subtitle">Off-shore Labo Development</p>
+                                    <h4 class="service-contents__list__title">ラボ型オフショア開発</h4>
+                                    <p class="service-contents__list__text">
+                                        当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。
+                                    </p>
                                 </div>
-                                <p class="service-contents__list__subtitle">Off-shore Labo Development</p>
-                                <h4 class="service-contents__list__title">ラボ型オフショア開発</h4>
-                                <p class="service-contents__list__text">
-                                    当社ではパキスタンに拠点を持っており、リソースベースのエンジニア要員やチームをご提供可能です。先進国のエンジニアに比べてコストパフォーマンスは高く、またチャットツールをベースに日本語のコミュニケーションも全く問題ございません。またフロントには全て日本人が立っているのも好評を頂いてる理由です。
-                                </p>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li class="service-contents__list">
-                        <router-link to="/uiuxdesign/">
-                            <div class="service-items">
-                                <div class="service-contents__list__thumbnail-frame">
-                                    <img class="service-contents__list__thumbnail"
-                                        src="/public/assets/img/solution/Solution_Img_04.png" alt="Service contents image" loading="lazy">
+                            </router-link>
+                        </li>
+                        <li class="service-contents__list">
+                            <router-link to="/uiuxdesign/">
+                                <div class="service-items">
+                                    <div class="service-contents__list__thumbnail-frame">
+                                        <img class="service-contents__list__thumbnail"
+                                            src="/public/assets/img/solution/Solution_Img_04.png"
+                                            alt="Service contents image" loading="lazy">
+                                    </div>
+                                    <p class="service-contents__list__subtitle">Web design / UIUX design</p>
+                                    <h4 class="service-contents__list__title">UIUXデザイン制作</h4>
+                                    <p class="service-contents__list__text service-contents__list_last__text">当社ではAdobe
+                                        XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。
+                                    </p>
                                 </div>
-                                <p class="service-contents__list__subtitle">Web design / UIUX design</p>
-                                <h4 class="service-contents__list__title">UIUXデザイン制作</h4>
-                                <p class="service-contents__list__text service-contents__list_last__text">当社ではAdobe
-                                    XDやFigmaを使いワイヤーフレームからウェブ・アプリデザインを展開しています。画面遷移から各ボタンの配置、そしてコンポートネント単位でのデザイン設計など見た目のUIそしてユーザー体験を担保するためのUXに重きを置いたデザイン処理を施しています。見た目の良さだけなく、ユーザーから管理者まで使いやすいにこだわったデザインのご提供を行っています。
-                                </p>
-                            </div>
-                        </router-link>
-                    </li>
-                </ul>
+                            </router-link>
+                        </li>
+                    </ul>
 
-            </section>
-            <section class="quote-us">
-                <h2 class="heading cont-h1">お問い合わせ</h2>
-                <span>開発のご相談、お見積りが知りたい、どんなお悩みもお伺いします！ </span>
-                <div class="qoute-button">
-             
-                   
-                    <router-link to="/contact/" bis_skin_checked="1" class="contactbtn fade_y on">今すぐ相談してみる</router-link>
+                </section>
+                <section class="quote-us">
+                    <h2 class="heading cont-h1">お問い合わせ</h2>
+                    <span>開発のご相談、お見積りが知りたい、どんなお悩みもお伺いします！ </span>
+                    <div class="qoute-button">
+
+
+                        <router-link to="/contact/" bis_skin_checked="1" class="contactbtn fade_y on">今すぐ相談してみる
+                        </router-link>
                     </div>
-            </section>
+                </section>
                 <div class="branding--result">
                     <div class="heading">
                         <span class="sub en fade_y on">OUR COMMITMENT</span>
@@ -163,56 +168,64 @@
                     <div class="branding--result--list">
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result01.svg" alt="Branding image">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result01.svg"
+                                    alt="Branding image">
                             </div>
                             <h4 class="fade_y on">お客様のご希望を実現</h4>
                             <p class="fade_y on">クライアントが作りたいもの、困っていることにフォーカスし、ご要望をITにて叶えます</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result02.svg" alt="Branding image">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result02.svg"
+                                    alt="Branding image">
                             </div>
                             <h4 class="fade_y on">コストパフォーマンスの高い開発</h4>
                             <p class="fade_y on">お客さまが価格以上の価値を実感していただくとともに、他社との比較においても費用対効果の高い仕事をします</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result03.svg" alt="Branding image">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result03.svg"
+                                    alt="Branding image">
                             </div>
                             <h4 class="fade_y on">ビジネスのグロースに並走</h4>
                             <p class="fade_y on">お客様の成長をITという側面よりともに支える存在としてご一緒に走ります</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result04.svg" alt="Branding image">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result04.svg"
+                                    alt="Branding image">
                             </div>
                             <h4 class="fade_y on">カスタマーサクセス</h4>
                             <p class="fade_y on">クライアントのアラートをすぐに察知できるよう常にお客様担当が寄り添って開発を進めます</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result05.svg" alt="Branding image">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result05.svg"
+                                    alt="Branding image">
                             </div>
                             <h4 class="fade_y on">タイムマネジメントの徹底</h4>
                             <p class="fade_y on">各タスクごと、チームごとの時間管理をツールを使って徹底しています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result06.svg" alt="Branding image">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result06.svg"
+                                    alt="Branding image">
                             </div>
                             <h4 class="fade_y on">作業効率の改善</h4>
                             <p class="fade_y on">コミュニケーションプラットフォームや自社システムにおいて仕事の効率化を図っています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result07.svg" alt="Branding image">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result07.svg"
+                                    alt="Branding image">
                             </div>
                             <h4 class="fade_y on">クライアントとのリレーションの構築</h4>
                             <p class="fade_y on">プロダクトファーストではなく、あくまでお客様ファーストの精神でお客様との関係構築を大切にしています</p>
                         </div>
                         <div class="branding--result--item">
                             <div class="icon fade_y on"><img
-                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result08.svg" alt="Branding image">
+                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/result08.svg"
+                                    alt="Branding image">
                             </div>
                             <h4 class="fade_y on">マーケットへのインパクトをともに</h4>
                             <p class="fade_y on">一つひとつのプロジェクトがマーケットにインパクトを与えられるよう真剣に向き合って仕事します</p>
@@ -270,192 +283,7 @@
                             </tbody>
                         </table>
                     </div>
-
                 </div>
-                <!-- <div class="branding--flow">
-                    <div class="heading">
-                        <span class="sub en fade_y on">FLOW</span>
-                        <h3 class="fade_y on">進行の流れ</h3>
-                    </div>
-                    <div class="branding--flow--map">
-                        <div class="flow_box">
-                            <div class="flow_item flow01 anim on">
-                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/flow01.png" alt=""
-                                    class="pc">
-                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/sp-flow01.png" alt=""
-                                    class="sp">
-                            </div>
-                            <div class="flow_item flow02 anim on">
-                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/flow02.png" alt=""
-                                    class="pc">
-                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/sp-flow02.png" alt=""
-                                    class="sp">
-                            </div>
-                            <div class="flow_item flow03 anim on">
-                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/flow03.png" alt=""
-                                    class="pc">
-                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/sp-flow03.png" alt=""
-                                    class="sp">
-                            </div>
-                            <div class="flow_item flow04 anim on">
-                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/flow04.png" alt=""
-                                    class="pc">
-                                <img src="https://tomorrowgate.co.jp/asset/img/service/branding/sp-flow04.png" alt=""
-                                    class="sp">
-                            </div>
-                        </div>
-                    </div>
-
-                </div> -->
-                <!-- <div class="branding--voice highlight_blk">
-                    <div class="branding--voice--content">
-                        <div class="heading">
-                            <span class="sub en fade_y on">VOICE</span>
-                            <h3 class="fade_y on">お客様の声</h3>
-                        </div>
-                        <div class="slide_area">
-
-                            <div class="swiper-button-prev slick-arrow"></div>
-                            <div class="swiper-button-next slick-arrow"></div>
-                            <div class="swiper voiceSlider">
-
-                             
-                                <div class="swiper-wrapper slide_area">
-                                    <div class="swiper-slide slide_item">
-                                        <div class="img_box fade_y_min on">
-                                            <img src="https://tomorrowgate.co.jp/asset/img/service/branding/voice-kv04.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="text_area">
-                                            <h4 class="fade_y on">好き嫌いがわかりやすい。<br class="pc">白黒はっきりした会社。</h4>
-                                            <p class="fade_y on">
-                                                それだけ他社とは異なるエッジが立っている証拠かと思います。ただ、しっかりと弊社を理解していただいた上での企画・コンサル・クリエイティブ。だからこそ、会社の想いをしっかりと反映しながら、とてもアクティブなイメージをブランディングしてもらっていると感じています。
-                                            </p>
-                                            <div class="logo logo05"><img
-                                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/logo05.png"
-                                                    alt=""></div>
-                                            <p class="who fade_y on">
-                                                中央会計株式会社<br>澤田 恭平
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide slide_item">
-                                        <div class="img_box fade_y_min on">
-                                            <img src="https://tomorrowgate.co.jp/asset/img/service/branding/voice-kv06.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="text_area">
-                                            <h4 class="fade_y on">うさんくさい。<br>最初はそう思っていた。</h4>
-                                            <p class="fade_y on">
-                                                けど、そんなイメージはすぐに覆りました。プロジェクトに伴走してくれる、その姿勢や熱量に、私だけではなく社員も影響を受けました。まだまだ道半ばですが、全社員でビジョンに向かって走っていける。そんな姿に会社も変化しました。初めての新卒採用で、目標を超える人数の採用に成功したことも大きかったですね。本当に有言実行の方々です。
-                                            </p>
-                                            <div class="logo logo06"><img
-                                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/logo06.png"
-                                                    alt=""></div>
-                                            <p class="who fade_y on">
-                                                ライソン株式会社<br>代表取締役 山 俊介
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide slide_item">
-                                        <div class="img_box fade_y_min on">
-                                            <img src="https://tomorrowgate.co.jp/asset/img/service/branding/voice-kv07.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="text_area">
-                                            <h4 class="fade_y on">介護業界でも<br class="pc">オンリーワンの存在へ。</h4>
-                                            <p class="fade_y on">
-                                                ネガティブなイメージがもともと根強い介護業界。そんな業界で、いかに自分たちらしさを打ち出していくのか。大きな経営課題となるポイントでした。そこでご提案いただいたのが、業界の常識に縛られない、赤色をメインカラーとしたコンセプト。結果、業界でも唯一無二な存在としてポジティブな反響をいただき、すごく満足しています。
-                                            </p>
-                                            <div class="logo logo07"><img
-                                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/logo07.png"
-                                                    alt=""></div>
-                                            <p class="who fade_y on">
-                                                株式会社ニュービレッジ<br>取締役会長 新里大輔
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide slide_item">
-                                        <div class="img_box fade_y_min on">
-                                            <img src="https://tomorrowgate.co.jp/asset/img/service/branding/voice-kv03.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="text_area">
-                                            <h4 class="fade_y on">はじまりは、<br class="pc">一通の手紙から。</h4>
-                                            <p class="fade_y on">
-                                                いまだに忘れられないことがあります。それは、トゥモローゲートさんから送られてきたお手紙。我が社のことを隅から隅まで調べて頂いていて、心から感動したことを覚えています。お付き合いがはじまり、もうすぐ2年と6ヶ月。いまでは欠かすことのできないパートナーとなってくれているので、本当に心強いです。
-                                            </p>
-                                            <div class="logo logo08"><img
-                                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/logo08.png"
-                                                    alt=""></div>
-                                            <p class="who fade_y on">
-                                                セルビスグループ<br>人事課主任 荒木 郁枝
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide slide_item">
-                                        <div class="img_box fade_y_min on">
-                                            <img src="https://tomorrowgate.co.jp/asset/img/service/branding/voice-kv08.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="text_area">
-                                            <h4 class="fade_y on">「この人たちに頼んでダメなら仕方がない」と思えた</h4>
-                                            <p class="fade_y on">
-                                                どれほど効果があるのか不安がありましたが、実績が沢山あったのと、言ったことを実現するコミット力を強く感じました。「この人たちに頼んでダメなら仕方がない」と思えましたから。内容もすごく実践的で自分の魅力を客観的にとらえて言語化してくれる。そこから出た成果も実際の費用を十分にペイできるものでした。
-                                            </p>
-                                            <div class="logo logo01"><img
-                                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/logo01.png"
-                                                    alt=""></div>
-                                            <p class="who fade_y on">
-                                                株式会社リンクアンドモチベーション<br>カンパニー長 梅原英哉
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide slide_item">
-                                        <div class="img_box fade_y_min on">
-                                            <img src="https://tomorrowgate.co.jp/asset/img/service/branding/voice-kv01.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="text_area">
-                                            <h4 class="fade_y on">唯一無二のコンセプトが誕生。<br>自分だけでは築けなかったもの。</h4>
-                                            <p class="fade_y on">
-                                                第一印象は、今までにない提案で率直に「オモシロイ！」と思った。そして、オモシロイだけじゃなかった。言語化できていなかった部分を言語化してもらい、唯一無二のコンセプトが誕生した。ブレない軸ができたことで、採用ストーリーも描きやすくなった。自社だけでは絶対に、ここまで築けなかった。個性的な尖った人たちばかりで、すごいの一言です。
-                                            </p>
-                                            <div class="logo logo02"><img
-                                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/logo02.png"
-                                                    alt=""></div>
-                                            <p class="who fade_y on">
-                                                バリュエンスホールディングス株式会社<br>人事部 人事課 中松拓也
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide slide_item">
-                                        <div class="img_box fade_y_min on">
-                                            <img src="https://tomorrowgate.co.jp/asset/img/service/branding/voice-kv05.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="text_area">
-                                            <h4 class="fade_y on">都合のいいことは<br class="pc">言ってくれない大人たち。</h4>
-                                            <p class="fade_y on">
-                                                業者としてではなく、おなじチームとして関わってくれる。一緒に考えてくれる姿勢がありがたいですね。言いにくいこともちゃんと指摘をしてくれる。自分たちの志向が整理できました。採用面でも伝えるべきことが、すべてビジョンマップに書かれているので、理念に共感して入社してくれる人が増えた実感があります。
-                                            </p>
-                                            <div class="logo logo03"><img
-                                                    src="https://tomorrowgate.co.jp/asset/img/service/branding/logo03.png"
-                                                    alt=""></div>
-                                            <p class="who fade_y on">
-                                                株式会社ビジョナリー<br>代表取締役社長 丹羽 悠介
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
                 <div class="branding--contact">
                     <h3 class="fade_y on">ブランディングに関するご質問があれば<br class="pc">まずはお気軽にご相談ください</h3>
                     <div class="fade_y on">
@@ -568,35 +396,38 @@
 </script>
 
 <style>
-    .quote-us  .contactbtn {
-    border: 1px solid #fdfdfd;
-    color: #fdfdfd;
-    display: block;
-    font-size: 16px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    letter-spacing: .1em;
-    padding: 22px 0;
-    text-align: center;
-    transition: .4s;
-    width: 260px;
-}
-.quote-us  .contactbtn:hover {
-    background-color: #fdfdfd;
-    color: #000;
-}
+    .quote-us .contactbtn {
+        border: 1px solid #fdfdfd;
+        color: #fdfdfd;
+        display: block;
+        font-size: 16px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
+        letter-spacing: .1em;
+        padding: 22px 0;
+        text-align: center;
+        transition: .4s;
+        width: 260px;
+    }
+
+    .quote-us .contactbtn:hover {
+        background-color: #fdfdfd;
+        color: #000;
+    }
+
     .quote-us .heading {
-    margin: 0;
-    color: #ffffff;
-    font-size: 46px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    line-height: 1.2;
-    padding-bottom: 10px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-}
-    .quote-us{
+        margin: 0;
+        color: #ffffff;
+        font-size: 46px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        line-height: 1.2;
+        padding-bottom: 10px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
+    }
+
+    .quote-us {
         background-image: url('/assets/img/contact-us-background-widget-img.png');
         height: 320px;
         display: flex;
@@ -606,43 +437,46 @@
         text-align: center;
 
     }
-    .quote-us span {
-    font-size: 22px;
-    color: #ffffff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
-    word-spacing: 4px;
-}
-.qoute-button {
-    padding: 40px 0 0px;
-}
 
-    .btn-views{
-    border: 2px solid #fff;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 18px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    letter-spacing: .1em;
-    margin-left: 8px; 
-    margin-top: 50px;
-    opacity: 1;
-    padding: 19px 0;
-    position: relative;
-    text-align: center;
-    transition: .4s;
-    width: 250px;
-    z-index: 999;
-}
-.btn-views:hover {
-    background: #2573b0;
-    border: 2px solid #2573b0;
-    color: #fff;
-    transition: .4s;
-}
+    .quote-us span {
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+        word-spacing: 4px;
+    }
+
+    .qoute-button {
+        padding: 40px 0 0px;
+    }
+
+    .btn-views {
+        border: 2px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        font-size: 18px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
+        letter-spacing: .1em;
+        margin-left: 8px;
+        margin-top: 50px;
+        opacity: 1;
+        padding: 19px 0;
+        position: relative;
+        text-align: center;
+        transition: .4s;
+        width: 250px;
+        z-index: 999;
+    }
+
+    .btn-views:hover {
+        background: #2573b0;
+        border: 2px solid #2573b0;
+        color: #fff;
+        transition: .4s;
+    }
 
     .voiceSlider {
         height: 100%;
@@ -785,7 +619,7 @@
         display: none;
     }
 
-   
+
 
     @media screen and (min-width: 897px) {
         .hoverScale:hover .thumb::after {
@@ -1529,9 +1363,11 @@
         letter-spacing: 0.08em;
         font-weight: 700;
     }
- .branding--strengths--content .num{
-    color:#333333;
- }
+
+    .branding--strengths--content .num {
+        color: #333333;
+    }
+
     @media screen and (min-width: 897px) {
         .branding--strengths--content .item {
             display: flex;
@@ -1576,7 +1412,8 @@
         .branding--strengths--content .textarea h4 {
             font-size: 24px;
             font-family: 'Noto Sans JP', sans-serif;
-            font-weight: 700; }
+            font-weight: 700;
+        }
     }
 
     @media screen and (max-width: 896px) {
@@ -2204,11 +2041,9 @@
         }
     }
 
-  
 
-    @media screen and (max-width: 896px) {
-      
-    }
+
+    @media screen and (max-width: 896px) {}
 
     .branding--intro.policy .textarea .photo {
         left: 94%;
@@ -2872,6 +2707,7 @@
             margin-top: 20px;
         }
     }
+
     .solution-page {
         padding: 60px 10% 120px;
     }
@@ -2888,19 +2724,6 @@
         padding-top: 0px;
         /*影の調整 160 - 20*/
     }
-
-
-    /*.service-contents {
-    columns: 2;
-    column-fill: auto;
-    column-gap: 60px;
-}
-
-.service-contents__text, .service-contents__list {
-    margin-bottom: 60px;
-    break-inside: avoid;
-    transform: translateZ(0);
-}*/
     .service-subcontents__text {
         font-weight: bold;
         font-size: 16px;

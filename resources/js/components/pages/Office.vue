@@ -74,7 +74,7 @@
                             Pakistan</p>
                         <p class="number">
                             TEL : <a href="tel:+923064041221" class="tel_link no_link">+92306-404-1221</a><br>
-                            MAIL : <a href="mailto:helloworld@idenbrid.com">helloworld@idenbrid.com</a>
+                            MAIL : <a href="mailto:contactusjp@idenbrid.com">contactusjp@idenbrid.com</a>
                         </p>
                         <p class="station">
                             Lahore Airportよ<br class="sp">り車で15分<br>

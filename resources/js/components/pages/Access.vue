@@ -40,8 +40,8 @@
                                 <span class="bld">【パキスタン本社】</span><br>B1F 176 Y block DHA Phase 3, Lahore Pakistan
                                 <br><a href="tel:+92-306-404-1221" class="tel_link no_link">TEL. +92-306-404-1221</a>
                                 <br>
-                                <a href="mailto:helloworld@idenbrid.com" class="more_txt">MAIL :
-                                    helloworld@idenbrid.com</a>
+                                <a href="mailto:contactusjp@idenbrid.com" class="more_txt">MAIL :
+                                    contactusjp@idenbrid.com</a>
                             </div>
                             <div class="box mt">
 
