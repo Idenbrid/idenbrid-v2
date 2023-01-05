@@ -18,11 +18,11 @@
     <link rel="canonical" href="https://idenbrid.jp" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+         rel="preload" as="font" crossorigin>
     <!-- Fav-icon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets')}}/img/logo/idenbrid-fav-icon.png" />
     <link rel="stylesheet" href="{{asset('assets')}}/css/swiper-bundle.min.css" />

@@ -19,10 +19,8 @@
                                             <span class="more_txt"><span class="underline">MORE</span></span>
                                         </div>
                                         <div class="scaleImg">
-                                            <img :src="
-                          'https://admin.idenbrid.jp/public/storage/blog_images/' +
-                          blog.image
-                        " alt="Blog image" loading="lazy" />
+                                            <img :src="'https://admin.idenbrid.jp/public/storage/blog_images/' + blog.image" 
+                                            alt="Blog image" loading="lazy" />
                                         </div>
                                     </div>
                                     <div class="bloginfo">

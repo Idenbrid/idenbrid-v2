@@ -8,6 +8,112 @@
                     <span class="jptxt">アイデンブリッドの開発・制作事例の実績一覧です。</span>
                 </h2>
             </div>
+           
+            <!-- <div class="works--content highlight_blk">
+                <ul class="works--content--link">
+                    <li><a href="#" class="en categoryitem current">全て</a>
+                    </li>
+                    <li><a href="#" class="en categoryitem">UIUXデザイン</a></li>
+                    <li><a href="#" class="en categoryitem">ウェブ・システム</a>
+                    </li>
+                    <li><a href="#" class="en categoryitem">スマホアプリ</a>
+                    </li>
+                    <li><a href="#" class="en categoryitem">デスクトップアプリ</a>
+                    </li>
+                    <li><a href="#" class="en categoryitem">その他</a>
+                    </li>
+                </ul>
+                 <div class="works--content--mainarea">
+                    <router-link :to="'/work/detail/'+work.id" v-for="work in works" :key="work.id"
+                        class="works--content--item hoverScale">
+                        <div class="thumb">
+                            <div class="hvrtxt en">
+                                <span class="more_txt">
+                                    <span class="underline">MORE</span>
+                                </span>
+                            </div>
+                            <div class="scaleImg">
+                                <img :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image" alt="">
+                                <img :src="'http://admin-idenbrid.idenbrid.com/public/storage/work_images/'+work.image" alt="">
+                            </div>
+                        </div>
+                        <h3>{{work.title}}</h3>
+                    </router-link>
+                </div>
+                 <div class="wp-pagenavi" role="navigation">
+                    <span aria-current="page" class="current">1</span><a class="page larger" title="ページ 2"
+                        href="https://tomorrowgate.co.jp/works/page/2/">2</a><a class="nextpostslink" rel="next"
+                        aria-label="Next Page" href="https://tomorrowgate.co.jp/works/page/2/"><i
+                            class='fas fa-angle-right'></i></a>
+                </div>
+            </div> -->
+            <section>
+                <video src="/assets/img/workpage.mp4" width="100%" class="coming-img mt-2" autoplay muted loop
+                    playsinline></video>
+            </section>
+        <!-- <section class="section-portfolio my-5">
+                <div class="container">
+                    <div class="row">
+                        <div v-for="work in works" :key="work.id" class="col-lg-4 col-md-6">
+                            <router-link :to="'/work/detail/'+work.id">
+                                <div class="single-services">
+                                    <div class="services-image">
+                                        <a class="">
+                                            <img :src="'http://admin.idenbrid.jp/public/storage/work_images/'+work.image"
+                                                alt="image">
+                                        </a>
+                                        <div class="icon">
+                                            <a class="">
+                                                <i class="flaticon-chair d-flex justify-content-center align-items-center"><img class="work-detail-icon " src="http://development.idenbrid.jp/assets/img/logo/idenbrid-fav-icon.png" alt=""></img></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="services-content">
+                                        <h3>
+                                            <a class="">{{work.title}}</a>
+                                        </h3>
+                                        <p v-html="work.description" class="work-detail-prgh"></p>
+                                    </div>
+                                </div>
+                            </router-link>
+                        </div>
+                    </div>
+                </div>
+            </section>   -->
+            <!-- <section class="menu">
+                <ul class="menu-contents mycontents-wide">
+                    <li class="menu-contents__list">
+                        <router-link to="/about/">
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Policy-icon.svg"
+                                alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <p class="about-contents__list__subtitle">経営理念</p>
+                                <h4 class="menu-contents__list__title">Policy</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="menu-contents__list">
+                        <router-link to="/blog/">
+                            <img class="menu-contents__list__thumbnail menu-contents__list__thumbnail_news"
+                                src="/public/assets/img/icons/Bussines-icon.svg" alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <p class="menu-contents__list__subtitle">事業紹介</p>
+                                <h4 class="menu-contents__list__title">Business</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li class="menu-contents__list">
+                        <router-link to="/onlinedevelopmenthub/">
+                            <img class="menu-contents__list__thumbnail" src="/public/assets/img/icons/Company-icon.svg"
+                                alt="" loading="lazy">
+                            <div class="menu-contents__list__text">
+                                <p class="menu-contents__list__subtitle">会社概要</p>
+                                <h4 class="menu-contents__list__title">Company</h4>
+                            </div>
+                        </router-link>
+                    </li>
+                </ul>
+            </section> -->
             
             <div class="branding--contact">
                 <h3 class="fade_y on">IT開発：UIUXデザイン、ウェブやスマホアプリそしてクラウド構築まで<br>

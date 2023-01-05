@@ -438,7 +438,7 @@
 
     .c-recruit__bottom-item:hover .c-recruit__bottom-bgimg {
         transform: scale(1.1);
-        transition: 0.4s;
+        /* transition: 0.4s linear; */
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }

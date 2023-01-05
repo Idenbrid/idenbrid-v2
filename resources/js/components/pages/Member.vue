@@ -227,24 +227,7 @@
                                                 <p class="part">エンジニア / 開発部門</p>
                                             </div>
                                         </li>
-                                        <li class="parent_li ishou on">
-                                            <div class="img_box">
-                                                <div class="hoverScale">
-                                                    <div class="thumb">
-                                                        <div class="hvrtxt en"><span
-                                                                class="more_txts">サルゴダ出身、ラホール大学コンピューターサイエンス学部卒。PHPのLaravelエンジニアとしてキャリアアップをし、当社でもバックエンドエンジニアとして主にグローバル顧客の開発に従事しています。</span>
-                                                        </div>
-                                                        <div class="scaleImg">
-                                                            <img src="/assets/img/member/izmah.jpg" alt="Team member image">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text_area">
-                                                <p class="name en">IZMAH KHAN</p>
-                                                <p class="part">エンジニア / 開発部門</p>
-                                            </div>
-                                        </li>
+                                       
                                         <li class="parent_li ishou on">
                                             <div class="img_box">
                                                 <div class="hoverScale">
